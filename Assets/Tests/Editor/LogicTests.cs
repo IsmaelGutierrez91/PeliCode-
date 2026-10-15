@@ -64,8 +64,8 @@ namespace PeliCode.Tests
 
         [TestCase("Ana_Maria#1234", "Ana_Maria")]
         [TestCase("Luis", "Luis")]
-        [TestCase("#99", "Jugador")]
-        [TestCase(null, "Jugador")]
+        [TestCase("#99", "")]   // sin nombre: quien lo muestra pone "Jugador"/"Player"
+        [TestCase(null, "")]
         public void ToDisplayName(string serviceName, string expected)
         {
             Assert.AreEqual(expected, PlayerNames.ToDisplayName(serviceName));

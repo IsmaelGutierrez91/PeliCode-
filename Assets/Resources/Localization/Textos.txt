@@ -1,0 +1,71 @@
+clave	es	en
+
+# Login y registro
+login.email	Correo electrónico	Email
+login.emailPlaceholder	correo@ejemplo.com	name@example.com
+login.password	Contraseña	Password
+login.passwordPlaceholder	Tu contraseña	Your password
+login.signIn	Entrar	Sign in
+login.openCreateAccount	Crear cuenta	Create account
+register.userName	Nombre de usuario	Username
+register.userNamePlaceholder	Cómo te verán en el ranking	How others will see you in the ranking
+register.confirm	Crear cuenta	Create account
+
+# Mensajes de login y registro
+auth.invalidEmail	Correo electrónico inválido.	Invalid email address.
+auth.enterPassword	Escribe tu contraseña.	Enter your password.
+auth.wrongCredentials	Correo o contraseña incorrectos.	Wrong email or password.
+auth.profileLoadFailed	No se pudo cargar tu perfil. Inténtalo de nuevo.	Your profile could not be loaded. Please try again.
+auth.noConnection	No hay conexión con el servidor. Revisa tu internet e inténtalo de nuevo.	Can't reach the server. Check your internet connection and try again.
+auth.tooManyRequests	Demasiados intentos. Espera un momento y vuelve a intentarlo.	Too many attempts. Wait a moment and try again.
+auth.emailTaken	Ese correo ya está registrado.	That email is already registered.
+auth.serverRejected	Revisa el correo y la contraseña: el servidor no los aceptó.	Check your email and password: the server did not accept them.
+auth.signUpFailed	No se pudo crear la cuenta. Inténtalo de nuevo.	The account could not be created. Please try again.
+auth.accountWithoutProfile	Tu cuenta se creó, pero no se pudo guardar el perfil. Inicia sesión para continuar.	Your account was created, but your profile could not be saved. Sign in to continue.
+validation.userNameEmpty	El nombre de usuario no puede estar vacío.	The username can't be empty.
+validation.userNameLength	El nombre de usuario debe tener entre {0} y {1} caracteres.	The username must be between {0} and {1} characters long.
+validation.password	La contraseña debe tener de {0} a {1} caracteres, sin espacios, con 1 número, 1 mayúscula, 1 minúscula y 1 carácter especial.	The password must be {0} to {1} characters long, with no spaces, and include 1 number, 1 uppercase letter, 1 lowercase letter and 1 special character.
+
+# Menú
+nav.announcements	Anuncios	News
+nav.profile	Perfil	Profile
+nav.minigames	Minijuegos	Minigames
+nav.ranked	Ranked	Ranked
+nav.options	Opciones	Options
+announcements.loading	Cargando...	Loading...
+announcements.none	Sin novedades por el momento.	No news for now.
+minigames.difficulty	Dificultad:	Difficulty:
+difficulty.Facil	Fácil	Easy
+difficulty.Medio	Normal	Normal
+difficulty.Dificil	Difícil	Hard
+category.VariablesTiposOperadores	Variables, tipos y operadores	Variables, types and operators
+category.Condicionales	Condicionales	Conditionals
+category.SwitchEstados	Switch y estados	Switch and states
+category.ColeccionesArraysListas	Arrays y listas	Arrays and lists
+category.BucleWhileDoWhile	Bucles while y do-while	While and do-while loops
+profile.rankedTop	Mejor ranked: {0}	Best ranked: {0}
+profile.currentStreak	Racha actual: {0}	Current streak: {0}
+profile.highestStreak	Mejor racha: {0}	Best streak: {0}
+profile.categoryStat	{0}: {1:0}%	{0}: {1:0}%
+ranked.play	Jugar	Play
+options.music	Música	Music
+options.sfx	Efectos de sonido	Sound effects
+options.logOut	Cerrar sesión	Log out
+options.exit	Salir	Exit
+
+# Minijuego
+game.time	Tiempo: {0}	Time: {0}
+game.loading	Cargando preguntas...	Loading questions...
+game.correct	¡Correcto!	Correct!
+game.incorrect	Incorrecto	Wrong
+game.timeUp	Se acabó el tiempo	Time's up
+game.submit	Responder	Submit
+game.check	Comprobar	Check
+game.answerPlaceholder	Escribe tu respuesta...	Type your answer...
+game.back	Volver al menú	Back to menu
+game.result	Resultado: {0}/{1} ({2:0}%)	Score: {0}/{1} ({2:0}%)
+game.rankedResult	Respuestas correctas: {0}	Correct answers: {0}
+game.loadFailed	No se pudieron cargar las preguntas. Revisa tu conexión e inténtalo de nuevo.	The questions could not be loaded. Check your connection and try again.
+game.noQuestions	Todavía no hay preguntas para este minijuego.	There are no questions for this minigame yet.
+game.saveFailed	No se pudo guardar el resultado (sin conexión).	Your result could not be saved (no connection).
+common.player	Jugador	Player

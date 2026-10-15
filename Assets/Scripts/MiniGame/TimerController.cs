@@ -1,4 +1,5 @@
 using System;
+using PeliCode.Localization;
 using TMPro;
 using UnityEngine;
 
@@ -14,13 +15,16 @@ namespace PeliCode.MiniGame
         [SerializeField] private int secondsPerQuestion = 60;
         [SerializeField] private TMP_Text timerText;
 
-        // {0} = segundos restantes. Asi la etiqueta del texto no se pierde al actualizarlo.
-        [SerializeField] private string textFormat = "Time: {0}";
-
         public event Action OnTimerExpired;
 
         private float _remaining;
         private bool _running;
+
+        private void Awake()
+        {
+            _remaining = secondsPerQuestion;
+            UpdateText();
+        }
 
         public void ResetTimer()
         {
@@ -54,7 +58,8 @@ namespace PeliCode.MiniGame
         private void UpdateText()
         {
             if (timerText != null)
-                timerText.text = string.Format(textFormat, Mathf.CeilToInt(_remaining));
+                // "Tiempo: 42": la etiqueta no se pierde al actualizar el numero.
+                timerText.text = Loc.Format("game.time", Mathf.CeilToInt(_remaining));
         }
     }
 }

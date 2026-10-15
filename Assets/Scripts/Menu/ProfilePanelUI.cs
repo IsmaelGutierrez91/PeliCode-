@@ -1,5 +1,6 @@
 using PeliCode.Authentication;
 using PeliCode.Data;
+using PeliCode.Localization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -39,7 +40,13 @@ namespace PeliCode.Menu
 
         private void OnEnable()
         {
+            Loc.LanguageChanged += Refresh;
             Refresh();
+        }
+
+        private void OnDisable()
+        {
+            Loc.LanguageChanged -= Refresh;
         }
 
         public void Refresh()
@@ -48,9 +55,9 @@ namespace PeliCode.Menu
             if (_profile == null) return;
 
             playerNameText.text = _profile.userName;
-            rankedTopText.text = _profile.rankedHighScore.ToString();
-            currentStreakText.text = _profile.currentStreak.ToString();
-            highestStreakText.text = _profile.highestStreak.ToString();
+            rankedTopText.text = Loc.Format("profile.rankedTop", _profile.rankedHighScore);
+            currentStreakText.text = Loc.Format("profile.currentStreak", _profile.currentStreak);
+            highestStreakText.text = Loc.Format("profile.highestStreak", _profile.highestStreak);
 
             SelectDifficulty(_selectedDifficulty);
         }
@@ -77,7 +84,7 @@ namespace PeliCode.Menu
                     };
                 }
 
-                minigameInfoTexts[i].text = $"{category}: {percentage:0}%";
+                minigameInfoTexts[i].text = Loc.Format("profile.categoryStat", Loc.Get("category." + category), percentage);
                 i++;
             }
         }

@@ -251,6 +251,7 @@ GameObject:
   - component: {fileID: 12922108}
   - component: {fileID: 12922110}
   - component: {fileID: 12922109}
+  - component: {fileID: 12922111}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -297,7 +298,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Dificulty:'
+  m_text: 'Dificultad:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -327,9 +328,9 @@ MonoBehaviour:
   m_fontSize: 50
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 25
+  m_fontSizeMax: 50
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -377,6 +378,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12922107}
   m_CullTransparentMesh: 1
+--- !u!114 &12922111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12922107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: minigames.difficulty
 --- !u!1 &23512467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1553,6 +1567,7 @@ GameObject:
   - component: {fileID: 461056655}
   - component: {fileID: 461056657}
   - component: {fileID: 461056656}
+  - component: {fileID: 461056658}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1599,7 +1614,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: Variables, tipos y operadores
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1629,9 +1644,9 @@ MonoBehaviour:
   m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 36
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -1679,6 +1694,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 461056654}
   m_CullTransparentMesh: 1
+--- !u!114 &461056658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461056654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: category.VariablesTiposOperadores
 --- !u!1 &505401249
 GameObject:
   m_ObjectHideFlags: 0
@@ -2376,6 +2404,7 @@ GameObject:
   - component: {fileID: 524434417}
   - component: {fileID: 524434419}
   - component: {fileID: 524434418}
+  - component: {fileID: 524434420}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2422,7 +2451,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sound effects
+  m_text: Efectos de sonido
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2452,9 +2481,9 @@ MonoBehaviour:
   m_fontSize: 50
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 25
+  m_fontSizeMax: 50
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -2502,6 +2531,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524434416}
   m_CullTransparentMesh: 1
+--- !u!114 &524434420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524434416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: options.sfx
 --- !u!1 &572221258
 GameObject:
   m_ObjectHideFlags: 0
@@ -3243,6 +3285,7 @@ GameObject:
   - component: {fileID: 701866196}
   - component: {fileID: 701866198}
   - component: {fileID: 701866197}
+  - component: {fileID: 701866199}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -3289,7 +3332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Easy
+  m_text: "F\xE1cil"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3319,9 +3362,9 @@ MonoBehaviour:
   m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 12
+  m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -3369,6 +3412,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701866195}
   m_CullTransparentMesh: 1
+--- !u!114 &701866199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701866195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: difficulty.Facil
 --- !u!1 &748022297
 GameObject:
   m_ObjectHideFlags: 0
@@ -3823,6 +3879,7 @@ GameObject:
   - component: {fileID: 808957794}
   - component: {fileID: 808957796}
   - component: {fileID: 808957795}
+  - component: {fileID: 808957797}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -3869,7 +3926,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Exit
+  m_text: Salir
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3899,9 +3956,9 @@ MonoBehaviour:
   m_fontSize: 50
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 25
+  m_fontSizeMax: 50
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -3949,6 +4006,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808957793}
   m_CullTransparentMesh: 1
+--- !u!114 &808957797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808957793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: options.exit
 --- !u!1 &815372988
 GameObject:
   m_ObjectHideFlags: 0
@@ -3960,6 +4030,7 @@ GameObject:
   - component: {fileID: 815372989}
   - component: {fileID: 815372991}
   - component: {fileID: 815372990}
+  - component: {fileID: 815372992}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -4006,7 +4077,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5
+  m_text: Bucles while y do-while
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4036,9 +4107,9 @@ MonoBehaviour:
   m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 36
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -4086,6 +4157,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815372988}
   m_CullTransparentMesh: 1
+--- !u!114 &815372992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815372988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: category.BucleWhileDoWhile
 --- !u!1 &823289172
 GameObject:
   m_ObjectHideFlags: 0
@@ -4568,6 +4652,7 @@ GameObject:
   - component: {fileID: 845727057}
   - component: {fileID: 845727059}
   - component: {fileID: 845727058}
+  - component: {fileID: 845727060}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -4614,7 +4699,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Music
+  m_text: "M\xFAsica"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4644,9 +4729,9 @@ MonoBehaviour:
   m_fontSize: 50
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 25
+  m_fontSizeMax: 50
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -4694,6 +4779,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845727056}
   m_CullTransparentMesh: 1
+--- !u!114 &845727060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845727056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: options.music
 --- !u!1 &862864168
 GameObject:
   m_ObjectHideFlags: 0
@@ -5316,6 +5414,7 @@ GameObject:
   - component: {fileID: 940418006}
   - component: {fileID: 940418008}
   - component: {fileID: 940418007}
+  - component: {fileID: 940418009}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -5392,9 +5491,9 @@ MonoBehaviour:
   m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 12
+  m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -5442,6 +5541,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940418005}
   m_CullTransparentMesh: 1
+--- !u!114 &940418009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940418005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: difficulty.Medio
 --- !u!1 &996053941
 GameObject:
   m_ObjectHideFlags: 0
@@ -5778,6 +5890,7 @@ GameObject:
   - component: {fileID: 1034249503}
   - component: {fileID: 1034249505}
   - component: {fileID: 1034249504}
+  - component: {fileID: 1034249506}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -5824,7 +5937,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Profile
+  m_text: Perfil
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5854,9 +5967,9 @@ MonoBehaviour:
   m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 12
+  m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -5904,6 +6017,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034249502}
   m_CullTransparentMesh: 1
+--- !u!114 &1034249506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034249502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: nav.profile
 --- !u!1 &1106709920
 GameObject:
   m_ObjectHideFlags: 0
@@ -6474,6 +6600,7 @@ GameObject:
   - component: {fileID: 1238891947}
   - component: {fileID: 1238891949}
   - component: {fileID: 1238891948}
+  - component: {fileID: 1238891950}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6520,7 +6647,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Easy
+  m_text: "F\xE1cil"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6550,9 +6677,9 @@ MonoBehaviour:
   m_fontSize: 30
   m_fontSizeBase: 30
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 15
+  m_fontSizeMax: 30
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -6600,6 +6727,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238891946}
   m_CullTransparentMesh: 1
+--- !u!114 &1238891950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238891946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: difficulty.Facil
 --- !u!1 &1245711220
 GameObject:
   m_ObjectHideFlags: 0
@@ -6853,6 +6993,7 @@ GameObject:
   - component: {fileID: 1303971331}
   - component: {fileID: 1303971333}
   - component: {fileID: 1303971332}
+  - component: {fileID: 1303971334}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6899,7 +7040,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 4
+  m_text: Arrays y listas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6929,9 +7070,9 @@ MonoBehaviour:
   m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 36
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -6979,6 +7120,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303971330}
   m_CullTransparentMesh: 1
+--- !u!114 &1303971334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303971330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: category.ColeccionesArraysListas
 --- !u!1 &1311014931
 GameObject:
   m_ObjectHideFlags: 0
@@ -7280,6 +7434,7 @@ GameObject:
   - component: {fileID: 1376438693}
   - component: {fileID: 1376438695}
   - component: {fileID: 1376438694}
+  - component: {fileID: 1376438696}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -7326,7 +7481,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hard
+  m_text: "Dif\xEDcil"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7356,9 +7511,9 @@ MonoBehaviour:
   m_fontSize: 30
   m_fontSizeBase: 30
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 15
+  m_fontSizeMax: 30
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -7406,6 +7561,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1376438692}
   m_CullTransparentMesh: 1
+--- !u!114 &1376438696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376438692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: difficulty.Dificil
 --- !u!1 &1378607939
 GameObject:
   m_ObjectHideFlags: 0
@@ -7985,6 +8153,7 @@ GameObject:
   - component: {fileID: 1556737406}
   - component: {fileID: 1556737408}
   - component: {fileID: 1556737407}
+  - component: {fileID: 1556737409}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -8031,7 +8200,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Join
+  m_text: Jugar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8061,9 +8230,9 @@ MonoBehaviour:
   m_fontSize: 50
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 25
+  m_fontSizeMax: 50
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -8111,6 +8280,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556737405}
   m_CullTransparentMesh: 1
+--- !u!114 &1556737409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556737405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: ranked.play
 --- !u!1 &1572612566
 GameObject:
   m_ObjectHideFlags: 0
@@ -8523,6 +8705,7 @@ GameObject:
   - component: {fileID: 1711671576}
   - component: {fileID: 1711671578}
   - component: {fileID: 1711671577}
+  - component: {fileID: 1711671579}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -8569,7 +8752,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2
+  m_text: Condicionales
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8599,9 +8782,9 @@ MonoBehaviour:
   m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 36
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -8649,6 +8832,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711671575}
   m_CullTransparentMesh: 1
+--- !u!114 &1711671579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711671575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: category.Condicionales
 --- !u!1 &1726996208
 GameObject:
   m_ObjectHideFlags: 0
@@ -8872,6 +9068,7 @@ GameObject:
   - component: {fileID: 1758268845}
   - component: {fileID: 1758268847}
   - component: {fileID: 1758268846}
+  - component: {fileID: 1758268848}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -8948,9 +9145,9 @@ MonoBehaviour:
   m_fontSize: 30
   m_fontSizeBase: 30
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 15
+  m_fontSizeMax: 30
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -8998,6 +9195,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758268844}
   m_CullTransparentMesh: 1
+--- !u!114 &1758268848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758268844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: difficulty.Medio
 --- !u!1 &1793546675
 GameObject:
   m_ObjectHideFlags: 0
@@ -9205,6 +9415,7 @@ GameObject:
   - component: {fileID: 1817078557}
   - component: {fileID: 1817078559}
   - component: {fileID: 1817078558}
+  - component: {fileID: 1817078560}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9251,7 +9462,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Options
+  m_text: Opciones
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9281,9 +9492,9 @@ MonoBehaviour:
   m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 12
+  m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -9331,6 +9542,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817078556}
   m_CullTransparentMesh: 1
+--- !u!114 &1817078560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817078556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: nav.options
 --- !u!1 &1821757110
 GameObject:
   m_ObjectHideFlags: 0
@@ -9342,6 +9566,7 @@ GameObject:
   - component: {fileID: 1821757111}
   - component: {fileID: 1821757113}
   - component: {fileID: 1821757112}
+  - component: {fileID: 1821757114}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9388,7 +9613,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Log Out
+  m_text: "Cerrar sesi\xF3n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9418,9 +9643,9 @@ MonoBehaviour:
   m_fontSize: 50
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 25
+  m_fontSizeMax: 50
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -9468,6 +9693,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1821757110}
   m_CullTransparentMesh: 1
+--- !u!114 &1821757114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821757110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: options.logOut
 --- !u!1 &1830259591
 GameObject:
   m_ObjectHideFlags: 0
@@ -9616,6 +9854,7 @@ GameObject:
   - component: {fileID: 1852965334}
   - component: {fileID: 1852965336}
   - component: {fileID: 1852965335}
+  - component: {fileID: 1852965337}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9662,7 +9901,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Announcements
+  m_text: Anuncios
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9692,9 +9931,9 @@ MonoBehaviour:
   m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 12
+  m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -9742,6 +9981,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852965333}
   m_CullTransparentMesh: 1
+--- !u!114 &1852965337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852965333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: nav.announcements
 --- !u!1 &1863741955
 GameObject:
   m_ObjectHideFlags: 0
@@ -9844,6 +10096,7 @@ GameObject:
   - component: {fileID: 1863948600}
   - component: {fileID: 1863948602}
   - component: {fileID: 1863948601}
+  - component: {fileID: 1863948603}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9920,9 +10173,9 @@ MonoBehaviour:
   m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 12
+  m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -9970,6 +10223,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863948599}
   m_CullTransparentMesh: 1
+--- !u!114 &1863948603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863948599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: nav.ranked
 --- !u!1 &1864356333
 GameObject:
   m_ObjectHideFlags: 0
@@ -10151,14 +10417,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Menu.MenuPanelController
   container: {fileID: 519338406}
-  viewport: {fileID: 1890653336}
   navigationButtons:
   - {fileID: 1144054608}
   - {fileID: 823289174}
   - {fileID: 508987332}
   - {fileID: 1641921748}
   - {fileID: 505401251}
-  panelSpacing: 50
   tweenDuration: 0.45
   tweenEase: 10
   defaultPanelIndex: 2
@@ -10756,6 +11020,7 @@ GameObject:
   - component: {fileID: 2056060974}
   - component: {fileID: 2056060976}
   - component: {fileID: 2056060975}
+  - component: {fileID: 2056060977}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -10802,7 +11067,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hard
+  m_text: "Dif\xEDcil"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10832,9 +11097,9 @@ MonoBehaviour:
   m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 12
+  m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -10882,6 +11147,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056060973}
   m_CullTransparentMesh: 1
+--- !u!114 &2056060977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056060973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: difficulty.Dificil
 --- !u!1 &2056080120
 GameObject:
   m_ObjectHideFlags: 0
@@ -10893,6 +11171,7 @@ GameObject:
   - component: {fileID: 2056080121}
   - component: {fileID: 2056080123}
   - component: {fileID: 2056080122}
+  - component: {fileID: 2056080124}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -10939,7 +11218,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3
+  m_text: Switch y estados
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10969,9 +11248,9 @@ MonoBehaviour:
   m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 36
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -11019,6 +11298,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056080120}
   m_CullTransparentMesh: 1
+--- !u!114 &2056080124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056080120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: category.SwitchEstados
 --- !u!1 &2061551965
 GameObject:
   m_ObjectHideFlags: 0
@@ -11151,6 +11443,7 @@ GameObject:
   - component: {fileID: 2127834495}
   - component: {fileID: 2127834497}
   - component: {fileID: 2127834496}
+  - component: {fileID: 2127834498}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -11197,7 +11490,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Minigames
+  m_text: Minijuegos
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11227,9 +11520,9 @@ MonoBehaviour:
   m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 12
+  m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -11277,6 +11570,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127834494}
   m_CullTransparentMesh: 1
+--- !u!114 &2127834498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127834494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80ef1d09bfa554b8c90ae64d0095b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Localization.LocalizedText
+  key: nav.minigames
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ namespace PeliCode.Authentication
     /// Authentication, que es el que muestra el Leaderboard.
     ///  - Unity no acepta espacios en el Player Name: se cambian por "_".
     ///  - Unity le agrega un sufijo "#1234" al guardarlo: se quita al mostrarlo.
+    ///  - Sin nombre, ToDisplayName devuelve "" y quien lo muestra pone el texto del idioma.
     /// </summary>
     public static class PlayerNames
     {
@@ -23,9 +24,8 @@ namespace PeliCode.Authentication
 
         public static string ToDisplayName(string serviceName)
         {
-            if (string.IsNullOrWhiteSpace(serviceName)) return "Jugador";
-            string name = DiscriminatorSuffix.Replace(serviceName.Trim(), string.Empty);
-            return name.Length == 0 ? "Jugador" : name;
+            if (string.IsNullOrWhiteSpace(serviceName)) return string.Empty;
+            return DiscriminatorSuffix.Replace(serviceName.Trim(), string.Empty);
         }
     }
 }

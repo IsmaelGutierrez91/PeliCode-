@@ -1,4 +1,5 @@
 using System.Text.RegularExpressions;
+using PeliCode.Localization;
 
 namespace PeliCode.Authentication
 {
@@ -37,18 +38,17 @@ namespace PeliCode.Authentication
         public static string GetUserNameValidationMessage(string userName)
         {
             string trimmed = userName?.Trim() ?? string.Empty;
-            if (trimmed.Length == 0) return "El nombre de usuario no puede estar vacio.";
+            if (trimmed.Length == 0) return Loc.Get("validation.userNameEmpty");
             if (trimmed.Length < MinUserNameLength || trimmed.Length > MaxUserNameLength)
-                return $"El nombre de usuario debe tener entre {MinUserNameLength} y {MaxUserNameLength} caracteres.";
+                return Loc.Format("validation.userNameLength", MinUserNameLength, MaxUserNameLength);
             return string.Empty;
         }
 
         public static string GetValidationMessage(string email, string password)
         {
-            if (!IsValidEmail(email)) return "Correo electronico invalido.";
+            if (!IsValidEmail(email)) return Loc.Get("auth.invalidEmail");
             if (!IsValid(password))
-                return $"La contrasena debe tener de {MinPasswordLength} a {MaxPasswordLength} caracteres, sin espacios, " +
-                       "con 1 numero, 1 mayuscula, 1 minuscula y 1 caracter especial.";
+                return Loc.Format("validation.password", MinPasswordLength, MaxPasswordLength);
             return string.Empty;
         }
     }

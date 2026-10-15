@@ -1,4 +1,5 @@
 using PeliCode.Core;
+using PeliCode.Localization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -31,8 +32,16 @@ namespace PeliCode.Authentication
 
         private void OnEnable()
         {
-            feedbackText.text = string.Empty;
+            ClearFeedback();
+            Loc.LanguageChanged += ClearFeedback;
         }
+
+        private void OnDisable()
+        {
+            Loc.LanguageChanged -= ClearFeedback;
+        }
+
+        private void ClearFeedback() => feedbackText.text = string.Empty;
 
         private async void OnConfirmClicked()
         {

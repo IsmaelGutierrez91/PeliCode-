@@ -6,6 +6,7 @@ using PeliCode.Authentication;
 using PeliCode.CloudServices;
 using PeliCode.Core;
 using PeliCode.Data;
+using PeliCode.Localization;
 using PeliCode.MiniGame.Questions;
 using TMPro;
 using UnityEngine;
@@ -53,7 +54,7 @@ namespace PeliCode.MiniGame
             resultsPanel.SetActive(false);
             HideAllViews();
             _isRanked = MiniGameSessionData.IsRanked;
-            feedbackText.text = "Cargando preguntas...";
+            feedbackText.text = Loc.Get("game.loading");
             progressText.text = string.Empty;
 
             timer.OnTimerExpired += OnTimerExpired;
@@ -175,7 +176,7 @@ namespace PeliCode.MiniGame
         private void OnTimerExpired()
         {
             // Sin respuesta a tiempo = error, en ambos modos.
-            HandleAnswer(false);
+            HandleAnswer(false, timedOut: true);
         }
 
         private void OnQuestionAnswered(bool correct)
@@ -184,7 +185,7 @@ namespace PeliCode.MiniGame
             HandleAnswer(correct);
         }
 
-        private void HandleAnswer(bool correct)
+        private void HandleAnswer(bool correct, bool timedOut = false)
         {
             if (_finished || _activeView == null) return;
 
@@ -193,7 +194,7 @@ namespace PeliCode.MiniGame
             _activeView = null;
 
             _scoreManager.RegisterAnswer(correct);
-            feedbackText.text = correct ? "Correcto!" : "Incorrecto";
+            feedbackText.text = Loc.Get(correct ? "game.correct" : timedOut ? "game.timeUp" : "game.incorrect");
 
             _poolIndex++;
 
@@ -217,17 +218,16 @@ namespace PeliCode.MiniGame
             resultsPanel.SetActive(true);
             // No se guarda nada: una partida sin preguntas no cambia las estadisticas.
             resultsText.text = QuestionsRepository.Instance.LastLoadFailed
-                ? "No se pudieron cargar las preguntas. Revisa tu conexion e intentalo de nuevo."
-                : "Todavia no hay preguntas para este minijuego.";
+                ? Loc.Get("game.loadFailed")
+                : Loc.Get("game.noQuestions");
         }
 
         private async void EndNormalGame()
         {
             if (!BeginEnd()) return;
 
-            resultsText.text =
-                $"Resultado: {_scoreManager.CorrectAnswers}/{_scoreManager.TotalAnswered} " +
-                $"({_scoreManager.GetPercentage():0}%)";
+            resultsText.text = Loc.Format("game.result",
+                _scoreManager.CorrectAnswers, _scoreManager.TotalAnswered, _scoreManager.GetPercentage());
 
             var profile = AuthManager.Instance.CurrentProfile;
             if (profile == null) return; // escena abierta sin iniciar sesion (solo en el editor)
@@ -247,7 +247,7 @@ namespace PeliCode.MiniGame
             if (!BeginEnd()) return;
 
             int finalScore = _scoreManager.CorrectAnswers;
-            resultsText.text = $"Preguntas respondidas: {finalScore}";
+            resultsText.text = Loc.Format("game.rankedResult", finalScore);
 
             var profile = AuthManager.Instance.CurrentProfile;
             if (profile == null) return;
@@ -286,7 +286,7 @@ namespace PeliCode.MiniGame
             {
                 Debug.LogError($"[MiniGameManager] No se pudo guardar el resultado: {e}");
                 if (resultsText != null)
-                    resultsText.text += "\n\nNo se pudo guardar el resultado (sin conexion).";
+                    resultsText.text += "\n\n" + Loc.Get("game.saveFailed");
             }
         }
 

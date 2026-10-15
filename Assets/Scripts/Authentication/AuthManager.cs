@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using PeliCode.Core;
 using PeliCode.Data;
 using PeliCode.CloudServices;
+using PeliCode.Localization;
 using Unity.Services.Authentication;
 using Unity.Services.Core;
 using UnityEngine;
@@ -44,9 +45,9 @@ namespace PeliCode.Authentication
             await ServicesInitializer.InitializeAsync();
 
             if (!PasswordValidator.IsValidEmail(email))
-                return (false, "Correo electronico invalido.");
+                return (false, Loc.Get("auth.invalidEmail"));
             if (string.IsNullOrEmpty(password))
-                return (false, "Escribe tu contrasena.");
+                return (false, Loc.Get("auth.enterPassword"));
 
             string ugsUsername = EmailToUgsUsername(email);
             SignOutOfService();
@@ -61,7 +62,7 @@ namespace PeliCode.Authentication
             }
             catch (RequestFailedException)
             {
-                return (false, "Correo o contrasena incorrectos.");
+                return (false, Loc.Get("auth.wrongCredentials"));
             }
 
             // Ya hay sesion en Unity: si algo falla de aqui en adelante se cierra, para que
@@ -95,7 +96,7 @@ namespace PeliCode.Authentication
                 SignOut();
                 return (false, IsConnectionError(e)
                     ? ConnectionMessage(e)
-                    : "No se pudo cargar tu perfil. Intentalo de nuevo.");
+                    : Loc.Get("auth.profileLoadFailed"));
             }
         }
 
@@ -123,7 +124,7 @@ namespace PeliCode.Authentication
             catch (AuthenticationException e) when (e.ErrorCode == AuthenticationErrorCodes.AccountAlreadyLinked ||
                                                     e.ErrorCode == CommonErrorCodes.Conflict)
             {
-                return (false, "Ese correo ya esta registrado.");
+                return (false, Loc.Get("auth.emailTaken"));
             }
             catch (RequestFailedException e) when (IsConnectionError(e))
             {
@@ -131,12 +132,12 @@ namespace PeliCode.Authentication
             }
             catch (AuthenticationException e) when (e.ErrorCode == AuthenticationErrorCodes.InvalidParameters)
             {
-                return (false, "Revisa el correo y la contrasena: el servidor no los acepto.");
+                return (false, Loc.Get("auth.serverRejected"));
             }
             catch (RequestFailedException e)
             {
                 Debug.LogError($"[AuthManager] Error creando la cuenta: {e}");
-                return (false, "No se pudo crear la cuenta. Intentalo de nuevo.");
+                return (false, Loc.Get("auth.signUpFailed"));
             }
 
             try
@@ -156,7 +157,7 @@ namespace PeliCode.Authentication
                 Debug.LogError($"[AuthManager] Cuenta creada sin perfil: {e}");
                 _pendingUserNames[ugsUsername] = userName;
                 SignOut();
-                return (false, "Tu cuenta se creo, pero no se pudo guardar el perfil. Inicia sesion para continuar.");
+                return (false, Loc.Get("auth.accountWithoutProfile"));
             }
         }
 
@@ -202,7 +203,7 @@ namespace PeliCode.Authentication
 
         private static string ConnectionMessage(RequestFailedException e) =>
             e.ErrorCode == CommonErrorCodes.TooManyRequests
-                ? "Demasiados intentos. Espera un momento y vuelve a intentarlo."
-                : "No hay conexion con el servidor. Revisa tu internet e intentalo de nuevo.";
+                ? Loc.Get("auth.tooManyRequests")
+                : Loc.Get("auth.noConnection");
     }
 }
