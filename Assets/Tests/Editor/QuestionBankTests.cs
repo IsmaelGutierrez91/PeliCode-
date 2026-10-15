@@ -29,11 +29,15 @@ namespace PeliCode.Tests
                     yield return (c, d);
         }
 
+        // Lo que pide cada partida normal (MiniGameManager): 5 en Facil, 10 en Medio y 15 en Dificil
         [Test]
-        public void EveryCategoryAndDifficultyHasAtLeastFiveQuestions()
+        public void EveryCategoryHasEnoughQuestionsForAFullGame()
         {
             foreach (var (c, d) in AllSets())
-                Assert.GreaterOrEqual(QuestionsRepository.LoadLocalBank(c, d).Count, 5, $"{c} {d}");
+            {
+                int needed = d == Difficulty.Facil ? 5 : d == Difficulty.Medio ? 10 : 15;
+                Assert.GreaterOrEqual(QuestionsRepository.LoadLocalBank(c, d).Count, needed, $"{c} {d}");
+            }
         }
 
         [Test]

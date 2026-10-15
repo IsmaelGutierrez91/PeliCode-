@@ -82,6 +82,89 @@
         "default:"
       ],
       "buggyIndex": 2
+    },
+    {
+      "id": "sw-medio-6",
+      "category": "SwitchEstados",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "char c = 'b';  ¿Qué muestra?  switch (c) { case 'a': Console.Write(1); break; case 'b': Console.Write(2); break; default: Console.Write(0); break; }",
+      "questionTextEn": "char c = 'b';  What does it print?  switch (c) { case 'a': Console.Write(1); break; case 'b': Console.Write(2); break; default: Console.Write(0); break; }",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "1",
+        "0",
+        "12"
+      ]
+    },
+    {
+      "id": "sw-medio-7",
+      "category": "SwitchEstados",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "En un switch, ¿qué hace  goto case 2;?",
+      "questionTextEn": "In a switch, what does  goto case 2;  do?",
+      "correctAnswer": "Salta al case 2",
+      "incorrectAnswerPool": [
+        "Repite el switch 2 veces",
+        "Termina el programa",
+        "Vuelve al case anterior"
+      ],
+      "correctAnswerEn": "Jumps to case 2",
+      "incorrectAnswerPoolEn": [
+        "Repeats the switch twice",
+        "Ends the program",
+        "Goes back to the previous case"
+      ]
+    },
+    {
+      "id": "sw-medio-8",
+      "category": "SwitchEstados",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el caso por defecto.",
+      "questionTextEn": "Fill in the default case.",
+      "codeTemplate": "switch (opcion)\n{\n    case 1: Jugar(); break;\n    ____: Console.WriteLine(\"Opción inválida\"); break;\n}",
+      "expectedAnswer": "default"
+    },
+    {
+      "id": "sw-medio-9",
+      "category": "SwitchEstados",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el switch que muestra el nombre del día 7.",
+      "questionTextEn": "Put in order the switch that prints the name of day 7.",
+      "codeBlocks": [
+        "switch (dia)",
+        "{",
+        "    case 7:",
+        "        Console.WriteLine(\"Domingo\");",
+        "        break;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "sw-medio-10",
+      "category": "SwitchEstados",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué switch no compila?",
+      "questionTextEn": "Which switch does not compile?",
+      "codeSnippetsOptions": [
+        "switch (n) { case 1: break; }",
+        "switch (n) { case 1: case 2: break; }",
+        "switch (n) { case 1: break; case 1: break; }",
+        "switch (n) { default: break; }"
+      ],
+      "buggyIndex": 2
     }
   ]
 }

@@ -74,6 +74,80 @@
         "x == 3 || x == 4"
       ],
       "buggyIndex": 2
+    },
+    {
+      "id": "cond-medio-6",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué operador significa \"o\" lógico en C#?",
+      "questionTextEn": "Which operator means logical \"or\" in C#?",
+      "correctAnswer": "||",
+      "incorrectAnswerPool": [
+        "&&",
+        "!",
+        "<>",
+        "%"
+      ]
+    },
+    {
+      "id": "cond-medio-7",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "int x = 0;  ¿Qué muestra?  if (x > 0) Console.WriteLine(\"positivo\"); else if (x < 0) Console.WriteLine(\"negativo\"); else Console.WriteLine(\"cero\");",
+      "questionTextEn": "int x = 0;  What does it print?  if (x > 0) Console.WriteLine(\"positivo\"); else if (x < 0) Console.WriteLine(\"negativo\"); else Console.WriteLine(\"cero\");",
+      "correctAnswer": "cero",
+      "incorrectAnswerPool": [
+        "positivo",
+        "negativo",
+        "positivocero"
+      ]
+    },
+    {
+      "id": "cond-medio-8",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para negar la condición.",
+      "questionTextEn": "Fill in the blank to negate the condition.",
+      "codeTemplate": "if (____terminado)\n{\n    Console.WriteLine(\"Sigue jugando\");\n}",
+      "expectedAnswer": "!"
+    },
+    {
+      "id": "cond-medio-9",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para mostrar el mayor de dos números.",
+      "questionTextEn": "Put the lines in order to print the larger of two numbers.",
+      "codeBlocks": [
+        "if (a > b)",
+        "    Console.WriteLine(a);",
+        "else",
+        "    Console.WriteLine(b);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "cond-medio-10",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "Debe mostrar \"Niño\" si la edad es menor a 12. ¿Qué bloque tiene un error de lógica?",
+      "questionTextEn": "It should print \"Niño\" (child) if the age is under 12. Which block has a logic error?",
+      "codeSnippetsOptions": [
+        "if (edad < 12) Console.WriteLine(\"Niño\");",
+        "if (edad <= 11) Console.WriteLine(\"Niño\");",
+        "if (edad > 12) Console.WriteLine(\"Niño\");",
+        "if (!(edad >= 12)) Console.WriteLine(\"Niño\");"
+      ],
+      "buggyIndex": 2
     }
   ]
 }

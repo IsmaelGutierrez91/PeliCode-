@@ -66,7 +66,7 @@ Todas llevan `id`, `type` y `questionText`. La versión en inglés es opcional: 
 
 ### Banco local
 
-`Assets/Resources/Questions/` trae un banco de ejemplo: 75 preguntas, 5 por cada categoría y dificultad, en los dos idiomas. Los archivos tienen el mismo formato que el valor en Cloud Save, así que sirven para copiarlos al Dashboard. El juego los usa cuando Cloud Save falla o no tiene preguntas para esa categoría y dificultad. Si Cloud Save tiene preguntas, esas tienen prioridad.
+`Assets/Resources/Questions/` trae un banco de ejemplo: 150 preguntas, las que pide cada partida (5 en Fácil, 10 en Normal y 15 en Difícil por categoría), en los dos idiomas. Las respuestas se comprobaron con el compilador de C#: las salidas, los fragmentos que no compilan y los que fallan al ejecutarse. Los archivos tienen el mismo formato que el valor en Cloud Save, así que sirven para copiarlos al Dashboard. El juego los usa cuando Cloud Save falla o no tiene preguntas para esa categoría y dificultad. Si Cloud Save tiene preguntas, esas tienen prioridad.
 
 Para probar el minijuego sin cuenta ni conexión, abre la escena **MiniGame** en el editor y dale Play: usa el banco local y no guarda nada.
 

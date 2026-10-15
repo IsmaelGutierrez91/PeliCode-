@@ -76,6 +76,162 @@
         "if (!(nota < 11)) Console.WriteLine(\"Aprobado\");"
       ],
       "buggyIndex": 2
+    },
+    {
+      "id": "cond-dificil-6",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  int a = 3;  if (a > 1) if (a > 5) Console.WriteLine(\"X\"); else Console.WriteLine(\"Y\");",
+      "questionTextEn": "What does it print?  int a = 3;  if (a > 1) if (a > 5) Console.WriteLine(\"X\"); else Console.WriteLine(\"Y\");",
+      "correctAnswer": "Y",
+      "incorrectAnswerPool": [
+        "X",
+        "XY",
+        "Nada"
+      ],
+      "correctAnswerEn": "Y",
+      "incorrectAnswerPoolEn": [
+        "X",
+        "XY",
+        "Nothing"
+      ]
+    },
+    {
+      "id": "cond-dificil-7",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuántas veces se llama a f() en  if (false && f())?",
+      "questionTextEn": "How many times is f() called in  if (false && f())?",
+      "correctAnswer": "0",
+      "incorrectAnswerPool": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "id": "cond-dificil-8",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r?  int n = 7;  string r = n % 2 == 0 ? \"par\" : n > 5 ? \"impar grande\" : \"impar\";",
+      "questionTextEn": "What is the value of r?  int n = 7;  string r = n % 2 == 0 ? \"par\" : n > 5 ? \"impar grande\" : \"impar\";",
+      "correctAnswer": "impar grande",
+      "incorrectAnswerPool": [
+        "par",
+        "impar",
+        "par grande"
+      ]
+    },
+    {
+      "id": "cond-dificil-9",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué condición equivale a !(a && b)?",
+      "questionTextEn": "Which condition is equivalent to !(a && b)?",
+      "correctAnswer": "!a || !b",
+      "incorrectAnswerPool": [
+        "!a && !b",
+        "a || b",
+        "!a && b",
+        "a && !b"
+      ]
+    },
+    {
+      "id": "cond-dificil-10",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  string s = null;  if (s != null && s.Length > 0) Console.WriteLine(\"lleno\"); else Console.WriteLine(\"vacío\");",
+      "questionTextEn": "What does it print?  string s = null;  if (s != null && s.Length > 0) Console.WriteLine(\"lleno\"); else Console.WriteLine(\"vacío\");",
+      "correctAnswer": "vacío",
+      "incorrectAnswerPool": [
+        "lleno",
+        "null",
+        "llenovacío"
+      ]
+    },
+    {
+      "id": "cond-dificil-11",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para que solo entre si se cumplen las dos condiciones.",
+      "questionTextEn": "Fill in the blank so it only enters when both conditions are true.",
+      "codeTemplate": "if (edad >= 18 ____ tieneEntrada)\n{\n    Console.WriteLine(\"Puede pasar\");\n}",
+      "expectedAnswer": "&&"
+    },
+    {
+      "id": "cond-dificil-12",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con el operador que usa el valor de la derecha si el de la izquierda es null.",
+      "questionTextEn": "Fill in the operator that uses the right value when the left one is null.",
+      "codeTemplate": "string nombre = apodo ____ \"Invitado\";",
+      "expectedAnswer": "??"
+    },
+    {
+      "id": "cond-dificil-13",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para validar una contraseña.",
+      "questionTextEn": "Put the lines in order to validate a password.",
+      "codeBlocks": [
+        "if (clave.Length < 8)",
+        "    Console.WriteLine(\"Muy corta\");",
+        "else if (!clave.Any(char.IsDigit))",
+        "    Console.WriteLine(\"Falta un número\");",
+        "else",
+        "    Console.WriteLine(\"Aceptada\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "cond-dificil-14",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para aplicar un descuento si la compra supera 100.",
+      "questionTextEn": "Put the lines in order to apply a discount when the purchase is over 100.",
+      "codeBlocks": [
+        "double total = 120;",
+        "if (total > 100)",
+        "    total *= 0.9;",
+        "Console.WriteLine(total);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "cond-dificil-15",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque no compila?",
+      "questionTextEn": "Which block does not compile?",
+      "codeSnippetsOptions": [
+        "if (x > 0) y = 1; else y = 2;",
+        "y = x > 0 ? 1 : 2;",
+        "if (x > 0) { y = 1; } else { y = 2; }",
+        "if x > 0 { y = 1; }"
+      ],
+      "buggyIndex": 3
     }
   ]
 }

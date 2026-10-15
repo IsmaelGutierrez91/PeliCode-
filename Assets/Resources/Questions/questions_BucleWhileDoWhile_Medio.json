@@ -81,6 +81,89 @@
         "while (x < 5) x++;"
       ],
       "buggyIndex": 2
+    },
+    {
+      "id": "loop-medio-6",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  int i = 0;  while (i < 10) i += 3;  Console.WriteLine(i);",
+      "questionTextEn": "What does it print?  int i = 0;  while (i < 10) i += 3;  Console.WriteLine(i);",
+      "correctAnswer": "12",
+      "incorrectAnswerPool": [
+        "9",
+        "10",
+        "13"
+      ]
+    },
+    {
+      "id": "loop-medio-7",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué hace continue dentro de un while?",
+      "questionTextEn": "What does continue do inside a while loop?",
+      "correctAnswer": "Salta a la siguiente vuelta",
+      "incorrectAnswerPool": [
+        "Termina el bucle",
+        "Repite la vuelta actual",
+        "Termina el programa"
+      ],
+      "correctAnswerEn": "Skips to the next iteration",
+      "incorrectAnswerPoolEn": [
+        "Ends the loop",
+        "Repeats the current iteration",
+        "Ends the program"
+      ]
+    },
+    {
+      "id": "loop-medio-8",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para salir del bucle cuando aparezca el número buscado.",
+      "questionTextEn": "Fill in the blank to leave the loop when the target number appears.",
+      "codeTemplate": "while (true)\n{\n    int n = Leer();\n    if (n == objetivo) ____;\n}",
+      "expectedAnswer": "break"
+    },
+    {
+      "id": "loop-medio-9",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para mostrar una cuenta regresiva desde 3.",
+      "questionTextEn": "Put the lines in order to print a countdown from 3.",
+      "codeBlocks": [
+        "int n = 3;",
+        "while (n > 0)",
+        "{",
+        "    Console.WriteLine(n);",
+        "    n--;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "loop-medio-10",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué bucle no se ejecuta ni una vez?",
+      "questionTextEn": "Which loop never runs at all?",
+      "codeSnippetsOptions": [
+        "int i = 0; while (i < 3) i++;",
+        "int i = 5; do { i++; } while (i < 3);",
+        "int i = 5; while (i < 3) i++;",
+        "int i = 0; do { i++; } while (i < 3);"
+      ],
+      "buggyIndex": 2
     }
   ]
 }

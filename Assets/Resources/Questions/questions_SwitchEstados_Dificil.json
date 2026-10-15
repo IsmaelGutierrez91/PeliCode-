@@ -77,6 +77,164 @@
         "x switch { 1 or 2 => \"a\", _ => \"b\" }"
       ],
       "buggyIndex": 2
+    },
+    {
+      "id": "sw-dificil-6",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  object o = 5;  string r = o switch { int i when i > 3 => \"grande\", int => \"chico\", _ => \"otro\" };",
+      "questionTextEn": "What does it print?  object o = 5;  string r = o switch { int i when i > 3 => \"grande\", int => \"chico\", _ => \"otro\" };",
+      "correctAnswer": "grande",
+      "incorrectAnswerPool": [
+        "chico",
+        "otro",
+        "5"
+      ]
+    },
+    {
+      "id": "sw-dificil-7",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r?  var p = (1, 0);  string r = p switch { (0, 0) => \"origen\", (_, 0) => \"eje X\", _ => \"otro\" };",
+      "questionTextEn": "What is the value of r?  var p = (1, 0);  string r = p switch { (0, 0) => \"origen\", (_, 0) => \"eje X\", _ => \"otro\" };",
+      "correctAnswer": "eje X",
+      "incorrectAnswerPool": [
+        "origen",
+        "otro",
+        "eje Y"
+      ]
+    },
+    {
+      "id": "sw-dificil-8",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "Un enemigo tiene los estados Patrulla, Persigue y Ataca. ¿Qué es lo más claro para decidir qué hace en cada uno?",
+      "questionTextEn": "An enemy has the states Patrol, Chase and Attack. What is the clearest way to decide what it does in each one?",
+      "correctAnswer": "Un switch sobre el estado",
+      "incorrectAnswerPool": [
+        "Un bucle while",
+        "Un array de strings",
+        "Muchos if anidados sin else"
+      ],
+      "correctAnswerEn": "A switch on the state",
+      "incorrectAnswerPoolEn": [
+        "A while loop",
+        "An array of strings",
+        "Many nested ifs with no else"
+      ]
+    },
+    {
+      "id": "sw-dificil-9",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué palabra agrega una condición extra a un case?",
+      "questionTextEn": "Which keyword adds an extra condition to a case?",
+      "correctAnswer": "when",
+      "incorrectAnswerPool": [
+        "if",
+        "where",
+        "then",
+        "with"
+      ]
+    },
+    {
+      "id": "sw-dificil-10",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r?  int x = 4;  string r = x switch { < 0 => \"neg\", 0 => \"cero\", > 0 and < 5 => \"poco\", _ => \"mucho\" };",
+      "questionTextEn": "What is the value of r?  int x = 4;  string r = x switch { < 0 => \"neg\", 0 => \"cero\", > 0 and < 5 => \"poco\", _ => \"mucho\" };",
+      "correctAnswer": "poco",
+      "incorrectAnswerPool": [
+        "neg",
+        "cero",
+        "mucho"
+      ]
+    },
+    {
+      "id": "sw-dificil-11",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa la condición extra del case.",
+      "questionTextEn": "Fill in the extra condition of the case.",
+      "codeTemplate": "switch (vida)\n{\n    case int v ____ v <= 0:\n        Morir();\n        break;\n}",
+      "expectedAnswer": "when"
+    },
+    {
+      "id": "sw-dificil-12",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el patrón para cualquier valor de 1 a 9.",
+      "questionTextEn": "Fill in the pattern for any value from 1 to 9.",
+      "codeTemplate": "string r = n switch\n{\n    >= 1 ____ <= 9 => \"un dígito\",\n    _ => \"otro\"\n};",
+      "expectedAnswer": "and"
+    },
+    {
+      "id": "sw-dificil-13",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena: al recibir daño, el jugador pasa de Normal a Herido.",
+      "questionTextEn": "Put in order: when taking damage, the player goes from Normal to Hurt (Herido).",
+      "codeBlocks": [
+        "switch (estado)",
+        "{",
+        "    case Estado.Normal when recibioDanio:",
+        "        estado = Estado.Herido;",
+        "        break;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "sw-dificil-14",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena la expresión switch que da la velocidad según el estado.",
+      "questionTextEn": "Put in order the switch expression that gives the speed for each state.",
+      "codeBlocks": [
+        "float velocidad = estado switch",
+        "{",
+        "    Estado.Corre => 5f,",
+        "    _ => 0f",
+        "};"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "sw-dificil-15",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué expresión switch tiene un brazo que nunca se alcanza (y no compila)?",
+      "questionTextEn": "Which switch expression has an arm that can never be reached (and does not compile)?",
+      "codeSnippetsOptions": [
+        "n switch { 1 => \"a\", _ => \"b\" }",
+        "n switch { > 0 => \"a\", _ => \"b\" }",
+        "n switch { _ => \"b\", 1 => \"a\" }",
+        "n switch { 1 or 2 => \"a\", _ => \"b\" }"
+      ],
+      "buggyIndex": 2
     }
   ]
 }

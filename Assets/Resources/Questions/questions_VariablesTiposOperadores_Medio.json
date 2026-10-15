@@ -74,6 +74,78 @@
         "int numero = \"5\";"
       ],
       "buggyIndex": 3
+    },
+    {
+      "id": "var-medio-6",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué tipo usarías para guardar un solo carácter, como 'A'?",
+      "questionTextEn": "Which type would you use to store a single character, like 'A'?",
+      "correctAnswer": "char",
+      "incorrectAnswerPool": [
+        "string",
+        "int",
+        "byte",
+        "bool"
+      ]
+    },
+    {
+      "id": "var-medio-7",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuánto vale r?  int r = 2 + 3 * 4;",
+      "questionTextEn": "What is the value of r?  int r = 2 + 3 * 4;",
+      "correctAnswer": "14",
+      "incorrectAnswerPool": [
+        "20",
+        "24",
+        "9"
+      ]
+    },
+    {
+      "id": "var-medio-8",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para sumar 5 a puntos con un operador compuesto.",
+      "questionTextEn": "Fill in a compound operator to add 5 to puntos.",
+      "codeTemplate": "int puntos = 10;\npuntos ____ 5;",
+      "expectedAnswer": "+="
+    },
+    {
+      "id": "var-medio-9",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para convertir un texto en número y duplicarlo.",
+      "questionTextEn": "Put the lines in order to turn a text into a number and double it.",
+      "codeBlocks": [
+        "string texto = \"21\";",
+        "int numero = int.Parse(texto);",
+        "Console.WriteLine(numero * 2);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-medio-10",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "codeSnippetsOptions": [
+        "const int MAX = 10;",
+        "int a = MAX;",
+        "MAX = 20;",
+        "int b = MAX + 1;"
+      ],
+      "buggyIndex": 2
     }
   ]
 }

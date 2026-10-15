@@ -72,6 +72,151 @@
         "Console.WriteLine((double)5 / 2);"
       ],
       "buggyIndex": 2
+    },
+    {
+      "id": "var-dificil-6",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(7 / 2 * 2.0);",
+      "questionTextEn": "What does it print?  Console.WriteLine(7 / 2 * 2.0);",
+      "correctAnswer": "6",
+      "incorrectAnswerPool": [
+        "7",
+        "6.5",
+        "7.0",
+        "3"
+      ]
+    },
+    {
+      "id": "var-dificil-7",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  int x = 10;  x += x++ * 2;  Console.WriteLine(x);",
+      "questionTextEn": "What does it print?  int x = 10;  x += x++ * 2;  Console.WriteLine(x);",
+      "correctAnswer": "30",
+      "incorrectAnswerPool": [
+        "31",
+        "32",
+        "20",
+        "21"
+      ]
+    },
+    {
+      "id": "var-dificil-8",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿De qué tipo es el resultado de 5 + 2.0?",
+      "questionTextEn": "What is the type of 5 + 2.0?",
+      "correctAnswer": "double",
+      "incorrectAnswerPool": [
+        "int",
+        "float",
+        "decimal",
+        "long"
+      ]
+    },
+    {
+      "id": "var-dificil-9",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(17 % 5 + 10 / 3);",
+      "questionTextEn": "What does it print?  Console.WriteLine(17 % 5 + 10 / 3);",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "6",
+        "5.33",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "id": "var-dificil-10",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuánto vale unchecked(int.MaxValue + 1)?",
+      "questionTextEn": "What is the value of unchecked(int.MaxValue + 1)?",
+      "correctAnswer": "int.MinValue",
+      "incorrectAnswerPool": [
+        "int.MaxValue",
+        "0",
+        "-1"
+      ]
+    },
+    {
+      "id": "var-dificil-11",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para que el resultado tenga decimales.",
+      "questionTextEn": "Fill in the blank so the result keeps the decimals.",
+      "codeTemplate": "int a = 7, b = 2;\ndouble r = (____)a / b;",
+      "expectedAnswer": "double"
+    },
+    {
+      "id": "var-dificil-12",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el operador que da el resto de una división.",
+      "questionTextEn": "Fill in the operator that gives the remainder of a division.",
+      "codeTemplate": "int resto = 17 ____ 5;  // 2",
+      "expectedAnswer": "%"
+    },
+    {
+      "id": "var-dificil-13",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para convertir grados Celsius a Fahrenheit.",
+      "questionTextEn": "Put the lines in order to convert Celsius to Fahrenheit.",
+      "codeBlocks": [
+        "double c = 25;",
+        "double f = c * 9 / 5 + 32;",
+        "Console.WriteLine(f);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-dificil-14",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para calcular el área de un círculo de radio 2.",
+      "questionTextEn": "Put the lines in order to compute the area of a circle with radius 2.",
+      "codeBlocks": [
+        "double radio = 2;",
+        "double area = Math.PI * radio * radio;",
+        "Console.WriteLine(area);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-dificil-15",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea pierde los decimales sin avisar? (error de lógica)",
+      "questionTextEn": "Which line silently loses the decimals? (logic error)",
+      "codeSnippetsOptions": [
+        "double d = 10 / 4.0;",
+        "double d = 10.0 / 4;",
+        "double d = 10 / 4;",
+        "double d = (double)10 / 4;"
+      ],
+      "buggyIndex": 2
     }
   ]
 }
