@@ -1,5 +1,6 @@
 using PeliCode.Core;
 using PeliCode.Data;
+using PeliCode.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,10 +26,13 @@ namespace PeliCode.Menu
         [SerializeField] private GameObject normalSelectedMark;
         [SerializeField] private GameObject hardSelectedMark;
 
-        private Difficulty _selectedDifficulty = Difficulty.Facil;
+        private Difficulty _selectedDifficulty;
 
         private void Awake()
         {
+            // Al volver de una partida se mantiene la dificultad con la que se jugo.
+            _selectedDifficulty = MiniGameSessionData.Difficulty;
+
             for (int i = 0; i < categoryButtons.Length; i++)
             {
                 var category = (MiniGameCategory)i;
@@ -48,6 +52,10 @@ namespace PeliCode.Menu
             if (easySelectedMark) easySelectedMark.SetActive(difficulty == Difficulty.Facil);
             if (normalSelectedMark) normalSelectedMark.SetActive(difficulty == Difficulty.Medio);
             if (hardSelectedMark) hardSelectedMark.SetActive(difficulty == Difficulty.Dificil);
+
+            UITheme.SetSelected(easyButton, difficulty == Difficulty.Facil);
+            UITheme.SetSelected(normalButton, difficulty == Difficulty.Medio);
+            UITheme.SetSelected(hardButton, difficulty == Difficulty.Dificil);
         }
 
         private void StartMiniGame(MiniGameCategory category)

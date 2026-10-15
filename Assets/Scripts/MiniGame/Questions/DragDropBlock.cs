@@ -1,3 +1,4 @@
+using PeliCode.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -21,7 +22,7 @@ namespace PeliCode.MiniGame.Questions
         public void Initialize(int blockIndex, string text, Transform originalParent)
         {
             BlockIndex = blockIndex;
-            label.text = text;
+            label.text = CodeText.Format(text);
             _originalParent = originalParent;
         }
 

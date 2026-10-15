@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using PeliCode.Data;
+using PeliCode.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -47,7 +48,7 @@ namespace PeliCode.MiniGame.Questions
                 if (!active) continue;
 
                 int index = i;
-                optionTexts[i].text = options[i];
+                optionTexts[i].text = CodeText.Plain(options[i]);
                 optionButtons[i].interactable = true;
                 optionButtons[i].onClick.AddListener(() =>
                 {

@@ -10,6 +10,8 @@ login.openCreateAccount	Crear cuenta	Create account
 register.userName	Nombre de usuario	Username
 register.userNamePlaceholder	Cómo te verán en el ranking	How others will see you in the ranking
 register.confirm	Crear cuenta	Create account
+login.signingIn	Entrando...	Signing in...
+register.creating	Creando tu cuenta...	Creating your account...
 
 # Mensajes de login y registro
 auth.invalidEmail	Correo electrónico inválido.	Invalid email address.
@@ -48,6 +50,9 @@ profile.currentStreak	Racha actual: {0}	Current streak: {0}
 profile.highestStreak	Mejor racha: {0}	Best streak: {0}
 profile.categoryStat	{0}: {1:0}%	{0}: {1:0}%
 ranked.play	Jugar	Play
+ranked.loading	Cargando ranking...	Loading ranking...
+ranked.empty	Todavía no hay puntajes. ¡Sé el primero!	No scores yet. Be the first!
+ranked.loadFailed	No se pudo cargar el ranking. Revisa tu conexión.	The ranking could not be loaded. Check your connection.
 options.music	Música	Music
 options.sfx	Efectos de sonido	Sound effects
 options.logOut	Cerrar sesión	Log out
@@ -63,6 +68,10 @@ game.submit	Responder	Submit
 game.check	Comprobar	Check
 game.answerPlaceholder	Escribe tu respuesta...	Type your answer...
 game.back	Volver al menú	Back to menu
+game.exit	Salir	Quit
+game.retry	Jugar de nuevo	Play again
+game.normalHeader	{0} · {1}	{0} · {1}
+game.newRecord	¡Nuevo récord!	New record!
 game.result	Resultado: {0}/{1} ({2:0}%)	Score: {0}/{1} ({2:0}%)
 game.rankedResult	Respuestas correctas: {0}	Correct answers: {0}
 game.loadFailed	No se pudieron cargar las preguntas. Revisa tu conexión e inténtalo de nuevo.	The questions could not be loaded. Check your connection and try again.

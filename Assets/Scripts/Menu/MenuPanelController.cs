@@ -1,4 +1,5 @@
 using DG.Tweening;
+using PeliCode.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -52,6 +53,7 @@ namespace PeliCode.Menu
             var pos = container.anchoredPosition;
             pos.y = TargetY(_currentIndex);
             container.anchoredPosition = pos;
+            HighlightNavigation();
         }
 
         private void OnDestroy()
@@ -64,11 +66,19 @@ namespace PeliCode.Menu
             if (index == _currentIndex || index < 0 || index >= container.childCount) return;
 
             _currentIndex = index;
+            HighlightNavigation();
 
             _activeTween?.Kill();
             _activeTween = container
                 .DOAnchorPosY(TargetY(index), tweenDuration)
                 .SetEase(tweenEase);
+        }
+
+        // El boton del panel visible queda marcado.
+        private void HighlightNavigation()
+        {
+            for (int i = 0; i < navigationButtons.Length; i++)
+                UITheme.SetSelected(navigationButtons[i], i == _currentIndex);
         }
 
         /// <summary>

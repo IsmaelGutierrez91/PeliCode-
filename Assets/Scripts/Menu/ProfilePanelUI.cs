@@ -1,6 +1,7 @@
 using PeliCode.Authentication;
 using PeliCode.Data;
 using PeliCode.Localization;
+using PeliCode.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -65,6 +66,9 @@ namespace PeliCode.Menu
         private void SelectDifficulty(Difficulty difficulty)
         {
             _selectedDifficulty = difficulty;
+            UITheme.SetSelected(easyButton, difficulty == Difficulty.Facil);
+            UITheme.SetSelected(normalButton, difficulty == Difficulty.Medio);
+            UITheme.SetSelected(hardButton, difficulty == Difficulty.Dificil);
             if (_profile == null) return;
 
             int i = 0;

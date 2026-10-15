@@ -46,7 +46,7 @@ namespace PeliCode.Authentication
         private async void OnConfirmClicked()
         {
             SetInteractable(false);
-            feedbackText.text = string.Empty;
+            feedbackText.text = Loc.Get("register.creating");
 
             var (success, error) = await AuthManager.Instance.SignUpAsync(
                 userNameInput.text.Trim(),

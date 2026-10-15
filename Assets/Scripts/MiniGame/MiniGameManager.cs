@@ -8,8 +8,10 @@ using PeliCode.Core;
 using PeliCode.Data;
 using PeliCode.Localization;
 using PeliCode.MiniGame.Questions;
+using PeliCode.UI;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 namespace PeliCode.MiniGame
@@ -33,6 +35,8 @@ namespace PeliCode.MiniGame
         [SerializeField] private TMP_Text progressText;   // "3 / 10"
         [SerializeField] private GameObject resultsPanel;
         [SerializeField] private TMP_Text resultsText;
+        [SerializeField] private Button exitButton;   // barra superior: abandonar la partida
+        [SerializeField] private Button retryButton;  // panel de resultados: jugar otra vez
 
         [Header("Vistas de pregunta (una activa a la vez)")]
         [SerializeField] private MultipleChoiceView multipleChoiceView;
@@ -49,12 +53,18 @@ namespace PeliCode.MiniGame
         private bool _isRanked;
         private bool _finished;
 
+        private void Awake()
+        {
+            if (exitButton != null) exitButton.onClick.AddListener(OnExitButtonPressed);
+            if (retryButton != null) retryButton.onClick.AddListener(OnRetryButtonPressed);
+        }
+
         private async void Start()
         {
             resultsPanel.SetActive(false);
             HideAllViews();
             _isRanked = MiniGameSessionData.IsRanked;
-            feedbackText.text = Loc.Get("game.loading");
+            SetFeedback(Loc.Get("game.loading"), UITheme.TextMuted);
             progressText.text = string.Empty;
 
             timer.OnTimerExpired += OnTimerExpired;
@@ -140,7 +150,7 @@ namespace PeliCode.MiniGame
                 }
             }
 
-            feedbackText.text = string.Empty;
+            SetFeedback(string.Empty, UITheme.Text);
             progressText.text = _isRanked
                 ? $"{_scoreManager.CorrectAnswers}"
                 : $"{_poolIndex + 1} / {_pool.Count}";
@@ -194,7 +204,8 @@ namespace PeliCode.MiniGame
             _activeView = null;
 
             _scoreManager.RegisterAnswer(correct);
-            feedbackText.text = Loc.Get(correct ? "game.correct" : timedOut ? "game.timeUp" : "game.incorrect");
+            SetFeedback(Loc.Get(correct ? "game.correct" : timedOut ? "game.timeUp" : "game.incorrect"),
+                correct ? UITheme.Success : UITheme.Error);
 
             _poolIndex++;
 
@@ -214,7 +225,8 @@ namespace PeliCode.MiniGame
         {
             _finished = true;
             timer.StopTimer();
-            feedbackText.text = string.Empty;
+            SetFeedback(string.Empty, UITheme.Text);
+            if (exitButton != null) exitButton.gameObject.SetActive(false);
             resultsPanel.SetActive(true);
             // No se guarda nada: una partida sin preguntas no cambia las estadisticas.
             resultsText.text = QuestionsRepository.Instance.LastLoadFailed
@@ -226,8 +238,13 @@ namespace PeliCode.MiniGame
         {
             if (!BeginEnd()) return;
 
-            resultsText.text = Loc.Format("game.result",
-                _scoreManager.CorrectAnswers, _scoreManager.TotalAnswered, _scoreManager.GetPercentage());
+            resultsText.text =
+                Loc.Format("game.normalHeader",
+                    Loc.Get("category." + MiniGameSessionData.Category),
+                    Loc.Get("difficulty." + MiniGameSessionData.Difficulty)) +
+                "\n\n" +
+                Loc.Format("game.result",
+                    _scoreManager.CorrectAnswers, _scoreManager.TotalAnswered, _scoreManager.GetPercentage());
 
             var profile = AuthManager.Instance.CurrentProfile;
             if (profile == null) return; // escena abierta sin iniciar sesion (solo en el editor)
@@ -255,6 +272,7 @@ namespace PeliCode.MiniGame
             if (finalScore > profile.rankedHighScore)
             {
                 profile.rankedHighScore = finalScore;
+                resultsText.text += "\n\n" + Loc.Get("game.newRecord");
             }
 
             await SaveAsync(async () =>
@@ -271,6 +289,7 @@ namespace PeliCode.MiniGame
             CancelInvoke();
             HideAllViews();
             timer.StopTimer();
+            if (exitButton != null) exitButton.gameObject.SetActive(false);
             resultsPanel.SetActive(true);
             return true;
         }
@@ -290,9 +309,22 @@ namespace PeliCode.MiniGame
             }
         }
 
+        private void SetFeedback(string text, Color color)
+        {
+            feedbackText.text = text;
+            feedbackText.color = color;
+        }
+
+        /// <summary>Volver al menu. A mitad de partida es abandonar: no se guarda nada.</summary>
         public void OnExitButtonPressed()
         {
             SceneLoader.LoadMenu();
+        }
+
+        /// <summary>Otra partida igual (misma categoria y dificultad, o ranked).</summary>
+        public void OnRetryButtonPressed()
+        {
+            SceneLoader.LoadMiniGame();
         }
     }
 }

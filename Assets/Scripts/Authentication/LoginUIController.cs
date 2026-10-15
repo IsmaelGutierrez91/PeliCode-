@@ -41,7 +41,7 @@ namespace PeliCode.Authentication
         private async void OnConfirmClicked()
         {
             SetInteractable(false);
-            feedbackText.text = string.Empty;
+            feedbackText.text = Loc.Get("login.signingIn");
 
             var (success, error) = await AuthManager.Instance.SignInAsync(
                 emailInput.text.Trim(), passwordInput.text);
