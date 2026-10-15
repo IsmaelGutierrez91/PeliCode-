@@ -1,3 +1,5 @@
+using System;
+using System.Threading.Tasks;
 using PeliCode.Core;
 using PeliCode.CloudServices;
 using UnityEngine;
@@ -15,6 +17,8 @@ namespace PeliCode.Menu
         [SerializeField] private RankedEntryUI entryPrefab;
         [SerializeField] private Button startRankedButton;
 
+        private bool _refreshing;
+
         private void Awake()
         {
             startRankedButton.onClick.AddListener(StartRanked);
@@ -25,17 +29,33 @@ namespace PeliCode.Menu
             await RefreshLeaderboard();
         }
 
-        public async System.Threading.Tasks.Task RefreshLeaderboard()
+        public async Task RefreshLeaderboard()
         {
-            foreach (Transform child in contentParent)
-                Destroy(child.gameObject);
-
-            var topScores = await LeaderboardManager.Instance.GetTopScoresAsync();
-
-            foreach (var entry in topScores)
+            if (_refreshing) return;
+            _refreshing = true;
+            try
             {
-                var row = Instantiate(entryPrefab, contentParent);
-                row.SetData(entry.playerName, entry.score);
+                foreach (Transform child in contentParent)
+                    Destroy(child.gameObject);
+
+                var topScores = await LeaderboardManager.Instance.GetTopScoresAsync();
+                if (this == null) return; // se cambio de escena mientras cargaba
+
+                foreach (var entry in topScores)
+                {
+                    var row = Instantiate(entryPrefab, contentParent);
+                    row.SetData(entry.playerName, entry.score);
+                }
+            }
+            catch (Exception e)
+            {
+                // Sin conexion o sin leaderboard creado en el Dashboard: la lista queda vacia,
+                // pero el resto del menu sigue funcionando.
+                Debug.LogError($"[RankedPanelUI] No se pudo cargar el ranking: {e.Message}");
+            }
+            finally
+            {
+                _refreshing = false;
             }
         }
 

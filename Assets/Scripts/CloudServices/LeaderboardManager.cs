@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using PeliCode.Authentication;
 using PeliCode.Core;
 using Unity.Services.Leaderboards;
 using Unity.Services.Leaderboards.Models;
@@ -39,7 +40,8 @@ namespace PeliCode.CloudServices
             {
                 result.Add(new LeaderboardEntryDto
                 {
-                    playerName = string.IsNullOrEmpty(entry.PlayerName) ? "Jugador" : entry.PlayerName,
+                    // Sin el sufijo "#1234" que Unity agrega al Player Name.
+                    playerName = PlayerNames.ToDisplayName(entry.PlayerName),
                     score = (int)entry.Score,
                     rank = entry.Rank + 1
                 });

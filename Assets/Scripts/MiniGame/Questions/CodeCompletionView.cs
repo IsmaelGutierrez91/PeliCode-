@@ -52,6 +52,9 @@ namespace PeliCode.MiniGame.Questions
 
         public void Clear()
         {
+            // Tambien al acabarse el tiempo: que no parezca que todavia se puede responder.
+            answerInput.interactable = false;
+            submitButton.interactable = false;
             submitButton.onClick.RemoveAllListeners();
         }
     }

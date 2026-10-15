@@ -25,6 +25,11 @@ namespace PeliCode.MiniGame.Questions
             questionText.text = question.questionText;
 
             int count = Mathf.Min(question.codeSnippetsOptions.Count, codeButtons.Length);
+            if (question.codeSnippetsOptions.Count > codeButtons.Length)
+            {
+                Debug.LogWarning($"[FindErrorView] La pregunta '{question.id}' trae " +
+                                 $"{question.codeSnippetsOptions.Count} bloques y solo hay {codeButtons.Length} botones.");
+            }
 
             for (int i = 0; i < codeButtons.Length; i++)
             {
@@ -53,6 +58,7 @@ namespace PeliCode.MiniGame.Questions
 
         public void Clear()
         {
+            SetAllInteractable(false);
             foreach (var button in codeButtons)
                 button.onClick.RemoveAllListeners();
         }

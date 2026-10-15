@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ using PeliCode.Data;
 using PeliCode.MiniGame.Questions;
 using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace PeliCode.MiniGame
 {
@@ -37,25 +39,38 @@ namespace PeliCode.MiniGame
         [SerializeField] private DragDropCodeView dragDropCodeView;
         [SerializeField] private FindErrorView findErrorView;
 
+        private const float NextQuestionDelay = 0.6f;
+
         private readonly ScoreManager _scoreManager = new ScoreManager();
         private List<QuestionData> _pool = new List<QuestionData>();
         private int _poolIndex;
         private IQuestionView _activeView;
         private bool _isRanked;
+        private bool _finished;
 
         private async void Start()
         {
             resultsPanel.SetActive(false);
+            HideAllViews();
             _isRanked = MiniGameSessionData.IsRanked;
+            feedbackText.text = "Cargando preguntas...";
+            progressText.text = string.Empty;
+
+            timer.OnTimerExpired += OnTimerExpired;
 
             _pool = _isRanked
                 ? await BuildRankedPoolAsync()
                 : await BuildNormalPoolAsync();
+            if (this == null) return; // se salio de la escena mientras cargaba
 
             _scoreManager.Reset();
             _poolIndex = 0;
 
-            timer.OnTimerExpired += OnTimerExpired;
+            if (_pool.Count == 0)
+            {
+                ShowNoQuestions();
+                return;
+            }
 
             ShowNextQuestion();
         }
@@ -78,14 +93,25 @@ namespace PeliCode.MiniGame
                 _ => easyQuestionCount
             };
 
-            return Shuffle(questions).Take(count).ToList();
+            return Shuffle(Playable(questions)).Take(count).ToList();
         }
 
         private async Task<List<QuestionData>> BuildRankedPoolAsync()
         {
             // Ranked combina las 5 categorias y las 3 dificultades.
             var all = await QuestionsRepository.Instance.GetAllQuestionsAsync();
-            return Shuffle(all);
+            return Shuffle(Playable(all));
+        }
+
+        private static List<QuestionData> Playable(List<QuestionData> questions)
+        {
+            var playable = new List<QuestionData>();
+            foreach (var q in questions)
+            {
+                if (QuestionChecks.IsPlayable(q, out string problem)) playable.Add(q);
+                else Debug.LogWarning($"[MiniGameManager] Se descarta la pregunta '{q?.id}': {problem}.");
+            }
+            return playable;
         }
 
         private static List<QuestionData> Shuffle(List<QuestionData> source)
@@ -95,6 +121,8 @@ namespace PeliCode.MiniGame
 
         private void ShowNextQuestion()
         {
+            if (_finished) return;
+
             // Ranked con pila "infinita": si se acaban las preguntas, se reinicia
             // el mazo (se vuelve a barajar) y se sigue jugando.
             if (_poolIndex >= _pool.Count)
@@ -113,7 +141,7 @@ namespace PeliCode.MiniGame
 
             feedbackText.text = string.Empty;
             progressText.text = _isRanked
-                ? $"{_scoreManager.TotalAnswered}"
+                ? $"{_scoreManager.CorrectAnswers}"
                 : $"{_poolIndex + 1} / {_pool.Count}";
 
             QuestionData question = _pool[_poolIndex];
@@ -158,22 +186,18 @@ namespace PeliCode.MiniGame
 
         private void HandleAnswer(bool correct)
         {
-            if (_activeView != null)
-            {
-                _activeView.OnAnswered -= OnQuestionAnswered;
-                _activeView.Clear();
-            }
+            if (_finished || _activeView == null) return;
+
+            _activeView.OnAnswered -= OnQuestionAnswered;
+            _activeView.Clear();
+            _activeView = null;
 
             _scoreManager.RegisterAnswer(correct);
             feedbackText.text = correct ? "Correcto!" : "Incorrecto";
 
             _poolIndex++;
 
-            if (correct)
-            {
-                Invoke(nameof(ShowNextQuestion), 0.6f);
-            }
-            else if (_isRanked)
+            if (!correct && _isRanked)
             {
                 // En ranked, un fallo termina la partida.
                 EndRankedGame();
@@ -181,20 +205,33 @@ namespace PeliCode.MiniGame
             else
             {
                 // En modo normal, un fallo solo pasa a la siguiente pregunta.
-                Invoke(nameof(ShowNextQuestion), 0.6f);
+                Invoke(nameof(ShowNextQuestion), NextQuestionDelay);
             }
+        }
+
+        private void ShowNoQuestions()
+        {
+            _finished = true;
+            timer.StopTimer();
+            feedbackText.text = string.Empty;
+            resultsPanel.SetActive(true);
+            // No se guarda nada: una partida sin preguntas no cambia las estadisticas.
+            resultsText.text = QuestionsRepository.Instance.LastLoadFailed
+                ? "No se pudieron cargar las preguntas. Revisa tu conexion e intentalo de nuevo."
+                : "Todavia no hay preguntas para este minijuego.";
         }
 
         private async void EndNormalGame()
         {
-            HideAllViews();
-            timer.StopTimer();
-            resultsPanel.SetActive(true);
+            if (!BeginEnd()) return;
+
             resultsText.text =
                 $"Resultado: {_scoreManager.CorrectAnswers}/{_scoreManager.TotalAnswered} " +
                 $"({_scoreManager.GetPercentage():0}%)";
 
             var profile = AuthManager.Instance.CurrentProfile;
+            if (profile == null) return; // escena abierta sin iniciar sesion (solo en el editor)
+
             CloudSaveManager.Instance.RegisterNormalGameResult(
                 profile,
                 MiniGameSessionData.Category,
@@ -202,26 +239,55 @@ namespace PeliCode.MiniGame
                 _scoreManager.CorrectAnswers,
                 _scoreManager.TotalAnswered);
 
-            await CloudSaveManager.Instance.SaveProfileAsync(profile);
+            await SaveAsync(() => CloudSaveManager.Instance.SaveProfileAsync(profile));
         }
 
         private async void EndRankedGame()
         {
-            HideAllViews();
-            timer.StopTimer();
-            resultsPanel.SetActive(true);
+            if (!BeginEnd()) return;
 
             int finalScore = _scoreManager.CorrectAnswers;
             resultsText.text = $"Preguntas respondidas: {finalScore}";
 
             var profile = AuthManager.Instance.CurrentProfile;
+            if (profile == null) return;
+
             if (finalScore > profile.rankedHighScore)
             {
                 profile.rankedHighScore = finalScore;
             }
 
-            await CloudSaveManager.Instance.SaveProfileAsync(profile);
-            await LeaderboardManager.Instance.SubmitScoreAsync(finalScore);
+            await SaveAsync(async () =>
+            {
+                await CloudSaveManager.Instance.SaveProfileAsync(profile);
+                await LeaderboardManager.Instance.SubmitScoreAsync(finalScore);
+            });
+        }
+
+        private bool BeginEnd()
+        {
+            if (_finished) return false;
+            _finished = true;
+            CancelInvoke();
+            HideAllViews();
+            timer.StopTimer();
+            resultsPanel.SetActive(true);
+            return true;
+        }
+
+        /// <summary>Guarda y, si falla, lo dice en el panel de resultados en vez de perderlo en silencio.</summary>
+        private async Task SaveAsync(Func<Task> save)
+        {
+            try
+            {
+                await save();
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"[MiniGameManager] No se pudo guardar el resultado: {e}");
+                if (resultsText != null)
+                    resultsText.text += "\n\nNo se pudo guardar el resultado (sin conexion).";
+            }
         }
 
         public void OnExitButtonPressed()

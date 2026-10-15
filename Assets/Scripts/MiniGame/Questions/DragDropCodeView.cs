@@ -29,6 +29,10 @@ namespace PeliCode.MiniGame.Questions
             _question = question;
             questionText.text = question.questionText;
 
+            // Se destruyen los bloques de la pregunta anterior esten donde esten
+            // (lista, casilla o a mitad de un arrastre), y despues las casillas.
+            foreach (var block in _blocks)
+                if (block != null) DestroyNow(block.gameObject);
             ClearChildren(blocksContainer);
             ClearChildren(slotsContainer);
             _slots.Clear();
@@ -67,20 +71,35 @@ namespace PeliCode.MiniGame.Questions
 
             bool correct = currentOrder.SequenceEqual(_question.correctOrder);
 
-            checkButton.interactable = false;
-            foreach (var block in _blocks) block.SetDraggable(false);
-
+            Lock();
             OnAnswered?.Invoke(correct);
         }
 
-        private void ClearChildren(Transform parent)
+        private void Lock()
+        {
+            checkButton.interactable = false;
+            foreach (var block in _blocks)
+                if (block != null) block.SetDraggable(false);
+        }
+
+        private static void ClearChildren(Transform parent)
         {
             for (int i = parent.childCount - 1; i >= 0; i--)
-                Destroy(parent.GetChild(i).gameObject);
+                DestroyNow(parent.GetChild(i).gameObject);
+        }
+
+        // Se saca del padre antes de destruir: Destroy es diferido y, mientras tanto,
+        // el GridLayoutGroup acomodaria los bloques viejos junto a los nuevos.
+        private static void DestroyNow(GameObject go)
+        {
+            go.transform.SetParent(null, false);
+            if (Application.isPlaying) Destroy(go);
+            else DestroyImmediate(go);
         }
 
         public void Clear()
         {
+            Lock();
             checkButton.onClick.RemoveAllListeners();
         }
     }

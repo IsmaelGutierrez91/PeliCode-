@@ -14,6 +14,9 @@ namespace PeliCode.MiniGame
         [SerializeField] private int secondsPerQuestion = 60;
         [SerializeField] private TMP_Text timerText;
 
+        // {0} = segundos restantes. Asi la etiqueta del texto no se pierde al actualizarlo.
+        [SerializeField] private string textFormat = "Time: {0}";
+
         public event Action OnTimerExpired;
 
         private float _remaining;
@@ -51,7 +54,7 @@ namespace PeliCode.MiniGame
         private void UpdateText()
         {
             if (timerText != null)
-                timerText.text = Mathf.CeilToInt(_remaining).ToString();
+                timerText.text = string.Format(textFormat, Mathf.CeilToInt(_remaining));
         }
     }
 }
