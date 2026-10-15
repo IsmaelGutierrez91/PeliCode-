@@ -1,0 +1,78 @@
+{
+  "questions": [
+    {
+      "id": "cond-facil-1",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué palabra clave indica qué hacer cuando el if no se cumple?",
+      "questionTextEn": "Which keyword says what to do when the if condition is false?",
+      "correctAnswer": "else",
+      "incorrectAnswerPool": [
+        "then",
+        "elif",
+        "case",
+        "otherwise"
+      ]
+    },
+    {
+      "id": "cond-facil-2",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  int n = 4;  if (n > 3) Console.WriteLine(\"A\"); else Console.WriteLine(\"B\");",
+      "questionTextEn": "What does it print?  int n = 4;  if (n > 3) Console.WriteLine(\"A\"); else Console.WriteLine(\"B\");",
+      "correctAnswer": "A",
+      "incorrectAnswerPool": [
+        "B",
+        "AB",
+        "BA"
+      ]
+    },
+    {
+      "id": "cond-facil-3",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa la condición: edad mayor o igual a 18.",
+      "questionTextEn": "Fill in the condition: age greater than or equal to 18.",
+      "codeTemplate": "if (edad ____ 18)\n{\n    Console.WriteLine(\"Adulto\");\n}",
+      "expectedAnswer": ">="
+    },
+    {
+      "id": "cond-facil-4",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el if completo.",
+      "questionTextEn": "Put the complete if statement in order.",
+      "codeBlocks": [
+        "if (llueve)",
+        "{",
+        "    Console.WriteLine(\"Paraguas\");",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "cond-facil-5",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "codeSnippetsOptions": [
+        "if (x > 0) { }",
+        "if (x == 0) { }",
+        "if (x = 0) { }",
+        "if (x != 0) { }"
+      ],
+      "buggyIndex": 2
+    }
+  ]
+}

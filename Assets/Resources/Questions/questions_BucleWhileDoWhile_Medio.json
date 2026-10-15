@@ -1,0 +1,86 @@
+{
+  "questions": [
+    {
+      "id": "loop-medio-1",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  int i = 10;  do { Console.Write(i); i++; } while (i < 5);",
+      "questionTextEn": "What does it print?  int i = 10;  do { Console.Write(i); i++; } while (i < 5);",
+      "correctAnswer": "10",
+      "incorrectAnswerPool": [
+        "Nada",
+        "1011",
+        "5"
+      ],
+      "correctAnswerEn": "10",
+      "incorrectAnswerPoolEn": [
+        "Nothing",
+        "1011",
+        "5"
+      ]
+    },
+    {
+      "id": "loop-medio-2",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué palabra clave sale de un bucle de inmediato?",
+      "questionTextEn": "Which keyword leaves a loop immediately?",
+      "correctAnswer": "break",
+      "incorrectAnswerPool": [
+        "continue",
+        "exit",
+        "stop",
+        "skip"
+      ]
+    },
+    {
+      "id": "loop-medio-3",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el do-while.",
+      "questionTextEn": "Fill in the do-while.",
+      "codeTemplate": "int n = 0;\ndo\n{\n    n++;\n} ____ (n < 3);",
+      "expectedAnswer": "while"
+    },
+    {
+      "id": "loop-medio-4",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para pedir un número hasta que sea positivo.",
+      "questionTextEn": "Put the lines in order to ask for a number until it is positive.",
+      "codeBlocks": [
+        "int n;",
+        "do",
+        "{",
+        "    n = int.Parse(Console.ReadLine());",
+        "} while (n <= 0);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "loop-medio-5",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque no compila?",
+      "questionTextEn": "Which block does not compile?",
+      "codeSnippetsOptions": [
+        "do { x++; } while (x < 5);",
+        "while (x < 5) { x++; }",
+        "do { x++; } while (x < 5)",
+        "while (x < 5) x++;"
+      ],
+      "buggyIndex": 2
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 using System;
 using PeliCode.Data;
+using PeliCode.Localization;
 using PeliCode.UI;
 using TMPro;
 using UnityEngine;
@@ -23,7 +24,7 @@ namespace PeliCode.MiniGame.Questions
 
         public void Setup(QuestionData question)
         {
-            questionText.text = question.questionText;
+            questionText.text = CodeText.Plain(question.QuestionTextFor(Loc.Current));
 
             int count = Mathf.Min(question.codeSnippetsOptions.Count, codeButtons.Length);
             if (question.codeSnippetsOptions.Count > codeButtons.Length)

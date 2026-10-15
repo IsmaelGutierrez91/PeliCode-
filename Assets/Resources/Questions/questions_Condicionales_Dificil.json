@@ -1,0 +1,81 @@
+{
+  "questions": [
+    {
+      "id": "cond-dificil-1",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  int x = 15;  string r = x > 10 ? (x > 20 ? \"A\" : \"B\") : \"C\";  Console.WriteLine(r);",
+      "questionTextEn": "What does it print?  int x = 15;  string r = x > 10 ? (x > 20 ? \"A\" : \"B\") : \"C\";  Console.WriteLine(r);",
+      "correctAnswer": "B",
+      "incorrectAnswerPool": [
+        "A",
+        "C",
+        "AB"
+      ]
+    },
+    {
+      "id": "cond-dificil-2",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene ok?  bool ok = !(3 > 2) || (5 == 5 && 2 > 4);",
+      "questionTextEn": "What is the value of ok?  bool ok = !(3 > 2) || (5 == 5 && 2 > 4);",
+      "correctAnswer": "false",
+      "incorrectAnswerPool": [
+        "true",
+        "null",
+        "0"
+      ]
+    },
+    {
+      "id": "cond-dificil-3",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el operador ternario.",
+      "questionTextEn": "Fill in the ternary operator.",
+      "codeTemplate": "string estado = edad >= 18 ____ \"adulto\" : \"menor\";",
+      "expectedAnswer": "?"
+    },
+    {
+      "id": "cond-dificil-4",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para clasificar una temperatura.",
+      "questionTextEn": "Put the lines in order to classify a temperature.",
+      "codeBlocks": [
+        "if (t < 10)",
+        "    Console.WriteLine(\"Frío\");",
+        "else if (t < 25)",
+        "    Console.WriteLine(\"Templado\");",
+        "else",
+        "    Console.WriteLine(\"Calor\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "cond-dificil-5",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "Con nota 11 o más debe mostrar \"Aprobado\". ¿Qué bloque tiene un error de lógica?",
+      "questionTextEn": "It should print \"Aprobado\" (passed) for a grade of 11 or more. Which block has a logic error?",
+      "codeSnippetsOptions": [
+        "if (nota >= 11) Console.WriteLine(\"Aprobado\");",
+        "if (nota > 10) Console.WriteLine(\"Aprobado\");",
+        "if (nota < 11) Console.WriteLine(\"Aprobado\");",
+        "if (!(nota < 11)) Console.WriteLine(\"Aprobado\");"
+      ],
+      "buggyIndex": 2
+    }
+  ]
+}

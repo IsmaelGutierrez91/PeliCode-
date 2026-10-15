@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using PeliCode.Data;
+using PeliCode.Localization;
 using PeliCode.UI;
 using TMPro;
 using UnityEngine;
@@ -30,9 +31,9 @@ namespace PeliCode.MiniGame.Questions
 
         public void Setup(QuestionData question)
         {
-            questionText.text = question.questionText;
+            questionText.text = CodeText.Plain(question.QuestionTextFor(Loc.Current));
 
-            List<string> options = MultipleChoiceOptions.Build(question, optionButtons.Length, Rng, out int correctIndex);
+            List<string> options = MultipleChoiceOptions.Build(question, optionButtons.Length, Rng, out int correctIndex, Loc.Current);
             if (options.Count < optionButtons.Length)
             {
                 Debug.LogWarning(

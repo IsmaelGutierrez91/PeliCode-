@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using PeliCode.Core;
 using PeliCode.Data;
+using Newtonsoft.Json;
 using Unity.Services.CloudSave;
 using UnityEngine;
 
@@ -20,13 +21,24 @@ namespace PeliCode.CloudServices
     ///
     /// Se cachea en memoria solo lo que se cargo bien: si la red falla, la proxima
     /// partida vuelve a intentarlo en vez de quedarse sin preguntas toda la sesion.
+    ///
+    /// Banco local: Resources/Questions/questions_{Categoria}_{Dificultad}.json, con el
+    /// mismo formato que el valor en Cloud Save. Se usa cuando Cloud Save falla o no tiene
+    /// preguntas para esa categoria y dificultad (y siempre que se abre el minijuego en el
+    /// editor sin iniciar sesion), asi el juego se puede probar sin el Dashboard.
+    /// Las preguntas de Cloud Save, si existen, tienen prioridad.
     /// </summary>
     public class QuestionsRepository : Singleton<QuestionsRepository>
     {
         private readonly Dictionary<string, List<QuestionData>> _cache = new Dictionary<string, List<QuestionData>>();
 
-        /// <summary>True si la ultima carga fallo por un error (red, servicio), no por falta de preguntas.</summary>
+        public const string LocalBankFolder = "Questions";
+
+        /// <summary>True si la ultima carga fallo por un error (red, servicio) y tampoco habia banco local.</summary>
         public bool LastLoadFailed { get; private set; }
+
+        public static string BuildCustomIdFor(MiniGameCategory category, Difficulty difficulty)
+            => BuildCustomId(category, difficulty);
 
         private static string BuildCustomId(MiniGameCategory category, Difficulty difficulty)
             => $"questions_{category}_{difficulty}";
@@ -70,6 +82,7 @@ namespace PeliCode.CloudServices
             if (_cache.TryGetValue(customId, out var cached))
                 return (cached, false);
 
+            bool cloudFailed = false;
             try
             {
                 var query = new HashSet<string> { customId };
@@ -80,13 +93,46 @@ namespace PeliCode.CloudServices
                     : new List<QuestionData>();
 
                 questions.RemoveAll(q => q == null);
-                _cache[customId] = questions;
-                return (questions, false);
+                if (questions.Count > 0)
+                {
+                    _cache[customId] = questions;
+                    return (questions, false);
+                }
             }
             catch (Exception e)
             {
-                Debug.LogError($"[QuestionsRepository] Error cargando '{customId}': {e.Message}");
-                return (new List<QuestionData>(), true);
+                Debug.LogWarning($"[QuestionsRepository] No se pudo leer '{customId}' de Cloud Save: {e.Message}");
+                cloudFailed = true;
+            }
+
+            var local = LoadLocalBank(category, difficulty);
+            if (local.Count > 0)
+            {
+                Debug.Log($"[QuestionsRepository] '{customId}': se usan las {local.Count} preguntas del banco local.");
+                if (!cloudFailed) _cache[customId] = local; // si fallo la red, la proxima vez se reintenta Cloud Save
+                return (local, false);
+            }
+            return (new List<QuestionData>(), cloudFailed);
+        }
+
+        /// <summary>Lee el banco local de una categoria y dificultad (vacio si no hay archivo).</summary>
+        public static List<QuestionData> LoadLocalBank(MiniGameCategory category, Difficulty difficulty)
+        {
+            string customId = BuildCustomId(category, difficulty);
+            var asset = Resources.Load<TextAsset>($"{LocalBankFolder}/{customId}");
+            if (asset == null) return new List<QuestionData>();
+
+            try
+            {
+                var set = JsonConvert.DeserializeObject<QuestionSet>(asset.text);
+                var questions = set?.questions ?? new List<QuestionData>();
+                questions.RemoveAll(q => q == null);
+                return questions;
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"[QuestionsRepository] El banco local '{customId}' no se pudo leer: {e.Message}");
+                return new List<QuestionData>();
             }
         }
 

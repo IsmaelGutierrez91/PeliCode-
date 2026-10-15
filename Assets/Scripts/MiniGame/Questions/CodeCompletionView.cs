@@ -1,5 +1,6 @@
 using System;
 using PeliCode.Data;
+using PeliCode.Localization;
 using PeliCode.UI;
 using TMPro;
 using UnityEngine;
@@ -26,7 +27,7 @@ namespace PeliCode.MiniGame.Questions
 
         public void Setup(QuestionData question)
         {
-            questionText.text = question.questionText;
+            questionText.text = CodeText.Plain(question.QuestionTextFor(Loc.Current));
             codeTemplateText.text = CodeText.Format(question.codeTemplate);
             _expectedAnswer = question.expectedAnswer?.Trim();
 

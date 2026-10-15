@@ -1,0 +1,79 @@
+{
+  "questions": [
+    {
+      "id": "cond-medio-1",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué operador significa \"y\" lógico en C#?",
+      "questionTextEn": "Which operator means logical \"and\" in C#?",
+      "correctAnswer": "&&",
+      "incorrectAnswerPool": [
+        "||",
+        "!",
+        "and",
+        "++"
+      ]
+    },
+    {
+      "id": "cond-medio-2",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "int a = 5, b = 10;  ¿Qué condición es verdadera?",
+      "questionTextEn": "int a = 5, b = 10;  Which condition is true?",
+      "correctAnswer": "a < b && b == 10",
+      "incorrectAnswerPool": [
+        "a > b",
+        "a == b || b < 5",
+        "!(a < b)",
+        "b % a != 0"
+      ]
+    },
+    {
+      "id": "cond-medio-3",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para revisar una segunda condición.",
+      "questionTextEn": "Fill in the blank to check a second condition.",
+      "codeTemplate": "if (nota >= 90)\n    Console.WriteLine(\"A\");\n____ (nota >= 70)\n    Console.WriteLine(\"B\");",
+      "expectedAnswer": "else if"
+    },
+    {
+      "id": "cond-medio-4",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para mostrar si un número es par o impar.",
+      "questionTextEn": "Put the lines in order to print whether a number is even or odd.",
+      "codeBlocks": [
+        "if (n % 2 == 0)",
+        "    Console.WriteLine(\"Par\");",
+        "else",
+        "    Console.WriteLine(\"Impar\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "cond-medio-5",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué condición nunca puede ser verdadera?",
+      "questionTextEn": "Which condition can never be true?",
+      "codeSnippetsOptions": [
+        "x > 5 && x < 10",
+        "x < 0 || x > 100",
+        "x > 10 && x < 5",
+        "x == 3 || x == 4"
+      ],
+      "buggyIndex": 2
+    }
+  ]
+}

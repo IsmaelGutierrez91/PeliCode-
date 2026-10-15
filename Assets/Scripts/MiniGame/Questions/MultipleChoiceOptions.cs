@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using PeliCode.Data;
+using PeliCode.Localization;
 
 namespace PeliCode.MiniGame.Questions
 {
@@ -16,11 +17,13 @@ namespace PeliCode.MiniGame.Questions
     /// </summary>
     public static class MultipleChoiceOptions
     {
-        public static List<string> Build(QuestionData question, int optionsCount, Random rng, out int correctIndex)
+        public static List<string> Build(QuestionData question, int optionsCount, Random rng, out int correctIndex,
+            Language language = Language.Spanish)
         {
-            string correct = question.correctAnswer?.Trim() ?? string.Empty;
+            var (correctAnswer, pool) = question.ChoicesFor(language);
+            string correct = correctAnswer?.Trim() ?? string.Empty;
 
-            List<string> incorrect = (question.incorrectAnswerPool ?? new List<string>())
+            List<string> incorrect = (pool ?? new List<string>())
                 .Where(a => !string.IsNullOrWhiteSpace(a))
                 .Select(a => a.Trim())
                 .Where(a => !string.Equals(a, correct, StringComparison.Ordinal))

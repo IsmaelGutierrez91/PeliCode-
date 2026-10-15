@@ -1,0 +1,82 @@
+{
+  "questions": [
+    {
+      "id": "sw-dificil-1",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  int x = 3;  string r = x switch { 1 => \"uno\", 3 => \"tres\", _ => \"otro\" };  Console.WriteLine(r);",
+      "questionTextEn": "What does it print?  int x = 3;  string r = x switch { 1 => \"uno\", 3 => \"tres\", _ => \"otro\" };  Console.WriteLine(r);",
+      "correctAnswer": "tres",
+      "incorrectAnswerPool": [
+        "uno",
+        "otro",
+        "3"
+      ]
+    },
+    {
+      "id": "sw-dificil-2",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "En una expresión switch, ¿qué símbolo representa \"cualquier otro valor\"?",
+      "questionTextEn": "In a switch expression, which symbol means \"any other value\"?",
+      "correctAnswer": "_",
+      "incorrectAnswerPool": [
+        "default",
+        "*",
+        "?",
+        "else"
+      ]
+    },
+    {
+      "id": "sw-dificil-3",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa la expresión switch.",
+      "questionTextEn": "Fill in the switch expression.",
+      "codeTemplate": "string tipo = n switch\n{\n    0 => \"cero\",\n    > 0 => \"positivo\",\n    ____ => \"negativo\"\n};",
+      "expectedAnswer": "_"
+    },
+    {
+      "id": "sw-dificil-4",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena: el personaje pasa de Quieto a Corriendo al presionar una tecla.",
+      "questionTextEn": "Put in order: the character goes from Idle (Quieto) to Running (Corriendo) when a key is pressed.",
+      "codeBlocks": [
+        "switch (estado)",
+        "{",
+        "    case Estado.Quieto:",
+        "        if (presiona) estado = Estado.Corriendo;",
+        "        break;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "sw-dificil-5",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué expresión switch no compila?",
+      "questionTextEn": "Which switch expression does not compile?",
+      "codeSnippetsOptions": [
+        "x switch { 1 => \"a\", _ => \"b\" }",
+        "x switch { > 5 => \"a\", _ => \"b\" }",
+        "x switch { 1 => \"a\"; _ => \"b\" }",
+        "x switch { 1 or 2 => \"a\", _ => \"b\" }"
+      ],
+      "buggyIndex": 2
+    }
+  ]
+}

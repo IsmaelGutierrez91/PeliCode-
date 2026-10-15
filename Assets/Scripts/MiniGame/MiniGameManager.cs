@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PeliCode.Audio;
 using PeliCode.Authentication;
 using PeliCode.CloudServices;
 using PeliCode.Core;
@@ -206,6 +207,12 @@ namespace PeliCode.MiniGame
             _scoreManager.RegisterAnswer(correct);
             SetFeedback(Loc.Get(correct ? "game.correct" : timedOut ? "game.timeUp" : "game.incorrect"),
                 correct ? UITheme.Success : UITheme.Error);
+            var audio = AudioManager.Instance;
+            if (audio != null)
+            {
+                if (correct) audio.PlayCorrect();
+                else audio.PlayWrong();
+            }
 
             _poolIndex++;
 

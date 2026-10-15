@@ -645,6 +645,7 @@ GameObject:
   - component: {fileID: 493209913}
   - component: {fileID: 493209912}
   - component: {fileID: 493209911}
+  - component: {fileID: 493209915}
   m_Layer: 5
   m_Name: Button_Language
   m_TagString: Untagged
@@ -767,6 +768,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493209909}
   m_CullTransparentMesh: 1
+--- !u!114 &493209915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493209909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cdaead28a32e4d469fe64c47436d690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Audio.UIClickSound
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,6 +1283,7 @@ GameObject:
   - component: {fileID: 848493347}
   - component: {fileID: 848493346}
   - component: {fileID: 848493352}
+  - component: {fileID: 848493353}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -1353,6 +1367,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32597c0fa109a8d42ae8bf4010895f50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PeliCode.CloudServices.QuestionsRepository
+--- !u!114 &848493353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848493345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 285cab261e80a9a48bca6a28c70a9f14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Audio.AudioManager
+  mixer: {fileID: 24100000, guid: fe6b25d29305cd0428f8a0f45f70b637, type: 2}
+  sfxGroup: {fileID: 8179027152369121927, guid: fe6b25d29305cd0428f8a0f45f70b637, type: 2}
 --- !u!1 &958135099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,6 +1754,7 @@ GameObject:
   - component: {fileID: 1070264801}
   - component: {fileID: 1070264800}
   - component: {fileID: 1070264799}
+  - component: {fileID: 1070264802}
   m_Layer: 5
   m_Name: Button_Confirm
   m_TagString: Untagged
@@ -1835,6 +1864,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070264797}
   m_CullTransparentMesh: 1
+--- !u!114 &1070264802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070264797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cdaead28a32e4d469fe64c47436d690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Audio.UIClickSound
 --- !u!1 &1084503486
 GameObject:
   m_ObjectHideFlags: 0
@@ -2229,6 +2270,7 @@ GameObject:
   - component: {fileID: 1203239885}
   - component: {fileID: 1203239884}
   - component: {fileID: 1203239883}
+  - component: {fileID: 1203239886}
   m_Layer: 5
   m_Name: Button_CloseCreateAccount
   m_TagString: Untagged
@@ -2338,6 +2380,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203239881}
   m_CullTransparentMesh: 1
+--- !u!114 &1203239886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203239881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cdaead28a32e4d469fe64c47436d690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Audio.UIClickSound
 --- !u!1 &1270861908
 GameObject:
   m_ObjectHideFlags: 0
@@ -3891,6 +3945,7 @@ GameObject:
   - component: {fileID: 1665816193}
   - component: {fileID: 1665816192}
   - component: {fileID: 1665816191}
+  - component: {fileID: 1665816194}
   m_Layer: 5
   m_Name: Button_Confirm
   m_TagString: Untagged
@@ -4000,6 +4055,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1665816189}
   m_CullTransparentMesh: 1
+--- !u!114 &1665816194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665816189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cdaead28a32e4d469fe64c47436d690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Audio.UIClickSound
 --- !u!1 &1724786052
 GameObject:
   m_ObjectHideFlags: 0
@@ -5822,6 +5889,7 @@ GameObject:
   - component: {fileID: 2137757509}
   - component: {fileID: 2137757508}
   - component: {fileID: 2137757507}
+  - component: {fileID: 2137757510}
   m_Layer: 5
   m_Name: Button_OpenCreateAccount
   m_TagString: Untagged
@@ -5931,6 +5999,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137757505}
   m_CullTransparentMesh: 1
+--- !u!114 &2137757510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137757505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cdaead28a32e4d469fe64c47436d690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeliCode.Audio.UIClickSound
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

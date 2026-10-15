@@ -1,0 +1,77 @@
+{
+  "questions": [
+    {
+      "id": "col-dificil-1",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  var l = new List<int> { 3, 1, 2 };  l.Sort();  l.RemoveAt(0);  Console.WriteLine(l[0]);",
+      "questionTextEn": "What does it print?  var l = new List<int> { 3, 1, 2 };  l.Sort();  l.RemoveAt(0);  Console.WriteLine(l[0]);",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "1",
+        "3",
+        "0"
+      ]
+    },
+    {
+      "id": "col-dificil-2",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "int[,] m = new int[2, 3];  ¿Cuántos elementos tiene m?",
+      "questionTextEn": "int[,] m = new int[2, 3];  How many elements does m have?",
+      "correctAnswer": "6",
+      "incorrectAnswerPool": [
+        "5",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "id": "col-dificil-3",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para obtener el último elemento de cualquier array.",
+      "questionTextEn": "Fill in the blank to get the last element of any array.",
+      "codeTemplate": "int ultimo = datos[datos.____ - 1];",
+      "expectedAnswer": "Length"
+    },
+    {
+      "id": "col-dificil-4",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "El array nums ya existe. Ordena para encontrar el mayor.",
+      "questionTextEn": "The array nums already exists. Put the lines in order to find the largest value.",
+      "codeBlocks": [
+        "int mayor = nums[0];",
+        "foreach (int n in nums)",
+        "    if (n > mayor) mayor = n;",
+        "Console.WriteLine(mayor);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "col-dificil-5",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "El array a tiene 5 elementos. ¿Qué bucle se sale del array?",
+      "questionTextEn": "The array a has 5 elements. Which loop goes past the end of the array?",
+      "codeSnippetsOptions": [
+        "for (int i = 0; i < a.Length; i++)",
+        "for (int i = 0; i <= a.Length - 1; i++)",
+        "for (int i = 0; i <= a.Length; i++)",
+        "for (int i = a.Length - 1; i >= 0; i--)"
+      ],
+      "buggyIndex": 2
+    }
+  ]
+}

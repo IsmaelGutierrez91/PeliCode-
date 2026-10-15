@@ -1,0 +1,77 @@
+{
+  "questions": [
+    {
+      "id": "col-medio-1",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "int[] a = { 4, 8, 15 };  ¿Qué muestra Console.WriteLine(a.Length);?",
+      "questionTextEn": "int[] a = { 4, 8, 15 };  What does Console.WriteLine(a.Length); print?",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "2",
+        "15",
+        "27"
+      ]
+    },
+    {
+      "id": "col-medio-2",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué propiedad da la cantidad de elementos de una List?",
+      "questionTextEn": "Which property gives the number of elements in a List?",
+      "correctAnswer": "Count",
+      "incorrectAnswerPool": [
+        "Length",
+        "Size",
+        "Total"
+      ]
+    },
+    {
+      "id": "col-medio-3",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para recorrer todos los elementos.",
+      "questionTextEn": "Fill in the blank to go through every element.",
+      "codeTemplate": "foreach (int n ____ numeros)\n{\n    Console.WriteLine(n);\n}",
+      "expectedAnswer": "in"
+    },
+    {
+      "id": "col-medio-4",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "El array nums ya existe. Ordena para sumar sus elementos.",
+      "questionTextEn": "The array nums already exists. Put the lines in order to add up its elements.",
+      "codeBlocks": [
+        "int suma = 0;",
+        "for (int i = 0; i < nums.Length; i++)",
+        "    suma += nums[i];",
+        "Console.WriteLine(suma);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "col-medio-5",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "codeSnippetsOptions": [
+        "List<int> l = new List<int>();",
+        "l.Add(5);",
+        "l.Add(\"cinco\");",
+        "int primero = l[0];"
+      ],
+      "buggyIndex": 2
+    }
+  ]
+}

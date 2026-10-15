@@ -1,0 +1,77 @@
+{
+  "questions": [
+    {
+      "id": "var-dificil-1",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuánto vale y?  int x = 5;  int y = x++ + ++x;",
+      "questionTextEn": "What is the value of y?  int x = 5;  int y = x++ + ++x;",
+      "correctAnswer": "12",
+      "incorrectAnswerPool": [
+        "11",
+        "10",
+        "13",
+        "14"
+      ]
+    },
+    {
+      "id": "var-dificil-2",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(1 + 2 + \"3\");",
+      "questionTextEn": "What does it print?  Console.WriteLine(1 + 2 + \"3\");",
+      "correctAnswer": "33",
+      "incorrectAnswerPool": [
+        "123",
+        "6",
+        "15",
+        "3 3"
+      ]
+    },
+    {
+      "id": "var-dificil-3",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa la conversión para guardar 9.7 en un entero.",
+      "questionTextEn": "Fill in the cast to store 9.7 in an integer.",
+      "codeTemplate": "double d = 9.7;\nint n = (____)d;",
+      "expectedAnswer": "int"
+    },
+    {
+      "id": "var-dificil-4",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para calcular el promedio con decimales.",
+      "questionTextEn": "Put the lines in order to compute the average with decimals.",
+      "codeBlocks": [
+        "int a = 7, b = 8;",
+        "double promedio = (a + b) / 2.0;",
+        "Console.WriteLine(promedio);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-dificil-5",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque NO muestra 2.5?",
+      "questionTextEn": "Which block does NOT print 2.5?",
+      "codeSnippetsOptions": [
+        "Console.WriteLine(5 / 2.0);",
+        "Console.WriteLine(5.0 / 2);",
+        "Console.WriteLine(5 / 2);",
+        "Console.WriteLine((double)5 / 2);"
+      ],
+      "buggyIndex": 2
+    }
+  ]
+}

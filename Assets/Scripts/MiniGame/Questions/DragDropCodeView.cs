@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using PeliCode.Data;
+using PeliCode.Localization;
+using PeliCode.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,7 +29,7 @@ namespace PeliCode.MiniGame.Questions
         public void Setup(QuestionData question)
         {
             _question = question;
-            questionText.text = question.questionText;
+            questionText.text = CodeText.Plain(question.QuestionTextFor(Loc.Current));
 
             // Se destruyen los bloques de la pregunta anterior esten donde esten
             // (lista, casilla o a mitad de un arrastre), y despues las casillas.

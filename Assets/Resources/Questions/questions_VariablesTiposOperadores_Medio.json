@@ -1,0 +1,79 @@
+{
+  "questions": [
+    {
+      "id": "var-medio-1",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(10 / 4);",
+      "questionTextEn": "What does it print?  Console.WriteLine(10 / 4);",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "2.5",
+        "3",
+        "2,5",
+        "0"
+      ]
+    },
+    {
+      "id": "var-medio-2",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué operador compara si dos valores son iguales?",
+      "questionTextEn": "Which operator checks whether two values are equal?",
+      "correctAnswer": "==",
+      "incorrectAnswerPool": [
+        "=",
+        "!=",
+        "===",
+        "=>"
+      ]
+    },
+    {
+      "id": "var-medio-3",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para que x valga 6.",
+      "questionTextEn": "Fill in the blank so that x becomes 6.",
+      "codeTemplate": "int x = 5;\nx____;",
+      "expectedAnswer": "++"
+    },
+    {
+      "id": "var-medio-4",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para intercambiar los valores de a y b.",
+      "questionTextEn": "Put the lines in order to swap the values of a and b.",
+      "codeBlocks": [
+        "int a = 1, b = 2;",
+        "int temp = a;",
+        "a = b;",
+        "b = temp;"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-medio-5",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "codeSnippetsOptions": [
+        "int total = 3 + 4;",
+        "double mitad = 7 / 2.0;",
+        "int resto = 7 % 2;",
+        "int numero = \"5\";"
+      ],
+      "buggyIndex": 3
+    }
+  ]
+}

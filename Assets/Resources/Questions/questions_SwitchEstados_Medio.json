@@ -1,0 +1,87 @@
+{
+  "questions": [
+    {
+      "id": "sw-medio-1",
+      "category": "SwitchEstados",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "int op = 2;  ¿Qué muestra?  switch (op) { case 1: Console.WriteLine(\"Uno\"); break; case 2: Console.WriteLine(\"Dos\"); break; default: Console.WriteLine(\"Otro\"); break; }",
+      "questionTextEn": "int op = 2;  What does it print?  switch (op) { case 1: Console.WriteLine(\"Uno\"); break; case 2: Console.WriteLine(\"Dos\"); break; default: Console.WriteLine(\"Otro\"); break; }",
+      "correctAnswer": "Dos",
+      "incorrectAnswerPool": [
+        "Uno",
+        "Otro",
+        "UnoDos"
+      ]
+    },
+    {
+      "id": "sw-medio-2",
+      "category": "SwitchEstados",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué pasa si ningún case coincide y no hay default?",
+      "questionTextEn": "What happens if no case matches and there is no default?",
+      "correctAnswer": "No se ejecuta nada del switch",
+      "incorrectAnswerPool": [
+        "Error de compilación",
+        "Se ejecuta el primer case",
+        "Se lanza una excepción"
+      ],
+      "correctAnswerEn": "Nothing in the switch runs",
+      "incorrectAnswerPoolEn": [
+        "Compile error",
+        "The first case runs",
+        "An exception is thrown"
+      ]
+    },
+    {
+      "id": "sw-medio-3",
+      "category": "SwitchEstados",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para agrupar dos casos.",
+      "questionTextEn": "Fill in the blank to group two cases.",
+      "codeTemplate": "switch (letra)\n{\n    case 'a':\n    ____ 'e':\n        Console.WriteLine(\"Vocal\");\n        break;\n}",
+      "expectedAnswer": "case"
+    },
+    {
+      "id": "sw-medio-4",
+      "category": "SwitchEstados",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el cambio de estado del semáforo: de verde a amarillo.",
+      "questionTextEn": "Put the traffic light state change in order: from green to yellow.",
+      "codeBlocks": [
+        "switch (estado)",
+        "{",
+        "    case Estado.Verde:",
+        "        estado = Estado.Amarillo;",
+        "        break;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "sw-medio-5",
+      "category": "SwitchEstados",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "La variable es un string. ¿Qué case no compila?",
+      "questionTextEn": "The variable is a string. Which case does not compile?",
+      "codeSnippetsOptions": [
+        "case \"a\":",
+        "case \"b\":",
+        "case 5:",
+        "default:"
+      ],
+      "buggyIndex": 2
+    }
+  ]
+}
