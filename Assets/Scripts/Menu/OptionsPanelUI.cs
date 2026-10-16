@@ -1,5 +1,8 @@
+using System;
+using System.Collections.Generic;
 using PeliCode.Authentication;
 using PeliCode.Core;
+using PeliCode.Localization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -15,7 +18,7 @@ namespace PeliCode.Menu
     public class OptionsPanelUI : MonoBehaviour
     {
         [Header("Idioma")]
-        [SerializeField] private TMP_Dropdown languageDropdown; // 0 = Espanol, 1 = Ingles
+        [SerializeField] private TMP_Dropdown languageDropdown; // en el orden de PeliCode.Localization.Language
 
         [Header("Audio")]
         [SerializeField] private AudioMixer audioMixer;
@@ -28,10 +31,16 @@ namespace PeliCode.Menu
 
         private const string MUSIC_PARAM = "MusicVolume";
         private const string SFX_PARAM = "SFXVolume";
-        private const string LANGUAGE_PREF_KEY = "pelicode_language";
 
         private void Awake()
         {
+            // Cada idioma escrito en si mismo, para reconocerlo aunque no se entienda el actual.
+            var languages = new List<string>();
+            foreach (Language language in Enum.GetValues(typeof(Language)))
+                languages.Add(Loc.NativeName(language));
+            languageDropdown.ClearOptions();
+            languageDropdown.AddOptions(languages);
+
             languageDropdown.onValueChanged.AddListener(OnLanguageChanged);
             musicVolumeSlider.onValueChanged.AddListener(OnMusicVolumeChanged);
             sfxVolumeSlider.onValueChanged.AddListener(OnSfxVolumeChanged);
@@ -42,16 +51,14 @@ namespace PeliCode.Menu
 
         private void OnEnable()
         {
-            languageDropdown.SetValueWithoutNotify(PlayerPrefs.GetInt(LANGUAGE_PREF_KEY, 0));
+            languageDropdown.SetValueWithoutNotify((int)Loc.Current);
             musicVolumeSlider.SetValueWithoutNotify(PlayerPrefs.GetFloat("music_volume", 0.8f));
             sfxVolumeSlider.SetValueWithoutNotify(PlayerPrefs.GetFloat("sfx_volume", 0.8f));
         }
 
         private void OnLanguageChanged(int index)
         {
-            PlayerPrefs.SetInt(LANGUAGE_PREF_KEY, index);
-            // Integrar aqui con Unity Localization Package si se agrega mas adelante:
-            // LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
+            Loc.SetLanguage((Language)index);
         }
 
         private void OnMusicVolumeChanged(float linearValue)

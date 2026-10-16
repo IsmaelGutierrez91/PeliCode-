@@ -1,0 +1,239 @@
+{
+  "questions": [
+    {
+      "id": "loop-dificil-1",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  int i = 0, s = 0;  while (i < 5) { i++; if (i == 3) continue; s += i; }  Console.WriteLine(s);",
+      "questionTextEn": "What does it print?  int i = 0, s = 0;  while (i < 5) { i++; if (i == 3) continue; s += i; }  Console.WriteLine(s);",
+      "correctAnswer": "12",
+      "incorrectAnswerPool": [
+        "15",
+        "10",
+        "9"
+      ]
+    },
+    {
+      "id": "loop-dificil-2",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuántas veces se ejecuta el cuerpo?  int i = 1;  while (i < 100) { i *= 3; }",
+      "questionTextEn": "How many times does the body run?  int i = 1;  while (i < 100) { i *= 3; }",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "4",
+        "6",
+        "33",
+        "99"
+      ]
+    },
+    {
+      "id": "loop-dificil-3",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para saltar los números pares.",
+      "questionTextEn": "Fill in the blank to skip the even numbers.",
+      "codeTemplate": "int i = 0;\nwhile (i < 10)\n{\n    i++;\n    if (i % 2 == 0) ____;\n    Console.WriteLine(i);\n}",
+      "expectedAnswer": "continue"
+    },
+    {
+      "id": "loop-dificil-4",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para sumar los dígitos de un número (123 da 6).",
+      "questionTextEn": "Put the lines in order to add up the digits of a number (123 gives 6).",
+      "codeBlocks": [
+        "int n = 123, suma = 0;",
+        "while (n > 0)",
+        "{",
+        "    suma += n % 10;",
+        "    n /= 10;",
+        "}",
+        "Console.WriteLine(suma);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "loop-dificil-5",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque NO muestra los números del 5 al 1?",
+      "questionTextEn": "Which block does NOT print the numbers from 5 down to 1?",
+      "codeSnippetsOptions": [
+        "int i = 5; while (i >= 1) { Console.WriteLine(i); i--; }",
+        "int i = 5; do { Console.WriteLine(i); i--; } while (i > 0);",
+        "int i = 5; while (i > 1) { Console.WriteLine(i); i--; }",
+        "int i = 6; while (--i > 0) Console.WriteLine(i);"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "loop-dificil-6",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  int n = 1;  while (n < 50) n *= 2;  Console.WriteLine(n);",
+      "questionTextEn": "What does it print?  int n = 1;  while (n < 50) n *= 2;  Console.WriteLine(n);",
+      "correctAnswer": "64",
+      "incorrectAnswerPool": [
+        "32",
+        "50",
+        "128"
+      ]
+    },
+    {
+      "id": "loop-dificil-7",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  int i = 0;  do { i += 2; } while (i < 7);  Console.WriteLine(i);",
+      "questionTextEn": "What does it print?  int i = 0;  do { i += 2; } while (i < 7);  Console.WriteLine(i);",
+      "correctAnswer": "8",
+      "incorrectAnswerPool": [
+        "6",
+        "7",
+        "10"
+      ]
+    },
+    {
+      "id": "loop-dificil-8",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  int a = 0, b = 10;  while (a < b) { a++; b--; }  Console.WriteLine(a);",
+      "questionTextEn": "What does it print?  int a = 0, b = 10;  while (a < b) { a++; b--; }  Console.WriteLine(a);",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "4",
+        "6",
+        "10"
+      ]
+    },
+    {
+      "id": "loop-dificil-9",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuántas veces se muestra \"x\"?  int i = 10;  while (i > 0) { Console.Write(\"x\"); i -= 3; }",
+      "questionTextEn": "How many times is \"x\" printed?  int i = 10;  while (i > 0) { Console.Write(\"x\"); i -= 3; }",
+      "correctAnswer": "4",
+      "incorrectAnswerPool": [
+        "3",
+        "5",
+        "10"
+      ]
+    },
+    {
+      "id": "loop-dificil-10",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué bucle conviene para un menú que se muestra hasta que el usuario elige \"Salir\"?",
+      "questionTextEn": "Which loop fits a menu that is shown until the user picks \"Exit\"?",
+      "correctAnswer": "do-while",
+      "incorrectAnswerPool": [
+        "for",
+        "foreach",
+        "if"
+      ]
+    },
+    {
+      "id": "loop-dificil-11",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para repetir mientras el número no sea 0.",
+      "questionTextEn": "Fill in the blank to repeat while the number is not 0.",
+      "codeTemplate": "int n;\ndo\n{\n    n = int.Parse(Console.ReadLine());\n} while (n ____ 0);",
+      "expectedAnswer": "!="
+    },
+    {
+      "id": "loop-dificil-12",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para contar los dígitos de n.",
+      "questionTextEn": "Fill in the blank to count the digits of n.",
+      "codeTemplate": "int digitos = 0;\nwhile (n > 0)\n{\n    n ____ 10;\n    digitos++;\n}",
+      "expectedAnswer": "/="
+    },
+    {
+      "id": "loop-dificil-13",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para calcular el factorial de 5.",
+      "questionTextEn": "Put the lines in order to compute the factorial of 5.",
+      "codeBlocks": [
+        "int n = 5, fact = 1;",
+        "while (n > 1)",
+        "{",
+        "    fact *= n;",
+        "    n--;",
+        "}",
+        "Console.WriteLine(fact);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "loop-dificil-14",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para pedir intentos hasta adivinar el número secreto.",
+      "questionTextEn": "Put the lines in order to ask for guesses until the secret number is found.",
+      "codeBlocks": [
+        "int intento;",
+        "do",
+        "{",
+        "    intento = int.Parse(Console.ReadLine());",
+        "} while (intento != secreto);",
+        "Console.WriteLine(\"¡Acertaste!\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "loop-dificil-15",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque NO suma los números del 1 al 10 (55)?",
+      "questionTextEn": "Which block does NOT add up the numbers from 1 to 10 (55)?",
+      "codeSnippetsOptions": [
+        "int i = 1, s = 0; while (i <= 10) { s += i; i++; }",
+        "int i = 0, s = 0; while (i < 10) { i++; s += i; }",
+        "int i = 1, s = 0; while (i < 10) { s += i; i++; }",
+        "int i = 10, s = 0; do { s += i; i--; } while (i > 0);"
+      ],
+      "buggyIndex": 2
+    }
+  ]
+}

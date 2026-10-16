@@ -1,4 +1,5 @@
 using PeliCode.Core;
+using PeliCode.Localization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -29,12 +30,18 @@ namespace PeliCode.Authentication
         {
             confirmButton.onClick.AddListener(OnConfirmClicked);
             openCreateAccountButton.onClick.AddListener(() => createAccountPanel.SetActive(true));
+            feedbackText.text = string.Empty;
         }
+
+        // Un mensaje en el idioma anterior confunde mas de lo que ayuda: se borra.
+        private void OnEnable() => Loc.LanguageChanged += ClearFeedback;
+        private void OnDisable() => Loc.LanguageChanged -= ClearFeedback;
+        private void ClearFeedback() => feedbackText.text = string.Empty;
 
         private async void OnConfirmClicked()
         {
             SetInteractable(false);
-            feedbackText.text = string.Empty;
+            feedbackText.text = Loc.Get("login.signingIn");
 
             var (success, error) = await AuthManager.Instance.SignInAsync(
                 emailInput.text.Trim(), passwordInput.text);

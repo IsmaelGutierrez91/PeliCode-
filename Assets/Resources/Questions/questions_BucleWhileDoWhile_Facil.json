@@ -1,0 +1,82 @@
+{
+  "questions": [
+    {
+      "id": "loop-facil-1",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué bucle se ejecuta al menos una vez, aunque la condición sea falsa?",
+      "questionTextEn": "Which loop runs at least once, even if the condition is false?",
+      "correctAnswer": "do-while",
+      "incorrectAnswerPool": [
+        "while",
+        "if",
+        "switch"
+      ]
+    },
+    {
+      "id": "loop-facil-2",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuántas veces se muestra \"Hola\"?  int i = 0;  while (i < 3) { Console.WriteLine(\"Hola\"); i++; }",
+      "questionTextEn": "How many times is \"Hola\" printed?  int i = 0;  while (i < 3) { Console.WriteLine(\"Hola\"); i++; }",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "2",
+        "4",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "id": "loop-facil-3",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el bucle.",
+      "questionTextEn": "Fill in the loop.",
+      "codeTemplate": "int i = 0;\n____ (i < 5)\n{\n    i++;\n}",
+      "expectedAnswer": "while"
+    },
+    {
+      "id": "loop-facil-4",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para contar del 1 al 3.",
+      "questionTextEn": "Put the lines in order to count from 1 to 3.",
+      "codeBlocks": [
+        "int i = 1;",
+        "while (i <= 3)",
+        "{",
+        "    Console.WriteLine(i);",
+        "    i++;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "loop-facil-5",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bucle nunca termina?",
+      "questionTextEn": "Which loop never ends?",
+      "codeSnippetsOptions": [
+        "int i = 0; while (i < 3) { i++; }",
+        "int i = 3; while (i > 0) { i--; }",
+        "int i = 0; while (i < 3) { i--; }",
+        "int i = 0; while (i < 3) { i += 2; }"
+      ],
+      "buggyIndex": 2
+    }
+  ]
+}

@@ -13,10 +13,25 @@ namespace PeliCode.MiniGame.Questions
 
             if (droppedBlock == null) return;
 
-            if (transform.childCount > 0)
+            // Si la casilla ya tenia un bloque: se intercambia con la casilla de donde vino
+            // el bloque soltado, o vuelve a la lista de bloques. Antes quedaba suelto en el
+            // canvas y seguia en pantalla en la pregunta siguiente.
+            var existing = transform.childCount > 0
+                ? transform.GetChild(0).GetComponent<DragDropBlock>()
+                : null;
+
+            if (existing != null && existing != droppedBlock)
             {
-                var existing = transform.GetChild(0);
-                existing.SetParent(transform.root);
+                Transform previous = droppedBlock.ParentBeforeDrag;
+                if (previous != null && previous != transform && previous.GetComponent<DragDropSlot>() != null)
+                {
+                    existing.transform.SetParent(previous, false);
+                    existing.transform.localPosition = Vector3.zero;
+                }
+                else
+                {
+                    existing.ReturnToOrigin();
+                }
             }
 
             droppedBlock.transform.SetParent(transform);

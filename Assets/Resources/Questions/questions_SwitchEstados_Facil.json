@@ -1,0 +1,83 @@
+{
+  "questions": [
+    {
+      "id": "sw-facil-1",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué palabra clave termina cada case en C#?",
+      "questionTextEn": "Which keyword ends each case in C#?",
+      "correctAnswer": "break",
+      "incorrectAnswerPool": [
+        "stop",
+        "end",
+        "exit",
+        "next"
+      ]
+    },
+    {
+      "id": "sw-facil-2",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué palabra clave se usa para el caso por defecto?",
+      "questionTextEn": "Which keyword is used for the default case?",
+      "correctAnswer": "default",
+      "incorrectAnswerPool": [
+        "else",
+        "otherwise",
+        "none",
+        "any"
+      ]
+    },
+    {
+      "id": "sw-facil-3",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el switch.",
+      "questionTextEn": "Fill in the switch.",
+      "codeTemplate": "switch (dia)\n{\n    ____ 1:\n        Console.WriteLine(\"Lunes\");\n        break;\n}",
+      "expectedAnswer": "case"
+    },
+    {
+      "id": "sw-facil-4",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el switch.",
+      "questionTextEn": "Put the switch in order.",
+      "codeBlocks": [
+        "switch (color)",
+        "{",
+        "    case \"rojo\":",
+        "        Console.WriteLine(\"Alto\");",
+        "        break;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "sw-facil-5",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué case no compila en C#?",
+      "questionTextEn": "Which case does not compile in C#?",
+      "codeSnippetsOptions": [
+        "case 1: x = 1; break;",
+        "case 2: x = 2; break;",
+        "case 3: x = 3;",
+        "default: x = 0; break;"
+      ],
+      "buggyIndex": 2
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "id": "col-facil-1",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿En qué índice está el primer elemento de un array?",
+      "questionTextEn": "At which index is the first element of an array?",
+      "correctAnswer": "0",
+      "incorrectAnswerPool": [
+        "1",
+        "-1",
+        "Length"
+      ]
+    },
+    {
+      "id": "col-facil-2",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué método agrega un elemento a una List<int>?",
+      "questionTextEn": "Which method adds an element to a List<int>?",
+      "correctAnswer": "Add",
+      "incorrectAnswerPool": [
+        "Push",
+        "Append",
+        "Put",
+        "Join"
+      ]
+    },
+    {
+      "id": "col-facil-3",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para crear un array de 5 enteros.",
+      "questionTextEn": "Fill in the blank to create an array of 5 integers.",
+      "codeTemplate": "int[] numeros = new int[____];",
+      "expectedAnswer": "5"
+    },
+    {
+      "id": "col-facil-4",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para crear una lista y mostrar cuántos elementos tiene.",
+      "questionTextEn": "Put the lines in order to create a list and print how many elements it has.",
+      "codeBlocks": [
+        "List<string> frutas = new List<string>();",
+        "frutas.Add(\"mango\");",
+        "Console.WriteLine(frutas.Count);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "col-facil-5",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "int[] a = new int[3];  ¿Qué línea falla al ejecutar?",
+      "questionTextEn": "int[] a = new int[3];  Which line fails at run time?",
+      "codeSnippetsOptions": [
+        "a[0] = 1;",
+        "a[1] = 2;",
+        "a[2] = 3;",
+        "a[3] = 4;"
+      ],
+      "buggyIndex": 3
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 using DG.Tweening;
+using PeliCode.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +13,8 @@ namespace PeliCode.Menu
     /// Setup en el editor:
     ///  - "Container" (RectTransform) contiene los 5 paneles hijos, apilados
     ///    verticalmente en orden Anuncios(0) -> Usuario(1) -> Minijuegos(2) ->
-    ///    Ranked(3) -> Opciones(4), separados por "panelSpacing" pixeles.
+    ///    Ranked(3) -> Opciones(4). La separacion entre paneles puede ser cualquiera:
+    ///    el desplazamiento se calcula con la posicion real de cada panel.
     ///  - Los 5 botones de navegacion llaman a GoToPanel(indice).
     ///  - El panel por defecto al iniciar la escena es Minijuegos (indice 2).
     /// </summary>
@@ -20,13 +22,11 @@ namespace PeliCode.Menu
     {
         [Header("Referencias")]
         [SerializeField] private RectTransform container;
-        [SerializeField] private RectTransform viewport; // area visible (alto de referencia)
 
         [Header("Botones de navegacion (orden: Anuncios, Usuario, Minijuegos, Ranked, Opciones)")]
         [SerializeField] private Button[] navigationButtons = new Button[5];
 
         [Header("Configuracion de desplazamiento")]
-        [SerializeField] private float panelSpacing = 50f;
         [SerializeField] private float tweenDuration = 0.45f;
         [SerializeField] private Ease tweenEase = Ease.InOutCubic;
 
@@ -35,6 +35,8 @@ namespace PeliCode.Menu
 
         private int _currentIndex;
         private Tween _activeTween;
+
+        public int CurrentIndex => _currentIndex;
 
         private void Awake()
         {
@@ -47,33 +49,49 @@ namespace PeliCode.Menu
 
         private void Start()
         {
-            _currentIndex = defaultPanelIndex;
-            SnapToPanelImmediate(_currentIndex);
+            _currentIndex = Mathf.Clamp(defaultPanelIndex, 0, container.childCount - 1);
+            var pos = container.anchoredPosition;
+            pos.y = TargetY(_currentIndex);
+            container.anchoredPosition = pos;
+            HighlightNavigation();
+        }
+
+        private void OnDestroy()
+        {
+            _activeTween?.Kill();
         }
 
         public void GoToPanel(int index)
         {
-            if (index == _currentIndex) return;
+            if (index == _currentIndex || index < 0 || index >= container.childCount) return;
 
             _currentIndex = index;
-            // Layout vertical: el panel 0 (Anuncios) esta en Y=0 dentro de Container,
-            // y los siguientes van hacia abajo. En Unity UI, "abajo" es Y negativo,
-            // por lo que Container se mueve hacia arriba (Y positivo) para traer al
-            // frente un panel que esta mas abajo en el layout.
-            float targetY = index * (viewport.rect.height + panelSpacing);
+            HighlightNavigation();
 
             _activeTween?.Kill();
             _activeTween = container
-                .DOAnchorPosY(targetY, tweenDuration)
+                .DOAnchorPosY(TargetY(index), tweenDuration)
                 .SetEase(tweenEase);
         }
 
-        private void SnapToPanelImmediate(int index)
+        // El boton del panel visible queda marcado.
+        private void HighlightNavigation()
         {
-            float targetY = index * (viewport.rect.height + panelSpacing);
-            var pos = container.anchoredPosition;
-            pos.y = targetY;
-            container.anchoredPosition = pos;
+            for (int i = 0; i < navigationButtons.Length; i++)
+                UITheme.SetSelected(navigationButtons[i], i == _currentIndex);
+        }
+
+        /// <summary>
+        /// Posicion de Container que deja el panel "index" donde esta el panel 0 al inicio.
+        /// Antes se calculaba como index * (alto de pantalla + separacion), que no coincidia
+        /// con la separacion real de los paneles en la escena (1100) y los dejaba corridos
+        /// hasta 120 px; ademas cambiaba con la relacion de aspecto de la pantalla.
+        /// </summary>
+        private float TargetY(int index)
+        {
+            var first = (RectTransform)container.GetChild(0);
+            var target = (RectTransform)container.GetChild(index);
+            return first.anchoredPosition.y - target.anchoredPosition.y;
         }
     }
 }

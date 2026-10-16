@@ -1,5 +1,7 @@
 using System;
 using PeliCode.Data;
+using PeliCode.Localization;
+using PeliCode.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,9 +24,14 @@ namespace PeliCode.MiniGame.Questions
 
         public void Setup(QuestionData question)
         {
-            questionText.text = question.questionText;
+            questionText.text = CodeText.Plain(question.QuestionTextFor(Loc.Current));
 
             int count = Mathf.Min(question.codeSnippetsOptions.Count, codeButtons.Length);
+            if (question.codeSnippetsOptions.Count > codeButtons.Length)
+            {
+                Debug.LogWarning($"[FindErrorView] La pregunta '{question.id}' trae " +
+                                 $"{question.codeSnippetsOptions.Count} bloques y solo hay {codeButtons.Length} botones.");
+            }
 
             for (int i = 0; i < codeButtons.Length; i++)
             {
@@ -33,7 +40,7 @@ namespace PeliCode.MiniGame.Questions
                 if (!active) continue;
 
                 int index = i;
-                codeButtonTexts[i].text = question.codeSnippetsOptions[i];
+                codeButtonTexts[i].text = CodeText.Format(question.codeSnippetsOptions[i]);
                 codeButtons[i].interactable = true;
 
                 codeButtons[i].onClick.RemoveAllListeners();
@@ -53,6 +60,7 @@ namespace PeliCode.MiniGame.Questions
 
         public void Clear()
         {
+            SetAllInteractable(false);
             foreach (var button in codeButtons)
                 button.onClick.RemoveAllListeners();
         }

@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using PeliCode.Authentication;
 using PeliCode.Core;
+using PeliCode.Localization;
+using Unity.Services.Authentication;
 using Unity.Services.Leaderboards;
 using Unity.Services.Leaderboards.Models;
 
@@ -34,14 +37,19 @@ namespace PeliCode.CloudServices
             LeaderboardScoresPage page = await LeaderboardsService.Instance
                 .GetScoresAsync(LEADERBOARD_ID, options);
 
+            string myId = AuthenticationService.Instance.IsSignedIn ? AuthenticationService.Instance.PlayerId : null;
             var result = new List<LeaderboardEntryDto>();
             foreach (var entry in page.Results)
             {
                 result.Add(new LeaderboardEntryDto
                 {
-                    playerName = string.IsNullOrEmpty(entry.PlayerName) ? "Jugador" : entry.PlayerName,
+                    // Sin el sufijo "#1234" que Unity agrega al Player Name.
+                    playerName = PlayerNames.ToDisplayName(entry.PlayerName) is { Length: > 0 } name
+                        ? name
+                        : Loc.Get("common.player"),
                     score = (int)entry.Score,
-                    rank = entry.Rank + 1
+                    rank = entry.Rank + 1,
+                    isMe = myId != null && entry.PlayerId == myId
                 });
             }
             return result;
@@ -53,5 +61,6 @@ namespace PeliCode.CloudServices
         public string playerName;
         public int score;
         public int rank;
+        public bool isMe;
     }
 }

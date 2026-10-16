@@ -1,5 +1,7 @@
 using System;
 using PeliCode.Data;
+using PeliCode.Localization;
+using PeliCode.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -25,8 +27,8 @@ namespace PeliCode.MiniGame.Questions
 
         public void Setup(QuestionData question)
         {
-            questionText.text = question.questionText;
-            codeTemplateText.text = question.codeTemplate;
+            questionText.text = CodeText.Plain(question.QuestionTextFor(Loc.Current));
+            codeTemplateText.text = CodeText.Format(question.codeTemplate);
             _expectedAnswer = question.expectedAnswer?.Trim();
 
             answerInput.text = string.Empty;
@@ -35,10 +37,23 @@ namespace PeliCode.MiniGame.Questions
 
             submitButton.onClick.RemoveAllListeners();
             submitButton.onClick.AddListener(SubmitAnswer);
+
+            // Enter responde; el campo queda listo para escribir sin hacer clic.
+            answerInput.onSubmit.RemoveAllListeners();
+            answerInput.onSubmit.AddListener(_ =>
+            {
+                if (submitButton.interactable && !string.IsNullOrWhiteSpace(answerInput.text)) SubmitAnswer();
+            });
+            if (Application.isPlaying)
+            {
+                answerInput.Select();
+                answerInput.ActivateInputField();
+            }
         }
 
         private void SubmitAnswer()
         {
+            if (!submitButton.interactable) return;
             answerInput.interactable = false;
             submitButton.interactable = false;
 
@@ -52,6 +67,9 @@ namespace PeliCode.MiniGame.Questions
 
         public void Clear()
         {
+            // Tambien al acabarse el tiempo: que no parezca que todavia se puede responder.
+            answerInput.interactable = false;
+            submitButton.interactable = false;
             submitButton.onClick.RemoveAllListeners();
         }
     }

@@ -1,0 +1,77 @@
+{
+  "questions": [
+    {
+      "id": "var-facil-1",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué tipo de dato usarías para guardar la edad de una persona?",
+      "questionTextEn": "Which data type would you use to store a person's age?",
+      "correctAnswer": "int",
+      "incorrectAnswerPool": [
+        "string",
+        "bool",
+        "char",
+        "void"
+      ]
+    },
+    {
+      "id": "var-facil-2",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuánto vale x?  int x = 7 % 3;",
+      "questionTextEn": "What is the value of x?  int x = 7 % 3;",
+      "correctAnswer": "1",
+      "incorrectAnswerPool": [
+        "2",
+        "3",
+        "0",
+        "2.33"
+      ]
+    },
+    {
+      "id": "var-facil-3",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para declarar un texto.",
+      "questionTextEn": "Fill in the blank to declare a text.",
+      "codeTemplate": "____ nombre = \"Ana\";",
+      "expectedAnswer": "string"
+    },
+    {
+      "id": "var-facil-4",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para mostrar el resultado de la suma.",
+      "questionTextEn": "Put the lines in order to print the result of the sum.",
+      "codeBlocks": [
+        "int a = 2;",
+        "int suma = a + 3;",
+        "Console.WriteLine(suma);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-facil-5",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea tiene un error?",
+      "questionTextEn": "Which line has an error?",
+      "codeSnippetsOptions": [
+        "int edad = 20;",
+        "bool activo = true;",
+        "string saludo = 'hola';",
+        "double precio = 9.99;"
+      ],
+      "buggyIndex": 2
+    }
+  ]
+}

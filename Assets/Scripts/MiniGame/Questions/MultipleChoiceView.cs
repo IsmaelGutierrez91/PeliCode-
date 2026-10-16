@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using PeliCode.Data;
+using PeliCode.Localization;
+using PeliCode.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,16 +13,14 @@ namespace PeliCode.MiniGame.Questions
     /// Vista de "Seleccionar la respuesta correcta": 1 pregunta + 4 botones.
     ///
     /// Cada QuestionData de este tipo trae 1 respuesta correcta y un pool de
-    /// (idealmente) 8 respuestas incorrectas. En cada Setup():
-    ///   1. Se eligen 3 incorrectas al azar del pool (sin repetir entre si).
-    ///   2. Se arma la lista de 4 opciones (correcta + 3 incorrectas).
-    ///   3. Se baraja el ORDEN de esas 4 opciones antes de asignarlas a los botones,
-    ///      para que la respuesta correcta no quede siempre en la misma posicion.
+    /// (idealmente) 8 respuestas incorrectas. MultipleChoiceOptions arma las 4
+    /// opciones (correcta + 3 incorrectas al azar) y baraja su orden. Si el pool
+    /// trae menos de 3 incorrectas, los botones que sobran se ocultan.
     /// </summary>
     public class MultipleChoiceView : MonoBehaviour, IQuestionView
     {
         private const int OPTIONS_COUNT = 4;
-        private const int INCORRECT_OPTIONS_NEEDED = OPTIONS_COUNT - 1; // 3
+        private static readonly System.Random Rng = new System.Random();
 
         [SerializeField] private TMP_Text questionText;
         [SerializeField] private Button[] optionButtons = new Button[OPTIONS_COUNT];
@@ -32,59 +31,32 @@ namespace PeliCode.MiniGame.Questions
 
         public void Setup(QuestionData question)
         {
-            questionText.text = question.questionText;
+            questionText.text = CodeText.Plain(question.QuestionTextFor(Loc.Current));
 
-            List<string> shuffledOptions = BuildShuffledOptions(question, out int correctIndex);
+            List<string> options = MultipleChoiceOptions.Build(question, optionButtons.Length, Rng, out int correctIndex, Loc.Current);
+            if (options.Count < optionButtons.Length)
+            {
+                Debug.LogWarning(
+                    $"[MultipleChoiceView] La pregunta '{question.id}' trae {options.Count - 1} respuestas " +
+                    $"incorrectas validas; se muestran {options.Count} opciones.");
+            }
 
             for (int i = 0; i < optionButtons.Length; i++)
             {
-                int index = i;
-                optionTexts[i].text = shuffledOptions[i];
-                optionButtons[i].interactable = true;
-
+                bool active = i < options.Count;
+                optionButtons[i].gameObject.SetActive(active);
                 optionButtons[i].onClick.RemoveAllListeners();
+                if (!active) continue;
+
+                int index = i;
+                optionTexts[i].text = CodeText.Plain(options[i]);
+                optionButtons[i].interactable = true;
                 optionButtons[i].onClick.AddListener(() =>
                 {
                     SetAllInteractable(false);
                     OnAnswered?.Invoke(index == correctIndex);
                 });
             }
-        }
-
-        /// <summary>
-        /// Arma las 4 opciones a mostrar (1 correcta + 3 incorrectas elegidas al
-        /// azar del pool, sin repetir), y devuelve el orden ya barajado junto con
-        /// el indice donde quedo la respuesta correcta.
-        /// </summary>
-        private List<string> BuildShuffledOptions(QuestionData question, out int correctIndex)
-        {
-            var pool = question.incorrectAnswerPool ?? new List<string>();
-
-            if (pool.Count < INCORRECT_OPTIONS_NEEDED)
-            {
-                Debug.LogWarning(
-                    $"[MultipleChoiceView] La pregunta '{question.id}' tiene menos de " +
-                    $"{INCORRECT_OPTIONS_NEEDED} respuestas incorrectas en su pool ({pool.Count}). " +
-                    "Se usaran todas las disponibles.");
-            }
-
-            // Selecciona hasta 3 indices unicos al azar del pool (Fisher-Yates parcial).
-            List<string> chosenIncorrect = pool
-                .OrderBy(_ => UnityEngine.Random.value)
-                .Take(INCORRECT_OPTIONS_NEEDED)
-                .ToList();
-
-            var options = new List<string> { question.correctAnswer };
-            options.AddRange(chosenIncorrect);
-
-            // Baraja el ORDEN final para que la correcta no quede siempre primera.
-            var shuffled = options
-                .Select((text, originalIndex) => new { text, originalIndex })
-                .OrderBy(_ => UnityEngine.Random.value)
-                .ToList();
-
-            correctIndex = shuffled.FindIndex(o => o.originalIndex == 0);
-            return shuffled.Select(o => o.text).ToList();
         }
 
         private void SetAllInteractable(bool value)
@@ -95,6 +67,7 @@ namespace PeliCode.MiniGame.Questions
 
         public void Clear()
         {
+            SetAllInteractable(false);
             foreach (var button in optionButtons)
                 button.onClick.RemoveAllListeners();
         }

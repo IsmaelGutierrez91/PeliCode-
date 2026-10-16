@@ -1,4 +1,5 @@
 using System;
+using PeliCode.Localization;
 using TMPro;
 using UnityEngine;
 
@@ -18,6 +19,12 @@ namespace PeliCode.MiniGame
 
         private float _remaining;
         private bool _running;
+
+        private void Awake()
+        {
+            _remaining = secondsPerQuestion;
+            UpdateText();
+        }
 
         public void ResetTimer()
         {
@@ -51,7 +58,8 @@ namespace PeliCode.MiniGame
         private void UpdateText()
         {
             if (timerText != null)
-                timerText.text = Mathf.CeilToInt(_remaining).ToString();
+                // "Tiempo: 42": la etiqueta no se pierde al actualizar el numero.
+                timerText.text = Loc.Format("game.time", Mathf.CeilToInt(_remaining));
         }
     }
 }
