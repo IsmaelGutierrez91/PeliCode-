@@ -63,6 +63,7 @@ game.loading	Cargando preguntas...	Loading questions...
 game.correct	¡Correcto!	Correct!
 game.incorrect	Incorrecto	Wrong
 game.timeUp	Se acabó el tiempo	Time's up
+game.answerWas	La respuesta era: {0}	The answer was: {0}
 game.submit	Responder	Submit
 game.check	Comprobar	Check
 game.dragSource	Ordena estos bloques...	Arrange these blocks...

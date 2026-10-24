@@ -37,6 +37,10 @@ namespace PeliCode.Data
         public string questionText;
         public string questionTextEn;
 
+        // Opcional: por que la respuesta es esa. Se muestra cuando el jugador se equivoca.
+        public string explanation;
+        public string explanationEn;
+
         // --- SeleccionMultiple ---
         // En vez de guardar las 4 opciones fijas, se guarda 1 respuesta correcta y
         // un pool de 8 respuestas incorrectas (todas distintas entre si). En cada
@@ -50,7 +54,7 @@ namespace PeliCode.Data
 
         // --- CompletarCodigo ---
         public string codeTemplate;          // codigo con "____" donde el usuario escribe
-        public string expectedAnswer;        // respuesta esperada (trim + case-insensitive opcional)
+        public string expectedAnswer;        // respuesta esperada; distingue mayusculas como C# (ver AnswerMatcher)
 
         // --- ArrastrarCodigo ---
         public List<string> codeBlocks;      // bloques desordenados a mostrar
@@ -62,6 +66,9 @@ namespace PeliCode.Data
 
         public string QuestionTextFor(Language language) =>
             language == Language.English && !string.IsNullOrWhiteSpace(questionTextEn) ? questionTextEn : questionText;
+
+        public string ExplanationFor(Language language) =>
+            language == Language.English && !string.IsNullOrWhiteSpace(explanationEn) ? explanationEn : explanation;
 
         /// <summary>
         /// Respuesta correcta y pool de incorrectas en el idioma pedido. Van juntas: si la

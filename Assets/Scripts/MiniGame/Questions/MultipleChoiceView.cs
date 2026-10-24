@@ -29,8 +29,12 @@ namespace PeliCode.MiniGame.Questions
         public event Action<bool> OnAnswered;
         public GameObject GameObject => gameObject;
 
+        private int _correctIndex = -1;
+        private int _chosenIndex = -1;
+
         public void Setup(QuestionData question)
         {
+            _chosenIndex = -1;
             questionText.text = CodeText.Plain(question.QuestionTextFor(Loc.Current));
 
             List<string> options = MultipleChoiceOptions.Build(question, optionButtons.Length, Rng, out int correctIndex, Loc.Current);
@@ -40,6 +44,7 @@ namespace PeliCode.MiniGame.Questions
                     $"[MultipleChoiceView] La pregunta '{question.id}' trae {options.Count - 1} respuestas " +
                     $"incorrectas validas; se muestran {options.Count} opciones.");
             }
+            _correctIndex = correctIndex;
 
             for (int i = 0; i < optionButtons.Length; i++)
             {
@@ -50,9 +55,11 @@ namespace PeliCode.MiniGame.Questions
 
                 int index = i;
                 optionTexts[i].text = CodeText.Plain(options[i]);
+                UITheme.SetSelected(optionButtons[i], false); // sin el verde/rojo de la pregunta anterior
                 optionButtons[i].interactable = true;
                 optionButtons[i].onClick.AddListener(() =>
                 {
+                    _chosenIndex = index;
                     SetAllInteractable(false);
                     OnAnswered?.Invoke(index == correctIndex);
                 });
@@ -70,6 +77,16 @@ namespace PeliCode.MiniGame.Questions
             SetAllInteractable(false);
             foreach (var button in optionButtons)
                 button.onClick.RemoveAllListeners();
+        }
+
+        /// <summary>La opcion correcta en verde y la elegida (si se eligio una) en rojo.</summary>
+        public string RevealAnswer()
+        {
+            if (_chosenIndex >= 0 && _chosenIndex != _correctIndex)
+                UITheme.Highlight(optionButtons[_chosenIndex], UITheme.Error, UITheme.TextOnAccent);
+            if (_correctIndex >= 0 && _correctIndex < optionButtons.Length)
+                UITheme.Highlight(optionButtons[_correctIndex], UITheme.Success, UITheme.TextOnAccent);
+            return null;
         }
     }
 }

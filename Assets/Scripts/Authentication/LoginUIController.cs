@@ -38,6 +38,20 @@ namespace PeliCode.Authentication
         private void OnDisable() => Loc.LanguageChanged -= ClearFeedback;
         private void ClearFeedback() => feedbackText.text = string.Empty;
 
+        // Si quedo una sesion guardada en este dispositivo, se entra directo al menu
+        private async void Start()
+        {
+            SetInteractable(false);
+            bool resumed = await AuthManager.Instance.TryResumeSessionAsync();
+            if (this == null) return;
+            if (resumed)
+            {
+                SceneLoader.LoadMenu();
+                return;
+            }
+            SetInteractable(true);
+        }
+
         private async void OnConfirmClicked()
         {
             SetInteractable(false);

@@ -58,6 +58,18 @@ namespace PeliCode.Menu
                     var row = Instantiate(entryPrefab, contentParent);
                     row.SetData(entry.rank, entry.playerName, entry.score, entry.isMe);
                 }
+
+                // Fuera del Top 25: tu fila al final, con tu posicion real
+                if (topScores.Count > 0 && !topScores.Exists(e => e.isMe))
+                {
+                    var mine = await LeaderboardManager.Instance.GetMyEntryAsync();
+                    if (this == null) return;
+                    if (mine.HasValue)
+                    {
+                        var row = Instantiate(entryPrefab, contentParent);
+                        row.SetData(mine.Value.rank, mine.Value.playerName, mine.Value.score, true);
+                    }
+                }
                 SetStatus(topScores.Count == 0 ? "ranked.empty" : null);
             }
             catch (Exception e)

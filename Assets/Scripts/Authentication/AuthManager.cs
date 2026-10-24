@@ -65,6 +65,46 @@ namespace PeliCode.Authentication
                 return (false, Loc.Get("auth.wrongCredentials"));
             }
 
+            string fallbackName = _pendingUserNames.TryGetValue(ugsUsername, out var pending)
+                ? pending
+                : email.Trim().Split('@')[0];
+            var result = await FinishSignInAsync(fallbackName, email.Trim());
+            if (result.success) _pendingUserNames.Remove(ugsUsername);
+            return result;
+        }
+
+        /// <summary>
+        /// Vuelve a entrar con la sesion guardada en este dispositivo, sin pedir correo ni
+        /// contrasena. Unity guarda la sesion al iniciar sesion y SignInAnonymouslyAsync la reusa
+        /// (con la misma cuenta, aunque sea de usuario y contrasena). Solo se llama si hay una
+        /// sesion guardada: sin ella crearia una cuenta anonima nueva. Cerrar sesion la borra.
+        /// </summary>
+        public async Task<bool> TryResumeSessionAsync()
+        {
+            await ServicesInitializer.InitializeAsync();
+            if (!ServicesInitializer.IsInitialized || AuthenticationService.Instance == null) return false;
+            if (IsSignedIn && CurrentProfile != null) return true;
+            if (!AuthenticationService.Instance.SessionTokenExists) return false;
+
+            try
+            {
+                await AuthenticationService.Instance.SignInAnonymouslyAsync();
+            }
+            catch (RequestFailedException e)
+            {
+                // Sesion vencida o invalida: se borra y se pide el login normal
+                Debug.LogWarning($"[AuthManager] No se pudo retomar la sesion: {e.Message}");
+                if (!IsConnectionError(e)) AuthenticationService.Instance.ClearSessionToken();
+                return false;
+            }
+
+            var (success, _) = await FinishSignInAsync(Loc.Get("common.player"), string.Empty);
+            return success;
+        }
+
+        /// <summary>Despues de autenticar: carga (o crea) el perfil, actualiza la racha y lo guarda.</summary>
+        private async Task<(bool success, string error)> FinishSignInAsync(string fallbackName, string email)
+        {
             // Ya hay sesion en Unity: si algo falla de aqui en adelante se cierra, para que
             // el siguiente intento no choque con "el jugador ya inicio sesion".
             try
@@ -73,16 +113,12 @@ namespace PeliCode.Authentication
                 if (profile == null)
                 {
                     Debug.LogWarning("[AuthManager] La cuenta no tenia player_profile, se crea uno nuevo.");
-                    string userName = _pendingUserNames.TryGetValue(ugsUsername, out var pending)
-                        ? pending
-                        : email.Trim().Split('@')[0];
-                    profile = PlayerProfileData.CreateNew(userName, email.Trim());
+                    profile = PlayerProfileData.CreateNew(fallbackName, email);
                 }
 
                 CloudSaveManager.Instance.UpdateLoginStreak(profile);
                 CloudSaveManager.Instance.ResetWeeklyStatsIfNeeded(profile);
                 await CloudSaveManager.Instance.SaveProfileAsync(profile);
-                _pendingUserNames.Remove(ugsUsername);
 
                 CurrentProfile = profile;
                 await SyncPlayerNameAsync(profile.userName);
@@ -93,7 +129,8 @@ namespace PeliCode.Authentication
             catch (RequestFailedException e)
             {
                 Debug.LogError($"[AuthManager] Error cargando el perfil: {e}");
-                SignOut();
+                // Sin conexion la sesion guardada sigue sirviendo: no se borra
+                SignOut(clearSavedSession: !IsConnectionError(e));
                 return (false, IsConnectionError(e)
                     ? ConnectionMessage(e)
                     : Loc.Get("auth.profileLoadFailed"));
@@ -161,18 +198,23 @@ namespace PeliCode.Authentication
             }
         }
 
-        public void SignOut()
+        /// <summary>Cerrar sesion: tambien borra la sesion guardada en el dispositivo.</summary>
+        public void SignOut() => SignOut(clearSavedSession: true);
+
+        private void SignOut(bool clearSavedSession)
         {
-            SignOutOfService();
+            SignOutOfService(clearSavedSession);
             CurrentProfile = null;
             OnSignedOut?.Invoke();
         }
 
-        private static void SignOutOfService()
+        // clearCredentials: true borra tambien la sesion guardada, para que al cerrar sesion (o
+        // al entrar con otra cuenta) el juego no vuelva a entrar solo con la cuenta anterior.
+        private static void SignOutOfService(bool clearSavedSession = true)
         {
             if (AuthenticationService.Instance != null && AuthenticationService.Instance.IsSignedIn)
             {
-                AuthenticationService.Instance.SignOut();
+                AuthenticationService.Instance.SignOut(clearCredentials: clearSavedSession);
             }
         }
 

@@ -15,6 +15,12 @@ namespace PeliCode.Data
         /// </summary>
         public const int MaxDragBlocks = 8;
 
+        /// <summary>
+        /// Fragmentos que caben en "detectar el error" (la vista tiene 5 botones). Con mas, el
+        /// fragmento con el error podia quedar sin boton y la pregunta no tenia respuesta.
+        /// </summary>
+        public const int MaxErrorSnippets = 5;
+
         public static bool IsPlayable(QuestionData q, out string problem)
         {
             problem = null;
@@ -48,6 +54,8 @@ namespace PeliCode.Data
                 case QuestionType.DetectarError:
                     if (q.codeSnippetsOptions == null || q.codeSnippetsOptions.Count < 2)
                         problem = "codeSnippetsOptions necesita al menos 2 bloques";
+                    else if (q.codeSnippetsOptions.Count > MaxErrorSnippets)
+                        problem = $"tiene mas de {MaxErrorSnippets} fragmentos y no caben en pantalla";
                     else if (q.buggyIndex < 0 || q.buggyIndex >= q.codeSnippetsOptions.Count)
                         problem = "buggyIndex fuera de codeSnippetsOptions";
                     break;

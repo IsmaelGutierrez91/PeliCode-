@@ -54,6 +54,31 @@ namespace PeliCode.CloudServices
             }
             return result;
         }
+
+        /// <summary>
+        /// La fila del jugador actual, para mostrarla debajo del Top 25 cuando no aparece en el.
+        /// Null si todavia no tiene puntaje (no jugo ranked) o si no se pudo leer.
+        /// </summary>
+        public async Task<LeaderboardEntryDto?> GetMyEntryAsync()
+        {
+            try
+            {
+                var entry = await LeaderboardsService.Instance.GetPlayerScoreAsync(LEADERBOARD_ID);
+                return new LeaderboardEntryDto
+                {
+                    playerName = PlayerNames.ToDisplayName(entry.PlayerName) is { Length: > 0 } name
+                        ? name
+                        : Loc.Get("common.player"),
+                    score = (int)entry.Score,
+                    rank = entry.Rank + 1,
+                    isMe = true
+                };
+            }
+            catch (System.Exception)
+            {
+                return null; // sin puntaje propio todavia (o sin conexion): no se muestra la fila
+            }
+        }
     }
 
     public struct LeaderboardEntryDto
