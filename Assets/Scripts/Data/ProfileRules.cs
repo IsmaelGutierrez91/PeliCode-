@@ -12,6 +12,11 @@ namespace PeliCode.Data
     {
         public const string DateFormat = "yyyy-MM-dd";
 
+        /// <summary>Dias seguidos desde los que el perfil muestra la insignia de racha.</summary>
+        public const int StreakBadgeMinDays = 5;
+
+        public static bool ShowsStreakBadge(int currentStreak) => currentStreak >= StreakBadgeMinDays;
+
         /// <summary>
         /// Calcula la racha de dias consecutivos de inicio de sesion.
         /// </summary>

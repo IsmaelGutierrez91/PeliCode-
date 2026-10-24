@@ -9,17 +9,22 @@ using UnityEngine.UI;
 namespace PeliCode.Menu
 {
     /// <summary>
-    /// Panel de Usuario/Perfil. Muestra nombre, top ranked, rachas y, segun la
-    /// dificultad seleccionada (Button1/2/3), el porcentaje de acierto de las
-    /// 5 categorias de minijuego.
+    /// Panel de Usuario/Perfil. Muestra el nombre (grande), el top ranked y la mejor racha,
+    /// la racha actual como un numero dentro de una insignia (solo desde
+    /// ProfileRules.StreakBadgeMinDays dias seguidos) y, segun la dificultad seleccionada,
+    /// el porcentaje de acierto de las 5 categorias: el nombre arriba y el porcentaje
+    /// grande y centrado debajo.
     /// </summary>
     public class ProfilePanelUI : MonoBehaviour
     {
         [Header("Datos generales")]
         [SerializeField] private TMP_Text playerNameText;
         [SerializeField] private TMP_Text rankedTopText;
-        [SerializeField] private TMP_Text currentStreakText;
         [SerializeField] private TMP_Text highestStreakText;
+
+        [Header("Insignia de racha (se muestra con racha activa de 5 dias o mas)")]
+        [SerializeField] private GameObject streakBadge;
+        [SerializeField] private TMP_Text currentStreakText; // solo el numero
 
         [Header("Botones de dificultad")]
         [SerializeField] private Button easyButton;
@@ -57,11 +62,18 @@ namespace PeliCode.Menu
 
             playerNameText.text = _profile.userName;
             rankedTopText.text = Loc.Format("profile.rankedTop", _profile.rankedHighScore);
-            currentStreakText.text = Loc.Format("profile.currentStreak", _profile.currentStreak);
             highestStreakText.text = Loc.Format("profile.highestStreak", _profile.highestStreak);
+
+            bool badge = ProfileRules.ShowsStreakBadge(_profile.currentStreak);
+            if (streakBadge != null) streakBadge.SetActive(badge);
+            currentStreakText.text = _profile.currentStreak.ToString();
 
             SelectDifficulty(_selectedDifficulty);
         }
+
+        /// <summary>"Condicionales:" arriba y el porcentaje grande, en negrita y centrado debajo.</summary>
+        public static string FormatStat(string categoryName, float percentage) =>
+            $"{categoryName}:\n<align=center><size=170%><b>{percentage:0}%</b></size></align>";
 
         private void SelectDifficulty(Difficulty difficulty)
         {
@@ -88,7 +100,7 @@ namespace PeliCode.Menu
                     };
                 }
 
-                minigameInfoTexts[i].text = Loc.Format("profile.categoryStat", Loc.Get("category." + category), percentage);
+                minigameInfoTexts[i].text = FormatStat(Loc.Get("category." + category), percentage);
                 i++;
             }
         }

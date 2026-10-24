@@ -20,6 +20,15 @@ En `Assets/Scenes`, en este orden en Build Settings:
 2. **Menu**: cinco paneles que se deslizan (Anuncios, Perfil, Minijuegos, Ranked y Opciones).
 3. **MiniGame**: la partida.
 
+Todos los cambios de escena pasan por `SceneLoader`, que usa `SceneTransition`:
+
+1. La escena actual se funde a negro.
+2. Aparece la pantalla de carga: "CARGANDO" con los puntos de 1 a 3 y un cuadrado blanco que gira, como placeholder para un logo.
+3. La pantalla de carga se mantiene hasta que la escena nueva está lista. Una escena que necesita preparar algo implementa `ISceneReadiness`; el minijuego, por ejemplo, espera a tener las preguntas.
+4. Se funde a negro y aparece la escena nueva.
+
+La pantalla de carga se construye por código, así que no hay que agregar nada a las escenas.
+
 ## Estructura del código (`Assets/Scripts`)
 
 | Carpeta | Qué hay |
@@ -59,10 +68,35 @@ Campos de cada pregunta (`QuestionData`):
 | --- | --- |
 | `SeleccionMultiple` | `correctAnswer` y `incorrectAnswerPool` (lo ideal son 8 incorrectas; se muestran 3 al azar). |
 | `CompletarCodigo` | `codeTemplate`, con `____` donde va la respuesta, y `expectedAnswer`. |
-| `ArrastrarCodigo` | `codeBlocks` y `correctOrder` (índices de `codeBlocks` en orden). No conviene repetir líneas idénticas, porque el orden queda ambiguo. |
+| `ArrastrarCodigo` | `codeBlocks` y `correctOrder` (índices de `codeBlocks` en orden). **Máximo 8 bloques**, porque caben 2 filas de 4; una pregunta con más se descarta. No conviene repetir líneas idénticas, porque el orden queda ambiguo. |
 | `DetectarError` | `codeSnippetsOptions` y `buggyIndex`. |
 
-Todas llevan `id`, `type` y `questionText`. La versión en inglés es opcional: `questionTextEn`, y para selección múltiple `correctAnswerEn` con `incorrectAnswerPoolEn`. El código es el mismo en los dos idiomas. Una pregunta mal cargada se descarta con un aviso en la consola, en vez de colgar la partida.
+Todas llevan `id`, `type` y `questionText`. Una pregunta mal cargada se descarta con un aviso en la consola, en vez de colgar la partida.
+
+### Preguntas en inglés
+
+El texto de cada pregunta viene del Dashboard, así que la traducción también va ahí, en la misma pregunta. Si a una pregunta le falta la versión en inglés, el juego en inglés la muestra en español.
+
+- `questionTextEn`: el enunciado en inglés. Sirve para todos los tipos.
+- `correctAnswerEn` e `incorrectAnswerPoolEn`: para selección múltiple, cuando las respuestas son texto y no código. Van juntos; si falta uno, se usan los dos en español.
+- El código (`codeTemplate`, `expectedAnswer`, `codeBlocks` y `codeSnippetsOptions`) no se traduce: es el mismo en los dos idiomas.
+
+Ejemplo:
+
+```json
+{
+  "id": "loop-medio-7",
+  "type": "SeleccionMultiple",
+  "questionText": "¿Qué hace continue dentro de un while?",
+  "questionTextEn": "What does continue do inside a while loop?",
+  "correctAnswer": "Salta a la siguiente vuelta",
+  "incorrectAnswerPool": ["Termina el bucle", "Repite la vuelta actual", "Termina el programa"],
+  "correctAnswerEn": "Skips to the next iteration",
+  "incorrectAnswerPoolEn": ["Ends the loop", "Repeats the current iteration", "Ends the program"]
+}
+```
+
+Los 150 archivos de `Assets/Resources/Questions` ya traen los dos idiomas y sirven de modelo.
 
 ### Banco local
 

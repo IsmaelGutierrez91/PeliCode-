@@ -23,7 +23,7 @@ namespace PeliCode.MiniGame
     /// controla el flujo de pregunta -> respuesta -> siguiente, el cronometro
     /// y guarda resultados al finalizar.
     /// </summary>
-    public class MiniGameManager : MonoBehaviour
+    public class MiniGameManager : MonoBehaviour, ISceneReadiness
     {
         [Header("Cantidad de preguntas por dificultad (modo normal)")]
         [SerializeField] private int easyQuestionCount = 5;
@@ -53,6 +53,10 @@ namespace PeliCode.MiniGame
         private IQuestionView _activeView;
         private bool _isRanked;
         private bool _finished;
+        private bool _poolReady;
+
+        /// <summary>La pantalla de carga sigue hasta que las preguntas estan cargadas.</summary>
+        public bool IsSceneReady => _poolReady;
 
         private void Awake()
         {
@@ -77,6 +81,14 @@ namespace PeliCode.MiniGame
 
             _scoreManager.Reset();
             _poolIndex = 0;
+            _poolReady = true;
+
+            // El cronometro arranca cuando ya se ve la pregunta, no detras de la pantalla de carga
+            while (SceneTransition.IsTransitioning)
+            {
+                await System.Threading.Tasks.Task.Yield();
+                if (this == null) return;
+            }
 
             if (_pool.Count == 0)
             {

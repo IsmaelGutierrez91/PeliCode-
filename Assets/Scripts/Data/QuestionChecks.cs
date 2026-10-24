@@ -9,6 +9,12 @@ namespace PeliCode.Data
     /// </summary>
     public static class QuestionChecks
     {
+        /// <summary>
+        /// Bloques que caben en "arrastrar codigo": 2 filas de 4 en cada contenedor.
+        /// Una pregunta con mas bloques se descarta en vez de salirse de la pantalla.
+        /// </summary>
+        public const int MaxDragBlocks = 8;
+
         public static bool IsPlayable(QuestionData q, out string problem)
         {
             problem = null;
@@ -32,6 +38,8 @@ namespace PeliCode.Data
 
                 case QuestionType.ArrastrarCodigo:
                     if (q.codeBlocks == null || q.codeBlocks.Count == 0) problem = "codeBlocks vacio";
+                    else if (q.codeBlocks.Count > MaxDragBlocks || (q.correctOrder != null && q.correctOrder.Count > MaxDragBlocks))
+                        problem = $"tiene mas de {MaxDragBlocks} bloques y no caben en pantalla";
                     else if (q.correctOrder == null || q.correctOrder.Count == 0) problem = "correctOrder vacio";
                     else if (q.correctOrder.Any(i => i < 0 || i >= q.codeBlocks.Count))
                         problem = "correctOrder tiene indices fuera de codeBlocks";
