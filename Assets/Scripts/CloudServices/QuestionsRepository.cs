@@ -30,7 +30,12 @@ namespace PeliCode.CloudServices
     /// </summary>
     public class QuestionsRepository : Singleton<QuestionsRepository>
     {
-        private readonly Dictionary<string, List<QuestionData>> _cache = new Dictionary<string, List<QuestionData>>();
+        // Lo leido de Cloud Save se reusa durante unos minutos y despues se vuelve a pedir: asi
+        // una pregunta corregida en el Dashboard llega sin reiniciar el juego.
+        public static readonly TimeSpan CacheLifetime = TimeSpan.FromMinutes(10);
+
+        private readonly Dictionary<string, (List<QuestionData> questions, DateTime loadedAt)> _cache =
+            new Dictionary<string, (List<QuestionData>, DateTime)>();
 
         public const string LocalBankFolder = "Questions";
 
@@ -79,8 +84,8 @@ namespace PeliCode.CloudServices
         {
             string customId = BuildCustomId(category, difficulty);
 
-            if (_cache.TryGetValue(customId, out var cached))
-                return (cached, false);
+            if (_cache.TryGetValue(customId, out var cached) && DateTime.UtcNow - cached.loadedAt < CacheLifetime)
+                return (cached.questions, false);
 
             bool cloudFailed = false;
             try
@@ -95,7 +100,7 @@ namespace PeliCode.CloudServices
                 questions.RemoveAll(q => q == null);
                 if (questions.Count > 0)
                 {
-                    _cache[customId] = questions;
+                    _cache[customId] = (questions, DateTime.UtcNow);
                     return (questions, false);
                 }
             }
@@ -109,7 +114,7 @@ namespace PeliCode.CloudServices
             if (local.Count > 0)
             {
                 Debug.Log($"[QuestionsRepository] '{customId}': se usan las {local.Count} preguntas del banco local.");
-                if (!cloudFailed) _cache[customId] = local; // si fallo la red, la proxima vez se reintenta Cloud Save
+                if (!cloudFailed) _cache[customId] = (local, DateTime.UtcNow); // si fallo la red, la proxima vez se reintenta Cloud Save
                 return (local, false);
             }
             return (new List<QuestionData>(), cloudFailed);

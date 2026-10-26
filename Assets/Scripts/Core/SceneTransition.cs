@@ -88,8 +88,10 @@ namespace PeliCode.Core
         private IEnumerator FadeFromBlack()
         {
             _fade.alpha = 1f;
+            _fade.blocksRaycasts = true; // sin clics a ciegas mientras la pantalla esta negra
             yield return null; // un cuadro para que la escena termine de armarse
             yield return Fade(1f, 0f);
+            if (!_transitioning) _fade.blocksRaycasts = false;
         }
 
         private IEnumerator Fade(float from, float to)
@@ -124,7 +126,7 @@ namespace PeliCode.Core
             var scaler = gameObject.AddComponent<CanvasScaler>();
             scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
             scaler.referenceResolution = new Vector2(1920, 1080);
-            scaler.matchWidthOrHeight = 0.5f;
+            scaler.screenMatchMode = CanvasScaler.ScreenMatchMode.Expand;
             gameObject.AddComponent<GraphicRaycaster>();
 
             _loadingPanel = FullScreen("PantallaDeCarga", transform, Color.black);

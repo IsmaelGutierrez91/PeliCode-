@@ -57,10 +57,7 @@ namespace PeliCode.MiniGame.Questions
             answerInput.interactable = false;
             submitButton.interactable = false;
 
-            bool correct = string.Equals(
-                answerInput.text.Trim(),
-                _expectedAnswer,
-                StringComparison.OrdinalIgnoreCase);
+            bool correct = AnswerMatcher.Matches(answerInput.text, _expectedAnswer);
 
             OnAnswered?.Invoke(correct);
         }
@@ -72,5 +69,8 @@ namespace PeliCode.MiniGame.Questions
             submitButton.interactable = false;
             submitButton.onClick.RemoveAllListeners();
         }
+
+        /// <summary>La respuesta esperada va al mensaje de abajo ("La respuesta era: int").</summary>
+        public string RevealAnswer() => _expectedAnswer;
     }
 }

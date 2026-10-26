@@ -29,6 +29,12 @@ Todos los cambios de escena pasan por `SceneLoader`, que usa `SceneTransition`:
 
 La pantalla de carga se construye por código, así que no hay que agregar nada a las escenas.
 
+**Pantallas:** el diseño es de 1920x1080. Los `CanvasScaler` están en modo *Expand*, así que en pantallas 16:10, 4:3, 5:4 o ultrawide todo entra entero y lo que sobra queda como fondo.
+
+**Sesión:** al iniciar sesión, Unity guarda la sesión en el dispositivo. La próxima vez el juego entra directo al menú, hasta que el jugador cierre sesión en Opciones.
+
+**Rachas y semanas:** se cuentan con la fecha y hora del dispositivo del jugador, así el día cambia a medianoche en su zona horaria.
+
 ## Estructura del código (`Assets/Scripts`)
 
 | Carpeta | Qué hay |
@@ -67,17 +73,20 @@ Campos de cada pregunta (`QuestionData`):
 | Tipo (`type`) | Campos |
 | --- | --- |
 | `SeleccionMultiple` | `correctAnswer` y `incorrectAnswerPool` (lo ideal son 8 incorrectas; se muestran 3 al azar). |
-| `CompletarCodigo` | `codeTemplate`, con `____` donde va la respuesta, y `expectedAnswer`. |
+| `CompletarCodigo` | `codeTemplate`, con `____` donde va la respuesta, y `expectedAnswer`. La comparación **distingue mayúsculas**, como C# (`Int` no es `int`), e ignora los espacios de más. |
 | `ArrastrarCodigo` | `codeBlocks` y `correctOrder` (índices de `codeBlocks` en orden). **Máximo 8 bloques**, porque caben 2 filas de 4; una pregunta con más se descarta. No conviene repetir líneas idénticas, porque el orden queda ambiguo. |
-| `DetectarError` | `codeSnippetsOptions` y `buggyIndex`. |
+| `DetectarError` | `codeSnippetsOptions` y `buggyIndex`. **Máximo 5 fragmentos**, porque la pantalla tiene 5 botones; una pregunta con más se descarta. |
 
 Todas llevan `id`, `type` y `questionText`. Una pregunta mal cargada se descarta con un aviso en la consola, en vez de colgar la partida.
+
+Si el jugador se equivoca, el juego muestra la respuesta correcta antes de seguir. Opcionalmente, la pregunta puede traer `explanation`, con su versión en inglés `explanationEn`: un texto corto que explica por qué la respuesta es esa y que aparece debajo del "Incorrecto".
 
 ### Preguntas en inglés
 
 El texto de cada pregunta viene del Dashboard, así que la traducción también va ahí, en la misma pregunta. Si a una pregunta le falta la versión en inglés, el juego en inglés la muestra en español.
 
 - `questionTextEn`: el enunciado en inglés. Sirve para todos los tipos.
+- `explanationEn`: la explicación en inglés, si la pregunta trae `explanation`.
 - `correctAnswerEn` e `incorrectAnswerPoolEn`: para selección múltiple, cuando las respuestas son texto y no código. Van juntos; si falta uno, se usan los dos en español.
 - El código (`codeTemplate`, `expectedAnswer`, `codeBlocks` y `codeSnippetsOptions`) no se traduce: es el mismo en los dos idiomas.
 

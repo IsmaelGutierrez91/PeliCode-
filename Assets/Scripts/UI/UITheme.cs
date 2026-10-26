@@ -55,6 +55,25 @@ namespace PeliCode.UI
             selectable.transition = Selectable.Transition.ColorTint;
         }
 
+        /// <summary>
+        /// Marca un boton ya respondido (correcto en verde, error en rojo). A diferencia de Paint,
+        /// el color se ve igual aunque el boton este deshabilitado, que es como queda al responder.
+        /// </summary>
+        public static void Highlight(Selectable selectable, Color color, Color? textColor = null)
+        {
+            if (selectable == null) return;
+            Paint(selectable, color);
+            var colors = selectable.colors;
+            colors.disabledColor = color;
+            colors.fadeDuration = 0f;
+            selectable.colors = colors;
+            if (textColor.HasValue)
+            {
+                var label = selectable.GetComponentInChildren<TMPro.TMP_Text>(true);
+                if (label != null) label.color = textColor.Value;
+            }
+        }
+
         public static Color Hex(int rgb, float alpha = 1f) =>
             new Color(((rgb >> 16) & 0xFF) / 255f, ((rgb >> 8) & 0xFF) / 255f, (rgb & 0xFF) / 255f, alpha);
     }
