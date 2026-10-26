@@ -104,5 +104,22 @@ namespace PeliCode.MiniGame.Questions
             Lock();
             checkButton.onClick.RemoveAllListeners();
         }
+
+        /// <summary>Acomoda los bloques en las casillas en el orden correcto, para que se vea.</summary>
+        public string RevealAnswer()
+        {
+            if (_question == null) return null;
+            foreach (var block in _blocks)
+                if (block != null) block.ReturnToOrigin();
+
+            for (int i = 0; i < _slots.Count && i < _question.correctOrder.Count; i++)
+            {
+                var block = _blocks.FirstOrDefault(b => b != null && b.BlockIndex == _question.correctOrder[i]);
+                if (block == null) continue;
+                block.transform.SetParent(_slots[i].transform, false);
+                block.transform.localPosition = Vector3.zero;
+            }
+            return null;
+        }
     }
 }

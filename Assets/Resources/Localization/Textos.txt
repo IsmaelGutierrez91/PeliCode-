@@ -46,9 +46,8 @@ category.SwitchEstados	Switch y estados	Switch and states
 category.ColeccionesArraysListas	Arrays y listas	Arrays and lists
 category.BucleWhileDoWhile	Bucles while y do-while	While and do-while loops
 profile.rankedTop	Mejor ranked: {0}	Best ranked: {0}
-profile.currentStreak	Racha actual: {0}	Current streak: {0}
+profile.streakLabel	Racha	Streak
 profile.highestStreak	Mejor racha: {0}	Best streak: {0}
-profile.categoryStat	{0}: {1:0}%	{0}: {1:0}%
 ranked.play	Jugar	Play
 ranked.loading	Cargando ranking...	Loading ranking...
 ranked.empty	Todavía no hay puntajes. ¡Sé el primero!	No scores yet. Be the first!
@@ -64,8 +63,11 @@ game.loading	Cargando preguntas...	Loading questions...
 game.correct	¡Correcto!	Correct!
 game.incorrect	Incorrecto	Wrong
 game.timeUp	Se acabó el tiempo	Time's up
+game.answerWas	La respuesta era: {0}	The answer was: {0}
 game.submit	Responder	Submit
 game.check	Comprobar	Check
+game.dragSource	Ordena estos bloques...	Arrange these blocks...
+game.dragTarget	...colocándolos aquí	...by placing them here
 game.answerPlaceholder	Escribe tu respuesta...	Type your answer...
 game.back	Volver al menú	Back to menu
 game.exit	Salir	Quit
@@ -78,3 +80,4 @@ game.loadFailed	No se pudieron cargar las preguntas. Revisa tu conexión e inté
 game.noQuestions	Todavía no hay preguntas para este minijuego.	There are no questions for this minigame yet.
 game.saveFailed	No se pudo guardar el resultado (sin conexión).	Your result could not be saved (no connection).
 common.player	Jugador	Player
+loading.text	CARGANDO	LOADING

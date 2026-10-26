@@ -23,7 +23,7 @@ namespace PeliCode.MiniGame
     /// controla el flujo de pregunta -> respuesta -> siguiente, el cronometro
     /// y guarda resultados al finalizar.
     /// </summary>
-    public class MiniGameManager : MonoBehaviour
+    public class MiniGameManager : MonoBehaviour, ISceneReadiness
     {
         [Header("Cantidad de preguntas por dificultad (modo normal)")]
         [SerializeField] private int easyQuestionCount = 5;
@@ -46,6 +46,8 @@ namespace PeliCode.MiniGame
         [SerializeField] private FindErrorView findErrorView;
 
         private const float NextQuestionDelay = 0.6f;
+        // Tras un error se muestra la respuesta correcta: hace falta tiempo para leerla
+        private const float AfterMistakeDelay = 2.5f;
 
         private readonly ScoreManager _scoreManager = new ScoreManager();
         private List<QuestionData> _pool = new List<QuestionData>();
@@ -53,6 +55,10 @@ namespace PeliCode.MiniGame
         private IQuestionView _activeView;
         private bool _isRanked;
         private bool _finished;
+        private bool _poolReady;
+
+        /// <summary>La pantalla de carga sigue hasta que las preguntas estan cargadas.</summary>
+        public bool IsSceneReady => _poolReady;
 
         private void Awake()
         {
@@ -77,6 +83,14 @@ namespace PeliCode.MiniGame
 
             _scoreManager.Reset();
             _poolIndex = 0;
+            _poolReady = true;
+
+            // El cronometro arranca cuando ya se ve la pregunta, no detras de la pantalla de carga
+            while (SceneTransition.IsTransitioning)
+            {
+                await System.Threading.Tasks.Task.Yield();
+                if (this == null) return;
+            }
 
             if (_pool.Count == 0)
             {
@@ -200,12 +214,16 @@ namespace PeliCode.MiniGame
         {
             if (_finished || _activeView == null) return;
 
-            _activeView.OnAnswered -= OnQuestionAnswered;
-            _activeView.Clear();
+            var view = _activeView;
+            var question = _pool[_poolIndex];
+            view.OnAnswered -= OnQuestionAnswered;
+            view.Clear();
             _activeView = null;
 
             _scoreManager.RegisterAnswer(correct);
-            SetFeedback(Loc.Get(correct ? "game.correct" : timedOut ? "game.timeUp" : "game.incorrect"),
+            SetFeedback(correct
+                    ? Loc.Get("game.correct")
+                    : MistakeFeedback(timedOut, view.RevealAnswer(), question.ExplanationFor(Loc.Current)),
                 correct ? UITheme.Success : UITheme.Error);
             var audio = AudioManager.Instance;
             if (audio != null)
@@ -218,14 +236,25 @@ namespace PeliCode.MiniGame
 
             if (!correct && _isRanked)
             {
-                // En ranked, un fallo termina la partida.
-                EndRankedGame();
+                // En ranked, un fallo termina la partida (despues de ver la respuesta correcta).
+                Invoke(nameof(EndRankedGame), AfterMistakeDelay);
             }
             else
             {
                 // En modo normal, un fallo solo pasa a la siguiente pregunta.
-                Invoke(nameof(ShowNextQuestion), NextQuestionDelay);
+                Invoke(nameof(ShowNextQuestion), correct ? NextQuestionDelay : AfterMistakeDelay);
             }
+        }
+
+        /// <summary>"Incorrecto. La respuesta era: int" y, si la pregunta la trae, la explicacion.</summary>
+        public static string MistakeFeedback(bool timedOut, string revealedAnswer, string explanation)
+        {
+            string text = Loc.Get(timedOut ? "game.timeUp" : "game.incorrect");
+            if (!string.IsNullOrWhiteSpace(revealedAnswer))
+                text += ". " + Loc.Format("game.answerWas", CodeText.Plain(revealedAnswer));
+            if (!string.IsNullOrWhiteSpace(explanation))
+                text += "\n" + CodeText.Plain(explanation);
+            return text;
         }
 
         private void ShowNoQuestions()

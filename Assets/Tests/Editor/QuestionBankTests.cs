@@ -138,5 +138,45 @@ namespace PeliCode.Tests
             Assert.AreEqual("1 / 5", progress);
             yield return new ExitPlayMode();
         }
+
+        /// <summary>
+        /// "Jugar de nuevo" pasa por la pantalla de carga: fundido, carga, espera a las preguntas,
+        /// fundido, y recien entonces aparece la pregunta 1 con el cronometro entero.
+        /// </summary>
+        [UnityTest]
+        public IEnumerator RetryGoesThroughTheLoadingScreen()
+        {
+            yield return new EnterPlayMode();
+            MiniGameSessionData.SetNormalSession(MiniGameCategory.SwitchEstados, Difficulty.Medio);
+            yield return EditorSceneManager.LoadSceneAsyncInPlayMode("Assets/Scenes/MiniGame.unity",
+                new LoadSceneParameters(LoadSceneMode.Single));
+            yield return null;
+
+            SceneLoader.LoadMiniGame();
+            Assert.IsTrue(SceneTransition.IsTransitioning, "La transicion no empezo");
+
+            float start = Time.realtimeSinceStartup;
+            while (SceneTransition.IsTransitioning && Time.realtimeSinceStartup - start < 20f)
+                yield return null;
+            Assert.IsFalse(SceneTransition.IsTransitioning, "La transicion no termino");
+
+            // El fundido quedo transparente y sin bloquear clics
+            var fade = SceneTransition.Instance.GetComponentInChildren<CanvasGroup>(true);
+            Assert.AreEqual(0f, fade.alpha, 0.001f);
+            Assert.IsFalse(fade.blocksRaycasts);
+
+            // La pregunta aparece despues de la transicion, con el cronometro sin descontar la carga
+            GameObject active = null;
+            for (int frame = 0; frame < 120 && active == null; frame++)
+            {
+                yield return null;
+                foreach (var view in UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None))
+                    if (view is IQuestionView && view.gameObject.activeInHierarchy) active = view.gameObject;
+            }
+            Assert.IsNotNull(active, "No se mostro ninguna pregunta despues de la carga");
+            Assert.AreEqual("1 / 10", GameObject.Find("Text_ProgressText").GetComponent<TMP_Text>().text);
+            StringAssert.Contains("60", GameObject.Find("Text_Time").GetComponent<TMP_Text>().text);
+            yield return new ExitPlayMode();
+        }
     }
 }

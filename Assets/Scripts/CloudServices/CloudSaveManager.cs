@@ -43,18 +43,25 @@ namespace PeliCode.CloudServices
         }
 
         /// <summary>
+        /// Fecha y hora del jugador. Los dias de la racha y las semanas del reseteo se cuentan
+        /// con la hora local: con UTC, en Peru (UTC-5) el dia cambiaba a las 19:00 y jugar a las
+        /// 18:00 y a las 20:00 del mismo dia contaba como dos dias seguidos.
+        /// </summary>
+        public static DateTime PlayerNow => DateTime.Now;
+
+        /// <summary>
         /// Calcula la racha de dias consecutivos de inicio de sesion.
         /// Llamar justo despues de un SignIn exitoso.
         /// </summary>
         public PlayerProfileData UpdateLoginStreak(PlayerProfileData profile)
         {
-            ProfileRules.UpdateLoginStreak(profile, DateTime.UtcNow);
+            ProfileRules.UpdateLoginStreak(profile, PlayerNow);
             return profile;
         }
 
         public void ResetWeeklyStatsIfNeeded(PlayerProfileData profile)
         {
-            ProfileRules.ResetWeeklyStatsIfNeeded(profile, DateTime.UtcNow);
+            ProfileRules.ResetWeeklyStatsIfNeeded(profile, PlayerNow);
         }
 
         public void RegisterNormalGameResult(
@@ -65,7 +72,7 @@ namespace PeliCode.CloudServices
             int totalQuestions)
         {
             ProfileRules.RegisterNormalGameResult(
-                profile, category, difficulty, correctAnswers, totalQuestions, DateTime.UtcNow);
+                profile, category, difficulty, correctAnswers, totalQuestions, PlayerNow);
         }
     }
 }

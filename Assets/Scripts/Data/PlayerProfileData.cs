@@ -18,8 +18,9 @@ namespace PeliCode.Data
         public int highestStreak;
         public int rankedHighScore;
 
-        // Ultimo dia (DateTime.UtcNow.Date en formato "yyyy-MM-dd") en que el usuario
-        // inicio sesion, usado para calcular la racha de dias.
+        // Ultimo dia (fecha local del jugador, formato "yyyy-MM-dd") en que el usuario inicio
+        // sesion, usado para calcular la racha de dias. El nombre del campo se mantiene por los
+        // perfiles ya guardados en Cloud Save, aunque ya no es la fecha UTC.
         public string lastLoginDateUtc;
 
         // Estadisticas por minijuego (5 categorias). Clave = MiniGameCategory.ToString()
@@ -34,7 +35,7 @@ namespace PeliCode.Data
                 currentStreak = 1,
                 highestStreak = 1,
                 rankedHighScore = 0,
-                lastLoginDateUtc = DateTime.UtcNow.Date.ToString("yyyy-MM-dd")
+                lastLoginDateUtc = DateTime.Now.Date.ToString(ProfileRules.DateFormat, System.Globalization.CultureInfo.InvariantCulture)
             };
 
             foreach (MiniGameCategory category in Enum.GetValues(typeof(MiniGameCategory)))
