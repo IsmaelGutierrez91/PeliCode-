@@ -71,6 +71,1479 @@
         "a[3] = 4;"
       ],
       "buggyIndex": 3
+    },
+    {
+      "id": "col-facil-6",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué es un array?",
+      "questionTextEn": "What is an array?",
+      "correctAnswer": "Una colección de tamaño fijo de elementos del mismo tipo",
+      "incorrectAnswerPool": [
+        "Una variable que guarda un solo número",
+        "Una colección que crece sola al agregar elementos",
+        "Un texto con varias palabras",
+        "Un método que ordena números",
+        "Una colección que mezcla tipos distintos sin límite"
+      ],
+      "correctAnswerEn": "A fixed-size collection of elements of the same type",
+      "incorrectAnswerPoolEn": [
+        "A variable that stores a single number",
+        "A collection that grows by itself when adding elements",
+        "A text with several words",
+        "A method that sorts numbers",
+        "A collection that mixes different types with no limit"
+      ]
+    },
+    {
+      "id": "col-facil-7",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "En int[] a;, ¿qué símbolos indican que a es un array?",
+      "questionTextEn": "In int[] a;, which symbols show that a is an array?",
+      "correctAnswer": "[]",
+      "incorrectAnswerPool": [
+        "()",
+        "{}",
+        "<>",
+        "||"
+      ]
+    },
+    {
+      "id": "col-facil-8",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "Un array tiene 5 elementos. ¿Cuál es el índice del último?",
+      "questionTextEn": "An array has 5 elements. What is the index of the last one?",
+      "correctAnswer": "4",
+      "incorrectAnswerPool": [
+        "5",
+        "6",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "id": "col-facil-9",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué espacio de nombres hay que importar para usar List<T>?",
+      "questionTextEn": "Which namespace must be imported to use List<T>?",
+      "correctAnswer": "System.Collections.Generic",
+      "incorrectAnswerPool": [
+        "System.IO",
+        "System.Text",
+        "System.Threading",
+        "System.Linq.Lists"
+      ]
+    },
+    {
+      "id": "col-facil-10",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué propiedad da la cantidad de elementos de un array?",
+      "questionTextEn": "Which property gives the number of elements of an array?",
+      "correctAnswer": "Length",
+      "incorrectAnswerPool": [
+        "Count",
+        "Size",
+        "Len",
+        "Total"
+      ]
+    },
+    {
+      "id": "col-facil-11",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué método de List<T> quita todos los elementos?",
+      "questionTextEn": "Which List<T> method removes all the elements?",
+      "correctAnswer": "Clear",
+      "incorrectAnswerPool": [
+        "Delete",
+        "Empty",
+        "RemoveAll()",
+        "Reset"
+      ]
+    },
+    {
+      "id": "col-facil-12",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué colección guarda pares de clave y valor?",
+      "questionTextEn": "Which collection stores key and value pairs?",
+      "correctAnswer": "Dictionary<TKey, TValue>",
+      "incorrectAnswerPool": [
+        "List<T>",
+        "Queue<T>",
+        "Stack<T>",
+        "HashSet<T>"
+      ]
+    },
+    {
+      "id": "col-facil-13",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué colección no permite elementos repetidos?",
+      "questionTextEn": "Which collection does not allow repeated elements?",
+      "correctAnswer": "HashSet<T>",
+      "incorrectAnswerPool": [
+        "List<T>",
+        "Queue<T>",
+        "Stack<T>",
+        "int[]"
+      ]
+    },
+    {
+      "id": "col-facil-14",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cómo funciona una Queue<T>?",
+      "questionTextEn": "How does a Queue<T> work?",
+      "correctAnswer": "El primero que entra es el primero que sale",
+      "incorrectAnswerPool": [
+        "El último que entra es el primero que sale",
+        "Siempre sale el elemento mayor",
+        "Los elementos salen en orden alfabético",
+        "Sale un elemento al azar"
+      ],
+      "correctAnswerEn": "The first one in is the first one out",
+      "incorrectAnswerPoolEn": [
+        "The last one in is the first one out",
+        "The largest element always comes out",
+        "Elements come out in alphabetical order",
+        "A random element comes out"
+      ]
+    },
+    {
+      "id": "col-facil-15",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cómo funciona una Stack<T>?",
+      "questionTextEn": "How does a Stack<T> work?",
+      "correctAnswer": "El último que entra es el primero que sale",
+      "incorrectAnswerPool": [
+        "El primero que entra es el primero que sale",
+        "Siempre sale el elemento menor",
+        "Solo se puede sacar el elemento del medio",
+        "Los elementos salen por índice"
+      ],
+      "correctAnswerEn": "The last one in is the first one out",
+      "incorrectAnswerPoolEn": [
+        "The first one in is the first one out",
+        "The smallest element always comes out",
+        "Only the middle element can be taken out",
+        "Elements come out by index"
+      ]
+    },
+    {
+      "id": "col-facil-16",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué bucle recorre una colección sin necesidad de un índice?",
+      "questionTextEn": "Which loop goes through a collection without needing an index?",
+      "correctAnswer": "foreach",
+      "incorrectAnswerPool": [
+        "for",
+        "while",
+        "do-while",
+        "goto"
+      ]
+    },
+    {
+      "id": "col-facil-17",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué método agrega un elemento a una Stack<T>?",
+      "questionTextEn": "Which method adds an element to a Stack<T>?",
+      "correctAnswer": "Push",
+      "incorrectAnswerPool": [
+        "Add",
+        "Enqueue",
+        "Insert",
+        "Append"
+      ]
+    },
+    {
+      "id": "col-facil-18",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué método agrega un elemento a una Queue<T>?",
+      "questionTextEn": "Which method adds an element to a Queue<T>?",
+      "correctAnswer": "Enqueue",
+      "incorrectAnswerPool": [
+        "Push",
+        "Add",
+        "Insert",
+        "Offer"
+      ]
+    },
+    {
+      "id": "col-facil-19",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "Con int[] a = { 4, 5, 6 };  ¿cómo se accede al tercer elemento?",
+      "questionTextEn": "With int[] a = { 4, 5, 6 };  how do you access the third element?",
+      "correctAnswer": "a[2]",
+      "incorrectAnswerPool": [
+        "a[3]",
+        "a(2)",
+        "a.3",
+        "a{2}"
+      ]
+    },
+    {
+      "id": "col-facil-20",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué pasa al leer a[5] en un array de 5 elementos?",
+      "questionTextEn": "What happens when you read a[5] on an array of 5 elements?",
+      "correctAnswer": "Lanza una excepción al ejecutar",
+      "incorrectAnswerPool": [
+        "Devuelve 0",
+        "Devuelve null",
+        "Devuelve el primer elemento",
+        "No compila nunca"
+      ],
+      "correctAnswerEn": "It throws an exception at run time",
+      "incorrectAnswerPoolEn": [
+        "It returns 0",
+        "It returns null",
+        "It returns the first element",
+        "It never compiles"
+      ]
+    },
+    {
+      "id": "col-facil-21",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué indica el <int> en List<int>?",
+      "questionTextEn": "What does the <int> in List<int> mean?",
+      "correctAnswer": "El tipo de los elementos de la lista",
+      "incorrectAnswerPool": [
+        "El tamaño máximo de la lista",
+        "La cantidad inicial de elementos",
+        "El índice del primer elemento",
+        "El nombre de la lista"
+      ],
+      "correctAnswerEn": "The type of the list elements",
+      "incorrectAnswerPoolEn": [
+        "The maximum size of the list",
+        "The initial number of elements",
+        "The index of the first element",
+        "The name of the list"
+      ]
+    },
+    {
+      "id": "col-facil-22",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué hace el método Add de una List<T>?",
+      "questionTextEn": "What does the Add method of a List<T> do?",
+      "correctAnswer": "Agrega un elemento al final de la lista",
+      "incorrectAnswerPool": [
+        "Agrega un elemento al inicio de la lista",
+        "Suma todos los elementos",
+        "Reemplaza el primer elemento",
+        "Ordena la lista"
+      ],
+      "correctAnswerEn": "It adds an element at the end of the list",
+      "incorrectAnswerPoolEn": [
+        "It adds an element at the start of the list",
+        "It adds up all the elements",
+        "It replaces the first element",
+        "It sorts the list"
+      ]
+    },
+    {
+      "id": "col-facil-23",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuál es la diferencia entre int[] y List<int> al agregar elementos?",
+      "questionTextEn": "What is the difference between int[] and List<int> when adding elements?",
+      "correctAnswer": "La List tiene Add y el array no",
+      "incorrectAnswerPool": [
+        "El array tiene Add y la List no",
+        "Ninguna, los dos tienen Add",
+        "El array agrega elementos más rápido sin límite",
+        "La List solo guarda un elemento"
+      ],
+      "correctAnswerEn": "The List has Add and the array does not",
+      "incorrectAnswerPoolEn": [
+        "The array has Add and the List does not",
+        "None, both have Add",
+        "The array adds elements faster with no limit",
+        "The List only stores one element"
+      ]
+    },
+    {
+      "id": "col-facil-24",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cómo se llama el número que indica la posición de un elemento en un array?",
+      "questionTextEn": "What is the number that tells the position of an element in an array called?",
+      "correctAnswer": "Índice",
+      "incorrectAnswerPool": [
+        "Valor",
+        "Longitud",
+        "Clave",
+        "Contador"
+      ],
+      "correctAnswerEn": "Index",
+      "incorrectAnswerPoolEn": [
+        "Value",
+        "Length",
+        "Key",
+        "Counter"
+      ]
+    },
+    {
+      "id": "col-facil-25",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuál de estos es un array de textos?",
+      "questionTextEn": "Which of these is an array of strings?",
+      "correctAnswer": "string[] nombres",
+      "incorrectAnswerPool": [
+        "string nombres",
+        "int[] nombres",
+        "List<int> nombres",
+        "char nombres"
+      ]
+    },
+    {
+      "id": "col-facil-26",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cómo se llama cada \"casilla\" de un array?",
+      "questionTextEn": "What is each \"slot\" of an array called?",
+      "correctAnswer": "Elemento",
+      "incorrectAnswerPool": [
+        "Variable global",
+        "Método",
+        "Clase",
+        "Índice máximo"
+      ],
+      "correctAnswerEn": "Element",
+      "incorrectAnswerPoolEn": [
+        "Global variable",
+        "Method",
+        "Class",
+        "Maximum index"
+      ]
+    },
+    {
+      "id": "col-facil-27",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "int[] a = { 4, 8, 15 };\nConsole.WriteLine(a[1]);\n¿Qué muestra?",
+      "questionTextEn": "int[] a = { 4, 8, 15 };\nConsole.WriteLine(a[1]);\nWhat does it print?",
+      "correctAnswer": "8",
+      "incorrectAnswerPool": [
+        "4",
+        "15",
+        "1",
+        "2"
+      ]
+    },
+    {
+      "id": "col-facil-28",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "int[] a = { 7, 3, 9 };\nConsole.WriteLine(a[0]);\n¿Qué muestra?",
+      "questionTextEn": "int[] a = { 7, 3, 9 };\nConsole.WriteLine(a[0]);\nWhat does it print?",
+      "correctAnswer": "7",
+      "incorrectAnswerPool": [
+        "3",
+        "9",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "id": "col-facil-29",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "int[] a = { 1, 2, 3, 4, 5, 6 };\nConsole.WriteLine(a.Length);\n¿Qué muestra?",
+      "questionTextEn": "int[] a = { 1, 2, 3, 4, 5, 6 };\nConsole.WriteLine(a.Length);\nWhat does it print?",
+      "correctAnswer": "6",
+      "incorrectAnswerPool": [
+        "5",
+        "7",
+        "21",
+        "1"
+      ]
+    },
+    {
+      "id": "col-facil-30",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "int[] a = { 2, 4, 6, 8 };\nConsole.WriteLine(a[a.Length - 1]);\n¿Qué muestra?",
+      "questionTextEn": "int[] a = { 2, 4, 6, 8 };\nConsole.WriteLine(a[a.Length - 1]);\nWhat does it print?",
+      "correctAnswer": "8",
+      "incorrectAnswerPool": [
+        "6",
+        "4",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "id": "col-facil-31",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "int[] a = new int[4];\nConsole.WriteLine(a[2]);\n¿Qué muestra?",
+      "questionTextEn": "int[] a = new int[4];\nConsole.WriteLine(a[2]);\nWhat does it print?",
+      "correctAnswer": "0",
+      "incorrectAnswerPool": [
+        "2",
+        "4",
+        "1",
+        "null"
+      ]
+    },
+    {
+      "id": "col-facil-32",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "string[] n = { \"Ana\", \"Luis\" };\nConsole.WriteLine(n[1]);\n¿Qué muestra?",
+      "questionTextEn": "string[] n = { \"Ana\", \"Luis\" };\nConsole.WriteLine(n[1]);\nWhat does it print?",
+      "correctAnswer": "Luis",
+      "incorrectAnswerPool": [
+        "Ana",
+        "1",
+        "Ana Luis",
+        "n[1]"
+      ]
+    },
+    {
+      "id": "col-facil-33",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "int[] a = { 1, 2, 3 };\na[1] = 10;\nConsole.WriteLine(a[1]);\n¿Qué muestra?",
+      "questionTextEn": "int[] a = { 1, 2, 3 };\na[1] = 10;\nConsole.WriteLine(a[1]);\nWhat does it print?",
+      "correctAnswer": "10",
+      "incorrectAnswerPool": [
+        "2",
+        "1",
+        "3",
+        "12"
+      ]
+    },
+    {
+      "id": "col-facil-34",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "int[] a = { 5, 6, 7 };\nConsole.WriteLine(a[0] + a[2]);\n¿Qué muestra?",
+      "questionTextEn": "int[] a = { 5, 6, 7 };\nConsole.WriteLine(a[0] + a[2]);\nWhat does it print?",
+      "correctAnswer": "12",
+      "incorrectAnswerPool": [
+        "11",
+        "13",
+        "18",
+        "5"
+      ]
+    },
+    {
+      "id": "col-facil-35",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "var l = new List<int>();\nl.Add(3);\nl.Add(5);\nConsole.WriteLine(l.Count);\n¿Qué muestra?",
+      "questionTextEn": "var l = new List<int>();\nl.Add(3);\nl.Add(5);\nConsole.WriteLine(l.Count);\nWhat does it print?",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "1",
+        "3",
+        "5",
+        "8"
+      ]
+    },
+    {
+      "id": "col-facil-36",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "var l = new List<string> { \"a\", \"b\", \"c\" };\nl.Remove(\"b\");\nConsole.WriteLine(l.Count);\n¿Qué muestra?",
+      "questionTextEn": "var l = new List<string> { \"a\", \"b\", \"c\" };\nl.Remove(\"b\");\nConsole.WriteLine(l.Count);\nWhat does it print?",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "3",
+        "1",
+        "0",
+        "b"
+      ]
+    },
+    {
+      "id": "col-facil-37",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "var l = new List<int> { 10, 20, 30 };\nConsole.WriteLine(l[2]);\n¿Qué muestra?",
+      "questionTextEn": "var l = new List<int> { 10, 20, 30 };\nConsole.WriteLine(l[2]);\nWhat does it print?",
+      "correctAnswer": "30",
+      "incorrectAnswerPool": [
+        "20",
+        "3",
+        "10",
+        "2"
+      ]
+    },
+    {
+      "id": "col-facil-38",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "var l = new List<int> { 10, 20, 30 };\nConsole.WriteLine(l.Contains(20));\n¿Qué muestra?",
+      "questionTextEn": "var l = new List<int> { 10, 20, 30 };\nConsole.WriteLine(l.Contains(20));\nWhat does it print?",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "20",
+        "1",
+        "Sí"
+      ]
+    },
+    {
+      "id": "col-facil-39",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "var l = new List<int> { 10, 20, 30 };\nConsole.WriteLine(l.IndexOf(30));\n¿Qué muestra?",
+      "questionTextEn": "var l = new List<int> { 10, 20, 30 };\nConsole.WriteLine(l.IndexOf(30));\nWhat does it print?",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "3",
+        "1",
+        "30",
+        "0"
+      ]
+    },
+    {
+      "id": "col-facil-40",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "var l = new List<int> { 10, 20, 30 };\nConsole.WriteLine(l.IndexOf(99));\n¿Qué muestra?",
+      "questionTextEn": "var l = new List<int> { 10, 20, 30 };\nConsole.WriteLine(l.IndexOf(99));\nWhat does it print?",
+      "correctAnswer": "-1",
+      "incorrectAnswerPool": [
+        "0",
+        "3",
+        "99",
+        "1"
+      ]
+    },
+    {
+      "id": "col-facil-41",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "int total = 0;\nforeach (int n in new int[] { 1, 2, 3 })\n    total += n;\nConsole.WriteLine(total);\n¿Qué muestra?",
+      "questionTextEn": "int total = 0;\nforeach (int n in new int[] { 1, 2, 3 })\n    total += n;\nConsole.WriteLine(total);\nWhat does it print?",
+      "correctAnswer": "6",
+      "incorrectAnswerPool": [
+        "3",
+        "123",
+        "0",
+        "5"
+      ]
+    },
+    {
+      "id": "col-facil-42",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "int[] a = { 5, 6, 7 };\nfor (int i = 0; i < 3; i++)\n    Console.Write(a[i]);\n¿Qué muestra?",
+      "questionTextEn": "int[] a = { 5, 6, 7 };\nfor (int i = 0; i < 3; i++)\n    Console.Write(a[i]);\nWhat does it print?",
+      "correctAnswer": "567",
+      "incorrectAnswerPool": [
+        "765",
+        "012",
+        "18",
+        "5 6 7"
+      ]
+    },
+    {
+      "id": "col-facil-43",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "int[,] m = new int[2, 3];\nConsole.WriteLine(m.GetLength(1));\n¿Qué muestra?",
+      "questionTextEn": "int[,] m = new int[2, 3];\nConsole.WriteLine(m.GetLength(1));\nWhat does it print?",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "2",
+        "6",
+        "1",
+        "5"
+      ]
+    },
+    {
+      "id": "col-facil-44",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "int[,] m = { { 1, 2 }, { 3, 4 } };\nConsole.WriteLine(m[1, 0]);\n¿Qué muestra?",
+      "questionTextEn": "int[,] m = { { 1, 2 }, { 3, 4 } };\nConsole.WriteLine(m[1, 0]);\nWhat does it print?",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "2",
+        "1",
+        "4",
+        "0"
+      ]
+    },
+    {
+      "id": "col-facil-45",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "var d = new Dictionary<string, int>();\nd[\"uno\"] = 1;\nd[\"dos\"] = 2;\nConsole.WriteLine(d[\"dos\"]);\n¿Qué muestra?",
+      "questionTextEn": "var d = new Dictionary<string, int>();\nd[\"uno\"] = 1;\nd[\"dos\"] = 2;\nConsole.WriteLine(d[\"dos\"]);\nWhat does it print?",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "1",
+        "0",
+        "3",
+        "dos"
+      ]
+    },
+    {
+      "id": "col-facil-46",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "var d = new Dictionary<string, int>();\nd[\"a\"] = 10;\nd[\"b\"] = 20;\nd[\"a\"] = 30;\nConsole.WriteLine(d.Count);\n¿Qué muestra?",
+      "questionTextEn": "var d = new Dictionary<string, int>();\nd[\"a\"] = 10;\nd[\"b\"] = 20;\nd[\"a\"] = 30;\nConsole.WriteLine(d.Count);\nWhat does it print?",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "3",
+        "1",
+        "60",
+        "0"
+      ]
+    },
+    {
+      "id": "col-facil-47",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "var h = new HashSet<int>();\nh.Add(1);\nh.Add(1);\nh.Add(2);\nConsole.WriteLine(h.Count);\n¿Qué muestra?",
+      "questionTextEn": "var h = new HashSet<int>();\nh.Add(1);\nh.Add(1);\nh.Add(2);\nConsole.WriteLine(h.Count);\nWhat does it print?",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "3",
+        "1",
+        "0",
+        "4"
+      ]
+    },
+    {
+      "id": "col-facil-48",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "var q = new Queue<int>();\nq.Enqueue(1);\nq.Enqueue(2);\nConsole.WriteLine(q.Dequeue());\n¿Qué muestra?",
+      "questionTextEn": "var q = new Queue<int>();\nq.Enqueue(1);\nq.Enqueue(2);\nConsole.WriteLine(q.Dequeue());\nWhat does it print?",
+      "correctAnswer": "1",
+      "incorrectAnswerPool": [
+        "2",
+        "0",
+        "3",
+        "12"
+      ]
+    },
+    {
+      "id": "col-facil-49",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "var s = new Stack<int>();\ns.Push(1);\ns.Push(2);\nConsole.WriteLine(s.Pop());\n¿Qué muestra?",
+      "questionTextEn": "var s = new Stack<int>();\ns.Push(1);\ns.Push(2);\nConsole.WriteLine(s.Pop());\nWhat does it print?",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "1",
+        "0",
+        "3",
+        "12"
+      ]
+    },
+    {
+      "id": "col-facil-50",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "var s = new Stack<int>();\ns.Push(5);\ns.Push(8);\nConsole.WriteLine(s.Peek());\n¿Qué muestra?",
+      "questionTextEn": "var s = new Stack<int>();\ns.Push(5);\ns.Push(8);\nConsole.WriteLine(s.Peek());\nWhat does it print?",
+      "correctAnswer": "8",
+      "incorrectAnswerPool": [
+        "5",
+        "13",
+        "0",
+        "3"
+      ]
+    },
+    {
+      "id": "col-facil-51",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "var l = new List<string>();\nl.Add(\"A\");\nl.Add(\"B\");\nl.Add(\"C\");\nConsole.WriteLine(string.Join(\", \", l));\n¿Qué muestra?",
+      "questionTextEn": "var l = new List<string>();\nl.Add(\"A\");\nl.Add(\"B\");\nl.Add(\"C\");\nConsole.WriteLine(string.Join(\", \", l));\nWhat does it print?",
+      "correctAnswer": "A, B, C",
+      "incorrectAnswerPool": [
+        "ABC",
+        "A B C",
+        "A,B,C",
+        "C, B, A"
+      ]
+    },
+    {
+      "id": "col-facil-52",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "var l = new List<int> { 1, 2, 3 };\nl.RemoveAt(0);\nConsole.WriteLine(l[0]);\n¿Qué muestra?",
+      "questionTextEn": "var l = new List<int> { 1, 2, 3 };\nl.RemoveAt(0);\nConsole.WriteLine(l[0]);\nWhat does it print?",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "1",
+        "3",
+        "0",
+        "6"
+      ]
+    },
+    {
+      "id": "col-facil-53",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "var l = new List<int> { 1, 2, 3 };\nl.Clear();\nConsole.WriteLine(l.Count);\n¿Qué muestra?",
+      "questionTextEn": "var l = new List<int> { 1, 2, 3 };\nl.Clear();\nConsole.WriteLine(l.Count);\nWhat does it print?",
+      "correctAnswer": "0",
+      "incorrectAnswerPool": [
+        "3",
+        "1",
+        "-1",
+        "6"
+      ]
+    },
+    {
+      "id": "col-facil-54",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "var l = new List<int> { 1, 2, 3 };\nl.Reverse();\nConsole.WriteLine(string.Join(\",\", l));\n¿Qué muestra?",
+      "questionTextEn": "var l = new List<int> { 1, 2, 3 };\nl.Reverse();\nConsole.WriteLine(string.Join(\",\", l));\nWhat does it print?",
+      "correctAnswer": "3,2,1",
+      "incorrectAnswerPool": [
+        "1,2,3",
+        "3,1,2",
+        "2,1,3",
+        "123"
+      ]
+    },
+    {
+      "id": "col-facil-55",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "int[] a = { 3, 1, 2 };\nArray.Sort(a);\nConsole.WriteLine(a[0]);\n¿Qué muestra?",
+      "questionTextEn": "int[] a = { 3, 1, 2 };\nArray.Sort(a);\nConsole.WriteLine(a[0]);\nWhat does it print?",
+      "correctAnswer": "1",
+      "incorrectAnswerPool": [
+        "3",
+        "2",
+        "0",
+        "6"
+      ]
+    },
+    {
+      "id": "col-facil-56",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "var l = new List<int> { 4, 5, 6 };\nl[0] = 9;\nConsole.WriteLine(l[0]);\n¿Qué muestra?",
+      "questionTextEn": "var l = new List<int> { 4, 5, 6 };\nl[0] = 9;\nConsole.WriteLine(l[0]);\nWhat does it print?",
+      "correctAnswer": "9",
+      "incorrectAnswerPool": [
+        "4",
+        "5",
+        "6",
+        "0"
+      ]
+    },
+    {
+      "id": "col-facil-57",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "string[] s = new string[2];\nConsole.WriteLine(s[0] == null);\n¿Qué muestra?",
+      "questionTextEn": "string[] s = new string[2];\nConsole.WriteLine(s[0] == null);\nWhat does it print?",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "null",
+        "0",
+        "Error"
+      ]
+    },
+    {
+      "id": "col-facil-58",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "bool[] b = new bool[2];\nConsole.WriteLine(b[1]);\n¿Qué muestra?",
+      "questionTextEn": "bool[] b = new bool[2];\nConsole.WriteLine(b[1]);\nWhat does it print?",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "0",
+        "null",
+        "1"
+      ]
+    },
+    {
+      "id": "col-facil-59",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "char[] c = { 'h', 'o', 'y' };\nConsole.WriteLine(new string(c));\n¿Qué muestra?",
+      "questionTextEn": "char[] c = { 'h', 'o', 'y' };\nConsole.WriteLine(new string(c));\nWhat does it print?",
+      "correctAnswer": "hoy",
+      "incorrectAnswerPool": [
+        "3",
+        "h o y",
+        "System.Char[]",
+        "yoh"
+      ]
+    },
+    {
+      "id": "col-facil-60",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "foreach (string s in new string[] { \"a\", \"b\" })\n    Console.Write(s + \"-\");\n¿Qué muestra?",
+      "questionTextEn": "foreach (string s in new string[] { \"a\", \"b\" })\n    Console.Write(s + \"-\");\nWhat does it print?",
+      "correctAnswer": "a-b-",
+      "incorrectAnswerPool": [
+        "a-b",
+        "-a-b",
+        "ab",
+        "b-a-"
+      ]
+    },
+    {
+      "id": "col-facil-61",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "int[] a = { };\nConsole.WriteLine(a.Length);\n¿Qué muestra?",
+      "questionTextEn": "int[] a = { };\nConsole.WriteLine(a.Length);\nWhat does it print?",
+      "correctAnswer": "0",
+      "incorrectAnswerPool": [
+        "1",
+        "-1",
+        "null",
+        "Error"
+      ]
+    },
+    {
+      "id": "col-facil-62",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para crear un array de 8 enteros.",
+      "questionTextEn": "Fill in the blank to create an array of 8 integers.",
+      "codeTemplate": "int[] a = new int[____];\nConsole.WriteLine(a.Length);",
+      "expectedAnswer": "8"
+    },
+    {
+      "id": "col-facil-63",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para crear una lista de enteros.",
+      "questionTextEn": "Fill in the blank to create a list of integers.",
+      "codeTemplate": "var l = new ____<int>();\nl.Add(1);\nConsole.WriteLine(l.Count);",
+      "expectedAnswer": "List"
+    },
+    {
+      "id": "col-facil-64",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para agregar el 7 a la lista.",
+      "questionTextEn": "Fill in the blank to add 7 to the list.",
+      "codeTemplate": "var l = new List<int>();\nl.____(7);\nConsole.WriteLine(l.Count);",
+      "expectedAnswer": "Add"
+    },
+    {
+      "id": "col-facil-65",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para mostrar cuántos elementos tiene el array.",
+      "questionTextEn": "Fill in the blank to print how many elements the array has.",
+      "codeTemplate": "int[] nums = { 1, 2, 3 };\nConsole.WriteLine(nums.____);",
+      "expectedAnswer": "Length"
+    },
+    {
+      "id": "col-facil-66",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con el índice para mostrar el primer elemento.",
+      "questionTextEn": "Fill in the blank with the index to print the first element.",
+      "codeTemplate": "int[] nums = { 4, 5, 6 };\nConsole.WriteLine(nums[____]);",
+      "expectedAnswer": "0"
+    },
+    {
+      "id": "col-facil-67",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el tipo de los valores del diccionario.",
+      "questionTextEn": "Fill in the type of the dictionary values.",
+      "codeTemplate": "Dictionary<string, ____> edades = new Dictionary<string, int>();",
+      "expectedAnswer": "int"
+    },
+    {
+      "id": "col-facil-68",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para crear una cola de enteros.",
+      "questionTextEn": "Fill in the blank to create a queue of integers.",
+      "codeTemplate": "var cola = new ____<int>();\ncola.Enqueue(4);\nConsole.WriteLine(cola.Count);",
+      "expectedAnswer": "Queue"
+    },
+    {
+      "id": "col-facil-69",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para apilar el 3 en la pila.",
+      "questionTextEn": "Fill in the blank to stack the 3 on the stack.",
+      "codeTemplate": "var pila = new Stack<int>();\npila.____(3);\nConsole.WriteLine(pila.Count);",
+      "expectedAnswer": "Push"
+    },
+    {
+      "id": "col-facil-70",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para saber si la lista contiene el 5.",
+      "questionTextEn": "Fill in the blank to find out whether the list contains 5.",
+      "codeTemplate": "var l = new List<int> { 1, 5 };\nConsole.WriteLine(l.____(5));",
+      "expectedAnswer": "Contains"
+    },
+    {
+      "id": "col-facil-71",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para quitar el primer elemento por su posición.",
+      "questionTextEn": "Fill in the blank to remove the first element by its position.",
+      "codeTemplate": "var l = new List<string> { \"a\", \"b\" };\nl.____(0);\nConsole.WriteLine(l[0]);",
+      "expectedAnswer": "RemoveAt"
+    },
+    {
+      "id": "col-facil-72",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para crear una matriz de 2 filas y 4 columnas.",
+      "questionTextEn": "Fill in the blank to create a matrix with 2 rows and 4 columns.",
+      "codeTemplate": "int[,] m = new int[2, ____];\nConsole.WriteLine(m.Length);",
+      "expectedAnswer": "4"
+    },
+    {
+      "id": "col-facil-73",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para crear un array de textos de tamaño 3.",
+      "questionTextEn": "Fill in the blank to create an array of strings of size 3.",
+      "codeTemplate": "string[] nombres = new ____[3];\nConsole.WriteLine(nombres.Length);",
+      "expectedAnswer": "string"
+    },
+    {
+      "id": "col-facil-74",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para crear un conjunto sin repetidos.",
+      "questionTextEn": "Fill in the blank to create a set with no repeated values.",
+      "codeTemplate": "var conjunto = new ____<int>();\nconjunto.Add(2);\nconjunto.Add(2);\nConsole.WriteLine(conjunto.Count);",
+      "expectedAnswer": "HashSet"
+    },
+    {
+      "id": "col-facil-75",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para crear un array, asignar su primer elemento y mostrarlo.",
+      "questionTextEn": "Put the lines in order to create an array, set its first element and print it.",
+      "codeBlocks": [
+        "int[] a = new int[3];",
+        "a[0] = 5;",
+        "Console.WriteLine(a[0]);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "col-facil-76",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para crear una lista de textos, agregar dos y mostrar el segundo.",
+      "questionTextEn": "Put the lines in order to create a list of strings, add two and print the second one.",
+      "codeBlocks": [
+        "var l = new List<string>();",
+        "l.Add(\"hola\");",
+        "l.Add(\"mundo\");",
+        "Console.WriteLine(l[1]);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "col-facil-77",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para mostrar cada nombre del array.",
+      "questionTextEn": "Put the lines in order to print every name in the array.",
+      "codeBlocks": [
+        "string[] n = { \"Ana\", \"Bea\" };",
+        "foreach (string x in n)",
+        "    Console.WriteLine(x);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "col-facil-78",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para apilar dos números y sacar el último.",
+      "questionTextEn": "Put the lines in order to stack two numbers and take out the last one.",
+      "codeBlocks": [
+        "var p = new Stack<int>();",
+        "p.Push(1);",
+        "p.Push(2);",
+        "Console.WriteLine(p.Pop());"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "col-facil-79",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para encolar dos letras y mostrar la cola en orden de salida.",
+      "questionTextEn": "Put the lines in order to enqueue two letters and print the queue in the order they will come out.",
+      "codeBlocks": [
+        "var c = new Queue<string>();",
+        "c.Enqueue(\"a\");",
+        "c.Enqueue(\"b\");",
+        "Console.WriteLine(string.Join(\",\", c));"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "col-facil-80",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para guardar un valor en un diccionario y mostrarlo.",
+      "questionTextEn": "Put the lines in order to store a value in a dictionary and print it.",
+      "codeBlocks": [
+        "var d = new Dictionary<string, int>();",
+        "d[\"pan\"] = 3;",
+        "Console.WriteLine(d[\"pan\"]);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "col-facil-81",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "El array nums ya existe. Ordena para sumar sus elementos con foreach.",
+      "questionTextEn": "The array nums already exists. Put the lines in order to add up its elements with foreach.",
+      "codeBlocks": [
+        "int suma = 0;",
+        "foreach (int n in nums)",
+        "    suma += n;",
+        "Console.WriteLine(suma);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "col-facil-82",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para quitar el primer elemento de la lista y mostrar el nuevo primero.",
+      "questionTextEn": "Put the lines in order to remove the first element of the list and print the new first one.",
+      "codeBlocks": [
+        "var l = new List<int> { 4, 5, 6 };",
+        "l.RemoveAt(0);",
+        "Console.WriteLine(l[0]);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "col-facil-83",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para mostrar el último elemento de un array.",
+      "questionTextEn": "Put the lines in order to print the last element of an array.",
+      "codeBlocks": [
+        "int[] a = { 3, 6, 9 };",
+        "int ultimo = a[a.Length - 1];",
+        "Console.WriteLine(ultimo);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "col-facil-84",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para crear una matriz, guardar un valor y mostrarlo.",
+      "questionTextEn": "Put the lines in order to create a matrix, store a value and print it.",
+      "codeBlocks": [
+        "int[,] m = new int[2, 2];",
+        "m[1, 1] = 7;",
+        "Console.WriteLine(m[1, 1]);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "col-facil-85",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para llenar un array con los dobles de 0, 1 y 2 y mostrar el último.",
+      "questionTextEn": "Put the lines in order to fill an array with the doubles of 0, 1 and 2 and print the last one.",
+      "codeBlocks": [
+        "int[] c = new int[3];",
+        "for (int i = 0; i < c.Length; i++)",
+        "    c[i] = i * 2;",
+        "Console.WriteLine(c[2]);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "col-facil-86",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para crear un conjunto, agregar un valor y preguntar si lo contiene.",
+      "questionTextEn": "Put the lines in order to create a set, add a value and ask whether it contains it.",
+      "codeBlocks": [
+        "var h = new HashSet<int>();",
+        "h.Add(4);",
+        "Console.WriteLine(h.Contains(4));"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "col-facil-87",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para ordenar un array y mostrar su primer elemento.",
+      "questionTextEn": "Put the lines in order to sort an array and print its first element.",
+      "codeBlocks": [
+        "int[] a = { 3, 1, 2 };",
+        "Array.Sort(a);",
+        "Console.WriteLine(a[0]);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "col-facil-88",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "codeSnippetsOptions": [
+        "int[] a = new int[3];",
+        "int[] b = { 1, 2, 3 };",
+        "int[] c = new int[3] { 1, 2 };",
+        "int[] d = new int[] { 1, 2 };"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "col-facil-89",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea falla al ejecutarse?",
+      "questionTextEn": "Which line fails at run time?",
+      "codeSnippetsOptions": [
+        "int[] a = new int[3]; a[2] = 1;",
+        "int[] a = new int[3]; a[3] = 1;",
+        "int[] a = new int[3]; a[0] = 1;",
+        "int[] a = new int[3]; a[1] = 1;"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "col-facil-90",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "La lista l es de enteros. ¿Qué línea no compila?",
+      "questionTextEn": "The list l is a list of integers. Which line does not compile?",
+      "codeSnippetsOptions": [
+        "l.Add(1);",
+        "l.Remove(1);",
+        "l.Clear();",
+        "l.Push(2);"
+      ],
+      "buggyIndex": 3
+    },
+    {
+      "id": "col-facil-91",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "El array a es de enteros. ¿Qué línea no compila?",
+      "questionTextEn": "The array a is an array of integers. Which line does not compile?",
+      "codeSnippetsOptions": [
+        "int n = a.Length;",
+        "int n = a[0];",
+        "int n = a.Count;",
+        "int n = a[2];"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "col-facil-92",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "El array a es de enteros. ¿Qué línea no compila?",
+      "questionTextEn": "The array a is an array of integers. Which line does not compile?",
+      "codeSnippetsOptions": [
+        "a[1] = \"uno\";",
+        "a[0] = 5;",
+        "a[2] = 7;",
+        "a[0] = a[2];"
+      ],
+      "buggyIndex": 0
+    },
+    {
+      "id": "col-facil-93",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "La lista l está vacía. ¿Qué línea falla al ejecutarse?",
+      "questionTextEn": "The list l is empty. Which line fails at run time?",
+      "codeSnippetsOptions": [
+        "l.Clear();",
+        "l.Add(1);",
+        "l.RemoveAt(0);",
+        "Console.WriteLine(l.Count);"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "col-facil-94",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "codeSnippetsOptions": [
+        "int[,] m = new int[2, 3];",
+        "int[,] m = new int[2][3];",
+        "int[,] m = { { 1, 2 }, { 3, 4 } };"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "col-facil-95",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "El diccionario d tiene claves de texto y valores enteros. ¿Qué línea no compila?",
+      "questionTextEn": "The dictionary d has string keys and integer values. Which line does not compile?",
+      "codeSnippetsOptions": [
+        "d.Add(\"c\");",
+        "d[\"a\"] = 1;",
+        "d.Add(\"b\", 2);",
+        "int n = d.Count;"
+      ],
+      "buggyIndex": 0
+    },
+    {
+      "id": "col-facil-96",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "El diccionario d solo tiene la clave \"a\". ¿Qué línea falla al ejecutarse?",
+      "questionTextEn": "The dictionary d only has the key \"a\". Which line fails at run time?",
+      "codeSnippetsOptions": [
+        "int x = d[\"a\"];",
+        "bool t = d.ContainsKey(\"b\");",
+        "d[\"b\"] = 2;",
+        "int x = d[\"b\"];"
+      ],
+      "buggyIndex": 3
+    },
+    {
+      "id": "col-facil-97",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "La cola q está vacía. ¿Qué línea falla al ejecutarse?",
+      "questionTextEn": "The queue q is empty. Which line fails at run time?",
+      "codeSnippetsOptions": [
+        "q.Dequeue();",
+        "q.Enqueue(1);",
+        "int n = q.Count;",
+        "q.Clear();"
+      ],
+      "buggyIndex": 0
+    },
+    {
+      "id": "col-facil-98",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "La pila s está vacía. ¿Qué línea falla al ejecutarse?",
+      "questionTextEn": "The stack s is empty. Which line fails at run time?",
+      "codeSnippetsOptions": [
+        "s.Push(1);",
+        "int n = s.Count;",
+        "s.Clear();",
+        "s.Peek();"
+      ],
+      "buggyIndex": 3
+    },
+    {
+      "id": "col-facil-99",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "codeSnippetsOptions": [
+        "string[] n = new string[2];",
+        "string[] n = { \"a\", \"b\" };",
+        "string n[] = new string[2];",
+        "string[] n = new string[] { \"a\" };"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "col-facil-100",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "Debe sumar todos los elementos de a (el resultado es 6). ¿Qué bucle no lo logra?",
+      "questionTextEn": "It must add up all the elements of a (the result is 6). Which loop does not manage it?",
+      "codeSnippetsOptions": [
+        "for (int i = 0; i < a.Length; i++) s += a[i];",
+        "foreach (int x in a) s += x;",
+        "for (int i = 1; i < a.Length; i++) s += a[i];",
+        "for (int i = 0; i <= a.Length - 1; i++) s += a[i];"
+      ],
+      "buggyIndex": 2
     }
   ]
 }

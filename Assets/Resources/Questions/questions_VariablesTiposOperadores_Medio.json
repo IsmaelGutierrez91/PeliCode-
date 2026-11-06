@@ -146,6 +146,1535 @@
         "int b = MAX + 1;"
       ],
       "buggyIndex": 2
+    },
+    {
+      "id": "var-medio-11",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 7, b = 2;\nConsole.WriteLine(a / b);",
+      "questionTextEn": "What does it print?\nint a = 7, b = 2;\nConsole.WriteLine(a / b);",
+      "explanation": "Entre dos enteros la división es entera: se descarta la parte decimal.",
+      "explanationEn": "Dividing two integers is an integer division: the decimal part is discarded.",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "3.5",
+        "4",
+        "3.0",
+        "2",
+        "14"
+      ]
+    },
+    {
+      "id": "var-medio-12",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 7, b = 2;\nConsole.WriteLine((double)a / b);",
+      "questionTextEn": "What does it print?\nint a = 7, b = 2;\nConsole.WriteLine((double)a / b);",
+      "explanation": "El cast a double se aplica a a antes de dividir, así que la división es decimal.",
+      "explanationEn": "The cast to double applies to a before dividing, so the division is decimal.",
+      "correctAnswer": "3.5",
+      "incorrectAnswerPool": [
+        "3",
+        "4",
+        "3.0",
+        "3,5",
+        "0.5"
+      ]
+    },
+    {
+      "id": "var-medio-13",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 7, b = 2;\nConsole.WriteLine((double)(a / b));",
+      "questionTextEn": "What does it print?\nint a = 7, b = 2;\nConsole.WriteLine((double)(a / b));",
+      "explanation": "La división entera se hace antes del cast: 7 / 2 ya es 3.",
+      "explanationEn": "The integer division happens before the cast: 7 / 2 is already 3.",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "3.5",
+        "4",
+        "3.0",
+        "3,5",
+        "1"
+      ]
+    },
+    {
+      "id": "var-medio-14",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(\"Total: \" + 4 + 5);",
+      "questionTextEn": "What does it print?  Console.WriteLine(\"Total: \" + 4 + 5);",
+      "explanation": "Al concatenar con un texto, cada número se convierte en texto y se pega, sin sumarse.",
+      "explanationEn": "When concatenated with a text, each number becomes text and is appended, not added.",
+      "correctAnswer": "Total: 45",
+      "incorrectAnswerPool": [
+        "Total: 9",
+        "45",
+        "Total: 4 + 5",
+        "Total:9",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-medio-15",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(\"Total: \" + (4 + 5));",
+      "questionTextEn": "What does it print?  Console.WriteLine(\"Total: \" + (4 + 5));",
+      "explanation": "Los paréntesis fuerzan a sumar primero los números.",
+      "explanationEn": "The parentheses force the numbers to be added first.",
+      "correctAnswer": "Total: 9",
+      "incorrectAnswerPool": [
+        "Total: 45",
+        "9",
+        "Total: 4 + 5",
+        "Total:9",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-medio-16",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\ndouble precio = 3.14159;\nConsole.WriteLine($\"{precio:F2}\");",
+      "questionTextEn": "What does it print?\ndouble precio = 3.14159;\nConsole.WriteLine($\"{precio:F2}\");",
+      "explanation": "F2 formatea con dos decimales.",
+      "explanationEn": "F2 formats with two decimals.",
+      "correctAnswer": "3.14",
+      "incorrectAnswerPool": [
+        "3.1",
+        "3.142",
+        "3.14159",
+        "3",
+        "{precio:F2}"
+      ]
+    },
+    {
+      "id": "var-medio-17",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nchar c = 'a';\nConsole.WriteLine(c + 1);",
+      "questionTextEn": "What does it print?\nchar c = 'a';\nConsole.WriteLine(c + 1);",
+      "explanation": "Sumar un int a un char da un int: el código de 'a' (97) más 1.",
+      "explanationEn": "Adding an int to a char gives an int: the code of 'a' (97) plus 1.",
+      "correctAnswer": "98",
+      "incorrectAnswerPool": [
+        "b",
+        "a1",
+        "97",
+        "a + 1",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-medio-18",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nchar c = 'a';\nConsole.WriteLine((char)(c + 1));",
+      "questionTextEn": "What does it print?\nchar c = 'a';\nConsole.WriteLine((char)(c + 1));",
+      "explanation": "Con el cast a char se convierte el código 98 de vuelta al carácter.",
+      "explanationEn": "The cast to char turns code 98 back into a character.",
+      "correctAnswer": "b",
+      "incorrectAnswerPool": [
+        "98",
+        "a1",
+        "97",
+        "a",
+        "c"
+      ]
+    },
+    {
+      "id": "var-medio-19",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 5;\nint y = x++;\nConsole.WriteLine(x + \" \" + y);",
+      "questionTextEn": "What does it print?\nint x = 5;\nint y = x++;\nConsole.WriteLine(x + \" \" + y);",
+      "explanation": "x++ devuelve el valor antes de incrementar: y recibe 5 y luego x pasa a 6.",
+      "explanationEn": "x++ returns the value before incrementing: y gets 5 and then x becomes 6.",
+      "correctAnswer": "6 5",
+      "incorrectAnswerPool": [
+        "5 5",
+        "6 6",
+        "5 6",
+        "6",
+        "11"
+      ]
+    },
+    {
+      "id": "var-medio-20",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 5;\nint y = ++x;\nConsole.WriteLine(x + \" \" + y);",
+      "questionTextEn": "What does it print?\nint x = 5;\nint y = ++x;\nConsole.WriteLine(x + \" \" + y);",
+      "explanation": "++x incrementa primero y devuelve el valor nuevo.",
+      "explanationEn": "++x increments first and returns the new value.",
+      "correctAnswer": "6 6",
+      "incorrectAnswerPool": [
+        "5 5",
+        "6 5",
+        "5 6",
+        "6",
+        "12"
+      ]
+    },
+    {
+      "id": "var-medio-21",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = 17;\nConsole.WriteLine(n % 5 + n / 5);",
+      "questionTextEn": "What does it print?\nint n = 17;\nConsole.WriteLine(n % 5 + n / 5);",
+      "explanation": "17 % 5 es 2 y 17 / 5 es 3; 2 + 3 = 5.",
+      "explanationEn": "17 % 5 is 2 and 17 / 5 is 3; 2 + 3 = 5.",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "2",
+        "3",
+        "17",
+        "6",
+        "4"
+      ]
+    },
+    {
+      "id": "var-medio-22",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 4, b = 6;\nConsole.WriteLine(a < b && b < 5);",
+      "questionTextEn": "What does it print?\nint a = 4, b = 6;\nConsole.WriteLine(a < b && b < 5);",
+      "explanation": "La segunda condición (6 < 5) es falsa, así que el && es falso.",
+      "explanationEn": "The second condition (6 < 5) is false, so the && is false.",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "4",
+        "6",
+        "false",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-medio-23",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 4, b = 6;\nConsole.WriteLine(a > b || b > 5);",
+      "questionTextEn": "What does it print?\nint a = 4, b = 6;\nConsole.WriteLine(a > b || b > 5);",
+      "explanation": "Basta con que una condición sea verdadera para que || sea verdadero.",
+      "explanationEn": "It is enough for one condition to be true for || to be true.",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "4",
+        "6",
+        "true",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-medio-24",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nbool a = true, b = false;\nConsole.WriteLine(a && !b);",
+      "questionTextEn": "What does it print?\nbool a = true, b = false;\nConsole.WriteLine(a && !b);",
+      "explanation": "!b es true, y true && true es true.",
+      "explanationEn": "!b is true, and true && true is true.",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "true",
+        "false",
+        "!b",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-medio-25",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 10;\nx += 5;\nx *= 2;\nConsole.WriteLine(x);",
+      "questionTextEn": "What does it print?\nint x = 10;\nx += 5;\nx *= 2;\nConsole.WriteLine(x);",
+      "correctAnswer": "30",
+      "incorrectAnswerPool": [
+        "25",
+        "20",
+        "15",
+        "35",
+        "50"
+      ]
+    },
+    {
+      "id": "var-medio-26",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 20;\nx -= 4;\nx /= 2;\nConsole.WriteLine(x);",
+      "questionTextEn": "What does it print?\nint x = 20;\nx -= 4;\nx /= 2;\nConsole.WriteLine(x);",
+      "correctAnswer": "8",
+      "incorrectAnswerPool": [
+        "10",
+        "16",
+        "2",
+        "12",
+        "18"
+      ]
+    },
+    {
+      "id": "var-medio-27",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 17;\nx %= 5;\nx += 10;\nConsole.WriteLine(x);",
+      "questionTextEn": "What does it print?\nint x = 17;\nx %= 5;\nx += 10;\nConsole.WriteLine(x);",
+      "correctAnswer": "12",
+      "incorrectAnswerPool": [
+        "15",
+        "17",
+        "27",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "id": "var-medio-28",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuánto vale r?  int r = 2 + 3 * 4 - 6 / 2;",
+      "questionTextEn": "What is the value of r?  int r = 2 + 3 * 4 - 6 / 2;",
+      "explanation": "Primero * y /: 12 y 3. Luego 2 + 12 - 3 = 11.",
+      "explanationEn": "First * and /: 12 and 3. Then 2 + 12 - 3 = 11.",
+      "correctAnswer": "11",
+      "incorrectAnswerPool": [
+        "7",
+        "17",
+        "9",
+        "13",
+        "5"
+      ]
+    },
+    {
+      "id": "var-medio-29",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuánto vale r?  int r = (2 + 3) * (4 - 1);",
+      "questionTextEn": "What is the value of r?  int r = (2 + 3) * (4 - 1);",
+      "correctAnswer": "15",
+      "incorrectAnswerPool": [
+        "11",
+        "9",
+        "14",
+        "5",
+        "10"
+      ]
+    },
+    {
+      "id": "var-medio-30",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(0.1 + 0.2 == 0.3);",
+      "questionTextEn": "What does it print?  Console.WriteLine(0.1 + 0.2 == 0.3);",
+      "explanation": "Los double no representan 0.1 y 0.2 con exactitud, así que la suma no es exactamente 0.3.",
+      "explanationEn": "Doubles cannot represent 0.1 and 0.2 exactly, so the sum is not exactly 0.3.",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "0.3",
+        "Error",
+        "0",
+        "false"
+      ]
+    },
+    {
+      "id": "var-medio-31",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(0.1m + 0.2m == 0.3m);",
+      "questionTextEn": "What does it print?  Console.WriteLine(0.1m + 0.2m == 0.3m);",
+      "explanation": "El tipo decimal usa base 10 y representa estos valores con exactitud.",
+      "explanationEn": "The decimal type uses base 10 and represents these values exactly.",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "0.3",
+        "Error",
+        "0",
+        "true"
+      ]
+    },
+    {
+      "id": "var-medio-32",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring a = \"Hola\";\nstring b = \"Hola\";\nConsole.WriteLine(a == b);",
+      "questionTextEn": "What does it print?\nstring a = \"Hola\";\nstring b = \"Hola\";\nConsole.WriteLine(a == b);",
+      "explanation": "En string, == compara el contenido, no la referencia.",
+      "explanationEn": "For strings, == compares the contents, not the reference.",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "Hola",
+        "Error",
+        "a == b",
+        "null"
+      ]
+    },
+    {
+      "id": "var-medio-33",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring a = \"hola\";\nstring b = \"Hola\";\nConsole.WriteLine(a == b);",
+      "questionTextEn": "What does it print?\nstring a = \"hola\";\nstring b = \"Hola\";\nConsole.WriteLine(a == b);",
+      "explanation": "La comparación distingue mayúsculas de minúsculas.",
+      "explanationEn": "The comparison is case-sensitive.",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "hola",
+        "Error",
+        "Hola",
+        "null"
+      ]
+    },
+    {
+      "id": "var-medio-34",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = \"  casa  \";\nConsole.WriteLine(\"[\" + s.Trim() + \"]\");",
+      "questionTextEn": "What does it print?\nstring s = \"  casa  \";\nConsole.WriteLine(\"[\" + s.Trim() + \"]\");",
+      "explanation": "Trim quita los espacios del principio y del final.",
+      "explanationEn": "Trim removes the spaces at the start and at the end.",
+      "correctAnswer": "[casa]",
+      "incorrectAnswerPool": [
+        "[  casa  ]",
+        "[casa  ]",
+        "[  casa]",
+        "[ casa ]",
+        "casa"
+      ]
+    },
+    {
+      "id": "var-medio-35",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = \"Programar\";\nConsole.WriteLine(s.Substring(3, 4));",
+      "questionTextEn": "What does it print?\nstring s = \"Programar\";\nConsole.WriteLine(s.Substring(3, 4));",
+      "explanation": "Substring(3, 4) empieza en el índice 3 y toma 4 caracteres.",
+      "explanationEn": "Substring(3, 4) starts at index 3 and takes 4 characters.",
+      "correctAnswer": "gram",
+      "incorrectAnswerPool": [
+        "ogra",
+        "Prog",
+        "ramar",
+        "gra",
+        "rama"
+      ]
+    },
+    {
+      "id": "var-medio-36",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = \"banana\";\nConsole.WriteLine(s.IndexOf(\"n\"));",
+      "questionTextEn": "What does it print?\nstring s = \"banana\";\nConsole.WriteLine(s.IndexOf(\"n\"));",
+      "explanation": "IndexOf devuelve la posición de la primera coincidencia, empezando a contar en 0.",
+      "explanationEn": "IndexOf returns the position of the first match, counting from 0.",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "3",
+        "1",
+        "5",
+        "-1",
+        "0"
+      ]
+    },
+    {
+      "id": "var-medio-37",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = \"banana\";\nConsole.WriteLine(s.Replace(\"a\", \"o\"));",
+      "questionTextEn": "What does it print?\nstring s = \"banana\";\nConsole.WriteLine(s.Replace(\"a\", \"o\"));",
+      "explanation": "Replace sustituye todas las apariciones.",
+      "explanationEn": "Replace substitutes every occurrence.",
+      "correctAnswer": "bonono",
+      "incorrectAnswerPool": [
+        "bonana",
+        "banana",
+        "bonano",
+        "ononon",
+        "bnn"
+      ]
+    },
+    {
+      "id": "var-medio-38",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = \"Unity\";\nConsole.WriteLine(s.Contains(\"ni\"));",
+      "questionTextEn": "What does it print?\nstring s = \"Unity\";\nConsole.WriteLine(s.Contains(\"ni\"));",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "1",
+        "ni",
+        "true",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-medio-39",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = \"Unity\";\nConsole.WriteLine(s.Length * 2);",
+      "questionTextEn": "What does it print?\nstring s = \"Unity\";\nConsole.WriteLine(s.Length * 2);",
+      "correctAnswer": "10",
+      "incorrectAnswerPool": [
+        "5",
+        "52",
+        "25",
+        "6",
+        "UnityUnity"
+      ]
+    },
+    {
+      "id": "var-medio-40",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = \"Abc\";\nConsole.WriteLine(s.ToLower() == \"abc\");",
+      "questionTextEn": "What does it print?\nstring s = \"Abc\";\nConsole.WriteLine(s.ToLower() == \"abc\");",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "abc",
+        "Abc",
+        "Error",
+        "null"
+      ]
+    },
+    {
+      "id": "var-medio-41",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = int.Parse(\"12\") + int.Parse(\"30\");\nConsole.WriteLine(n);",
+      "questionTextEn": "What does it print?\nint n = int.Parse(\"12\") + int.Parse(\"30\");\nConsole.WriteLine(n);",
+      "correctAnswer": "42",
+      "incorrectAnswerPool": [
+        "1230",
+        "12",
+        "30",
+        "Error",
+        "4230"
+      ]
+    },
+    {
+      "id": "var-medio-42",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nbool ok = int.TryParse(\"abc\", out int n);\nConsole.WriteLine(ok + \" \" + n);",
+      "questionTextEn": "What does it print?\nbool ok = int.TryParse(\"abc\", out int n);\nConsole.WriteLine(ok + \" \" + n);",
+      "explanation": "Si falla la conversión, TryParse devuelve false y deja n en 0.",
+      "explanationEn": "If the conversion fails, TryParse returns false and leaves n as 0.",
+      "correctAnswer": "False 0",
+      "incorrectAnswerPool": [
+        "True 0",
+        "False",
+        "Error",
+        "False abc",
+        "True abc"
+      ]
+    },
+    {
+      "id": "var-medio-43",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nbool ok = int.TryParse(\"25\", out int n);\nConsole.WriteLine(ok + \" \" + n);",
+      "questionTextEn": "What does it print?\nbool ok = int.TryParse(\"25\", out int n);\nConsole.WriteLine(ok + \" \" + n);",
+      "correctAnswer": "True 25",
+      "incorrectAnswerPool": [
+        "False 25",
+        "True 0",
+        "True",
+        "Error",
+        "False 0"
+      ]
+    },
+    {
+      "id": "var-medio-44",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint? x = null;\nConsole.WriteLine(x ?? 7);",
+      "questionTextEn": "What does it print?\nint? x = null;\nConsole.WriteLine(x ?? 7);",
+      "explanation": "El operador ?? usa el valor de la derecha cuando el de la izquierda es null.",
+      "explanationEn": "The ?? operator uses the right-hand value when the left-hand one is null.",
+      "correctAnswer": "7",
+      "incorrectAnswerPool": [
+        "0",
+        "null",
+        "",
+        "Error",
+        "-1"
+      ]
+    },
+    {
+      "id": "var-medio-45",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint? x = 3;\nConsole.WriteLine(x ?? 7);",
+      "questionTextEn": "What does it print?\nint? x = 3;\nConsole.WriteLine(x ?? 7);",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "7",
+        "null",
+        "10",
+        "Error",
+        "0"
+      ]
+    },
+    {
+      "id": "var-medio-46",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(Math.Round(2.6));",
+      "questionTextEn": "What does it print?  Console.WriteLine(Math.Round(2.6));",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "2",
+        "2.6",
+        "2.5",
+        "26",
+        "2.7"
+      ]
+    },
+    {
+      "id": "var-medio-47",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(Math.Round(3.14159, 2));",
+      "questionTextEn": "What does it print?  Console.WriteLine(Math.Round(3.14159, 2));",
+      "correctAnswer": "3.14",
+      "incorrectAnswerPool": [
+        "3.1",
+        "3.15",
+        "3",
+        "3.142",
+        "3.14159"
+      ]
+    },
+    {
+      "id": "var-medio-48",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(Math.Pow(3, 2) + Math.Sqrt(9));",
+      "questionTextEn": "What does it print?  Console.WriteLine(Math.Pow(3, 2) + Math.Sqrt(9));",
+      "explanation": "3 al cuadrado es 9 y la raíz de 9 es 3.",
+      "explanationEn": "3 squared is 9 and the square root of 9 is 3.",
+      "correctAnswer": "12",
+      "incorrectAnswerPool": [
+        "9",
+        "15",
+        "18",
+        "6",
+        "27"
+      ]
+    },
+    {
+      "id": "var-medio-49",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(Math.Max(Math.Abs(-9), 5));",
+      "questionTextEn": "What does it print?  Console.WriteLine(Math.Max(Math.Abs(-9), 5));",
+      "correctAnswer": "9",
+      "incorrectAnswerPool": [
+        "5",
+        "-9",
+        "14",
+        "4",
+        "0"
+      ]
+    },
+    {
+      "id": "var-medio-50",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nvar x = 3;\nvar y = 2.0;\nvar z = x * y;\nConsole.WriteLine(z);",
+      "questionTextEn": "What does it print?\nvar x = 3;\nvar y = 2.0;\nvar z = x * y;\nConsole.WriteLine(z);",
+      "explanation": "int * double da double: 6.0, que se muestra como 6.",
+      "explanationEn": "int * double gives a double: 6.0, which is printed as 6.",
+      "correctAnswer": "6",
+      "incorrectAnswerPool": [
+        "6.0",
+        "5",
+        "32",
+        "1.5",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-medio-51",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nlong grande = 3000000000;\nConsole.WriteLine(grande / 1000000);",
+      "questionTextEn": "What does it print?\nlong grande = 3000000000;\nConsole.WriteLine(grande / 1000000);",
+      "correctAnswer": "3000",
+      "incorrectAnswerPool": [
+        "3",
+        "30",
+        "300",
+        "3000000",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-medio-52",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(int.MaxValue);",
+      "questionTextEn": "What does it print?  Console.WriteLine(int.MaxValue);",
+      "correctAnswer": "2147483647",
+      "incorrectAnswerPool": [
+        "2147483648",
+        "32767",
+        "65535",
+        "4294967295",
+        "-2147483648"
+      ]
+    },
+    {
+      "id": "var-medio-53",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nbyte b = 200;\nint c = b + 100;\nConsole.WriteLine(c);",
+      "questionTextEn": "What does it print?\nbyte b = 200;\nint c = b + 100;\nConsole.WriteLine(c);",
+      "explanation": "byte + int se calcula como int, así que no hay desbordamiento.",
+      "explanationEn": "byte + int is computed as int, so there is no overflow.",
+      "correctAnswer": "300",
+      "incorrectAnswerPool": [
+        "44",
+        "255",
+        "200",
+        "100",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-medio-54",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\ndouble d = 7;\nConsole.WriteLine(d / 2);",
+      "questionTextEn": "What does it print?\ndouble d = 7;\nConsole.WriteLine(d / 2);",
+      "correctAnswer": "3.5",
+      "incorrectAnswerPool": [
+        "3",
+        "4",
+        "3.0",
+        "7",
+        "0.5"
+      ]
+    },
+    {
+      "id": "var-medio-55",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nfloat f = 1.5f;\nint n = (int)f + 1;\nConsole.WriteLine(n);",
+      "questionTextEn": "What does it print?\nfloat f = 1.5f;\nint n = (int)f + 1;\nConsole.WriteLine(n);",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "3",
+        "2.5",
+        "1",
+        "1.5",
+        "2.0"
+      ]
+    },
+    {
+      "id": "var-medio-56",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = 8;\nbool par = n % 2 == 0;\nConsole.WriteLine(par ? \"par\" : \"impar\");",
+      "questionTextEn": "What does it print?\nint n = 8;\nbool par = n % 2 == 0;\nConsole.WriteLine(par ? \"par\" : \"impar\");",
+      "correctAnswer": "par",
+      "incorrectAnswerPool": [
+        "impar",
+        "True",
+        "False",
+        "n",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-medio-57",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint h = 135;\nConsole.WriteLine(h / 60 + \"h \" + h % 60 + \"m\");",
+      "questionTextEn": "What does it print?\nint h = 135;\nConsole.WriteLine(h / 60 + \"h \" + h % 60 + \"m\");",
+      "explanation": "135 minutos son 2 horas enteras y sobran 15.",
+      "explanationEn": "135 minutes are 2 whole hours with 15 left over.",
+      "correctAnswer": "2h 15m",
+      "incorrectAnswerPool": [
+        "2h 15",
+        "2.25h 0m",
+        "135h 0m",
+        "2h 75m",
+        "15h 2m"
+      ]
+    },
+    {
+      "id": "var-medio-58",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring nombre = \"Ana\";\nint edad = 20;\nConsole.WriteLine($\"{nombre} tiene {edad + 1}\");",
+      "questionTextEn": "What does it print?\nstring nombre = \"Ana\";\nint edad = 20;\nConsole.WriteLine($\"{nombre} tiene {edad + 1}\");",
+      "correctAnswer": "Ana tiene 21",
+      "incorrectAnswerPool": [
+        "Ana tiene 20",
+        "Ana tiene edad + 1",
+        "{nombre} tiene {edad + 1}",
+        "Ana tiene 201",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-medio-59",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nconst int ANCHO = 4;\nint area = ANCHO * ANCHO;\nConsole.WriteLine(area);",
+      "questionTextEn": "What does it print?\nconst int ANCHO = 4;\nint area = ANCHO * ANCHO;\nConsole.WriteLine(area);",
+      "correctAnswer": "16",
+      "incorrectAnswerPool": [
+        "8",
+        "4",
+        "44",
+        "2",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-medio-60",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring a = \"5\";\nint b = 3;\nConsole.WriteLine(a + b);",
+      "questionTextEn": "What does it print?\nstring a = \"5\";\nint b = 3;\nConsole.WriteLine(a + b);",
+      "correctAnswer": "53",
+      "incorrectAnswerPool": [
+        "8",
+        "15",
+        "2",
+        "Error",
+        "5 3"
+      ]
+    },
+    {
+      "id": "var-medio-61",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 5;\nstring b = \"3\";\nConsole.WriteLine(a + int.Parse(b));",
+      "questionTextEn": "What does it print?\nint a = 5;\nstring b = \"3\";\nConsole.WriteLine(a + int.Parse(b));",
+      "correctAnswer": "8",
+      "incorrectAnswerPool": [
+        "53",
+        "15",
+        "2",
+        "Error",
+        "5 3"
+      ]
+    },
+    {
+      "id": "var-medio-62",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nobject o = 5;\nConsole.WriteLine(o.GetType());",
+      "questionTextEn": "What does it print?\nobject o = 5;\nConsole.WriteLine(o.GetType());",
+      "correctAnswer": "System.Int32",
+      "incorrectAnswerPool": [
+        "int",
+        "System.Object",
+        "Int",
+        "System.Double",
+        "object"
+      ]
+    },
+    {
+      "id": "var-medio-63",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 3;\nint b = 4;\nConsole.WriteLine(Math.Sqrt(a * a + b * b));",
+      "questionTextEn": "What does it print?\nint a = 3;\nint b = 4;\nConsole.WriteLine(Math.Sqrt(a * a + b * b));",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "7",
+        "25",
+        "12",
+        "5.5",
+        "1"
+      ]
+    },
+    {
+      "id": "var-medio-64",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint total = 9;\ndouble mitad = total / 2;\nConsole.WriteLine(mitad);",
+      "questionTextEn": "What does it print?\nint total = 9;\ndouble mitad = total / 2;\nConsole.WriteLine(mitad);",
+      "explanation": "La división es entera (9 / 2 = 4) y después el 4 se convierte a double.",
+      "explanationEn": "The division is an integer one (9 / 2 = 4) and then the 4 is converted to double.",
+      "correctAnswer": "4",
+      "incorrectAnswerPool": [
+        "4.5",
+        "5",
+        "4.0",
+        "9",
+        "2"
+      ]
+    },
+    {
+      "id": "var-medio-65",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con el tipo de 64 bits en coma flotante para que la división tenga decimales.",
+      "questionTextEn": "Fill in the 64-bit floating-point type so that the division keeps its decimals.",
+      "explanation": "Sin el cast, 7 / 2 daría 3.",
+      "explanationEn": "Without the cast, 7 / 2 would give 3.",
+      "codeTemplate": "int a = 7;\nConsole.WriteLine((____)a / 2);",
+      "expectedAnswer": "double"
+    },
+    {
+      "id": "var-medio-66",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para que x quede sin valor.",
+      "questionTextEn": "Fill in the blank so that x has no value.",
+      "codeTemplate": "int? x = ____;\nConsole.WriteLine(x == null);",
+      "expectedAnswer": "null"
+    },
+    {
+      "id": "var-medio-67",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa la palabra clave del parámetro de salida.",
+      "questionTextEn": "Fill in the keyword of the output parameter.",
+      "codeTemplate": "int n;\nbool ok = int.TryParse(\"12\", ____ n);\nConsole.WriteLine(n);",
+      "expectedAnswer": "out"
+    },
+    {
+      "id": "var-medio-68",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para calcular la raíz cuadrada de 25.",
+      "questionTextEn": "Fill in the blank to compute the square root of 25.",
+      "codeTemplate": "Console.WriteLine(Math.____(25));",
+      "expectedAnswer": "Sqrt"
+    },
+    {
+      "id": "var-medio-69",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para calcular 2 elevado a 10.",
+      "questionTextEn": "Fill in the blank to compute 2 to the power of 10.",
+      "codeTemplate": "Console.WriteLine(Math.____(2, 10));",
+      "expectedAnswer": "Pow"
+    },
+    {
+      "id": "var-medio-70",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para quitar los espacios sobrantes de los extremos.",
+      "questionTextEn": "Fill in the blank to remove the extra spaces at both ends.",
+      "codeTemplate": "string s = \"  hola \";\nConsole.WriteLine(\"[\" + s.____() + \"]\");",
+      "expectedAnswer": "Trim"
+    },
+    {
+      "id": "var-medio-71",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para cambiar todas las \"a\" por \"e\".",
+      "questionTextEn": "Fill in the blank to change every \"a\" to \"e\".",
+      "codeTemplate": "string s = \"casa\";\nConsole.WriteLine(s.____(\"a\", \"e\"));",
+      "expectedAnswer": "Replace"
+    },
+    {
+      "id": "var-medio-72",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con el tipo para obtener el carácter siguiente.",
+      "questionTextEn": "Fill in the type to get the next character.",
+      "codeTemplate": "char c = 'a';\nConsole.WriteLine((____)(c + 1));",
+      "expectedAnswer": "char"
+    },
+    {
+      "id": "var-medio-73",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para multiplicar x por 3 con un operador compuesto.",
+      "questionTextEn": "Fill in the blank to multiply x by 3 with a compound operator.",
+      "codeTemplate": "int x = 5;\nx ____ 3;\nConsole.WriteLine(x);",
+      "expectedAnswer": "*="
+    },
+    {
+      "id": "var-medio-74",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el símbolo que activa la interpolación.",
+      "questionTextEn": "Fill in the symbol that enables interpolation.",
+      "codeTemplate": "int x = 4;\nstring msg = ____\"Total: {x}\";\nConsole.WriteLine(msg);",
+      "expectedAnswer": "$"
+    },
+    {
+      "id": "var-medio-75",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el sufijo para que el literal sea decimal.",
+      "questionTextEn": "Fill in the suffix so that the literal is a decimal.",
+      "codeTemplate": "decimal precio = 4.5____;\nConsole.WriteLine(precio);",
+      "expectedAnswer": "m"
+    },
+    {
+      "id": "var-medio-76",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para obtener la posición de la letra \"l\".",
+      "questionTextEn": "Fill in the blank to get the position of the letter \"l\".",
+      "codeTemplate": "string s = \"hola\";\nConsole.WriteLine(s.____(\"l\"));",
+      "expectedAnswer": "IndexOf"
+    },
+    {
+      "id": "var-medio-77",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para obtener \"ho\" a partir de \"hola\".",
+      "questionTextEn": "Fill in the blank to get \"ho\" from \"hola\".",
+      "codeTemplate": "string s = \"hola\";\nConsole.WriteLine(s.____(0, 2));",
+      "expectedAnswer": "Substring"
+    },
+    {
+      "id": "var-medio-78",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para convertir grados Celsius a Fahrenheit.",
+      "questionTextEn": "Put the lines in order to convert Celsius degrees to Fahrenheit.",
+      "codeBlocks": [
+        "double c = 100;",
+        "double f = c * 9 / 5 + 32;",
+        "Console.WriteLine(f);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-medio-79",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para pasar 135 segundos a minutos y segundos.",
+      "questionTextEn": "Put the lines in order to turn 135 seconds into minutes and seconds.",
+      "codeBlocks": [
+        "int total = 135;",
+        "int min = total / 60;",
+        "int seg = total % 60;",
+        "Console.WriteLine(min + \":\" + seg);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-medio-80",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para aplicar un descuento del 20 %.",
+      "questionTextEn": "Put the lines in order to apply a 20% discount.",
+      "codeBlocks": [
+        "double precio = 50;",
+        "double descuento = precio * 0.20;",
+        "double final = precio - descuento;",
+        "Console.WriteLine(final);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-medio-81",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para calcular el promedio de tres notas con decimales.",
+      "questionTextEn": "Put the lines in order to compute the average of three grades with decimals.",
+      "codeBlocks": [
+        "int a = 7, b = 8, c = 8;",
+        "double promedio = (a + b + c) / 3.0;",
+        "Console.WriteLine(promedio);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-medio-82",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para intercambiar a y b sin perder datos.",
+      "questionTextEn": "Put the lines in order to swap a and b without losing data.",
+      "codeBlocks": [
+        "int a = 3, b = 8;",
+        "int aux = a;",
+        "a = b;",
+        "b = aux;",
+        "Console.WriteLine(a + \" \" + b);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "var-medio-83",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para leer un número de un texto con TryParse.",
+      "questionTextEn": "Put the lines in order to read a number from a text using TryParse.",
+      "codeBlocks": [
+        "string texto = \"37\";",
+        "int n;",
+        "bool ok = int.TryParse(texto, out n);",
+        "Console.WriteLine(ok ? n * 2 : -1);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-medio-84",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para calcular el área de un círculo de radio 2.",
+      "questionTextEn": "Put the lines in order to compute the area of a circle of radius 2.",
+      "codeBlocks": [
+        "const double PI = 3.14;",
+        "double radio = 2;",
+        "double area = PI * radio * radio;",
+        "Console.WriteLine(area);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-medio-85",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para mostrar el precio con dos decimales.",
+      "questionTextEn": "Put the lines in order to print the price with two decimals.",
+      "codeBlocks": [
+        "double precio = 12.3456;",
+        "string texto = $\"Precio: {precio:F2}\";",
+        "Console.WriteLine(texto);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-medio-86",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para calcular la propina del 10 %.",
+      "questionTextEn": "Put the lines in order to compute a 10% tip.",
+      "codeBlocks": [
+        "decimal cuenta = 85.50m;",
+        "decimal propina = cuenta * 0.10m;",
+        "decimal total = cuenta + propina;",
+        "Console.WriteLine($\"{total:F2}\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-medio-87",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para convertir una letra en la siguiente del alfabeto.",
+      "questionTextEn": "Put the lines in order to turn a letter into the next one in the alphabet.",
+      "codeBlocks": [
+        "char letra = 'c';",
+        "char siguiente = (char)(letra + 1);",
+        "Console.WriteLine(siguiente);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-medio-88",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para quedarte con los decimales de un número.",
+      "questionTextEn": "Put the lines in order to keep only the decimals of a number.",
+      "codeBlocks": [
+        "double x = 7.25;",
+        "int entera = (int)x;",
+        "double decimales = x - entera;",
+        "Console.WriteLine(decimales);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-medio-89",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para obtener la hipotenusa de un triángulo 3-4.",
+      "questionTextEn": "Put the lines in order to get the hypotenuse of a 3-4 triangle.",
+      "codeBlocks": [
+        "double a = 3, b = 4;",
+        "double suma = a * a + b * b;",
+        "double h = Math.Sqrt(suma);",
+        "Console.WriteLine(h);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-medio-90",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para saber si un año es múltiplo de 4.",
+      "questionTextEn": "Put the lines in order to know whether a year is a multiple of 4.",
+      "codeBlocks": [
+        "int anio = 2024;",
+        "int resto = anio % 4;",
+        "bool multiplo = resto == 0;",
+        "Console.WriteLine(multiplo);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-medio-91",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "explanation": "Un double no se convierte a int de forma implícita: hace falta un cast.",
+      "explanationEn": "A double is not implicitly converted to int: a cast is needed.",
+      "codeSnippetsOptions": [
+        "double d = 5 / 2;",
+        "int i = 5 / 2.0;",
+        "double e = 5 / 2.0;",
+        "int j = 5 / 2;"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "var-medio-92",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "explanation": "Un string no se puede convertir con un cast; hay que usar int.Parse.",
+      "explanationEn": "A string cannot be converted with a cast; int.Parse is needed.",
+      "codeSnippetsOptions": [
+        "int a = (int)3.9;",
+        "double b = (double)3;",
+        "int c = (int)\"3\";",
+        "long d = (long)3;"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-medio-93",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "explanation": "var necesita un valor inicial para deducir el tipo.",
+      "explanationEn": "var needs an initial value to infer the type.",
+      "codeSnippetsOptions": [
+        "var a = 5;",
+        "var b;",
+        "var c = \"hola\";",
+        "var d = 2.5;"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "var-medio-94",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "explanation": "Una constante debe recibir su valor al declararse.",
+      "explanationEn": "A constant must be given its value when declared.",
+      "codeSnippetsOptions": [
+        "const int A = 5;",
+        "const string B = \"x\";",
+        "const double C;",
+        "const bool D = true;"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-medio-95",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "explanation": "Un char guarda un solo carácter.",
+      "explanationEn": "A char holds a single character.",
+      "codeSnippetsOptions": [
+        "char c = 'ab';",
+        "char d = 'a';",
+        "string s = \"ab\";",
+        "char e = (char)65;"
+      ],
+      "buggyIndex": 0
+    },
+    {
+      "id": "var-medio-96",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?  int n = 5;",
+      "questionTextEn": "Which line does not compile?  int n = 5;",
+      "codeSnippetsOptions": [
+        "n++;",
+        "n--;",
+        "n**;",
+        "++n;"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-medio-97",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "Se quiere comprobar que n está entre 0 y 10 (exclusivos). ¿Qué línea da un resultado incorrecto?  int n = 15;",
+      "questionTextEn": "The goal is to check that n is between 0 and 10 (exclusive). Which line gives a wrong result?  int n = 15;",
+      "explanation": "Con || basta que una condición se cumpla: 15 > 0 ya es verdadero.",
+      "explanationEn": "With || it is enough that one condition holds: 15 > 0 is already true.",
+      "codeSnippetsOptions": [
+        "bool ok = n > 0 && n < 10;",
+        "bool ok = !(n <= 0 || n >= 10);",
+        "bool ok = n > 0 || n < 10;",
+        "bool ok = n > 0 && !(n >= 10);"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-medio-98",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "Se quiere la media exacta de a y b. ¿Qué línea da un resultado incorrecto?  int a = 7, b = 8;",
+      "questionTextEn": "The goal is the exact average of a and b. Which line gives a wrong result?  int a = 7, b = 8;",
+      "explanation": "La división entera (15 / 2) ya descarta el decimal antes de convertir a double.",
+      "explanationEn": "The integer division (15 / 2) already drops the decimal before converting to double.",
+      "codeSnippetsOptions": [
+        "double m = (a + b) / 2.0;",
+        "double m = (double)(a + b) / 2;",
+        "double m = (a + b) / 2;",
+        "double m = (a + b) * 0.5;"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-medio-99",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea falla al ejecutarse?  string t = \"abc\";",
+      "questionTextEn": "Which line fails when run?  string t = \"abc\";",
+      "explanation": "int.Parse lanza FormatException si el texto no es un número.",
+      "explanationEn": "int.Parse throws FormatException if the text is not a number.",
+      "codeSnippetsOptions": [
+        "int n = int.Parse(\"12\");",
+        "int n = int.Parse(t);",
+        "int n; int.TryParse(t, out n);",
+        "int n = Convert.ToInt32(\"7\");"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "var-medio-100",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea lanza una excepción al ejecutarse?  int d = 0;",
+      "questionTextEn": "Which line throws an exception when run?  int d = 0;",
+      "explanation": "Dividir un entero entre cero lanza DivideByZeroException; con doubles daría infinito.",
+      "explanationEn": "Dividing an integer by zero throws DivideByZeroException; with doubles it would give infinity.",
+      "codeSnippetsOptions": [
+        "int r = 10 / d;",
+        "double r = 10.0 / d;",
+        "int r = 10 % 3;",
+        "double r = 10 / 4.0;"
+      ],
+      "buggyIndex": 0
+    },
+    {
+      "id": "var-medio-101",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "Se quiere calcular el porcentaje de aciertos. ¿Qué línea da un resultado incorrecto?  int ok = 3, total = 4;",
+      "questionTextEn": "The goal is to compute the percentage of hits. Which line gives a wrong result?  int ok = 3, total = 4;",
+      "explanation": "ok / total es 3 / 4 = 0 con enteros, y 0 * 100 sigue siendo 0.",
+      "explanationEn": "ok / total is 3 / 4 = 0 with integers, and 0 * 100 is still 0.",
+      "codeSnippetsOptions": [
+        "double p = ok * 100.0 / total;",
+        "double p = 100.0 * ok / total;",
+        "double p = ok / total * 100;",
+        "double p = (double)ok / total * 100;"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-medio-102",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "explanation": "El operador - no existe para string.",
+      "explanationEn": "The - operator does not exist for string.",
+      "codeSnippetsOptions": [
+        "string m = \"a\" + 1;",
+        "string m = \"a\" + 'b';",
+        "string m = \"a\" - 1;",
+        "string m = \"a\" + 1.5;"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-medio-103",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?  bool b = true;",
+      "questionTextEn": "Which line does not compile?  bool b = true;",
+      "explanation": "Un bool no se convierte en int en C#.",
+      "explanationEn": "A bool is not converted to int in C#.",
+      "codeSnippetsOptions": [
+        "int n = b;",
+        "bool c = !b;",
+        "string s = b.ToString();",
+        "bool d = b && true;"
+      ],
+      "buggyIndex": 0
     }
   ]
 }

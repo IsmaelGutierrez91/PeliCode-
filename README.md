@@ -2,6 +2,16 @@
 
 Juego en Unity para practicar programación en C#. El jugador inicia sesión, elige una categoría y una dificultad, y responde preguntas de cuatro tipos con tiempo. En el modo ranked las preguntas se mezclan y la partida sigue hasta el primer error. El mejor puntaje entra al Top 25.
 
+**Dificultad en ranked:** sube con los aciertos. `RankedQuestionPicker` elige la dificultad de cada pregunta según cuántas lleva bien el jugador, y las pondera así (se interpola de forma lineal):
+
+| Aciertos | Fácil | Medio | Difícil |
+| --- | --- | --- | --- |
+| 0 | 70 % | 25 % | 5 % |
+| 10 | 40 % | 30 % | 30 % |
+| 20 o más | 10 % | 35 % | 55 % |
+
+Ninguna dificultad llega a cero, así que siempre puede salir una fácil o una difícil. Dentro de una dificultad no se repite una pregunta hasta haber visto todas las demás. Los números están en `RankedQuestionPicker.cs` (`Start`, `End` y `RampLength`).
+
 El juego está en español y en inglés.
 
 ## Requisitos

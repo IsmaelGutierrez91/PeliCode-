@@ -148,6 +148,1575 @@
         "if (!(edad >= 12)) Console.WriteLine(\"Niño\");"
       ],
       "buggyIndex": 2
+    },
+    {
+      "id": "cond-medio-11",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuándo es verdadera una condición formada con &&?",
+      "questionTextEn": "When is a condition built with && true?",
+      "correctAnswer": "Solo cuando ambas partes son verdaderas",
+      "incorrectAnswerPool": [
+        "Cuando al menos una parte es verdadera",
+        "Cuando ambas partes son falsas",
+        "Siempre",
+        "Cuando las dos partes valen lo mismo"
+      ],
+      "correctAnswerEn": "Only when both parts are true",
+      "incorrectAnswerPoolEn": [
+        "When at least one part is true",
+        "When both parts are false",
+        "Always",
+        "When both parts have the same value"
+      ],
+      "explanation": "&& exige que los dos operandos sean true.",
+      "explanationEn": "&& requires both operands to be true."
+    },
+    {
+      "id": "cond-medio-12",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuándo es falsa una condición formada con ||?",
+      "questionTextEn": "When is a condition built with || false?",
+      "correctAnswer": "Solo cuando ambas partes son falsas",
+      "incorrectAnswerPool": [
+        "Cuando al menos una parte es falsa",
+        "Cuando ambas partes son verdaderas",
+        "Nunca",
+        "Cuando las dos partes valen lo mismo"
+      ],
+      "correctAnswerEn": "Only when both parts are false",
+      "incorrectAnswerPoolEn": [
+        "When at least one part is false",
+        "When both parts are true",
+        "Never",
+        "When both parts have the same value"
+      ],
+      "explanation": "|| basta con que un operando sea true para dar true.",
+      "explanationEn": "|| gives true as soon as one operand is true."
+    },
+    {
+      "id": "cond-medio-13",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué condición comprueba que edad está entre 18 y 65, ambos incluidos?",
+      "questionTextEn": "Which condition checks that edad is between 18 and 65, both included?",
+      "correctAnswer": "edad >= 18 && edad <= 65",
+      "incorrectAnswerPool": [
+        "edad >= 18 || edad <= 65",
+        "18 <= edad <= 65",
+        "edad > 18 && edad < 65",
+        "edad >= 65 && edad <= 18"
+      ],
+      "explanation": "Hay que unir dos comparaciones con &&; no se pueden encadenar como en matemáticas.",
+      "explanationEn": "Two comparisons must be joined with &&; they cannot be chained as in mathematics."
+    },
+    {
+      "id": "cond-medio-14",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué condición comprueba que x está fuera del rango de 0 a 10?",
+      "questionTextEn": "Which condition checks that x is outside the range 0 to 10?",
+      "correctAnswer": "x < 0 || x > 10",
+      "incorrectAnswerPool": [
+        "x < 0 && x > 10",
+        "x > 0 || x < 10",
+        "x >= 0 && x <= 10",
+        "!(x < 0 || x > 10)"
+      ],
+      "explanation": "Estar fuera significa ser menor que 0 o mayor que 10; ambas a la vez es imposible.",
+      "explanationEn": "Being outside means being below 0 or above 10; both at once is impossible."
+    },
+    {
+      "id": "cond-medio-15",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuál de estos operadores tiene mayor precedencia?",
+      "questionTextEn": "Which of these operators has higher precedence?",
+      "correctAnswer": "&&",
+      "incorrectAnswerPool": [
+        "||",
+        "Tienen la misma",
+        "Depende de qué variable se use",
+        "Ninguno, se evalúa de derecha a izquierda"
+      ],
+      "correctAnswerEn": "&&",
+      "incorrectAnswerPoolEn": [
+        "||",
+        "They have the same",
+        "It depends on which variable is used",
+        "Neither, evaluation goes right to left"
+      ],
+      "explanation": "&& se evalúa antes que || cuando no hay paréntesis.",
+      "explanationEn": "&& is evaluated before || when there are no parentheses."
+    },
+    {
+      "id": "cond-medio-16",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "Al comparar dos strings con ==, ¿qué se compara?",
+      "questionTextEn": "When comparing two strings with ==, what is compared?",
+      "correctAnswer": "El contenido (los caracteres) de ambos",
+      "incorrectAnswerPool": [
+        "Solo su longitud",
+        "Su posición en memoria únicamente",
+        "Solo la primera letra",
+        "No se pueden comparar con =="
+      ],
+      "correctAnswerEn": "The content (the characters) of both",
+      "incorrectAnswerPoolEn": [
+        "Only their length",
+        "Only their memory location",
+        "Only the first letter",
+        "They cannot be compared with =="
+      ],
+      "explanation": "String sobrecarga == para comparar el texto, distinguiendo mayúsculas y minúsculas.",
+      "explanationEn": "String overloads == to compare the text, being case sensitive."
+    },
+    {
+      "id": "cond-medio-17",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué método indica si un string es null o está vacío?",
+      "questionTextEn": "Which method tells whether a string is null or empty?",
+      "correctAnswer": "string.IsNullOrEmpty(s)",
+      "incorrectAnswerPool": [
+        "string.IsEmpty(s)",
+        "s.IsNull()",
+        "string.Empty(s)",
+        "s.Length == null"
+      ]
+    },
+    {
+      "id": "cond-medio-18",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué forma tiene el operador condicional (ternario)?",
+      "questionTextEn": "What is the form of the conditional (ternary) operator?",
+      "correctAnswer": "condición ? valorSiVerdadero : valorSiFalso",
+      "incorrectAnswerPool": [
+        "condición : valorSiVerdadero ? valorSiFalso",
+        "condición ? valorSiVerdadero ; valorSiFalso",
+        "if condición then valorSiVerdadero else valorSiFalso",
+        "condición => valorSiVerdadero | valorSiFalso"
+      ]
+    },
+    {
+      "id": "cond-medio-19",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué es un if anidado?",
+      "questionTextEn": "What is a nested if?",
+      "correctAnswer": "Un if escrito dentro del bloque de otro if",
+      "incorrectAnswerPool": [
+        "Un if sin condición",
+        "Un if que se repite varias veces",
+        "Un if con dos else",
+        "Un if que usa solo variables bool"
+      ],
+      "correctAnswerEn": "An if written inside the block of another if",
+      "incorrectAnswerPoolEn": [
+        "An if without a condition",
+        "An if that repeats several times",
+        "An if with two else blocks",
+        "An if that uses only bool variables"
+      ]
+    },
+    {
+      "id": "cond-medio-20",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "En una cadena if / else if / else, ¿cuántos bloques se ejecutan como máximo?",
+      "questionTextEn": "In an if / else if / else chain, how many blocks run at most?",
+      "correctAnswer": "Uno",
+      "incorrectAnswerPool": [
+        "Todos los que cumplan su condición",
+        "Dos",
+        "Tantos como else if haya",
+        "Ninguno, siempre da error"
+      ],
+      "correctAnswerEn": "One",
+      "incorrectAnswerPoolEn": [
+        "All the ones whose condition is met",
+        "Two",
+        "As many as there are else if blocks",
+        "None, it always fails"
+      ],
+      "explanation": "En cuanto una condición se cumple, se ejecuta su bloque y se salta el resto de la cadena.",
+      "explanationEn": "As soon as one condition is met, its block runs and the rest of the chain is skipped."
+    },
+    {
+      "id": "cond-medio-21",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "Si dos condiciones else if son verdaderas a la vez, ¿cuál se ejecuta?",
+      "questionTextEn": "If two else if conditions are true at the same time, which one runs?",
+      "correctAnswer": "La primera que aparece",
+      "incorrectAnswerPool": [
+        "La última que aparece",
+        "Las dos",
+        "Ninguna",
+        "La que tenga el número mayor"
+      ],
+      "correctAnswerEn": "The first one that appears",
+      "incorrectAnswerPoolEn": [
+        "The last one that appears",
+        "Both",
+        "Neither",
+        "The one with the bigger number"
+      ]
+    },
+    {
+      "id": "cond-medio-22",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué condición equivale a !(x > 5)?",
+      "questionTextEn": "Which condition is equivalent to !(x > 5)?",
+      "correctAnswer": "x <= 5",
+      "incorrectAnswerPool": [
+        "x < 5",
+        "x >= 5",
+        "x != 5",
+        "x == 5"
+      ]
+    },
+    {
+      "id": "cond-medio-23",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué condición equivale a !(x == 3)?",
+      "questionTextEn": "Which condition is equivalent to !(x == 3)?",
+      "correctAnswer": "x != 3",
+      "incorrectAnswerPool": [
+        "x < 3",
+        "x > 3",
+        "x == -3",
+        "x <= 3"
+      ]
+    },
+    {
+      "id": "cond-medio-24",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué hace un punto y coma justo después de la condición, como en if (x > 3); ?",
+      "questionTextEn": "What does a semicolon right after the condition do, as in if (x > 3); ?",
+      "correctAnswer": "El if queda vacío y lo siguiente se ejecuta siempre",
+      "incorrectAnswerPool": [
+        "Causa un error de compilación",
+        "Hace que el if se repita",
+        "Convierte la condición en else",
+        "Invierte la condición"
+      ],
+      "correctAnswerEn": "The if becomes empty and what follows always runs",
+      "incorrectAnswerPoolEn": [
+        "It causes a compile error",
+        "It makes the if repeat",
+        "It turns the condition into an else",
+        "It inverts the condition"
+      ],
+      "explanation": "El ; es una instrucción vacía: es el cuerpo del if, y el bloque que sigue ya no depende de la condición.",
+      "explanationEn": "The ; is an empty statement: it is the body of the if, and the following block no longer depends on the condition."
+    },
+    {
+      "id": "cond-medio-25",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuál es la forma correcta de comprobar si nombre es \"Ana\"?",
+      "questionTextEn": "What is the correct way to check whether nombre is \"Ana\"?",
+      "correctAnswer": "if (nombre == \"Ana\")",
+      "incorrectAnswerPool": [
+        "if (nombre = \"Ana\")",
+        "if (nombre === \"Ana\")",
+        "if (nombre equals \"Ana\")",
+        "if (nombre is = \"Ana\")"
+      ]
+    },
+    {
+      "id": "cond-medio-26",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué condición comprueba que n NO es cero?",
+      "questionTextEn": "Which condition checks that n is NOT zero?",
+      "correctAnswer": "n != 0",
+      "incorrectAnswerPool": [
+        "n = 0",
+        "n == 0",
+        "n <> 0",
+        "n !== 0"
+      ]
+    },
+    {
+      "id": "cond-medio-27",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué condición comprueba que n es múltiplo de 3?",
+      "questionTextEn": "Which condition checks that n is a multiple of 3?",
+      "correctAnswer": "n % 3 == 0",
+      "incorrectAnswerPool": [
+        "n / 3 == 0",
+        "n % 3 == 3",
+        "n * 3 == 0",
+        "n % 3 = 0"
+      ]
+    },
+    {
+      "id": "cond-medio-28",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué ventaja tiene else if frente a varios if sueltos?",
+      "questionTextEn": "What advantage does else if have over several separate ifs?",
+      "correctAnswer": "Si una condición se cumple, no se evalúan las siguientes",
+      "incorrectAnswerPool": [
+        "Permite escribir menos llaves siempre",
+        "Hace que el programa compile más rápido",
+        "Permite comparar strings",
+        "No tiene ninguna diferencia"
+      ],
+      "correctAnswerEn": "If one condition is met, the following ones are not evaluated",
+      "incorrectAnswerPoolEn": [
+        "It always lets you write fewer braces",
+        "It makes the program compile faster",
+        "It lets you compare strings",
+        "There is no difference"
+      ]
+    },
+    {
+      "id": "cond-medio-29",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué comprueba la expresión x is null?",
+      "questionTextEn": "What does the expression x is null check?",
+      "correctAnswer": "Si x vale null",
+      "incorrectAnswerPool": [
+        "Si x vale cero",
+        "Si x es de tipo int",
+        "Si x es una cadena vacía",
+        "Asigna null a x"
+      ],
+      "correctAnswerEn": "Whether x is null",
+      "incorrectAnswerPoolEn": [
+        "Whether x is zero",
+        "Whether x is of type int",
+        "Whether x is an empty string",
+        "Assigns null to x"
+      ]
+    },
+    {
+      "id": "cond-medio-30",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué tipo de resultado produce una condición como a > b && b > c?",
+      "questionTextEn": "What type of result does a condition such as a > b && b > c produce?",
+      "correctAnswer": "bool",
+      "incorrectAnswerPool": [
+        "int",
+        "string",
+        "El mayor de los tres valores",
+        "void"
+      ],
+      "correctAnswerEn": "bool",
+      "incorrectAnswerPoolEn": [
+        "int",
+        "string",
+        "The greatest of the three values",
+        "void"
+      ]
+    },
+    {
+      "id": "cond-medio-31",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 8;\nif (a > 5 && a < 10) Console.WriteLine(\"Dentro\");\nelse Console.WriteLine(\"Fuera\");",
+      "questionTextEn": "What does it print?\nint a = 8;\nif (a > 5 && a < 10) Console.WriteLine(\"Dentro\");\nelse Console.WriteLine(\"Fuera\");",
+      "correctAnswer": "Dentro",
+      "incorrectAnswerPool": [
+        "Fuera",
+        "DentroFuera",
+        "8",
+        "Nada"
+      ],
+      "explanation": "8 cumple las dos comparaciones a la vez.",
+      "explanationEn": "8 meets both comparisons at once."
+    },
+    {
+      "id": "cond-medio-32",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 12;\nif (a > 5 && a < 10) Console.WriteLine(\"Dentro\");\nelse Console.WriteLine(\"Fuera\");",
+      "questionTextEn": "What does it print?\nint a = 12;\nif (a > 5 && a < 10) Console.WriteLine(\"Dentro\");\nelse Console.WriteLine(\"Fuera\");",
+      "correctAnswer": "Fuera",
+      "incorrectAnswerPool": [
+        "Dentro",
+        "DentroFuera",
+        "12",
+        "Nada"
+      ],
+      "explanation": "12 es mayor que 5 pero no menor que 10, y && exige las dos.",
+      "explanationEn": "12 is greater than 5 but not less than 10, and && requires both."
+    },
+    {
+      "id": "cond-medio-33",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 3;\nif (x < 0 || x > 10) Console.WriteLine(\"Fuera\");\nelse Console.WriteLine(\"Dentro\");",
+      "questionTextEn": "What does it print?\nint x = 3;\nif (x < 0 || x > 10) Console.WriteLine(\"Fuera\");\nelse Console.WriteLine(\"Dentro\");",
+      "correctAnswer": "Dentro",
+      "incorrectAnswerPool": [
+        "Fuera",
+        "FueraDentro",
+        "3",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-medio-34",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nbool a = true, b = false;\nConsole.WriteLine(a && b);",
+      "questionTextEn": "What does it print?\nbool a = true, b = false;\nConsole.WriteLine(a && b);",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "false",
+        "true",
+        "Nada"
+      ],
+      "explanation": "true && false es false.",
+      "explanationEn": "true && false is false."
+    },
+    {
+      "id": "cond-medio-35",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nbool a = true, b = false;\nConsole.WriteLine(a || b);",
+      "questionTextEn": "What does it print?\nbool a = true, b = false;\nConsole.WriteLine(a || b);",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "true",
+        "false",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-medio-36",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nbool a = false, b = true;\nConsole.WriteLine(!a && b);",
+      "questionTextEn": "What does it print?\nbool a = false, b = true;\nConsole.WriteLine(!a && b);",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "true",
+        "false",
+        "Nada"
+      ],
+      "explanation": "!a vale true, y true && true es true.",
+      "explanationEn": "!a is true, and true && true is true."
+    },
+    {
+      "id": "cond-medio-37",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint edad = 70;\nif (edad < 12) Console.WriteLine(\"Niño\");\nelse if (edad < 18) Console.WriteLine(\"Adolescente\");\nelse if (edad < 65) Console.WriteLine(\"Adulto\");\nelse Console.WriteLine(\"Senior\");",
+      "questionTextEn": "What does it print?\nint edad = 70;\nif (edad < 12) Console.WriteLine(\"Niño\");\nelse if (edad < 18) Console.WriteLine(\"Adolescente\");\nelse if (edad < 65) Console.WriteLine(\"Adulto\");\nelse Console.WriteLine(\"Senior\");",
+      "correctAnswer": "Senior",
+      "incorrectAnswerPool": [
+        "Niño",
+        "Adolescente",
+        "Adulto",
+        "Nada"
+      ],
+      "explanation": "70 no es menor que 12, 18 ni 65, así que cae en el else final.",
+      "explanationEn": "70 is not less than 12, 18 or 65, so it reaches the final else."
+    },
+    {
+      "id": "cond-medio-38",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint nota = 18;\nif (nota >= 18) Console.WriteLine(\"Sobresaliente\");\nelse if (nota >= 14) Console.WriteLine(\"Bueno\");\nelse if (nota >= 11) Console.WriteLine(\"Regular\");\nelse Console.WriteLine(\"Bajo\");",
+      "questionTextEn": "What does it print?\nint nota = 18;\nif (nota >= 18) Console.WriteLine(\"Sobresaliente\");\nelse if (nota >= 14) Console.WriteLine(\"Bueno\");\nelse if (nota >= 11) Console.WriteLine(\"Regular\");\nelse Console.WriteLine(\"Bajo\");",
+      "correctAnswer": "Sobresaliente",
+      "incorrectAnswerPool": [
+        "Bueno",
+        "Regular",
+        "Bajo",
+        "SobresalienteBueno"
+      ],
+      "explanation": "Se ejecuta la primera condición verdadera y se salta el resto.",
+      "explanationEn": "The first true condition runs and the rest is skipped."
+    },
+    {
+      "id": "cond-medio-39",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 8, y = -1;\nif (x > 0)\n{\n    if (y > 0) Console.WriteLine(\"Q1\");\n    else Console.WriteLine(\"Q4\");\n}\nelse Console.WriteLine(\"Otro\");",
+      "questionTextEn": "What does it print?\nint x = 8, y = -1;\nif (x > 0)\n{\n    if (y > 0) Console.WriteLine(\"Q1\");\n    else Console.WriteLine(\"Q4\");\n}\nelse Console.WriteLine(\"Otro\");",
+      "correctAnswer": "Q4",
+      "incorrectAnswerPool": [
+        "Q1",
+        "Otro",
+        "Q1Q4",
+        "Nada"
+      ],
+      "explanation": "x > 0 es verdadero y dentro y > 0 es falso, así que corre el else interno.",
+      "explanationEn": "x > 0 is true and inside, y > 0 is false, so the inner else runs."
+    },
+    {
+      "id": "cond-medio-40",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = 15;\nif (n % 3 == 0) Console.Write(\"Fizz\");\nif (n % 5 == 0) Console.Write(\"Buzz\");",
+      "questionTextEn": "What does it print?\nint n = 15;\nif (n % 3 == 0) Console.Write(\"Fizz\");\nif (n % 5 == 0) Console.Write(\"Buzz\");",
+      "correctAnswer": "FizzBuzz",
+      "incorrectAnswerPool": [
+        "Fizz",
+        "Buzz",
+        "BuzzFizz",
+        "Nada"
+      ],
+      "explanation": "Son dos if independientes y 15 cumple ambos.",
+      "explanationEn": "They are two independent ifs and 15 meets both."
+    },
+    {
+      "id": "cond-medio-41",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = 15;\nif (n % 3 == 0) Console.Write(\"Fizz\");\nelse if (n % 5 == 0) Console.Write(\"Buzz\");",
+      "questionTextEn": "What does it print?\nint n = 15;\nif (n % 3 == 0) Console.Write(\"Fizz\");\nelse if (n % 5 == 0) Console.Write(\"Buzz\");",
+      "correctAnswer": "Fizz",
+      "incorrectAnswerPool": [
+        "FizzBuzz",
+        "Buzz",
+        "BuzzFizz",
+        "Nada"
+      ],
+      "explanation": "Con else if, al cumplirse el primero no se evalúa el segundo.",
+      "explanationEn": "With else if, once the first one is met the second is not evaluated."
+    },
+    {
+      "id": "cond-medio-42",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene mayor al final?\nint a = 4, b = 9;\nint mayor = a > b ? a : b;",
+      "questionTextEn": "What value does mayor hold at the end?\nint a = 4, b = 9;\nint mayor = a > b ? a : b;",
+      "correctAnswer": "9",
+      "incorrectAnswerPool": [
+        "4",
+        "13",
+        "5",
+        "0"
+      ],
+      "explanation": "a > b es falso, así que el ternario devuelve b.",
+      "explanationEn": "a > b is false, so the ternary returns b."
+    },
+    {
+      "id": "cond-medio-43",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = \"Hola\";\nif (s == \"hola\") Console.WriteLine(\"Igual\");\nelse Console.WriteLine(\"Distinto\");",
+      "questionTextEn": "What does it print?\nstring s = \"Hola\";\nif (s == \"hola\") Console.WriteLine(\"Igual\");\nelse Console.WriteLine(\"Distinto\");",
+      "correctAnswer": "Distinto",
+      "incorrectAnswerPool": [
+        "Igual",
+        "IgualDistinto",
+        "Hola",
+        "Nada"
+      ],
+      "explanation": "La comparación distingue mayúsculas: \"Hola\" no es \"hola\".",
+      "explanationEn": "The comparison is case sensitive: \"Hola\" is not \"hola\"."
+    },
+    {
+      "id": "cond-medio-44",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring a = \"ab\";\nstring b = \"a\" + \"b\";\nif (a == b) Console.WriteLine(\"Igual\");\nelse Console.WriteLine(\"Distinto\");",
+      "questionTextEn": "What does it print?\nstring a = \"ab\";\nstring b = \"a\" + \"b\";\nif (a == b) Console.WriteLine(\"Igual\");\nelse Console.WriteLine(\"Distinto\");",
+      "correctAnswer": "Igual",
+      "incorrectAnswerPool": [
+        "Distinto",
+        "IgualDistinto",
+        "ab",
+        "Nada"
+      ],
+      "explanation": "== compara el contenido de los strings, y ambos contienen \"ab\".",
+      "explanationEn": "== compares the contents of the strings, and both contain \"ab\"."
+    },
+    {
+      "id": "cond-medio-45",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 5;\nif (x > 3)\n    if (x > 4) Console.WriteLine(\"A\");\n    else Console.WriteLine(\"B\");",
+      "questionTextEn": "What does it print?\nint x = 5;\nif (x > 3)\n    if (x > 4) Console.WriteLine(\"A\");\n    else Console.WriteLine(\"B\");",
+      "correctAnswer": "A",
+      "incorrectAnswerPool": [
+        "B",
+        "AB",
+        "Nada",
+        "x"
+      ],
+      "explanation": "El else pertenece al if más cercano (x > 4), que es verdadero.",
+      "explanationEn": "The else belongs to the nearest if (x > 4), which is true."
+    },
+    {
+      "id": "cond-medio-46",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint p = 60;\nbool aprobado = p >= 50 && p <= 100;\nConsole.WriteLine(aprobado);",
+      "questionTextEn": "What does it print?\nint p = 60;\nbool aprobado = p >= 50 && p <= 100;\nConsole.WriteLine(aprobado);",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "true",
+        "60",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-medio-47",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nConsole.WriteLine(!(4 < 2));",
+      "questionTextEn": "What does it print?\nConsole.WriteLine(!(4 < 2));",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "true",
+        "4",
+        "2"
+      ]
+    },
+    {
+      "id": "cond-medio-48",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 0;\nif (x != 0 && 10 / x > 1) Console.WriteLine(\"Grande\");\nelse Console.WriteLine(\"Cero o pequeño\");",
+      "questionTextEn": "What does it print?\nint x = 0;\nif (x != 0 && 10 / x > 1) Console.WriteLine(\"Grande\");\nelse Console.WriteLine(\"Cero o pequeño\");",
+      "correctAnswer": "Cero o pequeño",
+      "incorrectAnswerPool": [
+        "Grande",
+        "Error",
+        "Nada",
+        "0"
+      ],
+      "explanation": "x != 0 es falso y && no evalúa la división, así que no hay error.",
+      "explanationEn": "x != 0 is false and && does not evaluate the division, so there is no error."
+    },
+    {
+      "id": "cond-medio-49",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nchar c = 'b';\nif (c >= 'a' && c <= 'z') Console.WriteLine(\"Minúscula\");\nelse Console.WriteLine(\"Otro\");",
+      "questionTextEn": "What does it print?\nchar c = 'b';\nif (c >= 'a' && c <= 'z') Console.WriteLine(\"Minúscula\");\nelse Console.WriteLine(\"Otro\");",
+      "correctAnswer": "Minúscula",
+      "incorrectAnswerPool": [
+        "Otro",
+        "MinúsculaOtro",
+        "b",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-medio-50",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene puede al final?\nint edad = 17;\nbool puede = edad >= 18 || edad == 17;",
+      "questionTextEn": "What value does puede hold at the end?\nint edad = 17;\nbool puede = edad >= 18 || edad == 17;",
+      "correctAnswer": "true",
+      "incorrectAnswerPool": [
+        "false",
+        "17",
+        "18",
+        "null"
+      ]
+    },
+    {
+      "id": "cond-medio-51",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 10, b = 3;\nif (a / b == 3) Console.WriteLine(\"Tres\");\nelse Console.WriteLine(\"Otro\");",
+      "questionTextEn": "What does it print?\nint a = 10, b = 3;\nif (a / b == 3) Console.WriteLine(\"Tres\");\nelse Console.WriteLine(\"Otro\");",
+      "correctAnswer": "Tres",
+      "incorrectAnswerPool": [
+        "Otro",
+        "Nada",
+        "3.33",
+        "TresOtro"
+      ],
+      "explanation": "La división entera 10 / 3 da 3.",
+      "explanationEn": "Integer division 10 / 3 gives 3."
+    },
+    {
+      "id": "cond-medio-52",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 2;\nif (x == 1) Console.WriteLine(\"Uno\");\nelse if (x == 2) Console.WriteLine(\"Dos\");\nelse if (x == 3) Console.WriteLine(\"Tres\");\nelse Console.WriteLine(\"Otro\");",
+      "questionTextEn": "What does it print?\nint x = 2;\nif (x == 1) Console.WriteLine(\"Uno\");\nelse if (x == 2) Console.WriteLine(\"Dos\");\nelse if (x == 3) Console.WriteLine(\"Tres\");\nelse Console.WriteLine(\"Otro\");",
+      "correctAnswer": "Dos",
+      "incorrectAnswerPool": [
+        "Uno",
+        "Tres",
+        "Otro",
+        "DosTres"
+      ]
+    },
+    {
+      "id": "cond-medio-53",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene x al final?\nint x = 5;\nif (x > 3 && x < 8) x *= 2;",
+      "questionTextEn": "What value does x hold at the end?\nint x = 5;\nif (x > 3 && x < 8) x *= 2;",
+      "correctAnswer": "10",
+      "incorrectAnswerPool": [
+        "5",
+        "8",
+        "25",
+        "0"
+      ]
+    },
+    {
+      "id": "cond-medio-54",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene y al final?\nint y = 5;\nif (y > 10 || y < 0) y = 0;\nelse y++;",
+      "questionTextEn": "What value does y hold at the end?\nint y = 5;\nif (y > 10 || y < 0) y = 0;\nelse y++;",
+      "correctAnswer": "6",
+      "incorrectAnswerPool": [
+        "5",
+        "0",
+        "4",
+        "10"
+      ]
+    },
+    {
+      "id": "cond-medio-55",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene estado al final?\nstring estado = 10 > 5 ? \"A\" : \"B\";",
+      "questionTextEn": "What value does estado hold at the end?\nstring estado = 10 > 5 ? \"A\" : \"B\";",
+      "correctAnswer": "A",
+      "incorrectAnswerPool": [
+        "B",
+        "AB",
+        "10",
+        "true"
+      ]
+    },
+    {
+      "id": "cond-medio-56",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene total al final?\nint total = 0;\nif (3 > 1) total += 10;\nif (3 > 5) total += 20;\nif (3 == 3) total += 5;",
+      "questionTextEn": "What value does total hold at the end?\nint total = 0;\nif (3 > 1) total += 10;\nif (3 > 5) total += 20;\nif (3 == 3) total += 5;",
+      "correctAnswer": "15",
+      "incorrectAnswerPool": [
+        "10",
+        "35",
+        "5",
+        "30"
+      ],
+      "explanation": "Solo se cumplen el primer y el tercer if: 10 + 5.",
+      "explanationEn": "Only the first and third ifs are met: 10 + 5."
+    },
+    {
+      "id": "cond-medio-57",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = 20;\nif (n % 4 == 0 && n % 100 != 0) Console.WriteLine(\"Sí\");\nelse Console.WriteLine(\"No\");",
+      "questionTextEn": "What does it print?\nint n = 20;\nif (n % 4 == 0 && n % 100 != 0) Console.WriteLine(\"Sí\");\nelse Console.WriteLine(\"No\");",
+      "correctAnswer": "Sí",
+      "incorrectAnswerPool": [
+        "No",
+        "SíNo",
+        "20",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-medio-58",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 5;\nConsole.WriteLine(a > 3 ? \"Grande\" : \"Pequeño\");",
+      "questionTextEn": "What does it print?\nint a = 5;\nConsole.WriteLine(a > 3 ? \"Grande\" : \"Pequeño\");",
+      "correctAnswer": "Grande",
+      "incorrectAnswerPool": [
+        "Pequeño",
+        "GrandePequeño",
+        "True",
+        "5"
+      ]
+    },
+    {
+      "id": "cond-medio-59",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint h = 15;\nif (h >= 6 && h < 12) Console.WriteLine(\"Mañana\");\nelse if (h >= 12 && h < 20) Console.WriteLine(\"Tarde\");\nelse Console.WriteLine(\"Noche\");",
+      "questionTextEn": "What does it print?\nint h = 15;\nif (h >= 6 && h < 12) Console.WriteLine(\"Mañana\");\nelse if (h >= 12 && h < 20) Console.WriteLine(\"Tarde\");\nelse Console.WriteLine(\"Noche\");",
+      "correctAnswer": "Tarde",
+      "incorrectAnswerPool": [
+        "Mañana",
+        "Noche",
+        "MañanaTarde",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-medio-60",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = \"\";\nif (string.IsNullOrEmpty(s)) Console.WriteLine(\"Vacío\");\nelse Console.WriteLine(s);",
+      "questionTextEn": "What does it print?\nstring s = \"\";\nif (string.IsNullOrEmpty(s)) Console.WriteLine(\"Vacío\");\nelse Console.WriteLine(s);",
+      "correctAnswer": "Vacío",
+      "incorrectAnswerPool": [
+        "null",
+        "Nada",
+        "s",
+        "VacíoNada"
+      ]
+    },
+    {
+      "id": "cond-medio-61",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 10;\nx = x > 5 ? x - 5 : x + 5;\nConsole.WriteLine(x);",
+      "questionTextEn": "What does it print?\nint x = 10;\nx = x > 5 ? x - 5 : x + 5;\nConsole.WriteLine(x);",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "10",
+        "15",
+        "0",
+        "-5"
+      ],
+      "explanation": "x > 5 es verdadero, así que se elige x - 5.",
+      "explanationEn": "x > 5 is true, so x - 5 is chosen."
+    },
+    {
+      "id": "cond-medio-62",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint pts = 45;\nif (pts >= 50) Console.WriteLine(\"Gana\");\nelse if (pts >= 40) Console.WriteLine(\"Empata\");\nelse Console.WriteLine(\"Pierde\");",
+      "questionTextEn": "What does it print?\nint pts = 45;\nif (pts >= 50) Console.WriteLine(\"Gana\");\nelse if (pts >= 40) Console.WriteLine(\"Empata\");\nelse Console.WriteLine(\"Pierde\");",
+      "correctAnswer": "Empata",
+      "incorrectAnswerPool": [
+        "Gana",
+        "Pierde",
+        "GanaEmpata",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-medio-63",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 3, b = 3;\nif (a == b) Console.WriteLine(\"Iguales\");\nelse if (a > b) Console.WriteLine(\"a mayor\");\nelse Console.WriteLine(\"b mayor\");",
+      "questionTextEn": "What does it print?\nint a = 3, b = 3;\nif (a == b) Console.WriteLine(\"Iguales\");\nelse if (a > b) Console.WriteLine(\"a mayor\");\nelse Console.WriteLine(\"b mayor\");",
+      "correctAnswer": "Iguales",
+      "incorrectAnswerPool": [
+        "a mayor",
+        "b mayor",
+        "Nada",
+        "IgualesNada"
+      ]
+    },
+    {
+      "id": "cond-medio-64",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para que solo trabaje quien tiene entre 18 y 65 años.",
+      "questionTextEn": "Fill in the blank so that only people aged 18 to 65 work.",
+      "codeTemplate": "int edad = 70;\nif (edad >= 18 ____ edad <= 65)\n    Console.WriteLine(\"Activo\");\nelse\n    Console.WriteLine(\"Jubilado\");",
+      "expectedAnswer": "&&"
+    },
+    {
+      "id": "cond-medio-65",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para detectar un valor fuera de 0 a 100.",
+      "questionTextEn": "Fill in the blank to detect a value outside 0 to 100.",
+      "codeTemplate": "int x = 150;\nif (x < 0 ____ x > 100)\n    Console.WriteLine(\"Fuera\");",
+      "expectedAnswer": "||"
+    },
+    {
+      "id": "cond-medio-66",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para negar la condición completa.",
+      "questionTextEn": "Fill in the blank to negate the whole condition.",
+      "codeTemplate": "int x = 3;\nif (____(x > 5))\n    Console.WriteLine(\"Pequeño\");",
+      "expectedAnswer": "!"
+    },
+    {
+      "id": "cond-medio-67",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el símbolo del operador ternario.",
+      "questionTextEn": "Fill in the symbol of the ternary operator.",
+      "codeTemplate": "int x = 4;\nstring r = x > 0 ? \"positivo\" ____ \"no positivo\";\nConsole.WriteLine(r);",
+      "expectedAnswer": ":"
+    },
+    {
+      "id": "cond-medio-68",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con la propiedad que da la longitud del texto.",
+      "questionTextEn": "Fill in the property that gives the length of the text.",
+      "codeTemplate": "string clave = \"secreta123\";\nif (clave.____ >= 8)\n    Console.WriteLine(\"Clave larga\");",
+      "expectedAnswer": "Length"
+    },
+    {
+      "id": "cond-medio-69",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con el método que comprueba si un texto es null o vacío.",
+      "questionTextEn": "Fill in the method that checks whether a text is null or empty.",
+      "codeTemplate": "string texto = \"\";\nif (string.____(texto))\n    Console.WriteLine(\"Sin texto\");",
+      "expectedAnswer": "IsNullOrEmpty"
+    },
+    {
+      "id": "cond-medio-70",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para exigir las tres condiciones a la vez.",
+      "questionTextEn": "Fill in the blank to require all three conditions at once.",
+      "codeTemplate": "int a = 1, b = 2, c = -1;\nif (a > 0 && b > 0 ____ c > 0)\n    Console.WriteLine(\"Todos positivos\");\nelse\n    Console.WriteLine(\"Alguno no\");",
+      "expectedAnswer": "&&"
+    },
+    {
+      "id": "cond-medio-71",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con el método que da el valor absoluto.",
+      "questionTextEn": "Fill in the method that gives the absolute value.",
+      "codeTemplate": "int x = -8;\nif (Math.____(x) > 5)\n    Console.WriteLine(\"Lejos del cero\");",
+      "expectedAnswer": "Abs"
+    },
+    {
+      "id": "cond-medio-72",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con el método que comprueba si el texto contiene una palabra.",
+      "questionTextEn": "Fill in the method that checks whether the text contains a word.",
+      "codeTemplate": "string frase = \"el sol sale\";\nif (frase.____(\"sol\"))\n    Console.WriteLine(\"Hay sol\");",
+      "expectedAnswer": "Contains"
+    },
+    {
+      "id": "cond-medio-73",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa la palabra clave que cierra la cadena de condiciones.",
+      "questionTextEn": "Fill in the keyword that closes the chain of conditions.",
+      "codeTemplate": "int n = 0;\nif (n > 0)\n    Console.WriteLine(\"Positivo\");\nelse if (n < 0)\n    Console.WriteLine(\"Negativo\");\n____\n    Console.WriteLine(\"Cero\");",
+      "expectedAnswer": "else"
+    },
+    {
+      "id": "cond-medio-74",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para que sea positivo y distinto de 5.",
+      "questionTextEn": "Fill in the blank so it is positive and different from 5.",
+      "codeTemplate": "int x = 7;\nif (x > 0 && x ____ 5)\n    Console.WriteLine(\"Válido\");",
+      "expectedAnswer": "!="
+    },
+    {
+      "id": "cond-medio-75",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para detectar el fin de semana.",
+      "questionTextEn": "Fill in the blank to detect the weekend.",
+      "codeTemplate": "string dia = \"dom\";\nif (dia == \"sab\" ____ dia == \"dom\")\n    Console.WriteLine(\"Fin de semana\");",
+      "expectedAnswer": "||"
+    },
+    {
+      "id": "cond-medio-76",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para guardar el menor de los dos números.",
+      "questionTextEn": "Fill in the blank to store the smaller of the two numbers.",
+      "codeTemplate": "int a = 4, b = 9;\nint menor = a ____ b ? a : b;\nConsole.WriteLine(menor);",
+      "expectedAnswer": "<"
+    },
+    {
+      "id": "cond-medio-77",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para saber si x está en el rango 10 a 20.",
+      "questionTextEn": "Put the lines in order to find out whether x is in the range 10 to 20.",
+      "codeBlocks": [
+        "int x = 15;",
+        "if (x > 10 && x < 20)",
+        "    Console.WriteLine(\"Dentro del rango\");",
+        "else",
+        "    Console.WriteLine(\"Fuera del rango\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "cond-medio-78",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el if anidado para cobrar o no la entrada a un adulto.",
+      "questionTextEn": "Put the nested if in order to charge or not charge an adult for entry.",
+      "codeBlocks": [
+        "int edad = 25;",
+        "bool socio = edad > 40;",
+        "if (edad >= 18)",
+        "    if (socio)",
+        "        Console.WriteLine(\"Entrada gratis\");",
+        "    else",
+        "        Console.WriteLine(\"Paga entrada\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "cond-medio-79",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena la cadena de condiciones para el saludo.",
+      "questionTextEn": "Put the chain of conditions for the greeting in order.",
+      "codeBlocks": [
+        "int hora = 14;",
+        "if (hora < 12)",
+        "    Console.WriteLine(\"Buenos días\");",
+        "else if (hora < 20)",
+        "    Console.WriteLine(\"Buenas tardes\");",
+        "else",
+        "    Console.WriteLine(\"Buenas noches\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "cond-medio-80",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para mostrar el mayor con el operador ternario.",
+      "questionTextEn": "Put the lines in order to print the greater one with the ternary operator.",
+      "codeBlocks": [
+        "int a = 7;",
+        "int b = a + 5;",
+        "int mayor = a > b ? a : b;",
+        "Console.WriteLine(mayor);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "cond-medio-81",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para comprobar una clave.",
+      "questionTextEn": "Put the lines in order to check a password.",
+      "codeBlocks": [
+        "string clave = \"1234\";",
+        "string intento = clave;",
+        "if (intento == clave)",
+        "    Console.WriteLine(\"Acceso permitido\");",
+        "else",
+        "    Console.WriteLine(\"Acceso denegado\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "cond-medio-82",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para calcular el valor absoluto.",
+      "questionTextEn": "Put the lines in order to compute the absolute value.",
+      "codeBlocks": [
+        "int n = -7;",
+        "if (n < 0)",
+        "    n = -n;",
+        "Console.WriteLine(n);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "cond-medio-83",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para describir el tipo de número.",
+      "questionTextEn": "Put the lines in order to describe the kind of number.",
+      "codeBlocks": [
+        "int n = 13;",
+        "string r = \"x\" + n;",
+        "if (n % 2 == 0)",
+        "    r = \"par\";",
+        "Console.WriteLine(r);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "cond-medio-84",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para comparar dos valores calculados.",
+      "questionTextEn": "Put the lines in order to compare two computed values.",
+      "codeBlocks": [
+        "int a = 3;",
+        "int b = a * 2;",
+        "int c = b - a;",
+        "if (c == a)",
+        "    Console.WriteLine(\"Iguales\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "cond-medio-85",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para pagar solo si alcanza el dinero.",
+      "questionTextEn": "Put the lines in order to pay only if there is enough money.",
+      "codeBlocks": [
+        "int dinero = 100;",
+        "int precio = dinero - 20;",
+        "if (dinero >= precio)",
+        "    dinero = dinero - precio;",
+        "Console.WriteLine(dinero);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "cond-medio-86",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para revisar la palabra y su primera letra.",
+      "questionTextEn": "Put the lines in order to check the word and its first letter.",
+      "codeBlocks": [
+        "string s = \"casa\";",
+        "if (s.Length > 3 && s[0] == 'c')",
+        "    Console.WriteLine(\"Larga con c\");",
+        "else",
+        "    Console.WriteLine(\"Otra\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "cond-medio-87",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para comprobar si alguna de las dos condiciones se cumple.",
+      "questionTextEn": "Put the lines in order to check whether either condition is met.",
+      "codeBlocks": [
+        "int x = 4;",
+        "int y = x + 3;",
+        "if (x > y || y > 5)",
+        "    Console.WriteLine(\"Alguno cumple\");",
+        "else",
+        "    Console.WriteLine(\"Ninguno\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "cond-medio-88",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para avisar de las vidas que quedan.",
+      "questionTextEn": "Put the lines in order to report how many lives are left.",
+      "codeBlocks": [
+        "int vidas = 3;",
+        "vidas = vidas - 1;",
+        "if (vidas == 0)",
+        "    Console.WriteLine(\"Game over\");",
+        "else",
+        "    Console.WriteLine(\"Quedan \" + vidas);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "cond-medio-89",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para recortar un valor al máximo permitido.",
+      "questionTextEn": "Put the lines in order to cap a value at the allowed maximum.",
+      "codeBlocks": [
+        "int max = 100;",
+        "int valor = max + 30;",
+        "if (valor > max)",
+        "    valor = max;",
+        "Console.WriteLine(valor);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "cond-medio-90",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "Debe mostrar \"Permitido\" solo con edad entre 18 y 65 (incluidos) y \"Denegado\" en otro caso. ¿Qué bloque tiene un error de lógica?\nint edad = 70;",
+      "questionTextEn": "It must print \"Permitido\" only for ages 18 to 65 (included) and \"Denegado\" otherwise. Which block has a logic error?\nint edad = 70;",
+      "codeSnippetsOptions": [
+        "if (edad >= 18 && edad <= 65) Console.Write(\"Permitido\"); else Console.Write(\"Denegado\");",
+        "if (edad > 17 && edad < 66) Console.Write(\"Permitido\"); else Console.Write(\"Denegado\");",
+        "if (edad >= 18 || edad <= 65) Console.Write(\"Permitido\"); else Console.Write(\"Denegado\");",
+        "if (!(edad < 18 || edad > 65)) Console.Write(\"Permitido\"); else Console.Write(\"Denegado\");"
+      ],
+      "buggyIndex": 2,
+      "explanation": "|| es verdadero para casi cualquier edad: debía ser &&.",
+      "explanationEn": "|| is true for almost any age: it should have been &&."
+    },
+    {
+      "id": "cond-medio-91",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?\nint x = 5;",
+      "questionTextEn": "Which line does not compile?\nint x = 5;",
+      "codeSnippetsOptions": [
+        "if (x > 3 && x < 9) { }",
+        "if ((x > 3) && (x < 9)) { }",
+        "if (x > 3) && (x < 9) { }",
+        "if (x > 3 & x < 9) { }"
+      ],
+      "buggyIndex": 2,
+      "explanation": "La condición completa debe ir dentro de un único par de paréntesis.",
+      "explanationEn": "The whole condition must be inside a single pair of parentheses."
+    },
+    {
+      "id": "cond-medio-92",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?\nint x = 5;",
+      "questionTextEn": "Which line does not compile?\nint x = 5;",
+      "codeSnippetsOptions": [
+        "if (x > 3 && x < 9) { }",
+        "if (x > 3 and x < 9) { }",
+        "if (x < 3 || x > 9) { }",
+        "if (!(x > 3)) { }"
+      ],
+      "buggyIndex": 1,
+      "explanation": "En C# el \"y\" lógico es &&, no la palabra and.",
+      "explanationEn": "In C# the logical \"and\" is &&, not the word and."
+    },
+    {
+      "id": "cond-medio-93",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?\nint x = 5;",
+      "questionTextEn": "Which line does not compile?\nint x = 5;",
+      "codeSnippetsOptions": [
+        "if (x > 3 || < 9) { }",
+        "if (x > 3 || x < 9) { }",
+        "if (x < 3 && x < 9) { }",
+        "if (x != 3 || x == 9) { }"
+      ],
+      "buggyIndex": 0,
+      "explanation": "Cada lado de || necesita una comparación completa: x < 9.",
+      "explanationEn": "Each side of || needs a complete comparison: x < 9."
+    },
+    {
+      "id": "cond-medio-94",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "Debe mostrar \"Grande\" solo si x es mayor que 3. ¿Qué bloque tiene un error?\nint x = 2;",
+      "questionTextEn": "It must print \"Grande\" only if x is greater than 3. Which block has an error?\nint x = 2;",
+      "codeSnippetsOptions": [
+        "if (x > 3) Console.Write(\"Grande\");",
+        "if (x > 3) { Console.Write(\"Grande\"); }",
+        "if (x > 3)\n    Console.Write(\"Grande\");",
+        "if (x > 3); Console.Write(\"Grande\");"
+      ],
+      "buggyIndex": 3,
+      "explanation": "El ; tras la condición deja el if vacío y \"Grande\" se imprime siempre.",
+      "explanationEn": "The ; after the condition leaves the if empty and \"Grande\" always prints."
+    },
+    {
+      "id": "cond-medio-95",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque falla al ejecutarse con d = 0?\nint d = 0;",
+      "questionTextEn": "Which block fails at run time when d = 0?\nint d = 0;",
+      "codeSnippetsOptions": [
+        "if (d != 0) Console.Write(10 / d);",
+        "if (d != 0 && 10 / d > 1) Console.Write(\"ok\");",
+        "if (10 / d > 1 && d != 0) Console.Write(\"ok\");",
+        "if (d == 0 || 10 / d > 1) Console.Write(\"ok\");"
+      ],
+      "buggyIndex": 2,
+      "explanation": "Se divide por cero antes de comprobar que d no es cero.",
+      "explanationEn": "It divides by zero before checking that d is not zero."
+    },
+    {
+      "id": "cond-medio-96",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque lanza una excepción cuando s es null?\nstring s = null;",
+      "questionTextEn": "Which block throws an exception when s is null?\nstring s = null;",
+      "codeSnippetsOptions": [
+        "if (s != null && s.Length > 3) { }",
+        "if (s == null || s.Length == 0) { }",
+        "if (s.Length > 3 && s != null) { }",
+        "if (!string.IsNullOrEmpty(s)) { }"
+      ],
+      "buggyIndex": 2,
+      "explanation": "s.Length se evalúa primero y s es null (NullReferenceException).",
+      "explanationEn": "s.Length is evaluated first and s is null (NullReferenceException)."
+    },
+    {
+      "id": "cond-medio-97",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "Debe mostrar \"Aprobado\" con 11 o más y \"Desaprobado\" en otro caso. ¿Qué bloque tiene un error de lógica?\nint nota = 11;",
+      "questionTextEn": "It must print \"Aprobado\" with 11 or more and \"Desaprobado\" otherwise. Which block has a logic error?\nint nota = 11;",
+      "codeSnippetsOptions": [
+        "if (nota >= 11) Console.Write(\"Aprobado\"); else Console.Write(\"Desaprobado\");",
+        "if (nota > 11) Console.Write(\"Aprobado\"); else Console.Write(\"Desaprobado\");",
+        "if (nota > 10) Console.Write(\"Aprobado\"); else Console.Write(\"Desaprobado\");",
+        "if (nota < 11) Console.Write(\"Desaprobado\"); else Console.Write(\"Aprobado\");"
+      ],
+      "buggyIndex": 1,
+      "explanation": "Con > 11 el 11 queda fuera: hacía falta >= 11.",
+      "explanationEn": "With > 11 the value 11 is left out: >= 11 was needed."
+    },
+    {
+      "id": "cond-medio-98",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "Debe mostrar \"Fin de semana\" solo para \"sab\" o \"dom\". ¿Qué bloque tiene un error de lógica?\nstring dia = \"sab\";",
+      "questionTextEn": "It must print \"Fin de semana\" only for \"sab\" or \"dom\". Which block has a logic error?\nstring dia = \"sab\";",
+      "codeSnippetsOptions": [
+        "if (dia == \"sab\" || dia == \"dom\") Console.Write(\"Fin de semana\"); else Console.Write(\"Laboral\");",
+        "if (dia != \"sab\" && dia != \"dom\") Console.Write(\"Laboral\"); else Console.Write(\"Fin de semana\");",
+        "if (!(dia != \"sab\" && dia != \"dom\")) Console.Write(\"Fin de semana\"); else Console.Write(\"Laboral\");",
+        "if (dia == \"sab\" && dia == \"dom\") Console.Write(\"Fin de semana\"); else Console.Write(\"Laboral\");"
+      ],
+      "buggyIndex": 3,
+      "explanation": "dia no puede ser \"sab\" y \"dom\" a la vez: debía usarse ||.",
+      "explanationEn": "dia cannot be \"sab\" and \"dom\" at the same time: || was needed."
+    },
+    {
+      "id": "cond-medio-99",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?\nint x = 5;",
+      "questionTextEn": "Which line does not compile?\nint x = 5;",
+      "codeSnippetsOptions": [
+        "if (x > 0) { } else if (x < 0) { }",
+        "if (x > 0) { } else { }",
+        "if (x > 0) { } else if (x == 0) { }",
+        "if (x > 0) { } else if { }"
+      ],
+      "buggyIndex": 3,
+      "explanation": "else if siempre necesita una condición entre paréntesis.",
+      "explanationEn": "else if always needs a condition in parentheses."
+    },
+    {
+      "id": "cond-medio-100",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?\nstring s = \"a\";",
+      "questionTextEn": "Which line does not compile?\nstring s = \"a\";",
+      "codeSnippetsOptions": [
+        "if (s == \"a\") { }",
+        "if (s != \"a\") { }",
+        "if (s = \"a\") { }",
+        "if (s.Length == 1) { }"
+      ],
+      "buggyIndex": 2,
+      "explanation": "s = \"a\" es una asignación que produce un string, no un bool.",
+      "explanationEn": "s = \"a\" is an assignment that produces a string, not a bool."
+    },
+    {
+      "id": "cond-medio-101",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?\nchar c = 'a';",
+      "questionTextEn": "Which line does not compile?\nchar c = 'a';",
+      "codeSnippetsOptions": [
+        "if (c == 'a') { }",
+        "if (c == \"a\") { }",
+        "if (c != 'b') { }",
+        "if (c >= 'a') { }"
+      ],
+      "buggyIndex": 1,
+      "explanation": "No se puede comparar un char con un string: \"a\" va entre comillas dobles y 'a' entre simples.",
+      "explanationEn": "A char cannot be compared with a string: \"a\" uses double quotes and 'a' uses single quotes."
+    },
+    {
+      "id": "cond-medio-102",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?\nint x = 3;",
+      "questionTextEn": "Which line does not compile?\nint x = 3;",
+      "codeSnippetsOptions": [
+        "if (x > 0 && x < 5) { }",
+        "if (x > 0 || x == 2) { }",
+        "if (!(x > 0)) { }",
+        "if (x > 0 && 5) { }"
+      ],
+      "buggyIndex": 3,
+      "explanation": "&& necesita dos valores bool; 5 es un int.",
+      "explanationEn": "&& needs two bool values; 5 is an int."
     }
   ]
 }

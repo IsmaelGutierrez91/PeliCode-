@@ -77,6 +77,1629 @@
         "int i = 0; while (i < 3) { i += 2; }"
       ],
       "buggyIndex": 2
+    },
+    {
+      "id": "loop-facil-6",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué bucle conviene cuando sabes de antemano cuántas veces hay que repetir?",
+      "questionTextEn": "Which loop fits best when you know in advance how many times to repeat?",
+      "correctAnswer": "for",
+      "incorrectAnswerPool": [
+        "if",
+        "switch",
+        "try-catch"
+      ]
+    },
+    {
+      "id": "loop-facil-7",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué bucle recorre cada elemento de una colección sin usar un índice?",
+      "questionTextEn": "Which loop goes through every element of a collection without using an index?",
+      "correctAnswer": "foreach",
+      "incorrectAnswerPool": [
+        "switch",
+        "if",
+        "return"
+      ]
+    },
+    {
+      "id": "loop-facil-8",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué instrucción salta a la siguiente vuelta del bucle sin terminarlo?",
+      "questionTextEn": "Which statement jumps to the next iteration without ending the loop?",
+      "correctAnswer": "continue",
+      "incorrectAnswerPool": [
+        "break",
+        "return",
+        "stop"
+      ]
+    },
+    {
+      "id": "loop-facil-9",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué instrucción termina el bucle por completo?",
+      "questionTextEn": "Which statement ends the loop completely?",
+      "correctAnswer": "break",
+      "incorrectAnswerPool": [
+        "continue",
+        "skip",
+        "pass"
+      ]
+    },
+    {
+      "id": "loop-facil-10",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuántas partes tiene la cabecera de un for?",
+      "questionTextEn": "How many parts does the header of a for loop have?",
+      "correctAnswer": "Tres: inicialización, condición y actualización",
+      "incorrectAnswerPool": [
+        "Una sola: la condición",
+        "Dos: inicio y fin",
+        "Cuatro: inicio, condición, cuerpo y fin"
+      ],
+      "correctAnswerEn": "Three: initialization, condition and update",
+      "incorrectAnswerPoolEn": [
+        "Just one: the condition",
+        "Two: start and end",
+        "Four: start, condition, body and end"
+      ]
+    },
+    {
+      "id": "loop-facil-11",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué carácter separa las partes de la cabecera de un for?",
+      "questionTextEn": "Which character separates the parts of a for loop header?",
+      "correctAnswer": "El punto y coma (;)",
+      "incorrectAnswerPool": [
+        "La coma (,)",
+        "Los dos puntos (:)",
+        "El punto (.)"
+      ],
+      "correctAnswerEn": "The semicolon (;)",
+      "incorrectAnswerPoolEn": [
+        "The comma (,)",
+        "The colon (:)",
+        "The dot (.)"
+      ]
+    },
+    {
+      "id": "loop-facil-12",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué pasa con un while cuya condición es falsa desde el principio?",
+      "questionTextEn": "What happens with a while loop whose condition is false from the start?",
+      "correctAnswer": "El cuerpo no se ejecuta ninguna vez",
+      "incorrectAnswerPool": [
+        "El cuerpo se ejecuta una vez",
+        "Da un error de compilación",
+        "Se convierte en un bucle infinito"
+      ],
+      "correctAnswerEn": "The body never runs",
+      "incorrectAnswerPoolEn": [
+        "The body runs once",
+        "It causes a compile error",
+        "It becomes an infinite loop"
+      ]
+    },
+    {
+      "id": "loop-facil-13",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué es un bucle infinito?",
+      "questionTextEn": "What is an infinite loop?",
+      "correctAnswer": "Un bucle cuya condición nunca deja de cumplirse, así que no termina",
+      "incorrectAnswerPool": [
+        "Un bucle que se ejecuta más de mil veces",
+        "Un bucle sin cuerpo",
+        "Un bucle que solo se ejecuta una vez"
+      ],
+      "correctAnswerEn": "A loop whose condition never stops being true, so it never ends",
+      "incorrectAnswerPoolEn": [
+        "A loop that runs more than a thousand times",
+        "A loop with no body",
+        "A loop that only runs once"
+      ]
+    },
+    {
+      "id": "loop-facil-14",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿De qué tipo debe ser la condición de un while?",
+      "questionTextEn": "What type must the condition of a while loop have?",
+      "correctAnswer": "bool",
+      "incorrectAnswerPool": [
+        "int",
+        "string",
+        "char"
+      ]
+    },
+    {
+      "id": "loop-facil-15",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Con qué carácter termina la instrucción do-while?",
+      "questionTextEn": "Which character ends the do-while statement?",
+      "correctAnswer": "Un punto y coma después del paréntesis de la condición",
+      "incorrectAnswerPool": [
+        "Una llave de cierre",
+        "Nada, no lleva ningún carácter",
+        "Una coma"
+      ],
+      "correctAnswerEn": "A semicolon after the closing parenthesis of the condition",
+      "incorrectAnswerPoolEn": [
+        "A closing brace",
+        "Nothing, it takes no character",
+        "A comma"
+      ]
+    },
+    {
+      "id": "loop-facil-16",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cómo se llama cada repetición del cuerpo de un bucle?",
+      "questionTextEn": "What is each repetition of a loop body called?",
+      "correctAnswer": "Iteración",
+      "incorrectAnswerPool": [
+        "Compilación",
+        "Declaración",
+        "Asignación"
+      ],
+      "correctAnswerEn": "Iteration",
+      "incorrectAnswerPoolEn": [
+        "Compilation",
+        "Declaration",
+        "Assignment"
+      ]
+    },
+    {
+      "id": "loop-facil-17",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué hace la instrucción i++?",
+      "questionTextEn": "What does the statement i++ do?",
+      "correctAnswer": "Suma 1 al valor de i",
+      "incorrectAnswerPool": [
+        "Multiplica i por 2",
+        "Resta 1 al valor de i",
+        "Compara i con 1"
+      ],
+      "correctAnswerEn": "Adds 1 to the value of i",
+      "incorrectAnswerPoolEn": [
+        "Multiplies i by 2",
+        "Subtracts 1 from the value of i",
+        "Compares i with 1"
+      ]
+    },
+    {
+      "id": "loop-facil-18",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuál de estas condiciones crea un bucle infinito intencional?",
+      "questionTextEn": "Which of these conditions creates an intentional infinite loop?",
+      "correctAnswer": "while (true)",
+      "incorrectAnswerPool": [
+        "while (false)",
+        "while (1 < 0)",
+        "do { } while (false);"
+      ]
+    },
+    {
+      "id": "loop-facil-19",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cómo se llama la variable que va guardando un total en un bucle (por ejemplo, la suma)?",
+      "questionTextEn": "What is the variable that keeps a running total in a loop (for example, the sum) called?",
+      "correctAnswer": "Acumulador",
+      "incorrectAnswerPool": [
+        "Constante",
+        "Parámetro",
+        "Operador"
+      ],
+      "correctAnswerEn": "Accumulator",
+      "incorrectAnswerPoolEn": [
+        "Constant",
+        "Parameter",
+        "Operator"
+      ]
+    },
+    {
+      "id": "loop-facil-20",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Para qué suele usarse un contador en un bucle?",
+      "questionTextEn": "What is a counter usually used for in a loop?",
+      "correctAnswer": "Para saber cuántas veces ocurre algo o cuántas vueltas se han dado",
+      "incorrectAnswerPool": [
+        "Para guardar el texto que se muestra",
+        "Para declarar el tipo de la condición",
+        "Para salir del programa"
+      ],
+      "correctAnswerEn": "To know how many times something happens or how many iterations have run",
+      "incorrectAnswerPoolEn": [
+        "To store the text being displayed",
+        "To declare the type of the condition",
+        "To exit the program"
+      ]
+    },
+    {
+      "id": "loop-facil-21",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué es un bucle anidado?",
+      "questionTextEn": "What is a nested loop?",
+      "correctAnswer": "Un bucle dentro del cuerpo de otro bucle",
+      "incorrectAnswerPool": [
+        "Un bucle que se repite para siempre",
+        "Un bucle sin condición",
+        "Dos bucles escritos uno después del otro"
+      ],
+      "correctAnswerEn": "A loop inside the body of another loop",
+      "incorrectAnswerPoolEn": [
+        "A loop that repeats forever",
+        "A loop without a condition",
+        "Two loops written one after the other"
+      ]
+    },
+    {
+      "id": "loop-facil-22",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué bucle comprueba su condición al final de cada vuelta?",
+      "questionTextEn": "Which loop checks its condition at the end of each iteration?",
+      "correctAnswer": "do-while",
+      "incorrectAnswerPool": [
+        "while",
+        "foreach",
+        "if"
+      ]
+    },
+    {
+      "id": "loop-facil-23",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué bucle de estos comprueba su condición antes de cada vuelta, incluida la primera?",
+      "questionTextEn": "Which of these loops checks its condition before each iteration, including the first?",
+      "correctAnswer": "while",
+      "incorrectAnswerPool": [
+        "do-while",
+        "goto",
+        "switch"
+      ]
+    },
+    {
+      "id": "loop-facil-24",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué símbolos agrupan varias instrucciones en el cuerpo de un bucle?",
+      "questionTextEn": "Which symbols group several statements in the body of a loop?",
+      "correctAnswer": "Las llaves { }",
+      "incorrectAnswerPool": [
+        "Los paréntesis ( )",
+        "Los corchetes [ ]",
+        "Las comillas \" \""
+      ],
+      "correctAnswerEn": "Curly braces { }",
+      "incorrectAnswerPoolEn": [
+        "Parentheses ( )",
+        "Square brackets [ ]",
+        "Quotation marks \" \""
+      ]
+    },
+    {
+      "id": "loop-facil-25",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué pasa si en un while (i < 3) nunca cambias el valor de i dentro del cuerpo?",
+      "questionTextEn": "What happens if inside a while (i < 3) you never change the value of i?",
+      "correctAnswer": "Es un bucle infinito (si i ya era menor que 3)",
+      "incorrectAnswerPool": [
+        "El bucle se ejecuta una sola vez",
+        "C# aumenta i automáticamente",
+        "No compila"
+      ],
+      "correctAnswerEn": "It is an infinite loop (if i was already less than 3)",
+      "incorrectAnswerPoolEn": [
+        "The loop runs only once",
+        "C# increases i automatically",
+        "It does not compile"
+      ]
+    },
+    {
+      "id": "loop-facil-26",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "Para repetir 10 veces con un for desde i = 0, ¿qué condición se usa?",
+      "questionTextEn": "To repeat 10 times with a for loop starting at i = 0, which condition is used?",
+      "correctAnswer": "i < 10",
+      "incorrectAnswerPool": [
+        "i <= 10",
+        "i < 9",
+        "i == 10"
+      ]
+    },
+    {
+      "id": "loop-facil-27",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué palabra clave abre un bucle que repite mientras se cumpla una condición, comprobándola antes?",
+      "questionTextEn": "Which keyword starts a loop that repeats while a condition holds, checking it first?",
+      "correctAnswer": "while",
+      "incorrectAnswerPool": [
+        "repeat",
+        "until",
+        "loop"
+      ]
+    },
+    {
+      "id": "loop-facil-28",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuál de estos bucles usa la palabra clave in en su cabecera?",
+      "questionTextEn": "Which of these loops uses the keyword in in its header?",
+      "correctAnswer": "foreach",
+      "incorrectAnswerPool": [
+        "for",
+        "while",
+        "do-while"
+      ]
+    },
+    {
+      "id": "loop-facil-29",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "Un bucle for puede declarar su variable de control en la cabecera. ¿Dónde existe esa variable?",
+      "questionTextEn": "A for loop can declare its control variable in the header. Where does that variable exist?",
+      "correctAnswer": "Solo dentro del for",
+      "incorrectAnswerPool": [
+        "En todo el programa",
+        "Solo después del bucle",
+        "Solo en la condición"
+      ],
+      "correctAnswerEn": "Only inside the for loop",
+      "incorrectAnswerPoolEn": [
+        "In the whole program",
+        "Only after the loop",
+        "Only in the condition"
+      ]
+    },
+    {
+      "id": "loop-facil-30",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nfor (int i = 0; i < 4; i++)\n    Console.Write(i);",
+      "questionTextEn": "What does it print?\nfor (int i = 0; i < 4; i++)\n    Console.Write(i);",
+      "correctAnswer": "0123",
+      "incorrectAnswerPool": [
+        "1234",
+        "012",
+        "01234",
+        "123"
+      ]
+    },
+    {
+      "id": "loop-facil-31",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nfor (int i = 1; i <= 5; i++)\n    Console.Write(i);",
+      "questionTextEn": "What does it print?\nfor (int i = 1; i <= 5; i++)\n    Console.Write(i);",
+      "correctAnswer": "12345",
+      "incorrectAnswerPool": [
+        "1234",
+        "01234",
+        "2345",
+        "123456"
+      ]
+    },
+    {
+      "id": "loop-facil-32",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint s = 0;\nfor (int i = 1; i <= 4; i++)\n    s += i;\nConsole.Write(s);",
+      "questionTextEn": "What does it print?\nint s = 0;\nfor (int i = 1; i <= 4; i++)\n    s += i;\nConsole.Write(s);",
+      "correctAnswer": "10",
+      "incorrectAnswerPool": [
+        "11",
+        "9",
+        "12",
+        "8",
+        "13",
+        "14"
+      ]
+    },
+    {
+      "id": "loop-facil-33",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuántos asteriscos se muestran?\nint i = 0;\nwhile (i < 6)\n{\n    Console.Write(\"*\");\n    i++;\n}",
+      "questionTextEn": "How many asterisks are printed?\nint i = 0;\nwhile (i < 6)\n{\n    Console.Write(\"*\");\n    i++;\n}",
+      "correctAnswer": "6",
+      "incorrectAnswerPool": [
+        "7",
+        "5",
+        "8",
+        "4",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "id": "loop-facil-34",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = 5;\ndo\n{\n    Console.Write(n);\n    n--;\n} while (n > 3);",
+      "questionTextEn": "What does it print?\nint n = 5;\ndo\n{\n    Console.Write(n);\n    n--;\n} while (n > 3);",
+      "correctAnswer": "54",
+      "incorrectAnswerPool": [
+        "543",
+        "5",
+        "45",
+        "4"
+      ]
+    },
+    {
+      "id": "loop-facil-35",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene c al final?\nint c = 0;\nfor (int i = 0; i < 10; i += 2)\n    c++;\nConsole.Write(c);",
+      "questionTextEn": "What value does c hold at the end?\nint c = 0;\nfor (int i = 0; i < 10; i += 2)\n    c++;\nConsole.Write(c);",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "6",
+        "4",
+        "7",
+        "3",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "id": "loop-facil-36",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene la variable al final?\nint x = 10;\nwhile (x > 0)\n    x -= 4;\nConsole.Write(x);",
+      "questionTextEn": "What value does the variable hold at the end?\nint x = 10;\nwhile (x > 0)\n    x -= 4;\nConsole.Write(x);",
+      "correctAnswer": "-2",
+      "incorrectAnswerPool": [
+        "-1",
+        "-3",
+        "0",
+        "1",
+        "2",
+        "-5"
+      ]
+    },
+    {
+      "id": "loop-facil-37",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nforeach (int n in new int[] { 3, 1, 2 })\n    Console.Write(n);",
+      "questionTextEn": "What does it print?\nforeach (int n in new int[] { 3, 1, 2 })\n    Console.Write(n);",
+      "correctAnswer": "312",
+      "incorrectAnswerPool": [
+        "123",
+        "321",
+        "3",
+        "6"
+      ]
+    },
+    {
+      "id": "loop-facil-38",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint[] a = { 2, 4, 6 };\nint s = 0;\nforeach (int v in a)\n    s += v;\nConsole.Write(s);",
+      "questionTextEn": "What does it print?\nint[] a = { 2, 4, 6 };\nint s = 0;\nforeach (int v in a)\n    s += v;\nConsole.Write(s);",
+      "correctAnswer": "12",
+      "incorrectAnswerPool": [
+        "13",
+        "11",
+        "14",
+        "10",
+        "15",
+        "16"
+      ]
+    },
+    {
+      "id": "loop-facil-39",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nfor (int i = 0; i < 5; i++)\n{\n    if (i == 2) break;\n    Console.Write(i);\n}",
+      "questionTextEn": "What does it print?\nfor (int i = 0; i < 5; i++)\n{\n    if (i == 2) break;\n    Console.Write(i);\n}",
+      "correctAnswer": "01",
+      "incorrectAnswerPool": [
+        "012",
+        "0",
+        "1",
+        "01234"
+      ]
+    },
+    {
+      "id": "loop-facil-40",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nfor (int i = 1; i <= 5; i++)\n{\n    if (i == 3) continue;\n    Console.Write(i);\n}",
+      "questionTextEn": "What does it print?\nfor (int i = 1; i <= 5; i++)\n{\n    if (i == 3) continue;\n    Console.Write(i);\n}",
+      "correctAnswer": "1245",
+      "incorrectAnswerPool": [
+        "12345",
+        "123",
+        "12",
+        "45"
+      ]
+    },
+    {
+      "id": "loop-facil-41",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene count al final?\nint count = 0;\nfor (int i = 0; i < 2; i++)\n    for (int j = 0; j < 3; j++)\n        count++;\nConsole.Write(count);",
+      "questionTextEn": "What value does count hold at the end?\nint count = 0;\nfor (int i = 0; i < 2; i++)\n    for (int j = 0; j < 3; j++)\n        count++;\nConsole.Write(count);",
+      "correctAnswer": "6",
+      "incorrectAnswerPool": [
+        "7",
+        "5",
+        "8",
+        "4",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "id": "loop-facil-42",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = \"\";\nfor (char c = 'a'; c < 'd'; c++)\n    s += c;\nConsole.Write(s);",
+      "questionTextEn": "What does it print?\nstring s = \"\";\nfor (char c = 'a'; c < 'd'; c++)\n    s += c;\nConsole.Write(s);",
+      "correctAnswer": "abc",
+      "incorrectAnswerPool": [
+        "abcd",
+        "ab",
+        "bcd",
+        "cba"
+      ]
+    },
+    {
+      "id": "loop-facil-43",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene la variable al final?\nint i = 5;\nwhile (i < 5)\n    i++;\nConsole.Write(i);",
+      "questionTextEn": "What value does the variable hold at the end?\nint i = 5;\nwhile (i < 5)\n    i++;\nConsole.Write(i);",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "6",
+        "4",
+        "7",
+        "3",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "id": "loop-facil-44",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene la variable al final?\nint i = 10;\ndo\n{\n    i++;\n} while (i < 5);\nConsole.Write(i);",
+      "questionTextEn": "What value does the variable hold at the end?\nint i = 10;\ndo\n{\n    i++;\n} while (i < 5);\nConsole.Write(i);",
+      "correctAnswer": "11",
+      "incorrectAnswerPool": [
+        "12",
+        "10",
+        "13",
+        "9",
+        "14",
+        "15"
+      ]
+    },
+    {
+      "id": "loop-facil-45",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nfor (int i = 3; i > 0; i--)\n    Console.Write(i);",
+      "questionTextEn": "What does it print?\nfor (int i = 3; i > 0; i--)\n    Console.Write(i);",
+      "correctAnswer": "321",
+      "incorrectAnswerPool": [
+        "123",
+        "32",
+        "210",
+        "3210"
+      ]
+    },
+    {
+      "id": "loop-facil-46",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuántas letras A se muestran?\nfor (int i = 0; i < 3; i++)\n    Console.Write(\"A\");",
+      "questionTextEn": "How many letters A are printed?\nfor (int i = 0; i < 3; i++)\n    Console.Write(\"A\");",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "4",
+        "2",
+        "5",
+        "1",
+        "0",
+        "7"
+      ]
+    },
+    {
+      "id": "loop-facil-47",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene la variable al final?\nint p = 1;\nfor (int i = 1; i <= 4; i++)\n    p *= 2;\nConsole.Write(p);",
+      "questionTextEn": "What value does the variable hold at the end?\nint p = 1;\nfor (int i = 1; i <= 4; i++)\n    p *= 2;\nConsole.Write(p);",
+      "correctAnswer": "16",
+      "incorrectAnswerPool": [
+        "17",
+        "15",
+        "18",
+        "14",
+        "19",
+        "20"
+      ]
+    },
+    {
+      "id": "loop-facil-48",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene la variable al final?\nint s = 0;\nfor (int i = 1; i <= 6; i++)\n{\n    if (i % 2 == 0)\n        s += i;\n}\nConsole.Write(s);",
+      "questionTextEn": "What value does the variable hold at the end?\nint s = 0;\nfor (int i = 1; i <= 6; i++)\n{\n    if (i % 2 == 0)\n        s += i;\n}\nConsole.Write(s);",
+      "correctAnswer": "12",
+      "incorrectAnswerPool": [
+        "13",
+        "11",
+        "14",
+        "10",
+        "15",
+        "16"
+      ]
+    },
+    {
+      "id": "loop-facil-49",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene la variable al final?\nint n = 0;\nwhile (n < 3)\n{\n    n++;\n}\nConsole.Write(n);",
+      "questionTextEn": "What value does the variable hold at the end?\nint n = 0;\nwhile (n < 3)\n{\n    n++;\n}\nConsole.Write(n);",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "4",
+        "2",
+        "5",
+        "1",
+        "0",
+        "7"
+      ]
+    },
+    {
+      "id": "loop-facil-50",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nfor (int i = 10; i > 0; i -= 3)\n    Console.Write(i + \" \");",
+      "questionTextEn": "What does it print?\nfor (int i = 10; i > 0; i -= 3)\n    Console.Write(i + \" \");",
+      "correctAnswer": "10 7 4 1",
+      "incorrectAnswerPool": [
+        "10 7 4",
+        "7 4 1",
+        "10 7 4 1 -2",
+        "10 7 4 1 0"
+      ]
+    },
+    {
+      "id": "loop-facil-51",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene la variable al final?\nint c = 0;\nforeach (char ch in \"hola\")\n    c++;\nConsole.Write(c);",
+      "questionTextEn": "What value does the variable hold at the end?\nint c = 0;\nforeach (char ch in \"hola\")\n    c++;\nConsole.Write(c);",
+      "correctAnswer": "4",
+      "incorrectAnswerPool": [
+        "5",
+        "3",
+        "6",
+        "2",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "id": "loop-facil-52",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nfor (int i = 1; i <= 3; i++)\n    Console.Write(i * i + \" \");",
+      "questionTextEn": "What does it print?\nfor (int i = 1; i <= 3; i++)\n    Console.Write(i * i + \" \");",
+      "correctAnswer": "1 4 9",
+      "incorrectAnswerPool": [
+        "1 2 3",
+        "1 4 9 16",
+        "0 1 4",
+        "2 4 6"
+      ]
+    },
+    {
+      "id": "loop-facil-53",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene a al final?\nint a = 0;\nfor (int i = 0; i < 5; i++)\n    a += i;\nConsole.Write(a);",
+      "questionTextEn": "What value does a hold at the end?\nint a = 0;\nfor (int i = 0; i < 5; i++)\n    a += i;\nConsole.Write(a);",
+      "correctAnswer": "10",
+      "incorrectAnswerPool": [
+        "11",
+        "9",
+        "12",
+        "8",
+        "13",
+        "14"
+      ]
+    },
+    {
+      "id": "loop-facil-54",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene la variable al final?\nint i = 0;\nwhile (true)\n{\n    if (i == 3) break;\n    i++;\n}\nConsole.Write(i);",
+      "questionTextEn": "What value does the variable hold at the end?\nint i = 0;\nwhile (true)\n{\n    if (i == 3) break;\n    i++;\n}\nConsole.Write(i);",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "4",
+        "2",
+        "5",
+        "1",
+        "0",
+        "7"
+      ]
+    },
+    {
+      "id": "loop-facil-55",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint i = 0;\ndo\n{\n    Console.Write(i);\n    i++;\n} while (i < 3);",
+      "questionTextEn": "What does it print?\nint i = 0;\ndo\n{\n    Console.Write(i);\n    i++;\n} while (i < 3);",
+      "correctAnswer": "012",
+      "incorrectAnswerPool": [
+        "123",
+        "0123",
+        "01",
+        "3"
+      ]
+    },
+    {
+      "id": "loop-facil-56",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene k al final?\nint s = 0;\nint k = 1;\nwhile (k <= 3)\n{\n    s += k;\n    k++;\n}\nConsole.Write(k);",
+      "questionTextEn": "What value does k hold at the end?\nint s = 0;\nint k = 1;\nwhile (k <= 3)\n{\n    s += k;\n    k++;\n}\nConsole.Write(k);",
+      "correctAnswer": "4",
+      "incorrectAnswerPool": [
+        "5",
+        "3",
+        "6",
+        "2",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "id": "loop-facil-57",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene i después del bucle?\nint i;\nfor (i = 0; i < 5; i++)\n{\n}\nConsole.Write(i);",
+      "questionTextEn": "What value does i hold after the loop?\nint i;\nfor (i = 0; i < 5; i++)\n{\n}\nConsole.Write(i);",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "6",
+        "4",
+        "7",
+        "3",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "id": "loop-facil-58",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nfor (int i = 0; i < 3; i++)\n    Console.Write(i + 1);",
+      "questionTextEn": "What does it print?\nfor (int i = 0; i < 3; i++)\n    Console.Write(i + 1);",
+      "correctAnswer": "123",
+      "incorrectAnswerPool": [
+        "012",
+        "234",
+        "3",
+        "0123"
+      ]
+    },
+    {
+      "id": "loop-facil-59",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nforeach (string w in new[] { \"sol\", \"luna\" })\n    Console.Write(w.Length);",
+      "questionTextEn": "What does it print?\nforeach (string w in new[] { \"sol\", \"luna\" })\n    Console.Write(w.Length);",
+      "correctAnswer": "34",
+      "incorrectAnswerPool": [
+        "7",
+        "43",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "id": "loop-facil-60",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene la variable al final?\nint x = 1;\nwhile (x < 20)\n    x *= 2;\nConsole.Write(x);",
+      "questionTextEn": "What value does the variable hold at the end?\nint x = 1;\nwhile (x < 20)\n    x *= 2;\nConsole.Write(x);",
+      "correctAnswer": "32",
+      "incorrectAnswerPool": [
+        "33",
+        "31",
+        "34",
+        "30",
+        "35",
+        "36"
+      ]
+    },
+    {
+      "id": "loop-facil-61",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene n al final?\nint n = 0;\nfor (int i = 0; i < 6; i++)\n{\n    if (i % 2 == 1) continue;\n    n++;\n}\nConsole.Write(n);",
+      "questionTextEn": "What value does n hold at the end?\nint n = 0;\nfor (int i = 0; i < 6; i++)\n{\n    if (i % 2 == 1) continue;\n    n++;\n}\nConsole.Write(n);",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "4",
+        "2",
+        "5",
+        "1",
+        "0",
+        "7"
+      ]
+    },
+    {
+      "id": "loop-facil-62",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa la palabra clave que cierra el do-while.",
+      "questionTextEn": "Fill in the keyword that closes the do-while.",
+      "codeTemplate": "int n = 0;\ndo\n{\n    n++;\n}\n____ (n < 3);\nConsole.Write(n);",
+      "expectedAnswer": "while"
+    },
+    {
+      "id": "loop-facil-63",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa la palabra clave del bucle.",
+      "questionTextEn": "Fill in the loop keyword.",
+      "codeTemplate": "____ (int i = 0; i < 3; i++)\n{\n    Console.Write(i);\n}",
+      "expectedAnswer": "for"
+    },
+    {
+      "id": "loop-facil-64",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa la palabra clave para recorrer el arreglo.",
+      "questionTextEn": "Fill in the keyword to go through the array.",
+      "codeTemplate": "int[] a = { 1, 2, 3 };\nint s = 0;\n____ (int v in a)\n    s += v;\nConsole.Write(s);",
+      "expectedAnswer": "foreach"
+    },
+    {
+      "id": "loop-facil-65",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa la palabra que va en la cabecera del foreach.",
+      "questionTextEn": "Fill in the word that goes in the foreach header.",
+      "codeTemplate": "string[] nombres = { \"Ana\", \"Luis\" };\nforeach (string n ____ nombres)\n    Console.Write(n.Length);",
+      "expectedAnswer": "in"
+    },
+    {
+      "id": "loop-facil-66",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para salir del bucle cuando i vale 3.",
+      "questionTextEn": "Fill in to leave the loop when i is 3.",
+      "codeTemplate": "for (int i = 0; i < 10; i++)\n{\n    if (i == 3) ____;\n    Console.Write(i);\n}\nConsole.Write(\"!\");",
+      "expectedAnswer": "break"
+    },
+    {
+      "id": "loop-facil-67",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para saltar el valor 2 sin terminar el bucle.",
+      "questionTextEn": "Fill in to skip the value 2 without ending the loop.",
+      "codeTemplate": "for (int i = 0; i < 5; i++)\n{\n    if (i == 2) ____;\n    Console.Write(i);\n}",
+      "expectedAnswer": "continue"
+    },
+    {
+      "id": "loop-facil-68",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el límite para que se muestren 5 asteriscos.",
+      "questionTextEn": "Fill in the limit so that 5 asterisks are printed.",
+      "codeTemplate": "for (int i = 0; i < ____; i++)\n{\n    Console.Write(\"*\");\n}",
+      "expectedAnswer": "5"
+    },
+    {
+      "id": "loop-facil-69",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el valor inicial para que se muestre 234.",
+      "questionTextEn": "Fill in the initial value so that 234 is printed.",
+      "codeTemplate": "int i = ____;\nwhile (i < 5)\n{\n    Console.Write(i);\n    i++;\n}",
+      "expectedAnswer": "2"
+    },
+    {
+      "id": "loop-facil-70",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el paso para mostrar los pares del 0 al 8.",
+      "questionTextEn": "Fill in the step to print the even numbers from 0 to 8.",
+      "codeTemplate": "for (int i = 0; i < 10; i += ____)\n{\n    Console.Write(i);\n}",
+      "expectedAnswer": "2"
+    },
+    {
+      "id": "loop-facil-71",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el operador para acumular la suma.",
+      "questionTextEn": "Fill in the operator to accumulate the sum.",
+      "codeTemplate": "int s = 0;\nfor (int i = 1; i <= 4; i++)\n{\n    s ____ i;\n}\nConsole.Write(s);",
+      "expectedAnswer": "+="
+    },
+    {
+      "id": "loop-facil-72",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el operador para duplicar p en cada vuelta.",
+      "questionTextEn": "Fill in the operator to double p on each iteration.",
+      "codeTemplate": "int p = 1;\nfor (int i = 0; i < 3; i++)\n{\n    p ____ 2;\n}\nConsole.Write(p);",
+      "expectedAnswer": "*="
+    },
+    {
+      "id": "loop-facil-73",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el carácter que falta al final del do-while.",
+      "questionTextEn": "Fill in the character missing at the end of the do-while.",
+      "codeTemplate": "int n = 0;\ndo\n{\n    n++;\n}\nwhile (n < 3)____\nConsole.Write(n);",
+      "expectedAnswer": ";"
+    },
+    {
+      "id": "loop-facil-74",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el operador para mostrar solo los pares.",
+      "questionTextEn": "Fill in the operator to print only the even numbers.",
+      "codeTemplate": "for (int i = 1; i <= 6; i++)\n{\n    if (i ____ 2 == 0)\n        Console.Write(i);\n}",
+      "expectedAnswer": "%"
+    },
+    {
+      "id": "loop-facil-75",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el valor para terminar el while.",
+      "questionTextEn": "Fill in the value to end the while loop.",
+      "codeTemplate": "bool seguir = true;\nint n = 0;\nwhile (seguir)\n{\n    n++;\n    if (n == 3) seguir = ____;\n}\nConsole.Write(n);",
+      "expectedAnswer": "false"
+    },
+    {
+      "id": "loop-facil-76",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para mostrar 0, 1 y 2 con un while.",
+      "questionTextEn": "Put the lines in order to print 0, 1 and 2 with a while loop.",
+      "codeBlocks": [
+        "int i = 0;",
+        "while (i < 3) {",
+        "    Console.Write(i);",
+        "    i++;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "loop-facil-77",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el do-while que muestra 0, 1 y 2.",
+      "questionTextEn": "Put the lines in order for the do-while that prints 0, 1 and 2.",
+      "codeBlocks": [
+        "int i = 0;",
+        "do",
+        "{",
+        "    Console.Write(i);",
+        "    i++;",
+        "}",
+        "while (i < 3);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "loop-facil-78",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para sumar los números del 1 al 5.",
+      "questionTextEn": "Put the lines in order to add the numbers from 1 to 5.",
+      "codeBlocks": [
+        "int suma = 0;",
+        "for (int i = 1; i <= 5; i++) {",
+        "    suma += i;",
+        "}",
+        "Console.Write(suma);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "loop-facil-79",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para sumar las notas con un foreach.",
+      "questionTextEn": "Put the lines in order to add up the grades with a foreach.",
+      "codeBlocks": [
+        "int total = 0;",
+        "foreach (int n in new[] { 4, 7, 9 }) {",
+        "    total += n;",
+        "}",
+        "Console.Write(total);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "loop-facil-80",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para calcular el factorial de 4.",
+      "questionTextEn": "Put the lines in order to compute the factorial of 4.",
+      "codeBlocks": [
+        "int f = 1;",
+        "for (int i = 2; i <= 4; i++) {",
+        "    f *= i;",
+        "}",
+        "Console.Write(f);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "loop-facil-81",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena la cuenta regresiva que termina con un signo de exclamación.",
+      "questionTextEn": "Put the lines in order for the countdown that ends with an exclamation mark.",
+      "codeBlocks": [
+        "int n = 3;",
+        "while (n > 0) {",
+        "    Console.Write(n);",
+        "    n--;",
+        "}",
+        "Console.Write(\"!\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "loop-facil-82",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para salir del bucle infinito cuando i llegue a 3.",
+      "questionTextEn": "Put the lines in order to leave the infinite loop when i reaches 3.",
+      "codeBlocks": [
+        "int i = 0;",
+        "while (true) {",
+        "    if (i == 3) break;",
+        "    Console.Write(i);",
+        "    i++;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "loop-facil-83",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para dibujar un triángulo de asteriscos.",
+      "questionTextEn": "Put the lines in order to draw a triangle of asterisks.",
+      "codeBlocks": [
+        "for (int fila = 1; fila <= 3; fila++) {",
+        "    for (int col = 1; col <= fila; col++) {",
+        "        Console.Write(\"*\");",
+        "    }",
+        "    Console.WriteLine();",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "loop-facil-84",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para sumar solo los números pares del 1 al 6.",
+      "questionTextEn": "Put the lines in order to add only the even numbers from 1 to 6.",
+      "codeBlocks": [
+        "int s = 0;",
+        "for (int i = 1; i <= 6; i++) {",
+        "    if (i % 2 == 0)",
+        "        s += i;",
+        "}",
+        "Console.Write(s);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "loop-facil-85",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para contar las vocales de \"ciudad\".",
+      "questionTextEn": "Put the lines in order to count the vowels in \"ciudad\".",
+      "codeBlocks": [
+        "int c = 0;",
+        "foreach (char ch in \"ciudad\") {",
+        "    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')",
+        "        c++;",
+        "}",
+        "Console.Write(c);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "loop-facil-86",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el do-while que suma 1 + 2 + 3 + 4.",
+      "questionTextEn": "Put the lines in order for the do-while that adds 1 + 2 + 3 + 4.",
+      "codeBlocks": [
+        "int n = 0, s = 0;",
+        "do",
+        "{",
+        "    n++;",
+        "    s += n;",
+        "}",
+        "while (n < 4);",
+        "Console.Write(s);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "loop-facil-87",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para multiplicar por 3 hasta pasar de 50.",
+      "questionTextEn": "Put the lines in order to multiply by 3 until passing 50.",
+      "codeBlocks": [
+        "int p = 1;",
+        "while (p < 50) {",
+        "    p *= 3;",
+        "}",
+        "Console.Write(p);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "loop-facil-88",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para mostrar el doble de 1, 2 y 3.",
+      "questionTextEn": "Put the lines in order to print the double of 1, 2 and 3.",
+      "codeBlocks": [
+        "for (int i = 1; i <= 3; i++) {",
+        "    int d = i * 2;",
+        "    Console.Write(d + \" \");",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "loop-facil-89",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para mostrar los números desde 15 hasta antes del primer múltiplo de 7.",
+      "questionTextEn": "Put the lines in order to print the numbers from 15 up to just before the first multiple of 7.",
+      "codeBlocks": [
+        "int n = 15;",
+        "while (n % 7 != 0) {",
+        "    Console.Write(n + \" \");",
+        "    n++;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "loop-facil-90",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para invertir la palabra \"abc\".",
+      "questionTextEn": "Put the lines in order to reverse the word \"abc\".",
+      "codeBlocks": [
+        "string t = \"\";",
+        "foreach (char c in \"abc\") {",
+        "    t = c + t;",
+        "}",
+        "Console.Write(t);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "loop-facil-91",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque no compila?",
+      "questionTextEn": "Which block does not compile?",
+      "codeSnippetsOptions": [
+        "int i = 0; while (i < 3) { i++; }",
+        "int i = 0; while i < 3 { i++; }",
+        "int i = 0; do { i++; } while (i < 3);"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "loop-facil-92",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bucle for no compila?",
+      "questionTextEn": "Which for loop does not compile?",
+      "codeSnippetsOptions": [
+        "for (int i = 0; i < 3; i++) { }",
+        "for (int i = 3; i > 0; i--) { }",
+        "for (int i = 0, i < 3, i++) { }",
+        "for (;;) { break; }"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "loop-facil-93",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque tiene un error de sintaxis?",
+      "questionTextEn": "Which block has a syntax error?",
+      "codeSnippetsOptions": [
+        "int n = 0; do { n++; } while (n < 3)",
+        "int n = 0; do { n++; } while (n < 3);",
+        "int n = 0; for (; n < 3; n++) { }"
+      ],
+      "buggyIndex": 0
+    },
+    {
+      "id": "loop-facil-94",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque no compila?",
+      "questionTextEn": "Which block does not compile?",
+      "codeSnippetsOptions": [
+        "foreach (int v in a) { s += v; }",
+        "foreach (int v in a) { v = 0; }",
+        "for (int i = 0; i < a.Length; i++) { s += a[i]; }"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "loop-facil-95",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque no compila?",
+      "questionTextEn": "Which block does not compile?",
+      "codeSnippetsOptions": [
+        "int n = 3; while (n > 0) { n--; }",
+        "int n = 3; while (n) { n--; }",
+        "int n = 3; while (n != 0) { n--; }"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "loop-facil-96",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bucle nunca termina?",
+      "questionTextEn": "Which loop never ends?",
+      "codeSnippetsOptions": [
+        "int i = 0; while (i < 5) { i++; }",
+        "int i = 10; while (i > 0) { i++; }",
+        "int i = 10; while (i > 0) { i--; }"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "loop-facil-97",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bucle nunca termina?",
+      "questionTextEn": "Which loop never ends?",
+      "codeSnippetsOptions": [
+        "for (int i = 0; i < 5; i++) { }",
+        "for (int i = 0; i < 5; ) { }",
+        "for (int i = 5; i > 0; i--) { }",
+        "for (int i = 0; i < 5; i += 2) { }"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "loop-facil-98",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque nunca llega al final?",
+      "questionTextEn": "Which block never reaches the end?",
+      "codeSnippetsOptions": [
+        "int n = 1; do { n += 1; } while (n < 10);",
+        "int n = 1; do { n *= 1; } while (n > 0);",
+        "int n = 1; do { n *= 2; } while (n < 100);"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "loop-facil-99",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "Quiero mostrar los números del 1 al 5. ¿Qué bloque no lo consigue?",
+      "questionTextEn": "I want to print the numbers from 1 to 5. Which block fails to do it?",
+      "codeSnippetsOptions": [
+        "for (int i = 1; i <= 5; i++) Console.Write(i);",
+        "for (int i = 1; i < 5; i++) Console.Write(i);",
+        "int i = 1; while (i <= 5) { Console.Write(i); i++; }"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "loop-facil-100",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "Quiero sumar los números del 1 al 4 (10). ¿Qué bloque da otro resultado?",
+      "questionTextEn": "I want to add the numbers from 1 to 4 (10). Which block gives a different result?",
+      "codeSnippetsOptions": [
+        "int s = 0; for (int i = 1; i <= 4; i++) s += i; Console.Write(s);",
+        "int s = 0; for (int i = 1; i <= 4; i++) s = i; Console.Write(s);",
+        "int s = 0; int i = 1; while (i <= 4) { s += i; i++; } Console.Write(s);"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "loop-facil-101",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "Quiero mostrar tres asteriscos. ¿Qué bloque no lo consigue?",
+      "questionTextEn": "I want to print three asterisks. Which block fails to do it?",
+      "codeSnippetsOptions": [
+        "for (int i = 0; i < 3; i++) Console.Write(\"*\");",
+        "int i = 0; while (i < 3) { Console.Write(\"*\"); i++; }",
+        "for (int i = 0; i < 3; i++);\n    Console.Write(\"*\");"
+      ],
+      "buggyIndex": 2,
+      "explanation": "El punto y coma justo después del for es un cuerpo vacío: el asterisco se escribe una sola vez.",
+      "explanationEn": "The semicolon right after the for is an empty body: the asterisk is printed only once."
+    },
+    {
+      "id": "loop-facil-102",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "Quiero la cuenta regresiva 3, 2, 1. ¿Qué bloque se equivoca?",
+      "questionTextEn": "I want the countdown 3, 2, 1. Which block gets it wrong?",
+      "codeSnippetsOptions": [
+        "for (int i = 3; i >= 1; i--) Console.Write(i);",
+        "for (int i = 3; i > 1; i--) Console.Write(i);",
+        "int i = 3; while (i > 0) { Console.Write(i); i--; }"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "loop-facil-103",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque provoca un error en tiempo de ejecución?",
+      "questionTextEn": "Which block causes a runtime error?",
+      "codeSnippetsOptions": [
+        "for (int i = 0; i < a.Length; i++) s += a[i];",
+        "for (int i = 0; i <= a.Length; i++) s += a[i];",
+        "foreach (int v in a) s += v;",
+        "int i = 0; while (i < a.Length) { s += a[i]; i++; }"
+      ],
+      "buggyIndex": 1,
+      "explanation": "El índice a[3] no existe: los índices válidos van de 0 a 2.",
+      "explanationEn": "Index a[3] does not exist: valid indices go from 0 to 2."
+    },
+    {
+      "id": "loop-facil-104",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "Quiero repetir exactamente 4 veces y mostrar el contador. ¿Qué bloque no da 4?",
+      "questionTextEn": "I want to repeat exactly 4 times and print the counter. Which block does not give 4?",
+      "codeSnippetsOptions": [
+        "int c = 0; for (int i = 0; i < 4; i++) c++; Console.Write(c);",
+        "int c = 0; for (int i = 0; i <= 4; i++) c++; Console.Write(c);",
+        "int c = 0; for (int i = 1; i <= 4; i++) c++; Console.Write(c);"
+      ],
+      "buggyIndex": 1
     }
   ]
 }

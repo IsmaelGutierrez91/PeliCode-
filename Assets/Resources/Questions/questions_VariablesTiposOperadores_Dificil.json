@@ -217,6 +217,1551 @@
         "double d = (double)10 / 4;"
       ],
       "buggyIndex": 2
+    },
+    {
+      "id": "var-dificil-16",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint i = 5;\ni = i++;\nConsole.WriteLine(i);",
+      "questionTextEn": "What does it print?\nint i = 5;\ni = i++;\nConsole.WriteLine(i);",
+      "explanation": "i++ devuelve 5, y esa asignación pisa el incremento: i vuelve a valer 5.",
+      "explanationEn": "i++ returns 5, and that assignment overwrites the increment: i is 5 again.",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "6",
+        "4",
+        "10",
+        "11",
+        "0"
+      ]
+    },
+    {
+      "id": "var-dificil-17",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint i = 5;\ni = i++ + i++;\nConsole.WriteLine(i);",
+      "questionTextEn": "What does it print?\nint i = 5;\ni = i++ + i++;\nConsole.WriteLine(i);",
+      "explanation": "Primero 5 (y i pasa a 6), después 6 (i pasa a 7): 5 + 6 = 11.",
+      "explanationEn": "First 5 (and i becomes 6), then 6 (i becomes 7): 5 + 6 = 11.",
+      "correctAnswer": "11",
+      "incorrectAnswerPool": [
+        "10",
+        "12",
+        "13",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "id": "var-dificil-18",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 5;\nx -= x++;\nConsole.WriteLine(x);",
+      "questionTextEn": "What does it print?\nint x = 5;\nx -= x++;\nConsole.WriteLine(x);",
+      "explanation": "Se lee x (5), se evalúa x++ (da 5) y se asigna 5 - 5 = 0; el incremento se pierde.",
+      "explanationEn": "x (5) is read, x++ is evaluated (gives 5) and 5 - 5 = 0 is assigned; the increment is lost.",
+      "correctAnswer": "0",
+      "incorrectAnswerPool": [
+        "5",
+        "1",
+        "-1",
+        "4",
+        "6"
+      ]
+    },
+    {
+      "id": "var-dificil-19",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 3;\nConsole.WriteLine(a++ * a);",
+      "questionTextEn": "What does it print?\nint a = 3;\nConsole.WriteLine(a++ * a);",
+      "explanation": "La izquierda vale 3 y después a ya vale 4: 3 * 4.",
+      "explanationEn": "The left side is 3 and then a is already 4: 3 * 4.",
+      "correctAnswer": "12",
+      "incorrectAnswerPool": [
+        "9",
+        "15",
+        "16",
+        "3",
+        "6"
+      ]
+    },
+    {
+      "id": "var-dificil-20",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 2;\nint b = a++ + a++ * a++;\nConsole.WriteLine(b);",
+      "questionTextEn": "What does it print?\nint a = 2;\nint b = a++ + a++ * a++;\nConsole.WriteLine(b);",
+      "explanation": "Los operandos se leen de izquierda a derecha: 2 + 3 * 4 = 14.",
+      "explanationEn": "Operands are read left to right: 2 + 3 * 4 = 14.",
+      "correctAnswer": "14",
+      "incorrectAnswerPool": [
+        "12",
+        "8",
+        "10",
+        "16",
+        "9"
+      ]
+    },
+    {
+      "id": "var-dificil-21",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 5;\na += a++ + ++a;\nConsole.WriteLine(a);",
+      "questionTextEn": "What does it print?\nint a = 5;\na += a++ + ++a;\nConsole.WriteLine(a);",
+      "explanation": "a (5) + (5 + 7) = 17.",
+      "explanationEn": "a (5) + (5 + 7) = 17.",
+      "correctAnswer": "17",
+      "incorrectAnswerPool": [
+        "16",
+        "15",
+        "18",
+        "11",
+        "12"
+      ]
+    },
+    {
+      "id": "var-dificil-22",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint c = 0;\nbool r = false && (c++ > 0);\nConsole.WriteLine(c);",
+      "questionTextEn": "What does it print?\nint c = 0;\nbool r = false && (c++ > 0);\nConsole.WriteLine(c);",
+      "explanation": "Con && la parte derecha no se evalúa si la izquierda ya es falsa (cortocircuito).",
+      "explanationEn": "With && the right side is not evaluated if the left side is already false (short-circuit).",
+      "correctAnswer": "0",
+      "incorrectAnswerPool": [
+        "1",
+        "2",
+        "True",
+        "False",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-dificil-23",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint c = 0;\nbool r = false & (c++ > 0);\nConsole.WriteLine(c);",
+      "questionTextEn": "What does it print?\nint c = 0;\nbool r = false & (c++ > 0);\nConsole.WriteLine(c);",
+      "explanation": "El operador & no hace cortocircuito: evalúa siempre los dos lados.",
+      "explanationEn": "The & operator does not short-circuit: it always evaluates both sides.",
+      "correctAnswer": "1",
+      "incorrectAnswerPool": [
+        "0",
+        "2",
+        "True",
+        "False",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-dificil-24",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint c = 0;\nbool r = true || (++c > 0);\nConsole.WriteLine(c);",
+      "questionTextEn": "What does it print?\nint c = 0;\nbool r = true || (++c > 0);\nConsole.WriteLine(c);",
+      "explanation": "Con || la derecha no se evalúa si la izquierda ya es verdadera.",
+      "explanationEn": "With || the right side is not evaluated if the left side is already true.",
+      "correctAnswer": "0",
+      "incorrectAnswerPool": [
+        "1",
+        "2",
+        "True",
+        "False",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-dificil-25",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(-7 / 2);",
+      "questionTextEn": "What does it print?  Console.WriteLine(-7 / 2);",
+      "explanation": "La división entera trunca hacia cero, no hacia abajo.",
+      "explanationEn": "Integer division truncates toward zero, not downward.",
+      "correctAnswer": "-3",
+      "incorrectAnswerPool": [
+        "-4",
+        "-3.5",
+        "3",
+        "-2",
+        "4"
+      ]
+    },
+    {
+      "id": "var-dificil-26",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(-7 % 3);",
+      "questionTextEn": "What does it print?  Console.WriteLine(-7 % 3);",
+      "explanation": "El resto toma el signo del dividendo: -7 = -2 * 3 + (-1).",
+      "explanationEn": "The remainder takes the sign of the dividend: -7 = -2 * 3 + (-1).",
+      "correctAnswer": "-1",
+      "incorrectAnswerPool": [
+        "2",
+        "1",
+        "-2",
+        "0",
+        "-3"
+      ]
+    },
+    {
+      "id": "var-dificil-27",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(Math.Round(2.5) + \" \" + Math.Round(3.5));",
+      "questionTextEn": "What does it print?  Console.WriteLine(Math.Round(2.5) + \" \" + Math.Round(3.5));",
+      "explanation": "Math.Round redondea por defecto al par más cercano (redondeo bancario).",
+      "explanationEn": "Math.Round rounds to the nearest even number by default (banker's rounding).",
+      "correctAnswer": "2 4",
+      "incorrectAnswerPool": [
+        "3 4",
+        "2 3",
+        "3 3",
+        "2.5 3.5",
+        "2 4.0"
+      ]
+    },
+    {
+      "id": "var-dificil-28",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine((int)(-2.7) + \" \" + Math.Floor(-2.5) + \" \" + Math.Ceiling(-2.5));",
+      "questionTextEn": "What does it print?  Console.WriteLine((int)(-2.7) + \" \" + Math.Floor(-2.5) + \" \" + Math.Ceiling(-2.5));",
+      "explanation": "El cast trunca hacia cero (-2), Floor baja (-3) y Ceiling sube (-2).",
+      "explanationEn": "The cast truncates toward zero (-2), Floor goes down (-3) and Ceiling goes up (-2).",
+      "correctAnswer": "-2 -3 -2",
+      "incorrectAnswerPool": [
+        "-3 -3 -2",
+        "-2 -2 -3",
+        "-3 -2 -2",
+        "-2 -3 -3",
+        "-2 -2 -2"
+      ]
+    },
+    {
+      "id": "var-dificil-29",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint m = int.MaxValue;\nm++;\nConsole.WriteLine(m);",
+      "questionTextEn": "What does it print?\nint m = int.MaxValue;\nm++;\nConsole.WriteLine(m);",
+      "explanation": "Por defecto la aritmética entera no comprueba desbordamientos y da la vuelta.",
+      "explanationEn": "By default integer arithmetic does not check for overflow and wraps around.",
+      "correctAnswer": "-2147483648",
+      "incorrectAnswerPool": [
+        "2147483648",
+        "0",
+        "2147483647",
+        "Error",
+        "-1"
+      ]
+    },
+    {
+      "id": "var-dificil-30",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = int.MaxValue;\nlong l = a * 2;\nConsole.WriteLine(l);",
+      "questionTextEn": "What does it print?\nint a = int.MaxValue;\nlong l = a * 2;\nConsole.WriteLine(l);",
+      "explanation": "a * 2 se calcula como int (y se desborda) antes de pasar a long.",
+      "explanationEn": "a * 2 is computed as int (and overflows) before being converted to long.",
+      "correctAnswer": "-2",
+      "incorrectAnswerPool": [
+        "4294967294",
+        "2147483647",
+        "0",
+        "Error",
+        "-1"
+      ]
+    },
+    {
+      "id": "var-dificil-31",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = int.MaxValue;\nlong l = a * 2L;\nConsole.WriteLine(l);",
+      "questionTextEn": "What does it print?\nint a = int.MaxValue;\nlong l = a * 2L;\nConsole.WriteLine(l);",
+      "explanation": "Con 2L la multiplicación se hace en long y no se desborda.",
+      "explanationEn": "With 2L the multiplication is done in long and does not overflow.",
+      "correctAnswer": "4294967294",
+      "incorrectAnswerPool": [
+        "-2",
+        "2147483647",
+        "0",
+        "Error",
+        "4294967296"
+      ]
+    },
+    {
+      "id": "var-dificil-32",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = 40000;\nshort s = (short)n;\nConsole.WriteLine(s);",
+      "questionTextEn": "What does it print?\nint n = 40000;\nshort s = (short)n;\nConsole.WriteLine(s);",
+      "explanation": "40000 no cabe en un short (máximo 32767) y el cast corta los bits: 40000 - 65536.",
+      "explanationEn": "40000 does not fit in a short (maximum 32767) and the cast cuts the bits: 40000 - 65536.",
+      "correctAnswer": "-25536",
+      "incorrectAnswerPool": [
+        "40000",
+        "32767",
+        "-32768",
+        "7232",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-dificil-33",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = 300;\nbyte b = (byte)n;\nConsole.WriteLine(b);",
+      "questionTextEn": "What does it print?\nint n = 300;\nbyte b = (byte)n;\nConsole.WriteLine(b);",
+      "explanation": "300 - 256 = 44: el cast se queda con el byte bajo.",
+      "explanationEn": "300 - 256 = 44: the cast keeps the low byte.",
+      "correctAnswer": "44",
+      "incorrectAnswerPool": [
+        "255",
+        "300",
+        "0",
+        "45",
+        "56"
+      ]
+    },
+    {
+      "id": "var-dificil-34",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine('a' + 'b');",
+      "questionTextEn": "What does it print?  Console.WriteLine('a' + 'b');",
+      "explanation": "Sumar dos char da un int: 97 + 98.",
+      "explanationEn": "Adding two chars gives an int: 97 + 98.",
+      "correctAnswer": "195",
+      "incorrectAnswerPool": [
+        "ab",
+        "97 98",
+        "a b",
+        "Error",
+        "98"
+      ]
+    },
+    {
+      "id": "var-dificil-35",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(\"\" + 'a' + 'b');",
+      "questionTextEn": "What does it print?  Console.WriteLine(\"\" + 'a' + 'b');",
+      "explanation": "Con un texto a la izquierda, cada char se concatena como carácter.",
+      "explanationEn": "With a text on the left, each char is concatenated as a character.",
+      "correctAnswer": "ab",
+      "incorrectAnswerPool": [
+        "195",
+        "97 98",
+        "a b",
+        "Error",
+        "98"
+      ]
+    },
+    {
+      "id": "var-dificil-36",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(1 + 2 + \"x\" + 1 + 2);",
+      "questionTextEn": "What does it print?  Console.WriteLine(1 + 2 + \"x\" + 1 + 2);",
+      "explanation": "Se evalúa de izquierda a derecha: 1 + 2 = 3, luego \"3x\", luego \"3x1\" y \"3x12\".",
+      "explanationEn": "It is evaluated left to right: 1 + 2 = 3, then \"3x\", then \"3x1\" and \"3x12\".",
+      "correctAnswer": "3x12",
+      "incorrectAnswerPool": [
+        "12x12",
+        "3x3",
+        "12x3",
+        "1+2x1+2",
+        "3x3x"
+      ]
+    },
+    {
+      "id": "var-dificil-37",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(double.NaN == double.NaN);",
+      "questionTextEn": "What does it print?  Console.WriteLine(double.NaN == double.NaN);",
+      "explanation": "NaN no es igual a nada, ni a sí mismo.",
+      "explanationEn": "NaN is not equal to anything, not even itself.",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "NaN",
+        "Error",
+        "0",
+        "null"
+      ]
+    },
+    {
+      "id": "var-dificil-38",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(1 / 0.0);",
+      "questionTextEn": "What does it print?  Console.WriteLine(1 / 0.0);",
+      "explanation": "Con doubles, dividir entre cero da infinito y no lanza excepción.",
+      "explanationEn": "With doubles, dividing by zero gives infinity and throws no exception.",
+      "correctAnswer": "Infinity",
+      "incorrectAnswerPool": [
+        "Error",
+        "0",
+        "NaN",
+        "DivideByZeroException",
+        "-Infinity"
+      ]
+    },
+    {
+      "id": "var-dificil-39",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(5 / 2 * 2.0 + \" \" + 5 / 2.0 * 2);",
+      "questionTextEn": "What does it print?  Console.WriteLine(5 / 2 * 2.0 + \" \" + 5 / 2.0 * 2);",
+      "explanation": "En la primera, 5 / 2 es entera (2) antes de multiplicar; en la segunda ya es decimal.",
+      "explanationEn": "In the first one, 5 / 2 is integer (2) before multiplying; in the second it is already decimal.",
+      "correctAnswer": "4 5",
+      "incorrectAnswerPool": [
+        "5 5",
+        "4 4",
+        "5 4",
+        "5 4.0",
+        "4.0 5.0"
+      ]
+    },
+    {
+      "id": "var-dificil-40",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(10 - 4 - 3 + \" \" + 100 / 10 / 5 + \" \" + 2 * 3 % 4);",
+      "questionTextEn": "What does it print?  Console.WriteLine(10 - 4 - 3 + \" \" + 100 / 10 / 5 + \" \" + 2 * 3 % 4);",
+      "explanation": "Estos operadores se asocian de izquierda a derecha.",
+      "explanationEn": "These operators are left-associative.",
+      "correctAnswer": "3 2 2",
+      "incorrectAnswerPool": [
+        "9 50 6",
+        "3 2 6",
+        "9 2 2",
+        "3 50 2",
+        "3 20 2"
+      ]
+    },
+    {
+      "id": "var-dificil-41",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint? a = null;\nConsole.WriteLine(a + 5 == null);",
+      "questionTextEn": "What does it print?\nint? a = null;\nConsole.WriteLine(a + 5 == null);",
+      "explanation": "Operar con un nullable que es null da null.",
+      "explanationEn": "Operating with a nullable that is null gives null.",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "5",
+        "Error",
+        "null",
+        "0"
+      ]
+    },
+    {
+      "id": "var-dificil-42",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nbool x = true, y = false, z = true;\nConsole.WriteLine(x || y && !z);",
+      "questionTextEn": "What does it print?\nbool x = true, y = false, z = true;\nConsole.WriteLine(x || y && !z);",
+      "explanation": "&& tiene más prioridad que ||: x || (y && !z) = true || false.",
+      "explanationEn": "&& has higher precedence than ||: x || (y && !z) = true || false.",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "true",
+        "y",
+        "Error",
+        "z"
+      ]
+    },
+    {
+      "id": "var-dificil-43",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nbool x = true, y = false, z = true;\nConsole.WriteLine(!x || y && z);",
+      "questionTextEn": "What does it print?\nbool x = true, y = false, z = true;\nConsole.WriteLine(!x || y && z);",
+      "explanation": "(!x) || (y && z) = false || false.",
+      "explanationEn": "(!x) || (y && z) = false || false.",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "true",
+        "y",
+        "Error",
+        "z"
+      ]
+    },
+    {
+      "id": "var-dificil-44",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine((6 & 3) + \" \" + (6 | 3) + \" \" + (6 ^ 3));",
+      "questionTextEn": "What does it print?  Console.WriteLine((6 & 3) + \" \" + (6 | 3) + \" \" + (6 ^ 3));",
+      "explanation": "En binario: 110 & 011 = 010, 110 | 011 = 111, 110 ^ 011 = 101.",
+      "explanationEn": "In binary: 110 & 011 = 010, 110 | 011 = 111, 110 ^ 011 = 101.",
+      "correctAnswer": "2 7 5",
+      "incorrectAnswerPool": [
+        "2 7 4",
+        "3 6 5",
+        "2 6 5",
+        "1 7 5",
+        "9 7 5"
+      ]
+    },
+    {
+      "id": "var-dificil-45",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(~6 + \" \" + (1 << 4) + \" \" + (-16 >> 2));",
+      "questionTextEn": "What does it print?  Console.WriteLine(~6 + \" \" + (1 << 4) + \" \" + (-16 >> 2));",
+      "explanation": "~6 invierte todos los bits (-7); >> conserva el signo.",
+      "explanationEn": "~6 flips every bit (-7); >> preserves the sign.",
+      "correctAnswer": "-7 16 -4",
+      "incorrectAnswerPool": [
+        "-6 16 -4",
+        "-7 8 -4",
+        "-7 16 4",
+        "7 16 -4",
+        "-7 16 -8"
+      ]
+    },
+    {
+      "id": "var-dificil-46",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(1 << 35);",
+      "questionTextEn": "What does it print?  Console.WriteLine(1 << 35);",
+      "explanation": "En un int el desplazamiento se reduce a 5 bits: 35 % 32 = 3, y 1 << 3 = 8.",
+      "explanationEn": "For an int the shift count is reduced to 5 bits: 35 % 32 = 3, and 1 << 3 = 8.",
+      "correctAnswer": "8",
+      "incorrectAnswerPool": [
+        "34359738368",
+        "0",
+        "35",
+        "Error",
+        "1"
+      ]
+    },
+    {
+      "id": "var-dificil-47",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nfloat f = 0.1f;\nConsole.WriteLine(f == 0.1);",
+      "questionTextEn": "What does it print?\nfloat f = 0.1f;\nConsole.WriteLine(f == 0.1);",
+      "explanation": "El float 0.1f y el double 0.1 son aproximaciones distintas; al comparar, el float se amplía a double.",
+      "explanationEn": "The float 0.1f and the double 0.1 are different approximations; when compared, the float is widened to double.",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "0.1",
+        "Error",
+        "0",
+        "null"
+      ]
+    },
+    {
+      "id": "var-dificil-48",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = \"abc\";\ns.ToUpper();\nConsole.WriteLine(s);",
+      "questionTextEn": "What does it print?\nstring s = \"abc\";\ns.ToUpper();\nConsole.WriteLine(s);",
+      "explanation": "Los string son inmutables: ToUpper devuelve un texto nuevo y s no cambia.",
+      "explanationEn": "Strings are immutable: ToUpper returns a new text and s does not change.",
+      "correctAnswer": "abc",
+      "incorrectAnswerPool": [
+        "ABC",
+        "Abc",
+        "aBC",
+        "Error",
+        "null"
+      ]
+    },
+    {
+      "id": "var-dificil-49",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring a = \"x\";\nstring b = a;\na += \"y\";\nConsole.WriteLine(b);",
+      "questionTextEn": "What does it print?\nstring a = \"x\";\nstring b = a;\na += \"y\";\nConsole.WriteLine(b);",
+      "explanation": "a += \"y\" crea un texto nuevo; b sigue apuntando al \"x\" original.",
+      "explanationEn": "a += \"y\" creates a new text; b still points to the original \"x\".",
+      "correctAnswer": "x",
+      "incorrectAnswerPool": [
+        "xy",
+        "y",
+        "yx",
+        "Error",
+        "null"
+      ]
+    },
+    {
+      "id": "var-dificil-50",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = null;\ns += \"a\";\nConsole.WriteLine(s);",
+      "questionTextEn": "What does it print?\nstring s = null;\ns += \"a\";\nConsole.WriteLine(s);",
+      "explanation": "Al concatenar, null se trata como texto vacío.",
+      "explanationEn": "When concatenating, null is treated as an empty text.",
+      "correctAnswer": "a",
+      "incorrectAnswerPool": [
+        "nulla",
+        "null",
+        "",
+        "Error",
+        "a null"
+      ]
+    },
+    {
+      "id": "var-dificil-51",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nobject a = 5;\nobject b = 5;\nConsole.WriteLine((a == b) + \" \" + a.Equals(b));",
+      "questionTextEn": "What does it print?\nobject a = 5;\nobject b = 5;\nConsole.WriteLine((a == b) + \" \" + a.Equals(b));",
+      "explanation": "Con object, == compara referencias (dos cajas distintas); Equals compara el valor.",
+      "explanationEn": "With object, == compares references (two different boxes); Equals compares the value.",
+      "correctAnswer": "False True",
+      "incorrectAnswerPool": [
+        "True True",
+        "True False",
+        "False False",
+        "True",
+        "False"
+      ]
+    },
+    {
+      "id": "var-dificil-52",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 5;\nobject o = x;\nx = 9;\nConsole.WriteLine(o);",
+      "questionTextEn": "What does it print?\nint x = 5;\nobject o = x;\nx = 9;\nConsole.WriteLine(o);",
+      "explanation": "Al convertir a object se copia el valor (boxing); cambiar x después no afecta a o.",
+      "explanationEn": "Converting to object copies the value (boxing); changing x afterwards does not affect o.",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "9",
+        "14",
+        "x",
+        "Error",
+        "0"
+      ]
+    },
+    {
+      "id": "var-dificil-53",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(true ? 1 : 2.5);",
+      "questionTextEn": "What does it print?  Console.WriteLine(true ? 1 : 2.5);",
+      "explanation": "Los dos resultados se unifican en double, y el 1.0 se muestra como 1.",
+      "explanationEn": "Both results are unified to double, and 1.0 is displayed as 1.",
+      "correctAnswer": "1",
+      "incorrectAnswerPool": [
+        "1.0",
+        "2.5",
+        "True",
+        "Error",
+        "0"
+      ]
+    },
+    {
+      "id": "var-dificil-54",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nbyte b = 255;\nb++;\nConsole.WriteLine(b);",
+      "questionTextEn": "What does it print?\nbyte b = 255;\nb++;\nConsole.WriteLine(b);",
+      "explanation": "Sin checked, el byte vuelve a 0 al desbordarse.",
+      "explanationEn": "Without checked, the byte goes back to 0 on overflow.",
+      "correctAnswer": "0",
+      "incorrectAnswerPool": [
+        "256",
+        "255",
+        "1",
+        "Error",
+        "-1"
+      ]
+    },
+    {
+      "id": "var-dificil-55",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint m = int.MinValue;\nConsole.WriteLine(m == -m);",
+      "questionTextEn": "What does it print?\nint m = int.MinValue;\nConsole.WriteLine(m == -m);",
+      "explanation": "No existe +2147483648 en un int, así que -m se desborda y vuelve a ser int.MinValue.",
+      "explanationEn": "There is no +2147483648 in an int, so -m overflows and is int.MinValue again.",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "2147483648",
+        "Error",
+        "0",
+        "-1"
+      ]
+    },
+    {
+      "id": "var-dificil-56",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué ocurre?\nint m = int.MinValue;\nConsole.WriteLine(Math.Abs(m));",
+      "questionTextEn": "What happens?\nint m = int.MinValue;\nConsole.WriteLine(Math.Abs(m));",
+      "explanation": "El valor absoluto de int.MinValue no cabe en un int.",
+      "explanationEn": "The absolute value of int.MinValue does not fit in an int.",
+      "correctAnswer": "Lanza OverflowException",
+      "incorrectAnswerPool": [
+        "Muestra 2147483648",
+        "Muestra -2147483648",
+        "No compila",
+        "Muestra 0"
+      ],
+      "correctAnswerEn": "Throws OverflowException",
+      "incorrectAnswerPoolEn": [
+        "Prints 2147483648",
+        "Prints -2147483648",
+        "Does not compile",
+        "Prints 0"
+      ]
+    },
+    {
+      "id": "var-dificil-57",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 5, b = 10;\na = b - (b = a);\nConsole.WriteLine(a + \" \" + b);",
+      "questionTextEn": "What does it print?\nint a = 5, b = 10;\na = b - (b = a);\nConsole.WriteLine(a + \" \" + b);",
+      "explanation": "Se lee b (10), se asigna b = 5 y se resta: 10 - 5 = 5.",
+      "explanationEn": "b (10) is read, b = 5 is assigned and the subtraction is done: 10 - 5 = 5.",
+      "correctAnswer": "5 5",
+      "incorrectAnswerPool": [
+        "5 10",
+        "10 5",
+        "0 5",
+        "-5 5",
+        "10 10"
+      ]
+    },
+    {
+      "id": "var-dificil-58",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(0.1 + 0.2);",
+      "questionTextEn": "What does it print?  Console.WriteLine(0.1 + 0.2);",
+      "explanation": "La suma binaria de 0.1 y 0.2 tiene un pequeño error de representación.",
+      "explanationEn": "The binary sum of 0.1 and 0.2 has a small representation error.",
+      "correctAnswer": "0.30000000000000004",
+      "incorrectAnswerPool": [
+        "0.3",
+        "0.30000000000000001",
+        "0.2",
+        "0.30",
+        "0.3000000000000000"
+      ]
+    },
+    {
+      "id": "var-dificil-59",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine((int)(19.99 * 100));",
+      "questionTextEn": "What does it print?  Console.WriteLine((int)(19.99 * 100));",
+      "explanation": "19.99 * 100 da 1998.9999999999998 y el cast a int trunca.",
+      "explanationEn": "19.99 * 100 gives 1998.9999999999998 and the cast to int truncates.",
+      "correctAnswer": "1998",
+      "incorrectAnswerPool": [
+        "1999",
+        "2000",
+        "1900",
+        "19.99",
+        "1990"
+      ]
+    },
+    {
+      "id": "var-dificil-60",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\ndecimal m = 2.50m;\nConsole.WriteLine(m);",
+      "questionTextEn": "What does it print?\ndecimal m = 2.50m;\nConsole.WriteLine(m);",
+      "explanation": "El decimal conserva los ceros de la escala con la que se escribió.",
+      "explanationEn": "A decimal keeps the trailing zeros of the scale it was written with.",
+      "correctAnswer": "2.50",
+      "incorrectAnswerPool": [
+        "2.5",
+        "2.500",
+        "2",
+        "250",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-dificil-61",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuál es el rango de un byte?",
+      "questionTextEn": "What is the range of a byte?",
+      "correctAnswer": "De 0 a 255",
+      "incorrectAnswerPool": [
+        "De -128 a 127",
+        "De 0 a 256",
+        "De -255 a 255",
+        "De 0 a 65535",
+        "De -256 a 255"
+      ],
+      "correctAnswerEn": "From 0 to 255",
+      "incorrectAnswerPoolEn": [
+        "From -128 to 127",
+        "From 0 to 256",
+        "From -255 to 255",
+        "From 0 to 65535",
+        "From -256 to 255"
+      ]
+    },
+    {
+      "id": "var-dificil-62",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué tipo es el literal 3.5 si no lleva sufijo?",
+      "questionTextEn": "What type is the literal 3.5 when it has no suffix?",
+      "correctAnswer": "double",
+      "incorrectAnswerPool": [
+        "float",
+        "decimal",
+        "int",
+        "single"
+      ],
+      "correctAnswerEn": "double",
+      "incorrectAnswerPoolEn": [
+        "float",
+        "decimal",
+        "int",
+        "single"
+      ]
+    },
+    {
+      "id": "var-dificil-63",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué tipo es el más recomendable para guardar cantidades de dinero que exigen exactitud?",
+      "questionTextEn": "Which type is the most recommended to store amounts of money that require exactness?",
+      "correctAnswer": "decimal",
+      "incorrectAnswerPool": [
+        "double",
+        "float",
+        "long",
+        "int",
+        "char"
+      ],
+      "correctAnswerEn": "decimal",
+      "incorrectAnswerPoolEn": [
+        "double",
+        "float",
+        "long",
+        "int",
+        "char"
+      ]
+    },
+    {
+      "id": "var-dificil-64",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué diferencia hay entre checked y unchecked?",
+      "questionTextEn": "What is the difference between checked and unchecked?",
+      "correctAnswer": "Con checked un desbordamiento lanza OverflowException; con unchecked el valor da la vuelta",
+      "incorrectAnswerPool": [
+        "Con checked se comprueba el tipo en compilación y con unchecked no",
+        "Con unchecked un desbordamiento lanza una excepción; con checked no",
+        "checked solo funciona con decimal",
+        "No hay ninguna diferencia"
+      ],
+      "correctAnswerEn": "With checked an overflow throws OverflowException; with unchecked the value wraps around",
+      "incorrectAnswerPoolEn": [
+        "With checked the type is verified at compile time and with unchecked it is not",
+        "With unchecked an overflow throws an exception; with checked it does not",
+        "checked only works with decimal",
+        "There is no difference"
+      ]
+    },
+    {
+      "id": "var-dificil-65",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué ocurre al compilar este código?\nint n;\nConsole.WriteLine(n);",
+      "questionTextEn": "What happens when compiling this code?\nint n;\nConsole.WriteLine(n);",
+      "explanation": "Las variables locales no tienen valor por defecto: hay que asignarlas antes de leerlas.",
+      "explanationEn": "Local variables have no default value: they must be assigned before being read.",
+      "correctAnswer": "El compilador da error: variable no asignada",
+      "incorrectAnswerPool": [
+        "Muestra 0",
+        "Muestra null",
+        "Muestra -1",
+        "Lanza excepción al ejecutar",
+        "Muestra int.MinValue"
+      ],
+      "correctAnswerEn": "The compiler reports an error: unassigned variable",
+      "incorrectAnswerPoolEn": [
+        "It prints 0",
+        "It prints null",
+        "It prints -1",
+        "It throws an exception at run time",
+        "It prints int.MinValue"
+      ]
+    },
+    {
+      "id": "var-dificil-66",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuál de estas expresiones es true?",
+      "questionTextEn": "Which of these expressions is true?",
+      "correctAnswer": "'A' == 65",
+      "incorrectAnswerPool": [
+        "\"A\" == 65",
+        "'A' == \"A\"",
+        "'A' == 1",
+        "\"65\" == 65",
+        "'A' == 0x42"
+      ]
+    },
+    {
+      "id": "var-dificil-67",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué resultado da (10 == 10.0)?",
+      "questionTextEn": "What is the result of (10 == 10.0)?",
+      "correctAnswer": "true",
+      "incorrectAnswerPool": [
+        "false",
+        "No compila",
+        "Lanza excepción",
+        "10",
+        "1"
+      ]
+    },
+    {
+      "id": "var-dificil-68",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con el tipo para que la suma no se desborde.",
+      "questionTextEn": "Fill in the type so that the sum does not overflow.",
+      "codeTemplate": "long r = (____)int.MaxValue + 1;\nConsole.WriteLine(r);",
+      "expectedAnswer": "long"
+    },
+    {
+      "id": "var-dificil-69",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para permitir que la suma desborde sin error.",
+      "questionTextEn": "Fill in the blank to let the sum overflow without an error.",
+      "codeTemplate": "int r = ____(int.MaxValue + 1);\nConsole.WriteLine(r);",
+      "expectedAnswer": "unchecked"
+    },
+    {
+      "id": "var-dificil-70",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para usar -1 cuando a es null.",
+      "questionTextEn": "Fill in the blank to use -1 when a is null.",
+      "codeTemplate": "int? a = null;\nConsole.WriteLine(a ____ -1);",
+      "expectedAnswer": "??"
+    },
+    {
+      "id": "var-dificil-71",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para asignar 4 solo si x es null.",
+      "questionTextEn": "Fill in the blank to assign 4 only if x is null.",
+      "codeTemplate": "int? x = null;\nx ____ 4;\nConsole.WriteLine(x);",
+      "expectedAnswer": "??="
+    },
+    {
+      "id": "var-dificil-72",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con el operador a nivel de bits que da 8.",
+      "questionTextEn": "Fill in the bitwise operator that gives 8.",
+      "codeTemplate": "Console.WriteLine(12 ____ 10);",
+      "expectedAnswer": "&"
+    },
+    {
+      "id": "var-dificil-73",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con el operador de desplazamiento que da 8.",
+      "questionTextEn": "Fill in the shift operator that gives 8.",
+      "codeTemplate": "Console.WriteLine(1 ____ 3);",
+      "expectedAnswer": "<<"
+    },
+    {
+      "id": "var-dificil-74",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con el operador que invierte todos los bits.",
+      "questionTextEn": "Fill in the operator that flips all the bits.",
+      "codeTemplate": "Console.WriteLine(____5);",
+      "expectedAnswer": "~"
+    },
+    {
+      "id": "var-dificil-75",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para comprobar si un double es NaN.",
+      "questionTextEn": "Fill in the blank to check whether a double is NaN.",
+      "codeTemplate": "double d = 0.0 / 0.0;\nConsole.WriteLine(double.____(d));",
+      "expectedAnswer": "IsNaN"
+    },
+    {
+      "id": "var-dificil-76",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con el tipo de 16 bits con signo (nombre corto).",
+      "questionTextEn": "Fill in the signed 16-bit type (short name).",
+      "codeTemplate": "Console.WriteLine(____.MaxValue);",
+      "expectedAnswer": "short"
+    },
+    {
+      "id": "var-dificil-77",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para sacar el entero guardado en el object.",
+      "questionTextEn": "Fill in the blank to unbox the integer stored in the object.",
+      "codeTemplate": "object o = 5;\nint n = (____)o;\nConsole.WriteLine(n + 1);",
+      "expectedAnswer": "int"
+    },
+    {
+      "id": "var-dificil-78",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para que s valga 15 con un operador compuesto.",
+      "questionTextEn": "Fill in the blank so that s is 15 using a compound operator.",
+      "explanation": "Con un short, s = s + 5 no compila, pero s += 5 sí.",
+      "explanationEn": "With a short, s = s + 5 does not compile, but s += 5 does.",
+      "codeTemplate": "short s = 10;\ns ____ 5;\nConsole.WriteLine(s);",
+      "expectedAnswer": "+="
+    },
+    {
+      "id": "var-dificil-79",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para desplazar el 1 cuarenta posiciones usando un long.",
+      "questionTextEn": "Fill in the blank to shift the 1 forty positions using a long.",
+      "codeTemplate": "long big = 1L ____ 40;\nConsole.WriteLine(big);",
+      "expectedAnswer": "<<"
+    },
+    {
+      "id": "var-dificil-80",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para detectar un desbordamiento con checked.",
+      "questionTextEn": "Put the lines in order to detect an overflow with checked.",
+      "codeBlocks": [
+        "int x = int.MaxValue;",
+        "try { x = checked(x + 1); }",
+        "catch (OverflowException) { Console.WriteLine(\"overflow\"); }"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-dificil-81",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para calcular el total con IVA redondeado a dos decimales.",
+      "questionTextEn": "Put the lines in order to compute the total with VAT rounded to two decimals.",
+      "codeBlocks": [
+        "decimal precio = 19.99m;",
+        "decimal iva = Math.Round(precio * 0.21m, 2);",
+        "decimal total = precio + iva;",
+        "Console.WriteLine(total);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-dificil-82",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para sumar las cifras de un número de tres dígitos.",
+      "questionTextEn": "Put the lines in order to add the digits of a three-digit number.",
+      "codeBlocks": [
+        "int n = 482;",
+        "int suma = n / 100 + n / 10 % 10 + n % 10;",
+        "Console.WriteLine(suma);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-dificil-83",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para descomponer 3725 segundos en horas, minutos y segundos.",
+      "questionTextEn": "Put the lines in order to break 3725 seconds into hours, minutes and seconds.",
+      "codeBlocks": [
+        "int total = 3725;",
+        "int h = total / 3600;",
+        "total -= h * 3600;",
+        "int m = total / 60;",
+        "total -= m * 60;",
+        "Console.WriteLine(h + \":\" + m + \":\" + total);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "var-dificil-84",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para mostrar lo que ocurre al desbordar un int.",
+      "questionTextEn": "Put the lines in order to show what happens when an int overflows.",
+      "codeBlocks": [
+        "int a = int.MaxValue;",
+        "a++;",
+        "Console.WriteLine(a);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-dificil-85",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para leer un decimal de un texto y redondearlo a entero.",
+      "questionTextEn": "Put the lines in order to read a decimal from a text and round it to an integer.",
+      "codeBlocks": [
+        "string entrada = \"3.75\";",
+        "double valor = double.Parse(entrada, System.Globalization.CultureInfo.InvariantCulture);",
+        "int entero = (int)Math.Round(valor);",
+        "Console.WriteLine(entero);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-dificil-86",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para usar un valor por defecto con nullable.",
+      "questionTextEn": "Put the lines in order to use a default value with a nullable.",
+      "codeBlocks": [
+        "int? puntos = null;",
+        "int total = (puntos ?? 0) + 5;",
+        "Console.WriteLine(total);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-dificil-87",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para calcular la variación porcentual entre dos valores.",
+      "questionTextEn": "Put the lines in order to compute the percentage change between two values.",
+      "codeBlocks": [
+        "double antes = 80;",
+        "double ahora = 100;",
+        "double cambio = (ahora - antes) / antes * 100;",
+        "Console.WriteLine($\"{cambio}%\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-dificil-88",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para convertir un carácter dígito en su valor numérico.",
+      "questionTextEn": "Put the lines in order to convert a digit character into its numeric value.",
+      "codeBlocks": [
+        "char digito = '7';",
+        "int valor = digito - '0';",
+        "Console.WriteLine(valor * 2);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-dificil-89",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para calcular un interés compuesto a dos años.",
+      "questionTextEn": "Put the lines in order to compute compound interest over two years.",
+      "codeBlocks": [
+        "const double TASA = 0.10;",
+        "double capital = 1000;",
+        "double final = capital * Math.Pow(1 + TASA, 2);",
+        "Console.WriteLine(Math.Round(final, 2));"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-dificil-90",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para leer y limpiar un bit de un número.",
+      "questionTextEn": "Put the lines in order to read and clear a bit of a number.",
+      "codeBlocks": [
+        "int flags = 0b1010;",
+        "bool bit1 = (flags & 0b0010) != 0;",
+        "flags &= ~0b0010;",
+        "Console.WriteLine(bit1 + \" \" + flags);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-dificil-91",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para usar TryParse con un valor por defecto.",
+      "questionTextEn": "Put the lines in order to use TryParse with a default value.",
+      "codeBlocks": [
+        "string texto = \"x7\";",
+        "int n;",
+        "bool ok = int.TryParse(texto, out n);",
+        "int valor = ok ? n : -1;",
+        "Console.WriteLine(valor);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "var-dificil-92",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?  short a = 5;",
+      "questionTextEn": "Which line does not compile?  short a = 5;",
+      "explanation": "a + 1 es un int y no se convierte a short sin cast.",
+      "explanationEn": "a + 1 is an int and is not converted to short without a cast.",
+      "codeSnippetsOptions": [
+        "short b = a + 1;",
+        "short c = (short)(a + 1);",
+        "a += 1;",
+        "a++;"
+      ],
+      "buggyIndex": 0
+    },
+    {
+      "id": "var-dificil-93",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "explanation": "El compilador detecta el desbordamiento de una constante y lo rechaza.",
+      "explanationEn": "The compiler detects the overflow of a constant and rejects it.",
+      "codeSnippetsOptions": [
+        "int a = int.MaxValue + 1;",
+        "int b = unchecked(int.MaxValue + 1);",
+        "long c = int.MaxValue + 1L;",
+        "int d = unchecked((int)3000000000L);"
+      ],
+      "buggyIndex": 0
+    },
+    {
+      "id": "var-dificil-94",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea devuelve False, es decir, no sirve para comparar a + b con 0.3?  double a = 0.1, b = 0.2;",
+      "questionTextEn": "Which line returns False, so it is not useful to compare a + b with 0.3?  double a = 0.1, b = 0.2;",
+      "explanation": "La igualdad exacta entre doubles falla por el error de representación.",
+      "explanationEn": "Exact equality between doubles fails because of the representation error.",
+      "codeSnippetsOptions": [
+        "bool r = a + b == 0.3;",
+        "bool r = Math.Abs(a + b - 0.3) < 1e-9;",
+        "bool r = a + b > 0.29999;",
+        "bool r = (decimal)a + (decimal)b == 0.3m;"
+      ],
+      "buggyIndex": 0
+    },
+    {
+      "id": "var-dificil-95",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "Se quiere intercambiar a y b. ¿Qué línea lo hace mal?  int a = 3, b = 8;",
+      "questionTextEn": "The goal is to swap a and b. Which line does it wrong?  int a = 3, b = 8;",
+      "explanation": "Tras a = b, el valor original de a se pierde y b recibe lo mismo.",
+      "explanationEn": "After a = b, the original value of a is lost and b receives the same value.",
+      "codeSnippetsOptions": [
+        "int t = a; a = b; b = t;",
+        "a = b; b = a;",
+        "(a, b) = (b, a);",
+        "a += b; b = a - b; a -= b;"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "var-dificil-96",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "Se quiere el cuadrado de x. ¿Qué línea da un resultado incorrecto?  int x = 7;",
+      "questionTextEn": "The goal is the square of x. Which line gives a wrong result?  int x = 7;",
+      "explanation": "En C# el operador ^ es un XOR de bits, no una potencia.",
+      "explanationEn": "In C# the ^ operator is a bitwise XOR, not a power.",
+      "codeSnippetsOptions": [
+        "int r = x * x;",
+        "int r = (int)Math.Pow(x, 2);",
+        "int r = x ^ 2;",
+        "int r = x * x * 1;"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-dificil-97",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "Se quiere el último dígito de n. ¿Qué línea da un resultado incorrecto?  int n = 1234;",
+      "questionTextEn": "The goal is the last digit of n. Which line gives a wrong result?  int n = 1234;",
+      "explanation": "n / 10 quita el último dígito; el resto de dividir entre 10 lo obtiene.",
+      "explanationEn": "n / 10 removes the last digit; the remainder of dividing by 10 gives it.",
+      "codeSnippetsOptions": [
+        "int d = n % 10;",
+        "int d = n - n / 10 * 10;",
+        "int d = n / 10;",
+        "int d = Math.Abs(n) % 10;"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-dificil-98",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea lanza una excepción al ejecutarse?  object o = \"5\";",
+      "questionTextEn": "Which line throws an exception when run?  object o = \"5\";",
+      "explanation": "No se puede hacer unboxing de un string a int: InvalidCastException.",
+      "explanationEn": "A string cannot be unboxed to int: InvalidCastException.",
+      "codeSnippetsOptions": [
+        "int n = (int)o;",
+        "int n = int.Parse((string)o);",
+        "int n = Convert.ToInt32(o);",
+        "int n = int.Parse(o.ToString());"
+      ],
+      "buggyIndex": 0
+    },
+    {
+      "id": "var-dificil-99",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea lanza OverflowException al ejecutarse?  int big = int.MaxValue;",
+      "questionTextEn": "Which line throws OverflowException when run?  int big = int.MaxValue;",
+      "explanation": "Solo checked activa la comprobación de desbordamiento.",
+      "explanationEn": "Only checked turns on the overflow check.",
+      "codeSnippetsOptions": [
+        "int r = big + 1;",
+        "int r = checked(big + 1);",
+        "long r = (long)big + 1;",
+        "int r = unchecked(big + 1);"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "var-dificil-100",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "Se quiere el promedio exacto (4.25). ¿Qué línea da un resultado incorrecto?  int total = 17, n = 4;",
+      "questionTextEn": "The goal is the exact average (4.25). Which line gives a wrong result?  int total = 17, n = 4;",
+      "explanation": "El cast se aplica al resultado de la división entera (4), cuando ya es tarde.",
+      "explanationEn": "The cast is applied to the result of the integer division (4), when it is too late.",
+      "codeSnippetsOptions": [
+        "double m = (double)total / n;",
+        "double m = total / (double)n;",
+        "double m = (double)(total / n);",
+        "double m = total * 1.0 / n;"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-dificil-101",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "Se quiere subir x un 10 %. ¿Qué línea da un resultado incorrecto?  int x = 200;",
+      "questionTextEn": "The goal is to raise x by 10%. Which line gives a wrong result?  int x = 200;",
+      "explanation": "10 / 100 es 0 con enteros, así que no se suma nada.",
+      "explanationEn": "10 / 100 is 0 with integers, so nothing is added.",
+      "codeSnippetsOptions": [
+        "x += x / 10;",
+        "x = (int)(x * 1.1);",
+        "x += x * 10 / 100;",
+        "x += x * (10 / 100);"
+      ],
+      "buggyIndex": 3
+    },
+    {
+      "id": "var-dificil-102",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?  int? c = 5;",
+      "questionTextEn": "Which line does not compile?  int? c = 5;",
+      "explanation": "Un int normal no puede ser null; hace falta int?.",
+      "explanationEn": "A regular int cannot be null; int? is needed.",
+      "codeSnippetsOptions": [
+        "int? a = null;",
+        "int b = null;",
+        "int d = c ?? 0;",
+        "int? e = c + 1;"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "var-dificil-103",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?  char x = 'a';",
+      "questionTextEn": "Which line does not compile?  char x = 'a';",
+      "explanation": "x + 1 es un int; para volver a char hace falta el cast.",
+      "explanationEn": "x + 1 is an int; a cast is needed to get back to char.",
+      "codeSnippetsOptions": [
+        "char c = x + 1;",
+        "char c = (char)(x + 1);",
+        "char c = x;",
+        "int c = x + 1;"
+      ],
+      "buggyIndex": 0
+    },
+    {
+      "id": "var-dificil-104",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "Se quiere comparar con \"hola\" sin distinguir mayúsculas. ¿Qué línea lo hace mal?  string a = \"Hola\";",
+      "questionTextEn": "The goal is to compare with \"hola\" ignoring case. Which line does it wrong?  string a = \"Hola\";",
+      "explanation": "El operador == distingue mayúsculas de minúsculas.",
+      "explanationEn": "The == operator is case-sensitive.",
+      "codeSnippetsOptions": [
+        "bool r = a.ToLower() == \"hola\";",
+        "bool r = string.Equals(a, \"hola\", StringComparison.OrdinalIgnoreCase);",
+        "bool r = a == \"hola\";",
+        "bool r = a.ToUpper() == \"HOLA\";"
+      ],
+      "buggyIndex": 2
     }
   ]
 }

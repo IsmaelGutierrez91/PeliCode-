@@ -164,6 +164,1536 @@
         "int i = 0; do { i++; } while (i < 3);"
       ],
       "buggyIndex": 2
+    },
+    {
+      "id": "loop-medio-11",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuál es la diferencia principal entre while y do-while?",
+      "questionTextEn": "What is the main difference between while and do-while?",
+      "correctAnswer": "while comprueba la condición antes de entrar al cuerpo; do-while la comprueba después de ejecutarlo",
+      "incorrectAnswerPool": [
+        "do-while comprueba la condición antes y while después",
+        "while solo sirve con contadores y do-while solo con textos",
+        "No hay ninguna diferencia, son sinónimos"
+      ],
+      "correctAnswerEn": "while checks the condition before entering the body; do-while checks it after running it",
+      "incorrectAnswerPoolEn": [
+        "do-while checks the condition first and while checks it afterwards",
+        "while only works with counters and do-while only with strings",
+        "There is no difference, they are synonyms"
+      ],
+      "explanation": "Por eso un do-while ejecuta su cuerpo al menos una vez.",
+      "explanationEn": "That is why a do-while runs its body at least once."
+    },
+    {
+      "id": "loop-medio-12",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "En un while, ¿qué riesgo hay si pones continue antes de la línea que incrementa el contador?",
+      "questionTextEn": "In a while loop, what is the risk of putting continue before the line that increments the counter?",
+      "correctAnswer": "Puede crearse un bucle infinito, porque el contador no avanza en esa vuelta",
+      "incorrectAnswerPool": [
+        "El compilador lo rechaza",
+        "El contador se incrementa dos veces",
+        "El bucle termina de inmediato"
+      ],
+      "correctAnswerEn": "It can create an infinite loop, because the counter does not advance in that iteration",
+      "incorrectAnswerPoolEn": [
+        "The compiler rejects it",
+        "The counter is incremented twice",
+        "The loop ends immediately"
+      ],
+      "explanation": "continue salta directamente a comprobar la condición, sin ejecutar el resto del cuerpo.",
+      "explanationEn": "continue jumps straight to checking the condition, skipping the rest of the body."
+    },
+    {
+      "id": "loop-medio-13",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "Con dos bucles anidados, ¿qué bucle termina cuando se ejecuta un break en el bucle interno?",
+      "questionTextEn": "With two nested loops, which loop ends when a break runs in the inner loop?",
+      "correctAnswer": "Solo el bucle interno",
+      "incorrectAnswerPool": [
+        "Los dos bucles",
+        "Solo el bucle externo",
+        "Ninguno, break no funciona en bucles anidados"
+      ],
+      "correctAnswerEn": "Only the inner loop",
+      "incorrectAnswerPoolEn": [
+        "Both loops",
+        "Only the outer loop",
+        "Neither, break does not work in nested loops"
+      ]
+    },
+    {
+      "id": "loop-medio-14",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué ocurre si añades o quitas elementos de una List<T> mientras la recorres con foreach?",
+      "questionTextEn": "What happens if you add or remove elements of a List<T> while iterating it with foreach?",
+      "correctAnswer": "Se lanza una InvalidOperationException",
+      "incorrectAnswerPool": [
+        "El bucle se salta el elemento nuevo en silencio",
+        "Da un error de compilación",
+        "La lista se ordena sola"
+      ],
+      "correctAnswerEn": "An InvalidOperationException is thrown",
+      "incorrectAnswerPoolEn": [
+        "The loop silently skips the new element",
+        "It causes a compile error",
+        "The list sorts itself"
+      ],
+      "explanation": "El enumerador detecta que la colección cambió durante la iteración.",
+      "explanationEn": "The enumerator detects that the collection changed during the iteration."
+    },
+    {
+      "id": "loop-medio-15",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Se puede asignar un valor a la variable de iteración de un foreach (foreach (int v in a) { v = 0; })?",
+      "questionTextEn": "Can you assign a value to the iteration variable of a foreach (foreach (int v in a) { v = 0; })?",
+      "correctAnswer": "No: la variable de iteración es de solo lectura y da un error de compilación",
+      "incorrectAnswerPool": [
+        "Sí, y cambia el elemento del arreglo",
+        "Sí, pero solo cambia una copia",
+        "Solo si el arreglo es de strings"
+      ],
+      "correctAnswerEn": "No: the iteration variable is read-only and causes a compile error",
+      "incorrectAnswerPoolEn": [
+        "Yes, and it changes the array element",
+        "Yes, but it only changes a copy",
+        "Only if the array holds strings"
+      ]
+    },
+    {
+      "id": "loop-medio-16",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué hace el bucle for (;;) { ... } sin ningún break?",
+      "questionTextEn": "What does the loop for (;;) { ... } do without any break?",
+      "correctAnswer": "Se repite indefinidamente",
+      "incorrectAnswerPool": [
+        "No compila porque faltan partes",
+        "No se ejecuta nunca",
+        "Se ejecuta una vez"
+      ],
+      "correctAnswerEn": "It repeats indefinitely",
+      "incorrectAnswerPoolEn": [
+        "It does not compile because parts are missing",
+        "It never runs",
+        "It runs once"
+      ]
+    },
+    {
+      "id": "loop-medio-17",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "Quieres pedir un dato y repetir la petición hasta que sea válido. ¿Qué bucle se adapta mejor?",
+      "questionTextEn": "You want to ask for a value and repeat the request until it is valid. Which loop fits best?",
+      "correctAnswer": "do-while",
+      "incorrectAnswerPool": [
+        "foreach",
+        "for con límite fijo",
+        "if"
+      ]
+    },
+    {
+      "id": "loop-medio-18",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "Un do-while ejecuta su cuerpo exactamente 3 veces. ¿Cuántas veces se evalúa su condición?",
+      "questionTextEn": "A do-while runs its body exactly 3 times. How many times is its condition evaluated?",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "2",
+        "4",
+        "1"
+      ]
+    },
+    {
+      "id": "loop-medio-19",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuántas veces se evalúa la condición de for (int i = 0; i < 3; i++)?",
+      "questionTextEn": "How many times is the condition of for (int i = 0; i < 3; i++) evaluated?",
+      "correctAnswer": "4",
+      "incorrectAnswerPool": [
+        "3",
+        "2",
+        "5"
+      ],
+      "explanation": "Se evalúa tres veces como verdadera y una cuarta vez como falsa, que termina el bucle.",
+      "explanationEn": "It is evaluated three times as true and a fourth time as false, which ends the loop."
+    },
+    {
+      "id": "loop-medio-20",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué tipo tiene la variable de iteración en foreach (var c in \"hola\")?",
+      "questionTextEn": "What type does the iteration variable have in foreach (var c in \"hola\")?",
+      "correctAnswer": "char",
+      "incorrectAnswerPool": [
+        "string",
+        "int",
+        "byte"
+      ]
+    },
+    {
+      "id": "loop-medio-21",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Es válido este encabezado: for (int i = 0, j = 9; i < j; i++, j--)?",
+      "questionTextEn": "Is this header valid: for (int i = 0, j = 9; i < j; i++, j--)?",
+      "correctAnswer": "Sí, se pueden declarar y actualizar varias variables separándolas con comas",
+      "incorrectAnswerPool": [
+        "No, un for solo admite una variable",
+        "No, las partes se separan con dos puntos",
+        "Solo es válido dentro de un while"
+      ],
+      "correctAnswerEn": "Yes, several variables can be declared and updated by separating them with commas",
+      "incorrectAnswerPoolEn": [
+        "No, a for loop only allows one variable",
+        "No, the parts are separated with colons",
+        "It is only valid inside a while"
+      ]
+    },
+    {
+      "id": "loop-medio-22",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué es un error \"off-by-one\" en un bucle?",
+      "questionTextEn": "What is an \"off-by-one\" error in a loop?",
+      "correctAnswer": "Repetir una vez de más o de menos, por ejemplo por usar <= en lugar de <",
+      "incorrectAnswerPool": [
+        "Olvidar el punto y coma del for",
+        "Usar una variable sin declararla",
+        "Un bucle que nunca termina"
+      ],
+      "correctAnswerEn": "Repeating one time too many or too few, for example by using <= instead of <",
+      "incorrectAnswerPoolEn": [
+        "Forgetting the semicolon of the for",
+        "Using a variable without declaring it",
+        "A loop that never ends"
+      ]
+    },
+    {
+      "id": "loop-medio-23",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "Para recorrer una List<int> con un for, ¿qué propiedad da el número de elementos?",
+      "questionTextEn": "To go through a List<int> with a for loop, which property gives the number of elements?",
+      "correctAnswer": "Count",
+      "incorrectAnswerPool": [
+        "Length",
+        "Size",
+        "Items"
+      ]
+    },
+    {
+      "id": "loop-medio-24",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "Dentro de un método, ¿qué diferencia hay entre break y return en un bucle?",
+      "questionTextEn": "Inside a method, what is the difference between break and return in a loop?",
+      "correctAnswer": "break sale solo del bucle; return sale también del método",
+      "incorrectAnswerPool": [
+        "Son equivalentes",
+        "return solo salta a la siguiente vuelta",
+        "break termina el programa entero"
+      ],
+      "correctAnswerEn": "break only leaves the loop; return also leaves the method",
+      "incorrectAnswerPoolEn": [
+        "They are equivalent",
+        "return only jumps to the next iteration",
+        "break ends the whole program"
+      ]
+    },
+    {
+      "id": "loop-medio-25",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Por qué es arriesgado un bucle como while (x != 10) con x avanzando de 3 en 3 desde 0?",
+      "questionTextEn": "Why is a loop like while (x != 10) risky with x advancing by 3 from 0?",
+      "correctAnswer": "Porque x salta de 9 a 12 sin valer nunca 10, y el bucle no termina",
+      "incorrectAnswerPool": [
+        "Porque != no existe en C#",
+        "Porque x se reinicia solo",
+        "Porque while no admite números"
+      ],
+      "correctAnswerEn": "Because x jumps from 9 to 12 without ever being 10, and the loop never ends",
+      "incorrectAnswerPoolEn": [
+        "Because != does not exist in C#",
+        "Because x resets itself",
+        "Because while does not accept numbers"
+      ],
+      "explanation": "Conviene usar < o <= para que el bucle termine aunque el valor se salte el límite.",
+      "explanationEn": "It is better to use < or <= so the loop ends even if the value skips the limit."
+    },
+    {
+      "id": "loop-medio-26",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "Quieres recorrer un arreglo del último al primer elemento. ¿Qué opción es la habitual?",
+      "questionTextEn": "You want to go through an array from the last element to the first. Which option is the usual one?",
+      "correctAnswer": "Un for con i desde Length - 1 hasta 0 restando 1",
+      "incorrectAnswerPool": [
+        "Un foreach, que recorre al revés por defecto",
+        "Un do-while sin condición",
+        "Un for con i++ que empieza en Length"
+      ],
+      "correctAnswerEn": "A for loop with i from Length - 1 down to 0, subtracting 1",
+      "incorrectAnswerPoolEn": [
+        "A foreach, which iterates backwards by default",
+        "A do-while with no condition",
+        "A for with i++ that starts at Length"
+      ]
+    },
+    {
+      "id": "loop-medio-27",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nfor (int i = 1; i <= 3; i++)\n{\n    for (int j = 1; j <= i; j++)\n        Console.Write(j);\n    Console.Write(\" \");\n}",
+      "questionTextEn": "What does it print?\nfor (int i = 1; i <= 3; i++)\n{\n    for (int j = 1; j <= i; j++)\n        Console.Write(j);\n    Console.Write(\" \");\n}",
+      "correctAnswer": "1 12 123",
+      "incorrectAnswerPool": [
+        "1 2 3",
+        "11 22 33",
+        "123",
+        "1 12 123 1234"
+      ]
+    },
+    {
+      "id": "loop-medio-28",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene la variable al final?\nint n = 4821, s = 0;\nwhile (n > 0)\n{\n    s += n % 10;\n    n /= 10;\n}\nConsole.Write(s);",
+      "questionTextEn": "What value does the variable hold at the end?\nint n = 4821, s = 0;\nwhile (n > 0)\n{\n    s += n % 10;\n    n /= 10;\n}\nConsole.Write(s);",
+      "correctAnswer": "15",
+      "incorrectAnswerPool": [
+        "16",
+        "14",
+        "17",
+        "13",
+        "18",
+        "19"
+      ],
+      "explanation": "Suma las cifras 1 + 2 + 8 + 4 quitando la última cifra en cada vuelta.",
+      "explanationEn": "It adds the digits 1 + 2 + 8 + 4, removing the last digit on each iteration."
+    },
+    {
+      "id": "loop-medio-29",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nint n = 1234, r = 0;\nwhile (n > 0)\n{\n    r = r * 10 + n % 10;\n    n /= 10;\n}\nConsole.Write(r);",
+      "questionTextEn": "What value does r hold at the end?\nint n = 1234, r = 0;\nwhile (n > 0)\n{\n    r = r * 10 + n % 10;\n    n /= 10;\n}\nConsole.Write(r);",
+      "correctAnswer": "4321",
+      "incorrectAnswerPool": [
+        "1234",
+        "10",
+        "432"
+      ],
+      "explanation": "El bucle construye el número al revés, cifra a cifra.",
+      "explanationEn": "The loop builds the number backwards, digit by digit."
+    },
+    {
+      "id": "loop-medio-30",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene c al final?\nint n = 90210, c = 0;\nwhile (n > 0)\n{\n    n /= 10;\n    c++;\n}\nConsole.Write(c);",
+      "questionTextEn": "What value does c hold at the end?\nint n = 90210, c = 0;\nwhile (n > 0)\n{\n    n /= 10;\n    c++;\n}\nConsole.Write(c);",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "6",
+        "4",
+        "7",
+        "3",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "id": "loop-medio-31",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene a al final?\nint a = 0, b = 1;\nfor (int i = 0; i < 6; i++)\n{\n    int t = a + b;\n    a = b;\n    b = t;\n}\nConsole.Write(a);",
+      "questionTextEn": "What value does a hold at the end?\nint a = 0, b = 1;\nfor (int i = 0; i < 6; i++)\n{\n    int t = a + b;\n    a = b;\n    b = t;\n}\nConsole.Write(a);",
+      "correctAnswer": "8",
+      "incorrectAnswerPool": [
+        "9",
+        "7",
+        "10",
+        "6",
+        "11",
+        "12"
+      ],
+      "explanation": "Es la sucesión de Fibonacci: 0, 1, 1, 2, 3, 5, 8.",
+      "explanationEn": "It is the Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8."
+    },
+    {
+      "id": "loop-medio-32",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene a al final?\nint a = 48, b = 18;\nwhile (b != 0)\n{\n    int t = b;\n    b = a % b;\n    a = t;\n}\nConsole.Write(a);",
+      "questionTextEn": "What value does a hold at the end?\nint a = 48, b = 18;\nwhile (b != 0)\n{\n    int t = b;\n    b = a % b;\n    a = t;\n}\nConsole.Write(a);",
+      "correctAnswer": "6",
+      "incorrectAnswerPool": [
+        "7",
+        "5",
+        "8",
+        "4",
+        "9",
+        "10"
+      ],
+      "explanation": "Es el algoritmo de Euclides para el máximo común divisor.",
+      "explanationEn": "It is Euclid's algorithm for the greatest common divisor."
+    },
+    {
+      "id": "loop-medio-33",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene m al final?\nint[] v = { 3, 9, 2, 7 };\nint m = v[0];\nforeach (int x in v)\n    if (x > m) m = x;\nConsole.Write(m);",
+      "questionTextEn": "What value does m hold at the end?\nint[] v = { 3, 9, 2, 7 };\nint m = v[0];\nforeach (int x in v)\n    if (x > m) m = x;\nConsole.Write(m);",
+      "correctAnswer": "9",
+      "incorrectAnswerPool": [
+        "10",
+        "8",
+        "11",
+        "7",
+        "12",
+        "13"
+      ]
+    },
+    {
+      "id": "loop-medio-34",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint[] v = { 4, 5, 8 };\nint s = 0;\nforeach (int x in v)\n    s += x;\nConsole.Write(s / v.Length);",
+      "questionTextEn": "What does it print?\nint[] v = { 4, 5, 8 };\nint s = 0;\nforeach (int x in v)\n    s += x;\nConsole.Write(s / v.Length);",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "6",
+        "4",
+        "7",
+        "3",
+        "8",
+        "9"
+      ],
+      "explanation": "17 / 3 es una división entera: da 5, sin decimales.",
+      "explanationEn": "17 / 3 is an integer division: it gives 5, with no decimals."
+    },
+    {
+      "id": "loop-medio-35",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint i = 0, s = 0;\nwhile (i < 10 && s < 10)\n{\n    s += i;\n    i++;\n}\nConsole.Write(i + \",\" + s);",
+      "questionTextEn": "What does it print?\nint i = 0, s = 0;\nwhile (i < 10 && s < 10)\n{\n    s += i;\n    i++;\n}\nConsole.Write(i + \",\" + s);",
+      "correctAnswer": "5,10",
+      "incorrectAnswerPool": [
+        "4,6",
+        "5,6",
+        "6,15",
+        "4,10"
+      ],
+      "explanation": "El bucle se detiene en cuanto s llega a 10, aunque i todavía sea menor que 10.",
+      "explanationEn": "The loop stops as soon as s reaches 10, even though i is still less than 10."
+    },
+    {
+      "id": "loop-medio-36",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene count al final?\nint count = 0;\nfor (int i = 0; i < 3; i++)\n    for (int j = 0; j < 3; j++)\n    {\n        if (j == 2) break;\n        count++;\n    }\nConsole.Write(count);",
+      "questionTextEn": "What value does count hold at the end?\nint count = 0;\nfor (int i = 0; i < 3; i++)\n    for (int j = 0; j < 3; j++)\n    {\n        if (j == 2) break;\n        count++;\n    }\nConsole.Write(count);",
+      "correctAnswer": "6",
+      "incorrectAnswerPool": [
+        "7",
+        "5",
+        "8",
+        "4",
+        "9",
+        "10"
+      ],
+      "explanation": "El break solo corta el bucle interno: cada vuelta externa cuenta 2.",
+      "explanationEn": "The break only cuts the inner loop: each outer iteration counts 2."
+    },
+    {
+      "id": "loop-medio-37",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nfor (int i = 0; i < 3; i++)\n{\n    for (int j = 0; j < 3; j++)\n    {\n        if (j == 1) continue;\n        Console.Write(j);\n    }\n}",
+      "questionTextEn": "What does it print?\nfor (int i = 0; i < 3; i++)\n{\n    for (int j = 0; j < 3; j++)\n    {\n        if (j == 1) continue;\n        Console.Write(j);\n    }\n}",
+      "correctAnswer": "020202",
+      "incorrectAnswerPool": [
+        "012012012",
+        "000",
+        "111",
+        "020"
+      ],
+      "explanation": "continue se salta el valor j = 1 en cada vuelta interna.",
+      "explanationEn": "continue skips the value j = 1 on each inner iteration."
+    },
+    {
+      "id": "loop-medio-38",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint s = 0, i = 0;\ndo\n{\n    i++;\n    s += i;\n} while (s <= 10);\nConsole.Write(i + \":\" + s);",
+      "questionTextEn": "What does it print?\nint s = 0, i = 0;\ndo\n{\n    i++;\n    s += i;\n} while (s <= 10);\nConsole.Write(i + \":\" + s);",
+      "correctAnswer": "5:15",
+      "incorrectAnswerPool": [
+        "4:10",
+        "5:10",
+        "4:15",
+        "6:21"
+      ]
+    },
+    {
+      "id": "loop-medio-39",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene s al final?\nvar l = new List<int> { 1, 2, 3 };\nint s = 0;\nforeach (int x in l)\n    s += x * x;\nConsole.Write(s);",
+      "questionTextEn": "What value does s hold at the end?\nvar l = new List<int> { 1, 2, 3 };\nint s = 0;\nforeach (int x in l)\n    s += x * x;\nConsole.Write(s);",
+      "correctAnswer": "14",
+      "incorrectAnswerPool": [
+        "15",
+        "13",
+        "16",
+        "12",
+        "17",
+        "18"
+      ]
+    },
+    {
+      "id": "loop-medio-40",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring t = \"\";\nforeach (char c in \"hola\")\n    t = c + t;\nConsole.Write(t);",
+      "questionTextEn": "What does it print?\nstring t = \"\";\nforeach (char c in \"hola\")\n    t = c + t;\nConsole.Write(t);",
+      "correctAnswer": "aloh",
+      "incorrectAnswerPool": [
+        "hola",
+        "alho",
+        "oloh",
+        "a"
+      ],
+      "explanation": "Cada letra se antepone al texto acumulado, así que se invierte la palabra.",
+      "explanationEn": "Each letter is prepended to the accumulated text, so the word is reversed."
+    },
+    {
+      "id": "loop-medio-41",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene u al final?\nint u = 0;\nforeach (char c in \"ComPutaDora\")\n    if (char.IsUpper(c)) u++;\nConsole.Write(u);",
+      "questionTextEn": "What value does u hold at the end?\nint u = 0;\nforeach (char c in \"ComPutaDora\")\n    if (char.IsUpper(c)) u++;\nConsole.Write(u);",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "4",
+        "2",
+        "5",
+        "1",
+        "0",
+        "7"
+      ]
+    },
+    {
+      "id": "loop-medio-42",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nfor (int i = 0, j = 5; i < j; i++, j--)\n    Console.Write(i + \"\" + j + \" \");",
+      "questionTextEn": "What does it print?\nfor (int i = 0, j = 5; i < j; i++, j--)\n    Console.Write(i + \"\" + j + \" \");",
+      "correctAnswer": "05 14 23",
+      "incorrectAnswerPool": [
+        "05 14 23 32",
+        "05 14",
+        "0 1 2 5 4 3",
+        "5 4 3"
+      ]
+    },
+    {
+      "id": "loop-medio-43",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint[] a = { 5, 6, 7 };\nfor (int i = a.Length - 1; i >= 0; i--)\n    Console.Write(a[i]);",
+      "questionTextEn": "What does it print?\nint[] a = { 5, 6, 7 };\nfor (int i = a.Length - 1; i >= 0; i--)\n    Console.Write(a[i]);",
+      "correctAnswer": "765",
+      "incorrectAnswerPool": [
+        "567",
+        "76",
+        "657",
+        "7"
+      ]
+    },
+    {
+      "id": "loop-medio-44",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene c al final?\nint c = 0;\nfor (int i = 1; i <= 20; i++)\n    if (i % 3 == 0) c++;\nConsole.Write(c);",
+      "questionTextEn": "What value does c hold at the end?\nint c = 0;\nfor (int i = 1; i <= 20; i++)\n    if (i % 3 == 0) c++;\nConsole.Write(c);",
+      "correctAnswer": "6",
+      "incorrectAnswerPool": [
+        "7",
+        "5",
+        "8",
+        "4",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "id": "loop-medio-45",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene s al final?\nint s = 0;\nfor (int i = 1; i <= 9; i += 2)\n    s += i;\nConsole.Write(s);",
+      "questionTextEn": "What value does s hold at the end?\nint s = 0;\nfor (int i = 1; i <= 9; i += 2)\n    s += i;\nConsole.Write(s);",
+      "correctAnswer": "25",
+      "incorrectAnswerPool": [
+        "26",
+        "24",
+        "27",
+        "23",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "id": "loop-medio-46",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nint b = 2, e = 5, r = 1;\nwhile (e > 0)\n{\n    r *= b;\n    e--;\n}\nConsole.Write(r);",
+      "questionTextEn": "What value does r hold at the end?\nint b = 2, e = 5, r = 1;\nwhile (e > 0)\n{\n    r *= b;\n    e--;\n}\nConsole.Write(r);",
+      "correctAnswer": "32",
+      "incorrectAnswerPool": [
+        "33",
+        "31",
+        "34",
+        "30",
+        "35",
+        "36"
+      ]
+    },
+    {
+      "id": "loop-medio-47",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene steps al final?\nint x = 100, steps = 0;\nwhile (x > 1)\n{\n    x /= 2;\n    steps++;\n}\nConsole.Write(steps);",
+      "questionTextEn": "What value does steps hold at the end?\nint x = 100, steps = 0;\nwhile (x > 1)\n{\n    x /= 2;\n    steps++;\n}\nConsole.Write(steps);",
+      "correctAnswer": "6",
+      "incorrectAnswerPool": [
+        "7",
+        "5",
+        "8",
+        "4",
+        "9",
+        "10"
+      ],
+      "explanation": "La división entera da 50, 25, 12, 6, 3 y 1: seis divisiones.",
+      "explanationEn": "Integer division gives 50, 25, 12, 6, 3 and 1: six divisions."
+    },
+    {
+      "id": "loop-medio-48",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene c al final?\nint n = 6, c = 0;\nwhile (n != 1)\n{\n    n = n % 2 == 0 ? n / 2 : 3 * n + 1;\n    c++;\n}\nConsole.Write(c);",
+      "questionTextEn": "What value does c hold at the end?\nint n = 6, c = 0;\nwhile (n != 1)\n{\n    n = n % 2 == 0 ? n / 2 : 3 * n + 1;\n    c++;\n}\nConsole.Write(c);",
+      "correctAnswer": "8",
+      "incorrectAnswerPool": [
+        "9",
+        "7",
+        "10",
+        "6",
+        "11",
+        "12"
+      ]
+    },
+    {
+      "id": "loop-medio-49",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene la variable al final?\nint i = 0;\ndo\n{\n    i += 5;\n} while (i < 5);\nConsole.Write(i);",
+      "questionTextEn": "What value does the variable hold at the end?\nint i = 0;\ndo\n{\n    i += 5;\n} while (i < 5);\nConsole.Write(i);",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "6",
+        "4",
+        "7",
+        "3",
+        "8",
+        "9"
+      ],
+      "explanation": "El cuerpo se ejecuta una vez y luego 5 < 5 es falso.",
+      "explanationEn": "The body runs once and then 5 < 5 is false."
+    },
+    {
+      "id": "loop-medio-50",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nfor (char c = 'a'; c <= 'e'; c = (char)(c + 2))\n    Console.Write(c);",
+      "questionTextEn": "What does it print?\nfor (char c = 'a'; c <= 'e'; c = (char)(c + 2))\n    Console.Write(c);",
+      "correctAnswer": "ace",
+      "incorrectAnswerPool": [
+        "abcde",
+        "ae",
+        "bd",
+        "aceg"
+      ]
+    },
+    {
+      "id": "loop-medio-51",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene c al final?\nint c = 0;\nfor (int i = 1; i < 100; i *= 3)\n    c++;\nConsole.Write(c);",
+      "questionTextEn": "What value does c hold at the end?\nint c = 0;\nfor (int i = 1; i < 100; i *= 3)\n    c++;\nConsole.Write(c);",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "6",
+        "4",
+        "7",
+        "3",
+        "8",
+        "9"
+      ],
+      "explanation": "i toma los valores 1, 3, 9, 27 y 81.",
+      "explanationEn": "i takes the values 1, 3, 9, 27 and 81."
+    },
+    {
+      "id": "loop-medio-52",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene idx al final?\nint[] a = { 4, 8, 15, 16, 23 };\nint idx = -1;\nfor (int i = 0; i < a.Length; i++)\n{\n    if (a[i] > 10)\n    {\n        idx = i;\n        break;\n    }\n}\nConsole.Write(idx);",
+      "questionTextEn": "What value does idx hold at the end?\nint[] a = { 4, 8, 15, 16, 23 };\nint idx = -1;\nfor (int i = 0; i < a.Length; i++)\n{\n    if (a[i] > 10)\n    {\n        idx = i;\n        break;\n    }\n}\nConsole.Write(idx);",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "-1",
+        "15",
+        "4",
+        "3"
+      ]
+    },
+    {
+      "id": "loop-medio-53",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene c al final?\nint[] a = { 4, 8, 15, 16, 23 };\nint c = 0;\nforeach (int x in a)\n    if (x > 10) c++;\nConsole.Write(c);",
+      "questionTextEn": "What value does c hold at the end?\nint[] a = { 4, 8, 15, 16, 23 };\nint c = 0;\nforeach (int x in a)\n    if (x > 10) c++;\nConsole.Write(c);",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "4",
+        "2",
+        "5",
+        "1",
+        "0",
+        "7"
+      ]
+    },
+    {
+      "id": "loop-medio-54",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene s al final?\nint s = 0;\nfor (int i = 1; i <= 3; i++)\n    for (int j = 1; j <= 3; j++)\n        s += i * j;\nConsole.Write(s);",
+      "questionTextEn": "What value does s hold at the end?\nint s = 0;\nfor (int i = 1; i <= 3; i++)\n    for (int j = 1; j <= 3; j++)\n        s += i * j;\nConsole.Write(s);",
+      "correctAnswer": "36",
+      "incorrectAnswerPool": [
+        "37",
+        "35",
+        "38",
+        "34",
+        "39",
+        "40"
+      ]
+    },
+    {
+      "id": "loop-medio-55",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene c al final?\nint c = 0;\nfor (int i = 0; i < 5; i++)\n    for (int j = 0; j < i; j++)\n        c++;\nConsole.Write(c);",
+      "questionTextEn": "What value does c hold at the end?\nint c = 0;\nfor (int i = 0; i < 5; i++)\n    for (int j = 0; j < i; j++)\n        c++;\nConsole.Write(c);",
+      "correctAnswer": "10",
+      "incorrectAnswerPool": [
+        "11",
+        "9",
+        "12",
+        "8",
+        "13",
+        "14"
+      ]
+    },
+    {
+      "id": "loop-medio-56",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint i = 0;\nwhile (i++ < 3)\n    Console.Write(i);",
+      "questionTextEn": "What does it print?\nint i = 0;\nwhile (i++ < 3)\n    Console.Write(i);",
+      "correctAnswer": "123",
+      "incorrectAnswerPool": [
+        "012",
+        "0123",
+        "234",
+        "12"
+      ],
+      "explanation": "La comparación usa el valor anterior de i y luego lo incrementa, así que dentro del cuerpo i ya vale 1, 2, 3.",
+      "explanationEn": "The comparison uses the previous value of i and then increments it, so inside the body i is already 1, 2, 3."
+    },
+    {
+      "id": "loop-medio-57",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = 3;\ndo\n{\n    Console.Write(n);\n} while (--n > 0);",
+      "questionTextEn": "What does it print?\nint n = 3;\ndo\n{\n    Console.Write(n);\n} while (--n > 0);",
+      "correctAnswer": "321",
+      "incorrectAnswerPool": [
+        "3210",
+        "32",
+        "231",
+        "3"
+      ]
+    },
+    {
+      "id": "loop-medio-58",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring[] d = { \"lun\", \"mar\", \"mie\" };\nfor (int i = 0; i < d.Length; i++)\n    Console.Write(d[i][0]);",
+      "questionTextEn": "What does it print?\nstring[] d = { \"lun\", \"mar\", \"mie\" };\nfor (int i = 0; i < d.Length; i++)\n    Console.Write(d[i][0]);",
+      "correctAnswer": "lmm",
+      "incorrectAnswerPool": [
+        "lun",
+        "lum",
+        "unr",
+        "lmie"
+      ]
+    },
+    {
+      "id": "loop-medio-59",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene s al final?\nint[] v = { 5, 3, 0, 8, 2 };\nint s = 0, i = 0;\nwhile (v[i] != 0)\n{\n    s += v[i];\n    i++;\n}\nConsole.Write(s);",
+      "questionTextEn": "What value does s hold at the end?\nint[] v = { 5, 3, 0, 8, 2 };\nint s = 0, i = 0;\nwhile (v[i] != 0)\n{\n    s += v[i];\n    i++;\n}\nConsole.Write(s);",
+      "correctAnswer": "8",
+      "incorrectAnswerPool": [
+        "9",
+        "7",
+        "10",
+        "6",
+        "11",
+        "12"
+      ]
+    },
+    {
+      "id": "loop-medio-60",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene c al final?\nint x = 1, c = 0;\nwhile (x < 1000)\n{\n    x *= 10;\n    c++;\n}\nConsole.Write(c);",
+      "questionTextEn": "What value does c hold at the end?\nint x = 1, c = 0;\nwhile (x < 1000)\n{\n    x *= 10;\n    c++;\n}\nConsole.Write(c);",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "4",
+        "2",
+        "5",
+        "1",
+        "0",
+        "7"
+      ]
+    },
+    {
+      "id": "loop-medio-61",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nfor (int i = 0; i < 10; i++)\n{\n    if (i % 3 == 0) i += 2;\n    Console.Write(i);\n}",
+      "questionTextEn": "What does it print?\nfor (int i = 0; i < 10; i++)\n{\n    if (i % 3 == 0) i += 2;\n    Console.Write(i);\n}",
+      "correctAnswer": "25811",
+      "incorrectAnswerPool": [
+        "0369",
+        "258",
+        "2581",
+        "369"
+      ],
+      "explanation": "Modificar i dentro del cuerpo cambia las vueltas: se muestran 2, 5, 8 y 11.",
+      "explanationEn": "Changing i inside the body alters the iterations: 2, 5, 8 and 11 are printed."
+    },
+    {
+      "id": "loop-medio-62",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el paso para mostrar 0 5 10 15.",
+      "questionTextEn": "Fill in the step to print 0 5 10 15.",
+      "codeTemplate": "for (int i = 0; i < 20; i += ____)\n    Console.Write(i + \" \");",
+      "expectedAnswer": "5"
+    },
+    {
+      "id": "loop-medio-63",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para ignorar los pares y sumar solo los impares.",
+      "questionTextEn": "Fill in to ignore the even numbers and add only the odd ones.",
+      "codeTemplate": "int s = 0;\nint i = 0;\nwhile (i < 5)\n{\n    i++;\n    if (i % 2 == 0) ____;\n    s += i;\n}\nConsole.Write(s);",
+      "expectedAnswer": "continue"
+    },
+    {
+      "id": "loop-medio-64",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el valor para que la cuenta termine en 3.",
+      "questionTextEn": "Fill in the value so that the count ends at 3.",
+      "codeTemplate": "int n = 5;\ndo\n{\n    Console.Write(n);\n    n--;\n} while (n > ____);",
+      "expectedAnswer": "2"
+    },
+    {
+      "id": "loop-medio-65",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para invertir el texto.",
+      "questionTextEn": "Fill in to reverse the text.",
+      "codeTemplate": "string t = \"\";\nforeach (char c in \"abc\")\n    t = ____ + t;\nConsole.Write(t);",
+      "expectedAnswer": "c"
+    },
+    {
+      "id": "loop-medio-66",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el operador para calcular el factorial de 5.",
+      "questionTextEn": "Fill in the operator to compute the factorial of 5.",
+      "codeTemplate": "int fact = 1;\nfor (int i = 1; i <= 5; i++)\n    fact ____ i;\nConsole.Write(fact);",
+      "expectedAnswer": "*="
+    },
+    {
+      "id": "loop-medio-67",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con la variable que guarda el máximo.",
+      "questionTextEn": "Fill in with the variable that holds the maximum.",
+      "codeTemplate": "int[] a = { 3, 8, 5 };\nint max = a[0];\nforeach (int x in a)\n{\n    if (x > ____) max = x;\n}\nConsole.Write(max);",
+      "expectedAnswer": "max"
+    },
+    {
+      "id": "loop-medio-68",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa la propiedad que da el tamaño del arreglo.",
+      "questionTextEn": "Fill in the property that gives the size of the array.",
+      "codeTemplate": "int[] a = { 2, 4, 6 };\nint s = 0;\nfor (int i = 0; i < a.____; i++)\n    s += a[i];\nConsole.Write(s);",
+      "expectedAnswer": "Length"
+    },
+    {
+      "id": "loop-medio-69",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa la propiedad que da el tamaño de la lista.",
+      "questionTextEn": "Fill in the property that gives the size of the list.",
+      "codeTemplate": "var l = new List<int> { 4, 5, 6 };\nfor (int i = 0; i < l.____; i++)\n    Console.Write(l[i]);",
+      "expectedAnswer": "Count"
+    },
+    {
+      "id": "loop-medio-70",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el índice para contar las letras a.",
+      "questionTextEn": "Fill in the index to count the letters a.",
+      "codeTemplate": "string s = \"banana\";\nint c = 0;\nfor (int i = 0; i < s.Length; i++)\n    if (s[____] == 'a') c++;\nConsole.Write(c);",
+      "expectedAnswer": "i"
+    },
+    {
+      "id": "loop-medio-71",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el límite del bucle interno para dibujar un triángulo.",
+      "questionTextEn": "Fill in the limit of the inner loop to draw a triangle.",
+      "codeTemplate": "for (int i = 0; i < 3; i++)\n{\n    for (int j = 0; j <= ____; j++)\n        Console.Write(\"*\");\n    Console.WriteLine();\n}",
+      "expectedAnswer": "i"
+    },
+    {
+      "id": "loop-medio-72",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa la palabra que abre el bucle que se ejecuta al menos una vez.",
+      "questionTextEn": "Fill in the word that opens the loop that runs at least once.",
+      "codeTemplate": "int n = 0;\n____\n{\n    n++;\n}\nwhile (n < 3);\nConsole.Write(n);",
+      "expectedAnswer": "do"
+    },
+    {
+      "id": "loop-medio-73",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el operador para contar de 2 en 2 hacia atrás.",
+      "questionTextEn": "Fill in the operator to count down by 2.",
+      "codeTemplate": "for (int i = 10; i > 0; i ____ 2)\n    Console.Write(i + \" \");",
+      "expectedAnswer": "-="
+    },
+    {
+      "id": "loop-medio-74",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el límite para mostrar las letras de la a a la d.",
+      "questionTextEn": "Fill in the limit to print the letters from a to d.",
+      "codeTemplate": "for (char c = 'a'; c <= ____; c++)\n    Console.Write(c);",
+      "expectedAnswer": "'d'"
+    },
+    {
+      "id": "loop-medio-75",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para comprobar si 7 es primo.",
+      "questionTextEn": "Put the lines in order to check whether 7 is prime.",
+      "codeBlocks": [
+        "int n = 7; bool primo = true;",
+        "for (int d = 2; d < n; d++) {",
+        "    if (n % d == 0) primo = false;",
+        "}",
+        "Console.Write(primo);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "loop-medio-76",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para obtener el sexto término de Fibonacci.",
+      "questionTextEn": "Put the lines in order to get the sixth Fibonacci term.",
+      "codeBlocks": [
+        "int a = 0, b = 1;",
+        "for (int i = 0; i < 6; i++) {",
+        "    int t = a + b;",
+        "    a = b;",
+        "    b = t;",
+        "}",
+        "Console.Write(a);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "loop-medio-77",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el algoritmo de Euclides para el máximo común divisor de 48 y 18.",
+      "questionTextEn": "Put the lines in order for Euclid's algorithm for the greatest common divisor of 48 and 18.",
+      "codeBlocks": [
+        "int a = 48, b = 18;",
+        "while (b != 0) {",
+        "    int t = b;",
+        "    b = a % b;",
+        "    a = t;",
+        "}",
+        "Console.Write(a);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "loop-medio-78",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para invertir las cifras de 1234.",
+      "questionTextEn": "Put the lines in order to reverse the digits of 1234.",
+      "codeBlocks": [
+        "int n = 1234, r = 0;",
+        "while (n > 0) {",
+        "    r = r * 10 + n % 10;",
+        "    n /= 10;",
+        "}",
+        "Console.Write(r);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "loop-medio-79",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para encontrar el mayor de un arreglo.",
+      "questionTextEn": "Put the lines in order to find the largest value in an array.",
+      "codeBlocks": [
+        "int[] v = { 3, 9, 2, 7 };",
+        "int max = v[0];",
+        "foreach (int x in v) {",
+        "    if (x > max) max = x;",
+        "}",
+        "Console.Write(max);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "loop-medio-80",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para calcular el promedio entero de tres notas.",
+      "questionTextEn": "Put the lines in order to compute the integer average of three grades.",
+      "codeBlocks": [
+        "int[] v = { 4, 6, 8 }; int s = 0;",
+        "foreach (int x in v) {",
+        "    s += x;",
+        "}",
+        "Console.Write(s / v.Length);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "loop-medio-81",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para pedir un valor hasta que sea positivo (entradas simuladas).",
+      "questionTextEn": "Put the lines in order to ask for a value until it is positive (simulated inputs).",
+      "codeBlocks": [
+        "int[] entradas = { -3, 0, 5, 8 }; int k = 0, n;",
+        "do {",
+        "    n = entradas[k++];",
+        "} while (n <= 0);",
+        "Console.Write(n);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "loop-medio-82",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para sumar los números del 1 al 6 que no sean múltiplos de 3.",
+      "questionTextEn": "Put the lines in order to add the numbers from 1 to 6 that are not multiples of 3.",
+      "codeBlocks": [
+        "int s = 0;",
+        "for (int i = 1; i <= 6; i++) {",
+        "    if (i % 3 == 0) continue;",
+        "    s += i;",
+        "}",
+        "Console.Write(s);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "loop-medio-83",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para mostrar una tabla de multiplicar de dos filas.",
+      "questionTextEn": "Put the lines in order to print a two-row multiplication table.",
+      "codeBlocks": [
+        "for (int i = 1; i <= 2; i++) {",
+        "    for (int j = 1; j <= 3; j++) {",
+        "        Console.Write(i * j + \" \");",
+        "    }",
+        "    Console.WriteLine();",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "loop-medio-84",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para mostrar la secuencia de Collatz que empieza en 6.",
+      "questionTextEn": "Put the lines in order to print the Collatz sequence starting at 6.",
+      "codeBlocks": [
+        "int n = 6;",
+        "while (n != 1) {",
+        "    n = n % 2 == 0 ? n / 2 : 3 * n + 1;",
+        "    Console.Write(n + \" \");",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "loop-medio-85",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para construir el texto \"abc\" con un bucle.",
+      "questionTextEn": "Put the lines in order to build the text \"abc\" with a loop.",
+      "codeBlocks": [
+        "string t = \"\";",
+        "for (int i = 0; i < 3; i++) {",
+        "    t += (char)('a' + i);",
+        "}",
+        "Console.Write(t);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "loop-medio-86",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena la cuenta regresiva con do-while y mensaje final.",
+      "questionTextEn": "Put the lines in order for the do-while countdown with a final message.",
+      "codeBlocks": [
+        "int n = 3;",
+        "do {",
+        "    Console.Write(n + \"-\");",
+        "    n--;",
+        "} while (n > 0);",
+        "Console.Write(\"Despegue\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "loop-medio-87",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para dibujar un rectángulo de 2 filas y 3 columnas.",
+      "questionTextEn": "Put the lines in order to draw a rectangle of 2 rows and 3 columns.",
+      "codeBlocks": [
+        "for (int f = 0; f < 2; f++) {",
+        "    for (int c = 0; c < 3; c++) {",
+        "        Console.Write(\"#\");",
+        "    }",
+        "    Console.WriteLine();",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "loop-medio-88",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque no compila?",
+      "questionTextEn": "Which block does not compile?",
+      "codeSnippetsOptions": [
+        "foreach (char c in \"abc\") { }",
+        "foreach (int d in n) { }",
+        "foreach (int x in new[] { 1, 2 }) { }"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "loop-medio-89",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque no compila?",
+      "questionTextEn": "Which block does not compile?",
+      "codeSnippetsOptions": [
+        "for (int i = 0; i < 3; i++) { } Console.Write(1);",
+        "for (int i = 0; i < 3; i++) { } Console.Write(i);",
+        "int i; for (i = 0; i < 3; i++) { } Console.Write(i);"
+      ],
+      "buggyIndex": 1,
+      "explanation": "La variable i declarada en el for solo existe dentro del bucle.",
+      "explanationEn": "The variable i declared in the for only exists inside the loop."
+    },
+    {
+      "id": "loop-medio-90",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque no compila?",
+      "questionTextEn": "Which block does not compile?",
+      "codeSnippetsOptions": [
+        "for (int i = 0; i < 2; i++) { } for (int i = 0; i < 2; i++) { }",
+        "int i = 0; for (int i = 0; i < 2; i++) { }",
+        "int j = 0; for (int i = 0; i < 2; i++) { j++; }"
+      ],
+      "buggyIndex": 1,
+      "explanation": "No se puede declarar otra i mientras ya existe una i en el ámbito exterior.",
+      "explanationEn": "You cannot declare another i while an i already exists in the outer scope."
+    },
+    {
+      "id": "loop-medio-91",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque no compila?",
+      "questionTextEn": "Which block does not compile?",
+      "codeSnippetsOptions": [
+        "while (true) { break; }",
+        "if (true) { break; }",
+        "for (;;) { break; }"
+      ],
+      "buggyIndex": 1,
+      "explanation": "break solo puede usarse dentro de un bucle o de un switch.",
+      "explanationEn": "break can only be used inside a loop or a switch."
+    },
+    {
+      "id": "loop-medio-92",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque no compila?",
+      "questionTextEn": "Which block does not compile?",
+      "codeSnippetsOptions": [
+        "int s; for (int i = 0; i < 3; i++) s += i; Console.Write(s);",
+        "int s = 0; for (int i = 0; i < 3; i++) s += i; Console.Write(s);",
+        "int s; s = 0; for (int i = 0; i < 3; i++) s += i; Console.Write(s);"
+      ],
+      "buggyIndex": 0,
+      "explanation": "s se usa sin haber recibido un valor inicial.",
+      "explanationEn": "s is used without having been given an initial value."
+    },
+    {
+      "id": "loop-medio-93",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque falla al ejecutarse?",
+      "questionTextEn": "Which block fails when it runs?",
+      "codeSnippetsOptions": [
+        "var l = new List<int> { 1, 2, 3 }; foreach (int x in l) { l.Add(x); }",
+        "var l = new List<int> { 1, 2, 3 }; foreach (int x in l) { Console.Write(x); }",
+        "var l = new List<int> { 1, 2, 3 }; for (int i = 0; i < l.Count; i++) { l[i] *= 2; }"
+      ],
+      "buggyIndex": 0,
+      "explanation": "Añadir elementos mientras foreach recorre la lista lanza una InvalidOperationException.",
+      "explanationEn": "Adding elements while foreach iterates the list throws an InvalidOperationException."
+    },
+    {
+      "id": "loop-medio-94",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque lanza una excepción al ejecutarse?",
+      "questionTextEn": "Which block throws an exception when it runs?",
+      "codeSnippetsOptions": [
+        "for (int i = 3; i > 0; i--) Console.Write(12 / i);",
+        "for (int i = 3; i >= 0; i--) Console.Write(12 / i);",
+        "for (int i = 3; i >= 1; i--) Console.Write(12 / i);"
+      ],
+      "buggyIndex": 1,
+      "explanation": "Cuando i vale 0 se divide entre cero (DivideByZeroException).",
+      "explanationEn": "When i is 0 there is a division by zero (DivideByZeroException)."
+    },
+    {
+      "id": "loop-medio-95",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué bucle no termina nunca?",
+      "questionTextEn": "Which loop never ends?",
+      "codeSnippetsOptions": [
+        "int i = 0; while (i < 5) { i++; if (i == 2) continue; }",
+        "int i = 0; while (i < 5) { if (i == 2) continue; i++; }",
+        "int i = 0; while (i < 5) { if (i == 2) { i++; continue; } i++; }"
+      ],
+      "buggyIndex": 1,
+      "explanation": "Cuando i vale 2, continue vuelve a la condición sin incrementar i y se repite siempre.",
+      "explanationEn": "When i is 2, continue goes back to the condition without incrementing i and it repeats forever."
+    },
+    {
+      "id": "loop-medio-96",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "¿Qué bucle no termina nunca?",
+      "questionTextEn": "Which loop never ends?",
+      "codeSnippetsOptions": [
+        "for (int i = 0; i != 6; i += 2) { }",
+        "for (int i = 0; i != 5; i += 2) { }",
+        "for (int i = 0; i < 5; i += 2) { }"
+      ],
+      "buggyIndex": 1,
+      "explanation": "i vale 0, 2, 4, 6... y nunca es exactamente 5, así que != no corta el bucle.",
+      "explanationEn": "i is 0, 2, 4, 6... and is never exactly 5, so != never stops the loop."
+    },
+    {
+      "id": "loop-medio-97",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "Quiero mostrar 135. ¿Qué bloque muestra otra cosa?",
+      "questionTextEn": "I want to print 135. Which block prints something else?",
+      "codeSnippetsOptions": [
+        "for (int i = 1; i <= 5; i += 2) Console.Write(i);",
+        "for (int i = 1; i < 5; i += 2) Console.Write(i);",
+        "for (int i = 0; i < 5; i++) if (i % 2 == 0) Console.Write(i + 1);"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "loop-medio-98",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "Quiero sumar los pares del 1 al 10 (30). ¿Qué bloque da otro resultado?",
+      "questionTextEn": "I want to add the even numbers from 1 to 10 (30). Which block gives a different result?",
+      "codeSnippetsOptions": [
+        "int s = 0; for (int i = 1; i <= 10; i++) { if (i % 2 == 0) s += i; } Console.Write(s);",
+        "int s = 0; for (int i = 1; i <= 10; i++) { if (i % 2 == 1) s += i; } Console.Write(s);",
+        "int s = 0; for (int i = 2; i <= 10; i += 2) s += i; Console.Write(s);"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "loop-medio-99",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "Quiero que \"Hola\" se muestre al menos una vez aunque n valga 10. ¿Qué bloque no lo consigue?",
+      "questionTextEn": "I want \"Hola\" to be printed at least once even if n is 10. Which block fails to do it?",
+      "codeSnippetsOptions": [
+        "int n = 10; do { Console.Write(\"Hola\"); n++; } while (n < 5);",
+        "int n = 10; while (n < 5) { Console.Write(\"Hola\"); n++; }",
+        "int n = 10; Console.Write(\"Hola\"); while (n < 5) { n++; }"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "loop-medio-100",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "DetectarError",
+      "questionText": "Quiero el promedio con decimales de 1, 2, 3 y 4 (2,5). ¿Qué bloque da otro valor?",
+      "questionTextEn": "I want the average with decimals of 1, 2, 3 and 4 (2.5). Which block gives a different value?",
+      "codeSnippetsOptions": [
+        "int s = 0; for (int i = 1; i <= 4; i++) s += i; Console.Write(s / 4.0);",
+        "int s = 0; for (int i = 1; i <= 4; i++) s += i; Console.Write(s / 4);",
+        "int s = 0; for (int i = 1; i <= 4; i++) s += i; Console.Write((double)s / 4);"
+      ],
+      "buggyIndex": 1,
+      "explanation": "s / 4 es una división entera y da 2, sin decimales.",
+      "explanationEn": "s / 4 is an integer division and gives 2, with no decimals."
     }
   ]
 }

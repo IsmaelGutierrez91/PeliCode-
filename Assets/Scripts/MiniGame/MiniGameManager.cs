@@ -52,6 +52,8 @@ namespace PeliCode.MiniGame
         private readonly ScoreManager _scoreManager = new ScoreManager();
         private List<QuestionData> _pool = new List<QuestionData>();
         private int _poolIndex;
+        private RankedQuestionPicker _rankedPicker;
+        private QuestionData _currentQuestion;
         private IQuestionView _activeView;
         private bool _isRanked;
         private bool _finished;
@@ -79,6 +81,7 @@ namespace PeliCode.MiniGame
             _pool = _isRanked
                 ? await BuildRankedPoolAsync()
                 : await BuildNormalPoolAsync();
+            if (_isRanked) _rankedPicker = new RankedQuestionPicker(_pool);
             if (this == null) return; // se salio de la escena mientras cargaba
 
             _scoreManager.Reset();
@@ -124,9 +127,10 @@ namespace PeliCode.MiniGame
 
         private async Task<List<QuestionData>> BuildRankedPoolAsync()
         {
-            // Ranked combina las 5 categorias y las 3 dificultades.
+            // Ranked combina las 5 categorias y las 3 dificultades; RankedQuestionPicker
+            // decide el orden (la dificultad sube con los aciertos).
             var all = await QuestionsRepository.Instance.GetAllQuestionsAsync();
-            return Shuffle(Playable(all));
+            return Playable(all);
         }
 
         private static List<QuestionData> Playable(List<QuestionData> questions)
@@ -149,20 +153,11 @@ namespace PeliCode.MiniGame
         {
             if (_finished) return;
 
-            // Ranked con pila "infinita": si se acaban las preguntas, se reinicia
-            // el mazo (se vuelve a barajar) y se sigue jugando.
-            if (_poolIndex >= _pool.Count)
+            // Ranked sin fin: el picker vuelve a barajar cada dificultad cuando se le acaba
+            if (!_isRanked && _poolIndex >= _pool.Count)
             {
-                if (_isRanked)
-                {
-                    _pool = Shuffle(_pool);
-                    _poolIndex = 0;
-                }
-                else
-                {
-                    EndNormalGame();
-                    return;
-                }
+                EndNormalGame();
+                return;
             }
 
             SetFeedback(string.Empty, UITheme.Text);
@@ -170,7 +165,8 @@ namespace PeliCode.MiniGame
                 ? $"{_scoreManager.CorrectAnswers}"
                 : $"{_poolIndex + 1} / {_pool.Count}";
 
-            QuestionData question = _pool[_poolIndex];
+            QuestionData question = _isRanked ? _rankedPicker.Next(_scoreManager.CorrectAnswers) : _pool[_poolIndex];
+            _currentQuestion = question;
             _activeView = GetViewFor(question.type);
 
             HideAllViews();
@@ -215,7 +211,7 @@ namespace PeliCode.MiniGame
             if (_finished || _activeView == null) return;
 
             var view = _activeView;
-            var question = _pool[_poolIndex];
+            var question = _currentQuestion;
             view.OnAnswered -= OnQuestionAnswered;
             view.Clear();
             _activeView = null;
