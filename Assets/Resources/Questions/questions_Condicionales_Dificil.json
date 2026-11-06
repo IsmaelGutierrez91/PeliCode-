@@ -232,6 +232,1578 @@
         "if x > 0 { y = 1; }"
       ],
       "buggyIndex": 3
+    },
+    {
+      "id": "cond-dificil-16",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué es la evaluación en cortocircuito?",
+      "questionTextEn": "What is short-circuit evaluation?",
+      "correctAnswer": "Dejar de evaluar el resto de la expresión cuando el resultado ya está decidido",
+      "incorrectAnswerPool": [
+        "Evaluar siempre todas las partes de izquierda a derecha",
+        "Evaluar primero la parte con mayor número",
+        "Convertir la condición en un entero",
+        "Saltarse el if cuando hay un error"
+      ],
+      "correctAnswerEn": "Stopping the evaluation of the rest of the expression once the result is already decided",
+      "incorrectAnswerPoolEn": [
+        "Always evaluating every part from left to right",
+        "Evaluating the part with the biggest number first",
+        "Converting the condition into an integer",
+        "Skipping the if when there is an error"
+      ],
+      "explanation": "Con && basta un false y con || basta un true para conocer el resultado.",
+      "explanationEn": "With && one false is enough, and with || one true is enough to know the result."
+    },
+    {
+      "id": "cond-dificil-17",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué diferencia hay entre & y && cuando los operandos son bool?",
+      "questionTextEn": "What is the difference between & and && when the operands are bool?",
+      "correctAnswer": "& evalúa siempre los dos lados y && puede saltarse el derecho",
+      "incorrectAnswerPool": [
+        "& compara números y && compara textos",
+        "No hay ninguna diferencia",
+        "& es \"o\" y && es \"y\"",
+        "&& evalúa siempre los dos lados y & puede saltarse el derecho"
+      ],
+      "correctAnswerEn": "& always evaluates both sides and && may skip the right one",
+      "incorrectAnswerPoolEn": [
+        "& compares numbers and && compares strings",
+        "There is no difference",
+        "& is \"or\" and && is \"and\"",
+        "&& always evaluates both sides and & may skip the right one"
+      ]
+    },
+    {
+      "id": "cond-dificil-18",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué devuelve el operador ^ con dos valores bool?",
+      "questionTextEn": "What does the ^ operator return with two bool values?",
+      "correctAnswer": "true solo si exactamente uno de los dos es true",
+      "incorrectAnswerPool": [
+        "true solo si los dos son true",
+        "true si al menos uno es true",
+        "true solo si los dos son false",
+        "Eleva el primero al segundo"
+      ],
+      "correctAnswerEn": "true only if exactly one of the two is true",
+      "incorrectAnswerPoolEn": [
+        "true only if both are true",
+        "true if at least one is true",
+        "true only if both are false",
+        "Raises the first to the power of the second"
+      ],
+      "explanation": "^ es la \"o exclusiva\" (XOR).",
+      "explanationEn": "^ is the exclusive \"or\" (XOR)."
+    },
+    {
+      "id": "cond-dificil-19",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué resultado tiene a ?? b?",
+      "questionTextEn": "What is the result of a ?? b?",
+      "correctAnswer": "a si a no es null; si es null, b",
+      "incorrectAnswerPool": [
+        "b si b no es null; si es null, a",
+        "Siempre true o false",
+        "La suma de a y b",
+        "a si a es null; si no, b"
+      ],
+      "correctAnswerEn": "a if a is not null; if it is null, b",
+      "incorrectAnswerPoolEn": [
+        "b if b is not null; if it is null, a",
+        "Always true or false",
+        "The sum of a and b",
+        "a if a is null; otherwise b"
+      ]
+    },
+    {
+      "id": "cond-dificil-20",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué hace x ??= 5 cuando x es int? y vale 3?",
+      "questionTextEn": "What does x ??= 5 do when x is an int? holding 3?",
+      "correctAnswer": "Nada: x sigue valiendo 3",
+      "incorrectAnswerPool": [
+        "Asigna 5 a x",
+        "Asigna null a x",
+        "Lanza una excepción",
+        "Suma 5 a x"
+      ],
+      "correctAnswerEn": "Nothing: x still holds 3",
+      "incorrectAnswerPoolEn": [
+        "Assigns 5 to x",
+        "Assigns null to x",
+        "Throws an exception",
+        "Adds 5 to x"
+      ],
+      "explanation": "??= solo asigna cuando la variable es null.",
+      "explanationEn": "??= only assigns when the variable is null."
+    },
+    {
+      "id": "cond-dificil-21",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué hace el operador ?. en s?.Length?",
+      "questionTextEn": "What does the ?. operator do in s?.Length?",
+      "correctAnswer": "Accede a Length solo si s no es null; si es null, el resultado es null",
+      "incorrectAnswerPool": [
+        "Siempre lanza una excepción si s es null",
+        "Compara s con Length",
+        "Convierte s en un entero",
+        "Asigna null a s"
+      ],
+      "correctAnswerEn": "Accesses Length only if s is not null; if s is null, the result is null",
+      "incorrectAnswerPoolEn": [
+        "Always throws an exception if s is null",
+        "Compares s with Length",
+        "Converts s into an integer",
+        "Assigns null to s"
+      ]
+    },
+    {
+      "id": "cond-dificil-22",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué expresión equivale a !(a || b) según De Morgan?",
+      "questionTextEn": "Which expression is equivalent to !(a || b) according to De Morgan?",
+      "correctAnswer": "!a && !b",
+      "incorrectAnswerPool": [
+        "!a || !b",
+        "a && b",
+        "!a || b",
+        "a && !b"
+      ]
+    },
+    {
+      "id": "cond-dificil-23",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Por qué no es buena idea comparar dos double con == cuando vienen de cálculos?",
+      "questionTextEn": "Why is it a bad idea to compare two doubles with == when they come from calculations?",
+      "correctAnswer": "Por los errores de redondeo en la representación binaria",
+      "incorrectAnswerPool": [
+        "Porque == no se puede usar con double",
+        "Porque double no admite decimales",
+        "Porque el compilador lo prohíbe",
+        "Porque == compara solo la parte entera"
+      ],
+      "correctAnswerEn": "Because of rounding errors in the binary representation",
+      "incorrectAnswerPoolEn": [
+        "== cannot be used with double",
+        "double does not support decimals",
+        "The compiler forbids it",
+        "== only compares the integer part"
+      ]
+    },
+    {
+      "id": "cond-dificil-24",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuál es el orden de precedencia de estos operadores, de mayor a menor?",
+      "questionTextEn": "What is the precedence order of these operators, from highest to lowest?",
+      "correctAnswer": "!, &&, ||",
+      "incorrectAnswerPool": [
+        "||, &&, !",
+        "&&, ||, !",
+        "!, ||, &&",
+        "Todos tienen la misma precedencia"
+      ],
+      "correctAnswerEn": "!, &&, ||",
+      "incorrectAnswerPoolEn": [
+        "||, &&, !",
+        "&&, ||, !",
+        "!, ||, &&",
+        "All have the same precedence"
+      ]
+    },
+    {
+      "id": "cond-dificil-25",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué comprueba la expresión s is not null?",
+      "questionTextEn": "What does the expression s is not null check?",
+      "correctAnswer": "Que s tiene un valor distinto de null",
+      "incorrectAnswerPool": [
+        "Que s es una cadena vacía",
+        "Que s es de tipo null",
+        "Que s vale cero",
+        "Nada, no compila"
+      ],
+      "correctAnswerEn": "That s holds a value other than null",
+      "incorrectAnswerPoolEn": [
+        "That s is an empty string",
+        "That s is of type null",
+        "That s is zero",
+        "Nothing, it does not compile"
+      ]
+    },
+    {
+      "id": "cond-dificil-26",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué comprueba x is > 0 and < 10?",
+      "questionTextEn": "What does x is > 0 and < 10 check?",
+      "correctAnswer": "Que x es mayor que 0 y menor que 10",
+      "incorrectAnswerPool": [
+        "Que x vale 0 o 10",
+        "Que x es mayor que 0 o menor que 10",
+        "Que x está fuera del rango 0 a 10",
+        "Asigna 0 a x"
+      ],
+      "correctAnswerEn": "That x is greater than 0 and less than 10",
+      "incorrectAnswerPoolEn": [
+        "That x is 0 or 10",
+        "That x is greater than 0 or less than 10",
+        "That x is outside the range 0 to 10",
+        "Assigns 0 to x"
+      ]
+    },
+    {
+      "id": "cond-dificil-27",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué tipo tiene el resultado de la expresión (true ? 1 : 2.5)?",
+      "questionTextEn": "What is the type of the result of the expression (true ? 1 : 2.5)?",
+      "correctAnswer": "double",
+      "incorrectAnswerPool": [
+        "int",
+        "float",
+        "decimal",
+        "object"
+      ],
+      "correctAnswerEn": "double",
+      "incorrectAnswerPoolEn": [
+        "int",
+        "float",
+        "decimal",
+        "object"
+      ],
+      "explanation": "Los dos resultados se unifican en el tipo común: el 1 se convierte a double.",
+      "explanationEn": "The two results are unified to the common type: 1 is converted to double."
+    },
+    {
+      "id": "cond-dificil-28",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "En un if sin llaves anidado con un solo else, ¿a qué if pertenece el else?",
+      "questionTextEn": "In a nested if without braces with a single else, which if does the else belong to?",
+      "correctAnswer": "Al if más cercano que aún no tiene else",
+      "incorrectAnswerPool": [
+        "Al primer if de todos",
+        "Al que tenga la condición más larga",
+        "A todos los if a la vez",
+        "Depende de la sangría del código"
+      ],
+      "correctAnswerEn": "The nearest if that does not yet have an else",
+      "incorrectAnswerPoolEn": [
+        "The very first if",
+        "The one with the longest condition",
+        "All ifs at once",
+        "It depends on the indentation of the code"
+      ],
+      "explanation": "La sangría es solo visual: el compilador asocia else con el if más cercano.",
+      "explanationEn": "Indentation is only visual: the compiler pairs else with the nearest if."
+    },
+    {
+      "id": "cond-dificil-29",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "Para usar un bool? en un if, ¿cuál de estas formas es válida?",
+      "questionTextEn": "To use a bool? in an if, which of these forms is valid?",
+      "correctAnswer": "if (flag == true)",
+      "incorrectAnswerPool": [
+        "if (flag)",
+        "if (flag = true)",
+        "if (flag.Length > 0)",
+        "if (flag is bool)"
+      ]
+    },
+    {
+      "id": "cond-dificil-30",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (F(\"A\") || F(\"B\")) Console.Write(\"C\");",
+      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (F(\"A\") || F(\"B\")) Console.Write(\"C\");",
+      "correctAnswer": "AC",
+      "incorrectAnswerPool": [
+        "ABC",
+        "AB",
+        "C",
+        "BC"
+      ],
+      "explanation": "F(\"A\") es true y || ya no evalúa F(\"B\").",
+      "explanationEn": "F(\"A\") is true and || no longer evaluates F(\"B\")."
+    },
+    {
+      "id": "cond-dificil-31",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (!F(\"A\") && F(\"B\")) Console.Write(\"C\");\nelse Console.Write(\"D\");",
+      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (!F(\"A\") && F(\"B\")) Console.Write(\"C\");\nelse Console.Write(\"D\");",
+      "correctAnswer": "AD",
+      "incorrectAnswerPool": [
+        "ABD",
+        "AC",
+        "D",
+        "ABC"
+      ],
+      "explanation": "!F(\"A\") es false, así que && no evalúa F(\"B\").",
+      "explanationEn": "!F(\"A\") is false, so && does not evaluate F(\"B\")."
+    },
+    {
+      "id": "cond-dificil-32",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") & G(\"B\")) Console.Write(\"X\");\nelse Console.Write(\"Y\");",
+      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") & G(\"B\")) Console.Write(\"X\");\nelse Console.Write(\"Y\");",
+      "correctAnswer": "ABY",
+      "incorrectAnswerPool": [
+        "AY",
+        "Y",
+        "ABX",
+        "AX"
+      ],
+      "explanation": "El operador & evalúa siempre los dos lados.",
+      "explanationEn": "The & operator always evaluates both sides."
+    },
+    {
+      "id": "cond-dificil-33",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") && G(\"B\")) Console.Write(\"X\");\nelse Console.Write(\"Y\");",
+      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") && G(\"B\")) Console.Write(\"X\");\nelse Console.Write(\"Y\");",
+      "correctAnswer": "AY",
+      "incorrectAnswerPool": [
+        "ABY",
+        "Y",
+        "AX",
+        "ABX"
+      ]
+    },
+    {
+      "id": "cond-dificil-34",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") || F(\"B\")) Console.Write(\"C\");",
+      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") || F(\"B\")) Console.Write(\"C\");",
+      "correctAnswer": "ABC",
+      "incorrectAnswerPool": [
+        "AC",
+        "AB",
+        "C",
+        "BC"
+      ],
+      "explanation": "G(\"A\") es false, así que || sí evalúa F(\"B\"), que es true.",
+      "explanationEn": "G(\"A\") is false, so || does evaluate F(\"B\"), which is true."
+    },
+    {
+      "id": "cond-dificil-35",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (F(\"A\") && G(\"B\") || F(\"C\")) Console.Write(\"D\");",
+      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (F(\"A\") && G(\"B\") || F(\"C\")) Console.Write(\"D\");",
+      "correctAnswer": "ABCD",
+      "incorrectAnswerPool": [
+        "ABD",
+        "AD",
+        "ACD",
+        "ABC"
+      ],
+      "explanation": "(F(\"A\") && G(\"B\")) da false, pero entonces || evalúa F(\"C\"), que es true.",
+      "explanationEn": "(F(\"A\") && G(\"B\")) gives false, but then || evaluates F(\"C\"), which is true."
+    },
+    {
+      "id": "cond-dificil-36",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene c al final?\nint c = 0;\nif (c++ > 0 && c++ > 0) { }",
+      "questionTextEn": "What value does c hold at the end?\nint c = 0;\nif (c++ > 0 && c++ > 0) { }",
+      "correctAnswer": "1",
+      "incorrectAnswerPool": [
+        "0",
+        "2",
+        "3",
+        "-1"
+      ],
+      "explanation": "c++ > 0 es false (0 > 0) y c pasa a 1; && no evalúa la segunda parte.",
+      "explanationEn": "c++ > 0 is false (0 > 0) and c becomes 1; && does not evaluate the second part."
+    },
+    {
+      "id": "cond-dificil-37",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene c al final?\nint c = 0;\nif (c++ > 0 || c++ > 0) { }",
+      "questionTextEn": "What value does c hold at the end?\nint c = 0;\nif (c++ > 0 || c++ > 0) { }",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "0",
+        "1",
+        "3",
+        "-1"
+      ],
+      "explanation": "La primera parte es false (c pasa a 1), así que || evalúa la segunda (1 > 0) y c pasa a 2.",
+      "explanationEn": "The first part is false (c becomes 1), so || evaluates the second (1 > 0) and c becomes 2."
+    },
+    {
+      "id": "cond-dificil-38",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene c al final?\nint c = 0;\nif (++c > 0 || ++c > 0) { }",
+      "questionTextEn": "What value does c hold at the end?\nint c = 0;\nif (++c > 0 || ++c > 0) { }",
+      "correctAnswer": "1",
+      "incorrectAnswerPool": [
+        "0",
+        "2",
+        "3",
+        "-1"
+      ],
+      "explanation": "++c vale 1, 1 > 0 es true y || se detiene.",
+      "explanationEn": "++c is 1, 1 > 0 is true and || stops."
+    },
+    {
+      "id": "cond-dificil-39",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 5;\nif (a++ == 5 && a == 6) Console.WriteLine(\"Sí\");\nelse Console.WriteLine(\"No\");",
+      "questionTextEn": "What does it print?\nint a = 5;\nif (a++ == 5 && a == 6) Console.WriteLine(\"Sí\");\nelse Console.WriteLine(\"No\");",
+      "correctAnswer": "Sí",
+      "incorrectAnswerPool": [
+        "No",
+        "SíNo",
+        "5",
+        "6"
+      ],
+      "explanation": "a++ compara con el valor antiguo (5) y luego a pasa a 6.",
+      "explanationEn": "a++ compares with the old value (5) and then a becomes 6."
+    },
+    {
+      "id": "cond-dificil-40",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene x al final?\nint x = 5;\nif (x-- > 5 || --x > 3) { }",
+      "questionTextEn": "What value does x hold at the end?\nint x = 5;\nif (x-- > 5 || --x > 3) { }",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "5",
+        "4",
+        "2",
+        "6"
+      ],
+      "explanation": "x-- > 5 es false (x pasa a 4); --x deja x en 3 y 3 > 3 también es false.",
+      "explanationEn": "x-- > 5 is false (x becomes 4); --x leaves x at 3 and 3 > 3 is also false."
+    },
+    {
+      "id": "cond-dificil-41",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint c = 0;\nbool b = (c++ == 0) | (c++ == 5);\nConsole.WriteLine(b + \" \" + c);",
+      "questionTextEn": "What does it print?\nint c = 0;\nbool b = (c++ == 0) | (c++ == 5);\nConsole.WriteLine(b + \" \" + c);",
+      "correctAnswer": "True 2",
+      "incorrectAnswerPool": [
+        "True 1",
+        "False 2",
+        "False 1",
+        "True 0"
+      ],
+      "explanation": "El | evalúa siempre los dos lados, así que c se incrementa dos veces.",
+      "explanationEn": "The | always evaluates both sides, so c is incremented twice."
+    },
+    {
+      "id": "cond-dificil-42",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene c al final?\nint c = 0;\nif (c == 0) c++;\nif (c == 1) c++;\nif (c == 1) c += 10;",
+      "questionTextEn": "What value does c hold at the end?\nint c = 0;\nif (c == 0) c++;\nif (c == 1) c++;\nif (c == 1) c += 10;",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "1",
+        "11",
+        "12",
+        "0"
+      ],
+      "explanation": "Cada if se evalúa con el valor actual: 0 pasa a 1, 1 pasa a 2 y el tercero ya no se cumple.",
+      "explanationEn": "Each if is evaluated with the current value: 0 becomes 1, 1 becomes 2 and the third no longer holds."
+    },
+    {
+      "id": "cond-dificil-43",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene x al final?\nint x = 3;\nif (x == 3) x = 4;\nelse if (x == 4) x = 5;\nelse x = 6;",
+      "questionTextEn": "What value does x hold at the end?\nint x = 3;\nif (x == 3) x = 4;\nelse if (x == 4) x = 5;\nelse x = 6;",
+      "correctAnswer": "4",
+      "incorrectAnswerPool": [
+        "3",
+        "5",
+        "6",
+        "0"
+      ],
+      "explanation": "Al ser else if, tras cumplirse la primera ya no se mira la segunda.",
+      "explanationEn": "Being else if, once the first holds the second is not checked."
+    },
+    {
+      "id": "cond-dificil-44",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nbool r = true || false && false;",
+      "questionTextEn": "What value does r hold at the end?\nbool r = true || false && false;",
+      "correctAnswer": "true",
+      "incorrectAnswerPool": [
+        "false",
+        "null",
+        "0",
+        "1"
+      ],
+      "explanation": "&& se evalúa antes: false && false es false y luego true || false es true.",
+      "explanationEn": "&& goes first: false && false is false and then true || false is true."
+    },
+    {
+      "id": "cond-dificil-45",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nbool r = false && true || true;",
+      "questionTextEn": "What value does r hold at the end?\nbool r = false && true || true;",
+      "correctAnswer": "true",
+      "incorrectAnswerPool": [
+        "false",
+        "null",
+        "0",
+        "1"
+      ],
+      "explanation": "(false && true) es false y false || true es true.",
+      "explanationEn": "(false && true) is false and false || true is true."
+    },
+    {
+      "id": "cond-dificil-46",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nbool r = 1 + 2 * 3 == 7 && 10 / 4 == 2;",
+      "questionTextEn": "What value does r hold at the end?\nbool r = 1 + 2 * 3 == 7 && 10 / 4 == 2;",
+      "correctAnswer": "true",
+      "incorrectAnswerPool": [
+        "false",
+        "7",
+        "2",
+        "null"
+      ],
+      "explanation": "1 + 2 * 3 vale 7 y 10 / 4 es una división entera que vale 2.",
+      "explanationEn": "1 + 2 * 3 is 7 and 10 / 4 is an integer division giving 2."
+    },
+    {
+      "id": "cond-dificil-47",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nConsole.WriteLine(5 / 2 == 2.5);",
+      "questionTextEn": "What does it print?\nConsole.WriteLine(5 / 2 == 2.5);",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "2.5",
+        "2",
+        "Error de compilación"
+      ],
+      "explanation": "5 / 2 es una división entera y vale 2, no 2.5.",
+      "explanationEn": "5 / 2 is an integer division and gives 2, not 2.5."
+    },
+    {
+      "id": "cond-dificil-48",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nConsole.WriteLine(5 / 2.0 == 2.5);",
+      "questionTextEn": "What does it print?\nConsole.WriteLine(5 / 2.0 == 2.5);",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "2.5",
+        "2",
+        "Error de compilación"
+      ],
+      "explanation": "Con un operando double la división es decimal y vale 2.5.",
+      "explanationEn": "With a double operand the division is decimal and gives 2.5."
+    },
+    {
+      "id": "cond-dificil-49",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nConsole.WriteLine(0.1 + 0.2 == 0.3);",
+      "questionTextEn": "What does it print?\nConsole.WriteLine(0.1 + 0.2 == 0.3);",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "0.3",
+        "0",
+        "Error de compilación"
+      ],
+      "explanation": "0.1 + 0.2 da 0.30000000000000004 en double.",
+      "explanationEn": "0.1 + 0.2 gives 0.30000000000000004 in double."
+    },
+    {
+      "id": "cond-dificil-50",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nConsole.WriteLine(0.1m + 0.2m == 0.3m);",
+      "questionTextEn": "What does it print?\nConsole.WriteLine(0.1m + 0.2m == 0.3m);",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "0.3",
+        "0",
+        "Error de compilación"
+      ],
+      "explanation": "decimal representa estos valores de forma exacta.",
+      "explanationEn": "decimal represents these values exactly."
+    },
+    {
+      "id": "cond-dificil-51",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nConsole.WriteLine(Math.Abs(0.1 + 0.2 - 0.3) < 1e-9);",
+      "questionTextEn": "What does it print?\nConsole.WriteLine(Math.Abs(0.1 + 0.2 - 0.3) < 1e-9);",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "0",
+        "1E-09",
+        "Error de compilación"
+      ],
+      "explanation": "La diferencia es minúscula (unos 5,5e-17), menor que la tolerancia.",
+      "explanationEn": "The difference is tiny (about 5.5e-17), smaller than the tolerance."
+    },
+    {
+      "id": "cond-dificil-52",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint m = int.MaxValue;\nConsole.WriteLine(m + 1 < 0);",
+      "questionTextEn": "What does it print?\nint m = int.MaxValue;\nConsole.WriteLine(m + 1 < 0);",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "Error de compilación",
+        "2147483648",
+        "Excepción"
+      ],
+      "explanation": "Por defecto el entero desborda y vuelve al valor mínimo negativo.",
+      "explanationEn": "By default the integer overflows and wraps around to the negative minimum."
+    },
+    {
+      "id": "cond-dificil-53",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nConsole.WriteLine(-7 % 2 == 1);",
+      "questionTextEn": "What does it print?\nConsole.WriteLine(-7 % 2 == 1);",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "-1",
+        "1",
+        "Error de compilación"
+      ],
+      "explanation": "El resto conserva el signo del dividendo: -7 % 2 vale -1.",
+      "explanationEn": "The remainder keeps the sign of the dividend: -7 % 2 is -1."
+    },
+    {
+      "id": "cond-dificil-54",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 7, b = 2;\nif (a / b * b == a) Console.WriteLine(\"Exacto\");\nelse Console.WriteLine(\"Con resto\");",
+      "questionTextEn": "What does it print?\nint a = 7, b = 2;\nif (a / b * b == a) Console.WriteLine(\"Exacto\");\nelse Console.WriteLine(\"Con resto\");",
+      "correctAnswer": "Con resto",
+      "incorrectAnswerPool": [
+        "Exacto",
+        "ExactoCon resto",
+        "3.5",
+        "Nada"
+      ],
+      "explanation": "7 / 2 * 2 vale 6, que no es 7.",
+      "explanationEn": "7 / 2 * 2 is 6, which is not 7."
+    },
+    {
+      "id": "cond-dificil-55",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\ndouble n = double.NaN;\nConsole.WriteLine(n > 0 || n <= 0);",
+      "questionTextEn": "What does it print?\ndouble n = double.NaN;\nConsole.WriteLine(n > 0 || n <= 0);",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "NaN",
+        "Error de compilación",
+        "Excepción"
+      ],
+      "explanation": "Cualquier comparación con NaN es false.",
+      "explanationEn": "Any comparison with NaN is false."
+    },
+    {
+      "id": "cond-dificil-56",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nConsole.WriteLine(true ? 1 : 2.5);",
+      "questionTextEn": "What does it print?\nConsole.WriteLine(true ? 1 : 2.5);",
+      "correctAnswer": "1",
+      "incorrectAnswerPool": [
+        "1.0",
+        "2.5",
+        "True",
+        "Error de compilación"
+      ],
+      "explanation": "El resultado se convierte a double, pero 1 se imprime como \"1\".",
+      "explanationEn": "The result is converted to double, but 1 prints as \"1\"."
+    },
+    {
+      "id": "cond-dificil-57",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 2;\nif (a > 5) if (a > 1) Console.Write(\"X\"); else Console.Write(\"Y\"); else Console.Write(\"Z\");",
+      "questionTextEn": "What does it print?\nint a = 2;\nif (a > 5) if (a > 1) Console.Write(\"X\"); else Console.Write(\"Y\"); else Console.Write(\"Z\");",
+      "correctAnswer": "Z",
+      "incorrectAnswerPool": [
+        "X",
+        "Y",
+        "XY",
+        "Nada"
+      ],
+      "explanation": "El primer else va con el if interior; el segundo else va con el if exterior, que es false.",
+      "explanationEn": "The first else goes with the inner if; the second else goes with the outer if, which is false."
+    },
+    {
+      "id": "cond-dificil-58",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = 15;\nstring r;\nif (n > 5) r = \"A\";\nelse if (n > 10) r = \"B\";\nelse r = \"C\";\nConsole.WriteLine(r);",
+      "questionTextEn": "What does it print?\nint n = 15;\nstring r;\nif (n > 5) r = \"A\";\nelse if (n > 10) r = \"B\";\nelse r = \"C\";\nConsole.WriteLine(r);",
+      "correctAnswer": "A",
+      "incorrectAnswerPool": [
+        "B",
+        "C",
+        "AB",
+        "Nada"
+      ],
+      "explanation": "n > 5 se cumple primero, así que nunca se llega a n > 10.",
+      "explanationEn": "n > 5 holds first, so n > 10 is never reached."
+    },
+    {
+      "id": "cond-dificil-59",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nbool b = false;\nif (b = true) Console.Write(\"Entra \");\nConsole.Write(b);",
+      "questionTextEn": "What does it print?\nbool b = false;\nif (b = true) Console.Write(\"Entra \");\nConsole.Write(b);",
+      "correctAnswer": "Entra True",
+      "incorrectAnswerPool": [
+        "True",
+        "Entra False",
+        "False",
+        "Error de compilación"
+      ],
+      "explanation": "b = true asigna true y el resultado de la asignación es la condición.",
+      "explanationEn": "b = true assigns true and the result of the assignment is the condition."
+    },
+    {
+      "id": "cond-dificil-60",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = null;\nConsole.WriteLine(s ?? \"vacío\");",
+      "questionTextEn": "What does it print?\nstring s = null;\nConsole.WriteLine(s ?? \"vacío\");",
+      "correctAnswer": "vacío",
+      "incorrectAnswerPool": [
+        "null",
+        "Nada",
+        "Excepción",
+        "s"
+      ],
+      "explanation": "s es null, así que ?? devuelve el valor de la derecha.",
+      "explanationEn": "s is null, so ?? returns the right-hand value."
+    },
+    {
+      "id": "cond-dificil-61",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene n al final?\nint? n = null;\nn ??= 7;\nn ??= 9;",
+      "questionTextEn": "What value does n hold at the end?\nint? n = null;\nn ??= 7;\nn ??= 9;",
+      "correctAnswer": "7",
+      "incorrectAnswerPool": [
+        "9",
+        "null",
+        "16",
+        "0"
+      ],
+      "explanation": "La primera asignación convierte n en 7; la segunda ya no ocurre porque n no es null.",
+      "explanationEn": "The first assignment makes n 7; the second does not happen because n is no longer null."
+    },
+    {
+      "id": "cond-dificil-62",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = null;\nConsole.WriteLine(s?.Length ?? 0);",
+      "questionTextEn": "What does it print?\nstring s = null;\nConsole.WriteLine(s?.Length ?? 0);",
+      "correctAnswer": "0",
+      "incorrectAnswerPool": [
+        "null",
+        "Excepción",
+        "-1",
+        "4"
+      ],
+      "explanation": "s?.Length da null y ?? lo sustituye por 0.",
+      "explanationEn": "s?.Length gives null and ?? replaces it with 0."
+    },
+    {
+      "id": "cond-dificil-63",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nobject o = 5;\nif (o is int n && n > 3) Console.WriteLine(\"Entero grande\");\nelse Console.WriteLine(\"Otro\");",
+      "questionTextEn": "What does it print?\nobject o = 5;\nif (o is int n && n > 3) Console.WriteLine(\"Entero grande\");\nelse Console.WriteLine(\"Otro\");",
+      "correctAnswer": "Entero grande",
+      "incorrectAnswerPool": [
+        "Otro",
+        "Entero grandeOtro",
+        "5",
+        "Error de compilación"
+      ]
+    },
+    {
+      "id": "cond-dificil-64",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 7;\nConsole.WriteLine(x is > 0 and < 10);",
+      "questionTextEn": "What does it print?\nint x = 7;\nConsole.WriteLine(x is > 0 and < 10);",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "7",
+        "Error de compilación",
+        "Excepción"
+      ]
+    },
+    {
+      "id": "cond-dificil-65",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = null;\nConsole.WriteLine(s is not null);",
+      "questionTextEn": "What does it print?\nstring s = null;\nConsole.WriteLine(s is not null);",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "null",
+        "Error de compilación",
+        "Excepción"
+      ]
+    },
+    {
+      "id": "cond-dificil-66",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nobject a = \"x\";\nobject b = new string('x', 1);\nConsole.WriteLine(a == b);\nConsole.WriteLine(a.Equals(b));",
+      "questionTextEn": "What does it print?\nobject a = \"x\";\nobject b = new string('x', 1);\nConsole.WriteLine(a == b);\nConsole.WriteLine(a.Equals(b));",
+      "correctAnswer": "False\nTrue",
+      "incorrectAnswerPool": [
+        "True\nTrue",
+        "False\nFalse",
+        "True\nFalse",
+        "Error de compilación"
+      ],
+      "explanation": "Con object, == compara referencias, mientras que Equals compara el contenido del string.",
+      "explanationEn": "With object, == compares references, while Equals compares the string content."
+    },
+    {
+      "id": "cond-dificil-67",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = \"\";\nConsole.WriteLine(s == null);",
+      "questionTextEn": "What does it print?\nstring s = \"\";\nConsole.WriteLine(s == null);",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "Excepción",
+        "Error de compilación",
+        "null"
+      ],
+      "explanation": "Una cadena vacía no es null.",
+      "explanationEn": "An empty string is not null."
+    },
+    {
+      "id": "cond-dificil-68",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para no evaluar s.Length cuando s es null.",
+      "questionTextEn": "Fill in the blank so s.Length is not evaluated when s is null.",
+      "codeTemplate": "string s = null;\nif (s != null ____ s.Length > 0)\n    Console.WriteLine(\"Con texto\");\nelse\n    Console.WriteLine(\"Vacío\");",
+      "expectedAnswer": "&&"
+    },
+    {
+      "id": "cond-dificil-69",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para que n solo reciba 5 cuando es null.",
+      "questionTextEn": "Fill in the blank so n only receives 5 when it is null.",
+      "codeTemplate": "int? n = 3;\nn ____ 5;\nConsole.WriteLine(n);",
+      "expectedAnswer": "??="
+    },
+    {
+      "id": "cond-dificil-70",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con el operador de patrón de tipo.",
+      "questionTextEn": "Fill in the type-pattern operator.",
+      "codeTemplate": "object o = 42;\nif (o ____ int n && n > 40)\n    Console.WriteLine(\"Entero grande\");",
+      "expectedAnswer": "is"
+    },
+    {
+      "id": "cond-dificil-71",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el patrón para comprobar que s tiene valor.",
+      "questionTextEn": "Fill in the pattern to check that s has a value.",
+      "codeTemplate": "string s = \"x\";\nif (s is ____ null)\n    Console.WriteLine(\"Tiene valor\");",
+      "expectedAnswer": "not"
+    },
+    {
+      "id": "cond-dificil-72",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el patrón relacional que une las dos condiciones.",
+      "questionTextEn": "Fill in the relational pattern that joins both conditions.",
+      "codeTemplate": "int x = 5;\nif (x is > 0 ____ < 10)\n    Console.WriteLine(\"Un dígito\");",
+      "expectedAnswer": "and"
+    },
+    {
+      "id": "cond-dificil-73",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con el operador de acceso seguro a null.",
+      "questionTextEn": "Fill in the null-safe access operator.",
+      "codeTemplate": "string s = null;\nConsole.WriteLine(s____Length ?? 0);",
+      "expectedAnswer": "?."
+    },
+    {
+      "id": "cond-dificil-74",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para que se evalúen siempre las dos partes de la conjunción.",
+      "questionTextEn": "Fill in the blank so both parts of the conjunction are always evaluated.",
+      "codeTemplate": "int c = 0;\nif (c > 0 ____ ++c > 0) { }\nConsole.WriteLine(c);",
+      "expectedAnswer": "&"
+    },
+    {
+      "id": "cond-dificil-75",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el símbolo que abre la rama del ternario anidado.",
+      "questionTextEn": "Fill in the symbol that opens the branch of the nested ternary.",
+      "codeTemplate": "int n = -2;\nstring r = n > 0 ? \"pos\" : n < 0 ____ \"neg\" : \"cero\";\nConsole.WriteLine(r);",
+      "expectedAnswer": "?"
+    },
+    {
+      "id": "cond-dificil-76",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con el método que detecta un NaN.",
+      "questionTextEn": "Fill in the method that detects a NaN.",
+      "codeTemplate": "double x = 0.0 / 0.0;\nif (double.____(x))\n    Console.WriteLine(\"No es número\");",
+      "expectedAnswer": "IsNaN"
+    },
+    {
+      "id": "cond-dificil-77",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para comparar ignorando mayúsculas y minúsculas.",
+      "questionTextEn": "Fill in the blank to compare ignoring case.",
+      "codeTemplate": "string a = \"Hola\", b = \"hola\";\nif (string.Equals(a, b, StringComparison.____))\n    Console.WriteLine(\"Iguales\");\nelse\n    Console.WriteLine(\"Distintos\");",
+      "expectedAnswer": "OrdinalIgnoreCase"
+    },
+    {
+      "id": "cond-dificil-78",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para que un número negativo impar también cuente como impar.",
+      "questionTextEn": "Fill in the blank so a negative odd number also counts as odd.",
+      "codeTemplate": "int n = -7;\nbool esImpar = n % 2 ____ 0;\nConsole.WriteLine(esImpar);",
+      "expectedAnswer": "!="
+    },
+    {
+      "id": "cond-dificil-79",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con el operador que da 20 si edad es null.",
+      "questionTextEn": "Fill in the operator that yields 20 if edad is null.",
+      "codeTemplate": "int? edad = null;\nif ((edad ____ 20) >= 18)\n    Console.WriteLine(\"Adulto\");\nelse\n    Console.WriteLine(\"Menor\");",
+      "expectedAnswer": "??"
+    },
+    {
+      "id": "cond-dificil-80",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para evitar leer la longitud de un texto nulo.",
+      "questionTextEn": "Put the lines in order to avoid reading the length of a null text.",
+      "codeBlocks": [
+        "string s = null;",
+        "if (s != null && s.Length > 0)",
+        "    Console.WriteLine(\"Con texto\");",
+        "else",
+        "    Console.WriteLine(\"Vacío\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "cond-dificil-81",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para clasificar un valor con else if.",
+      "questionTextEn": "Put the lines in order to classify a value with else if.",
+      "codeBlocks": [
+        "int x = 7;",
+        "string r = \"n\" + x;",
+        "if (x > 10)",
+        "    r = \"grande\";",
+        "else if (x > 5)",
+        "    r = \"mediano\";",
+        "Console.WriteLine(r);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "cond-dificil-82",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para aplicar la ley de De Morgan.",
+      "questionTextEn": "Put the lines in order to apply De Morgan's law.",
+      "codeBlocks": [
+        "bool a = true;",
+        "bool b = !a;",
+        "if (!(a && b))",
+        "    Console.WriteLine(\"No son ambas\");",
+        "else",
+        "    Console.WriteLine(\"Ambas\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "cond-dificil-83",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para dar un nombre por defecto.",
+      "questionTextEn": "Put the lines in order to give a default name.",
+      "codeBlocks": [
+        "string apodo = null;",
+        "string nombre = apodo ?? \"Invitado\";",
+        "Console.WriteLine(nombre);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "cond-dificil-84",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para incrementar un nullable solo si supera 10.",
+      "questionTextEn": "Put the lines in order to increment a nullable only if it exceeds 10.",
+      "codeBlocks": [
+        "int? n = null;",
+        "n ??= 10;",
+        "if (n > 10)",
+        "    n = n + 1;",
+        "Console.WriteLine(n);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "cond-dificil-85",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el patrón de tipo con else.",
+      "questionTextEn": "Put the type pattern with else in order.",
+      "codeBlocks": [
+        "object o = 42;",
+        "if (o is int n && n > 40)",
+        "    Console.WriteLine(\"Entero grande\");",
+        "else",
+        "    Console.WriteLine(\"Otro\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "cond-dificil-86",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para clasificar un triángulo.",
+      "questionTextEn": "Put the lines in order to classify a triangle.",
+      "codeBlocks": [
+        "int a = 3, b = 3, c = 5;",
+        "if (a == b && b == c)",
+        "    Console.WriteLine(\"Equilátero\");",
+        "else if (a == b || b == c || a == c)",
+        "    Console.WriteLine(\"Isósceles\");",
+        "else",
+        "    Console.WriteLine(\"Escaleno\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "cond-dificil-87",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para saber si un año es bisiesto.",
+      "questionTextEn": "Put the lines in order to find out whether a year is a leap year.",
+      "codeBlocks": [
+        "int anio = 1900;",
+        "bool bisiesto = anio % 4 == 0 && (anio % 100 != 0 || anio % 400 == 0);",
+        "Console.WriteLine(bisiesto);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "cond-dificil-88",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el ternario encadenado.",
+      "questionTextEn": "Put the chained ternary in order.",
+      "codeBlocks": [
+        "int n = 0;",
+        "string signo = n > 0 ? \"positivo\"",
+        "    : n < 0 ? \"negativo\"",
+        "    : \"cero\";",
+        "Console.WriteLine(signo);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "cond-dificil-89",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para rechazar un retiro mayor que el saldo.",
+      "questionTextEn": "Put the lines in order to reject a withdrawal larger than the balance.",
+      "codeBlocks": [
+        "double saldo = 100;",
+        "double retiro = saldo + 50;",
+        "if (retiro > saldo)",
+        "    Console.WriteLine(\"Fondos insuficientes\");",
+        "else",
+        "    saldo -= retiro;"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "cond-dificil-90",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para comparar doubles con tolerancia.",
+      "questionTextEn": "Put the lines in order to compare doubles with a tolerance.",
+      "codeBlocks": [
+        "double a = 0.1 + 0.2;",
+        "double b = Math.Round(a, 5);",
+        "if (Math.Abs(a - b) < 1e-9)",
+        "    Console.WriteLine(\"Casi iguales\");",
+        "else",
+        "    Console.WriteLine(\"Distintos\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "cond-dificil-91",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para no dividir entre cero.",
+      "questionTextEn": "Put the lines in order to avoid dividing by zero.",
+      "codeBlocks": [
+        "int b = 0;",
+        "int a = b + 10;",
+        "if (b != 0 && a / b > 1)",
+        "    Console.WriteLine(\"Mayor que 1\");",
+        "else",
+        "    Console.WriteLine(\"Sin dividir\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "cond-dificil-92",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque lanza una excepción al ejecutarse?\nint[] a = { 1, 2, 3 };\nint i = 3;",
+      "questionTextEn": "Which block throws an exception when it runs?\nint[] a = { 1, 2, 3 };\nint i = 3;",
+      "codeSnippetsOptions": [
+        "if (a[i] > 0 && i < a.Length) { }",
+        "if (i < a.Length && a[i] > 0) { }",
+        "if (i >= a.Length || a[i] > 0) { }",
+        "if (i < 3 && a[i] == 1) { }"
+      ],
+      "buggyIndex": 0,
+      "explanation": "a[i] se evalúa antes de comprobar el índice: IndexOutOfRangeException.",
+      "explanationEn": "a[i] is evaluated before the index is checked: IndexOutOfRangeException."
+    },
+    {
+      "id": "cond-dificil-93",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "Debe dar true solo si es fin de semana (sab o dom) Y hay sol. ¿Qué bloque tiene un error de precedencia?\nstring d = \"sab\";\nbool sol = false;",
+      "questionTextEn": "It must give true only if it is the weekend (sab or dom) AND it is sunny. Which block has a precedence error?\nstring d = \"sab\";\nbool sol = false;",
+      "codeSnippetsOptions": [
+        "bool r = (d == \"sab\" || d == \"dom\") && sol; Console.Write(r);",
+        "bool r = d == \"sab\" && sol || d == \"dom\" && sol; Console.Write(r);",
+        "bool r = !(d != \"sab\" && d != \"dom\") && sol; Console.Write(r);",
+        "bool r = d == \"sab\" || d == \"dom\" && sol; Console.Write(r);"
+      ],
+      "buggyIndex": 3,
+      "explanation": "&& se evalúa antes que ||, así que \"sab\" basta sin mirar el sol.",
+      "explanationEn": "&& goes before ||, so \"sab\" is enough without looking at the sun."
+    },
+    {
+      "id": "cond-dificil-94",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "Debe mostrar \"Iguales\" si a vale 0.3 (aproximadamente). ¿Qué bloque tiene un error?\ndouble a = 0.1 + 0.2;",
+      "questionTextEn": "It must print \"Iguales\" if a is 0.3 (approximately). Which block has an error?\ndouble a = 0.1 + 0.2;",
+      "codeSnippetsOptions": [
+        "Console.Write(a == 0.3 ? \"Iguales\" : \"Distintos\");",
+        "Console.Write(Math.Abs(a - 0.3) < 1e-9 ? \"Iguales\" : \"Distintos\");",
+        "Console.Write(Math.Round(a, 2) == 0.3 ? \"Iguales\" : \"Distintos\");",
+        "Console.Write(Math.Abs(a - 0.3) <= 0.0001 ? \"Iguales\" : \"Distintos\");"
+      ],
+      "buggyIndex": 0,
+      "explanation": "0.1 + 0.2 no es exactamente 0.3 en double, así que == da false.",
+      "explanationEn": "0.1 + 0.2 is not exactly 0.3 in double, so == gives false."
+    },
+    {
+      "id": "cond-dificil-95",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "Debe mostrar \"Sí\" si el promedio de a y b supera 7.2. ¿Qué bloque tiene un error?\nint a = 7, b = 8;",
+      "questionTextEn": "It must print \"Sí\" if the average of a and b exceeds 7.2. Which block has an error?\nint a = 7, b = 8;",
+      "codeSnippetsOptions": [
+        "if ((a + b) / 2.0 > 7.2) Console.Write(\"Sí\"); else Console.Write(\"No\");",
+        "if ((a + b) > 14.4) Console.Write(\"Sí\"); else Console.Write(\"No\");",
+        "if ((double)(a + b) / 2 > 7.2) Console.Write(\"Sí\"); else Console.Write(\"No\");",
+        "if ((a + b) / 2 > 7.2) Console.Write(\"Sí\"); else Console.Write(\"No\");"
+      ],
+      "buggyIndex": 3,
+      "explanation": "(a + b) / 2 es división entera y vale 7, que no supera 7.2.",
+      "explanationEn": "(a + b) / 2 is an integer division and gives 7, which does not exceed 7.2."
+    },
+    {
+      "id": "cond-dificil-96",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?\nint x = 3;",
+      "questionTextEn": "Which line does not compile?\nint x = 3;",
+      "codeSnippetsOptions": [
+        "var r = x > 0 ? 1 : 2;",
+        "var r = x > 0 ? \"a\" : 1;",
+        "var r = x > 0 ? 1 : 2.5;",
+        "var r = x > 0 ? \"a\" : \"b\";"
+      ],
+      "buggyIndex": 1,
+      "explanation": "No hay un tipo común entre string e int, así que var no puede deducir el tipo.",
+      "explanationEn": "There is no common type between string and int, so var cannot infer the type."
+    },
+    {
+      "id": "cond-dificil-97",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque no compila?\nint x = 3;",
+      "questionTextEn": "Which block does not compile?\nint x = 3;",
+      "codeSnippetsOptions": [
+        "int r; if (x > 0) r = 1; else r = 2; Console.Write(r);",
+        "int r; if (x > 0) r = 1; Console.Write(r);",
+        "int r = 0; if (x > 0) r = 1; Console.Write(r);",
+        "int r; if (x > 0) r = 1; else if (x < 0) r = 2; else r = 3; Console.Write(r);"
+      ],
+      "buggyIndex": 1,
+      "explanation": "Si la condición es falsa, r queda sin asignar y C# no permite usarla.",
+      "explanationEn": "If the condition is false, r stays unassigned and C# does not allow using it."
+    },
+    {
+      "id": "cond-dificil-98",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?\nint x = 3;",
+      "questionTextEn": "Which line does not compile?\nint x = 3;",
+      "codeSnippetsOptions": [
+        "if (x > 0) { int y = 1; }",
+        "if (x > 0) x = 1;",
+        "int y; if (x > 0) y = 1;",
+        "if (x > 0) int y = 1;"
+      ],
+      "buggyIndex": 3,
+      "explanation": "Una declaración no puede ser la instrucción directa de un if sin llaves.",
+      "explanationEn": "A declaration cannot be the direct statement of an if without braces."
+    },
+    {
+      "id": "cond-dificil-99",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque no compila?\nint x = 5, y = 0;",
+      "questionTextEn": "Which block does not compile?\nint x = 5, y = 0;",
+      "codeSnippetsOptions": [
+        "if (x > 0) x = 1; else x = 3;",
+        "if (x > 0) { x = 1; y = 2; } else x = 3;",
+        "if (x > 0) x = 1; y = 2; else x = 3;",
+        "if (x > 0) { x = 1; } else { y = 2; }"
+      ],
+      "buggyIndex": 2,
+      "explanation": "Sin llaves, el if solo abarca x = 1; y el else queda sin if.",
+      "explanationEn": "Without braces, the if only covers x = 1; and the else is left without an if."
+    },
+    {
+      "id": "cond-dificil-100",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "Debe mostrar \"Negativo\" si x es negativo o cero, \"Menor\" si está entre 1 y 9 y nada si es mayor. ¿Qué bloque tiene un error de lógica?\nint x = -5;",
+      "questionTextEn": "It must print \"Negativo\" if x is negative or zero, \"Menor\" if it is between 1 and 9 and nothing if larger. Which block has a logic error?\nint x = -5;",
+      "codeSnippetsOptions": [
+        "if (x > 0) { if (x < 10) Console.Write(\"Menor\"); } else Console.Write(\"Negativo\");",
+        "if (x > 0 && x < 10) Console.Write(\"Menor\"); else if (x <= 0) Console.Write(\"Negativo\");",
+        "if (x <= 0) Console.Write(\"Negativo\"); else if (x < 10) Console.Write(\"Menor\");",
+        "if (x > 0) if (x < 10) Console.Write(\"Menor\"); else Console.Write(\"Negativo\");"
+      ],
+      "buggyIndex": 3,
+      "explanation": "Sin llaves, el else se une al if interior (x < 10), no al exterior.",
+      "explanationEn": "Without braces, the else pairs with the inner if (x < 10), not the outer one."
+    },
+    {
+      "id": "cond-dificil-101",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "Debe mostrar \"Listo\" solo si ok es true. ¿Qué bloque tiene un error?\nbool ok = false;",
+      "questionTextEn": "It must print \"Listo\" only if ok is true. Which block has an error?\nbool ok = false;",
+      "codeSnippetsOptions": [
+        "if (ok) Console.Write(\"Listo\");",
+        "if (ok == true) Console.Write(\"Listo\");",
+        "if (!ok == false) Console.Write(\"Listo\");",
+        "if (ok = true) Console.Write(\"Listo\");"
+      ],
+      "buggyIndex": 3,
+      "explanation": "ok = true asigna true y siempre cumple la condición.",
+      "explanationEn": "ok = true assigns true and always satisfies the condition."
+    },
+    {
+      "id": "cond-dificil-102",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "Debe mostrar cuántas veces x fue positivo (sin tocar cont si x no es positivo). ¿Qué bloque tiene un error?\nint x = -1, cont = 0;",
+      "questionTextEn": "It must not touch cont when x is not positive and then print it. Which block has an error?\nint x = -1, cont = 0;",
+      "codeSnippetsOptions": [
+        "if (x > 0 || ++cont > 0) { } Console.Write(cont);",
+        "if (x > 0) cont++; Console.Write(cont);",
+        "if (x > 0 && ++cont > 0) { } Console.Write(cont);",
+        "cont += x > 0 ? 1 : 0; Console.Write(cont);"
+      ],
+      "buggyIndex": 0,
+      "explanation": "Con ||, si x > 0 es false se evalúa ++cont y cont cambia.",
+      "explanationEn": "With ||, if x > 0 is false then ++cont is evaluated and cont changes."
+    },
+    {
+      "id": "cond-dificil-103",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "Debe dar true para \"ANA\" ignorando mayúsculas. ¿Qué bloque tiene un error?\nstring nombre = \"ANA\";",
+      "questionTextEn": "It must give true for \"ANA\" ignoring case. Which block has an error?\nstring nombre = \"ANA\";",
+      "codeSnippetsOptions": [
+        "Console.Write(nombre.ToLower() == \"ana\");",
+        "Console.Write(string.Equals(nombre, \"ana\", StringComparison.OrdinalIgnoreCase));",
+        "Console.Write(nombre.ToUpper() == \"ANA\");",
+        "Console.Write(nombre == \"ana\");"
+      ],
+      "buggyIndex": 3,
+      "explanation": "== distingue mayúsculas: \"ANA\" no es \"ana\".",
+      "explanationEn": "== is case sensitive: \"ANA\" is not \"ana\"."
+    },
+    {
+      "id": "cond-dificil-104",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque falla al ejecutarse con o = \"5\"?\nobject o = \"5\";",
+      "questionTextEn": "Which block fails at run time with o = \"5\"?\nobject o = \"5\";",
+      "codeSnippetsOptions": [
+        "if ((int)o > 3) { }",
+        "if (o is int n && n > 3) { }",
+        "if (o is string s && s.Length > 0) { }",
+        "if (o != null && o.ToString() == \"5\") { }"
+      ],
+      "buggyIndex": 0,
+      "explanation": "El cast (int) sobre un string da InvalidCastException; is comprueba el tipo antes.",
+      "explanationEn": "The (int) cast on a string gives InvalidCastException; is checks the type first."
+    },
+    {
+      "id": "cond-dificil-105",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?\nint x = 5;",
+      "questionTextEn": "Which line does not compile?\nint x = 5;",
+      "codeSnippetsOptions": [
+        "if (x is > 0 and < 10) { }",
+        "if (x is > 0 && < 10) { }",
+        "if (x > 0 && x < 10) { }",
+        "if (x is not 0) { }"
+      ],
+      "buggyIndex": 1,
+      "explanation": "Dentro de un patrón se une con and/or, no con && y un operando incompleto.",
+      "explanationEn": "Inside a pattern use and/or, not && with an incomplete operand."
     }
   ]
 }

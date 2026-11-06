@@ -73,6 +73,1597 @@
         "if (x != 0) { }"
       ],
       "buggyIndex": 2
+    },
+    {
+      "id": "cond-facil-6",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué tipo de valor tiene que producir la condición de un if?",
+      "questionTextEn": "What type of value must the condition of an if produce?",
+      "correctAnswer": "bool",
+      "incorrectAnswerPool": [
+        "int",
+        "string",
+        "char",
+        "double"
+      ],
+      "correctAnswerEn": "bool",
+      "incorrectAnswerPoolEn": [
+        "int",
+        "string",
+        "char",
+        "double"
+      ]
+    },
+    {
+      "id": "cond-facil-7",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué operador se usa para comprobar si dos valores son iguales?",
+      "questionTextEn": "Which operator checks whether two values are equal?",
+      "correctAnswer": "==",
+      "incorrectAnswerPool": [
+        "=",
+        "!=",
+        "=>",
+        "==="
+      ],
+      "correctAnswerEn": "==",
+      "incorrectAnswerPoolEn": [
+        "=",
+        "!=",
+        "=>",
+        "==="
+      ]
+    },
+    {
+      "id": "cond-facil-8",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué operador significa \"distinto de\" en C#?",
+      "questionTextEn": "Which operator means \"not equal to\" in C#?",
+      "correctAnswer": "!=",
+      "incorrectAnswerPool": [
+        "<>",
+        "=!",
+        "!==",
+        "=/="
+      ],
+      "correctAnswerEn": "!=",
+      "incorrectAnswerPoolEn": [
+        "<>",
+        "=!",
+        "!==",
+        "=/="
+      ]
+    },
+    {
+      "id": "cond-facil-9",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué operador significa \"mayor o igual que\"?",
+      "questionTextEn": "Which operator means \"greater than or equal to\"?",
+      "correctAnswer": ">=",
+      "incorrectAnswerPool": [
+        "=>",
+        ">",
+        "==>",
+        ">>"
+      ],
+      "correctAnswerEn": ">=",
+      "incorrectAnswerPoolEn": [
+        "=>",
+        ">",
+        "==>",
+        ">>"
+      ]
+    },
+    {
+      "id": "cond-facil-10",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué operador significa \"menor o igual que\"?",
+      "questionTextEn": "Which operator means \"less than or equal to\"?",
+      "correctAnswer": "<=",
+      "incorrectAnswerPool": [
+        "=<",
+        "<",
+        "<<",
+        "<>"
+      ],
+      "correctAnswerEn": "<=",
+      "incorrectAnswerPoolEn": [
+        "=<",
+        "<",
+        "<<",
+        "<>"
+      ]
+    },
+    {
+      "id": "cond-facil-11",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuál es la diferencia entre = y == en C#?",
+      "questionTextEn": "What is the difference between = and == in C#?",
+      "correctAnswer": "= asigna un valor y == compara dos valores",
+      "incorrectAnswerPool": [
+        "= compara y == asigna",
+        "Son idénticos y se pueden intercambiar",
+        "= es para números y == es para texto",
+        "== solo se puede usar dentro de un while"
+      ],
+      "correctAnswerEn": "= assigns a value and == compares two values",
+      "incorrectAnswerPoolEn": [
+        "= compares and == assigns",
+        "They are identical and can be swapped",
+        "= is for numbers and == is for text",
+        "== can only be used inside a while"
+      ]
+    },
+    {
+      "id": "cond-facil-12",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué palabra clave inicia una condición en C#?",
+      "questionTextEn": "Which keyword starts a conditional in C#?",
+      "correctAnswer": "if",
+      "incorrectAnswerPool": [
+        "when",
+        "check",
+        "si",
+        "cond"
+      ],
+      "correctAnswerEn": "if",
+      "incorrectAnswerPoolEn": [
+        "when",
+        "check",
+        "si",
+        "cond"
+      ]
+    },
+    {
+      "id": "cond-facil-13",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Entre qué símbolos se escribe la condición de un if?",
+      "questionTextEn": "Between which symbols is the condition of an if written?",
+      "correctAnswer": "Paréntesis ( )",
+      "incorrectAnswerPool": [
+        "Llaves { }",
+        "Corchetes [ ]",
+        "Comillas \" \"",
+        "Ángulos < >"
+      ],
+      "correctAnswerEn": "Parentheses ( )",
+      "incorrectAnswerPoolEn": [
+        "Curly braces { }",
+        "Square brackets [ ]",
+        "Quotation marks \" \"",
+        "Angle brackets < >"
+      ]
+    },
+    {
+      "id": "cond-facil-14",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué símbolos agrupan varias instrucciones dentro de un if?",
+      "questionTextEn": "Which symbols group several statements inside an if?",
+      "correctAnswer": "Llaves { }",
+      "incorrectAnswerPool": [
+        "Paréntesis ( )",
+        "Corchetes [ ]",
+        "Comillas \" \"",
+        "Barras / /"
+      ],
+      "correctAnswerEn": "Curly braces { }",
+      "incorrectAnswerPoolEn": [
+        "Parentheses ( )",
+        "Square brackets [ ]",
+        "Quotation marks \" \"",
+        "Slashes / /"
+      ]
+    },
+    {
+      "id": "cond-facil-15",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuántos bloques else puede tener un mismo if?",
+      "questionTextEn": "How many else blocks can a single if have?",
+      "correctAnswer": "Como máximo uno",
+      "incorrectAnswerPool": [
+        "Ninguno, else no existe en C#",
+        "Tantos como se quiera",
+        "Exactamente dos",
+        "Uno por cada línea de código"
+      ],
+      "correctAnswerEn": "At most one",
+      "incorrectAnswerPoolEn": [
+        "None, else does not exist in C#",
+        "As many as you want",
+        "Exactly two",
+        "One for each line of code"
+      ]
+    },
+    {
+      "id": "cond-facil-16",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuándo se ejecuta el bloque else?",
+      "questionTextEn": "When does the else block run?",
+      "correctAnswer": "Cuando la condición del if es falsa",
+      "incorrectAnswerPool": [
+        "Cuando la condición del if es verdadera",
+        "Siempre, después del if",
+        "Nunca, solo sirve de adorno",
+        "Solo cuando hay un error"
+      ],
+      "correctAnswerEn": "When the if condition is false",
+      "incorrectAnswerPoolEn": [
+        "When the if condition is true",
+        "Always, after the if",
+        "Never, it is only decoration",
+        "Only when there is an error"
+      ]
+    },
+    {
+      "id": "cond-facil-17",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Para qué sirve else if?",
+      "questionTextEn": "What is else if for?",
+      "correctAnswer": "Para probar otra condición si la anterior fue falsa",
+      "incorrectAnswerPool": [
+        "Para repetir un bloque varias veces",
+        "Para declarar una variable",
+        "Para terminar el programa",
+        "Para comparar dos textos"
+      ],
+      "correctAnswerEn": "To test another condition when the previous one was false",
+      "incorrectAnswerPoolEn": [
+        "To repeat a block several times",
+        "To declare a variable",
+        "To end the program",
+        "To compare two strings"
+      ]
+    },
+    {
+      "id": "cond-facil-18",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué hace el operador ! delante de una condición?",
+      "questionTextEn": "What does the ! operator do in front of a condition?",
+      "correctAnswer": "Invierte su valor: true pasa a false y al revés",
+      "incorrectAnswerPool": [
+        "La convierte en un número",
+        "La repite dos veces",
+        "Comprueba si es nula",
+        "Suma uno al resultado"
+      ],
+      "correctAnswerEn": "Inverts its value: true becomes false and vice versa",
+      "incorrectAnswerPoolEn": [
+        "Turns it into a number",
+        "Repeats it twice",
+        "Checks whether it is null",
+        "Adds one to the result"
+      ]
+    },
+    {
+      "id": "cond-facil-19",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué tipo de dato guarda solo true o false?",
+      "questionTextEn": "Which data type stores only true or false?",
+      "correctAnswer": "bool",
+      "incorrectAnswerPool": [
+        "int",
+        "char",
+        "string",
+        "float"
+      ],
+      "correctAnswerEn": "bool",
+      "incorrectAnswerPoolEn": [
+        "int",
+        "char",
+        "string",
+        "float"
+      ]
+    },
+    {
+      "id": "cond-facil-20",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué ocurre si la condición de un if es falsa y no hay else?",
+      "questionTextEn": "What happens if the condition of an if is false and there is no else?",
+      "correctAnswer": "El bloque del if se omite y el programa sigue",
+      "incorrectAnswerPool": [
+        "El programa se detiene con un error",
+        "Se ejecuta el bloque igualmente",
+        "Se repite la condición hasta que sea verdadera",
+        "La variable se borra"
+      ],
+      "correctAnswerEn": "The if block is skipped and the program continues",
+      "incorrectAnswerPoolEn": [
+        "The program stops with an error",
+        "The block runs anyway",
+        "The condition repeats until it is true",
+        "The variable is deleted"
+      ]
+    },
+    {
+      "id": "cond-facil-21",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cómo se escribe el valor verdadero en C#?",
+      "questionTextEn": "How is the true value written in C#?",
+      "correctAnswer": "true",
+      "incorrectAnswerPool": [
+        "True",
+        "TRUE",
+        "\"true\"",
+        "yes"
+      ],
+      "correctAnswerEn": "true",
+      "incorrectAnswerPoolEn": [
+        "True",
+        "TRUE",
+        "\"true\"",
+        "yes"
+      ],
+      "explanation": "En C# las palabras clave true y false van en minúscula.",
+      "explanationEn": "In C#, the keywords true and false are lowercase."
+    },
+    {
+      "id": "cond-facil-22",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué condición comprueba que n es un número par?",
+      "questionTextEn": "Which condition checks that n is an even number?",
+      "correctAnswer": "n % 2 == 0",
+      "incorrectAnswerPool": [
+        "n / 2 == 0",
+        "n % 2 == 1",
+        "n * 2 == 0",
+        "n % 2 = 0"
+      ]
+    },
+    {
+      "id": "cond-facil-23",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué condición comprueba que un número x es positivo (mayor que cero)?",
+      "questionTextEn": "Which condition checks that a number x is positive (greater than zero)?",
+      "correctAnswer": "x > 0",
+      "incorrectAnswerPool": [
+        "x >= 0",
+        "x < 0",
+        "x == 0",
+        "x = 0"
+      ]
+    },
+    {
+      "id": "cond-facil-24",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Es válido escribir un if sin llaves cuando solo hay una instrucción?",
+      "questionTextEn": "Is it valid to write an if without braces when there is only one statement?",
+      "correctAnswer": "Sí, la instrucción siguiente queda dentro del if",
+      "incorrectAnswerPool": [
+        "No, las llaves son siempre obligatorias",
+        "Sí, pero entonces else deja de funcionar",
+        "Solo si la condición usa ==",
+        "Solo dentro de Main"
+      ],
+      "correctAnswerEn": "Yes, the next statement belongs to the if",
+      "incorrectAnswerPoolEn": [
+        "No, braces are always mandatory",
+        "Yes, but then else stops working",
+        "Only if the condition uses ==",
+        "Only inside Main"
+      ]
+    },
+    {
+      "id": "cond-facil-25",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Puede existir un if sin else?",
+      "questionTextEn": "Can an if exist without an else?",
+      "correctAnswer": "Sí, else es opcional",
+      "incorrectAnswerPool": [
+        "No, todo if necesita else",
+        "Solo si hay dos condiciones",
+        "Solo en métodos void",
+        "Solo si la variable es bool"
+      ],
+      "correctAnswerEn": "Yes, else is optional",
+      "incorrectAnswerPoolEn": [
+        "No, every if needs an else",
+        "Only if there are two conditions",
+        "Only in void methods",
+        "Only if the variable is a bool"
+      ]
+    },
+    {
+      "id": "cond-facil-26",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué resultado tiene la expresión 5 > 3?",
+      "questionTextEn": "What is the result of the expression 5 > 3?",
+      "correctAnswer": "true",
+      "incorrectAnswerPool": [
+        "false",
+        "2",
+        "8",
+        "5"
+      ]
+    },
+    {
+      "id": "cond-facil-27",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué resultado tiene la expresión !true?",
+      "questionTextEn": "What is the result of the expression !true?",
+      "correctAnswer": "false",
+      "incorrectAnswerPool": [
+        "true",
+        "0",
+        "1",
+        "null"
+      ]
+    },
+    {
+      "id": "cond-facil-28",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué resultado tiene la expresión 4 != 4?",
+      "questionTextEn": "What is the result of the expression 4 != 4?",
+      "correctAnswer": "false",
+      "incorrectAnswerPool": [
+        "true",
+        "0",
+        "4",
+        "8"
+      ]
+    },
+    {
+      "id": "cond-facil-29",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué resultado tiene la expresión 7 <= 7?",
+      "questionTextEn": "What is the result of the expression 7 <= 7?",
+      "correctAnswer": "true",
+      "incorrectAnswerPool": [
+        "false",
+        "0",
+        "7",
+        "14"
+      ]
+    },
+    {
+      "id": "cond-facil-30",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint edad = 20;\nif (edad >= 18) Console.WriteLine(\"Mayor\");\nelse Console.WriteLine(\"Menor\");",
+      "questionTextEn": "What does it print?\nint edad = 20;\nif (edad >= 18) Console.WriteLine(\"Mayor\");\nelse Console.WriteLine(\"Menor\");",
+      "correctAnswer": "Mayor",
+      "incorrectAnswerPool": [
+        "Menor",
+        "MayorMenor",
+        "edad",
+        "20"
+      ]
+    },
+    {
+      "id": "cond-facil-31",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = 10;\nif (n == 10) Console.WriteLine(\"Diez\");",
+      "questionTextEn": "What does it print?\nint n = 10;\nif (n == 10) Console.WriteLine(\"Diez\");",
+      "correctAnswer": "Diez",
+      "incorrectAnswerPool": [
+        "10",
+        "n",
+        "Nada",
+        "True"
+      ]
+    },
+    {
+      "id": "cond-facil-32",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint p = 2;\nif (p > 5) Console.WriteLine(\"Alto\");\nConsole.WriteLine(\"Fin\");",
+      "questionTextEn": "What does it print?\nint p = 2;\nif (p > 5) Console.WriteLine(\"Alto\");\nConsole.WriteLine(\"Fin\");",
+      "correctAnswer": "Fin",
+      "incorrectAnswerPool": [
+        "Alto",
+        "AltoFin",
+        "Alto Fin",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-facil-33",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nbool b = false;\nif (b) Console.WriteLine(\"Sí\");\nelse Console.WriteLine(\"No\");",
+      "questionTextEn": "What does it print?\nbool b = false;\nif (b) Console.WriteLine(\"Sí\");\nelse Console.WriteLine(\"No\");",
+      "correctAnswer": "No",
+      "incorrectAnswerPool": [
+        "Sí",
+        "SíNo",
+        "False",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-facil-34",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 7;\nif (a % 2 == 0) Console.WriteLine(\"Par\");\nelse Console.WriteLine(\"Impar\");",
+      "questionTextEn": "What does it print?\nint a = 7;\nif (a % 2 == 0) Console.WriteLine(\"Par\");\nelse Console.WriteLine(\"Impar\");",
+      "correctAnswer": "Impar",
+      "incorrectAnswerPool": [
+        "Par",
+        "ParImpar",
+        "1",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-facil-35",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 5;\nif (x != 5) Console.WriteLine(\"Distinto\");\nelse Console.WriteLine(\"Igual\");",
+      "questionTextEn": "What does it print?\nint x = 5;\nif (x != 5) Console.WriteLine(\"Distinto\");\nelse Console.WriteLine(\"Igual\");",
+      "correctAnswer": "Igual",
+      "incorrectAnswerPool": [
+        "Distinto",
+        "DistintoIgual",
+        "x",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-facil-36",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint t = 30;\nif (t < 30) Console.WriteLine(\"Fresco\");\nelse Console.WriteLine(\"Caluroso\");",
+      "questionTextEn": "What does it print?\nint t = 30;\nif (t < 30) Console.WriteLine(\"Fresco\");\nelse Console.WriteLine(\"Caluroso\");",
+      "correctAnswer": "Caluroso",
+      "incorrectAnswerPool": [
+        "Fresco",
+        "FrescoCaluroso",
+        "30",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-facil-37",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint nota = 15;\nif (nota >= 18) Console.WriteLine(\"Excelente\");\nelse if (nota >= 11) Console.WriteLine(\"Aprobado\");\nelse Console.WriteLine(\"Desaprobado\");",
+      "questionTextEn": "What does it print?\nint nota = 15;\nif (nota >= 18) Console.WriteLine(\"Excelente\");\nelse if (nota >= 11) Console.WriteLine(\"Aprobado\");\nelse Console.WriteLine(\"Desaprobado\");",
+      "correctAnswer": "Aprobado",
+      "incorrectAnswerPool": [
+        "Excelente",
+        "Desaprobado",
+        "ExcelenteAprobado",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-facil-38",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint h = 22;\nif (h < 12) Console.WriteLine(\"Buenos días\");\nelse Console.WriteLine(\"Buenas noches\");",
+      "questionTextEn": "What does it print?\nint h = 22;\nif (h < 12) Console.WriteLine(\"Buenos días\");\nelse Console.WriteLine(\"Buenas noches\");",
+      "correctAnswer": "Buenas noches",
+      "incorrectAnswerPool": [
+        "Buenos días",
+        "Buenos días Buenas noches",
+        "Nada",
+        "22"
+      ]
+    },
+    {
+      "id": "cond-facil-39",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = 4;\nif (n > 2) Console.Write(\"A\");\nif (n > 3) Console.Write(\"B\");",
+      "questionTextEn": "What does it print?\nint n = 4;\nif (n > 2) Console.Write(\"A\");\nif (n > 3) Console.Write(\"B\");",
+      "correctAnswer": "AB",
+      "incorrectAnswerPool": [
+        "A",
+        "B",
+        "BA",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-facil-40",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = 4;\nif (n > 2) Console.Write(\"A\");\nelse if (n > 3) Console.Write(\"B\");",
+      "questionTextEn": "What does it print?\nint n = 4;\nif (n > 2) Console.Write(\"A\");\nelse if (n > 3) Console.Write(\"B\");",
+      "correctAnswer": "A",
+      "incorrectAnswerPool": [
+        "AB",
+        "B",
+        "BA",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-facil-41",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nbool llueve = true;\nif (!llueve) Console.WriteLine(\"Sol\");\nelse Console.WriteLine(\"Lluvia\");",
+      "questionTextEn": "What does it print?\nbool llueve = true;\nif (!llueve) Console.WriteLine(\"Sol\");\nelse Console.WriteLine(\"Lluvia\");",
+      "correctAnswer": "Lluvia",
+      "incorrectAnswerPool": [
+        "Sol",
+        "SolLluvia",
+        "True",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-facil-42",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 3, b = 8;\nif (a < b) Console.WriteLine(b - a);",
+      "questionTextEn": "What does it print?\nint a = 3, b = 8;\nif (a < b) Console.WriteLine(b - a);",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "3",
+        "8",
+        "11",
+        "-5",
+        "True"
+      ]
+    },
+    {
+      "id": "cond-facil-43",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = \"hola\";\nif (s == \"hola\") Console.WriteLine(\"Saludo\");\nelse Console.WriteLine(\"Otro\");",
+      "questionTextEn": "What does it print?\nstring s = \"hola\";\nif (s == \"hola\") Console.WriteLine(\"Saludo\");\nelse Console.WriteLine(\"Otro\");",
+      "correctAnswer": "Saludo",
+      "incorrectAnswerPool": [
+        "Otro",
+        "hola",
+        "SaludoOtro",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-facil-44",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint vidas = 0;\nif (vidas > 0) Console.WriteLine(\"Jugando\");\nelse Console.WriteLine(\"Game Over\");",
+      "questionTextEn": "What does it print?\nint vidas = 0;\nif (vidas > 0) Console.WriteLine(\"Jugando\");\nelse Console.WriteLine(\"Game Over\");",
+      "correctAnswer": "Game Over",
+      "incorrectAnswerPool": [
+        "Jugando",
+        "Nada",
+        "0",
+        "Jugando Game Over"
+      ]
+    },
+    {
+      "id": "cond-facil-45",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint pts = 50;\nif (pts >= 50) Console.WriteLine(\"Gana\");\nelse Console.WriteLine(\"Pierde\");",
+      "questionTextEn": "What does it print?\nint pts = 50;\nif (pts >= 50) Console.WriteLine(\"Gana\");\nelse Console.WriteLine(\"Pierde\");",
+      "correctAnswer": "Gana",
+      "incorrectAnswerPool": [
+        "Pierde",
+        "GanaPierde",
+        "50",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-facil-46",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 3;\nif (x > 3) Console.WriteLine(\"Mayor\");\nelse if (x < 3) Console.WriteLine(\"Menor\");\nelse Console.WriteLine(\"Igual\");",
+      "questionTextEn": "What does it print?\nint x = 3;\nif (x > 3) Console.WriteLine(\"Mayor\");\nelse if (x < 3) Console.WriteLine(\"Menor\");\nelse Console.WriteLine(\"Igual\");",
+      "correctAnswer": "Igual",
+      "incorrectAnswerPool": [
+        "Mayor",
+        "Menor",
+        "Nada",
+        "MayorMenor"
+      ]
+    },
+    {
+      "id": "cond-facil-47",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nConsole.WriteLine(5 > 3);",
+      "questionTextEn": "What does it print?\nConsole.WriteLine(5 > 3);",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "true",
+        "False",
+        "5",
+        "3"
+      ],
+      "explanation": "Una expresión bool se imprime con la inicial en mayúscula: True o False.",
+      "explanationEn": "A bool expression is printed with a capital initial: True or False."
+    },
+    {
+      "id": "cond-facil-48",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nConsole.WriteLine(10 == 11);",
+      "questionTextEn": "What does it print?\nConsole.WriteLine(10 == 11);",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "false",
+        "True",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "id": "cond-facil-49",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = -4;\nif (n < 0) n = -n;\nConsole.WriteLine(n);",
+      "questionTextEn": "What does it print?\nint n = -4;\nif (n < 0) n = -n;\nConsole.WriteLine(n);",
+      "correctAnswer": "4",
+      "incorrectAnswerPool": [
+        "-4",
+        "0",
+        "16",
+        "n"
+      ]
+    },
+    {
+      "id": "cond-facil-50",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 10;\nif (x > 5) x = x + 1;\nConsole.WriteLine(x);",
+      "questionTextEn": "What does it print?\nint x = 10;\nif (x > 5) x = x + 1;\nConsole.WriteLine(x);",
+      "correctAnswer": "11",
+      "incorrectAnswerPool": [
+        "10",
+        "5",
+        "6",
+        "15"
+      ]
+    },
+    {
+      "id": "cond-facil-51",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene x al final?\nint x = 1;\nif (x > 0) x = x + 5;",
+      "questionTextEn": "What value does x hold at the end?\nint x = 1;\nif (x > 0) x = x + 5;",
+      "correctAnswer": "6",
+      "incorrectAnswerPool": [
+        "1",
+        "5",
+        "0",
+        "7"
+      ]
+    },
+    {
+      "id": "cond-facil-52",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene pts al final?\nint pts = 10;\nif (pts >= 10) pts = pts * 2;\nelse pts = 0;",
+      "questionTextEn": "What value does pts hold at the end?\nint pts = 10;\nif (pts >= 10) pts = pts * 2;\nelse pts = 0;",
+      "correctAnswer": "20",
+      "incorrectAnswerPool": [
+        "10",
+        "0",
+        "12",
+        "100"
+      ]
+    },
+    {
+      "id": "cond-facil-53",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene ok al final?\nbool ok = 3 < 5;",
+      "questionTextEn": "What value does ok hold at the end?\nbool ok = 3 < 5;",
+      "correctAnswer": "true",
+      "incorrectAnswerPool": [
+        "false",
+        "3",
+        "5",
+        "null"
+      ]
+    },
+    {
+      "id": "cond-facil-54",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nbool r = 4 == 5;",
+      "questionTextEn": "What value does r hold at the end?\nbool r = 4 == 5;",
+      "correctAnswer": "false",
+      "incorrectAnswerPool": [
+        "true",
+        "4",
+        "5",
+        "null"
+      ]
+    },
+    {
+      "id": "cond-facil-55",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene m al final?\nint a = 2;\nint b = 9;\nint m;\nif (a > b) m = a;\nelse m = b;",
+      "questionTextEn": "What value does m hold at the end?\nint a = 2;\nint b = 9;\nint m;\nif (a > b) m = a;\nelse m = b;",
+      "correctAnswer": "9",
+      "incorrectAnswerPool": [
+        "2",
+        "11",
+        "0",
+        "7"
+      ]
+    },
+    {
+      "id": "cond-facil-56",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene f al final?\nbool f = !(2 > 1);",
+      "questionTextEn": "What value does f hold at the end?\nbool f = !(2 > 1);",
+      "correctAnswer": "false",
+      "incorrectAnswerPool": [
+        "true",
+        "2",
+        "1",
+        "null"
+      ]
+    },
+    {
+      "id": "cond-facil-57",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene msg al final?\nstring msg = \"Hola\";\nif (msg.Length > 3) msg = \"Largo\";",
+      "questionTextEn": "What value does msg hold at the end?\nstring msg = \"Hola\";\nif (msg.Length > 3) msg = \"Largo\";",
+      "correctAnswer": "Largo",
+      "incorrectAnswerPool": [
+        "Hola",
+        "Corto",
+        "4",
+        "null"
+      ]
+    },
+    {
+      "id": "cond-facil-58",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene par al final?\nint n = 7;\nbool par = n % 2 == 0;",
+      "questionTextEn": "What value does par hold at the end?\nint n = 7;\nbool par = n % 2 == 0;",
+      "correctAnswer": "false",
+      "incorrectAnswerPool": [
+        "true",
+        "7",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "id": "cond-facil-59",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene es al final?\nint d = 4;\nbool es = d != 5;",
+      "questionTextEn": "What value does es hold at the end?\nint d = 4;\nbool es = d != 5;",
+      "correctAnswer": "true",
+      "incorrectAnswerPool": [
+        "false",
+        "4",
+        "5",
+        "1"
+      ]
+    },
+    {
+      "id": "cond-facil-60",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para comprobar si x es igual a 5.",
+      "questionTextEn": "Fill in the blank to check whether x equals 5.",
+      "codeTemplate": "int x = 5;\nif (x ____ 5)\n    Console.WriteLine(\"Cinco\");",
+      "expectedAnswer": "=="
+    },
+    {
+      "id": "cond-facil-61",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa la palabra que falta cuando la condición no se cumple.",
+      "questionTextEn": "Fill in the keyword used when the condition is not met.",
+      "codeTemplate": "int n = -2;\nif (n > 0)\n{\n    Console.WriteLine(\"Positivo\");\n}\n____\n{\n    Console.WriteLine(\"No positivo\");\n}",
+      "expectedAnswer": "else"
+    },
+    {
+      "id": "cond-facil-62",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa la palabra que inicia la condición.",
+      "questionTextEn": "Fill in the keyword that starts the condition.",
+      "codeTemplate": "int temperatura = 35;\n____ (temperatura > 30)\n    Console.WriteLine(\"Calor\");",
+      "expectedAnswer": "if"
+    },
+    {
+      "id": "cond-facil-63",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para comprobar que clave es distinta de 1234.",
+      "questionTextEn": "Fill in the blank to check that clave is different from 1234.",
+      "codeTemplate": "int clave = 999;\nif (clave ____ 1234)\n    Console.WriteLine(\"Incorrecta\");",
+      "expectedAnswer": "!="
+    },
+    {
+      "id": "cond-facil-64",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para comprobar si la edad es menor que 18.",
+      "questionTextEn": "Fill in the blank to check whether the age is less than 18.",
+      "codeTemplate": "int edad = 15;\nif (edad ____ 18)\n    Console.WriteLine(\"Menor de edad\");",
+      "expectedAnswer": "<"
+    },
+    {
+      "id": "cond-facil-65",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para comprobar si el contador es menor o igual a 3.",
+      "questionTextEn": "Fill in the blank to check whether the counter is less than or equal to 3.",
+      "codeTemplate": "int contador = 2;\nif (contador ____ 3)\n    Console.WriteLine(\"Aún cabe\");",
+      "expectedAnswer": "<="
+    },
+    {
+      "id": "cond-facil-66",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para comprobar si el precio es mayor que 100.",
+      "questionTextEn": "Fill in the blank to check whether the price is greater than 100.",
+      "codeTemplate": "int precio = 150;\nif (precio ____ 100)\n    Console.WriteLine(\"Caro\");",
+      "expectedAnswer": ">"
+    },
+    {
+      "id": "cond-facil-67",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el símbolo que cierra la condición.",
+      "questionTextEn": "Fill in the symbol that closes the condition.",
+      "codeTemplate": "int n = 5;\nif (n > 0____\n    Console.WriteLine(\"Positivo\");",
+      "expectedAnswer": ")"
+    },
+    {
+      "id": "cond-facil-68",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el valor para que se muestre el mensaje.",
+      "questionTextEn": "Fill in the value so that the message is shown.",
+      "codeTemplate": "bool lluvia = ____;\nif (lluvia)\n    Console.WriteLine(\"Paraguas\");",
+      "expectedAnswer": "true"
+    },
+    {
+      "id": "cond-facil-69",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el operador para saber si n es par.",
+      "questionTextEn": "Fill in the operator to find out whether n is even.",
+      "codeTemplate": "int n = 8;\nif (n ____ 2 == 0)\n    Console.WriteLine(\"Par\");",
+      "expectedAnswer": "%"
+    },
+    {
+      "id": "cond-facil-70",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para comprobar si el color es \"rojo\".",
+      "questionTextEn": "Fill in the blank to check whether the color is \"rojo\".",
+      "codeTemplate": "string color = \"rojo\";\nif (color ____ \"rojo\")\n    Console.WriteLine(\"Alto\");",
+      "expectedAnswer": "=="
+    },
+    {
+      "id": "cond-facil-71",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para comprobar si los puntos son 50 o más.",
+      "questionTextEn": "Fill in the blank to check whether the points are 50 or more.",
+      "codeTemplate": "int puntos = 50;\nif (puntos ____ 50)\n    Console.WriteLine(\"Aprobado\");",
+      "expectedAnswer": ">="
+    },
+    {
+      "id": "cond-facil-72",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el valor para que NO se muestre \"Listo\".",
+      "questionTextEn": "Fill in the value so that \"Listo\" is NOT shown.",
+      "codeTemplate": "bool listo = ____;\nif (listo)\n    Console.WriteLine(\"Listo\");\nConsole.WriteLine(\"Fin\");",
+      "expectedAnswer": "false"
+    },
+    {
+      "id": "cond-facil-73",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para comprobar si a es mayor que b.",
+      "questionTextEn": "Fill in the blank to check whether a is greater than b.",
+      "codeTemplate": "int a = 8;\nint b = 3;\nif (a ____ b)\n    Console.WriteLine(\"a gana\");",
+      "expectedAnswer": ">"
+    },
+    {
+      "id": "cond-facil-74",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para mostrar \"Mayor\" si la edad es 18 o más.",
+      "questionTextEn": "Put the lines in order to print \"Mayor\" if the age is 18 or more.",
+      "codeBlocks": [
+        "int edad = 20;",
+        "if (edad >= 18)",
+        "    Console.WriteLine(\"Mayor\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "cond-facil-75",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para decir si el número es negativo.",
+      "questionTextEn": "Put the lines in order to say whether the number is negative.",
+      "codeBlocks": [
+        "int n = -3;",
+        "if (n < 0)",
+        "    Console.WriteLine(\"Negativo\");",
+        "else",
+        "    Console.WriteLine(\"No negativo\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "cond-facil-76",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para que \"Paraguas\" salga solo si llueve y \"Fin\" salga siempre.",
+      "questionTextEn": "Put the lines in order so that \"Paraguas\" prints only if it rains and \"Fin\" always prints.",
+      "codeBlocks": [
+        "bool llueve = false;",
+        "if (llueve)",
+        "    Console.WriteLine(\"Paraguas\");",
+        "Console.WriteLine(\"Fin\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "cond-facil-77",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el if con llaves que muestra un mensaje.",
+      "questionTextEn": "Put the if with braces that prints a message in order.",
+      "codeBlocks": [
+        "int a = -2;",
+        "if (a > 0) {",
+        "    a = a - 6;",
+        "}",
+        "Console.WriteLine(a);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "cond-facil-78",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para dar una medalla según los puntos.",
+      "questionTextEn": "Put the lines in order to award a medal according to the points.",
+      "codeBlocks": [
+        "int puntos = 80;",
+        "if (puntos >= 100)",
+        "    Console.WriteLine(\"Oro\");",
+        "else if (puntos >= 50)",
+        "    Console.WriteLine(\"Plata\");",
+        "else",
+        "    Console.WriteLine(\"Bronce\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "cond-facil-79",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para saber si 25 es múltiplo de 5.",
+      "questionTextEn": "Put the lines in order to find out whether 25 is a multiple of 5.",
+      "codeBlocks": [
+        "int n = 25;",
+        "if (n % 5 == 0)",
+        "    Console.WriteLine(\"Múltiplo\");",
+        "else",
+        "    Console.WriteLine(\"No múltiplo\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "cond-facil-80",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para validar una clave de texto.",
+      "questionTextEn": "Put the lines in order to validate a text password.",
+      "codeBlocks": [
+        "string clave = \"abc\";",
+        "if (clave == \"abc\")",
+        "    Console.WriteLine(\"Acceso\");",
+        "else",
+        "    Console.WriteLine(\"Denegado\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "cond-facil-81",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para comparar dos números.",
+      "questionTextEn": "Put the lines in order to compare two numbers.",
+      "codeBlocks": [
+        "int a = 4;",
+        "int b = a + 5;",
+        "if (a < b)",
+        "    Console.WriteLine(\"a es menor\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "cond-facil-82",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para avisar de que la puerta está cerrada.",
+      "questionTextEn": "Put the lines in order to warn that the door is closed.",
+      "codeBlocks": [
+        "bool tieneLlave = false;",
+        "if (!tieneLlave)",
+        "    Console.WriteLine(\"Puerta cerrada\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "cond-facil-83",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para saludar según la hora.",
+      "questionTextEn": "Put the lines in order to greet according to the time.",
+      "codeBlocks": [
+        "int hora = 8;",
+        "if (hora < 12)",
+        "    Console.WriteLine(\"Mañana\");",
+        "else",
+        "    Console.WriteLine(\"Tarde\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "cond-facil-84",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para restar energía solo si queda alguna.",
+      "questionTextEn": "Put the lines in order to subtract energy only if some is left.",
+      "codeBlocks": [
+        "int energia = 0;",
+        "if (energia > 0)",
+        "    energia = energia - 1;",
+        "Console.WriteLine(energia);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "cond-facil-85",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para comprobar si alcanza el saldo.",
+      "questionTextEn": "Put the lines in order to check whether the balance is enough.",
+      "codeBlocks": [
+        "int saldo = 30;",
+        "int precio = saldo + 20;",
+        "if (saldo >= precio)",
+        "    Console.WriteLine(\"Comprado\");",
+        "else",
+        "    Console.WriteLine(\"Sin saldo\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "cond-facil-86",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para avisar si hace calor o frío.",
+      "questionTextEn": "Put the lines in order to warn whether it is hot or cold.",
+      "codeBlocks": [
+        "int temp = 35;",
+        "if (temp > 30)",
+        "    Console.WriteLine(\"Calor\");",
+        "else if (temp < 10)",
+        "    Console.WriteLine(\"Frío\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "cond-facil-87",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para indicar de quién es el turno.",
+      "questionTextEn": "Put the lines in order to say whose turn it is.",
+      "codeBlocks": [
+        "int turno = 1;",
+        "if (turno == 1)",
+        "    Console.WriteLine(\"Jugador 1\");",
+        "else",
+        "    Console.WriteLine(\"Jugador 2\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "cond-facil-88",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?\nint x = 5;",
+      "questionTextEn": "Which line does not compile?\nint x = 5;",
+      "codeSnippetsOptions": [
+        "if (x > 3) { }",
+        "if x > 3 { }",
+        "if (x < 3) { }",
+        "if (x == 5) { }"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "cond-facil-89",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?\nint x = 5;",
+      "questionTextEn": "Which line does not compile?\nint x = 5;",
+      "codeSnippetsOptions": [
+        "if (x > 3) { }",
+        "if (x > 3 { }",
+        "if (x != 3) { }",
+        "if (x <= 3) { }"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "cond-facil-90",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque no compila?\nint x = 5;",
+      "questionTextEn": "Which block does not compile?\nint x = 5;",
+      "codeSnippetsOptions": [
+        "if (x > 0) { x++; } else { x--; }",
+        "if (x > 0) x++; else x--;",
+        "else { x--; }",
+        "if (x > 0) { x++; }"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "cond-facil-91",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque no compila?\nint x = 5;",
+      "questionTextEn": "Which block does not compile?\nint x = 5;",
+      "codeSnippetsOptions": [
+        "if (x > 0) { } else if (x < 0) { }",
+        "if (x > 0) { } else { }",
+        "if (x > 0) { } elseif (x < 0) { }",
+        "if (x > 0) { }"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "cond-facil-92",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "Debe mostrar \"Mayor\" si x supera 5. ¿Qué bloque tiene un error de lógica?\nint x = 8;",
+      "questionTextEn": "It must print \"Mayor\" when x is greater than 5. Which block has a logic error?\nint x = 8;",
+      "codeSnippetsOptions": [
+        "if (x > 5) Console.Write(\"Mayor\");",
+        "if (x >= 6) Console.Write(\"Mayor\");",
+        "if (x < 5) Console.Write(\"Mayor\");",
+        "if (!(x <= 5)) Console.Write(\"Mayor\");"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "cond-facil-93",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?\nint x = 5;",
+      "questionTextEn": "Which line does not compile?\nint x = 5;",
+      "codeSnippetsOptions": [
+        "Console.WriteLine(\"a\");",
+        "if (x > 3) Console.WriteLine(\"ok\")",
+        "if (x > 3) Console.WriteLine(\"ok\");",
+        "if (x > 3) { Console.WriteLine(\"ok\"); }"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "cond-facil-94",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?\nint x = 5;",
+      "questionTextEn": "Which line does not compile?\nint x = 5;",
+      "codeSnippetsOptions": [
+        "if (x > 0) { }",
+        "if (x != 0) { }",
+        "if (x >= 1) { }",
+        "if (x) { }"
+      ],
+      "buggyIndex": 3
+    },
+    {
+      "id": "cond-facil-95",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque no compila?\nint x = 5;",
+      "questionTextEn": "Which block does not compile?\nint x = 5;",
+      "codeSnippetsOptions": [
+        "if (x > 3) { x++; }",
+        "if (x > 3) { x++; } else { x--; }",
+        "if (x > 3) { x++;",
+        "if (x > 3) x++;"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "cond-facil-96",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué condición no compila?\nint x = 5;",
+      "questionTextEn": "Which condition does not compile?\nint x = 5;",
+      "codeSnippetsOptions": [
+        "if (x => 3) { }",
+        "if (x >= 3) { }",
+        "if (x <= 3) { }",
+        "if (x != 3) { }"
+      ],
+      "buggyIndex": 0
+    },
+    {
+      "id": "cond-facil-97",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque no compila?\nint x = 5;",
+      "questionTextEn": "Which block does not compile?\nint x = 5;",
+      "codeSnippetsOptions": [
+        "if (x > 3) { } else { }",
+        "if (x > 3) { } else (x < 3) { }",
+        "if (x > 3) { } else if (x < 3) { }",
+        "if (x > 3) { } else if (x == 3) { }"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "cond-facil-98",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué condición no compila en C#?\nint x = 5;",
+      "questionTextEn": "Which condition does not compile in C#?\nint x = 5;",
+      "codeSnippetsOptions": [
+        "if (x == 3) { }",
+        "if (x != 3) { }",
+        "if (x === 3) { }",
+        "if (x < 3) { }"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "cond-facil-99",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué condición no compila en C#?\nint x = 5;",
+      "questionTextEn": "Which condition does not compile in C#?\nint x = 5;",
+      "codeSnippetsOptions": [
+        "if (x <> 3) { }",
+        "if (x > 3) { }",
+        "if (x < 3) { }",
+        "if (x >= 3) { }"
+      ],
+      "buggyIndex": 0
+    },
+    {
+      "id": "cond-facil-100",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué bloque no compila en C#?\nint x = 5;",
+      "questionTextEn": "Which block does not compile in C#?\nint x = 5;",
+      "codeSnippetsOptions": [
+        "if (x > 3) { } else if (x < 0) { }",
+        "if (x > 3) { } elif (x < 0) { }",
+        "if (x > 3) { } else { }",
+        "if (x > 3) { }"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "cond-facil-101",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "Debe mostrar \"Impar\" para x = 7. ¿Qué bloque tiene un error de lógica?\nint x = 7;",
+      "questionTextEn": "It must print \"Impar\" for x = 7. Which block has a logic error?\nint x = 7;",
+      "codeSnippetsOptions": [
+        "if (x % 2 == 0) Console.Write(\"Par\"); else Console.Write(\"Impar\");",
+        "if (x % 2 == 1) Console.Write(\"Impar\"); else Console.Write(\"Par\");",
+        "if (x % 2 == 0) Console.Write(\"Impar\"); else Console.Write(\"Par\");",
+        "if (x % 2 != 0) Console.Write(\"Impar\"); else Console.Write(\"Par\");"
+      ],
+      "buggyIndex": 2
     }
   ]
 }

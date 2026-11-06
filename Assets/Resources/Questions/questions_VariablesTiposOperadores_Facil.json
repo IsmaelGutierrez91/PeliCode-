@@ -35,8 +35,8 @@
       "category": "VariablesTiposOperadores",
       "difficulty": "Facil",
       "type": "CompletarCodigo",
-      "questionText": "Completa para declarar un texto.",
-      "questionTextEn": "Fill in the blank to declare a text.",
+      "questionText": "Completa para declarar un texto (escribe el tipo, no var).",
+      "questionTextEn": "Fill in the blank to declare a text (write the type, not var).",
       "codeTemplate": "____ nombre = \"Ana\";",
       "expectedAnswer": "string"
     },
@@ -72,6 +72,1514 @@
         "double precio = 9.99;"
       ],
       "buggyIndex": 2
+    },
+    {
+      "id": "var-facil-6",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué tipo de dato es el más adecuado para guardar el precio 19.99?",
+      "questionTextEn": "Which data type is the most suitable to store the price 19.99?",
+      "correctAnswer": "double",
+      "incorrectAnswerPool": [
+        "int",
+        "string",
+        "bool",
+        "char",
+        "void"
+      ]
+    },
+    {
+      "id": "var-facil-7",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué tipo de dato guarda solo verdadero o falso?",
+      "questionTextEn": "Which data type stores only true or false?",
+      "correctAnswer": "bool",
+      "incorrectAnswerPool": [
+        "int",
+        "string",
+        "char",
+        "double",
+        "byte"
+      ]
+    },
+    {
+      "id": "var-facil-8",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué tipo de dato usarías para guardar el nombre de un jugador?",
+      "questionTextEn": "Which data type would you use to store a player's name?",
+      "correctAnswer": "string",
+      "incorrectAnswerPool": [
+        "char",
+        "int",
+        "bool",
+        "double",
+        "float"
+      ]
+    },
+    {
+      "id": "var-facil-9",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuál de estas es la forma correcta de escribir un carácter?",
+      "questionTextEn": "Which of these is the correct way to write a single character?",
+      "correctAnswer": "'A'",
+      "incorrectAnswerPool": [
+        "\"A\"",
+        "A",
+        "`A`",
+        "''A''",
+        "(A)"
+      ]
+    },
+    {
+      "id": "var-facil-10",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Con qué palabra se declara una variable cuyo valor nunca cambiará?",
+      "questionTextEn": "Which keyword declares a variable whose value will never change?",
+      "correctAnswer": "const",
+      "incorrectAnswerPool": [
+        "final",
+        "static",
+        "let",
+        "fixed",
+        "readonly var"
+      ]
+    },
+    {
+      "id": "var-facil-11",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué símbolos inician un comentario de una sola línea en C#?",
+      "questionTextEn": "Which symbols start a single-line comment in C#?",
+      "correctAnswer": "//",
+      "incorrectAnswerPool": [
+        "#",
+        "--",
+        "/*",
+        "<!--",
+        ";;"
+      ]
+    },
+    {
+      "id": "var-facil-12",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(8 + 2);",
+      "questionTextEn": "What does it print?  Console.WriteLine(8 + 2);",
+      "correctAnswer": "10",
+      "incorrectAnswerPool": [
+        "82",
+        "6",
+        "16",
+        "8 + 2",
+        "4"
+      ]
+    },
+    {
+      "id": "var-facil-13",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(\"8\" + \"2\");",
+      "questionTextEn": "What does it print?  Console.WriteLine(\"8\" + \"2\");",
+      "correctAnswer": "82",
+      "incorrectAnswerPool": [
+        "10",
+        "6",
+        "16",
+        "\"8\"\"2\"",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-facil-14",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuánto vale n?  int n = 20 - 5 * 2;",
+      "questionTextEn": "What is the value of n?  int n = 20 - 5 * 2;",
+      "explanation": "La multiplicación se evalúa antes que la resta: 20 - 10.",
+      "explanationEn": "Multiplication is evaluated before subtraction: 20 - 10.",
+      "correctAnswer": "10",
+      "incorrectAnswerPool": [
+        "30",
+        "15",
+        "0",
+        "40",
+        "-10"
+      ]
+    },
+    {
+      "id": "var-facil-15",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(9 / 2);",
+      "questionTextEn": "What does it print?  Console.WriteLine(9 / 2);",
+      "correctAnswer": "4",
+      "incorrectAnswerPool": [
+        "4.5",
+        "5",
+        "4,5",
+        "9",
+        "2"
+      ]
+    },
+    {
+      "id": "var-facil-16",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(9 / 2.0);",
+      "questionTextEn": "What does it print?  Console.WriteLine(9 / 2.0);",
+      "correctAnswer": "4.5",
+      "incorrectAnswerPool": [
+        "4",
+        "5",
+        "4.0",
+        "9",
+        "2"
+      ]
+    },
+    {
+      "id": "var-facil-17",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(15 % 4);",
+      "questionTextEn": "What does it print?  Console.WriteLine(15 % 4);",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "3.75",
+        "4",
+        "0",
+        "1",
+        "11"
+      ]
+    },
+    {
+      "id": "var-facil-18",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuánto vale n?\nint n = 4;\nn++;\nConsole.WriteLine(n);",
+      "questionTextEn": "What is the value of n?\nint n = 4;\nn++;\nConsole.WriteLine(n);",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "4",
+        "3",
+        "6",
+        "44",
+        "n++"
+      ]
+    },
+    {
+      "id": "var-facil-19",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuánto vale n?\nint n = 10;\nn--;\nConsole.WriteLine(n);",
+      "questionTextEn": "What is the value of n?\nint n = 10;\nn--;\nConsole.WriteLine(n);",
+      "correctAnswer": "9",
+      "incorrectAnswerPool": [
+        "10",
+        "11",
+        "8",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "id": "var-facil-20",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint vidas = 3;\nvidas -= 2;\nConsole.WriteLine(vidas);",
+      "questionTextEn": "What does it print?\nint vidas = 3;\nvidas -= 2;\nConsole.WriteLine(vidas);",
+      "correctAnswer": "1",
+      "incorrectAnswerPool": [
+        "5",
+        "3",
+        "2",
+        "-1",
+        "0"
+      ]
+    },
+    {
+      "id": "var-facil-21",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint puntos = 5;\npuntos *= 4;\nConsole.WriteLine(puntos);",
+      "questionTextEn": "What does it print?\nint puntos = 5;\npuntos *= 4;\nConsole.WriteLine(puntos);",
+      "correctAnswer": "20",
+      "incorrectAnswerPool": [
+        "9",
+        "54",
+        "5",
+        "1",
+        "25"
+      ]
+    },
+    {
+      "id": "var-facil-22",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint total = 12;\ntotal /= 3;\nConsole.WriteLine(total);",
+      "questionTextEn": "What does it print?\nint total = 12;\ntotal /= 3;\nConsole.WriteLine(total);",
+      "correctAnswer": "4",
+      "incorrectAnswerPool": [
+        "36",
+        "9",
+        "15",
+        "3",
+        "0"
+      ]
+    },
+    {
+      "id": "var-facil-23",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(5 > 3);",
+      "questionTextEn": "What does it print?  Console.WriteLine(5 > 3);",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "5",
+        "3",
+        "true",
+        "1"
+      ]
+    },
+    {
+      "id": "var-facil-24",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(4 == 5);",
+      "questionTextEn": "What does it print?  Console.WriteLine(4 == 5);",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "4",
+        "5",
+        "0",
+        "false"
+      ]
+    },
+    {
+      "id": "var-facil-25",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(7 != 7);",
+      "questionTextEn": "What does it print?  Console.WriteLine(7 != 7);",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "7",
+        "0",
+        "Error",
+        "false"
+      ]
+    },
+    {
+      "id": "var-facil-26",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(true && false);",
+      "questionTextEn": "What does it print?  Console.WriteLine(true && false);",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "true",
+        "false",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "id": "var-facil-27",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(true || false);",
+      "questionTextEn": "What does it print?  Console.WriteLine(true || false);",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "true",
+        "false",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "id": "var-facil-28",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(!true);",
+      "questionTextEn": "What does it print?  Console.WriteLine(!true);",
+      "correctAnswer": "False",
+      "incorrectAnswerPool": [
+        "True",
+        "true",
+        "!true",
+        "0",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-facil-29",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuánto vale n?\nstring palabra = \"Unity\";\nint n = palabra.Length;\nConsole.WriteLine(n);",
+      "questionTextEn": "What is the value of n?\nstring palabra = \"Unity\";\nint n = palabra.Length;\nConsole.WriteLine(n);",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "4",
+        "6",
+        "1",
+        "Unity",
+        "0"
+      ]
+    },
+    {
+      "id": "var-facil-30",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué significa \n dentro de un texto entre comillas?",
+      "questionTextEn": "What does \n mean inside a quoted text?",
+      "correctAnswer": "Un salto de línea",
+      "incorrectAnswerPool": [
+        "Un espacio en blanco",
+        "Una tabulación",
+        "El fin del programa",
+        "Un comentario",
+        "Una comilla doble"
+      ],
+      "correctAnswerEn": "A line break",
+      "incorrectAnswerPoolEn": [
+        "A blank space",
+        "A tab",
+        "The end of the program",
+        "A comment",
+        "A double quote"
+      ]
+    },
+    {
+      "id": "var-facil-31",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint nivel = 3;\nConsole.WriteLine($\"Nivel {nivel}\");",
+      "questionTextEn": "What does it print?\nint nivel = 3;\nConsole.WriteLine($\"Nivel {nivel}\");",
+      "correctAnswer": "Nivel 3",
+      "incorrectAnswerPool": [
+        "Nivel {nivel}",
+        "Nivel nivel",
+        "$Nivel 3",
+        "Nivel",
+        "3 Nivel"
+      ]
+    },
+    {
+      "id": "var-facil-32",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = \"hola\";\nConsole.WriteLine(s.ToUpper());",
+      "questionTextEn": "What does it print?\nstring s = \"hola\";\nConsole.WriteLine(s.ToUpper());",
+      "correctAnswer": "HOLA",
+      "incorrectAnswerPool": [
+        "hola",
+        "Hola",
+        "hOLA",
+        "ToUpper",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-facil-33",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = \"Mundo\";\nConsole.WriteLine(s[0]);",
+      "questionTextEn": "What does it print?\nstring s = \"Mundo\";\nConsole.WriteLine(s[0]);",
+      "correctAnswer": "M",
+      "incorrectAnswerPool": [
+        "u",
+        "Mundo",
+        "o",
+        "Mun",
+        "0"
+      ]
+    },
+    {
+      "id": "var-facil-34",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(Math.Max(3, 8));",
+      "questionTextEn": "What does it print?  Console.WriteLine(Math.Max(3, 8));",
+      "correctAnswer": "8",
+      "incorrectAnswerPool": [
+        "3",
+        "11",
+        "5",
+        "24",
+        "0"
+      ]
+    },
+    {
+      "id": "var-facil-35",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(Math.Min(3, 8));",
+      "questionTextEn": "What does it print?  Console.WriteLine(Math.Min(3, 8));",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "8",
+        "11",
+        "5",
+        "24",
+        "0"
+      ]
+    },
+    {
+      "id": "var-facil-36",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(Math.Abs(-7));",
+      "questionTextEn": "What does it print?  Console.WriteLine(Math.Abs(-7));",
+      "correctAnswer": "7",
+      "incorrectAnswerPool": [
+        "-7",
+        "0",
+        "14",
+        "-14",
+        "1"
+      ]
+    },
+    {
+      "id": "var-facil-37",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(Math.Sqrt(16));",
+      "questionTextEn": "What does it print?  Console.WriteLine(Math.Sqrt(16));",
+      "correctAnswer": "4",
+      "incorrectAnswerPool": [
+        "8",
+        "256",
+        "2",
+        "16",
+        "4.5"
+      ]
+    },
+    {
+      "id": "var-facil-38",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(Math.Pow(2, 3));",
+      "questionTextEn": "What does it print?  Console.WriteLine(Math.Pow(2, 3));",
+      "correctAnswer": "8",
+      "incorrectAnswerPool": [
+        "6",
+        "5",
+        "9",
+        "23",
+        "2"
+      ]
+    },
+    {
+      "id": "var-facil-39",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(Math.Floor(4.9));",
+      "questionTextEn": "What does it print?  Console.WriteLine(Math.Floor(4.9));",
+      "correctAnswer": "4",
+      "incorrectAnswerPool": [
+        "5",
+        "4.9",
+        "4.5",
+        "0",
+        "9"
+      ]
+    },
+    {
+      "id": "var-facil-40",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(Math.Ceiling(4.1));",
+      "questionTextEn": "What does it print?  Console.WriteLine(Math.Ceiling(4.1));",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "4",
+        "4.1",
+        "4.5",
+        "0",
+        "41"
+      ]
+    },
+    {
+      "id": "var-facil-41",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = int.Parse(\"42\");\nConsole.WriteLine(x + 1);",
+      "questionTextEn": "What does it print?\nint x = int.Parse(\"42\");\nConsole.WriteLine(x + 1);",
+      "correctAnswer": "43",
+      "incorrectAnswerPool": [
+        "421",
+        "42",
+        "41",
+        "Error",
+        "\"42\"1"
+      ]
+    },
+    {
+      "id": "var-facil-42",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 42;\nstring t = x.ToString();\nConsole.WriteLine(t + \"1\");",
+      "questionTextEn": "What does it print?\nint x = 42;\nstring t = x.ToString();\nConsole.WriteLine(t + \"1\");",
+      "correctAnswer": "421",
+      "incorrectAnswerPool": [
+        "43",
+        "42",
+        "41",
+        "Error",
+        "421.0"
+      ]
+    },
+    {
+      "id": "var-facil-43",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(\"Hola\\nMundo\");",
+      "questionTextEn": "What does it print?  Console.WriteLine(\"Hola\\nMundo\");",
+      "correctAnswer": "Hola\nMundo",
+      "incorrectAnswerPool": [
+        "Hola\\nMundo",
+        "HolaMundo",
+        "Hola Mundo",
+        "Hola/nMundo",
+        "Hola\n\nMundo"
+      ]
+    },
+    {
+      "id": "var-facil-44",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine((int)7.9);",
+      "questionTextEn": "What does it print?  Console.WriteLine((int)7.9);",
+      "correctAnswer": "7",
+      "incorrectAnswerPool": [
+        "8",
+        "7.9",
+        "7.0",
+        "0",
+        "79"
+      ]
+    },
+    {
+      "id": "var-facil-45",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 5;\nint b = a;\na = 9;\nConsole.WriteLine(b);",
+      "questionTextEn": "What does it print?\nint a = 5;\nint b = a;\na = 9;\nConsole.WriteLine(b);",
+      "correctAnswer": "5",
+      "incorrectAnswerPool": [
+        "9",
+        "14",
+        "0",
+        "4",
+        "a"
+      ]
+    },
+    {
+      "id": "var-facil-46",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 1, b = 2, c = 3;\nConsole.WriteLine(a + b + c);",
+      "questionTextEn": "What does it print?\nint a = 1, b = 2, c = 3;\nConsole.WriteLine(a + b + c);",
+      "correctAnswer": "6",
+      "incorrectAnswerPool": [
+        "123",
+        "5",
+        "321",
+        "1+2+3",
+        "9"
+      ]
+    },
+    {
+      "id": "var-facil-47",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nbool llueve = false;\nConsole.WriteLine(!llueve);",
+      "questionTextEn": "What does it print?\nbool llueve = false;\nConsole.WriteLine(!llueve);",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "llueve",
+        "false",
+        "true",
+        "0"
+      ]
+    },
+    {
+      "id": "var-facil-48",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nchar c = 'a';\nConsole.WriteLine(c);",
+      "questionTextEn": "What does it print?\nchar c = 'a';\nConsole.WriteLine(c);",
+      "correctAnswer": "a",
+      "incorrectAnswerPool": [
+        "97",
+        "'a'",
+        "A",
+        "\"a\"",
+        "c"
+      ]
+    },
+    {
+      "id": "var-facil-49",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuánto vale n?\nvar n = 5;\nn = n + 1;\nConsole.WriteLine(n);",
+      "questionTextEn": "What is the value of n?\nvar n = 5;\nn = n + 1;\nConsole.WriteLine(n);",
+      "correctAnswer": "6",
+      "incorrectAnswerPool": [
+        "5",
+        "51",
+        "1",
+        "n + 1",
+        "4"
+      ]
+    },
+    {
+      "id": "var-facil-50",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuánto vale n?\nint n = 3 + 4 * 2;\nConsole.WriteLine(n);",
+      "questionTextEn": "What is the value of n?\nint n = 3 + 4 * 2;\nConsole.WriteLine(n);",
+      "correctAnswer": "11",
+      "incorrectAnswerPool": [
+        "14",
+        "10",
+        "24",
+        "9",
+        "7"
+      ]
+    },
+    {
+      "id": "var-facil-51",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuánto vale n?\nint n = (3 + 4) * 2;\nConsole.WriteLine(n);",
+      "questionTextEn": "What is the value of n?\nint n = (3 + 4) * 2;\nConsole.WriteLine(n);",
+      "correctAnswer": "14",
+      "incorrectAnswerPool": [
+        "11",
+        "10",
+        "24",
+        "9",
+        "7"
+      ]
+    },
+    {
+      "id": "var-facil-52",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(sizeof(int));",
+      "questionTextEn": "What does it print?  Console.WriteLine(sizeof(int));",
+      "correctAnswer": "4",
+      "incorrectAnswerPool": [
+        "2",
+        "8",
+        "1",
+        "32",
+        "16"
+      ]
+    },
+    {
+      "id": "var-facil-53",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?  Console.WriteLine(10 % 2 == 0);",
+      "questionTextEn": "What does it print?  Console.WriteLine(10 % 2 == 0);",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "0",
+        "1",
+        "10",
+        "Error"
+      ]
+    },
+    {
+      "id": "var-facil-54",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuál es el operador de asignación en C#?",
+      "questionTextEn": "Which is the assignment operator in C#?",
+      "correctAnswer": "=",
+      "incorrectAnswerPool": [
+        "==",
+        "=>",
+        ":=",
+        "<-",
+        "==="
+      ]
+    },
+    {
+      "id": "var-facil-55",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuál de estos nombres de variable es válido en C#?",
+      "questionTextEn": "Which of these variable names is valid in C#?",
+      "correctAnswer": "puntaje_total",
+      "incorrectAnswerPool": [
+        "2jugador",
+        "mi-variable",
+        "vida maxima",
+        "class",
+        "precio$"
+      ]
+    },
+    {
+      "id": "var-facil-56",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué devuelve Console.ReadLine()?",
+      "questionTextEn": "What does Console.ReadLine() return?",
+      "correctAnswer": "string",
+      "incorrectAnswerPool": [
+        "int",
+        "bool",
+        "char",
+        "double",
+        "void"
+      ]
+    },
+    {
+      "id": "var-facil-57",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué sufijo hay que añadir a un literal para que sea float?",
+      "questionTextEn": "Which suffix must a literal have to be a float?",
+      "explanation": "Por ejemplo: float velocidad = 2.5f;",
+      "explanationEn": "For example: float speed = 2.5f;",
+      "correctAnswer": "f",
+      "incorrectAnswerPool": [
+        "d",
+        "m",
+        "l",
+        "u",
+        "x"
+      ]
+    },
+    {
+      "id": "var-facil-58",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué sufijo hay que añadir a un literal para que sea decimal?",
+      "questionTextEn": "Which suffix must a literal have to be a decimal?",
+      "explanation": "Por ejemplo: decimal precio = 9.99m;",
+      "explanationEn": "For example: decimal price = 9.99m;",
+      "correctAnswer": "m",
+      "incorrectAnswerPool": [
+        "f",
+        "d",
+        "l",
+        "c",
+        "x"
+      ]
+    },
+    {
+      "id": "var-facil-59",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué tipo de dato usarías para guardar un número entero muy grande, como la población mundial?",
+      "questionTextEn": "Which data type would you use to store a very large whole number, like the world population?",
+      "correctAnswer": "long",
+      "incorrectAnswerPool": [
+        "int",
+        "short",
+        "byte",
+        "float",
+        "char"
+      ]
+    },
+    {
+      "id": "var-facil-60",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué palabra declara una variable sin escribir el tipo, deduciéndolo del valor?",
+      "questionTextEn": "Which keyword declares a variable without writing the type, inferring it from the value?",
+      "correctAnswer": "var",
+      "incorrectAnswerPool": [
+        "let",
+        "auto",
+        "dim",
+        "def",
+        "object"
+      ]
+    },
+    {
+      "id": "var-facil-61",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para declarar un número entero (escribe el tipo, no var).",
+      "questionTextEn": "Fill in the blank to declare a whole number (write the type, not var).",
+      "codeTemplate": "____ cantidad = 12;",
+      "expectedAnswer": "int"
+    },
+    {
+      "id": "var-facil-62",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para declarar un valor verdadero o falso (escribe el tipo, no var).",
+      "questionTextEn": "Fill in the blank to declare a true-or-false value (write the type, not var).",
+      "codeTemplate": "____ activo = true;",
+      "expectedAnswer": "bool"
+    },
+    {
+      "id": "var-facil-63",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para declarar un número con decimales (escribe el tipo, no var).",
+      "questionTextEn": "Fill in the blank to declare a number with decimals (write the type, not var).",
+      "codeTemplate": "____ altura = 1.75;",
+      "expectedAnswer": "double"
+    },
+    {
+      "id": "var-facil-64",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para declarar un solo carácter (escribe el tipo, no var).",
+      "questionTextEn": "Fill in the blank to declare a single character (write the type, not var).",
+      "codeTemplate": "____ letra = 'Z';",
+      "expectedAnswer": "char"
+    },
+    {
+      "id": "var-facil-65",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para declarar una constante.",
+      "questionTextEn": "Fill in the blank to declare a constant.",
+      "codeTemplate": "____ int VIDAS = 3;",
+      "expectedAnswer": "const"
+    },
+    {
+      "id": "var-facil-66",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para mostrar el texto en consola.",
+      "questionTextEn": "Fill in the blank to print the text to the console.",
+      "codeTemplate": "Console.____(\"Hola\");",
+      "expectedAnswer": "WriteLine"
+    },
+    {
+      "id": "var-facil-67",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para que x valga 8.",
+      "questionTextEn": "Fill in the blank so that x is 8.",
+      "codeTemplate": "int x = 3 ____ 5;",
+      "expectedAnswer": "+"
+    },
+    {
+      "id": "var-facil-68",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para obtener el resto de la división.",
+      "questionTextEn": "Fill in the blank to get the remainder of the division.",
+      "codeTemplate": "int resto = 17 ____ 5;\nConsole.WriteLine(resto);",
+      "expectedAnswer": "%"
+    },
+    {
+      "id": "var-facil-69",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para decrementar la variable en uno.",
+      "questionTextEn": "Fill in the blank to decrease the variable by one.",
+      "codeTemplate": "int vidas = 3;\nvidas____;\nConsole.WriteLine(vidas);",
+      "expectedAnswer": "--"
+    },
+    {
+      "id": "var-facil-70",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa con el operador de igualdad.",
+      "questionTextEn": "Fill in the blank with the equality operator.",
+      "codeTemplate": "int a = 4;\nbool igual = a ____ 4;\nConsole.WriteLine(igual);",
+      "expectedAnswer": "=="
+    },
+    {
+      "id": "var-facil-71",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para unir los dos textos.",
+      "questionTextEn": "Fill in the blank to join the two texts.",
+      "codeTemplate": "string saludo = \"Hola\" ____ \" amigo\";\nConsole.WriteLine(saludo);",
+      "expectedAnswer": "+"
+    },
+    {
+      "id": "var-facil-72",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para convertir el texto \"15\" en entero.",
+      "questionTextEn": "Fill in the blank to convert the text \"15\" into an integer.",
+      "codeTemplate": "int n = int.____(\"15\");\nConsole.WriteLine(n + 1);",
+      "expectedAnswer": "Parse"
+    },
+    {
+      "id": "var-facil-73",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para obtener el mayor de los dos números.",
+      "questionTextEn": "Fill in the blank to get the larger of the two numbers.",
+      "codeTemplate": "int mayor = Math.____(4, 9);\nConsole.WriteLine(mayor);",
+      "expectedAnswer": "Max"
+    },
+    {
+      "id": "var-facil-74",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para obtener la longitud del texto.",
+      "questionTextEn": "Fill in the blank to get the length of the text.",
+      "codeTemplate": "string t = \"casa\";\nint largo = t.____;\nConsole.WriteLine(largo);",
+      "expectedAnswer": "Length"
+    },
+    {
+      "id": "var-facil-75",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para declarar dos números y mostrar su producto.",
+      "questionTextEn": "Put the lines in order to declare two numbers and print their product.",
+      "codeBlocks": [
+        "int a = 6;",
+        "int b = 7;",
+        "int producto = a * b;",
+        "Console.WriteLine(producto);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-facil-76",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para guardar un nombre y saludarlo.",
+      "questionTextEn": "Put the lines in order to store a name and greet it.",
+      "codeBlocks": [
+        "string nombre = \"Eva\";",
+        "string saludo = \"Hola \" + nombre;",
+        "Console.WriteLine(saludo);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-facil-77",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para calcular el doble de un número.",
+      "questionTextEn": "Put the lines in order to compute the double of a number.",
+      "codeBlocks": [
+        "int n = 9;",
+        "int doble = n * 2;",
+        "Console.WriteLine(doble);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-facil-78",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para restar una vida y mostrar las que quedan.",
+      "questionTextEn": "Put the lines in order to subtract a life and print the remaining ones.",
+      "codeBlocks": [
+        "int vidas = 3;",
+        "vidas--;",
+        "Console.WriteLine(vidas);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-facil-79",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para sumar puntos con un operador compuesto.",
+      "questionTextEn": "Put the lines in order to add points with a compound operator.",
+      "codeBlocks": [
+        "int puntos = 100;",
+        "puntos += 50;",
+        "Console.WriteLine(puntos);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-facil-80",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para calcular el área de un rectángulo.",
+      "questionTextEn": "Put the lines in order to compute the area of a rectangle.",
+      "codeBlocks": [
+        "int ancho = 5;",
+        "int alto = 3;",
+        "int area = ancho * alto;",
+        "Console.WriteLine(area);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-facil-81",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para mostrar el texto con interpolación.",
+      "questionTextEn": "Put the lines in order to print the text using interpolation.",
+      "codeBlocks": [
+        "string jugador = \"Sol\";",
+        "int nivel = 4;",
+        "Console.WriteLine($\"{jugador} está en el nivel {nivel}\");"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-facil-82",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para decidir si un número es par.",
+      "questionTextEn": "Put the lines in order to decide whether a number is even.",
+      "codeBlocks": [
+        "int n = 10;",
+        "bool esPar = n % 2 == 0;",
+        "Console.WriteLine(esPar);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-facil-83",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para calcular la media de dos notas.",
+      "questionTextEn": "Put the lines in order to compute the average of two grades.",
+      "codeBlocks": [
+        "double nota1 = 7;",
+        "double nota2 = 9;",
+        "double media = (nota1 + nota2) / 2;",
+        "Console.WriteLine(media);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-facil-84",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para mostrar una constante.",
+      "questionTextEn": "Put the lines in order to print a constant.",
+      "codeBlocks": [
+        "const int MAX = 100;",
+        "int mitad = MAX / 2;",
+        "Console.WriteLine(mitad);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-facil-85",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para contar los caracteres de una palabra.",
+      "questionTextEn": "Put the lines in order to count the characters of a word.",
+      "codeBlocks": [
+        "string palabra = \"montaña\";",
+        "int cantidad = palabra.Length;",
+        "Console.WriteLine(cantidad);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-facil-86",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para convertir un texto en número y sumarle uno.",
+      "questionTextEn": "Put the lines in order to turn a text into a number and add one.",
+      "codeBlocks": [
+        "string texto = \"99\";",
+        "int valor = int.Parse(texto);",
+        "valor++;",
+        "Console.WriteLine(valor);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-facil-87",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para calcular la raíz cuadrada de 81.",
+      "questionTextEn": "Put the lines in order to compute the square root of 81.",
+      "codeBlocks": [
+        "double numero = 81;",
+        "double raiz = Math.Sqrt(numero);",
+        "Console.WriteLine(raiz);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "var-facil-88",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena para comparar dos edades.",
+      "questionTextEn": "Put the lines in order to compare two ages.",
+      "codeBlocks": [
+        "int edadA = 20;",
+        "int edadB = 18;",
+        "bool esMayor = edadA > edadB;",
+        "Console.WriteLine(esMayor);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "var-facil-89",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "codeSnippetsOptions": [
+        "int vidas = 3;",
+        "string nombre = \"Leo\";",
+        "bool ganar = \"true\";",
+        "double pi = 3.14;"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-facil-90",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "codeSnippetsOptions": [
+        "char letra = \"A\";",
+        "string palabra = \"A\";",
+        "int numero = 65;",
+        "bool listo = false;"
+      ],
+      "buggyIndex": 0
+    },
+    {
+      "id": "var-facil-91",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "codeSnippetsOptions": [
+        "int x = 5;",
+        "int y = 2.5;",
+        "double z = 2;",
+        "float w = 2.5f;"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "var-facil-92",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "codeSnippetsOptions": [
+        "int a = 1;",
+        "int b = 2;",
+        "int c = a + b",
+        "int d = 5 - 3;"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-facil-93",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "codeSnippetsOptions": [
+        "int 1numero = 5;",
+        "int numero1 = 5;",
+        "int _numero = 5;",
+        "int Numero = 5;"
+      ],
+      "buggyIndex": 0
+    },
+    {
+      "id": "var-facil-94",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?  int total = 10;",
+      "questionTextEn": "Which line does not compile?  int total = 10;",
+      "codeSnippetsOptions": [
+        "int doble = total * 2;",
+        "double mitad = total;",
+        "string texto = total;",
+        "long grande = total;"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-facil-95",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "codeSnippetsOptions": [
+        "string s = \"Hola\";",
+        "string t = 'Hola';",
+        "string u = \"\";",
+        "string v = \"a\" + \"b\";"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "var-facil-96",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?  int a = 5;",
+      "questionTextEn": "Which line does not compile?  int a = 5;",
+      "codeSnippetsOptions": [
+        "int b = a;",
+        "int c = a + 1;",
+        "int a = 2;",
+        "int d = a * a;"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-facil-97",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "codeSnippetsOptions": [
+        "decimal d = 5.5;",
+        "decimal e = 5.5m;",
+        "double f = 5.5;",
+        "float g = 5.5f;"
+      ],
+      "buggyIndex": 0
+    },
+    {
+      "id": "var-facil-98",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea no compila?",
+      "questionTextEn": "Which line does not compile?",
+      "codeSnippetsOptions": [
+        "bool a = 3 > 2;",
+        "bool b = 3 == 2;",
+        "bool c = 3;",
+        "bool d = !true;"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-facil-99",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea muestra un resultado distinto de 7?",
+      "questionTextEn": "Which line prints a result different from 7?",
+      "codeSnippetsOptions": [
+        "Console.WriteLine(3 + 4);",
+        "Console.WriteLine(14 / 2);",
+        "Console.WriteLine(2 * 3);",
+        "Console.WriteLine(10 - 3);"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-facil-100",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea muestra un resultado distinto de True?",
+      "questionTextEn": "Which line prints a result different from True?",
+      "codeSnippetsOptions": [
+        "Console.WriteLine(5 > 2);",
+        "Console.WriteLine(4 == 4);",
+        "Console.WriteLine(3 != 3);",
+        "Console.WriteLine(1 < 2);"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-facil-101",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea tiene un error de lógica? Se quiere sumar 10 a puntos.  int puntos = 100;",
+      "questionTextEn": "Which line has a logic error? The goal is to add 10 to puntos.  int puntos = 100;",
+      "explanation": "Con =+ se asigna +10 a puntos y se pierde el valor anterior.",
+      "explanationEn": "With =+ the value +10 is assigned to puntos and the previous value is lost.",
+      "codeSnippetsOptions": [
+        "puntos += 10;",
+        "puntos = puntos + 10;",
+        "puntos =+ 10;",
+        "puntos = 10 + puntos;"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "var-facil-102",
+      "category": "VariablesTiposOperadores",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué línea tiene un error de lógica? Se quiere obtener la mitad de n.  int n = 8;",
+      "questionTextEn": "Which line has a logic error? The goal is to get half of n.  int n = 8;",
+      "codeSnippetsOptions": [
+        "int m = n / 2;",
+        "int m = n * 2;",
+        "int m = n >> 1;",
+        "int m = (n + 0) / 2;"
+      ],
+      "buggyIndex": 1
     }
   ]
 }

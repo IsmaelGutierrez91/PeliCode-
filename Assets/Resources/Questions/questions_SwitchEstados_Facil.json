@@ -78,6 +78,1710 @@
         "default: x = 0; break;"
       ],
       "buggyIndex": 2
+    },
+    {
+      "id": "sw-facil-6",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Para qué sirve la instrucción switch?",
+      "questionTextEn": "What is the switch statement for?",
+      "correctAnswer": "Elegir qué código ejecutar según el valor de una variable",
+      "incorrectAnswerPool": [
+        "Repetir un bloque de código varias veces",
+        "Declarar una variable nueva",
+        "Convertir un número en texto",
+        "Terminar el programa",
+        "Crear una clase nueva"
+      ],
+      "correctAnswerEn": "Choosing which code to run depending on the value of a variable",
+      "incorrectAnswerPoolEn": [
+        "Repeating a block of code several times",
+        "Declaring a new variable",
+        "Converting a number to text",
+        "Ending the program",
+        "Creating a new class"
+      ]
+    },
+    {
+      "id": "sw-facil-7",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "En un switch clásico, ¿qué símbolo va justo después del valor de un case?",
+      "questionTextEn": "In a classic switch, which symbol goes right after the value of a case?",
+      "correctAnswer": ":",
+      "incorrectAnswerPool": [
+        ";",
+        ",",
+        "=>",
+        "->",
+        "{"
+      ],
+      "explanation": "La etiqueta case termina en dos puntos.",
+      "explanationEn": "A case label ends with a colon."
+    },
+    {
+      "id": "sw-facil-8",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Entre qué se escribe el valor que evalúa un switch?  switch (valor)",
+      "questionTextEn": "What is the value evaluated by a switch written between?  switch (value)",
+      "correctAnswer": "Entre paréntesis",
+      "incorrectAnswerPool": [
+        "Entre corchetes",
+        "Entre llaves",
+        "Entre comillas",
+        "Entre signos de menor y mayor"
+      ],
+      "correctAnswerEn": "Between parentheses",
+      "incorrectAnswerPoolEn": [
+        "Between square brackets",
+        "Between curly braces",
+        "Between quotation marks",
+        "Between less-than and greater-than signs"
+      ]
+    },
+    {
+      "id": "sw-facil-9",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Es obligatorio escribir default en un switch?",
+      "questionTextEn": "Is it mandatory to write default in a switch?",
+      "correctAnswer": "No, es opcional",
+      "incorrectAnswerPool": [
+        "Sí, sin default no compila",
+        "Sí, pero solo si hay más de tres case",
+        "Solo es obligatorio si se usan strings",
+        "Solo es obligatorio si se usan números"
+      ],
+      "correctAnswerEn": "No, it is optional",
+      "incorrectAnswerPoolEn": [
+        "Yes, without default it does not compile",
+        "Yes, but only if there are more than three cases",
+        "It is only mandatory when strings are used",
+        "It is only mandatory when numbers are used"
+      ]
+    },
+    {
+      "id": "sw-facil-10",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuántos default puede tener como máximo un mismo switch?",
+      "questionTextEn": "What is the maximum number of default labels a single switch can have?",
+      "correctAnswer": "Uno",
+      "incorrectAnswerPool": [
+        "Dos",
+        "Tres",
+        "Uno por cada case",
+        "Los que se quieran"
+      ],
+      "correctAnswerEn": "One",
+      "incorrectAnswerPoolEn": [
+        "Two",
+        "Three",
+        "One for each case",
+        "As many as you want"
+      ]
+    },
+    {
+      "id": "sw-facil-11",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuándo se ejecuta el bloque default de un switch?",
+      "questionTextEn": "When does the default block of a switch run?",
+      "correctAnswer": "Cuando ningún case coincide con el valor",
+      "incorrectAnswerPool": [
+        "Siempre, antes de los case",
+        "Siempre, después de los case",
+        "Cuando el valor es cero",
+        "Cuando el programa se cierra"
+      ],
+      "correctAnswerEn": "When no case matches the value",
+      "incorrectAnswerPoolEn": [
+        "Always, before the cases",
+        "Always, after the cases",
+        "When the value is zero",
+        "When the program closes"
+      ]
+    },
+    {
+      "id": "sw-facil-12",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué tipo de valor debe ir en cada case?  case ___ :",
+      "questionTextEn": "What kind of value must each case have?  case ___ :",
+      "correctAnswer": "Una constante, como un literal",
+      "incorrectAnswerPool": [
+        "Una variable que cambia en el programa",
+        "Una llamada a un método",
+        "Una comparación con variables",
+        "Cualquier expresión que se calcule al ejecutar"
+      ],
+      "correctAnswerEn": "A constant, such as a literal",
+      "incorrectAnswerPoolEn": [
+        "A variable that changes in the program",
+        "A method call",
+        "A comparison using variables",
+        "Any expression computed at run time"
+      ]
+    },
+    {
+      "id": "sw-facil-13",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Se puede usar un string en un switch?",
+      "questionTextEn": "Can a string be used in a switch?",
+      "correctAnswer": "Sí, y los case llevan texto entre comillas",
+      "incorrectAnswerPool": [
+        "No, solo funciona con int",
+        "No, solo funciona con números y char",
+        "Sí, pero los case llevan el texto sin comillas",
+        "Sí, pero solo si es de una letra"
+      ],
+      "correctAnswerEn": "Yes, and the cases have text between quotes",
+      "incorrectAnswerPoolEn": [
+        "No, it only works with int",
+        "No, it only works with numbers and char",
+        "Yes, but the cases have the text without quotes",
+        "Yes, but only if it has one letter"
+      ]
+    },
+    {
+      "id": "sw-facil-14",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Se puede usar un valor de tipo enum en un switch?",
+      "questionTextEn": "Can an enum value be used in a switch?",
+      "correctAnswer": "Sí, cada case usa un miembro del enum",
+      "incorrectAnswerPool": [
+        "No, los enum solo se comparan con if",
+        "No, solo se pueden usar números",
+        "Sí, pero hay que convertirlo siempre a string",
+        "Sí, pero solo si el enum tiene un miembro"
+      ],
+      "correctAnswerEn": "Yes, each case uses a member of the enum",
+      "incorrectAnswerPoolEn": [
+        "No, enums can only be compared with if",
+        "No, only numbers can be used",
+        "Yes, but it must always be converted to string",
+        "Yes, but only if the enum has a single member"
+      ]
+    },
+    {
+      "id": "sw-facil-15",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué pasa si dos case de un mismo switch tienen el mismo valor?",
+      "questionTextEn": "What happens if two cases of the same switch have the same value?",
+      "correctAnswer": "No compila: el valor está repetido",
+      "incorrectAnswerPool": [
+        "Se ejecuta solo el primero y se ignora el segundo",
+        "Se ejecutan los dos, uno tras otro",
+        "Se ejecuta solo el segundo",
+        "Compila, pero lanza una excepción al ejecutar"
+      ],
+      "correctAnswerEn": "It does not compile: the value is repeated",
+      "incorrectAnswerPoolEn": [
+        "Only the first one runs and the second is ignored",
+        "Both run, one after the other",
+        "Only the second one runs",
+        "It compiles, but throws an exception at run time"
+      ]
+    },
+    {
+      "id": "sw-facil-16",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "Un case tiene instrucciones y no termina en break ni en return. ¿Qué pasa?",
+      "questionTextEn": "A case has statements and does not end with break or return. What happens?",
+      "correctAnswer": "Error de compilación: no se puede pasar al siguiente case",
+      "incorrectAnswerPool": [
+        "Se ejecuta también el siguiente case",
+        "Se ejecuta el default",
+        "El switch se repite desde el principio",
+        "Solo se muestra una advertencia"
+      ],
+      "correctAnswerEn": "Compile error: you cannot fall through to the next case",
+      "incorrectAnswerPoolEn": [
+        "The next case also runs",
+        "The default runs",
+        "The switch repeats from the start",
+        "Only a warning is shown"
+      ]
+    },
+    {
+      "id": "sw-facil-17",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué hace break dentro de un switch?",
+      "questionTextEn": "What does break do inside a switch?",
+      "correctAnswer": "Sale del switch y sigue con la instrucción que está después",
+      "incorrectAnswerPool": [
+        "Termina todo el programa",
+        "Vuelve al primer case",
+        "Salta al default",
+        "Repite el case actual"
+      ],
+      "correctAnswerEn": "It leaves the switch and continues with the next statement after it",
+      "incorrectAnswerPoolEn": [
+        "It ends the whole program",
+        "It goes back to the first case",
+        "It jumps to default",
+        "It repeats the current case"
+      ]
+    },
+    {
+      "id": "sw-facil-18",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "Dentro de un método, ¿qué hace return en un case?",
+      "questionTextEn": "Inside a method, what does return do in a case?",
+      "correctAnswer": "Termina el método y devuelve un valor si lo hay",
+      "incorrectAnswerPool": [
+        "Solo sale del switch y sigue el método",
+        "Salta al siguiente case",
+        "Vuelve a evaluar el switch",
+        "No se puede usar return dentro de un switch"
+      ],
+      "correctAnswerEn": "It ends the method and returns a value if there is one",
+      "incorrectAnswerPoolEn": [
+        "It only leaves the switch and the method goes on",
+        "It jumps to the next case",
+        "It evaluates the switch again",
+        "return cannot be used inside a switch"
+      ]
+    },
+    {
+      "id": "sw-facil-19",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cuándo conviene usar switch en lugar de muchos if-else?",
+      "questionTextEn": "When is switch better than many if-else?",
+      "correctAnswer": "Cuando se compara una misma variable con muchos valores fijos",
+      "incorrectAnswerPool": [
+        "Cuando hay que repetir código muchas veces",
+        "Cuando se comparan variables distintas en cada condición",
+        "Cuando hay una sola condición",
+        "Cuando el valor es un número decimal que cambia siempre"
+      ],
+      "correctAnswerEn": "When one same variable is compared with many fixed values",
+      "incorrectAnswerPoolEn": [
+        "When code must be repeated many times",
+        "When different variables are compared in each condition",
+        "When there is a single condition",
+        "When the value is a decimal number that always changes"
+      ]
+    },
+    {
+      "id": "sw-facil-20",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué es un enum en C#?",
+      "questionTextEn": "What is an enum in C#?",
+      "correctAnswer": "Un tipo formado por un conjunto de constantes con nombre",
+      "incorrectAnswerPool": [
+        "Una lista que crece al agregar elementos",
+        "Un método que devuelve números",
+        "Un tipo de bucle",
+        "Un comentario especial"
+      ],
+      "correctAnswerEn": "A type made of a set of named constants",
+      "incorrectAnswerPoolEn": [
+        "A list that grows when items are added",
+        "A method that returns numbers",
+        "A kind of loop",
+        "A special comment"
+      ]
+    },
+    {
+      "id": "sw-facil-21",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "Existe  enum Estado { Quieto, Corriendo }.  ¿Cómo se escribe el miembro Corriendo?",
+      "questionTextEn": "There is  enum Estado { Quieto, Corriendo }.  How is the member Corriendo written?",
+      "correctAnswer": "Estado.Corriendo",
+      "incorrectAnswerPool": [
+        "Estado::Corriendo",
+        "Estado->Corriendo",
+        "Estado(Corriendo)",
+        "Corriendo.Estado"
+      ]
+    },
+    {
+      "id": "sw-facil-22",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué es una máquina de estados?",
+      "questionTextEn": "What is a state machine?",
+      "correctAnswer": "Un modelo donde algo está en un estado a la vez y cambia entre ellos",
+      "incorrectAnswerPool": [
+        "Un programa que solo funciona en una máquina",
+        "Un bucle que nunca termina",
+        "Una lista de todos los números enteros",
+        "Un método que no recibe parámetros"
+      ],
+      "correctAnswerEn": "A model where something is in one state at a time and changes between them",
+      "incorrectAnswerPoolEn": [
+        "A program that only works on one machine",
+        "A loop that never ends",
+        "A list of all integer numbers",
+        "A method that takes no parameters"
+      ]
+    },
+    {
+      "id": "sw-facil-23",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "En una máquina de estados simple, ¿cuántos estados están activos a la vez?",
+      "questionTextEn": "In a simple state machine, how many states are active at once?",
+      "correctAnswer": "Uno",
+      "incorrectAnswerPool": [
+        "Dos",
+        "Todos",
+        "Ninguno",
+        "Depende del número de case"
+      ],
+      "correctAnswerEn": "One",
+      "incorrectAnswerPoolEn": [
+        "Two",
+        "All of them",
+        "None",
+        "It depends on the number of cases"
+      ]
+    },
+    {
+      "id": "sw-facil-24",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "En una máquina de estados, ¿cómo se llama el paso de un estado a otro?",
+      "questionTextEn": "In a state machine, what is moving from one state to another called?",
+      "correctAnswer": "Transición",
+      "incorrectAnswerPool": [
+        "Declaración",
+        "Iteración",
+        "Herencia",
+        "Compilación"
+      ],
+      "correctAnswerEn": "Transition",
+      "incorrectAnswerPoolEn": [
+        "Declaration",
+        "Iteration",
+        "Inheritance",
+        "Compilation"
+      ]
+    },
+    {
+      "id": "sw-facil-25",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué tipo de variable se usa normalmente para guardar el estado actual de un personaje?",
+      "questionTextEn": "What kind of variable is normally used to store the current state of a character?",
+      "correctAnswer": "Una variable de tipo enum",
+      "incorrectAnswerPool": [
+        "Una variable de tipo float",
+        "Una constante de tipo string con el nombre del archivo",
+        "Un arreglo de bool sin nombres",
+        "Una variable de tipo void"
+      ],
+      "correctAnswerEn": "A variable of an enum type",
+      "incorrectAnswerPoolEn": [
+        "A float variable",
+        "A string constant with the file name",
+        "An array of bool with no names",
+        "A void variable"
+      ]
+    },
+    {
+      "id": "sw-facil-26",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Por qué es mejor usar un enum que números sueltos (0, 1, 2) para los estados?",
+      "questionTextEn": "Why is an enum better than loose numbers (0, 1, 2) for states?",
+      "correctAnswer": "Los nombres hacen el código más fácil de leer",
+      "incorrectAnswerPool": [
+        "Porque el enum ocupa menos memoria que cualquier número",
+        "Porque con números el switch no compila",
+        "Porque los números no se pueden comparar",
+        "Porque el enum se ejecuta más rápido siempre"
+      ],
+      "correctAnswerEn": "The names make the code easier to read",
+      "incorrectAnswerPoolEn": [
+        "Because an enum takes less memory than any number",
+        "Because a switch does not compile with numbers",
+        "Because numbers cannot be compared",
+        "Because an enum always runs faster"
+      ]
+    },
+    {
+      "id": "sw-facil-27",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "En una expresión switch, ¿qué símbolo separa el patrón del resultado?  1 ___ \"uno\"",
+      "questionTextEn": "In a switch expression, which symbol separates the pattern from the result?  1 ___ \"one\"",
+      "correctAnswer": "=>",
+      "incorrectAnswerPool": [
+        ":",
+        "->",
+        "=",
+        ";"
+      ]
+    },
+    {
+      "id": "sw-facil-28",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué diferencia principal hay entre la instrucción switch y la expresión switch?",
+      "questionTextEn": "What is the main difference between the switch statement and the switch expression?",
+      "correctAnswer": "La expresión switch produce un valor que se puede guardar en una variable",
+      "incorrectAnswerPool": [
+        "La instrucción switch no permite default",
+        "La expresión switch solo funciona con enum",
+        "La expresión switch necesita un break en cada brazo",
+        "Ninguna: son idénticas en todo"
+      ],
+      "correctAnswerEn": "The switch expression produces a value that can be stored in a variable",
+      "incorrectAnswerPoolEn": [
+        "The switch statement does not allow default",
+        "The switch expression only works with enums",
+        "The switch expression needs a break in each arm",
+        "None: they are identical in every way"
+      ]
+    },
+    {
+      "id": "sw-facil-29",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué tipo de dato tiene el valor de un case en  switch (letra)  si  char letra = 'a';?",
+      "questionTextEn": "What data type must the value of a case have in  switch (letra)  if  char letra = 'a';?",
+      "correctAnswer": "char, escrito entre comillas simples",
+      "incorrectAnswerPool": [
+        "string, escrito entre comillas dobles",
+        "int, escrito sin comillas",
+        "bool, escrito como true o false",
+        "float, escrito con punto decimal"
+      ],
+      "correctAnswerEn": "char, written between single quotes",
+      "incorrectAnswerPoolEn": [
+        "string, written between double quotes",
+        "int, written without quotes",
+        "bool, written as true or false",
+        "float, written with a decimal point"
+      ]
+    },
+    {
+      "id": "sw-facil-30",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Cómo se agrupan varios valores para que ejecuten el mismo bloque en un switch clásico?",
+      "questionTextEn": "How are several values grouped to run the same block in a classic switch?",
+      "correctAnswer": "Escribiendo varios case seguidos, sin código entre ellos",
+      "incorrectAnswerPool": [
+        "Separando los valores con comas en un solo case",
+        "Escribiendo un solo case con la palabra all",
+        "Repitiendo el código en cada case sin break",
+        "No se puede agrupar en C#"
+      ],
+      "correctAnswerEn": "Writing several cases in a row, with no code between them",
+      "incorrectAnswerPoolEn": [
+        "Separating the values with commas in a single case",
+        "Writing a single case with the word all",
+        "Repeating the code in each case without break",
+        "Grouping is not possible in C#"
+      ]
+    },
+    {
+      "id": "sw-facil-31",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Importa el orden en que se escriben los case cuando son valores distintos?",
+      "questionTextEn": "Does the order of the cases matter when they are different values?",
+      "correctAnswer": "No, se ejecuta el que coincide con el valor",
+      "incorrectAnswerPool": [
+        "Sí, siempre se ejecuta el primero escrito",
+        "Sí, siempre se ejecuta el último escrito",
+        "Sí, deben estar ordenados de menor a mayor",
+        "Sí, el default debe ir primero"
+      ],
+      "correctAnswerEn": "No, the one that matches the value runs",
+      "incorrectAnswerPoolEn": [
+        "Yes, the first one written always runs",
+        "Yes, the last one written always runs",
+        "Yes, they must be sorted from lowest to highest",
+        "Yes, default must go first"
+      ]
+    },
+    {
+      "id": "sw-facil-32",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué número tiene por defecto el primer miembro de un enum?",
+      "questionTextEn": "What number does the first member of an enum have by default?",
+      "correctAnswer": "0",
+      "incorrectAnswerPool": [
+        "1",
+        "-1",
+        "10",
+        "No tiene número"
+      ],
+      "correctAnswerEn": "0",
+      "incorrectAnswerPoolEn": [
+        "1",
+        "-1",
+        "10",
+        "It has no number"
+      ]
+    },
+    {
+      "id": "sw-facil-33",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué hace el guion bajo _ como último brazo de una expresión switch?",
+      "questionTextEn": "What does the underscore _ do as the last arm of a switch expression?",
+      "correctAnswer": "Atiende cualquier valor que no coincidió antes",
+      "incorrectAnswerPool": [
+        "Marca el final de la expresión",
+        "Ignora toda la expresión",
+        "Repite el primer brazo",
+        "Declara una variable llamada _"
+      ],
+      "correctAnswerEn": "It handles any value that did not match before",
+      "incorrectAnswerPoolEn": [
+        "It marks the end of the expression",
+        "It ignores the whole expression",
+        "It repeats the first arm",
+        "It declares a variable called _"
+      ]
+    },
+    {
+      "id": "sw-facil-34",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint dia = 3;\nswitch (dia)\n{\n    case 1: Console.Write(\"Lunes\"); break;\n    case 2: Console.Write(\"Martes\"); break;\n    case 3: Console.Write(\"Miercoles\"); break;\n}",
+      "questionTextEn": "What does it print?\nint dia = 3;\nswitch (dia)\n{\n    case 1: Console.Write(\"Lunes\"); break;\n    case 2: Console.Write(\"Martes\"); break;\n    case 3: Console.Write(\"Miercoles\"); break;\n}",
+      "correctAnswer": "Miercoles",
+      "incorrectAnswerPool": [
+        "Lunes",
+        "Martes",
+        "LunesMartesMiercoles",
+        "No muestra nada"
+      ]
+    },
+    {
+      "id": "sw-facil-35",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = 9;\nswitch (n)\n{\n    case 1: Console.Write(\"Uno\"); break;\n    case 2: Console.Write(\"Dos\"); break;\n    default: Console.Write(\"Otro\"); break;\n}",
+      "questionTextEn": "What does it print?\nint n = 9;\nswitch (n)\n{\n    case 1: Console.Write(\"Uno\"); break;\n    case 2: Console.Write(\"Dos\"); break;\n    default: Console.Write(\"Otro\"); break;\n}",
+      "correctAnswer": "Otro",
+      "incorrectAnswerPool": [
+        "Uno",
+        "Dos",
+        "UnoDosOtro",
+        "No muestra nada"
+      ]
+    },
+    {
+      "id": "sw-facil-36",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = 7;\nswitch (n)\n{\n    case 1: Console.Write(\"A\"); break;\n    case 2: Console.Write(\"B\"); break;\n}\nConsole.Write(\"Fin\");",
+      "questionTextEn": "What does it print?\nint n = 7;\nswitch (n)\n{\n    case 1: Console.Write(\"A\"); break;\n    case 2: Console.Write(\"B\"); break;\n}\nConsole.Write(\"Fin\");",
+      "correctAnswer": "Fin",
+      "incorrectAnswerPool": [
+        "A",
+        "B",
+        "ABFin",
+        "No muestra nada"
+      ],
+      "explanation": "Ningún case coincide y no hay default, así que solo se ejecuta lo que está después del switch.",
+      "explanationEn": "No case matches and there is no default, so only the code after the switch runs."
+    },
+    {
+      "id": "sw-facil-37",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring color = \"verde\";\nswitch (color)\n{\n    case \"rojo\": Console.Write(\"Alto\"); break;\n    case \"verde\": Console.Write(\"Siga\"); break;\n    default: Console.Write(\"Cuidado\"); break;\n}",
+      "questionTextEn": "What does it print?\nstring color = \"verde\";\nswitch (color)\n{\n    case \"rojo\": Console.Write(\"Alto\"); break;\n    case \"verde\": Console.Write(\"Siga\"); break;\n    default: Console.Write(\"Cuidado\"); break;\n}",
+      "correctAnswer": "Siga",
+      "incorrectAnswerPool": [
+        "Alto",
+        "Cuidado",
+        "AltoSiga",
+        "No muestra nada"
+      ]
+    },
+    {
+      "id": "sw-facil-38",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = \"Rojo\";\nswitch (s)\n{\n    case \"rojo\": Console.Write(\"Alto\"); break;\n    default: Console.Write(\"Otro\"); break;\n}",
+      "questionTextEn": "What does it print?\nstring s = \"Rojo\";\nswitch (s)\n{\n    case \"rojo\": Console.Write(\"Alto\"); break;\n    default: Console.Write(\"Otro\"); break;\n}",
+      "correctAnswer": "Otro",
+      "incorrectAnswerPool": [
+        "Alto",
+        "Rojo",
+        "AltoOtro",
+        "No muestra nada"
+      ],
+      "explanation": "Las comparaciones de texto distinguen mayúsculas: \"Rojo\" no es \"rojo\".",
+      "explanationEn": "Text comparisons are case-sensitive: \"Rojo\" is not \"rojo\"."
+    },
+    {
+      "id": "sw-facil-39",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint m = 2;\nswitch (m)\n{\n    case 1:\n    case 2:\n    case 3:\n        Console.Write(\"Pocos\");\n        break;\n    default:\n        Console.Write(\"Muchos\");\n        break;\n}",
+      "questionTextEn": "What does it print?\nint m = 2;\nswitch (m)\n{\n    case 1:\n    case 2:\n    case 3:\n        Console.Write(\"Pocos\");\n        break;\n    default:\n        Console.Write(\"Muchos\");\n        break;\n}",
+      "correctAnswer": "Pocos",
+      "incorrectAnswerPool": [
+        "Muchos",
+        "PocosMuchos",
+        "No muestra nada",
+        "2"
+      ]
+    },
+    {
+      "id": "sw-facil-40",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nenum Luz { Rojo, Amarillo, Verde }\nLuz l = Luz.Amarillo;\nswitch (l)\n{\n    case Luz.Rojo: Console.Write(\"Alto\"); break;\n    case Luz.Amarillo: Console.Write(\"Precaucion\"); break;\n    case Luz.Verde: Console.Write(\"Siga\"); break;\n}",
+      "questionTextEn": "What does it print?\nenum Luz { Rojo, Amarillo, Verde }\nLuz l = Luz.Amarillo;\nswitch (l)\n{\n    case Luz.Rojo: Console.Write(\"Alto\"); break;\n    case Luz.Amarillo: Console.Write(\"Precaucion\"); break;\n    case Luz.Verde: Console.Write(\"Siga\"); break;\n}",
+      "correctAnswer": "Precaucion",
+      "incorrectAnswerPool": [
+        "Alto",
+        "Siga",
+        "Amarillo",
+        "No muestra nada"
+      ]
+    },
+    {
+      "id": "sw-facil-41",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 2;\nswitch (x)\n{\n    default: Console.Write(\"D\"); break;\n    case 2: Console.Write(\"Dos\"); break;\n}",
+      "questionTextEn": "What does it print?\nint x = 2;\nswitch (x)\n{\n    default: Console.Write(\"D\"); break;\n    case 2: Console.Write(\"Dos\"); break;\n}",
+      "correctAnswer": "Dos",
+      "incorrectAnswerPool": [
+        "D",
+        "DDos",
+        "DosD",
+        "No muestra nada"
+      ],
+      "explanation": "default solo se usa si ningún case coincide, esté donde esté escrito.",
+      "explanationEn": "default is only used when no case matches, wherever it is written."
+    },
+    {
+      "id": "sw-facil-42",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene p al final?\nint op = 2;\nint p = 0;\nswitch (op)\n{\n    case 1: p = 10; break;\n    case 2: p = 20; break;\n    default: p = 30; break;\n}",
+      "questionTextEn": "What is the value of p at the end?\nint op = 2;\nint p = 0;\nswitch (op)\n{\n    case 1: p = 10; break;\n    case 2: p = 20; break;\n    default: p = 30; break;\n}",
+      "correctAnswer": "20",
+      "incorrectAnswerPool": [
+        "0",
+        "10",
+        "30",
+        "60"
+      ]
+    },
+    {
+      "id": "sw-facil-43",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nchar g = 'B';\nswitch (g)\n{\n    case 'A': Console.Write(\"Excelente\"); break;\n    case 'B': Console.Write(\"Bueno\"); break;\n    default: Console.Write(\"Regular\"); break;\n}",
+      "questionTextEn": "What does it print?\nchar g = 'B';\nswitch (g)\n{\n    case 'A': Console.Write(\"Excelente\"); break;\n    case 'B': Console.Write(\"Bueno\"); break;\n    default: Console.Write(\"Regular\"); break;\n}",
+      "correctAnswer": "Bueno",
+      "incorrectAnswerPool": [
+        "Excelente",
+        "Regular",
+        "B",
+        "ExcelenteBueno"
+      ]
+    },
+    {
+      "id": "sw-facil-44",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene bono al final?\nint nivel = 3;\nint bono = 0;\nswitch (nivel)\n{\n    case 1: bono = 5; break;\n    case 2: bono = 10; break;\n    case 3: bono = 15; break;\n}",
+      "questionTextEn": "What is the value of bono at the end?\nint nivel = 3;\nint bono = 0;\nswitch (nivel)\n{\n    case 1: bono = 5; break;\n    case 2: bono = 10; break;\n    case 3: bono = 15; break;\n}",
+      "correctAnswer": "15",
+      "incorrectAnswerPool": [
+        "0",
+        "3",
+        "5",
+        "30"
+      ]
+    },
+    {
+      "id": "sw-facil-45",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstatic string Nombre(int n)\n{\n    switch (n)\n    {\n        case 1: return \"Uno\";\n        case 2: return \"Dos\";\n        default: return \"Otro\";\n    }\n}\nConsole.Write(Nombre(2));",
+      "questionTextEn": "What does it print?\nstatic string Nombre(int n)\n{\n    switch (n)\n    {\n        case 1: return \"Uno\";\n        case 2: return \"Dos\";\n        default: return \"Otro\";\n    }\n}\nConsole.Write(Nombre(2));",
+      "correctAnswer": "Dos",
+      "incorrectAnswerPool": [
+        "Uno",
+        "Otro",
+        "UnoDos",
+        "2"
+      ]
+    },
+    {
+      "id": "sw-facil-46",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nenum Dia { Lunes, Martes, Miercoles }\nDia d = Dia.Martes;\nswitch (d)\n{\n    case Dia.Lunes: Console.Write(\"Inicio\"); break;\n    case Dia.Martes: Console.Write(\"Segundo\"); break;\n    default: Console.Write(\"Otro\"); break;\n}",
+      "questionTextEn": "What does it print?\nenum Dia { Lunes, Martes, Miercoles }\nDia d = Dia.Martes;\nswitch (d)\n{\n    case Dia.Lunes: Console.Write(\"Inicio\"); break;\n    case Dia.Martes: Console.Write(\"Segundo\"); break;\n    default: Console.Write(\"Otro\"); break;\n}",
+      "correctAnswer": "Segundo",
+      "incorrectAnswerPool": [
+        "Inicio",
+        "Otro",
+        "Martes",
+        "InicioSegundo"
+      ]
+    },
+    {
+      "id": "sw-facil-47",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nint n = 2;\nstring r = n switch\n{\n    1 => \"uno\",\n    2 => \"dos\",\n    _ => \"otro\"\n};",
+      "questionTextEn": "What is the value of r at the end?\nint n = 2;\nstring r = n switch\n{\n    1 => \"uno\",\n    2 => \"dos\",\n    _ => \"otro\"\n};",
+      "correctAnswer": "dos",
+      "incorrectAnswerPool": [
+        "uno",
+        "otro",
+        "n",
+        "unodosotro"
+      ]
+    },
+    {
+      "id": "sw-facil-48",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nint n = 5;\nstring r = n switch\n{\n    1 => \"uno\",\n    2 => \"dos\",\n    _ => \"otro\"\n};",
+      "questionTextEn": "What is the value of r at the end?\nint n = 5;\nstring r = n switch\n{\n    1 => \"uno\",\n    2 => \"dos\",\n    _ => \"otro\"\n};",
+      "correctAnswer": "otro",
+      "incorrectAnswerPool": [
+        "uno",
+        "dos",
+        "5",
+        "unodos"
+      ]
+    },
+    {
+      "id": "sw-facil-49",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nenum Luz { Rojo, Amarillo, Verde }\nLuz l = Luz.Verde;\nstring r = l switch\n{\n    Luz.Rojo => \"Alto\",\n    Luz.Amarillo => \"Cuidado\",\n    _ => \"Siga\"\n};",
+      "questionTextEn": "What is the value of r at the end?\nenum Luz { Rojo, Amarillo, Verde }\nLuz l = Luz.Verde;\nstring r = l switch\n{\n    Luz.Rojo => \"Alto\",\n    Luz.Amarillo => \"Cuidado\",\n    _ => \"Siga\"\n};",
+      "correctAnswer": "Siga",
+      "incorrectAnswerPool": [
+        "Alto",
+        "Cuidado",
+        "Verde",
+        "AltoSiga"
+      ]
+    },
+    {
+      "id": "sw-facil-50",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene p al final?\nchar c = 'b';\nint p = c switch\n{\n    'a' => 1,\n    'b' => 2,\n    _ => 0\n};",
+      "questionTextEn": "What is the value of p at the end?\nchar c = 'b';\nint p = c switch\n{\n    'a' => 1,\n    'b' => 2,\n    _ => 0\n};",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "0",
+        "1",
+        "3",
+        "b"
+      ]
+    },
+    {
+      "id": "sw-facil-51",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 2, b = 3;\nswitch (a + b)\n{\n    case 5: Console.Write(\"Cinco\"); break;\n    default: Console.Write(\"Otro\"); break;\n}",
+      "questionTextEn": "What does it print?\nint a = 2, b = 3;\nswitch (a + b)\n{\n    case 5: Console.Write(\"Cinco\"); break;\n    default: Console.Write(\"Otro\"); break;\n}",
+      "correctAnswer": "Cinco",
+      "incorrectAnswerPool": [
+        "Otro",
+        "5",
+        "CincoOtro",
+        "No muestra nada"
+      ]
+    },
+    {
+      "id": "sw-facil-52",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nconst int Max = 10;\nint n = 10;\nswitch (n)\n{\n    case Max: Console.Write(\"Tope\"); break;\n    default: Console.Write(\"Menos\"); break;\n}",
+      "questionTextEn": "What does it print?\nconst int Max = 10;\nint n = 10;\nswitch (n)\n{\n    case Max: Console.Write(\"Tope\"); break;\n    default: Console.Write(\"Menos\"); break;\n}",
+      "correctAnswer": "Tope",
+      "incorrectAnswerPool": [
+        "Menos",
+        "Max",
+        "TopeMenos",
+        "No muestra nada"
+      ]
+    },
+    {
+      "id": "sw-facil-53",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nchar op = '+';\nint a = 6, b = 2;\nint r = 0;\nswitch (op)\n{\n    case '+': r = a + b; break;\n    case '-': r = a - b; break;\n    case '*': r = a * b; break;\n}",
+      "questionTextEn": "What is the value of r at the end?\nchar op = '+';\nint a = 6, b = 2;\nint r = 0;\nswitch (op)\n{\n    case '+': r = a + b; break;\n    case '-': r = a - b; break;\n    case '*': r = a * b; break;\n}",
+      "correctAnswer": "8",
+      "incorrectAnswerPool": [
+        "4",
+        "12",
+        "0",
+        "3"
+      ]
+    },
+    {
+      "id": "sw-facil-54",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nchar op = '%';\nint a = 6, b = 2;\nint r = 0;\nswitch (op)\n{\n    case '+': r = a + b; break;\n    case '-': r = a - b; break;\n    default: r = -1; break;\n}",
+      "questionTextEn": "What is the value of r at the end?\nchar op = '%';\nint a = 6, b = 2;\nint r = 0;\nswitch (op)\n{\n    case '+': r = a + b; break;\n    case '-': r = a - b; break;\n    default: r = -1; break;\n}",
+      "correctAnswer": "-1",
+      "incorrectAnswerPool": [
+        "0",
+        "8",
+        "4",
+        "2"
+      ]
+    },
+    {
+      "id": "sw-facil-55",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nenum Estado { Quieto, Corriendo, Saltando }\nConsole.Write((int)Estado.Saltando);",
+      "questionTextEn": "What does it print?\nenum Estado { Quieto, Corriendo, Saltando }\nConsole.Write((int)Estado.Saltando);",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "0",
+        "1",
+        "3",
+        "Saltando"
+      ]
+    },
+    {
+      "id": "sw-facil-56",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nenum Nivel { Bajo = 1, Medio, Alto }\nConsole.Write((int)Nivel.Alto);",
+      "questionTextEn": "What does it print?\nenum Nivel { Bajo = 1, Medio, Alto }\nConsole.Write((int)Nivel.Alto);",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "2",
+        "1",
+        "0",
+        "Alto"
+      ]
+    },
+    {
+      "id": "sw-facil-57",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué ocurre al compilar este código?\nint n = 1;\nswitch (n)\n{\n    case 1: Console.Write(\"A\"); break;\n    case 1: Console.Write(\"B\"); break;\n}",
+      "questionTextEn": "What happens when this code is compiled?\nint n = 1;\nswitch (n)\n{\n    case 1: Console.Write(\"A\"); break;\n    case 1: Console.Write(\"B\"); break;\n}",
+      "correctAnswer": "Error de compilación",
+      "correctAnswerEn": "Compile error",
+      "incorrectAnswerPool": [
+        "Compila y se ejecuta sin errores",
+        "Compila, pero lanza una excepción al ejecutarse",
+        "Compila con una advertencia pero funciona",
+        "Compila y muestra un mensaje en la consola"
+      ],
+      "incorrectAnswerPoolEn": [
+        "It compiles and runs without errors",
+        "It compiles but throws an exception at run time",
+        "It compiles with a warning but works",
+        "It compiles and prints a message to the console"
+      ]
+    },
+    {
+      "id": "sw-facil-58",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué ocurre al compilar este código?\nint n = 2;\nswitch (n)\n{\n    case 1: Console.Write(\"A\"); break;\n    default: Console.Write(\"B\");\n}",
+      "questionTextEn": "What happens when this code is compiled?\nint n = 2;\nswitch (n)\n{\n    case 1: Console.Write(\"A\"); break;\n    default: Console.Write(\"B\");\n}",
+      "correctAnswer": "Error de compilación",
+      "correctAnswerEn": "Compile error",
+      "incorrectAnswerPool": [
+        "Compila y se ejecuta sin errores",
+        "Compila, pero lanza una excepción al ejecutarse",
+        "Compila con una advertencia pero funciona",
+        "Compila y muestra un mensaje en la consola"
+      ],
+      "incorrectAnswerPoolEn": [
+        "It compiles and runs without errors",
+        "It compiles but throws an exception at run time",
+        "It compiles with a warning but works",
+        "It compiles and prints a message to the console"
+      ]
+    },
+    {
+      "id": "sw-facil-59",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para que muestre Uno.",
+      "questionTextEn": "Fill in the blank so it prints Uno.",
+      "codeTemplate": "int n = 1;\nswitch (n)\n{\n    ____ 1:\n        Console.Write(\"Uno\");\n        break;\n}",
+      "expectedAnswer": "case"
+    },
+    {
+      "id": "sw-facil-60",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para terminar el case.",
+      "questionTextEn": "Fill in the blank to end the case.",
+      "codeTemplate": "int n = 1;\nswitch (n)\n{\n    case 1:\n        Console.Write(\"Uno\");\n        ____;\n}\nConsole.Write(\"Fin\");",
+      "expectedAnswer": "break"
+    },
+    {
+      "id": "sw-facil-61",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el caso por defecto.",
+      "questionTextEn": "Fill in the default case.",
+      "codeTemplate": "int n = 8;\nswitch (n)\n{\n    case 1: Console.Write(\"Uno\"); break;\n    ____: Console.Write(\"Otro\"); break;\n}",
+      "expectedAnswer": "default"
+    },
+    {
+      "id": "sw-facil-62",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa la palabra que inicia la instrucción.",
+      "questionTextEn": "Fill in the keyword that starts the statement.",
+      "codeTemplate": "int dia = 2;\n____ (dia)\n{\n    case 2: Console.Write(\"Martes\"); break;\n}",
+      "expectedAnswer": "switch"
+    },
+    {
+      "id": "sw-facil-63",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa la palabra que declara el tipo de estados.",
+      "questionTextEn": "Fill in the keyword that declares the states type.",
+      "codeTemplate": "____ Luz { Rojo, Amarillo, Verde }",
+      "expectedAnswer": "enum"
+    },
+    {
+      "id": "sw-facil-64",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para que se muestre Siga.\nenum Luz { Rojo, Amarillo, Verde }",
+      "questionTextEn": "Fill in the blank so it prints Siga.\nenum Luz { Rojo, Amarillo, Verde }",
+      "codeTemplate": "Luz l = Luz.____;\nswitch (l)\n{\n    case Luz.Rojo: Console.Write(\"Alto\"); break;\n    case Luz.Verde: Console.Write(\"Siga\"); break;\n}",
+      "expectedAnswer": "Verde"
+    },
+    {
+      "id": "sw-facil-65",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el símbolo que separa patrón y resultado.",
+      "questionTextEn": "Fill in the symbol that separates pattern and result.",
+      "codeTemplate": "int n = 2;\nstring r = n switch\n{\n    1 => \"uno\",\n    2 ____ \"dos\",\n    _ => \"otro\"\n};\nConsole.Write(r);",
+      "expectedAnswer": "=>"
+    },
+    {
+      "id": "sw-facil-66",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el brazo que atiende cualquier otro valor.",
+      "questionTextEn": "Fill in the arm that handles any other value.",
+      "codeTemplate": "int n = 9;\nstring r = n switch\n{\n    1 => \"uno\",\n    ____ => \"otro\"\n};\nConsole.Write(r);",
+      "expectedAnswer": "_"
+    },
+    {
+      "id": "sw-facil-67",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el símbolo que cierra la etiqueta del case.",
+      "questionTextEn": "Fill in the symbol that closes the case label.",
+      "codeTemplate": "int n = 1;\nswitch (n)\n{\n    case 1____\n        Console.Write(\"Uno\");\n        break;\n}",
+      "expectedAnswer": ":"
+    },
+    {
+      "id": "sw-facil-68",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el valor del case para un char.",
+      "questionTextEn": "Fill in the case value for a char.",
+      "codeTemplate": "char c = 'b';\nswitch (c)\n{\n    case ____: Console.Write(\"B\"); break;\n    default: Console.Write(\"?\"); break;\n}",
+      "expectedAnswer": "'b'"
+    },
+    {
+      "id": "sw-facil-69",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el valor del case para un string.",
+      "questionTextEn": "Fill in the case value for a string.",
+      "codeTemplate": "string color = \"rojo\";\nswitch (color)\n{\n    case ____: Console.Write(\"Alto\"); break;\n    default: Console.Write(\"?\"); break;\n}",
+      "expectedAnswer": "\"rojo\""
+    },
+    {
+      "id": "sw-facil-70",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el break del caso por defecto.",
+      "questionTextEn": "Fill in the break of the default case.",
+      "codeTemplate": "int n = 5;\nswitch (n)\n{\n    case 1: Console.Write(\"Uno\"); break;\n    default:\n        Console.Write(\"Otro\");\n        ____;\n}\nConsole.Write(\"Fin\");",
+      "expectedAnswer": "break"
+    },
+    {
+      "id": "sw-facil-71",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa para agrupar los casos 1 y 2.",
+      "questionTextEn": "Fill in the blank to group cases 1 and 2.",
+      "codeTemplate": "int n = 2;\nswitch (n)\n{\n    case 1:\n    ____ 2:\n        Console.Write(\"Poco\");\n        break;\n}",
+      "expectedAnswer": "case"
+    },
+    {
+      "id": "sw-facil-72",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el estado inicial del personaje.\nenum Estado { Quieto, Corriendo }",
+      "questionTextEn": "Fill in the initial state of the character.\nenum Estado { Quieto, Corriendo }",
+      "codeTemplate": "Estado e = Estado.____;\nswitch (e)\n{\n    case Estado.Quieto: Console.Write(\"Descansa\"); break;\n    case Estado.Corriendo: Console.Write(\"Corre\"); break;\n}",
+      "expectedAnswer": "Quieto"
+    },
+    {
+      "id": "sw-facil-73",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "CompletarCodigo",
+      "questionText": "Completa el resultado del brazo por defecto.",
+      "questionTextEn": "Fill in the result of the default arm.",
+      "codeTemplate": "int n = 7;\nstring r = n switch\n{\n    1 => \"uno\",\n    2 => \"dos\",\n    _ => ____\n};\nConsole.Write(r);",
+      "expectedAnswer": "\"otro\""
+    },
+    {
+      "id": "sw-facil-74",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el switch que muestra Dos.",
+      "questionTextEn": "Put the switch that prints Dos in order.",
+      "codeBlocks": [
+        "int n = 2;",
+        "switch (n)",
+        "{",
+        "    case 2:",
+        "        Console.Write(\"Dos\");",
+        "        break;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "sw-facil-75",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el switch con caso por defecto.",
+      "questionTextEn": "Put the switch with a default case in order.",
+      "codeBlocks": [
+        "int n = 5;",
+        "switch (n)",
+        "{",
+        "    case 1: Console.Write(\"Uno\"); break;",
+        "    default: Console.Write(\"Otro\"); break;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "sw-facil-76",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el switch de colores.",
+      "questionTextEn": "Put the color switch in order.",
+      "codeBlocks": [
+        "string color = \"rojo\";",
+        "switch (color)",
+        "{",
+        "    case \"rojo\":",
+        "        Console.Write(\"Alto\");",
+        "        break;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "sw-facil-77",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena la expresión switch.",
+      "questionTextEn": "Put the switch expression in order.",
+      "codeBlocks": [
+        "int n = 1;",
+        "string r = n switch",
+        "{",
+        "    1 => \"uno\",",
+        "    _ => \"otro\"",
+        "};",
+        "Console.Write(r);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "sw-facil-78",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el switch que agrupa dos casos.",
+      "questionTextEn": "Put the switch that groups two cases in order.",
+      "codeBlocks": [
+        "int n = 3;",
+        "switch (n)",
+        "{",
+        "    case 3:",
+        "    case 4:",
+        "        Console.Write(\"Medio\");",
+        "        break;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "sw-facil-79",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el switch del semáforo.\nenum Luz { Rojo, Amarillo, Verde }",
+      "questionTextEn": "Put the traffic light switch in order.\nenum Luz { Rojo, Amarillo, Verde }",
+      "codeBlocks": [
+        "Luz l = Luz.Rojo;",
+        "switch (l)",
+        "{",
+        "    case Luz.Rojo:",
+        "        Console.Write(\"Alto\");",
+        "        break;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "sw-facil-80",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el switch de la letra.",
+      "questionTextEn": "Put the letter switch in order.",
+      "codeBlocks": [
+        "char c = 'a';",
+        "switch (c)",
+        "{",
+        "    case 'a':",
+        "        Console.Write(\"Vocal\");",
+        "        break;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "sw-facil-81",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena la calculadora simple.",
+      "questionTextEn": "Put the simple calculator in order.",
+      "codeBlocks": [
+        "char op = '+'; int r = 0;",
+        "switch (op)",
+        "{",
+        "    case '+':",
+        "        r = 3 + 4;",
+        "        break;",
+        "}",
+        "Console.Write(r);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "sw-facil-82",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el cambio de estado.\nenum Estado { Quieto, Corriendo }",
+      "questionTextEn": "Put the state change in order.\nenum Estado { Quieto, Corriendo }",
+      "codeBlocks": [
+        "Estado e = Estado.Quieto;",
+        "switch (e)",
+        "{",
+        "    case Estado.Quieto:",
+        "        e = Estado.Corriendo;",
+        "        break;",
+        "}",
+        "Console.Write(e);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "sw-facil-83",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el switch sobre un string.",
+      "questionTextEn": "Put the switch on a string in order.",
+      "codeBlocks": [
+        "string s = \"b\";",
+        "switch (s)",
+        "{",
+        "    case \"a\": Console.Write(\"A\"); break;",
+        "    case \"b\": Console.Write(\"B\"); break;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "sw-facil-84",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el switch con dos case.",
+      "questionTextEn": "Put the switch with two cases in order.",
+      "codeBlocks": [
+        "int n = 2;",
+        "switch (n)",
+        "{",
+        "    case 1: Console.Write(\"Uno\"); break;",
+        "    case 2: Console.Write(\"Dos\"); break;",
+        "}"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "sw-facil-85",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena la expresión switch con enum.\nenum Luz { Rojo, Amarillo, Verde }",
+      "questionTextEn": "Put the switch expression with an enum in order.\nenum Luz { Rojo, Amarillo, Verde }",
+      "codeBlocks": [
+        "Luz l = Luz.Amarillo;",
+        "string r = l switch",
+        "{",
+        "    Luz.Rojo => \"Alto\",",
+        "    _ => \"Siga\"",
+        "};",
+        "Console.Write(r);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "sw-facil-86",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena el programa que suma según el nivel.",
+      "questionTextEn": "Put the program that adds according to the level in order.",
+      "codeBlocks": [
+        "int nivel = 2; int bono = 0;",
+        "switch (nivel)",
+        "{",
+        "    case 2:",
+        "        bono = 10;",
+        "        break;",
+        "}",
+        "Console.Write(bono);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "sw-facil-87",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "ArrastrarCodigo",
+      "questionText": "Ordena la expresión switch que da un número.",
+      "questionTextEn": "Put the switch expression that gives a number in order.",
+      "codeBlocks": [
+        "char c = 'b';",
+        "int p = c switch",
+        "{",
+        "    'a' => 1,",
+        "    'b' => 2,",
+        "    _ => 0",
+        "};",
+        "Console.Write(p);"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "sw-facil-88",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué switch no compila?\nint n = 1; int x = 0;",
+      "questionTextEn": "Which switch does not compile?\nint n = 1; int x = 0;",
+      "codeSnippetsOptions": [
+        "switch (n) { case 1: x = 1; break; }",
+        "switch (n) { case 1: x = 1; case 2: x = 2; break; }",
+        "switch (n) { case 1: case 2: x = 1; break; }",
+        "switch (n) { default: x = 0; break; }"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "sw-facil-89",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué switch tiene un case repetido?\nint n = 1;",
+      "questionTextEn": "Which switch has a repeated case?\nint n = 1;",
+      "codeSnippetsOptions": [
+        "switch (n) { case 1: break; case 2: break; }",
+        "switch (n) { case 1: break; case 2: break; case 1: break; }",
+        "switch (n) { case 1: break; default: break; }"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "sw-facil-90",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "El switch evalúa un int. ¿Qué case no compila?\nint n = 1;",
+      "questionTextEn": "The switch evaluates an int. Which case does not compile?\nint n = 1;",
+      "codeSnippetsOptions": [
+        "switch (n) { case 1: break; }",
+        "switch (n) { case 2: break; }",
+        "switch (n) { case 3: break; }",
+        "switch (n) { case \"4\": break; }"
+      ],
+      "buggyIndex": 3
+    },
+    {
+      "id": "sw-facil-91",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué fragmento NO compila?\nstring s = \"rojo\";",
+      "questionTextEn": "Which fragment does NOT compile?\nstring s = \"rojo\";",
+      "codeSnippetsOptions": [
+        "switch (s) { case \"rojo\": break; }",
+        "switch (s) { case \"azul\": break; }",
+        "switch (s) { case rojo: break; }"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "sw-facil-92",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué switch tiene dos casos por defecto?\nint n = 1;",
+      "questionTextEn": "Which switch has two default cases?\nint n = 1;",
+      "codeSnippetsOptions": [
+        "switch (n) { case 1: break; default: break; }",
+        "switch (n) { default: break; case 1: break; }",
+        "switch (n) { default: break; default: break; }",
+        "switch (n) { case 1: break; case 2: break; }"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "sw-facil-93",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué switch usa un miembro del enum que no existe?\nLuz l = Luz.Rojo;\nenum Luz { Rojo, Amarillo, Verde }",
+      "questionTextEn": "Which switch uses an enum member that does not exist?\nLuz l = Luz.Rojo;\nenum Luz { Rojo, Amarillo, Verde }",
+      "codeSnippetsOptions": [
+        "switch (l) { case Luz.Rojo: break; }",
+        "switch (l) { case Luz.Verde: break; }",
+        "switch (l) { case Luz.Naranja: break; }",
+        "switch (l) { case Luz.Amarillo: break; }"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "sw-facil-94",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué expresión switch no compila?\nint n = 1;",
+      "questionTextEn": "Which switch expression does not compile?\nint n = 1;",
+      "codeSnippetsOptions": [
+        "string r = n switch { 1 => \"a\", _ => \"b\" };",
+        "string r = n switch { case 1 => \"a\", _ => \"b\" };",
+        "string r = n switch { 1 => \"a\", 2 => \"b\", _ => \"c\" };"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "sw-facil-95",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué case está escrito con la sintaxis incorrecta?\nint n = 1;",
+      "questionTextEn": "Which case is written with incorrect syntax?\nint n = 1;",
+      "codeSnippetsOptions": [
+        "switch (n) { case 1: Console.Write(\"A\"); break; }",
+        "switch (n) { case 1; Console.Write(\"A\"); break; }",
+        "switch (n) { case 1: { Console.Write(\"A\"); break; } }",
+        "switch (n) { case 1: Console.Write(\"A\"); return; }"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "sw-facil-96",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "El programa debe mostrar \"Dos\" cuando n vale 2. ¿Qué switch no lo hace?\nint n = 2;",
+      "questionTextEn": "The program must print \"Dos\" when n is 2. Which switch does not?\nint n = 2;",
+      "codeSnippetsOptions": [
+        "switch (n) { case 1: Console.Write(\"Uno\"); break; case 2: Console.Write(\"Dos\"); break; }",
+        "switch (n) { case 2: Console.Write(\"Dos\"); break; default: Console.Write(\"Otro\"); break; }",
+        "switch (n) { case 1: Console.Write(\"Dos\"); break; case 2: Console.Write(\"Uno\"); break; }",
+        "switch (n) { default: Console.Write(\"Otro\"); break; case 2: Console.Write(\"Dos\"); break; }"
+      ],
+      "buggyIndex": 2
+    },
+    {
+      "id": "sw-facil-97",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "Con la letra 'a' debe mostrar \"Vocal\". ¿Qué switch no lo logra?\nchar c = 'a';",
+      "questionTextEn": "With the letter 'a' it must print \"Vocal\". Which switch fails?\nchar c = 'a';",
+      "codeSnippetsOptions": [
+        "switch (c) { case 'a': case 'e': Console.Write(\"Vocal\"); break; default: Console.Write(\"Otra\"); break; }",
+        "switch (c) { case 'e': case 'a': Console.Write(\"Vocal\"); break; default: Console.Write(\"Otra\"); break; }",
+        "switch (c) { case 'A': case 'e': Console.Write(\"Vocal\"); break; default: Console.Write(\"Otra\"); break; }"
+      ],
+      "buggyIndex": 2,
+      "explanation": "'A' mayúscula y 'a' minúscula son valores distintos.",
+      "explanationEn": "Uppercase 'A' and lowercase 'a' are different values."
+    },
+    {
+      "id": "sw-facil-98",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "El switch evalúa un string. ¿Cuál es el único case que no es válido?\nstring s = \"a\";",
+      "questionTextEn": "The switch evaluates a string. Which is the only invalid case?\nstring s = \"a\";",
+      "codeSnippetsOptions": [
+        "switch (s) { case \"a\": break; }",
+        "switch (s) { case \"b\": break; }",
+        "switch (s) { case \"c\": break; }",
+        "switch (s) { case 4: break; }"
+      ],
+      "buggyIndex": 3
+    },
+    {
+      "id": "sw-facil-99",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué switch usa una variable en un case (y por eso no compila)?\nint n = 1; int m = 2;",
+      "questionTextEn": "Which switch uses a variable in a case (and so does not compile)?\nint n = 1; int m = 2;",
+      "codeSnippetsOptions": [
+        "switch (n) { case 1: break; }",
+        "switch (n) { case m: break; }",
+        "switch (n) { case 2: break; }"
+      ],
+      "buggyIndex": 1
+    },
+    {
+      "id": "sw-facil-100",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "DetectarError",
+      "questionText": "¿Qué switch no tiene break al final del default y no compila?\nint n = 1; int x = 0;",
+      "questionTextEn": "Which switch has no break at the end of default and does not compile?\nint n = 1; int x = 0;",
+      "codeSnippetsOptions": [
+        "switch (n) { case 1: x = 1; break; default: x = 0; break; }",
+        "switch (n) { case 1: x = 1; break; default: x = 0; }",
+        "switch (n) { default: x = 0; break; }"
+      ],
+      "buggyIndex": 1
     }
   ]
 }
