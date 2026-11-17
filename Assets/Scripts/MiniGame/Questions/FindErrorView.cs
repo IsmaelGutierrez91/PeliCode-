@@ -73,6 +73,8 @@ namespace PeliCode.MiniGame.Questions
                 button.onClick.RemoveAllListeners();
         }
 
+        public float MistakeDelaySeconds => IQuestionView.DefaultMistakeDelay;
+
         /// <summary>El fragmento con el error en verde (era la respuesta) y el elegido en rojo.</summary>
         public string RevealAnswer()
         {

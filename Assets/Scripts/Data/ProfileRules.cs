@@ -15,7 +15,11 @@ namespace PeliCode.Data
         /// <summary>Dias seguidos desde los que el perfil muestra la insignia de racha.</summary>
         public const int StreakBadgeMinDays = 5;
 
+        /// <summary>La imagen de la racha solo aparece desde <see cref="StreakBadgeMinDays"/> dias.</summary>
         public static bool ShowsStreakBadge(int currentStreak) => currentStreak >= StreakBadgeMinDays;
+
+        /// <summary>El numero de la racha se ve siempre, salvo que sea 0.</summary>
+        public static bool ShowsStreakNumber(int currentStreak) => currentStreak > 0;
 
         /// <summary>
         /// Calcula la racha de dias consecutivos de inicio de sesion.
@@ -49,8 +53,8 @@ namespace PeliCode.Data
         }
 
         /// <summary>
-        /// El porcentaje de aciertos de cada minijuego se resetea semanalmente.
-        /// Se compara el "week stamp" (formato yyyy-Www, ISO 8601) guardado contra el actual.
+        /// El porcentaje de aciertos de cada minijuego se resetea cada fin de semana (sabado 00:00).
+        /// Se compara la marca de semana guardada (ver GetIsoWeekStamp) contra la actual.
         /// Devuelve true si cambio algo.
         /// </summary>
         public static bool ResetWeeklyStatsIfNeeded(PlayerProfileData profile, DateTime nowUtc)
@@ -107,11 +111,22 @@ namespace PeliCode.Data
             }
         }
 
+        /// <summary>Dia en que empieza la "semana" de los porcentajes: los fines de semana se reinician.</summary>
+        public const DayOfWeek WeekStartsOn = DayOfWeek.Saturday;
+
+        /// <summary>
+        /// Identifica la semana de una fecha, contando desde <see cref="WeekStartsOn"/> a las 00:00:
+        /// de sabado a viernes es la misma semana. La "s" del final la distingue de las marcas
+        /// ISO (lunes a domingo) que guardaban los perfiles anteriores, que se reinician una vez.
+        /// </summary>
         public static string GetIsoWeekStamp(DateTime date)
         {
-            int week = ISOWeek.GetWeekOfYear(date);
-            int year = ISOWeek.GetYear(date);
-            return $"{year}-W{week:D2}";
+            // Se corre la fecha hasta que el dia de inicio caiga en lunes y se usa la semana ISO.
+            int shift = ((int)DayOfWeek.Monday - (int)WeekStartsOn + 7) % 7;
+            DateTime shifted = date.AddDays(shift);
+            int week = ISOWeek.GetWeekOfYear(shifted);
+            int year = ISOWeek.GetYear(shifted);
+            return $"{year}-W{week:D2}s";
         }
     }
 }

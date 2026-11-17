@@ -2,6 +2,7 @@ using PeliCode.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace PeliCode.MiniGame.Questions
 {
@@ -24,6 +25,14 @@ namespace PeliCode.MiniGame.Questions
             BlockIndex = blockIndex;
             label.text = CodeText.Format(text);
             _originalParent = originalParent;
+        }
+
+        /// <summary>Pinta el bloque (verde si esta bien puesto, rojo si no) con el texto oscuro para que se lea.</summary>
+        public void Mark(Color background)
+        {
+            var image = GetComponent<Image>();
+            if (image != null) image.color = background;
+            label.color = UITheme.TextOnAccent;
         }
 
         public void SetDraggable(bool value)

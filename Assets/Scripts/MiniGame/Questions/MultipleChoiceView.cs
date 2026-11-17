@@ -79,6 +79,8 @@ namespace PeliCode.MiniGame.Questions
                 button.onClick.RemoveAllListeners();
         }
 
+        public float MistakeDelaySeconds => IQuestionView.DefaultMistakeDelay;
+
         /// <summary>La opcion correcta en verde y la elegida (si se eligio una) en rojo.</summary>
         public string RevealAnswer()
         {

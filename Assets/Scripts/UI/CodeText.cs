@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace PeliCode.UI
 {
     /// <summary>
@@ -10,6 +12,21 @@ namespace PeliCode.UI
     public static class CodeText
     {
         public const string MonoSpacing = "0.6em";
+
+        /// <summary>
+        /// El codigo con el hueco "____" rellenado con la respuesta, en negrita y del color
+        /// pedido (por ejemplo el verde de "correcto"). Sin hueco, se muestra el codigo igual.
+        /// </summary>
+        public static string FormatFilled(string template, string answer, Color color)
+        {
+            int gap = template == null ? -1 : template.IndexOf("____", System.StringComparison.Ordinal);
+            if (gap < 0 || string.IsNullOrEmpty(answer)) return Format(template);
+
+            string hex = ColorUtility.ToHtmlStringRGB(color);
+            return Format(template.Substring(0, gap))
+                   + $"<mspace={MonoSpacing}><color=#{hex}><b>" + Plain(answer) + "</b></color></mspace>"
+                   + Format(template.Substring(gap + 4));
+        }
 
         public static string Format(string code)
         {

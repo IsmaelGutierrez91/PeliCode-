@@ -10,14 +10,20 @@ namespace PeliCode.UI
     /// </summary>
     public static class UITheme
     {
-        public static readonly Color Background = Hex(0x0F172A);
-        public static readonly Color Surface = Hex(0x1E293B);
-        public static readonly Color SurfaceRaised = Hex(0x334155);
-        public static readonly Color CodeBackground = Hex(0x0B1120);
-        public static readonly Color Text = Hex(0xE2E8F0);
-        public static readonly Color TextMuted = Hex(0x94A3B8);
-        public static readonly Color TextOnAccent = Hex(0x0F172A);
-        public static readonly Color Accent = Hex(0x38BDF8);
+        // Los cuatro tonos del diseño: oscuro, medio, claro y blanco. Todo el tema sale de ellos.
+        public static readonly Color Dark = Hex(0x00070D);
+        public static readonly Color Mid = Hex(0x032D50);
+        public static readonly Color Light = Hex(0x5499CF);
+        public static readonly Color White = Hex(0xCBDDEF);
+
+        public static readonly Color Background = Dark;
+        public static readonly Color Surface = Mid;
+        public static readonly Color SurfaceRaised = Color.Lerp(Mid, Light, 0.35f); // botones sobre un panel medio
+        public static readonly Color CodeBackground = Dark;
+        public static readonly Color Text = White;
+        public static readonly Color TextMuted = Light;
+        public static readonly Color TextOnAccent = Dark;
+        public static readonly Color Accent = Light;
         public static readonly Color Success = Hex(0x4ADE80);
         public static readonly Color Error = Hex(0xF87171);
         public static readonly Color Warning = Hex(0xFBBF24);

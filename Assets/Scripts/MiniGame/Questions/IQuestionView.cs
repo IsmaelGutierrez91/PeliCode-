@@ -21,6 +21,12 @@ namespace PeliCode.MiniGame.Questions
         /// </summary>
         string RevealAnswer();
 
+        /// <summary>Segundos que se deja ver la respuesta antes de pasar a lo siguiente despues de un error.</summary>
+        float MistakeDelaySeconds { get; }
+
         GameObject GameObject { get; }
+
+        /// <summary>Lo normal: el tiempo de leer "Incorrecto" y la respuesta.</summary>
+        public const float DefaultMistakeDelay = 2.5f;
     }
 }

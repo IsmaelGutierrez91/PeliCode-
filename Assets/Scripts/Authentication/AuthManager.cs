@@ -198,6 +198,45 @@ namespace PeliCode.Authentication
             }
         }
 
+        /// <summary>
+        /// Cambia la contrasena de la cuenta con la que se inicio sesion. Unity pide la actual,
+        /// asi que quien deja la sesion abierta en un equipo ajeno no puede cambiarla sin saberla.
+        /// La nueva cumple la misma regla que al crear la cuenta.
+        /// </summary>
+        public async Task<(bool success, string error)> ChangePasswordAsync(string current, string next, string repeated)
+        {
+            if (string.IsNullOrEmpty(current)) return (false, Loc.Get("auth.enterPassword"));
+            if (!PasswordValidator.IsValid(next))
+                return (false, Loc.Format("validation.password",
+                    PasswordValidator.MinPasswordLength, PasswordValidator.MaxPasswordLength));
+            if (next != repeated) return (false, Loc.Get("changePw.mismatch"));
+            if (next == current) return (false, Loc.Get("changePw.same"));
+
+            await ServicesInitializer.InitializeAsync();
+            if (!ServicesInitializer.IsInitialized || AuthenticationService.Instance == null ||
+                !AuthenticationService.Instance.IsSignedIn)
+                return (false, Loc.Get("changePw.failed"));
+
+            try
+            {
+                await AuthenticationService.Instance.UpdatePasswordAsync(current, next);
+                return (true, string.Empty);
+            }
+            catch (RequestFailedException e) when (IsConnectionError(e))
+            {
+                return (false, ConnectionMessage(e));
+            }
+            catch (RequestFailedException e)
+            {
+                // Unity responde con un error de credenciales cuando la actual no coincide
+                Debug.LogWarning($"[AuthManager] No se pudo cambiar la contrasena: {e.Message}");
+                bool wrongCurrent = e.ErrorCode == AuthenticationErrorCodes.InvalidParameters ||
+                                    e.ErrorCode == CommonErrorCodes.InvalidRequest ||
+                                    e.ErrorCode == CommonErrorCodes.Forbidden;
+                return (false, Loc.Get(wrongCurrent ? "changePw.wrongCurrent" : "changePw.failed"));
+            }
+        }
+
         /// <summary>Cerrar sesion: tambien borra la sesion guardada en el dispositivo.</summary>
         public void SignOut() => SignOut(clearSavedSession: true);
 

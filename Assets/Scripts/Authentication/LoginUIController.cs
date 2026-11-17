@@ -1,5 +1,6 @@
 using PeliCode.Core;
 using PeliCode.Localization;
+using PeliCode.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,8 +11,13 @@ namespace PeliCode.Authentication
     /// Controla el panel principal de "Iniciar sesion".
     /// Colocalo en el GameObject raiz del panel de Login dentro de la escena Login.
     /// </summary>
-    public class LoginUIController : MonoBehaviour
+    public class LoginUIController : MonoBehaviour, ISceneReadiness
     {
+        // La pantalla de carga espera a saber si hay una sesion guardada: asi, al abrir el juego
+        // con la cuenta ya iniciada no se ve el login un instante antes de pasar al menu.
+        private bool _sessionChecked;
+        public bool IsSceneReady => _sessionChecked;
+
         [Header("Inputs")]
         [SerializeField] private TMP_InputField emailInput;
         [SerializeField] private TMP_InputField passwordInput;
@@ -29,6 +35,7 @@ namespace PeliCode.Authentication
         private void Awake()
         {
             confirmButton.onClick.AddListener(OnConfirmClicked);
+            PasswordToggle.Attach(passwordInput);
             openCreateAccountButton.onClick.AddListener(() => createAccountPanel.SetActive(true));
             feedbackText.text = string.Empty;
         }
@@ -46,9 +53,10 @@ namespace PeliCode.Authentication
             if (this == null) return;
             if (resumed)
             {
-                SceneLoader.LoadMenu();
+                SceneLoader.LoadMenu(); // sigue la pantalla de carga: no se llega a ver el login
                 return;
             }
+            _sessionChecked = true;
             SetInteractable(true);
         }
 
