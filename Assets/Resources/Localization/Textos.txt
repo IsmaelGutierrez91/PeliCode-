@@ -81,3 +81,19 @@ game.noQuestions	Todavía no hay preguntas para este minijuego.	There are no que
 game.saveFailed	No se pudo guardar el resultado (sin conexión).	Your result could not be saved (no connection).
 common.player	Jugador	Player
 loading.text	CARGANDO	LOADING
+# Contraseña: ver y cambiar
+password.show	Mostrar	Show
+password.hide	Ocultar	Hide
+options.changePassword	Cambiar contraseña	Change password
+changePw.title	Cambiar contraseña	Change password
+changePw.current	Contraseña actual	Current password
+changePw.new	Contraseña nueva	New password
+changePw.confirm	Repite la contraseña nueva	Repeat the new password
+changePw.save	Guardar	Save
+changePw.cancel	Cancelar	Cancel
+changePw.mismatch	Las contraseñas nuevas no coinciden.	The new passwords do not match.
+changePw.same	La contraseña nueva debe ser distinta de la actual.	The new password must be different from the current one.
+changePw.saving	Guardando...	Saving...
+changePw.done	Contraseña cambiada.	Password changed.
+changePw.wrongCurrent	La contraseña actual no es correcta.	The current password is not correct.
+changePw.failed	No se pudo cambiar la contraseña. Inténtalo de nuevo.	The password could not be changed. Please try again.

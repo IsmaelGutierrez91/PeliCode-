@@ -26,6 +26,7 @@ namespace PeliCode.Menu
         [SerializeField] private Slider sfxVolumeSlider;
 
         [Header("Botones")]
+        [SerializeField] private Button changePasswordButton;
         [SerializeField] private Button closeSessionButton;
         [SerializeField] private Button quitButton;
 
@@ -45,6 +46,8 @@ namespace PeliCode.Menu
             musicVolumeSlider.onValueChanged.AddListener(OnMusicVolumeChanged);
             sfxVolumeSlider.onValueChanged.AddListener(OnSfxVolumeChanged);
 
+            if (changePasswordButton != null)
+                changePasswordButton.onClick.AddListener(() => ChangePasswordPopup.Show(transform));
             closeSessionButton.onClick.AddListener(CloseSession);
             quitButton.onClick.AddListener(() => GameManager.Instance.QuitApplication());
         }

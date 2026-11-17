@@ -64,12 +64,21 @@ namespace PeliCode.Menu
             rankedTopText.text = Loc.Format("profile.rankedTop", _profile.rankedHighScore);
             highestStreakText.text = Loc.Format("profile.highestStreak", _profile.highestStreak);
 
-            bool badge = ProfileRules.ShowsStreakBadge(_profile.currentStreak);
-            if (streakBadge != null) streakBadge.SetActive(badge);
+            // El numero se ve con cualquier racha (menos 0); la imagen solo desde 5 dias.
+            if (streakBadge != null)
+            {
+                streakBadge.SetActive(ProfileRules.ShowsStreakNumber(_profile.currentStreak));
+                var image = streakBadge.GetComponentInChildren<Image>(true);
+                if (image != null) image.enabled = ProfileRules.ShowsStreakBadge(_profile.currentStreak);
+            }
             currentStreakText.text = _profile.currentStreak.ToString();
+            currentStreakText.color = StreakNumberColor(ProfileRules.ShowsStreakBadge(_profile.currentStreak));
 
             SelectDifficulty(_selectedDifficulty);
         }
+
+        /// <summary>Oscuro sobre la imagen clara de la racha; claro sobre el fondo cuando no hay imagen.</summary>
+        public static Color StreakNumberColor(bool onBadgeImage) => onBadgeImage ? UITheme.TextOnAccent : UITheme.Text;
 
         /// <summary>"Condicionales:" arriba y el porcentaje grande, en negrita y centrado debajo.</summary>
         public static string FormatStat(string categoryName, float percentage) =>

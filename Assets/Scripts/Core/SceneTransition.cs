@@ -24,9 +24,11 @@ namespace PeliCode.Core
         private const float ReadyTimeoutSeconds = 15f;
 
         private static bool _transitioning;
+        private static bool _firstFading;
+        private Coroutine _firstFade;
 
-        /// <summary>True mientras dura un cambio de escena (fundidos y carga incluidos).</summary>
-        public static bool IsTransitioning => _transitioning;
+        /// <summary>True mientras dura un cambio de escena (fundidos y carga incluidos) o la entrada a la primera.</summary>
+        public static bool IsTransitioning => _transitioning || _firstFading;
 
         private CanvasGroup _fade;
         private GameObject _loadingPanel;
@@ -37,7 +39,7 @@ namespace PeliCode.Core
         private static void FadeInFirstScene()
         {
             var transition = Instance;
-            if (transition != null) transition.StartCoroutine(transition.FadeFromBlack());
+            if (transition != null) transition._firstFade = transition.StartCoroutine(transition.FadeFromBlack());
         }
 
         protected override void Awake()
@@ -50,6 +52,14 @@ namespace PeliCode.Core
         public void Load(string sceneName)
         {
             if (_transitioning) return;
+            if (_firstFade != null)
+            {
+                // La primera escena aun esperaba (por ejemplo el login comprobando la sesion):
+                // se sigue desde la pantalla de carga que ya se ve, sin volver a mostrarla.
+                StopCoroutine(_firstFade);
+                _firstFade = null;
+                _firstFading = false;
+            }
             StartCoroutine(LoadRoutine(sceneName));
         }
 
@@ -62,9 +72,16 @@ namespace PeliCode.Core
             _transitioning = true;
             _fade.blocksRaycasts = true;
 
-            yield return Fade(0f, 1f);            // la escena actual se va a negro
-            _loadingPanel.SetActive(true);
-            yield return Fade(1f, 0f);            // aparece la pantalla de carga
+            if (_loadingPanel.activeSelf)
+            {
+                _fade.alpha = 0f;                 // la pantalla de carga ya se ve
+            }
+            else
+            {
+                yield return Fade(0f, 1f);        // la escena actual se va a negro
+                _loadingPanel.SetActive(true);
+                yield return Fade(1f, 0f);        // aparece la pantalla de carga
+            }
             float shownAt = Time.unscaledTime;
 
             var load = SceneManager.LoadSceneAsync(sceneName);
@@ -87,10 +104,27 @@ namespace PeliCode.Core
 
         private IEnumerator FadeFromBlack()
         {
+            _firstFading = true;
             _fade.alpha = 1f;
             _fade.blocksRaycasts = true; // sin clics a ciegas mientras la pantalla esta negra
             yield return null; // un cuadro para que la escena termine de armarse
+
+            if (!SceneIsReady())
+            {
+                // La escena aun se prepara (el login mira si hay sesion guardada): pantalla de carga
+                // en vez de dejar ver la escena a medias.
+                _loadingPanel.SetActive(true);
+                yield return Fade(1f, 0f);
+                float since = Time.unscaledTime;
+                while (!SceneIsReady() && Time.unscaledTime - since < ReadyTimeoutSeconds)
+                    yield return null;
+                yield return Fade(0f, 1f);
+                _loadingPanel.SetActive(false);
+            }
+
             yield return Fade(1f, 0f);
+            _firstFading = false;
+            _firstFade = null;
             if (!_transitioning) _fade.blocksRaycasts = false;
         }
 

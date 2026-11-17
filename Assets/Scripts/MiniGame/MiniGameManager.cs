@@ -46,8 +46,8 @@ namespace PeliCode.MiniGame
         [SerializeField] private FindErrorView findErrorView;
 
         private const float NextQuestionDelay = 0.6f;
-        // Tras un error se muestra la respuesta correcta: hace falta tiempo para leerla
-        private const float AfterMistakeDelay = 2.5f;
+        // Tras un error se muestra la respuesta correcta: cada vista dice cuanto tiempo necesita
+        // (IQuestionView.MistakeDelaySeconds; ordenar codigo necesita mas que las demas).
 
         private readonly ScoreManager _scoreManager = new ScoreManager();
         private List<QuestionData> _pool = new List<QuestionData>();
@@ -233,12 +233,12 @@ namespace PeliCode.MiniGame
             if (!correct && _isRanked)
             {
                 // En ranked, un fallo termina la partida (despues de ver la respuesta correcta).
-                Invoke(nameof(EndRankedGame), AfterMistakeDelay);
+                Invoke(nameof(EndRankedGame), view.MistakeDelaySeconds);
             }
             else
             {
                 // En modo normal, un fallo solo pasa a la siguiente pregunta.
-                Invoke(nameof(ShowNextQuestion), correct ? NextQuestionDelay : AfterMistakeDelay);
+                Invoke(nameof(ShowNextQuestion), correct ? NextQuestionDelay : view.MistakeDelaySeconds);
             }
         }
 

@@ -1,5 +1,6 @@
 using PeliCode.Core;
 using PeliCode.Localization;
+using PeliCode.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,6 +29,7 @@ namespace PeliCode.Authentication
         {
             confirmButton.onClick.AddListener(OnConfirmClicked);
             closeButton.onClick.AddListener(ClosePanel);
+            PasswordToggle.Attach(passwordInput);
         }
 
         private void OnEnable()

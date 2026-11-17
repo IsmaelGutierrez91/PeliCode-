@@ -41,9 +41,15 @@ La pantalla de carga se construye por código, así que no hay que agregar nada 
 
 **Pantallas:** el diseño es de 1920x1080. Los `CanvasScaler` están en modo *Expand*, así que en pantallas 16:10, 4:3, 5:4 o ultrawide todo entra entero y lo que sobra queda como fondo.
 
-**Sesión:** al iniciar sesión, Unity guarda la sesión en el dispositivo. La próxima vez el juego entra directo al menú, hasta que el jugador cierre sesión en Opciones.
+**Sesión:** al iniciar sesión, Unity guarda la sesión en el dispositivo. La próxima vez el juego entra directo al menú, hasta que el jugador cierre sesión en Opciones. Mientras el login comprueba si hay una sesión guardada, la pantalla de carga sigue a la vista: no se ve el login un instante antes de pasar al menú (`LoginUIController` implementa `ISceneReadiness`).
 
-**Rachas y semanas:** se cuentan con la fecha y hora del dispositivo del jugador, así el día cambia a medianoche en su zona horaria.
+**Contraseña:** el login y la ventana de crear cuenta traen un botón *Mostrar / Ocultar* dentro del campo (`PasswordToggle`, se arma por código con `PasswordToggle.Attach(campo)`). En Opciones, *Cambiar contraseña* abre una ventana (`ChangePasswordPopup`, también por código) con la contraseña actual, la nueva y su repetición; usa `UpdatePasswordAsync` de Unity y la misma regla de contraseña que al crear la cuenta. Es opcional: solo la usa quien quiere cambiarla. **Recuperar una contraseña olvidada todavía no existe**: Unity Authentication con usuario y contraseña no envía correos, y aquí el correo se guarda como un hash que sirve de nombre de usuario. Hace falta decidir entre pasar a Unity Player Accounts o guardar el correo aparte para enviar un código.
+
+**Rachas y semanas:** se cuentan con la fecha y hora del dispositivo del jugador, así el día cambia a medianoche en su zona horaria. Los porcentajes de los minijuegos se guardan en el perfil (Cloud Save) y se reinician cada fin de semana: la semana va de **sábado 00:00 a viernes**, y el día de inicio es `ProfileRules.WeekStartsOn`. En Perfil, la racha muestra su número con cualquier valor mayor que 0 y la imagen solo desde 5 días.
+
+**Colores:** salen de cuatro tonos, definidos en `UITheme` (`Dark` #00070D, `Mid` #032D50, `Light` #5499CF y `White` #CBDDEF). Si se cambian, hay que actualizar también los colores guardados en las escenas y prefabs.
+
+**Al fallar una pregunta:** en selección múltiple y en detectar el error, la elegida queda en rojo y la correcta en verde. En completar el código, lo escrito queda en rojo y la respuesta correcta aparece en verde dentro del código. En ordenar el código, los bloques bien puestos quedan en verde y los demás en rojo; a los 2 segundos se acomodan solos y el jugador tiene unos 4,5 segundos más para estudiarlos.
 
 ## Estructura del código (`Assets/Scripts`)
 

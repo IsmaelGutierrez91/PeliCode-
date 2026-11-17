@@ -208,7 +208,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 2150773298
-  m_fontColor: {r: 0.5803922, g: 0.6392157, b: 0.72156864, a: 1}
+  m_fontColor: {r: 0.32941177, g: 0.6, b: 0.8117647, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -360,7 +360,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 0.8862745, g: 0.9098039, b: 0.9411765, a: 1}
+  m_fontColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -562,7 +562,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.8862745, g: 0.9098039, b: 0.9411765, a: 1}
+  m_fontColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -707,11 +707,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.2, g: 0.25490198, b: 0.33333334, a: 1}
-    m_HighlightedColor: {r: 0.32, g: 0.36666667, b: 0.43333334, a: 1}
-    m_PressedColor: {r: 0.16, g: 0.20392159, b: 0.26666668, a: 1}
-    m_SelectedColor: {r: 0.2, g: 0.25490198, b: 0.33333334, a: 1}
-    m_DisabledColor: {r: 0.2, g: 0.25490198, b: 0.33333334, a: 0.45}
+    m_NormalColor: {r: 0.12294118, g: 0.3247059, b: 0.48803923, a: 1}
+    m_HighlightedColor: {r: 0.16106571, g: 0.37553862, b: 0.5478147, a: 1}
+    m_PressedColor: {r: 0.055407636, g: 0.23466116, b: 0.3821533, a: 1}
+    m_SelectedColor: {r: 0.12294118, g: 0.3247059, b: 0.48803923, a: 1}
+    m_DisabledColor: {r: 0.12294118, g: 0.3247059, b: 0.48803923, a: 0.45}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.08
   m_SpriteState:
@@ -861,7 +861,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.05882353, g: 0.09019608, b: 0.16470589, a: 1}
+  m_BackGroundColor: {r: 0, g: 0.02745098, b: 0.050980393, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -985,7 +985,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.05882353, g: 0.09019608, b: 0.16470589, a: 1}
+  m_fontColor: {r: 0, g: 0.02745098, b: 0.050980393, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1097,7 +1097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ComponentVersion: 2
+  m_ComponentVersion: 3
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
@@ -1209,7 +1209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.05882353, g: 0.09019608, b: 0.16470589, a: 1}
+  m_Color: {r: 0, g: 0.02745098, b: 0.050980393, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1470,7 +1470,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 2150773298
-  m_fontColor: {r: 0.5803922, g: 0.6392157, b: 0.72156864, a: 1}
+  m_fontColor: {r: 0.32941177, g: 0.6, b: 0.8117647, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1620,7 +1620,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.8862745, g: 0.9098039, b: 0.9411765, a: 1}
+  m_fontColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1803,11 +1803,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.21960784, g: 0.7411765, b: 0.972549, a: 1}
-    m_HighlightedColor: {r: 0.33666667, g: 0.78000003, b: 0.9766667, a: 1}
-    m_PressedColor: {r: 0.17568627, g: 0.59294116, b: 0.7780392, a: 1}
-    m_SelectedColor: {r: 0.21960784, g: 0.7411765, b: 0.972549, a: 1}
-    m_DisabledColor: {r: 0.21960784, g: 0.7411765, b: 0.972549, a: 0.45}
+    m_NormalColor: {r: 0.32941177, g: 0.6, b: 0.8117647, a: 1}
+    m_HighlightedColor: {r: 0.4736031, g: 0.68239504, b: 0.85053885, a: 1}
+    m_PressedColor: {r: 0.26840168, g: 0.5186532, b: 0.71610695, a: 1}
+    m_SelectedColor: {r: 0.32941177, g: 0.6, b: 0.8117647, a: 1}
+    m_DisabledColor: {r: 0.32941177, g: 0.6, b: 0.8117647, a: 0.45}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.08
   m_SpriteState:
@@ -1988,11 +1988,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.11764706, g: 0.16078432, b: 0.23137255, a: 1}
-    m_HighlightedColor: {r: 0.25, g: 0.28666666, b: 0.34666666, a: 1}
-    m_PressedColor: {r: 0.09411765, g: 0.12862745, b: 0.18509804, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.16078432, b: 0.23137255, a: 1}
-    m_DisabledColor: {r: 0.11764706, g: 0.16078432, b: 0.23137255, a: 0.45}
+    m_NormalColor: {r: 0.011764706, g: 0.1764706, b: 0.3137255, a: 1}
+    m_HighlightedColor: {r: 0.13252944, g: 0.33749026, b: 0.5030727, a: 1}
+    m_PressedColor: {r: 0.00541125, g: 0.09599348, b: 0.17183165, a: 1}
+    m_SelectedColor: {r: 0.011764706, g: 0.1764706, b: 0.3137255, a: 1}
+    m_DisabledColor: {r: 0.011764706, g: 0.1764706, b: 0.3137255, a: 0.45}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.08
   m_SpriteState:
@@ -2050,9 +2050,9 @@ MonoBehaviour:
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_CaretColor: {r: 0.21960784, g: 0.7411765, b: 0.972549, a: 1}
+  m_CaretColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_CustomCaretColor: 1
-  m_SelectionColor: {r: 0.21960784, g: 0.7411765, b: 0.972549, a: 0.35}
+  m_SelectionColor: {r: 0.32941177, g: 0.6, b: 0.8117647, a: 0.35}
   m_Text: 
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 2
@@ -2175,7 +2175,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 0.8862745, g: 0.9098039, b: 0.9411765, a: 1}
+  m_fontColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2319,11 +2319,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.2, g: 0.25490198, b: 0.33333334, a: 1}
-    m_HighlightedColor: {r: 0.32, g: 0.36666667, b: 0.43333334, a: 1}
-    m_PressedColor: {r: 0.16, g: 0.20392159, b: 0.26666668, a: 1}
-    m_SelectedColor: {r: 0.2, g: 0.25490198, b: 0.33333334, a: 1}
-    m_DisabledColor: {r: 0.2, g: 0.25490198, b: 0.33333334, a: 0.45}
+    m_NormalColor: {r: 0.12294118, g: 0.3247059, b: 0.48803923, a: 1}
+    m_HighlightedColor: {r: 0.16106571, g: 0.37553862, b: 0.5478147, a: 1}
+    m_PressedColor: {r: 0.055407636, g: 0.23466116, b: 0.3821533, a: 1}
+    m_SelectedColor: {r: 0.12294118, g: 0.3247059, b: 0.48803923, a: 1}
+    m_DisabledColor: {r: 0.12294118, g: 0.3247059, b: 0.48803923, a: 0.45}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.08
   m_SpriteState:
@@ -2596,7 +2596,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.8862745, g: 0.9098039, b: 0.9411765, a: 1}
+  m_fontColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2812,7 +2812,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.8862745, g: 0.9098039, b: 0.9411765, a: 1}
+  m_fontColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3002,7 +3002,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.05882353, g: 0.09019608, b: 0.16470589, a: 1}
+  m_fontColor: {r: 0, g: 0.02745098, b: 0.050980393, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3154,7 +3154,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 0.8862745, g: 0.9098039, b: 0.9411765, a: 1}
+  m_fontColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3305,7 +3305,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.8862745, g: 0.9098039, b: 0.9411765, a: 1}
+  m_fontColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3455,7 +3455,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.8862745, g: 0.9098039, b: 0.9411765, a: 1}
+  m_fontColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3583,7 +3583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.11764706, g: 0.16078432, b: 0.23137255, a: 1}
+  m_Color: {r: 0.011764706, g: 0.1764706, b: 0.3137255, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3713,7 +3713,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 0.8862745, g: 0.9098039, b: 0.9411765, a: 1}
+  m_fontColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3863,7 +3863,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.8862745, g: 0.9098039, b: 0.9411765, a: 1}
+  m_fontColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3994,11 +3994,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.21960784, g: 0.7411765, b: 0.972549, a: 1}
-    m_HighlightedColor: {r: 0.33666667, g: 0.78000003, b: 0.9766667, a: 1}
-    m_PressedColor: {r: 0.17568627, g: 0.59294116, b: 0.7780392, a: 1}
-    m_SelectedColor: {r: 0.21960784, g: 0.7411765, b: 0.972549, a: 1}
-    m_DisabledColor: {r: 0.21960784, g: 0.7411765, b: 0.972549, a: 0.45}
+    m_NormalColor: {r: 0.32941177, g: 0.6, b: 0.8117647, a: 1}
+    m_HighlightedColor: {r: 0.4736031, g: 0.68239504, b: 0.85053885, a: 1}
+    m_PressedColor: {r: 0.26840168, g: 0.5186532, b: 0.71610695, a: 1}
+    m_SelectedColor: {r: 0.32941177, g: 0.6, b: 0.8117647, a: 1}
+    m_DisabledColor: {r: 0.32941177, g: 0.6, b: 0.8117647, a: 0.45}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.08
   m_SpriteState:
@@ -4156,7 +4156,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 2150773298
-  m_fontColor: {r: 0.5803922, g: 0.6392157, b: 0.72156864, a: 1}
+  m_fontColor: {r: 0.32941177, g: 0.6, b: 0.8117647, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4436,11 +4436,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.11764706, g: 0.16078432, b: 0.23137255, a: 1}
-    m_HighlightedColor: {r: 0.25, g: 0.28666666, b: 0.34666666, a: 1}
-    m_PressedColor: {r: 0.09411765, g: 0.12862745, b: 0.18509804, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.16078432, b: 0.23137255, a: 1}
-    m_DisabledColor: {r: 0.11764706, g: 0.16078432, b: 0.23137255, a: 0.45}
+    m_NormalColor: {r: 0.011764706, g: 0.1764706, b: 0.3137255, a: 1}
+    m_HighlightedColor: {r: 0.13252944, g: 0.33749026, b: 0.5030727, a: 1}
+    m_PressedColor: {r: 0.00541125, g: 0.09599348, b: 0.17183165, a: 1}
+    m_SelectedColor: {r: 0.011764706, g: 0.1764706, b: 0.3137255, a: 1}
+    m_DisabledColor: {r: 0.011764706, g: 0.1764706, b: 0.3137255, a: 0.45}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.08
   m_SpriteState:
@@ -4498,9 +4498,9 @@ MonoBehaviour:
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_CaretColor: {r: 0.21960784, g: 0.7411765, b: 0.972549, a: 1}
+  m_CaretColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_CustomCaretColor: 1
-  m_SelectionColor: {r: 0.21960784, g: 0.7411765, b: 0.972549, a: 0.35}
+  m_SelectionColor: {r: 0.32941177, g: 0.6, b: 0.8117647, a: 0.35}
   m_Text: 
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 2
@@ -4623,7 +4623,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 0.8862745, g: 0.9098039, b: 0.9411765, a: 1}
+  m_fontColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4766,11 +4766,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.05882353, g: 0.09019608, b: 0.16470589, a: 1}
-    m_HighlightedColor: {r: 0.2, g: 0.22666667, b: 0.29000002, a: 1}
-    m_PressedColor: {r: 0.047058824, g: 0.07215686, b: 0.13176471, a: 1}
-    m_SelectedColor: {r: 0.05882353, g: 0.09019608, b: 0.16470589, a: 1}
-    m_DisabledColor: {r: 0.05882353, g: 0.09019608, b: 0.16470589, a: 0.45}
+    m_NormalColor: {r: 0, g: 0.02745098, b: 0.050980393, a: 1}
+    m_HighlightedColor: {r: 0.08778835, g: 0.27783546, b: 0.43292305, a: 1}
+    m_PressedColor: {r: 0, g: 0.02745098, b: 0.050980393, a: 1}
+    m_SelectedColor: {r: 0, g: 0.02745098, b: 0.050980393, a: 1}
+    m_DisabledColor: {r: 0, g: 0.02745098, b: 0.050980393, a: 0.45}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.08
   m_SpriteState:
@@ -4828,9 +4828,9 @@ MonoBehaviour:
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_CaretColor: {r: 0.21960784, g: 0.7411765, b: 0.972549, a: 1}
+  m_CaretColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_CustomCaretColor: 1
-  m_SelectionColor: {r: 0.21960784, g: 0.7411765, b: 0.972549, a: 0.35}
+  m_SelectionColor: {r: 0.32941177, g: 0.6, b: 0.8117647, a: 0.35}
   m_Text: 
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 2
@@ -4944,11 +4944,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.05882353, g: 0.09019608, b: 0.16470589, a: 1}
-    m_HighlightedColor: {r: 0.2, g: 0.22666667, b: 0.29000002, a: 1}
-    m_PressedColor: {r: 0.047058824, g: 0.07215686, b: 0.13176471, a: 1}
-    m_SelectedColor: {r: 0.05882353, g: 0.09019608, b: 0.16470589, a: 1}
-    m_DisabledColor: {r: 0.05882353, g: 0.09019608, b: 0.16470589, a: 0.45}
+    m_NormalColor: {r: 0, g: 0.02745098, b: 0.050980393, a: 1}
+    m_HighlightedColor: {r: 0.08778835, g: 0.27783546, b: 0.43292305, a: 1}
+    m_PressedColor: {r: 0, g: 0.02745098, b: 0.050980393, a: 1}
+    m_SelectedColor: {r: 0, g: 0.02745098, b: 0.050980393, a: 1}
+    m_DisabledColor: {r: 0, g: 0.02745098, b: 0.050980393, a: 0.45}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.08
   m_SpriteState:
@@ -5006,9 +5006,9 @@ MonoBehaviour:
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_CaretColor: {r: 0.21960784, g: 0.7411765, b: 0.972549, a: 1}
+  m_CaretColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_CustomCaretColor: 1
-  m_SelectionColor: {r: 0.21960784, g: 0.7411765, b: 0.972549, a: 0.35}
+  m_SelectionColor: {r: 0.32941177, g: 0.6, b: 0.8117647, a: 0.35}
   m_Text: 
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 2
@@ -5203,7 +5203,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 2150773298
-  m_fontColor: {r: 0.5803922, g: 0.6392157, b: 0.72156864, a: 1}
+  m_fontColor: {r: 0.32941177, g: 0.6, b: 0.8117647, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5479,7 +5479,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 2150773298
-  m_fontColor: {r: 0.5803922, g: 0.6392157, b: 0.72156864, a: 1}
+  m_fontColor: {r: 0.32941177, g: 0.6, b: 0.8117647, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5629,7 +5629,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.8862745, g: 0.9098039, b: 0.9411765, a: 1}
+  m_fontColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5759,11 +5759,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.05882353, g: 0.09019608, b: 0.16470589, a: 1}
-    m_HighlightedColor: {r: 0.2, g: 0.22666667, b: 0.29000002, a: 1}
-    m_PressedColor: {r: 0.047058824, g: 0.07215686, b: 0.13176471, a: 1}
-    m_SelectedColor: {r: 0.05882353, g: 0.09019608, b: 0.16470589, a: 1}
-    m_DisabledColor: {r: 0.05882353, g: 0.09019608, b: 0.16470589, a: 0.45}
+    m_NormalColor: {r: 0, g: 0.02745098, b: 0.050980393, a: 1}
+    m_HighlightedColor: {r: 0.08778835, g: 0.27783546, b: 0.43292305, a: 1}
+    m_PressedColor: {r: 0, g: 0.02745098, b: 0.050980393, a: 1}
+    m_SelectedColor: {r: 0, g: 0.02745098, b: 0.050980393, a: 1}
+    m_DisabledColor: {r: 0, g: 0.02745098, b: 0.050980393, a: 0.45}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.08
   m_SpriteState:
@@ -5821,9 +5821,9 @@ MonoBehaviour:
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_CaretColor: {r: 0.21960784, g: 0.7411765, b: 0.972549, a: 1}
+  m_CaretColor: {r: 0.79607844, g: 0.8666667, b: 0.9372549, a: 1}
   m_CustomCaretColor: 1
-  m_SelectionColor: {r: 0.21960784, g: 0.7411765, b: 0.972549, a: 0.35}
+  m_SelectionColor: {r: 0.32941177, g: 0.6, b: 0.8117647, a: 0.35}
   m_Text: 
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 2
@@ -5938,11 +5938,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.2, g: 0.25490198, b: 0.33333334, a: 1}
-    m_HighlightedColor: {r: 0.32, g: 0.36666667, b: 0.43333334, a: 1}
-    m_PressedColor: {r: 0.16, g: 0.20392159, b: 0.26666668, a: 1}
-    m_SelectedColor: {r: 0.2, g: 0.25490198, b: 0.33333334, a: 1}
-    m_DisabledColor: {r: 0.2, g: 0.25490198, b: 0.33333334, a: 0.45}
+    m_NormalColor: {r: 0.12294118, g: 0.3247059, b: 0.48803923, a: 1}
+    m_HighlightedColor: {r: 0.16106571, g: 0.37553862, b: 0.5478147, a: 1}
+    m_PressedColor: {r: 0.055407636, g: 0.23466116, b: 0.3821533, a: 1}
+    m_SelectedColor: {r: 0.12294118, g: 0.3247059, b: 0.48803923, a: 1}
+    m_DisabledColor: {r: 0.12294118, g: 0.3247059, b: 0.48803923, a: 0.45}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.08
   m_SpriteState:
