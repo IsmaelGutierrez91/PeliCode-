@@ -291,29 +291,12 @@
       ]
     },
     {
-      "id": "col-dificil-19",
-      "category": "ColeccionesArraysListas",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "var fila = new List<int> { 1 };\nvar l = new List<List<int>>();\nl.Add(fila);\nl.Add(fila);\nl[0].Add(2);\nConsole.WriteLine(l[1].Count);\n¿Qué muestra?",
-      "questionTextEn": "var fila = new List<int> { 1 };\nvar l = new List<List<int>>();\nl.Add(fila);\nl.Add(fila);\nl[0].Add(2);\nConsole.WriteLine(l[1].Count);\nWhat does it print?",
-      "correctAnswer": "2",
-      "incorrectAnswerPool": [
-        "1",
-        "0",
-        "3",
-        "4"
-      ],
-      "explanation": "Las dos posiciones guardan la misma lista, no dos copias.",
-      "explanationEn": "Both positions hold the same list, not two copies."
-    },
-    {
       "id": "col-dificil-20",
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "int[] f = new int[2];\nint[][] m = { f, f };\nm[0][0] = 7;\nConsole.WriteLine(m[1][0]);\n¿Qué muestra?",
-      "questionTextEn": "int[] f = new int[2];\nint[][] m = { f, f };\nm[0][0] = 7;\nConsole.WriteLine(m[1][0]);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  int[] f = new int[2];  int[][] m = { f, f };  m[0][0] = 7;  Console.WriteLine(m[1][0]);",
+      "questionTextEn": "What does it print?  int[] f = new int[2];  int[][] m = { f, f };  m[0][0] = 7;  Console.WriteLine(m[1][0]);",
       "correctAnswer": "7",
       "incorrectAnswerPool": [
         "0",
@@ -329,8 +312,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var a = new C[] { new C { V = 1 } };\nvar b = (C[])a.Clone();\nb[0].V = 9;\nConsole.WriteLine(a[0].V);\n¿Qué muestra?",
-      "questionTextEn": "var a = new C[] { new C { V = 1 } };\nvar b = (C[])a.Clone();\nb[0].V = 9;\nConsole.WriteLine(a[0].V);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var a = new C[] { new C { V = 1 } };  var b = (C[])a.Clone();  b[0].V = 9;  Console.WriteLine(a[0].V);",
+      "questionTextEn": "What does it print?  var a = new C[] { new C { V = 1 } };  var b = (C[])a.Clone();  b[0].V = 9;  Console.WriteLine(a[0].V);",
       "correctAnswer": "9",
       "incorrectAnswerPool": [
         "1",
@@ -346,8 +329,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var l = new List<S> { new S { V = 1 } };\nvar s = l[0];\ns.V = 9;\nConsole.WriteLine(l[0].V);\n¿Qué muestra?",
-      "questionTextEn": "var l = new List<S> { new S { V = 1 } };\nvar s = l[0];\ns.V = 9;\nConsole.WriteLine(l[0].V);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var l = new List<S> { new S { V = 1 } };  var s = l[0];  s.V = 9;  Console.WriteLine(l[0].V);",
+      "questionTextEn": "What does it print?  var l = new List<S> { new S { V = 1 } };  var s = l[0];  s.V = 9;  Console.WriteLine(l[0].V);",
       "correctAnswer": "1",
       "incorrectAnswerPool": [
         "9",
@@ -363,8 +346,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var a = new S[1];\na[0].V = 5;\nConsole.WriteLine(a[0].V);\n¿Qué muestra?",
-      "questionTextEn": "var a = new S[1];\na[0].V = 5;\nConsole.WriteLine(a[0].V);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var a = new S[1];  a[0].V = 5;  Console.WriteLine(a[0].V);",
+      "questionTextEn": "What does it print?  var a = new S[1];  a[0].V = 5;  Console.WriteLine(a[0].V);",
       "correctAnswer": "5",
       "incorrectAnswerPool": [
         "0",
@@ -380,8 +363,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var l = new List<int> { 1, 2, 3 };\nvar q = l.Where(x => x > 1);\nl.Add(4);\nConsole.WriteLine(q.Count());\n¿Qué muestra?",
-      "questionTextEn": "var l = new List<int> { 1, 2, 3 };\nvar q = l.Where(x => x > 1);\nl.Add(4);\nConsole.WriteLine(q.Count());\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var l = new List<int> { 1, 2, 3 };  var q = l.Where(x => x > 1);  l.Add(4);  Console.WriteLine(q.Count());",
+      "questionTextEn": "What does it print?  var l = new List<int> { 1, 2, 3 };  var q = l.Where(x => x > 1);  l.Add(4);  Console.WriteLine(q.Count());",
       "correctAnswer": "3",
       "incorrectAnswerPool": [
         "2",
@@ -397,8 +380,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var l = new List<int> { 1, 2, 3 };\nvar q = l.Where(x => x > 1).ToList();\nl.Add(4);\nConsole.WriteLine(q.Count);\n¿Qué muestra?",
-      "questionTextEn": "var l = new List<int> { 1, 2, 3 };\nvar q = l.Where(x => x > 1).ToList();\nl.Add(4);\nConsole.WriteLine(q.Count);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var l = new List<int> { 1, 2, 3 };  var q = l.Where(x => x > 1).ToList();  l.Add(4);  Console.WriteLine(q.Count);",
+      "questionTextEn": "What does it print?  var l = new List<int> { 1, 2, 3 };  var q = l.Where(x => x > 1).ToList();  l.Add(4);  Console.WriteLine(q.Count);",
       "correctAnswer": "2",
       "incorrectAnswerPool": [
         "3",
@@ -414,8 +397,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var l = new List<int> { 10, 20, 1, 30 };\nl.Remove(1);\nConsole.WriteLine(string.Join(\",\", l));\n¿Qué muestra?",
-      "questionTextEn": "var l = new List<int> { 10, 20, 1, 30 };\nl.Remove(1);\nConsole.WriteLine(string.Join(\",\", l));\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var l = new List<int> { 10, 20, 1, 30 };  l.Remove(1);  Console.WriteLine(string.Join(\",\", l));",
+      "questionTextEn": "What does it print?  var l = new List<int> { 10, 20, 1, 30 };  l.Remove(1);  Console.WriteLine(string.Join(\",\", l));",
       "correctAnswer": "10,20,30",
       "incorrectAnswerPool": [
         "10,1,30",
@@ -431,8 +414,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var l = new List<int> { 3, 0, 1 };\nl.RemoveAt(l[2]);\nConsole.WriteLine(string.Join(\",\", l));\n¿Qué muestra?",
-      "questionTextEn": "var l = new List<int> { 3, 0, 1 };\nl.RemoveAt(l[2]);\nConsole.WriteLine(string.Join(\",\", l));\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var l = new List<int> { 3, 0, 1 };  l.RemoveAt(l[2]);  Console.WriteLine(string.Join(\",\", l));",
+      "questionTextEn": "What does it print?  var l = new List<int> { 3, 0, 1 };  l.RemoveAt(l[2]);  Console.WriteLine(string.Join(\",\", l));",
       "correctAnswer": "3,1",
       "incorrectAnswerPool": [
         "3,0",
@@ -448,8 +431,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "int[] a = { 1, 2, 3, 4 };\nint s = 0;\nfor (int i = 1; i < a.Length - 1; i++)\n    s += a[i];\nConsole.WriteLine(s);\n¿Qué muestra?",
-      "questionTextEn": "int[] a = { 1, 2, 3, 4 };\nint s = 0;\nfor (int i = 1; i < a.Length - 1; i++)\n    s += a[i];\nConsole.WriteLine(s);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  int[] a = { 1, 2, 3, 4 };  int s = 0;  for (int i = 1; i < a.Length - 1; i++)  s += a[i];  Console.WriteLine(s);",
+      "questionTextEn": "What does it print?  int[] a = { 1, 2, 3, 4 };  int s = 0;  for (int i = 1; i < a.Length - 1; i++)  s += a[i];  Console.WriteLine(s);",
       "correctAnswer": "5",
       "incorrectAnswerPool": [
         "10",
@@ -465,8 +448,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "int[] a = { 1, 2, 3, 4, 5 };\nint c = 0;\nfor (int i = 0; i < a.Length; i += 2)\n    c += a[i];\nConsole.WriteLine(c);\n¿Qué muestra?",
-      "questionTextEn": "int[] a = { 1, 2, 3, 4, 5 };\nint c = 0;\nfor (int i = 0; i < a.Length; i += 2)\n    c += a[i];\nConsole.WriteLine(c);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  int[] a = { 1, 2, 3, 4, 5 };  int c = 0;  for (int i = 0; i < a.Length; i += 2)  c += a[i];  Console.WriteLine(c);",
+      "questionTextEn": "What does it print?  int[] a = { 1, 2, 3, 4, 5 };  int c = 0;  for (int i = 0; i < a.Length; i += 2)  c += a[i];  Console.WriteLine(c);",
       "correctAnswer": "9",
       "incorrectAnswerPool": [
         "6",
@@ -482,8 +465,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "int[] a = { 1, 2, 3 };\na[0] = a[2];\na[2] = a[0];\nConsole.WriteLine(string.Join(\",\", a));\n¿Qué muestra?",
-      "questionTextEn": "int[] a = { 1, 2, 3 };\na[0] = a[2];\na[2] = a[0];\nConsole.WriteLine(string.Join(\",\", a));\nWhat does it print?",
+      "questionText": "¿Qué muestra?  int[] a = { 1, 2, 3 };  a[0] = a[2];  a[2] = a[0];  Console.WriteLine(string.Join(\",\", a));",
+      "questionTextEn": "What does it print?  int[] a = { 1, 2, 3 };  a[0] = a[2];  a[2] = a[0];  Console.WriteLine(string.Join(\",\", a));",
       "correctAnswer": "3,2,3",
       "incorrectAnswerPool": [
         "3,2,1",
@@ -495,29 +478,12 @@
       "explanationEn": "A temporary variable is missing: the 1 is lost in the first assignment."
     },
     {
-      "id": "col-dificil-31",
-      "category": "ColeccionesArraysListas",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "int[] a = { 4, 3, 2, 1 };\nfor (int i = 0; i < a.Length - 1; i++)\n    if (a[i] > a[i + 1])\n    {\n        int t = a[i]; a[i] = a[i + 1]; a[i + 1] = t;\n    }\nConsole.WriteLine(string.Join(\",\", a));\n¿Qué muestra?",
-      "questionTextEn": "int[] a = { 4, 3, 2, 1 };\nfor (int i = 0; i < a.Length - 1; i++)\n    if (a[i] > a[i + 1])\n    {\n        int t = a[i]; a[i] = a[i + 1]; a[i + 1] = t;\n    }\nConsole.WriteLine(string.Join(\",\", a));\nWhat does it print?",
-      "correctAnswer": "3,2,1,4",
-      "incorrectAnswerPool": [
-        "1,2,3,4",
-        "3,4,2,1",
-        "3,2,4,1",
-        "4,3,2,1"
-      ],
-      "explanation": "Es una sola pasada de burbuja: el 4 llega al final pero el resto no queda ordenado.",
-      "explanationEn": "It is a single bubble pass: the 4 reaches the end but the rest is not sorted."
-    },
-    {
       "id": "col-dificil-32",
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var d = new Dictionary<string, int>();\nd[\"a\"] = 1;\nd[\"b\"] = 2;\nd[\"a\"] = 3;\nConsole.WriteLine(d.Count + \" \" + d[\"a\"]);\n¿Qué muestra?",
-      "questionTextEn": "var d = new Dictionary<string, int>();\nd[\"a\"] = 1;\nd[\"b\"] = 2;\nd[\"a\"] = 3;\nConsole.WriteLine(d.Count + \" \" + d[\"a\"]);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var d = new Dictionary<string, int>();  d[\"a\"] = 1;  d[\"b\"] = 2;  d[\"a\"] = 3;  Console.WriteLine(d.Count + \" \" + d[\"a\"]);",
+      "questionTextEn": "What does it print?  var d = new Dictionary<string, int>();  d[\"a\"] = 1;  d[\"b\"] = 2;  d[\"a\"] = 3;  Console.WriteLine(d.Count + \" \" + d[\"a\"]);",
       "correctAnswer": "2 3",
       "incorrectAnswerPool": [
         "3 3",
@@ -533,8 +499,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var l = new List<string> { \"ab\", \"cd\", \"e\" };\nvar g = l.GroupBy(s => s.Length);\nConsole.WriteLine(g.Count());\n¿Qué muestra?",
-      "questionTextEn": "var l = new List<string> { \"ab\", \"cd\", \"e\" };\nvar g = l.GroupBy(s => s.Length);\nConsole.WriteLine(g.Count());\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var l = new List<string> { \"ab\", \"cd\", \"e\" };  var g = l.GroupBy(s => s.Length);  Console.WriteLine(g.Count());",
+      "questionTextEn": "What does it print?  var l = new List<string> { \"ab\", \"cd\", \"e\" };  var g = l.GroupBy(s => s.Length);  Console.WriteLine(g.Count());",
       "correctAnswer": "2",
       "incorrectAnswerPool": [
         "3",
@@ -550,8 +516,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var l = new List<int> { 1, 2, 2, 3, 1 };\nConsole.WriteLine(l.Distinct().Count());\n¿Qué muestra?",
-      "questionTextEn": "var l = new List<int> { 1, 2, 2, 3, 1 };\nConsole.WriteLine(l.Distinct().Count());\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var l = new List<int> { 1, 2, 2, 3, 1 };  Console.WriteLine(l.Distinct().Count());",
+      "questionTextEn": "What does it print?  var l = new List<int> { 1, 2, 2, 3, 1 };  Console.WriteLine(l.Distinct().Count());",
       "correctAnswer": "3",
       "incorrectAnswerPool": [
         "5",
@@ -561,46 +527,12 @@
       ]
     },
     {
-      "id": "col-dificil-35",
-      "category": "ColeccionesArraysListas",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "var a = new HashSet<int> { 1, 2, 3 };\nvar b = new HashSet<int> { 3, 4 };\na.IntersectWith(b);\nConsole.WriteLine(string.Join(\",\", a));\n¿Qué muestra?",
-      "questionTextEn": "var a = new HashSet<int> { 1, 2, 3 };\nvar b = new HashSet<int> { 3, 4 };\na.IntersectWith(b);\nConsole.WriteLine(string.Join(\",\", a));\nWhat does it print?",
-      "correctAnswer": "3",
-      "incorrectAnswerPool": [
-        "1,2,3,4",
-        "3,4",
-        "1,2",
-        "4"
-      ],
-      "explanation": "IntersectWith deja en a solo lo que también está en b.",
-      "explanationEn": "IntersectWith leaves in a only what is also in b."
-    },
-    {
-      "id": "col-dificil-36",
-      "category": "ColeccionesArraysListas",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "var a = new HashSet<int> { 1, 2, 3 };\nvar b = new HashSet<int> { 2, 3, 4 };\na.ExceptWith(b);\nConsole.WriteLine(string.Join(\",\", a));\n¿Qué muestra?",
-      "questionTextEn": "var a = new HashSet<int> { 1, 2, 3 };\nvar b = new HashSet<int> { 2, 3, 4 };\na.ExceptWith(b);\nConsole.WriteLine(string.Join(\",\", a));\nWhat does it print?",
-      "correctAnswer": "1",
-      "incorrectAnswerPool": [
-        "4",
-        "1,4",
-        "2,3",
-        "1,2,3,4"
-      ],
-      "explanation": "ExceptWith quita de a todo lo que está en b.",
-      "explanationEn": "ExceptWith removes from a everything that is in b."
-    },
-    {
       "id": "col-dificil-37",
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var a = new[] { 1, 2, 3 };\nvar b = new[] { 10, 20 };\nConsole.WriteLine(a.Zip(b, (x, y) => x + y).Sum());\n¿Qué muestra?",
-      "questionTextEn": "var a = new[] { 1, 2, 3 };\nvar b = new[] { 10, 20 };\nConsole.WriteLine(a.Zip(b, (x, y) => x + y).Sum());\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var a = new[] { 1, 2, 3 };  var b = new[] { 10, 20 };  Console.WriteLine(a.Zip(b, (x, y) => x + y).Sum());",
+      "questionTextEn": "What does it print?  var a = new[] { 1, 2, 3 };  var b = new[] { 10, 20 };  Console.WriteLine(a.Zip(b, (x, y) => x + y).Sum());",
       "correctAnswer": "33",
       "incorrectAnswerPool": [
         "36",
@@ -616,8 +548,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "Console.WriteLine(string.Join(\",\", Enumerable.Range(1, 10).Skip(3).Take(2)));\n¿Qué muestra?",
-      "questionTextEn": "Console.WriteLine(string.Join(\",\", Enumerable.Range(1, 10).Skip(3).Take(2)));\nWhat does it print?",
+      "questionText": "¿Qué muestra?  Console.WriteLine(string.Join(\",\", Enumerable.Range(1, 10).Skip(3).Take(2)));",
+      "questionTextEn": "What does it print?  Console.WriteLine(string.Join(\",\", Enumerable.Range(1, 10).Skip(3).Take(2)));",
       "correctAnswer": "4,5",
       "incorrectAnswerPool": [
         "3,4",
@@ -648,8 +580,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var m = new List<List<int>> { new List<int> { 1, 2 }, new List<int> { 3 } };\nConsole.WriteLine(m.SelectMany(x => x).Sum());\n¿Qué muestra?",
-      "questionTextEn": "var m = new List<List<int>> { new List<int> { 1, 2 }, new List<int> { 3 } };\nConsole.WriteLine(m.SelectMany(x => x).Sum());\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var m = new List<List<int>> { new List<int> { 1, 2 }, new List<int> { 3 } };  Console.WriteLine(m.SelectMany(x => x).Sum());",
+      "questionTextEn": "What does it print?  var m = new List<List<int>> { new List<int> { 1, 2 }, new List<int> { 3 } };  Console.WriteLine(m.SelectMany(x => x).Sum());",
       "correctAnswer": "6",
       "incorrectAnswerPool": [
         "3",
@@ -663,8 +595,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "string[] n = { \"a\", \"b\" };\nstring x = n[0];\nx += \"z\";\nConsole.WriteLine(n[0]);\n¿Qué muestra?",
-      "questionTextEn": "string[] n = { \"a\", \"b\" };\nstring x = n[0];\nx += \"z\";\nConsole.WriteLine(n[0]);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  string[] n = { \"a\", \"b\" };  string x = n[0];  x += \"z\";  Console.WriteLine(n[0]);",
+      "questionTextEn": "What does it print?  string[] n = { \"a\", \"b\" };  string x = n[0];  x += \"z\";  Console.WriteLine(n[0]);",
       "correctAnswer": "a",
       "incorrectAnswerPool": [
         "az",
@@ -680,8 +612,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "int[] a = { 1, 2, 3 };\nint s = 0;\nforeach (int x in a)\n{\n    a[2] = 10;\n    s += x;\n}\nConsole.WriteLine(s);\n¿Qué muestra?",
-      "questionTextEn": "int[] a = { 1, 2, 3 };\nint s = 0;\nforeach (int x in a)\n{\n    a[2] = 10;\n    s += x;\n}\nConsole.WriteLine(s);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  int[] a = { 1, 2, 3 };  int s = 0;  foreach (int x in a) { a[2] = 10; s += x; }  Console.WriteLine(s);",
+      "questionTextEn": "What does it print?  int[] a = { 1, 2, 3 };  int s = 0;  foreach (int x in a) { a[2] = 10; s += x; }  Console.WriteLine(s);",
       "correctAnswer": "13",
       "incorrectAnswerPool": [
         "6",
@@ -704,8 +636,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var l = new List<int> { 1, 2 };\nforeach (int x in l)\n    l[0] = 5;\nConsole.WriteLine(\"fin\");\n¿Qué muestra?",
-      "questionTextEn": "var l = new List<int> { 1, 2 };\nforeach (int x in l)\n    l[0] = 5;\nConsole.WriteLine(\"fin\");\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var l = new List<int> { 1, 2 };  foreach (int x in l)  l[0] = 5;  Console.WriteLine(\"fin\");",
+      "questionTextEn": "What does it print?  var l = new List<int> { 1, 2 };  foreach (int x in l)  l[0] = 5;  Console.WriteLine(\"fin\");",
       "correctAnswer": "Lanza InvalidOperationException",
       "incorrectAnswerPool": [
         "Muestra fin",
@@ -728,8 +660,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var l = new List<string> { \"bb\", \"a\", \"ccc\" };\nl.Sort((x, y) => y.Length.CompareTo(x.Length));\nConsole.WriteLine(l[0]);\n¿Qué muestra?",
-      "questionTextEn": "var l = new List<string> { \"bb\", \"a\", \"ccc\" };\nl.Sort((x, y) => y.Length.CompareTo(x.Length));\nConsole.WriteLine(l[0]);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var l = new List<string> { \"bb\", \"a\", \"ccc\" };  l.Sort((x, y) => y.Length.CompareTo(x.Length));  Console.WriteLine(l[0]);",
+      "questionTextEn": "What does it print?  var l = new List<string> { \"bb\", \"a\", \"ccc\" };  l.Sort((x, y) => y.Length.CompareTo(x.Length));  Console.WriteLine(l[0]);",
       "correctAnswer": "ccc",
       "incorrectAnswerPool": [
         "a",
@@ -743,8 +675,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "int[] a = { 1, 3, 5, 7 };\nConsole.WriteLine(Array.BinarySearch(a, 4));\n¿Qué muestra?",
-      "questionTextEn": "int[] a = { 1, 3, 5, 7 };\nConsole.WriteLine(Array.BinarySearch(a, 4));\nWhat does it print?",
+      "questionText": "¿Qué muestra?  int[] a = { 1, 3, 5, 7 };  Console.WriteLine(Array.BinarySearch(a, 4));",
+      "questionTextEn": "What does it print?  int[] a = { 1, 3, 5, 7 };  Console.WriteLine(Array.BinarySearch(a, 4));",
       "correctAnswer": "-3",
       "incorrectAnswerPool": [
         "-1",
@@ -760,8 +692,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var s = new Stack<int>(new[] { 1, 2, 3 });\nConsole.WriteLine(s.Pop());\n¿Qué muestra?",
-      "questionTextEn": "var s = new Stack<int>(new[] { 1, 2, 3 });\nConsole.WriteLine(s.Pop());\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var s = new Stack<int>(new[] { 1, 2, 3 });  Console.WriteLine(s.Pop());",
+      "questionTextEn": "What does it print?  var s = new Stack<int>(new[] { 1, 2, 3 });  Console.WriteLine(s.Pop());",
       "correctAnswer": "3",
       "incorrectAnswerPool": [
         "1",
@@ -773,27 +705,12 @@
       "explanationEn": "The constructor pushes in order, so the last one ends up on top."
     },
     {
-      "id": "col-dificil-47",
-      "category": "ColeccionesArraysListas",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "int[,] m = new int[2, 3];\nint c = 0;\nfor (int i = 0; i < 2; i++)\n    for (int j = 0; j < 3; j++)\n        m[i, j] = c++;\nConsole.WriteLine(m[1, 0]);\n¿Qué muestra?",
-      "questionTextEn": "int[,] m = new int[2, 3];\nint c = 0;\nfor (int i = 0; i < 2; i++)\n    for (int j = 0; j < 3; j++)\n        m[i, j] = c++;\nConsole.WriteLine(m[1, 0]);\nWhat does it print?",
-      "correctAnswer": "3",
-      "incorrectAnswerPool": [
-        "2",
-        "1",
-        "4",
-        "0"
-      ]
-    },
-    {
       "id": "col-dificil-48",
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "int[,] m = new int[2, 3];\nConsole.WriteLine(m.GetUpperBound(1));\n¿Qué muestra?",
-      "questionTextEn": "int[,] m = new int[2, 3];\nConsole.WriteLine(m.GetUpperBound(1));\nWhat does it print?",
+      "questionText": "¿Qué muestra?  int[,] m = new int[2, 3];  Console.WriteLine(m.GetUpperBound(1));",
+      "questionTextEn": "What does it print?  int[,] m = new int[2, 3];  Console.WriteLine(m.GetUpperBound(1));",
       "correctAnswer": "2",
       "incorrectAnswerPool": [
         "3",
@@ -809,8 +726,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "int?[] a = new int?[2];\nConsole.WriteLine(a[1] ?? -1);\n¿Qué muestra?",
-      "questionTextEn": "int?[] a = new int?[2];\nConsole.WriteLine(a[1] ?? -1);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  int?[] a = new int?[2];  Console.WriteLine(a[1] ?? -1);",
+      "questionTextEn": "What does it print?  int?[] a = new int?[2];  Console.WriteLine(a[1] ?? -1);",
       "correctAnswer": "-1",
       "incorrectAnswerPool": [
         "0",
@@ -826,8 +743,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var l = new List<int>(new int[3]);\nConsole.WriteLine(l.Count);\n¿Qué muestra?",
-      "questionTextEn": "var l = new List<int>(new int[3]);\nConsole.WriteLine(l.Count);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var l = new List<int>(new int[3]);  Console.WriteLine(l.Count);",
+      "questionTextEn": "What does it print?  var l = new List<int>(new int[3]);  Console.WriteLine(l.Count);",
       "correctAnswer": "3",
       "incorrectAnswerPool": [
         "0",
@@ -843,8 +760,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var l = new List<int> { 1, 2, 3 };\nl.Insert(l.Count, 4);\nl.Insert(0, 0);\nConsole.WriteLine(string.Join(\"\", l));\n¿Qué muestra?",
-      "questionTextEn": "var l = new List<int> { 1, 2, 3 };\nl.Insert(l.Count, 4);\nl.Insert(0, 0);\nConsole.WriteLine(string.Join(\"\", l));\nWhat does it print?",
+      "questionText": "¿Qué muestra? var l = new List<int> { 1, 2, 3 }; l.Insert(l.Count, 4); l.Insert(0, 0); Console.WriteLine(string.Join(\"\", l));",
+      "questionTextEn": "What does it print? var l = new List<int> { 1, 2, 3 }; l.Insert(l.Count, 4); l.Insert(0, 0); Console.WriteLine(string.Join(\"\", l));",
       "correctAnswer": "01234",
       "incorrectAnswerPool": [
         "1234",
@@ -858,8 +775,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var d = new Dictionary<string, List<int>>();\nd[\"a\"].Add(1);\nConsole.WriteLine(\"listo\");\n¿Qué muestra?",
-      "questionTextEn": "var d = new Dictionary<string, List<int>>();\nd[\"a\"].Add(1);\nConsole.WriteLine(\"listo\");\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var d = new Dictionary<string, List<int>>();  d[\"a\"].Add(1);  Console.WriteLine(\"listo\");",
+      "questionTextEn": "What does it print?  var d = new Dictionary<string, List<int>>();  d[\"a\"].Add(1);  Console.WriteLine(\"listo\");",
       "correctAnswer": "Lanza KeyNotFoundException",
       "incorrectAnswerPool": [
         "Muestra listo",
@@ -878,29 +795,12 @@
       "explanationEn": "Reading d[\"a\"] before assigning it already fails, because the key does not exist."
     },
     {
-      "id": "col-dificil-53",
-      "category": "ColeccionesArraysListas",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "var l = new List<int> { 1, 2, 2, 3 };\nfor (int i = 0; i < l.Count; i++)\n    if (l[i] == 2) l.RemoveAt(i);\nConsole.WriteLine(string.Join(\",\", l));\n¿Qué muestra?",
-      "questionTextEn": "var l = new List<int> { 1, 2, 2, 3 };\nfor (int i = 0; i < l.Count; i++)\n    if (l[i] == 2) l.RemoveAt(i);\nConsole.WriteLine(string.Join(\",\", l));\nWhat does it print?",
-      "correctAnswer": "1,2,3",
-      "incorrectAnswerPool": [
-        "1,3",
-        "1,2,2,3",
-        "2,2",
-        "1,2"
-      ],
-      "explanation": "Al quitar el primer 2, el segundo se corre a la posición actual y el bucle lo salta.",
-      "explanationEn": "After removing the first 2, the second one shifts into the current position and the loop skips it."
-    },
-    {
       "id": "col-dificil-54",
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "object[] o = new string[] { \"a\" };\no[0] = 1;\nConsole.WriteLine(\"fin\");\n¿Qué muestra?",
-      "questionTextEn": "object[] o = new string[] { \"a\" };\no[0] = 1;\nConsole.WriteLine(\"fin\");\nWhat does it print?",
+      "questionText": "¿Qué muestra?  object[] o = new string[] { \"a\" };  o[0] = 1;  Console.WriteLine(\"fin\");",
+      "questionTextEn": "What does it print?  object[] o = new string[] { \"a\" };  o[0] = 1;  Console.WriteLine(\"fin\");",
       "correctAnswer": "Lanza ArrayTypeMismatchException",
       "incorrectAnswerPool": [
         "Muestra fin",
@@ -923,8 +823,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "int[] a = { 1, 2, 3 };\nint[] b = a;\na = new int[] { 9 };\nConsole.WriteLine(b.Length);\n¿Qué muestra?",
-      "questionTextEn": "int[] a = { 1, 2, 3 };\nint[] b = a;\na = new int[] { 9 };\nConsole.WriteLine(b.Length);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  int[] a = { 1, 2, 3 };  int[] b = a;  a = new int[] { 9 };  Console.WriteLine(b.Length);",
+      "questionTextEn": "What does it print?  int[] a = { 1, 2, 3 };  int[] b = a;  a = new int[] { 9 };  Console.WriteLine(b.Length);",
       "correctAnswer": "3",
       "incorrectAnswerPool": [
         "1",
@@ -940,8 +840,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "int[] a = { 1, 2 };\nF(a);\nConsole.WriteLine(a[0] + \",\" + a.Length);\n¿Qué muestra?",
-      "questionTextEn": "int[] a = { 1, 2 };\nF(a);\nConsole.WriteLine(a[0] + \",\" + a.Length);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  int[] a = { 1, 2 };  F(a);  Console.WriteLine(a[0] + \",\" + a.Length);",
+      "questionTextEn": "What does it print?  int[] a = { 1, 2 };  F(a);  Console.WriteLine(a[0] + \",\" + a.Length);",
       "correctAnswer": "9,2",
       "incorrectAnswerPool": [
         "1,2",
@@ -957,8 +857,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var l = new List<int>();\nG(l);\nConsole.WriteLine(l.Count);\n¿Qué muestra?",
-      "questionTextEn": "var l = new List<int>();\nG(l);\nConsole.WriteLine(l.Count);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var l = new List<int>();  G(l);  Console.WriteLine(l.Count);",
+      "questionTextEn": "What does it print?  var l = new List<int>();  G(l);  Console.WriteLine(l.Count);",
       "correctAnswer": "1",
       "incorrectAnswerPool": [
         "0",
@@ -981,8 +881,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "int[] a = { 1, 2 };\nH(ref a);\nConsole.WriteLine(a.Length);\n¿Qué muestra?",
-      "questionTextEn": "int[] a = { 1, 2 };\nH(ref a);\nConsole.WriteLine(a.Length);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  int[] a = { 1, 2 };  H(ref a);  Console.WriteLine(a.Length);",
+      "questionTextEn": "What does it print?  int[] a = { 1, 2 };  H(ref a);  Console.WriteLine(a.Length);",
       "correctAnswer": "1",
       "incorrectAnswerPool": [
         "2",
@@ -998,8 +898,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "int[] a = { 1, 2 };\nint[] b = { 1, 2 };\nConsole.WriteLine(a.Equals(b) + \" \" + a.SequenceEqual(b));\n¿Qué muestra?",
-      "questionTextEn": "int[] a = { 1, 2 };\nint[] b = { 1, 2 };\nConsole.WriteLine(a.Equals(b) + \" \" + a.SequenceEqual(b));\nWhat does it print?",
+      "questionText": "¿Qué muestra?  int[] a = { 1, 2 };  int[] b = { 1, 2 };  Console.WriteLine(a.Equals(b) + \" \" + a.SequenceEqual(b));",
+      "questionTextEn": "What does it print?  int[] a = { 1, 2 };  int[] b = { 1, 2 };  Console.WriteLine(a.Equals(b) + \" \" + a.SequenceEqual(b));",
       "correctAnswer": "False True",
       "incorrectAnswerPool": [
         "True True",
@@ -1015,8 +915,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var acts = new List<Action>();\nfor (int i = 0; i < 3; i++)\n    acts.Add(() => Console.Write(i));\nforeach (var a in acts) a();\n¿Qué muestra?",
-      "questionTextEn": "var acts = new List<Action>();\nfor (int i = 0; i < 3; i++)\n    acts.Add(() => Console.Write(i));\nforeach (var a in acts) a();\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var acts = new List<Action>();  for (int i = 0; i < 3; i++)  acts.Add(() => Console.Write(i));  foreach (var a in acts) a();",
+      "questionTextEn": "What does it print?  var acts = new List<Action>();  for (int i = 0; i < 3; i++)  acts.Add(() => Console.Write(i));  foreach (var a in acts) a();",
       "correctAnswer": "333",
       "incorrectAnswerPool": [
         "012",
@@ -1032,8 +932,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "string[] n = { \"a\", \"b\", \"c\" };\nConsole.WriteLine(Array.IndexOf(n, \"z\") + 1);\n¿Qué muestra?",
-      "questionTextEn": "string[] n = { \"a\", \"b\", \"c\" };\nConsole.WriteLine(Array.IndexOf(n, \"z\") + 1);\nWhat does it print?",
+      "questionText": "¿Qué muestra?  string[] n = { \"a\", \"b\", \"c\" };  Console.WriteLine(Array.IndexOf(n, \"z\") + 1);",
+      "questionTextEn": "What does it print?  string[] n = { \"a\", \"b\", \"c\" };  Console.WriteLine(Array.IndexOf(n, \"z\") + 1);",
       "correctAnswer": "0",
       "incorrectAnswerPool": [
         "1",
@@ -1049,8 +949,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var l = new List<string> { \"b1\", \"a1\", \"b0\" };\nl = l.OrderBy(s => s[0]).ToList();\nConsole.WriteLine(string.Join(\",\", l));\n¿Qué muestra?",
-      "questionTextEn": "var l = new List<string> { \"b1\", \"a1\", \"b0\" };\nl = l.OrderBy(s => s[0]).ToList();\nConsole.WriteLine(string.Join(\",\", l));\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var l = new List<string> { \"b1\", \"a1\", \"b0\" };  l = l.OrderBy(s => s[0]).ToList();  Console.WriteLine(string.Join(\",\", l));",
+      "questionTextEn": "What does it print?  var l = new List<string> { \"b1\", \"a1\", \"b0\" };  l = l.OrderBy(s => s[0]).ToList();  Console.WriteLine(string.Join(\",\", l));",
       "correctAnswer": "a1,b1,b0",
       "incorrectAnswerPool": [
         "a1,b0,b1",
@@ -1066,8 +966,8 @@
       "category": "ColeccionesArraysListas",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "var v = new int[0];\nConsole.WriteLine(v.Max());\n¿Qué muestra?",
-      "questionTextEn": "var v = new int[0];\nConsole.WriteLine(v.Max());\nWhat does it print?",
+      "questionText": "¿Qué muestra?  var v = new int[0];  Console.WriteLine(v.Max());",
+      "questionTextEn": "What does it print?  var v = new int[0];  Console.WriteLine(v.Max());",
       "correctAnswer": "Lanza InvalidOperationException",
       "incorrectAnswerPool": [
         "Muestra 0",

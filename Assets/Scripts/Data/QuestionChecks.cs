@@ -21,6 +21,62 @@ namespace PeliCode.Data
         /// </summary>
         public const int MaxErrorSnippets = 5;
 
+        /// <summary>
+        /// Medidas de los textos (tercer documento de Ismael), para que no se descuadren:
+        /// el enunciado de opcion multiple cabe en 2 filas de 73 caracteres; el de las otras
+        /// vistas, en 2 filas de 83; y el codigo de completar, en 11 filas de 94.
+        /// </summary>
+        public const int MultipleChoiceRowChars = 73;
+        public const int QuestionRowChars = 83;
+        public const int QuestionRows = 2;
+        public const int CodeRowChars = 94;
+        public const int CodeRows = 11;
+
+        /// <summary>
+        /// Filas que ocupa un texto con un ancho de <paramref name="rowChars"/> caracteres: cada
+        /// salto de linea empieza una fila y las palabras que no caben pasan a la siguiente
+        /// (una palabra mas larga que la fila se corta).
+        /// </summary>
+        public static int Rows(string text, int rowChars)
+        {
+            if (string.IsNullOrEmpty(text)) return 0;
+            int rows = 0;
+            foreach (string line in text.Replace("\r", string.Empty).Split('\n'))
+            {
+                rows++;
+                int used = 0;
+                foreach (string piece in line.Split(' '))
+                {
+                    string word = piece;
+                    while (word.Length > rowChars)
+                    {
+                        if (used > 0) rows++;
+                        word = word.Substring(rowChars);
+                        used = 0;
+                        rows++;
+                    }
+                    int needed = used == 0 ? word.Length : used + 1 + word.Length;
+                    if (needed <= rowChars) used = needed;
+                    else { rows++; used = word.Length; }
+                }
+            }
+            return rows;
+        }
+
+        /// <summary>True si el enunciado (en los dos idiomas) y el codigo caben en sus medidas.</summary>
+        public static bool FitsTextLimits(QuestionData q, out string problem)
+        {
+            problem = null;
+            int rowChars = q.type == QuestionType.SeleccionMultiple ? MultipleChoiceRowChars : QuestionRowChars;
+            if (Rows(q.questionText, rowChars) > QuestionRows)
+                problem = $"el enunciado pasa de {QuestionRows} filas de {rowChars} caracteres";
+            else if (Rows(q.questionTextEn, rowChars) > QuestionRows)
+                problem = $"el enunciado en ingles pasa de {QuestionRows} filas de {rowChars} caracteres";
+            else if (q.type == QuestionType.CompletarCodigo && Rows(q.codeTemplate, CodeRowChars) > CodeRows)
+                problem = $"el codigo pasa de {CodeRows} filas de {CodeRowChars} caracteres";
+            return problem == null;
+        }
+
         public static bool IsPlayable(QuestionData q, out string problem)
         {
             problem = null;

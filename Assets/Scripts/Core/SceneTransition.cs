@@ -13,7 +13,7 @@ namespace PeliCode.Core
     ///   escena actual -> negro -> pantalla de carga -> (carga la escena y espera a que este
     ///   lista) -> negro -> escena nueva.
     /// La pantalla de carga es un fondo negro con "CARGANDO" (los puntos van de 1 a 3) abajo a
-    /// la izquierda y un cuadrado blanco que gira (placeholder para un logo).
+    /// la izquierda, junto al logo (Resources/PeliCode_Logo), que late mientras carga.
     /// Se construye por codigo y persiste entre escenas, asi que no hay nada que armar en ellas.
     /// Al abrir el juego, la primera escena tambien aparece con un fundido desde negro.
     /// </summary>
@@ -22,6 +22,10 @@ namespace PeliCode.Core
         public const float FadeSeconds = 0.35f;
         private const float MinLoadingSeconds = 0.6f;
         private const float ReadyTimeoutSeconds = 15f;
+
+        public const string LogoResource = "PeliCode_Logo";
+        private const float LogoSize = 72f;
+        private const float LogoPulse = 0.08f; // el logo crece y se achica un 8 %, una vez por segundo
 
         private static bool _transitioning;
         private static bool _firstFading;
@@ -32,7 +36,7 @@ namespace PeliCode.Core
 
         private CanvasGroup _fade;
         private GameObject _loadingPanel;
-        private RectTransform _spinner;
+        private RectTransform _logo;
         private TMP_Text _loadingText;
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
@@ -146,9 +150,13 @@ namespace PeliCode.Core
         private void Update()
         {
             if (_loadingPanel == null || !_loadingPanel.activeSelf) return;
-            _spinner.Rotate(0f, 0f, -180f * Time.unscaledDeltaTime);
+            _logo.localScale = Vector3.one * LogoScale(Time.unscaledTime);
             _loadingText.text = LoadingLabel(Loc.Get("loading.text"), Time.unscaledTime);
         }
+
+        /// <summary>Escala del logo en la pantalla de carga: un latido suave de un segundo.</summary>
+        public static float LogoScale(float seconds) =>
+            1f + LogoPulse * 0.5f * (1f - Mathf.Cos(seconds * 2f * Mathf.PI));
 
         // ---------------------------------------------------------------- construccion
 
@@ -165,20 +173,22 @@ namespace PeliCode.Core
 
             _loadingPanel = FullScreen("PantallaDeCarga", transform, Color.black);
 
-            var spinner = new GameObject("Cuadrado", typeof(RectTransform), typeof(Image));
-            _spinner = (RectTransform)spinner.transform;
-            _spinner.SetParent(_loadingPanel.transform, false);
-            _spinner.anchorMin = _spinner.anchorMax = Vector2.zero;
-            _spinner.anchoredPosition = new Vector2(70f, 64f);
-            _spinner.sizeDelta = new Vector2(40f, 40f);
-            spinner.GetComponent<Image>().color = Color.white;
+            var logo = new GameObject("Logo", typeof(RectTransform), typeof(Image));
+            _logo = (RectTransform)logo.transform;
+            _logo.SetParent(_loadingPanel.transform, false);
+            _logo.anchorMin = _logo.anchorMax = Vector2.zero;
+            _logo.anchoredPosition = new Vector2(80f, 64f);
+            _logo.sizeDelta = new Vector2(LogoSize, LogoSize);
+            var logoImage = logo.GetComponent<Image>();
+            logoImage.sprite = Resources.Load<Sprite>(LogoResource); // sin el sprite queda un cuadrado blanco
+            logoImage.preserveAspect = true;
 
             var label = new GameObject("TextoCargando", typeof(RectTransform), typeof(TextMeshProUGUI));
             var labelRect = (RectTransform)label.transform;
             labelRect.SetParent(_loadingPanel.transform, false);
             labelRect.anchorMin = labelRect.anchorMax = Vector2.zero;
             labelRect.pivot = new Vector2(0f, 0.5f);
-            labelRect.anchoredPosition = new Vector2(110f, 64f);
+            labelRect.anchoredPosition = new Vector2(132f, 64f);
             labelRect.sizeDelta = new Vector2(500f, 60f);
             _loadingText = label.GetComponent<TextMeshProUGUI>();
             _loadingText.fontSize = 32f;

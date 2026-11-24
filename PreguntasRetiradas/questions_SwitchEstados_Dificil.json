@@ -1,0 +1,360 @@
+{
+  "questions": [
+    {
+      "id": "sw-dificil-25",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstatic bool T(string s) { Console.Write(s); return true; }\nstatic void Run(int n)\n{\n    switch (n)\n    {\n        case int v when T(\"a\") && v > 5: Console.Write(\"X\"); break;\n        case int v when T(\"b\"): Console.Write(\"Y\"); break;\n        default: Console.Write(\"Z\"); break;\n    }\n}\nRun(3);",
+      "questionTextEn": "What does it print?\nstatic bool T(string s) { Console.Write(s); return true; }\nstatic void Run(int n)\n{\n    switch (n)\n    {\n        case int v when T(\"a\") && v > 5: Console.Write(\"X\"); break;\n        case int v when T(\"b\"): Console.Write(\"Y\"); break;\n        default: Console.Write(\"Z\"); break;\n    }\n}\nRun(3);",
+      "correctAnswer": "abY",
+      "incorrectAnswerPool": [
+        "aX",
+        "bY",
+        "aY",
+        "abXY",
+        "Z"
+      ],
+      "explanation": "Con n = 3 el primer when muestra a y falla; el segundo muestra b y acierta, así que se ejecuta Y.",
+      "explanationEn": "With n = 3 the first when prints a and fails; the second prints b and succeeds, so Y runs."
+    },
+    {
+      "id": "sw-dificil-28",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra? (cuántas veces se llamó a F)\nstatic int calls = 0;\nstatic int F() { calls++; return 2; }\nswitch (F()) { case 1: break; case 2: break; default: break; }\nConsole.Write(calls);",
+      "questionTextEn": "What does it print? (how many times F was called)\nstatic int calls = 0;\nstatic int F() { calls++; return 2; }\nswitch (F()) { case 1: break; case 2: break; default: break; }\nConsole.Write(calls);",
+      "correctAnswer": "1",
+      "incorrectAnswerPool": [
+        "0",
+        "2",
+        "3",
+        "4"
+      ],
+      "explanation": "El switch evalúa su expresión una sola vez, no una por cada case.",
+      "explanationEn": "The switch evaluates its expression only once, not once per case."
+    },
+    {
+      "id": "sw-dificil-29",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring s = null;\nswitch (s)\n{\n    case \"\": Console.Write(\"vacio\"); break;\n    case null: Console.Write(\"nulo\"); break;\n    default: Console.Write(\"texto\"); break;\n}",
+      "questionTextEn": "What does it print?\nstring s = null;\nswitch (s)\n{\n    case \"\": Console.Write(\"vacio\"); break;\n    case null: Console.Write(\"nulo\"); break;\n    default: Console.Write(\"texto\"); break;\n}",
+      "correctAnswer": "nulo",
+      "incorrectAnswerPool": [
+        "vacio",
+        "texto",
+        "nulovacio",
+        "Lanza una excepción"
+      ],
+      "explanation": "null y la cadena vacía son valores distintos; s es null.",
+      "explanationEn": "null and the empty string are different values; s is null."
+    },
+    {
+      "id": "sw-dificil-31",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nobject o = 3.5;\nstring r = o switch\n{\n    int => \"int\",\n    double d when d > 3 => \"grande\",\n    double => \"double\",\n    _ => \"otro\"\n};",
+      "questionTextEn": "What is the value of r at the end?\nobject o = 3.5;\nstring r = o switch\n{\n    int => \"int\",\n    double d when d > 3 => \"grande\",\n    double => \"double\",\n    _ => \"otro\"\n};",
+      "correctAnswer": "grande",
+      "incorrectAnswerPool": [
+        "int",
+        "double",
+        "otro",
+        "grandedouble"
+      ],
+      "explanation": "El valor es un double (3.5) y cumple d > 3, así que gana ese brazo.",
+      "explanationEn": "The value is a double (3.5) and satisfies d > 3, so that arm wins."
+    },
+    {
+      "id": "sw-dificil-32",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nobject o = \"hola\";\nswitch (o)\n{\n    case string s when s.Length > 5: Console.Write(\"largo\"); break;\n    case string s: Console.Write(s.Length); break;\n    default: Console.Write(\"?\"); break;\n}",
+      "questionTextEn": "What does it print?\nobject o = \"hola\";\nswitch (o)\n{\n    case string s when s.Length > 5: Console.Write(\"largo\"); break;\n    case string s: Console.Write(s.Length); break;\n    default: Console.Write(\"?\"); break;\n}",
+      "correctAnswer": "4",
+      "incorrectAnswerPool": [
+        "largo",
+        "hola",
+        "?",
+        "5"
+      ],
+      "explanation": "\"hola\" tiene 4 letras, no cumple el when y entra el segundo case.",
+      "explanationEn": "\"hola\" has 4 letters, fails the when and the second case matches."
+    },
+    {
+      "id": "sw-dificil-33",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = 2;\nswitch (n)\n{\n    case 1: Console.Write(\"a\"); goto case 2;\n    case 2: Console.Write(\"b\"); goto case 3;\n    case 3: Console.Write(\"c\"); break;\n}",
+      "questionTextEn": "What does it print?\nint n = 2;\nswitch (n)\n{\n    case 1: Console.Write(\"a\"); goto case 2;\n    case 2: Console.Write(\"b\"); goto case 3;\n    case 3: Console.Write(\"c\"); break;\n}",
+      "correctAnswer": "bc",
+      "incorrectAnswerPool": [
+        "abc",
+        "b",
+        "c",
+        "bcc"
+      ],
+      "explanation": "Empieza en el case 2, muestra b, salta al case 3 y muestra c.",
+      "explanationEn": "It starts at case 2, prints b, jumps to case 3 and prints c."
+    },
+    {
+      "id": "sw-dificil-35",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nenum Estado { Quieto, Corriendo, Saltando }\nEstado e = (Estado)7;\nswitch (e)\n{\n    case Estado.Quieto: Console.Write(\"q\"); break;\n    case Estado.Corriendo: Console.Write(\"c\"); break;\n    default: Console.Write(\"raro\"); break;\n}",
+      "questionTextEn": "What does it print?\nenum Estado { Quieto, Corriendo, Saltando }\nEstado e = (Estado)7;\nswitch (e)\n{\n    case Estado.Quieto: Console.Write(\"q\"); break;\n    case Estado.Corriendo: Console.Write(\"c\"); break;\n    default: Console.Write(\"raro\"); break;\n}",
+      "correctAnswer": "raro",
+      "incorrectAnswerPool": [
+        "q",
+        "c",
+        "7",
+        "Lanza una excepción"
+      ],
+      "explanation": "El 7 no corresponde a ningún miembro, así que cae en default.",
+      "explanationEn": "The 7 matches no member, so it falls into default."
+    },
+    {
+      "id": "sw-dificil-37",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\n[Flags] enum Perm { Ninguno = 0, Leer = 1, Escribir = 2, Ejecutar = 4 }\nPerm p = Perm.Leer | Perm.Escribir;\nswitch (p)\n{\n    case Perm.Leer: Console.Write(\"L\"); break;\n    case Perm.Escribir: Console.Write(\"E\"); break;\n    default: Console.Write(\"otro\"); break;\n}",
+      "questionTextEn": "What does it print?\n[Flags] enum Perm { Ninguno = 0, Leer = 1, Escribir = 2, Ejecutar = 4 }\nPerm p = Perm.Leer | Perm.Escribir;\nswitch (p)\n{\n    case Perm.Leer: Console.Write(\"L\"); break;\n    case Perm.Escribir: Console.Write(\"E\"); break;\n    default: Console.Write(\"otro\"); break;\n}",
+      "correctAnswer": "otro",
+      "incorrectAnswerPool": [
+        "L",
+        "E",
+        "LE",
+        "No muestra nada"
+      ],
+      "explanation": "El valor combinado (3) no es igual a Leer (1) ni a Escribir (2).",
+      "explanationEn": "The combined value (3) equals neither Leer (1) nor Escribir (2)."
+    },
+    {
+      "id": "sw-dificil-38",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\n[Flags] enum Perm { Ninguno = 0, Leer = 1, Escribir = 2, Ejecutar = 4 }\nPerm p = Perm.Leer | Perm.Escribir;\nConsole.Write(p.HasFlag(Perm.Escribir));",
+      "questionTextEn": "What does it print?\n[Flags] enum Perm { Ninguno = 0, Leer = 1, Escribir = 2, Ejecutar = 4 }\nPerm p = Perm.Leer | Perm.Escribir;\nConsole.Write(p.HasFlag(Perm.Escribir));",
+      "correctAnswer": "True",
+      "incorrectAnswerPool": [
+        "False",
+        "Escribir",
+        "2",
+        "3"
+      ],
+      "explanation": "HasFlag revisa si la bandera está incluida en la combinación.",
+      "explanationEn": "HasFlag checks whether the flag is included in the combination."
+    },
+    {
+      "id": "sw-dificil-40",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = -4;\nswitch (n % 3)\n{\n    case 1: Console.Write(\"uno\"); break;\n    case 0: Console.Write(\"cero\"); break;\n    case -1: Console.Write(\"menos uno\"); break;\n    default: Console.Write(\"otro\"); break;\n}",
+      "questionTextEn": "What does it print?\nint n = -4;\nswitch (n % 3)\n{\n    case 1: Console.Write(\"uno\"); break;\n    case 0: Console.Write(\"cero\"); break;\n    case -1: Console.Write(\"menos uno\"); break;\n    default: Console.Write(\"otro\"); break;\n}",
+      "correctAnswer": "menos uno",
+      "incorrectAnswerPool": [
+        "uno",
+        "cero",
+        "otro",
+        "dos"
+      ],
+      "explanation": "En C# el resto conserva el signo del dividendo: -4 % 3 es -1.",
+      "explanationEn": "In C# the remainder keeps the sign of the dividend: -4 % 3 is -1."
+    },
+    {
+      "id": "sw-dificil-41",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nchar c = 'b';\nswitch (c + 1)\n{\n    case 'b': Console.Write(\"B\"); break;\n    case 'c': Console.Write(\"C\"); break;\n    default: Console.Write(\"?\"); break;\n}",
+      "questionTextEn": "What does it print?\nchar c = 'b';\nswitch (c + 1)\n{\n    case 'b': Console.Write(\"B\"); break;\n    case 'c': Console.Write(\"C\"); break;\n    default: Console.Write(\"?\"); break;\n}",
+      "correctAnswer": "C",
+      "incorrectAnswerPool": [
+        "B",
+        "?",
+        "c",
+        "99"
+      ],
+      "explanation": "c + 1 es un int (99) y el literal 'c' vale 99.",
+      "explanationEn": "c + 1 is an int (99) and the literal 'c' is 99."
+    },
+    {
+      "id": "sw-dificil-43",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nchar c = '7';\nstring r = c switch\n{\n    >= 'a' and <= 'z' => \"min\",\n    >= 'A' and <= 'Z' => \"may\",\n    >= '0' and <= '9' => \"dig\",\n    _ => \"otro\"\n};",
+      "questionTextEn": "What is the value of r at the end?\nchar c = '7';\nstring r = c switch\n{\n    >= 'a' and <= 'z' => \"min\",\n    >= 'A' and <= 'Z' => \"may\",\n    >= '0' and <= '9' => \"dig\",\n    _ => \"otro\"\n};",
+      "correctAnswer": "dig",
+      "incorrectAnswerPool": [
+        "min",
+        "may",
+        "otro",
+        "7"
+      ]
+    },
+    {
+      "id": "sw-dificil-44",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene p al final?\nenum Puerta { Cerrada, Abierta, Bloqueada }\nPuerta p = Puerta.Cerrada;\nforeach (char ev in \"abcbda\")\n{\n    switch (p)\n    {\n        case Puerta.Cerrada:\n            if (ev == 'a') p = Puerta.Abierta;\n            else if (ev == 'b') p = Puerta.Bloqueada;\n            break;\n        case Puerta.Abierta:\n            if (ev == 'c') p = Puerta.Cerrada;\n            break;\n        case Puerta.Bloqueada:\n            if (ev == 'd') p = Puerta.Cerrada;\n            break;\n    }\n}",
+      "questionTextEn": "What is the value of p at the end?\nenum Puerta { Cerrada, Abierta, Bloqueada }\nPuerta p = Puerta.Cerrada;\nforeach (char ev in \"abcbda\")\n{\n    switch (p)\n    {\n        case Puerta.Cerrada:\n            if (ev == 'a') p = Puerta.Abierta;\n            else if (ev == 'b') p = Puerta.Bloqueada;\n            break;\n        case Puerta.Abierta:\n            if (ev == 'c') p = Puerta.Cerrada;\n            break;\n        case Puerta.Bloqueada:\n            if (ev == 'd') p = Puerta.Cerrada;\n            break;\n    }\n}",
+      "correctAnswer": "Abierta",
+      "incorrectAnswerPool": [
+        "Cerrada",
+        "Bloqueada",
+        "Cerrada, Abierta",
+        "a"
+      ],
+      "explanation": "Secuencia: Abierta, se queda, Cerrada, Bloqueada, Cerrada y Abierta.",
+      "explanationEn": "Sequence: Abierta, stays, Cerrada, Bloqueada, Cerrada and Abierta."
+    },
+    {
+      "id": "sw-dificil-45",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene cambios al final?\nenum Puerta { Cerrada, Abierta, Bloqueada }\nPuerta p = Puerta.Cerrada;\nint cambios = 0;\nforeach (char ev in \"bbdaa\")\n{\n    Puerta antes = p;\n    switch (p)\n    {\n        case Puerta.Cerrada:\n            if (ev == 'a') p = Puerta.Abierta;\n            else if (ev == 'b') p = Puerta.Bloqueada;\n            break;\n        case Puerta.Abierta:\n            if (ev == 'c') p = Puerta.Cerrada;\n            break;\n        case Puerta.Bloqueada:\n            if (ev == 'd') p = Puerta.Cerrada;\n            break;\n    }\n    if (p != antes) cambios++;\n}",
+      "questionTextEn": "What is the value of cambios at the end?\nenum Puerta { Cerrada, Abierta, Bloqueada }\nPuerta p = Puerta.Cerrada;\nint cambios = 0;\nforeach (char ev in \"bbdaa\")\n{\n    Puerta antes = p;\n    switch (p)\n    {\n        case Puerta.Cerrada:\n            if (ev == 'a') p = Puerta.Abierta;\n            else if (ev == 'b') p = Puerta.Bloqueada;\n            break;\n        case Puerta.Abierta:\n            if (ev == 'c') p = Puerta.Cerrada;\n            break;\n        case Puerta.Bloqueada:\n            if (ev == 'd') p = Puerta.Cerrada;\n            break;\n    }\n    if (p != antes) cambios++;\n}",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "2",
+        "4",
+        "5",
+        "0"
+      ],
+      "explanation": "Cambia con b (Bloqueada), d (Cerrada) y la primera a (Abierta): 3 cambios.",
+      "explanationEn": "It changes with b (Bloqueada), d (Cerrada) and the first a (Abierta): 3 changes."
+    },
+    {
+      "id": "sw-dificil-46",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene e al final?\nenum Estado { Quieto, Corriendo, Saltando }\nEstado e = Estado.Quieto;\nforeach (char t in \"rjjs\")\n{\n    switch (e)\n    {\n        case Estado.Quieto: if (t == 'r') e = Estado.Corriendo; break;\n        case Estado.Corriendo: if (t == 'j') e = Estado.Saltando; break;\n        case Estado.Saltando: e = Estado.Quieto; break;\n    }\n}",
+      "questionTextEn": "What is the value of e at the end?\nenum Estado { Quieto, Corriendo, Saltando }\nEstado e = Estado.Quieto;\nforeach (char t in \"rjjs\")\n{\n    switch (e)\n    {\n        case Estado.Quieto: if (t == 'r') e = Estado.Corriendo; break;\n        case Estado.Corriendo: if (t == 'j') e = Estado.Saltando; break;\n        case Estado.Saltando: e = Estado.Quieto; break;\n    }\n}",
+      "correctAnswer": "Quieto",
+      "incorrectAnswerPool": [
+        "Corriendo",
+        "Saltando",
+        "Quieto, Corriendo",
+        "j"
+      ],
+      "explanation": "Quieto, Corriendo, Saltando; la segunda j vuelve a Quieto y la s no cambia nada.",
+      "explanationEn": "Quieto, Corriendo, Saltando; the second j returns to Quieto and the s changes nothing."
+    },
+    {
+      "id": "sw-dificil-48",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstatic int Primero(int[] a)\n{\n    foreach (int x in a)\n    {\n        switch (x)\n        {\n            case 0: continue;\n            default: return x;\n        }\n    }\n    return -1;\n}\nConsole.Write(Primero(new[] { 0, 0, 4, 5 }));",
+      "questionTextEn": "What does it print?\nstatic int Primero(int[] a)\n{\n    foreach (int x in a)\n    {\n        switch (x)\n        {\n            case 0: continue;\n            default: return x;\n        }\n    }\n    return -1;\n}\nConsole.Write(Primero(new[] { 0, 0, 4, 5 }));",
+      "correctAnswer": "4",
+      "incorrectAnswerPool": [
+        "0",
+        "5",
+        "-1",
+        "2"
+      ],
+      "explanation": "Salta los ceros con continue y devuelve el primer valor distinto de cero.",
+      "explanationEn": "It skips the zeros with continue and returns the first non-zero value."
+    },
+    {
+      "id": "sw-dificil-51",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nenum Estado { Quieto, Corriendo, Saltando }\nconst int Salto = (int)Estado.Saltando;\nint n = 2;\nswitch (n)\n{\n    case Salto: Console.Write(\"S\"); break;\n    default: Console.Write(\"?\"); break;\n}",
+      "questionTextEn": "What does it print?\nenum Estado { Quieto, Corriendo, Saltando }\nconst int Salto = (int)Estado.Saltando;\nint n = 2;\nswitch (n)\n{\n    case Salto: Console.Write(\"S\"); break;\n    default: Console.Write(\"?\"); break;\n}",
+      "correctAnswer": "S",
+      "incorrectAnswerPool": [
+        "?",
+        "Saltando",
+        "2",
+        "Error de compilación"
+      ],
+      "explanation": "Saltando vale 2 y la conversión de un enum constante es constante, así que sirve como case.",
+      "explanationEn": "Saltando is 2 and converting a constant enum is constant, so it works as a case."
+    },
+    {
+      "id": "sw-dificil-52",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nvar p = (a: 2, b: 2);\nstring r = p switch\n{\n    (0, 0) => \"origen\",\n    (var x, var y) when x == y => \"diagonal\",\n    (_, 0) => \"eje X\",\n    _ => \"plano\"\n};",
+      "questionTextEn": "What is the value of r at the end?\nvar p = (a: 2, b: 2);\nstring r = p switch\n{\n    (0, 0) => \"origen\",\n    (var x, var y) when x == y => \"diagonal\",\n    (_, 0) => \"eje X\",\n    _ => \"plano\"\n};",
+      "correctAnswer": "diagonal",
+      "incorrectAnswerPool": [
+        "origen",
+        "eje X",
+        "plano",
+        "No compila"
+      ],
+      "explanation": "El (2, 2) no es el origen y cumple x == y, así que gana el segundo brazo.",
+      "explanationEn": "(2, 2) is not the origin and satisfies x == y, so the second arm wins."
+    },
+    {
+      "id": "sw-dificil-53",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nclass Jugador { public int Vida; public bool Armado; }\nvar j = new Jugador { Vida = 20, Armado = false };\nstring r = j switch\n{\n    { Vida: 0 } => \"muerto\",\n    { Vida: < 30, Armado: true } => \"cauto\",\n    { Vida: < 30 } => \"huye\",\n    _ => \"pelea\"\n};",
+      "questionTextEn": "What is the value of r at the end?\nclass Jugador { public int Vida; public bool Armado; }\nvar j = new Jugador { Vida = 20, Armado = false };\nstring r = j switch\n{\n    { Vida: 0 } => \"muerto\",\n    { Vida: < 30, Armado: true } => \"cauto\",\n    { Vida: < 30 } => \"huye\",\n    _ => \"pelea\"\n};",
+      "correctAnswer": "huye",
+      "incorrectAnswerPool": [
+        "muerto",
+        "cauto",
+        "pelea",
+        "20"
+      ],
+      "explanation": "Vida es 20 y Armado es false: el segundo brazo exige Armado en true, así que gana el tercero.",
+      "explanationEn": "Vida is 20 and Armado is false: the second arm requires Armado to be true, so the third one wins."
+    },
+    {
+      "id": "sw-dificil-54",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nclass Jugador { public int Vida; public bool Armado; }\nvar j = new Jugador { Vida = 20, Armado = true };\nstring r = j switch\n{\n    { Vida: 0 } => \"muerto\",\n    { Vida: < 30, Armado: true } => \"cauto\",\n    { Vida: < 30 } => \"huye\",\n    _ => \"pelea\"\n};",
+      "questionTextEn": "What is the value of r at the end?\nclass Jugador { public int Vida; public bool Armado; }\nvar j = new Jugador { Vida = 20, Armado = true };\nstring r = j switch\n{\n    { Vida: 0 } => \"muerto\",\n    { Vida: < 30, Armado: true } => \"cauto\",\n    { Vida: < 30 } => \"huye\",\n    _ => \"pelea\"\n};",
+      "correctAnswer": "cauto",
+      "incorrectAnswerPool": [
+        "muerto",
+        "huye",
+        "pelea",
+        "20"
+      ],
+      "explanation": "Vida es 20 y Armado es true, así que se cumple el segundo brazo.",
+      "explanationEn": "Vida is 20 and Armado is true, so the second arm is satisfied."
+    },
+    {
+      "id": "sw-dificil-57",
+      "category": "SwitchEstados",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nfor (int i = 1; i <= 6; i++)\n{\n    switch ((i % 3, i % 5))\n    {\n        case (0, 0): Console.Write(\"FB\"); break;\n        case (0, _): Console.Write(\"F\"); break;\n        case (_, 0): Console.Write(\"B\"); break;\n        default: Console.Write(i); break;\n    }\n}",
+      "questionTextEn": "What does it print?\nfor (int i = 1; i <= 6; i++)\n{\n    switch ((i % 3, i % 5))\n    {\n        case (0, 0): Console.Write(\"FB\"); break;\n        case (0, _): Console.Write(\"F\"); break;\n        case (_, 0): Console.Write(\"B\"); break;\n        default: Console.Write(i); break;\n    }\n}",
+      "correctAnswer": "12F4BF",
+      "incorrectAnswerPool": [
+        "12F4B",
+        "123456",
+        "12F4BFB",
+        "1F2F4B6"
+      ],
+      "explanation": "Solo el 3 y el 6 son múltiplos de 3 (F) y solo el 5 lo es de 5 (B).",
+      "explanationEn": "Only 3 and 6 are multiples of 3 (F) and only 5 is a multiple of 5 (B)."
+    }
+  ]
+}

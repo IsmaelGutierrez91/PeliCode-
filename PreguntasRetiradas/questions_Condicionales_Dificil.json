@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "id": "cond-dificil-30",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (F(\"A\") || F(\"B\")) Console.Write(\"C\");",
+      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (F(\"A\") || F(\"B\")) Console.Write(\"C\");",
+      "correctAnswer": "AC",
+      "incorrectAnswerPool": [
+        "ABC",
+        "AB",
+        "C",
+        "BC"
+      ],
+      "explanation": "F(\"A\") es true y || ya no evalúa F(\"B\").",
+      "explanationEn": "F(\"A\") is true and || no longer evaluates F(\"B\")."
+    },
+    {
+      "id": "cond-dificil-31",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (!F(\"A\") && F(\"B\")) Console.Write(\"C\");\nelse Console.Write(\"D\");",
+      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (!F(\"A\") && F(\"B\")) Console.Write(\"C\");\nelse Console.Write(\"D\");",
+      "correctAnswer": "AD",
+      "incorrectAnswerPool": [
+        "ABD",
+        "AC",
+        "D",
+        "ABC"
+      ],
+      "explanation": "!F(\"A\") es false, así que && no evalúa F(\"B\").",
+      "explanationEn": "!F(\"A\") is false, so && does not evaluate F(\"B\")."
+    },
+    {
+      "id": "cond-dificil-32",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") & G(\"B\")) Console.Write(\"X\");\nelse Console.Write(\"Y\");",
+      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") & G(\"B\")) Console.Write(\"X\");\nelse Console.Write(\"Y\");",
+      "correctAnswer": "ABY",
+      "incorrectAnswerPool": [
+        "AY",
+        "Y",
+        "ABX",
+        "AX"
+      ],
+      "explanation": "El operador & evalúa siempre los dos lados.",
+      "explanationEn": "The & operator always evaluates both sides."
+    },
+    {
+      "id": "cond-dificil-33",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") && G(\"B\")) Console.Write(\"X\");\nelse Console.Write(\"Y\");",
+      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") && G(\"B\")) Console.Write(\"X\");\nelse Console.Write(\"Y\");",
+      "correctAnswer": "AY",
+      "incorrectAnswerPool": [
+        "ABY",
+        "Y",
+        "AX",
+        "ABX"
+      ]
+    },
+    {
+      "id": "cond-dificil-34",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") || F(\"B\")) Console.Write(\"C\");",
+      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") || F(\"B\")) Console.Write(\"C\");",
+      "correctAnswer": "ABC",
+      "incorrectAnswerPool": [
+        "AC",
+        "AB",
+        "C",
+        "BC"
+      ],
+      "explanation": "G(\"A\") es false, así que || sí evalúa F(\"B\"), que es true.",
+      "explanationEn": "G(\"A\") is false, so || does evaluate F(\"B\"), which is true."
+    },
+    {
+      "id": "cond-dificil-35",
+      "category": "Condicionales",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (F(\"A\") && G(\"B\") || F(\"C\")) Console.Write(\"D\");",
+      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (F(\"A\") && G(\"B\") || F(\"C\")) Console.Write(\"D\");",
+      "correctAnswer": "ABCD",
+      "incorrectAnswerPool": [
+        "ABD",
+        "AD",
+        "ACD",
+        "ABC"
+      ],
+      "explanation": "(F(\"A\") && G(\"B\")) da false, pero entonces || evalúa F(\"C\"), que es true.",
+      "explanationEn": "(F(\"A\") && G(\"B\")) gives false, but then || evaluates F(\"C\"), which is true."
+    }
+  ]
+}

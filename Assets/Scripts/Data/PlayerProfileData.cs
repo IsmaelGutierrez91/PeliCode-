@@ -48,7 +48,9 @@ namespace PeliCode.Data
     }
 
     /// <summary>
-    /// Porcentaje de aciertos por dificultad para una categoria de minijuego.
+    /// Porcentaje de aciertos por dificultad para una categoria de minijuego, acumulado con
+    /// todas las partidas de la semana: aciertos / respondidas de esas partidas. Ejemplo: una
+    /// partida al 100 % y otra al 0 % (con las mismas preguntas) dan 50 %.
     /// Se resetea semanalmente (ver CloudSaveManager.ResetWeeklyStatsIfNeeded).
     /// </summary>
     [Serializable]
@@ -57,6 +59,18 @@ namespace PeliCode.Data
         public float easyPercentage;
         public float mediumPercentage;
         public float hardPercentage;
+
+        // Lo que suma el porcentaje de la semana: partidas, aciertos y preguntas respondidas.
+        // Tambien se ven en el Dashboard, junto al porcentaje.
+        public int easyGames;
+        public int easyCorrect;
+        public int easyAnswered;
+        public int mediumGames;
+        public int mediumCorrect;
+        public int mediumAnswered;
+        public int hardGames;
+        public int hardCorrect;
+        public int hardAnswered;
 
         // Semana ISO (yyyy-Www) de la ultima actualizacion, para saber cuando resetear.
         public string weekStamp = string.Empty;

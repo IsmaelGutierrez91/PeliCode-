@@ -19,21 +19,21 @@ El juego está en español y en inglés.
 - Unity **6000.3.19f1** (URP 2D).
 - Un proyecto de Unity Gaming Services vinculado (Project Settings > Services) con:
   - **Authentication**, con el proveedor *Username & Password* activado.
-  - **Cloud Save**, para el perfil del jugador, las preguntas y los anuncios.
+  - **Cloud Save**, para el perfil del jugador, su historial de partidas, las preguntas y los anuncios.
   - **Leaderboards**, con un leaderboard de ID `ranked_top_score` (orden descendente, *Keep best*).
 
 ## Escenas
 
 En `Assets/Scenes`, en este orden en Build Settings:
 
-1. **Login**: inicio de sesión y registro. Contiene el GameObject `Managers` con los managers que persisten entre escenas.
+1. **Login**: inicio de sesión y registro, con el nombre del juego arriba a la izquierda (`Text_Title`: "Peli" en #5499CF y "Code#" en #CBDDEF). Contiene el GameObject `Managers` con los managers que persisten entre escenas.
 2. **Menu**: cinco paneles que se deslizan (Anuncios, Perfil, Minijuegos, Ranked y Opciones).
 3. **MiniGame**: la partida.
 
 Todos los cambios de escena pasan por `SceneLoader`, que usa `SceneTransition`:
 
 1. La escena actual se funde a negro.
-2. Aparece la pantalla de carga: "CARGANDO" con los puntos de 1 a 3 y un cuadrado blanco que gira, como placeholder para un logo.
+2. Aparece la pantalla de carga: "CARGANDO" con los puntos de 1 a 3 y el logo (`Assets/Resources/PeliCode_Logo.png`), que late mientras carga.
 3. La pantalla de carga se mantiene hasta que la escena nueva está lista. Una escena que necesita preparar algo implementa `ISceneReadiness`; el minijuego, por ejemplo, espera a tener las preguntas.
 4. Se funde a negro y aparece la escena nueva.
 
@@ -45,7 +45,9 @@ La pantalla de carga se construye por código, así que no hay que agregar nada 
 
 **Contraseña:** el login y la ventana de crear cuenta traen un botón *Mostrar / Ocultar* dentro del campo (`PasswordToggle`, se arma por código con `PasswordToggle.Attach(campo)`). En Opciones, *Cambiar contraseña* abre una ventana (`ChangePasswordPopup`, también por código) con la contraseña actual, la nueva y su repetición; usa `UpdatePasswordAsync` de Unity y la misma regla de contraseña que al crear la cuenta. Es opcional: solo la usa quien quiere cambiarla. **Recuperar una contraseña olvidada todavía no existe**: Unity Authentication con usuario y contraseña no envía correos, y aquí el correo se guarda como un hash que sirve de nombre de usuario. Hace falta decidir entre pasar a Unity Player Accounts o guardar el correo aparte para enviar un código.
 
-**Rachas y semanas:** se cuentan con la fecha y hora del dispositivo del jugador, así el día cambia a medianoche en su zona horaria. Los porcentajes de los minijuegos se guardan en el perfil (Cloud Save) y se reinician cada fin de semana: la semana va de **sábado 00:00 a viernes**, y el día de inicio es `ProfileRules.WeekStartsOn`. En Perfil, la racha muestra su número con cualquier valor mayor que 0 y la imagen solo desde 5 días.
+**Icono:** el logo también es el icono del juego (Project Settings > Player > Default Icon).
+
+**Rachas y semanas:** se cuentan con la fecha y hora del dispositivo del jugador, así el día cambia a medianoche en su zona horaria. Los porcentajes de los minijuegos se guardan en el perfil (Cloud Save) y se reinician cada fin de semana: la semana va de **sábado 00:00 a viernes**, y el día de inicio es `ProfileRules.WeekStartsOn`. El porcentaje **combina todas las partidas de la semana** de esa categoría y dificultad: aciertos sobre preguntas respondidas. Por ejemplo, una partida al 100 % y otra al 0 % dan 50 %. En Perfil, la racha muestra su número con cualquier valor mayor que 0 y la imagen solo desde 5 días.
 
 **Colores:** salen de cuatro tonos, definidos en `UITheme` (`Dark` #00070D, `Mid` #032D50, `Light` #5499CF y `White` #CBDDEF). Si se cambian, hay que actualizar también los colores guardados en las escenas y prefabs.
 
@@ -95,6 +97,18 @@ Campos de cada pregunta (`QuestionData`):
 
 Todas llevan `id`, `type` y `questionText`. Una pregunta mal cargada se descarta con un aviso en la consola, en vez de colgar la partida.
 
+**Medidas de los textos**, para que no se descuadren (`QuestionChecks`, y la prueba `EveryBankQuestionFitsItsTextLimits` revisa el banco local):
+
+| Tipo | Enunciado (`questionText` y `questionTextEn`) | Otros |
+| --- | --- | --- |
+| `SeleccionMultiple` | 2 filas de 73 caracteres | |
+| `CompletarCodigo` | 2 filas de 83 caracteres | `codeTemplate`: 11 filas de 94 caracteres |
+| `ArrastrarCodigo` | 2 filas de 83 caracteres | |
+| `DetectarError` | 2 filas de 83 caracteres | |
+
+Las palabras que no caben pasan a la fila siguiente y cada salto de línea (`
+`) empieza una fila. En selección múltiple, el código de la pregunta va en la misma línea, después de la pregunta y separado por dos espacios: `¿Qué muestra?  int a = 8;  Console.WriteLine(a);`.
+
 Si el jugador se equivoca, el juego muestra la respuesta correcta antes de seguir. Opcionalmente, la pregunta puede traer `explanation`, con su versión en inglés `explanationEn`: un texto corto que explica por qué la respuesta es esa y que aparece debajo del "Incorrecto".
 
 ### Preguntas en inglés
@@ -121,13 +135,24 @@ Ejemplo:
 }
 ```
 
-Los 150 archivos de `Assets/Resources/Questions` ya traen los dos idiomas y sirven de modelo.
+Los 15 archivos de `Assets/Resources/Questions` ya traen los dos idiomas y sirven de modelo.
 
 ### Banco local
 
-`Assets/Resources/Questions/` trae un banco de ejemplo: 150 preguntas, las que pide cada partida (5 en Fácil, 10 en Normal y 15 en Difícil por categoría), en los dos idiomas. Las respuestas se comprobaron con el compilador de C#: las salidas, los fragmentos que no compilan y los que fallan al ejecutarse. Los archivos tienen el mismo formato que el valor en Cloud Save, así que sirven para copiarlos al Dashboard. El juego los usa cuando Cloud Save falla o no tiene preguntas para esa categoría y dificultad. Si Cloud Save tiene preguntas, esas tienen prioridad.
+`Assets/Resources/Questions/` trae el banco local: 1449 preguntas, entre 80 y 104 por categoría y dificultad, en los dos idiomas. Cada partida normal toma 5 en Fácil, 10 en Normal y 15 en Difícil. Las respuestas se comprobaron con el compilador de C#: las salidas, los fragmentos que no compilan y los que fallan al ejecutarse. Los archivos tienen el mismo formato que el valor en Cloud Save, así que sirven para copiarlos al Dashboard. El juego los usa cuando Cloud Save falla o no tiene preguntas para esa categoría y dificultad. Si Cloud Save tiene preguntas, esas tienen prioridad.
+
+`PreguntasRetiradas/`, fuera de `Assets`, guarda con el mismo formato las 84 preguntas de selección múltiple que no caben en 2 filas de 73 caracteres (su código ocupa varias líneas). No están en el juego; se pueden volver a usar si la vista de selección múltiple tiene un recuadro para el código, como la de completar.
 
 Para probar el minijuego sin cuenta ni conexión, abre la escena **MiniGame** en el editor y dale Play: usa el banco local y no guarda nada.
+
+## Datos del jugador (Cloud Save > Player Data)
+
+El juego guarda dos claves por jugador. Se crean solas la primera vez que se guardan: **no hay que crear nada en el Dashboard**.
+
+- `player_profile`: nombre, correo, rachas, mejor puntaje ranked y `minigameStats`. Por categoría y dificultad trae el porcentaje de la semana (`easyPercentage`, `mediumPercentage`, `hardPercentage`) y lo que lo forma: partidas (`easyGames`…), aciertos (`easyCorrect`…) y preguntas respondidas (`easyAnswered`…). Se reinicia los sábados.
+- `game_history`: la lista de partidas jugadas (`GameRecord`), que **no se reinicia**. Cada una trae `date` (fecha y hora del jugador, con su zona), `mode` (`normal` o `ranked`), `category`, `difficulty`, `correct`, `answered`, `questions`, `seconds` y `completed` (`false` si salió a mitad de partida; se guarda solo si ya respondió alguna pregunta). Una partida abandonada no cambia los porcentajes ni el ranking.
+
+Para verlos: Unity Dashboard > el proyecto > **Player Management**, buscar al jugador por su Player ID y abrir su **Cloud Save**.
 
 ## Anuncios
 
@@ -135,7 +160,7 @@ Es una entrada de Cloud Save > Custom Items con Custom ID y clave `announcements
 
 ## Pruebas
 
-Hay pruebas EditMode en `Assets/Tests/Editor`: validación, rachas, opciones de selección múltiple, arrastrar bloques, idiomas, banco de preguntas y una partida corta con el banco local.
+Hay pruebas EditMode en `Assets/Tests/Editor`: validación, rachas, porcentaje acumulado, historial de partidas, opciones de selección múltiple, arrastrar bloques, idiomas, banco de preguntas (incluidas las medidas de los textos), logo e icono, y una partida corta con el banco local.
 
 - Desde Unity: Window > General > Test Runner > EditMode > Run All.
 - Por consola:
