@@ -567,8 +567,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint edad = 20;\nif (edad >= 18) Console.WriteLine(\"Mayor\");\nelse Console.WriteLine(\"Menor\");",
-      "questionTextEn": "What does it print?\nint edad = 20;\nif (edad >= 18) Console.WriteLine(\"Mayor\");\nelse Console.WriteLine(\"Menor\");",
+      "questionText": "¿Qué muestra?  int edad = 20;  if (edad >= 18) Console.WriteLine(\"Mayor\"); else Console.WriteLine(\"Menor\");",
+      "questionTextEn": "What does it print?  int edad = 20;  if (edad >= 18) Console.WriteLine(\"Mayor\"); else Console.WriteLine(\"Menor\");",
       "correctAnswer": "Mayor",
       "incorrectAnswerPool": [
         "Menor",
@@ -582,8 +582,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint n = 10;\nif (n == 10) Console.WriteLine(\"Diez\");",
-      "questionTextEn": "What does it print?\nint n = 10;\nif (n == 10) Console.WriteLine(\"Diez\");",
+      "questionText": "¿Qué muestra?  int n = 10;  if (n == 10) Console.WriteLine(\"Diez\");",
+      "questionTextEn": "What does it print?  int n = 10;  if (n == 10) Console.WriteLine(\"Diez\");",
       "correctAnswer": "Diez",
       "incorrectAnswerPool": [
         "10",
@@ -597,8 +597,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint p = 2;\nif (p > 5) Console.WriteLine(\"Alto\");\nConsole.WriteLine(\"Fin\");",
-      "questionTextEn": "What does it print?\nint p = 2;\nif (p > 5) Console.WriteLine(\"Alto\");\nConsole.WriteLine(\"Fin\");",
+      "questionText": "¿Qué muestra?  int p = 2;  if (p > 5) Console.WriteLine(\"Alto\");  Console.WriteLine(\"Fin\");",
+      "questionTextEn": "What does it print?  int p = 2;  if (p > 5) Console.WriteLine(\"Alto\");  Console.WriteLine(\"Fin\");",
       "correctAnswer": "Fin",
       "incorrectAnswerPool": [
         "Alto",
@@ -612,8 +612,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nbool b = false;\nif (b) Console.WriteLine(\"Sí\");\nelse Console.WriteLine(\"No\");",
-      "questionTextEn": "What does it print?\nbool b = false;\nif (b) Console.WriteLine(\"Sí\");\nelse Console.WriteLine(\"No\");",
+      "questionText": "¿Qué muestra?  bool b = false;  if (b) Console.WriteLine(\"Sí\"); else Console.WriteLine(\"No\");",
+      "questionTextEn": "What does it print?  bool b = false;  if (b) Console.WriteLine(\"Sí\"); else Console.WriteLine(\"No\");",
       "correctAnswer": "No",
       "incorrectAnswerPool": [
         "Sí",
@@ -627,8 +627,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint a = 7;\nif (a % 2 == 0) Console.WriteLine(\"Par\");\nelse Console.WriteLine(\"Impar\");",
-      "questionTextEn": "What does it print?\nint a = 7;\nif (a % 2 == 0) Console.WriteLine(\"Par\");\nelse Console.WriteLine(\"Impar\");",
+      "questionText": "¿Qué muestra?  int a = 7;  if (a % 2 == 0) Console.WriteLine(\"Par\"); else Console.WriteLine(\"Impar\");",
+      "questionTextEn": "What does it print?  int a = 7;  if (a % 2 == 0) Console.WriteLine(\"Par\"); else Console.WriteLine(\"Impar\");",
       "correctAnswer": "Impar",
       "incorrectAnswerPool": [
         "Par",
@@ -642,8 +642,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint x = 5;\nif (x != 5) Console.WriteLine(\"Distinto\");\nelse Console.WriteLine(\"Igual\");",
-      "questionTextEn": "What does it print?\nint x = 5;\nif (x != 5) Console.WriteLine(\"Distinto\");\nelse Console.WriteLine(\"Igual\");",
+      "questionText": "¿Qué muestra?  int x = 5;  if (x != 5) Console.WriteLine(\"Distinto\"); else Console.WriteLine(\"Igual\");",
+      "questionTextEn": "What does it print?  int x = 5;  if (x != 5) Console.WriteLine(\"Distinto\"); else Console.WriteLine(\"Igual\");",
       "correctAnswer": "Igual",
       "incorrectAnswerPool": [
         "Distinto",
@@ -657,8 +657,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint t = 30;\nif (t < 30) Console.WriteLine(\"Fresco\");\nelse Console.WriteLine(\"Caluroso\");",
-      "questionTextEn": "What does it print?\nint t = 30;\nif (t < 30) Console.WriteLine(\"Fresco\");\nelse Console.WriteLine(\"Caluroso\");",
+      "questionText": "¿Qué muestra?  int t = 30;  if (t < 30) Console.WriteLine(\"Fresco\"); else Console.WriteLine(\"Caluroso\");",
+      "questionTextEn": "What does it print?  int t = 30;  if (t < 30) Console.WriteLine(\"Fresco\"); else Console.WriteLine(\"Caluroso\");",
       "correctAnswer": "Caluroso",
       "incorrectAnswerPool": [
         "Fresco",
@@ -668,27 +668,12 @@
       ]
     },
     {
-      "id": "cond-facil-37",
-      "category": "Condicionales",
-      "difficulty": "Facil",
-      "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint nota = 15;\nif (nota >= 18) Console.WriteLine(\"Excelente\");\nelse if (nota >= 11) Console.WriteLine(\"Aprobado\");\nelse Console.WriteLine(\"Desaprobado\");",
-      "questionTextEn": "What does it print?\nint nota = 15;\nif (nota >= 18) Console.WriteLine(\"Excelente\");\nelse if (nota >= 11) Console.WriteLine(\"Aprobado\");\nelse Console.WriteLine(\"Desaprobado\");",
-      "correctAnswer": "Aprobado",
-      "incorrectAnswerPool": [
-        "Excelente",
-        "Desaprobado",
-        "ExcelenteAprobado",
-        "Nada"
-      ]
-    },
-    {
       "id": "cond-facil-38",
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint h = 22;\nif (h < 12) Console.WriteLine(\"Buenos días\");\nelse Console.WriteLine(\"Buenas noches\");",
-      "questionTextEn": "What does it print?\nint h = 22;\nif (h < 12) Console.WriteLine(\"Buenos días\");\nelse Console.WriteLine(\"Buenas noches\");",
+      "questionText": "¿Qué muestra?  int h = 22;  if (h < 12) Console.WriteLine(\"Buenos días\"); else Console.WriteLine(\"Buenas noches\");",
+      "questionTextEn": "What does it print?  int h = 22;  if (h < 12) Console.WriteLine(\"Buenos días\"); else Console.WriteLine(\"Buenas noches\");",
       "correctAnswer": "Buenas noches",
       "incorrectAnswerPool": [
         "Buenos días",
@@ -702,8 +687,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint n = 4;\nif (n > 2) Console.Write(\"A\");\nif (n > 3) Console.Write(\"B\");",
-      "questionTextEn": "What does it print?\nint n = 4;\nif (n > 2) Console.Write(\"A\");\nif (n > 3) Console.Write(\"B\");",
+      "questionText": "¿Qué muestra?  int n = 4;  if (n > 2) Console.Write(\"A\");  if (n > 3) Console.Write(\"B\");",
+      "questionTextEn": "What does it print?  int n = 4;  if (n > 2) Console.Write(\"A\");  if (n > 3) Console.Write(\"B\");",
       "correctAnswer": "AB",
       "incorrectAnswerPool": [
         "A",
@@ -717,8 +702,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint n = 4;\nif (n > 2) Console.Write(\"A\");\nelse if (n > 3) Console.Write(\"B\");",
-      "questionTextEn": "What does it print?\nint n = 4;\nif (n > 2) Console.Write(\"A\");\nelse if (n > 3) Console.Write(\"B\");",
+      "questionText": "¿Qué muestra?  int n = 4;  if (n > 2) Console.Write(\"A\"); else if (n > 3) Console.Write(\"B\");",
+      "questionTextEn": "What does it print?  int n = 4;  if (n > 2) Console.Write(\"A\"); else if (n > 3) Console.Write(\"B\");",
       "correctAnswer": "A",
       "incorrectAnswerPool": [
         "AB",
@@ -732,8 +717,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nbool llueve = true;\nif (!llueve) Console.WriteLine(\"Sol\");\nelse Console.WriteLine(\"Lluvia\");",
-      "questionTextEn": "What does it print?\nbool llueve = true;\nif (!llueve) Console.WriteLine(\"Sol\");\nelse Console.WriteLine(\"Lluvia\");",
+      "questionText": "¿Qué muestra?  bool llueve = true;  if (!llueve) Console.WriteLine(\"Sol\"); else Console.WriteLine(\"Lluvia\");",
+      "questionTextEn": "What does it print?  bool llueve = true;  if (!llueve) Console.WriteLine(\"Sol\"); else Console.WriteLine(\"Lluvia\");",
       "correctAnswer": "Lluvia",
       "incorrectAnswerPool": [
         "Sol",
@@ -747,8 +732,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint a = 3, b = 8;\nif (a < b) Console.WriteLine(b - a);",
-      "questionTextEn": "What does it print?\nint a = 3, b = 8;\nif (a < b) Console.WriteLine(b - a);",
+      "questionText": "¿Qué muestra?  int a = 3, b = 8;  if (a < b) Console.WriteLine(b - a);",
+      "questionTextEn": "What does it print?  int a = 3, b = 8;  if (a < b) Console.WriteLine(b - a);",
       "correctAnswer": "5",
       "incorrectAnswerPool": [
         "3",
@@ -763,8 +748,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nstring s = \"hola\";\nif (s == \"hola\") Console.WriteLine(\"Saludo\");\nelse Console.WriteLine(\"Otro\");",
-      "questionTextEn": "What does it print?\nstring s = \"hola\";\nif (s == \"hola\") Console.WriteLine(\"Saludo\");\nelse Console.WriteLine(\"Otro\");",
+      "questionText": "¿Qué muestra?  string s = \"hola\";  if (s == \"hola\") Console.WriteLine(\"Saludo\"); else Console.WriteLine(\"Otro\");",
+      "questionTextEn": "What does it print?  string s = \"hola\";  if (s == \"hola\") Console.WriteLine(\"Saludo\"); else Console.WriteLine(\"Otro\");",
       "correctAnswer": "Saludo",
       "incorrectAnswerPool": [
         "Otro",
@@ -778,8 +763,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint vidas = 0;\nif (vidas > 0) Console.WriteLine(\"Jugando\");\nelse Console.WriteLine(\"Game Over\");",
-      "questionTextEn": "What does it print?\nint vidas = 0;\nif (vidas > 0) Console.WriteLine(\"Jugando\");\nelse Console.WriteLine(\"Game Over\");",
+      "questionText": "¿Qué muestra?  int vidas = 0;  if (vidas > 0) Console.WriteLine(\"Jugando\"); else Console.WriteLine(\"Game Over\");",
+      "questionTextEn": "What does it print?  int vidas = 0;  if (vidas > 0) Console.WriteLine(\"Jugando\"); else Console.WriteLine(\"Game Over\");",
       "correctAnswer": "Game Over",
       "incorrectAnswerPool": [
         "Jugando",
@@ -793,29 +778,14 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint pts = 50;\nif (pts >= 50) Console.WriteLine(\"Gana\");\nelse Console.WriteLine(\"Pierde\");",
-      "questionTextEn": "What does it print?\nint pts = 50;\nif (pts >= 50) Console.WriteLine(\"Gana\");\nelse Console.WriteLine(\"Pierde\");",
+      "questionText": "¿Qué muestra?  int pts = 50;  if (pts >= 50) Console.WriteLine(\"Gana\"); else Console.WriteLine(\"Pierde\");",
+      "questionTextEn": "What does it print?  int pts = 50;  if (pts >= 50) Console.WriteLine(\"Gana\"); else Console.WriteLine(\"Pierde\");",
       "correctAnswer": "Gana",
       "incorrectAnswerPool": [
         "Pierde",
         "GanaPierde",
         "50",
         "Nada"
-      ]
-    },
-    {
-      "id": "cond-facil-46",
-      "category": "Condicionales",
-      "difficulty": "Facil",
-      "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint x = 3;\nif (x > 3) Console.WriteLine(\"Mayor\");\nelse if (x < 3) Console.WriteLine(\"Menor\");\nelse Console.WriteLine(\"Igual\");",
-      "questionTextEn": "What does it print?\nint x = 3;\nif (x > 3) Console.WriteLine(\"Mayor\");\nelse if (x < 3) Console.WriteLine(\"Menor\");\nelse Console.WriteLine(\"Igual\");",
-      "correctAnswer": "Igual",
-      "incorrectAnswerPool": [
-        "Mayor",
-        "Menor",
-        "Nada",
-        "MayorMenor"
       ]
     },
     {
@@ -855,8 +825,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint n = -4;\nif (n < 0) n = -n;\nConsole.WriteLine(n);",
-      "questionTextEn": "What does it print?\nint n = -4;\nif (n < 0) n = -n;\nConsole.WriteLine(n);",
+      "questionText": "¿Qué muestra?  int n = -4;  if (n < 0) n = -n;  Console.WriteLine(n);",
+      "questionTextEn": "What does it print?  int n = -4;  if (n < 0) n = -n;  Console.WriteLine(n);",
       "correctAnswer": "4",
       "incorrectAnswerPool": [
         "-4",
@@ -870,8 +840,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint x = 10;\nif (x > 5) x = x + 1;\nConsole.WriteLine(x);",
-      "questionTextEn": "What does it print?\nint x = 10;\nif (x > 5) x = x + 1;\nConsole.WriteLine(x);",
+      "questionText": "¿Qué muestra?  int x = 10;  if (x > 5) x = x + 1;  Console.WriteLine(x);",
+      "questionTextEn": "What does it print?  int x = 10;  if (x > 5) x = x + 1;  Console.WriteLine(x);",
       "correctAnswer": "11",
       "incorrectAnswerPool": [
         "10",
@@ -885,8 +855,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene x al final?\nint x = 1;\nif (x > 0) x = x + 5;",
-      "questionTextEn": "What value does x hold at the end?\nint x = 1;\nif (x > 0) x = x + 5;",
+      "questionText": "¿Qué valor tiene x al final?  int x = 1;  if (x > 0) x = x + 5;",
+      "questionTextEn": "What value does x hold at the end?  int x = 1;  if (x > 0) x = x + 5;",
       "correctAnswer": "6",
       "incorrectAnswerPool": [
         "1",
@@ -900,8 +870,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene pts al final?\nint pts = 10;\nif (pts >= 10) pts = pts * 2;\nelse pts = 0;",
-      "questionTextEn": "What value does pts hold at the end?\nint pts = 10;\nif (pts >= 10) pts = pts * 2;\nelse pts = 0;",
+      "questionText": "¿Qué valor tiene pts al final?  int pts = 10;  if (pts >= 10) pts = pts * 2; else pts = 0;",
+      "questionTextEn": "What value does pts hold at the end?  int pts = 10;  if (pts >= 10) pts = pts * 2; else pts = 0;",
       "correctAnswer": "20",
       "incorrectAnswerPool": [
         "10",
@@ -945,8 +915,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene m al final?\nint a = 2;\nint b = 9;\nint m;\nif (a > b) m = a;\nelse m = b;",
-      "questionTextEn": "What value does m hold at the end?\nint a = 2;\nint b = 9;\nint m;\nif (a > b) m = a;\nelse m = b;",
+      "questionText": "¿Qué valor tiene m al final?  int a = 2;  int b = 9;  int m;  if (a > b) m = a; else m = b;",
+      "questionTextEn": "What value does m hold at the end?  int a = 2;  int b = 9;  int m;  if (a > b) m = a; else m = b;",
       "correctAnswer": "9",
       "incorrectAnswerPool": [
         "2",
@@ -975,8 +945,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene msg al final?\nstring msg = \"Hola\";\nif (msg.Length > 3) msg = \"Largo\";",
-      "questionTextEn": "What value does msg hold at the end?\nstring msg = \"Hola\";\nif (msg.Length > 3) msg = \"Largo\";",
+      "questionText": "¿Qué valor tiene msg al final?  string msg = \"Hola\";  if (msg.Length > 3) msg = \"Largo\";",
+      "questionTextEn": "What value does msg hold at the end?  string msg = \"Hola\";  if (msg.Length > 3) msg = \"Largo\";",
       "correctAnswer": "Largo",
       "incorrectAnswerPool": [
         "Hola",
@@ -990,8 +960,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene par al final?\nint n = 7;\nbool par = n % 2 == 0;",
-      "questionTextEn": "What value does par hold at the end?\nint n = 7;\nbool par = n % 2 == 0;",
+      "questionText": "¿Qué valor tiene par al final?  int n = 7;  bool par = n % 2 == 0;",
+      "questionTextEn": "What value does par hold at the end?  int n = 7;  bool par = n % 2 == 0;",
       "correctAnswer": "false",
       "incorrectAnswerPool": [
         "true",
@@ -1005,8 +975,8 @@
       "category": "Condicionales",
       "difficulty": "Facil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene es al final?\nint d = 4;\nbool es = d != 5;",
-      "questionTextEn": "What value does es hold at the end?\nint d = 4;\nbool es = d != 5;",
+      "questionText": "¿Qué valor tiene es al final?  int d = 4;  bool es = d != 5;",
+      "questionTextEn": "What value does es hold at the end?  int d = 4;  bool es = d != 5;",
       "correctAnswer": "true",
       "incorrectAnswerPool": [
         "false",

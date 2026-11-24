@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "id": "cond-facil-37",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint nota = 15;\nif (nota >= 18) Console.WriteLine(\"Excelente\");\nelse if (nota >= 11) Console.WriteLine(\"Aprobado\");\nelse Console.WriteLine(\"Desaprobado\");",
+      "questionTextEn": "What does it print?\nint nota = 15;\nif (nota >= 18) Console.WriteLine(\"Excelente\");\nelse if (nota >= 11) Console.WriteLine(\"Aprobado\");\nelse Console.WriteLine(\"Desaprobado\");",
+      "correctAnswer": "Aprobado",
+      "incorrectAnswerPool": [
+        "Excelente",
+        "Desaprobado",
+        "ExcelenteAprobado",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-facil-46",
+      "category": "Condicionales",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 3;\nif (x > 3) Console.WriteLine(\"Mayor\");\nelse if (x < 3) Console.WriteLine(\"Menor\");\nelse Console.WriteLine(\"Igual\");",
+      "questionTextEn": "What does it print?\nint x = 3;\nif (x > 3) Console.WriteLine(\"Mayor\");\nelse if (x < 3) Console.WriteLine(\"Menor\");\nelse Console.WriteLine(\"Igual\");",
+      "correctAnswer": "Igual",
+      "incorrectAnswerPool": [
+        "Mayor",
+        "Menor",
+        "Nada",
+        "MayorMenor"
+      ]
+    }
+  ]
+}

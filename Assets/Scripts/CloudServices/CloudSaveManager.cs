@@ -9,18 +9,47 @@ using Unity.Services.CloudSave.Models;
 namespace PeliCode.CloudServices
 {
     /// <summary>
-    /// Encapsula Unity Cloud Save (Player Data) para el perfil del jugador:
-    /// nombre, top ranked, rachas y estadisticas por minijuego.
-    /// Clave usada en Cloud Save: "player_profile".
+    /// Encapsula Unity Cloud Save (Player Data) del jugador. Claves usadas:
+    ///  - "player_profile": nombre, top ranked, rachas y estadisticas por minijuego.
+    ///  - "game_history": lista de partidas jugadas (GameRecord), que no se reinicia.
+    /// Las dos se crean solas al guardar por primera vez: no hay que crearlas en el Dashboard.
     /// Las reglas (rachas, reseteo semanal) viven en PeliCode.Data.ProfileRules.
     /// </summary>
     public class CloudSaveManager : Singleton<CloudSaveManager>
     {
         private const string PROFILE_KEY = "player_profile";
+        private const string HISTORY_KEY = "game_history";
+
+        // Las partidas se agregan una tras otra: dos agregados a la vez (salir y terminar otra
+        // partida enseguida) leerian la misma lista y uno borraria al otro.
+        private Task _lastHistoryWrite = Task.CompletedTask;
 
         public async Task SaveProfileAsync(PlayerProfileData profile)
         {
             var data = new Dictionary<string, object> { { PROFILE_KEY, profile } };
+            await CloudSaveService.Instance.Data.Player.SaveAsync(data);
+        }
+
+        /// <summary>Agrega una partida al final del historial del jugador.</summary>
+        public Task AppendGameRecordAsync(GameRecord record)
+        {
+            _lastHistoryWrite = AppendAfterAsync(_lastHistoryWrite, record);
+            return _lastHistoryWrite;
+        }
+
+        private async Task AppendAfterAsync(Task previous, GameRecord record)
+        {
+            try { await previous; }
+            catch (Exception) { /* el error del anterior ya lo recibio quien lo pidio */ }
+
+            var query = new HashSet<string> { HISTORY_KEY };
+            Dictionary<string, Item> result = await CloudSaveService.Instance.Data.Player.LoadAsync(query);
+            var history = result.TryGetValue(HISTORY_KEY, out var item)
+                ? item.Value.GetAs<List<GameRecord>>() ?? new List<GameRecord>()
+                : new List<GameRecord>();
+
+            history.Add(record);
+            var data = new Dictionary<string, object> { { HISTORY_KEY, history } };
             await CloudSaveService.Instance.Data.Player.SaveAsync(data);
         }
 

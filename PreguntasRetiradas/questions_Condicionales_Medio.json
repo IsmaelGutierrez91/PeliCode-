@@ -1,0 +1,129 @@
+{
+  "questions": [
+    {
+      "id": "cond-medio-7",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "int x = 0;  ¿Qué muestra?  if (x > 0) Console.WriteLine(\"positivo\"); else if (x < 0) Console.WriteLine(\"negativo\"); else Console.WriteLine(\"cero\");",
+      "questionTextEn": "int x = 0;  What does it print?  if (x > 0) Console.WriteLine(\"positivo\"); else if (x < 0) Console.WriteLine(\"negativo\"); else Console.WriteLine(\"cero\");",
+      "correctAnswer": "cero",
+      "incorrectAnswerPool": [
+        "positivo",
+        "negativo",
+        "positivocero"
+      ]
+    },
+    {
+      "id": "cond-medio-37",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint edad = 70;\nif (edad < 12) Console.WriteLine(\"Niño\");\nelse if (edad < 18) Console.WriteLine(\"Adolescente\");\nelse if (edad < 65) Console.WriteLine(\"Adulto\");\nelse Console.WriteLine(\"Senior\");",
+      "questionTextEn": "What does it print?\nint edad = 70;\nif (edad < 12) Console.WriteLine(\"Niño\");\nelse if (edad < 18) Console.WriteLine(\"Adolescente\");\nelse if (edad < 65) Console.WriteLine(\"Adulto\");\nelse Console.WriteLine(\"Senior\");",
+      "correctAnswer": "Senior",
+      "incorrectAnswerPool": [
+        "Niño",
+        "Adolescente",
+        "Adulto",
+        "Nada"
+      ],
+      "explanation": "70 no es menor que 12, 18 ni 65, así que cae en el else final.",
+      "explanationEn": "70 is not less than 12, 18 or 65, so it reaches the final else."
+    },
+    {
+      "id": "cond-medio-38",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint nota = 18;\nif (nota >= 18) Console.WriteLine(\"Sobresaliente\");\nelse if (nota >= 14) Console.WriteLine(\"Bueno\");\nelse if (nota >= 11) Console.WriteLine(\"Regular\");\nelse Console.WriteLine(\"Bajo\");",
+      "questionTextEn": "What does it print?\nint nota = 18;\nif (nota >= 18) Console.WriteLine(\"Sobresaliente\");\nelse if (nota >= 14) Console.WriteLine(\"Bueno\");\nelse if (nota >= 11) Console.WriteLine(\"Regular\");\nelse Console.WriteLine(\"Bajo\");",
+      "correctAnswer": "Sobresaliente",
+      "incorrectAnswerPool": [
+        "Bueno",
+        "Regular",
+        "Bajo",
+        "SobresalienteBueno"
+      ],
+      "explanation": "Se ejecuta la primera condición verdadera y se salta el resto.",
+      "explanationEn": "The first true condition runs and the rest is skipped."
+    },
+    {
+      "id": "cond-medio-39",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 8, y = -1;\nif (x > 0)\n{\n    if (y > 0) Console.WriteLine(\"Q1\");\n    else Console.WriteLine(\"Q4\");\n}\nelse Console.WriteLine(\"Otro\");",
+      "questionTextEn": "What does it print?\nint x = 8, y = -1;\nif (x > 0)\n{\n    if (y > 0) Console.WriteLine(\"Q1\");\n    else Console.WriteLine(\"Q4\");\n}\nelse Console.WriteLine(\"Otro\");",
+      "correctAnswer": "Q4",
+      "incorrectAnswerPool": [
+        "Q1",
+        "Otro",
+        "Q1Q4",
+        "Nada"
+      ],
+      "explanation": "x > 0 es verdadero y dentro y > 0 es falso, así que corre el else interno.",
+      "explanationEn": "x > 0 is true and inside, y > 0 is false, so the inner else runs."
+    },
+    {
+      "id": "cond-medio-52",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint x = 2;\nif (x == 1) Console.WriteLine(\"Uno\");\nelse if (x == 2) Console.WriteLine(\"Dos\");\nelse if (x == 3) Console.WriteLine(\"Tres\");\nelse Console.WriteLine(\"Otro\");",
+      "questionTextEn": "What does it print?\nint x = 2;\nif (x == 1) Console.WriteLine(\"Uno\");\nelse if (x == 2) Console.WriteLine(\"Dos\");\nelse if (x == 3) Console.WriteLine(\"Tres\");\nelse Console.WriteLine(\"Otro\");",
+      "correctAnswer": "Dos",
+      "incorrectAnswerPool": [
+        "Uno",
+        "Tres",
+        "Otro",
+        "DosTres"
+      ]
+    },
+    {
+      "id": "cond-medio-59",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint h = 15;\nif (h >= 6 && h < 12) Console.WriteLine(\"Mañana\");\nelse if (h >= 12 && h < 20) Console.WriteLine(\"Tarde\");\nelse Console.WriteLine(\"Noche\");",
+      "questionTextEn": "What does it print?\nint h = 15;\nif (h >= 6 && h < 12) Console.WriteLine(\"Mañana\");\nelse if (h >= 12 && h < 20) Console.WriteLine(\"Tarde\");\nelse Console.WriteLine(\"Noche\");",
+      "correctAnswer": "Tarde",
+      "incorrectAnswerPool": [
+        "Mañana",
+        "Noche",
+        "MañanaTarde",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-medio-62",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint pts = 45;\nif (pts >= 50) Console.WriteLine(\"Gana\");\nelse if (pts >= 40) Console.WriteLine(\"Empata\");\nelse Console.WriteLine(\"Pierde\");",
+      "questionTextEn": "What does it print?\nint pts = 45;\nif (pts >= 50) Console.WriteLine(\"Gana\");\nelse if (pts >= 40) Console.WriteLine(\"Empata\");\nelse Console.WriteLine(\"Pierde\");",
+      "correctAnswer": "Empata",
+      "incorrectAnswerPool": [
+        "Gana",
+        "Pierde",
+        "GanaEmpata",
+        "Nada"
+      ]
+    },
+    {
+      "id": "cond-medio-63",
+      "category": "Condicionales",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint a = 3, b = 3;\nif (a == b) Console.WriteLine(\"Iguales\");\nelse if (a > b) Console.WriteLine(\"a mayor\");\nelse Console.WriteLine(\"b mayor\");",
+      "questionTextEn": "What does it print?\nint a = 3, b = 3;\nif (a == b) Console.WriteLine(\"Iguales\");\nelse if (a > b) Console.WriteLine(\"a mayor\");\nelse Console.WriteLine(\"b mayor\");",
+      "correctAnswer": "Iguales",
+      "incorrectAnswerPool": [
+        "a mayor",
+        "b mayor",
+        "Nada",
+        "IgualesNada"
+      ]
+    }
+  ]
+}

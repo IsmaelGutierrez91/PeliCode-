@@ -526,8 +526,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene la variable al final?\nint x = 0;\nfor (int k = 0; k < 3; k++)\n    x = x++;\nConsole.Write(x);",
-      "questionTextEn": "What value does the variable hold at the end?\nint x = 0;\nfor (int k = 0; k < 3; k++)\n    x = x++;\nConsole.Write(x);",
+      "questionText": "¿Qué valor tiene la variable al final?  int x = 0;  for (int k = 0; k < 3; k++)  x = x++;  Console.Write(x);",
+      "questionTextEn": "What value does the variable hold at the end?  int x = 0;  for (int k = 0; k < 3; k++)  x = x++;  Console.Write(x);",
       "correctAnswer": "0",
       "incorrectAnswerPool": [
         "1",
@@ -544,8 +544,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint i = 5;\nwhile (i-- > 0)\n    Console.Write(i);",
-      "questionTextEn": "What does it print?\nint i = 5;\nwhile (i-- > 0)\n    Console.Write(i);",
+      "questionText": "¿Qué muestra?  int i = 5;  while (i-- > 0)  Console.Write(i);",
+      "questionTextEn": "What does it print?  int i = 5;  while (i-- > 0)  Console.Write(i);",
       "correctAnswer": "43210",
       "incorrectAnswerPool": [
         "54321",
@@ -561,8 +561,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint n = 3;\nwhile (--n > 0)\n    Console.Write(n);",
-      "questionTextEn": "What does it print?\nint n = 3;\nwhile (--n > 0)\n    Console.Write(n);",
+      "questionText": "¿Qué muestra?  int n = 3;  while (--n > 0)  Console.Write(n);",
+      "questionTextEn": "What does it print?  int n = 3;  while (--n > 0)  Console.Write(n);",
       "correctAnswer": "21",
       "incorrectAnswerPool": [
         "321",
@@ -576,8 +576,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene la variable al final?\nint n = 3;\nwhile (n-- > 0) { }\nConsole.Write(n);",
-      "questionTextEn": "What value does the variable hold at the end?\nint n = 3;\nwhile (n-- > 0) { }\nConsole.Write(n);",
+      "questionText": "¿Qué valor tiene la variable al final?  int n = 3;  while (n-- > 0) { }  Console.Write(n);",
+      "questionTextEn": "What value does the variable hold at the end?  int n = 3;  while (n-- > 0) { }  Console.Write(n);",
       "correctAnswer": "-1",
       "incorrectAnswerPool": [
         "0",
@@ -595,8 +595,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint i = 0, c = 0;\nwhile (i < 5 && c++ < 2)\n    i++;\nConsole.Write(i + \",\" + c);",
-      "questionTextEn": "What does it print?\nint i = 0, c = 0;\nwhile (i < 5 && c++ < 2)\n    i++;\nConsole.Write(i + \",\" + c);",
+      "questionText": "¿Qué muestra?  int i = 0, c = 0;  while (i < 5 && c++ < 2)  i++;  Console.Write(i + \",\" + c);",
+      "questionTextEn": "What does it print?  int i = 0, c = 0;  while (i < 5 && c++ < 2)  i++;  Console.Write(i + \",\" + c);",
       "correctAnswer": "2,3",
       "incorrectAnswerPool": [
         "2,2",
@@ -612,8 +612,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene la variable al final?\nint c = 0;\nfor (int i = 0; i < 5; i++)\n    if (i % 2 == 0 || c++ > 5) { }\nConsole.Write(c);",
-      "questionTextEn": "What value does the variable hold at the end?\nint c = 0;\nfor (int i = 0; i < 5; i++)\n    if (i % 2 == 0 || c++ > 5) { }\nConsole.Write(c);",
+      "questionText": "¿Qué valor tiene la variable al final?  int c = 0;  for (int i = 0; i < 5; i++)  if (i % 2 == 0 || c++ > 5) { }  Console.Write(c);",
+      "questionTextEn": "What value does the variable hold at the end?  int c = 0;  for (int i = 0; i < 5; i++)  if (i % 2 == 0 || c++ > 5) { }  Console.Write(c);",
       "correctAnswer": "2",
       "incorrectAnswerPool": [
         "3",
@@ -631,8 +631,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene s al final?\nint i = 0, s = 0;\ndo\n{\n    i++;\n    if (i % 2 == 0) continue;\n    s += i;\n} while (i < 5);\nConsole.Write(s);",
-      "questionTextEn": "What value does s hold at the end?\nint i = 0, s = 0;\ndo\n{\n    i++;\n    if (i % 2 == 0) continue;\n    s += i;\n} while (i < 5);\nConsole.Write(s);",
+      "questionText": "¿Qué valor tiene s al final?  int i = 0, s = 0;  do { i++; if (i % 2 == 0) continue; s += i; } while (i < 5);  Console.Write(s);",
+      "questionTextEn": "What value does s hold at the end?  int i = 0, s = 0;  do { i++; if (i % 2 == 0) continue; s += i; } while (i < 5);  Console.Write(s);",
       "correctAnswer": "9",
       "incorrectAnswerPool": [
         "10",
@@ -648,8 +648,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nfor (int i = 0; i < 5; i++)\n{\n    if (i == 3)\n    {\n        switch (i)\n        {\n            case 3: break;\n        }\n    }\n    Console.Write(i);\n}",
-      "questionTextEn": "What does it print?\nfor (int i = 0; i < 5; i++)\n{\n    if (i == 3)\n    {\n        switch (i)\n        {\n            case 3: break;\n        }\n    }\n    Console.Write(i);\n}",
+      "questionText": "¿Qué muestra?  for (int i = 0; i < 5; i++) { if (i == 3) { switch (i) { case 3: break; } } Console.Write(i); }",
+      "questionTextEn": "What does it print?  for (int i = 0; i < 5; i++) { if (i == 3) { switch (i) { case 3: break; } } Console.Write(i); }",
       "correctAnswer": "01234",
       "incorrectAnswerPool": [
         "012",
@@ -665,8 +665,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nvar acts = new List<Action>();\nfor (int i = 0; i < 3; i++)\n    acts.Add(() => Console.Write(i));\nforeach (var a in acts) a();",
-      "questionTextEn": "What does it print?\nvar acts = new List<Action>();\nfor (int i = 0; i < 3; i++)\n    acts.Add(() => Console.Write(i));\nforeach (var a in acts) a();",
+      "questionText": "¿Qué muestra?  var acts = new List<Action>();  for (int i = 0; i < 3; i++)  acts.Add(() => Console.Write(i));  foreach (var a in acts) a();",
+      "questionTextEn": "What does it print?  var acts = new List<Action>();  for (int i = 0; i < 3; i++)  acts.Add(() => Console.Write(i));  foreach (var a in acts) a();",
       "correctAnswer": "333",
       "incorrectAnswerPool": [
         "012",
@@ -678,27 +678,12 @@
       "explanationEn": "The three lambdas share the same variable i, which is 3 when the for loop ends."
     },
     {
-      "id": "loop-dificil-39",
-      "category": "BucleWhileDoWhile",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nvar acts = new List<Action>();\nforeach (int i in new[] { 0, 1, 2 })\n    acts.Add(() => Console.Write(i));\nforeach (var a in acts) a();",
-      "questionTextEn": "What does it print?\nvar acts = new List<Action>();\nforeach (int i in new[] { 0, 1, 2 })\n    acts.Add(() => Console.Write(i));\nforeach (var a in acts) a();",
-      "correctAnswer": "012",
-      "incorrectAnswerPool": [
-        "222",
-        "000",
-        "111",
-        "210"
-      ]
-    },
-    {
       "id": "loop-dificil-40",
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene c al final?\ndouble d = 0;\nint c = 0;\nwhile (d < 1.0)\n{\n    d += 0.1;\n    c++;\n}\nConsole.Write(c);",
-      "questionTextEn": "What value does c hold at the end?\ndouble d = 0;\nint c = 0;\nwhile (d < 1.0)\n{\n    d += 0.1;\n    c++;\n}\nConsole.Write(c);",
+      "questionText": "¿Qué valor tiene c al final?  double d = 0;  int c = 0;  while (d < 1.0) { d += 0.1; c++; }  Console.Write(c);",
+      "questionTextEn": "What value does c hold at the end?  double d = 0;  int c = 0;  while (d < 1.0) { d += 0.1; c++; }  Console.Write(c);",
       "correctAnswer": "11",
       "incorrectAnswerPool": [
         "12",
@@ -716,8 +701,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene c al final?\nint c = 0;\nfor (double x = 0; x <= 1.0; x += 0.25)\n    c++;\nConsole.Write(c);",
-      "questionTextEn": "What value does c hold at the end?\nint c = 0;\nfor (double x = 0; x <= 1.0; x += 0.25)\n    c++;\nConsole.Write(c);",
+      "questionText": "¿Qué valor tiene c al final?  int c = 0;  for (double x = 0; x <= 1.0; x += 0.25)  c++;  Console.Write(c);",
+      "questionTextEn": "What value does c hold at the end?  int c = 0;  for (double x = 0; x <= 1.0; x += 0.25)  c++;  Console.Write(c);",
       "correctAnswer": "5",
       "incorrectAnswerPool": [
         "6",
@@ -735,8 +720,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene c al final?\nbyte b = 250;\nint c = 0;\nwhile (b != 4)\n{\n    b++;\n    c++;\n}\nConsole.Write(c);",
-      "questionTextEn": "What value does c hold at the end?\nbyte b = 250;\nint c = 0;\nwhile (b != 4)\n{\n    b++;\n    c++;\n}\nConsole.Write(c);",
+      "questionText": "¿Qué valor tiene c al final?  byte b = 250;  int c = 0;  while (b != 4) { b++; c++; }  Console.Write(c);",
+      "questionTextEn": "What value does c hold at the end?  byte b = 250;  int c = 0;  while (b != 4) { b++; c++; }  Console.Write(c);",
       "correctAnswer": "10",
       "incorrectAnswerPool": [
         "11",
@@ -754,8 +739,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene s al final?\nint s = 0;\nfor (int i = 1; i <= 5; i++)\n    s += 10 / i;\nConsole.Write(s);",
-      "questionTextEn": "What value does s hold at the end?\nint s = 0;\nfor (int i = 1; i <= 5; i++)\n    s += 10 / i;\nConsole.Write(s);",
+      "questionText": "¿Qué valor tiene s al final?  int s = 0;  for (int i = 1; i <= 5; i++)  s += 10 / i;  Console.Write(s);",
+      "questionTextEn": "What value does s hold at the end?  int s = 0;  for (int i = 1; i <= 5; i++)  s += 10 / i;  Console.Write(s);",
       "correctAnswer": "22",
       "incorrectAnswerPool": [
         "23",
@@ -769,29 +754,12 @@
       "explanationEn": "Each division is an integer one: 10, 5, 3, 2 and 2."
     },
     {
-      "id": "loop-dificil-44",
-      "category": "BucleWhileDoWhile",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nvar l = new List<int> { 1, 2, 2, 3, 4, 4, 5 };\nfor (int i = 0; i < l.Count; i++)\n    if (l[i] % 2 == 0) l.RemoveAt(i);\nConsole.Write(string.Join(\",\", l));",
-      "questionTextEn": "What does it print?\nvar l = new List<int> { 1, 2, 2, 3, 4, 4, 5 };\nfor (int i = 0; i < l.Count; i++)\n    if (l[i] % 2 == 0) l.RemoveAt(i);\nConsole.Write(string.Join(\",\", l));",
-      "correctAnswer": "1,2,3,4,5",
-      "incorrectAnswerPool": [
-        "1,3,5",
-        "1,2,3,4,4,5",
-        "1,3,5,5",
-        "2,4,4"
-      ],
-      "explanation": "Tras borrar, el siguiente elemento ocupa el mismo índice y se salta una comprobación.",
-      "explanationEn": "After removing, the next element takes the same index and one check is skipped."
-    },
-    {
       "id": "loop-dificil-45",
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint[] a = { 1, 2, 3 };\nforeach (int x in a)\n{\n    a[2] = 10;\n    Console.Write(x);\n}",
-      "questionTextEn": "What does it print?\nint[] a = { 1, 2, 3 };\nforeach (int x in a)\n{\n    a[2] = 10;\n    Console.Write(x);\n}",
+      "questionText": "¿Qué muestra?  int[] a = { 1, 2, 3 };  foreach (int x in a) { a[2] = 10; Console.Write(x); }",
+      "questionTextEn": "What does it print?  int[] a = { 1, 2, 3 };  foreach (int x in a) { a[2] = 10; Console.Write(x); }",
       "correctAnswer": "1210",
       "incorrectAnswerPool": [
         "123",
@@ -805,8 +773,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nstring s = \"abc\";\nforeach (char c in s)\n    s += c;\nConsole.Write(s);",
-      "questionTextEn": "What does it print?\nstring s = \"abc\";\nforeach (char c in s)\n    s += c;\nConsole.Write(s);",
+      "questionText": "¿Qué muestra?  string s = \"abc\";  foreach (char c in s)  s += c;  Console.Write(s);",
+      "questionTextEn": "What does it print?  string s = \"abc\";  foreach (char c in s)  s += c;  Console.Write(s);",
       "correctAnswer": "abcabc",
       "incorrectAnswerPool": [
         "abc",
@@ -818,44 +786,12 @@
       "explanationEn": "The foreach goes through the original string; s is a new string on each +=."
     },
     {
-      "id": "loop-dificil-47",
-      "category": "BucleWhileDoWhile",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nbool found = false;\nint r = 0;\nfor (int i = 0; i < 3; i++)\n{\n    for (int j = 0; j < 3; j++)\n    {\n        if (i * j == 2) { found = true; break; }\n    }\n    if (found) break;\n    r++;\n}\nConsole.Write(r + \",\" + found);",
-      "questionTextEn": "What does it print?\nbool found = false;\nint r = 0;\nfor (int i = 0; i < 3; i++)\n{\n    for (int j = 0; j < 3; j++)\n    {\n        if (i * j == 2) { found = true; break; }\n    }\n    if (found) break;\n    r++;\n}\nConsole.Write(r + \",\" + found);",
-      "correctAnswer": "1,True",
-      "incorrectAnswerPool": [
-        "2,True",
-        "1,False",
-        "0,True",
-        "3,False"
-      ]
-    },
-    {
-      "id": "loop-dificil-48",
-      "category": "BucleWhileDoWhile",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene c al final?\nint c = 0;\nfor (int i = 0; i < 3; i++)\n    for (int j = 0; j < 3; j++)\n    {\n        if (i + j == 3) goto fin;\n        c++;\n    }\nfin:\nConsole.Write(c);",
-      "questionTextEn": "What value does c hold at the end?\nint c = 0;\nfor (int i = 0; i < 3; i++)\n    for (int j = 0; j < 3; j++)\n    {\n        if (i + j == 3) goto fin;\n        c++;\n    }\nfin:\nConsole.Write(c);",
-      "correctAnswer": "5",
-      "incorrectAnswerPool": [
-        "6",
-        "4",
-        "7",
-        "3",
-        "8",
-        "9"
-      ]
-    },
-    {
       "id": "loop-dificil-49",
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nfor (int i = 0; i < 5; i++)\n{\n    if (i == 3) i = 10;\n    Console.Write(i);\n}",
-      "questionTextEn": "What does it print?\nfor (int i = 0; i < 5; i++)\n{\n    if (i == 3) i = 10;\n    Console.Write(i);\n}",
+      "questionText": "¿Qué muestra?  for (int i = 0; i < 5; i++) { if (i == 3) i = 10; Console.Write(i); }",
+      "questionTextEn": "What does it print?  for (int i = 0; i < 5; i++) { if (i == 3) i = 10; Console.Write(i); }",
       "correctAnswer": "01210",
       "incorrectAnswerPool": [
         "012",
@@ -865,29 +801,12 @@
       ]
     },
     {
-      "id": "loop-dificil-50",
-      "category": "BucleWhileDoWhile",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene s al final?\nint s = 0;\nfor (int i = 1; i <= 4; i++)\n{\n    int p = 1;\n    for (int j = 0; j < i; j++)\n        p *= 2;\n    s += p;\n}\nConsole.Write(s);",
-      "questionTextEn": "What value does s hold at the end?\nint s = 0;\nfor (int i = 1; i <= 4; i++)\n{\n    int p = 1;\n    for (int j = 0; j < i; j++)\n        p *= 2;\n    s += p;\n}\nConsole.Write(s);",
-      "correctAnswer": "30",
-      "incorrectAnswerPool": [
-        "31",
-        "29",
-        "32",
-        "28",
-        "33",
-        "34"
-      ]
-    },
-    {
       "id": "loop-dificil-51",
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint n = 13;\nwhile (n > 0)\n{\n    Console.Write(n % 2);\n    n /= 2;\n}",
-      "questionTextEn": "What does it print?\nint n = 13;\nwhile (n > 0)\n{\n    Console.Write(n % 2);\n    n /= 2;\n}",
+      "questionText": "¿Qué muestra?  int n = 13;  while (n > 0) { Console.Write(n % 2); n /= 2; }",
+      "questionTextEn": "What does it print?  int n = 13;  while (n > 0) { Console.Write(n % 2); n /= 2; }",
       "correctAnswer": "1011",
       "incorrectAnswerPool": [
         "1101",
@@ -903,8 +822,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene c al final?\nint x = 1, c = 0;\nwhile (x > 0)\n{\n    x *= 2;\n    c++;\n}\nConsole.Write(c);",
-      "questionTextEn": "What value does c hold at the end?\nint x = 1, c = 0;\nwhile (x > 0)\n{\n    x *= 2;\n    c++;\n}\nConsole.Write(c);",
+      "questionText": "¿Qué valor tiene c al final?  int x = 1, c = 0;  while (x > 0) { x *= 2; c++; }  Console.Write(c);",
+      "questionTextEn": "What value does c hold at the end?  int x = 1, c = 0;  while (x > 0) { x *= 2; c++; }  Console.Write(c);",
       "correctAnswer": "31",
       "incorrectAnswerPool": [
         "32",
@@ -922,8 +841,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nfor (int i = 0; i < 3; i++)\n{\n    Console.Write(i);\n    i++;\n}",
-      "questionTextEn": "What does it print?\nfor (int i = 0; i < 3; i++)\n{\n    Console.Write(i);\n    i++;\n}",
+      "questionText": "¿Qué muestra?  for (int i = 0; i < 3; i++) { Console.Write(i); i++; }",
+      "questionTextEn": "What does it print?  for (int i = 0; i < 3; i++) { Console.Write(i); i++; }",
       "correctAnswer": "02",
       "incorrectAnswerPool": [
         "012",
@@ -937,8 +856,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene la variable al final?\nint x = 10;\ndo\n{\n    x -= 3;\n} while (x > 0 && x % 2 == 1);\nConsole.Write(x);",
-      "questionTextEn": "What value does the variable hold at the end?\nint x = 10;\ndo\n{\n    x -= 3;\n} while (x > 0 && x % 2 == 1);\nConsole.Write(x);",
+      "questionText": "¿Qué valor tiene la variable al final?  int x = 10;  do { x -= 3; } while (x > 0 && x % 2 == 1);  Console.Write(x);",
+      "questionTextEn": "What value does the variable hold at the end?  int x = 10;  do { x -= 3; } while (x > 0 && x % 2 == 1);  Console.Write(x);",
       "correctAnswer": "4",
       "incorrectAnswerPool": [
         "5",
@@ -954,8 +873,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint a = 3, b = 0;\nwhile (b < 3 || a > 0)\n{\n    a--;\n    b++;\n}\nConsole.Write(a + \",\" + b);",
-      "questionTextEn": "What does it print?\nint a = 3, b = 0;\nwhile (b < 3 || a > 0)\n{\n    a--;\n    b++;\n}\nConsole.Write(a + \",\" + b);",
+      "questionText": "¿Qué muestra?  int a = 3, b = 0;  while (b < 3 || a > 0) { a--; b++; }  Console.Write(a + \",\" + b);",
+      "questionTextEn": "What does it print?  int a = 3, b = 0;  while (b < 3 || a > 0) { a--; b++; }  Console.Write(a + \",\" + b);",
       "correctAnswer": "0,3",
       "incorrectAnswerPool": [
         "0,2",
@@ -969,8 +888,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint s = 0;\nforeach (int x in Enumerable.Range(3, 4))\n    s += x;\nConsole.Write(s);",
-      "questionTextEn": "What does it print?\nint s = 0;\nforeach (int x in Enumerable.Range(3, 4))\n    s += x;\nConsole.Write(s);",
+      "questionText": "¿Qué muestra?  int s = 0;  foreach (int x in Enumerable.Range(3, 4))  s += x;  Console.Write(s);",
+      "questionTextEn": "What does it print?  int s = 0;  foreach (int x in Enumerable.Range(3, 4))  s += x;  Console.Write(s);",
       "correctAnswer": "18",
       "incorrectAnswerPool": [
         "12",
@@ -982,29 +901,12 @@
       "explanationEn": "Range(3, 4) generates four numbers starting at 3: 3, 4, 5 and 6."
     },
     {
-      "id": "loop-dificil-57",
-      "category": "BucleWhileDoWhile",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene count al final?\nint count = 0;\nfor (int i = 0; i < 10; i++)\n{\n    if (i % 2 == 0) continue;\n    if (i > 7) break;\n    count++;\n}\nConsole.Write(count);",
-      "questionTextEn": "What value does count hold at the end?\nint count = 0;\nfor (int i = 0; i < 10; i++)\n{\n    if (i % 2 == 0) continue;\n    if (i > 7) break;\n    count++;\n}\nConsole.Write(count);",
-      "correctAnswer": "4",
-      "incorrectAnswerPool": [
-        "5",
-        "3",
-        "6",
-        "2",
-        "7",
-        "0"
-      ]
-    },
-    {
       "id": "loop-dificil-58",
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene la variable al final?\nint i = 0;\nwhile (true)\n{\n    if (++i % 4 == 0) break;\n}\nConsole.Write(i);",
-      "questionTextEn": "What value does the variable hold at the end?\nint i = 0;\nwhile (true)\n{\n    if (++i % 4 == 0) break;\n}\nConsole.Write(i);",
+      "questionText": "¿Qué valor tiene la variable al final?  int i = 0;  while (true) { if (++i % 4 == 0) break; }  Console.Write(i);",
+      "questionTextEn": "What value does the variable hold at the end?  int i = 0;  while (true) { if (++i % 4 == 0) break; }  Console.Write(i);",
       "correctAnswer": "4",
       "incorrectAnswerPool": [
         "5",
@@ -1020,8 +922,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene s al final?\nint s = 0;\nfor (int i = 0; i < 4; i++)\n    s += i++;\nConsole.Write(s);",
-      "questionTextEn": "What value does s hold at the end?\nint s = 0;\nfor (int i = 0; i < 4; i++)\n    s += i++;\nConsole.Write(s);",
+      "questionText": "¿Qué valor tiene s al final?  int s = 0;  for (int i = 0; i < 4; i++)  s += i++;  Console.Write(s);",
+      "questionTextEn": "What value does s hold at the end?  int s = 0;  for (int i = 0; i < 4; i++)  s += i++;  Console.Write(s);",
       "correctAnswer": "2",
       "incorrectAnswerPool": [
         "3",
@@ -1039,8 +941,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene n al final?\nchar c = 'a';\nint n = 0;\nwhile (c < 'z')\n{\n    c++;\n    n++;\n}\nConsole.Write(n);",
-      "questionTextEn": "What value does n hold at the end?\nchar c = 'a';\nint n = 0;\nwhile (c < 'z')\n{\n    c++;\n    n++;\n}\nConsole.Write(n);",
+      "questionText": "¿Qué valor tiene n al final?  char c = 'a';  int n = 0;  while (c < 'z') { c++; n++; }  Console.Write(n);",
+      "questionTextEn": "What value does n hold at the end?  char c = 'a';  int n = 0;  while (c < 'z') { c++; n++; }  Console.Write(n);",
       "correctAnswer": "25",
       "incorrectAnswerPool": [
         "26",
@@ -1056,8 +958,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nstring s = \"\";\nfor (int i = 0; i < 3; i++)\n    s = i + s + i;\nConsole.Write(s);",
-      "questionTextEn": "What does it print?\nstring s = \"\";\nfor (int i = 0; i < 3; i++)\n    s = i + s + i;\nConsole.Write(s);",
+      "questionText": "¿Qué muestra?  string s = \"\";  for (int i = 0; i < 3; i++)  s = i + s + i;  Console.Write(s);",
+      "questionTextEn": "What does it print?  string s = \"\";  for (int i = 0; i < 3; i++)  s = i + s + i;  Console.Write(s);",
       "correctAnswer": "210012",
       "incorrectAnswerPool": [
         "001122",
@@ -1071,8 +973,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene a al final?\nint a = 0;\nfor (int i = 0; i < 3; i++)\n    for (int j = i; j < 3; j++)\n        a++;\nConsole.Write(a);",
-      "questionTextEn": "What value does a hold at the end?\nint a = 0;\nfor (int i = 0; i < 3; i++)\n    for (int j = i; j < 3; j++)\n        a++;\nConsole.Write(a);",
+      "questionText": "¿Qué valor tiene a al final?  int a = 0;  for (int i = 0; i < 3; i++)  for (int j = i; j < 3; j++)  a++;  Console.Write(a);",
+      "questionTextEn": "What value does a hold at the end?  int a = 0;  for (int i = 0; i < 3; i++)  for (int j = i; j < 3; j++)  a++;  Console.Write(a);",
       "correctAnswer": "6",
       "incorrectAnswerPool": [
         "7",
@@ -1088,8 +990,8 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene n al final?\nint n = 0;\nfor (int i = 10; i > 0; i /= 2)\n    n += i;\nConsole.Write(n);",
-      "questionTextEn": "What value does n hold at the end?\nint n = 0;\nfor (int i = 10; i > 0; i /= 2)\n    n += i;\nConsole.Write(n);",
+      "questionText": "¿Qué valor tiene n al final?  int n = 0;  for (int i = 10; i > 0; i /= 2)  n += i;  Console.Write(n);",
+      "questionTextEn": "What value does n hold at the end?  int n = 0;  for (int i = 10; i > 0; i /= 2)  n += i;  Console.Write(n);",
       "correctAnswer": "18",
       "incorrectAnswerPool": [
         "19",
@@ -1107,31 +1009,14 @@
       "category": "BucleWhileDoWhile",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nvar st = new Stack<int>();\nfor (int i = 0; i < 4; i++)\n    st.Push(i);\nwhile (st.Count > 0)\n    Console.Write(st.Pop());",
-      "questionTextEn": "What does it print?\nvar st = new Stack<int>();\nfor (int i = 0; i < 4; i++)\n    st.Push(i);\nwhile (st.Count > 0)\n    Console.Write(st.Pop());",
+      "questionText": "¿Qué muestra?  var st = new Stack<int>();  for (int i = 0; i < 4; i++)  st.Push(i);  while (st.Count > 0)  Console.Write(st.Pop());",
+      "questionTextEn": "What does it print?  var st = new Stack<int>();  for (int i = 0; i < 4; i++)  st.Push(i);  while (st.Count > 0)  Console.Write(st.Pop());",
       "correctAnswer": "3210",
       "incorrectAnswerPool": [
         "0123",
         "321",
         "210",
         "3"
-      ]
-    },
-    {
-      "id": "loop-dificil-65",
-      "category": "BucleWhileDoWhile",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene c al final?\nint c = 0;\nfor (int i = 1; i <= 3; i++)\n    for (int j = 1; j <= 3; j++)\n    {\n        if (j == i) continue;\n        if (j > i + 1) break;\n        c++;\n    }\nConsole.Write(c);",
-      "questionTextEn": "What value does c hold at the end?\nint c = 0;\nfor (int i = 1; i <= 3; i++)\n    for (int j = 1; j <= 3; j++)\n    {\n        if (j == i) continue;\n        if (j > i + 1) break;\n        c++;\n    }\nConsole.Write(c);",
-      "correctAnswer": "5",
-      "incorrectAnswerPool": [
-        "6",
-        "4",
-        "7",
-        "3",
-        "8",
-        "9"
       ]
     },
     {

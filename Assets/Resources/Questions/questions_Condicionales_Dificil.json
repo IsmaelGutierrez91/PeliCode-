@@ -538,112 +538,12 @@
       ]
     },
     {
-      "id": "cond-dificil-30",
-      "category": "Condicionales",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (F(\"A\") || F(\"B\")) Console.Write(\"C\");",
-      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (F(\"A\") || F(\"B\")) Console.Write(\"C\");",
-      "correctAnswer": "AC",
-      "incorrectAnswerPool": [
-        "ABC",
-        "AB",
-        "C",
-        "BC"
-      ],
-      "explanation": "F(\"A\") es true y || ya no evalúa F(\"B\").",
-      "explanationEn": "F(\"A\") is true and || no longer evaluates F(\"B\")."
-    },
-    {
-      "id": "cond-dificil-31",
-      "category": "Condicionales",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (!F(\"A\") && F(\"B\")) Console.Write(\"C\");\nelse Console.Write(\"D\");",
-      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (!F(\"A\") && F(\"B\")) Console.Write(\"C\");\nelse Console.Write(\"D\");",
-      "correctAnswer": "AD",
-      "incorrectAnswerPool": [
-        "ABD",
-        "AC",
-        "D",
-        "ABC"
-      ],
-      "explanation": "!F(\"A\") es false, así que && no evalúa F(\"B\").",
-      "explanationEn": "!F(\"A\") is false, so && does not evaluate F(\"B\")."
-    },
-    {
-      "id": "cond-dificil-32",
-      "category": "Condicionales",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") & G(\"B\")) Console.Write(\"X\");\nelse Console.Write(\"Y\");",
-      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") & G(\"B\")) Console.Write(\"X\");\nelse Console.Write(\"Y\");",
-      "correctAnswer": "ABY",
-      "incorrectAnswerPool": [
-        "AY",
-        "Y",
-        "ABX",
-        "AX"
-      ],
-      "explanation": "El operador & evalúa siempre los dos lados.",
-      "explanationEn": "The & operator always evaluates both sides."
-    },
-    {
-      "id": "cond-dificil-33",
-      "category": "Condicionales",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") && G(\"B\")) Console.Write(\"X\");\nelse Console.Write(\"Y\");",
-      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") && G(\"B\")) Console.Write(\"X\");\nelse Console.Write(\"Y\");",
-      "correctAnswer": "AY",
-      "incorrectAnswerPool": [
-        "ABY",
-        "Y",
-        "AX",
-        "ABX"
-      ]
-    },
-    {
-      "id": "cond-dificil-34",
-      "category": "Condicionales",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") || F(\"B\")) Console.Write(\"C\");",
-      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (G(\"A\") || F(\"B\")) Console.Write(\"C\");",
-      "correctAnswer": "ABC",
-      "incorrectAnswerPool": [
-        "AC",
-        "AB",
-        "C",
-        "BC"
-      ],
-      "explanation": "G(\"A\") es false, así que || sí evalúa F(\"B\"), que es true.",
-      "explanationEn": "G(\"A\") is false, so || does evaluate F(\"B\"), which is true."
-    },
-    {
-      "id": "cond-dificil-35",
-      "category": "Condicionales",
-      "difficulty": "Dificil",
-      "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (F(\"A\") && G(\"B\") || F(\"C\")) Console.Write(\"D\");",
-      "questionTextEn": "What does it print?\nstatic bool F(string m) { Console.Write(m); return true; }\nstatic bool G(string m) { Console.Write(m); return false; }\nif (F(\"A\") && G(\"B\") || F(\"C\")) Console.Write(\"D\");",
-      "correctAnswer": "ABCD",
-      "incorrectAnswerPool": [
-        "ABD",
-        "AD",
-        "ACD",
-        "ABC"
-      ],
-      "explanation": "(F(\"A\") && G(\"B\")) da false, pero entonces || evalúa F(\"C\"), que es true.",
-      "explanationEn": "(F(\"A\") && G(\"B\")) gives false, but then || evaluates F(\"C\"), which is true."
-    },
-    {
       "id": "cond-dificil-36",
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene c al final?\nint c = 0;\nif (c++ > 0 && c++ > 0) { }",
-      "questionTextEn": "What value does c hold at the end?\nint c = 0;\nif (c++ > 0 && c++ > 0) { }",
+      "questionText": "¿Qué valor tiene c al final?  int c = 0;  if (c++ > 0 && c++ > 0) { }",
+      "questionTextEn": "What value does c hold at the end?  int c = 0;  if (c++ > 0 && c++ > 0) { }",
       "correctAnswer": "1",
       "incorrectAnswerPool": [
         "0",
@@ -659,8 +559,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene c al final?\nint c = 0;\nif (c++ > 0 || c++ > 0) { }",
-      "questionTextEn": "What value does c hold at the end?\nint c = 0;\nif (c++ > 0 || c++ > 0) { }",
+      "questionText": "¿Qué valor tiene c al final?  int c = 0;  if (c++ > 0 || c++ > 0) { }",
+      "questionTextEn": "What value does c hold at the end?  int c = 0;  if (c++ > 0 || c++ > 0) { }",
       "correctAnswer": "2",
       "incorrectAnswerPool": [
         "0",
@@ -676,8 +576,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene c al final?\nint c = 0;\nif (++c > 0 || ++c > 0) { }",
-      "questionTextEn": "What value does c hold at the end?\nint c = 0;\nif (++c > 0 || ++c > 0) { }",
+      "questionText": "¿Qué valor tiene c al final?  int c = 0;  if (++c > 0 || ++c > 0) { }",
+      "questionTextEn": "What value does c hold at the end?  int c = 0;  if (++c > 0 || ++c > 0) { }",
       "correctAnswer": "1",
       "incorrectAnswerPool": [
         "0",
@@ -693,8 +593,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint a = 5;\nif (a++ == 5 && a == 6) Console.WriteLine(\"Sí\");\nelse Console.WriteLine(\"No\");",
-      "questionTextEn": "What does it print?\nint a = 5;\nif (a++ == 5 && a == 6) Console.WriteLine(\"Sí\");\nelse Console.WriteLine(\"No\");",
+      "questionText": "¿Qué muestra?  int a = 5;  if (a++ == 5 && a == 6) Console.WriteLine(\"Sí\"); else Console.WriteLine(\"No\");",
+      "questionTextEn": "What does it print?  int a = 5;  if (a++ == 5 && a == 6) Console.WriteLine(\"Sí\"); else Console.WriteLine(\"No\");",
       "correctAnswer": "Sí",
       "incorrectAnswerPool": [
         "No",
@@ -710,8 +610,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene x al final?\nint x = 5;\nif (x-- > 5 || --x > 3) { }",
-      "questionTextEn": "What value does x hold at the end?\nint x = 5;\nif (x-- > 5 || --x > 3) { }",
+      "questionText": "¿Qué valor tiene x al final?  int x = 5;  if (x-- > 5 || --x > 3) { }",
+      "questionTextEn": "What value does x hold at the end?  int x = 5;  if (x-- > 5 || --x > 3) { }",
       "correctAnswer": "3",
       "incorrectAnswerPool": [
         "5",
@@ -727,8 +627,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint c = 0;\nbool b = (c++ == 0) | (c++ == 5);\nConsole.WriteLine(b + \" \" + c);",
-      "questionTextEn": "What does it print?\nint c = 0;\nbool b = (c++ == 0) | (c++ == 5);\nConsole.WriteLine(b + \" \" + c);",
+      "questionText": "¿Qué muestra?  int c = 0;  bool b = (c++ == 0) | (c++ == 5);  Console.WriteLine(b + \" \" + c);",
+      "questionTextEn": "What does it print?  int c = 0;  bool b = (c++ == 0) | (c++ == 5);  Console.WriteLine(b + \" \" + c);",
       "correctAnswer": "True 2",
       "incorrectAnswerPool": [
         "True 1",
@@ -744,8 +644,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene c al final?\nint c = 0;\nif (c == 0) c++;\nif (c == 1) c++;\nif (c == 1) c += 10;",
-      "questionTextEn": "What value does c hold at the end?\nint c = 0;\nif (c == 0) c++;\nif (c == 1) c++;\nif (c == 1) c += 10;",
+      "questionText": "¿Qué valor tiene c al final?  int c = 0;  if (c == 0) c++;  if (c == 1) c++;  if (c == 1) c += 10;",
+      "questionTextEn": "What value does c hold at the end?  int c = 0;  if (c == 0) c++;  if (c == 1) c++;  if (c == 1) c += 10;",
       "correctAnswer": "2",
       "incorrectAnswerPool": [
         "1",
@@ -761,8 +661,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene x al final?\nint x = 3;\nif (x == 3) x = 4;\nelse if (x == 4) x = 5;\nelse x = 6;",
-      "questionTextEn": "What value does x hold at the end?\nint x = 3;\nif (x == 3) x = 4;\nelse if (x == 4) x = 5;\nelse x = 6;",
+      "questionText": "¿Qué valor tiene x al final?  int x = 3;  if (x == 3) x = 4; else if (x == 4) x = 5; else x = 6;",
+      "questionTextEn": "What value does x hold at the end?  int x = 3;  if (x == 3) x = 4; else if (x == 4) x = 5; else x = 6;",
       "correctAnswer": "4",
       "incorrectAnswerPool": [
         "3",
@@ -914,8 +814,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint m = int.MaxValue;\nConsole.WriteLine(m + 1 < 0);",
-      "questionTextEn": "What does it print?\nint m = int.MaxValue;\nConsole.WriteLine(m + 1 < 0);",
+      "questionText": "¿Qué muestra?  int m = int.MaxValue;  Console.WriteLine(m + 1 < 0);",
+      "questionTextEn": "What does it print?  int m = int.MaxValue;  Console.WriteLine(m + 1 < 0);",
       "correctAnswer": "True",
       "incorrectAnswerPool": [
         "False",
@@ -948,8 +848,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint a = 7, b = 2;\nif (a / b * b == a) Console.WriteLine(\"Exacto\");\nelse Console.WriteLine(\"Con resto\");",
-      "questionTextEn": "What does it print?\nint a = 7, b = 2;\nif (a / b * b == a) Console.WriteLine(\"Exacto\");\nelse Console.WriteLine(\"Con resto\");",
+      "questionText": "¿Qué muestra?  int a = 7, b = 2;  if (a / b * b == a) Console.WriteLine(\"Exacto\"); else Console.WriteLine(\"Con resto\");",
+      "questionTextEn": "What does it print?  int a = 7, b = 2;  if (a / b * b == a) Console.WriteLine(\"Exacto\"); else Console.WriteLine(\"Con resto\");",
       "correctAnswer": "Con resto",
       "incorrectAnswerPool": [
         "Exacto",
@@ -965,8 +865,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\ndouble n = double.NaN;\nConsole.WriteLine(n > 0 || n <= 0);",
-      "questionTextEn": "What does it print?\ndouble n = double.NaN;\nConsole.WriteLine(n > 0 || n <= 0);",
+      "questionText": "¿Qué muestra?  double n = double.NaN;  Console.WriteLine(n > 0 || n <= 0);",
+      "questionTextEn": "What does it print?  double n = double.NaN;  Console.WriteLine(n > 0 || n <= 0);",
       "correctAnswer": "False",
       "incorrectAnswerPool": [
         "True",
@@ -999,8 +899,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint a = 2;\nif (a > 5) if (a > 1) Console.Write(\"X\"); else Console.Write(\"Y\"); else Console.Write(\"Z\");",
-      "questionTextEn": "What does it print?\nint a = 2;\nif (a > 5) if (a > 1) Console.Write(\"X\"); else Console.Write(\"Y\"); else Console.Write(\"Z\");",
+      "questionText": "¿Qué muestra?  int a = 2;  if (a > 5) if (a > 1) Console.Write(\"X\"); else Console.Write(\"Y\"); else Console.Write(\"Z\");",
+      "questionTextEn": "What does it print?  int a = 2;  if (a > 5) if (a > 1) Console.Write(\"X\"); else Console.Write(\"Y\"); else Console.Write(\"Z\");",
       "correctAnswer": "Z",
       "incorrectAnswerPool": [
         "X",
@@ -1016,8 +916,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint n = 15;\nstring r;\nif (n > 5) r = \"A\";\nelse if (n > 10) r = \"B\";\nelse r = \"C\";\nConsole.WriteLine(r);",
-      "questionTextEn": "What does it print?\nint n = 15;\nstring r;\nif (n > 5) r = \"A\";\nelse if (n > 10) r = \"B\";\nelse r = \"C\";\nConsole.WriteLine(r);",
+      "questionText": "¿Qué muestra?  int n = 15;  string r;  if (n > 5) r = \"A\"; else if (n > 10) r = \"B\"; else r = \"C\";  Console.WriteLine(r);",
+      "questionTextEn": "What does it print?  int n = 15;  string r;  if (n > 5) r = \"A\"; else if (n > 10) r = \"B\"; else r = \"C\";  Console.WriteLine(r);",
       "correctAnswer": "A",
       "incorrectAnswerPool": [
         "B",
@@ -1033,8 +933,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nbool b = false;\nif (b = true) Console.Write(\"Entra \");\nConsole.Write(b);",
-      "questionTextEn": "What does it print?\nbool b = false;\nif (b = true) Console.Write(\"Entra \");\nConsole.Write(b);",
+      "questionText": "¿Qué muestra?  bool b = false;  if (b = true) Console.Write(\"Entra \");  Console.Write(b);",
+      "questionTextEn": "What does it print?  bool b = false;  if (b = true) Console.Write(\"Entra \");  Console.Write(b);",
       "correctAnswer": "Entra True",
       "incorrectAnswerPool": [
         "True",
@@ -1050,8 +950,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nstring s = null;\nConsole.WriteLine(s ?? \"vacío\");",
-      "questionTextEn": "What does it print?\nstring s = null;\nConsole.WriteLine(s ?? \"vacío\");",
+      "questionText": "¿Qué muestra?  string s = null;  Console.WriteLine(s ?? \"vacío\");",
+      "questionTextEn": "What does it print?  string s = null;  Console.WriteLine(s ?? \"vacío\");",
       "correctAnswer": "vacío",
       "incorrectAnswerPool": [
         "null",
@@ -1067,8 +967,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué valor tiene n al final?\nint? n = null;\nn ??= 7;\nn ??= 9;",
-      "questionTextEn": "What value does n hold at the end?\nint? n = null;\nn ??= 7;\nn ??= 9;",
+      "questionText": "¿Qué valor tiene n al final?  int? n = null;  n ??= 7;  n ??= 9;",
+      "questionTextEn": "What value does n hold at the end?  int? n = null;  n ??= 7;  n ??= 9;",
       "correctAnswer": "7",
       "incorrectAnswerPool": [
         "9",
@@ -1084,8 +984,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nstring s = null;\nConsole.WriteLine(s?.Length ?? 0);",
-      "questionTextEn": "What does it print?\nstring s = null;\nConsole.WriteLine(s?.Length ?? 0);",
+      "questionText": "¿Qué muestra?  string s = null;  Console.WriteLine(s?.Length ?? 0);",
+      "questionTextEn": "What does it print?  string s = null;  Console.WriteLine(s?.Length ?? 0);",
       "correctAnswer": "0",
       "incorrectAnswerPool": [
         "null",
@@ -1101,8 +1001,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nobject o = 5;\nif (o is int n && n > 3) Console.WriteLine(\"Entero grande\");\nelse Console.WriteLine(\"Otro\");",
-      "questionTextEn": "What does it print?\nobject o = 5;\nif (o is int n && n > 3) Console.WriteLine(\"Entero grande\");\nelse Console.WriteLine(\"Otro\");",
+      "questionText": "¿Qué muestra?  object o = 5;  if (o is int n && n > 3) Console.WriteLine(\"Entero grande\"); else Console.WriteLine(\"Otro\");",
+      "questionTextEn": "What does it print?  object o = 5;  if (o is int n && n > 3) Console.WriteLine(\"Entero grande\"); else Console.WriteLine(\"Otro\");",
       "correctAnswer": "Entero grande",
       "incorrectAnswerPool": [
         "Otro",
@@ -1116,8 +1016,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nint x = 7;\nConsole.WriteLine(x is > 0 and < 10);",
-      "questionTextEn": "What does it print?\nint x = 7;\nConsole.WriteLine(x is > 0 and < 10);",
+      "questionText": "¿Qué muestra?  int x = 7;  Console.WriteLine(x is > 0 and < 10);",
+      "questionTextEn": "What does it print?  int x = 7;  Console.WriteLine(x is > 0 and < 10);",
       "correctAnswer": "True",
       "incorrectAnswerPool": [
         "False",
@@ -1131,8 +1031,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nstring s = null;\nConsole.WriteLine(s is not null);",
-      "questionTextEn": "What does it print?\nstring s = null;\nConsole.WriteLine(s is not null);",
+      "questionText": "¿Qué muestra?  string s = null;  Console.WriteLine(s is not null);",
+      "questionTextEn": "What does it print?  string s = null;  Console.WriteLine(s is not null);",
       "correctAnswer": "False",
       "incorrectAnswerPool": [
         "True",
@@ -1146,8 +1046,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nobject a = \"x\";\nobject b = new string('x', 1);\nConsole.WriteLine(a == b);\nConsole.WriteLine(a.Equals(b));",
-      "questionTextEn": "What does it print?\nobject a = \"x\";\nobject b = new string('x', 1);\nConsole.WriteLine(a == b);\nConsole.WriteLine(a.Equals(b));",
+      "questionText": "¿Qué muestra?  object a = \"x\";  object b = new string('x', 1);  Console.WriteLine(a == b);  Console.WriteLine(a.Equals(b));",
+      "questionTextEn": "What does it print?  object a = \"x\";  object b = new string('x', 1);  Console.WriteLine(a == b);  Console.WriteLine(a.Equals(b));",
       "correctAnswer": "False\nTrue",
       "incorrectAnswerPool": [
         "True\nTrue",
@@ -1163,8 +1063,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "SeleccionMultiple",
-      "questionText": "¿Qué muestra?\nstring s = \"\";\nConsole.WriteLine(s == null);",
-      "questionTextEn": "What does it print?\nstring s = \"\";\nConsole.WriteLine(s == null);",
+      "questionText": "¿Qué muestra?  string s = \"\";  Console.WriteLine(s == null);",
+      "questionTextEn": "What does it print?  string s = \"\";  Console.WriteLine(s == null);",
       "correctAnswer": "False",
       "incorrectAnswerPool": [
         "True",
@@ -1572,8 +1472,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "DetectarError",
-      "questionText": "¿Qué bloque lanza una excepción al ejecutarse?\nint[] a = { 1, 2, 3 };\nint i = 3;",
-      "questionTextEn": "Which block throws an exception when it runs?\nint[] a = { 1, 2, 3 };\nint i = 3;",
+      "questionText": "¿Qué bloque lanza una excepción al ejecutarse?\nint[] a = { 1, 2, 3 }; int i = 3;",
+      "questionTextEn": "Which block throws an exception when it runs?\nint[] a = { 1, 2, 3 }; int i = 3;",
       "codeSnippetsOptions": [
         "if (a[i] > 0 && i < a.Length) { }",
         "if (i < a.Length && a[i] > 0) { }",
@@ -1589,8 +1489,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "DetectarError",
-      "questionText": "Debe dar true solo si es fin de semana (sab o dom) Y hay sol. ¿Qué bloque tiene un error de precedencia?\nstring d = \"sab\";\nbool sol = false;",
-      "questionTextEn": "It must give true only if it is the weekend (sab or dom) AND it is sunny. Which block has a precedence error?\nstring d = \"sab\";\nbool sol = false;",
+      "questionText": "True solo si es sab o dom Y hay sol. ¿Qué bloque tiene un error de precedencia?\nstring d = \"sab\"; bool sol = false;",
+      "questionTextEn": "True only if it is sab or dom AND sunny. Which block has a precedence error?\nstring d = \"sab\"; bool sol = false;",
       "codeSnippetsOptions": [
         "bool r = (d == \"sab\" || d == \"dom\") && sol; Console.Write(r);",
         "bool r = d == \"sab\" && sol || d == \"dom\" && sol; Console.Write(r);",
@@ -1708,8 +1608,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "DetectarError",
-      "questionText": "Debe mostrar \"Negativo\" si x es negativo o cero, \"Menor\" si está entre 1 y 9 y nada si es mayor. ¿Qué bloque tiene un error de lógica?\nint x = -5;",
-      "questionTextEn": "It must print \"Negativo\" if x is negative or zero, \"Menor\" if it is between 1 and 9 and nothing if larger. Which block has a logic error?\nint x = -5;",
+      "questionText": "x <= 0: \"Negativo\"; de 1 a 9: \"Menor\"; mayor: nada. ¿Qué bloque tiene un error?\nint x = -5;",
+      "questionTextEn": "x <= 0: \"Negativo\"; 1 to 9: \"Menor\"; larger: nothing. Which block has an error?\nint x = -5;",
       "codeSnippetsOptions": [
         "if (x > 0) { if (x < 10) Console.Write(\"Menor\"); } else Console.Write(\"Negativo\");",
         "if (x > 0 && x < 10) Console.Write(\"Menor\"); else if (x <= 0) Console.Write(\"Negativo\");",
@@ -1742,8 +1642,8 @@
       "category": "Condicionales",
       "difficulty": "Dificil",
       "type": "DetectarError",
-      "questionText": "Debe mostrar cuántas veces x fue positivo (sin tocar cont si x no es positivo). ¿Qué bloque tiene un error?\nint x = -1, cont = 0;",
-      "questionTextEn": "It must not touch cont when x is not positive and then print it. Which block has an error?\nint x = -1, cont = 0;",
+      "questionText": "Debe sumar 1 a cont solo si x es positivo y luego mostrarlo. ¿Qué bloque falla?\nint x = -1, cont = 0;",
+      "questionTextEn": "It must add 1 to cont only if x is positive, then print it. Which block fails?\nint x = -1, cont = 0;",
       "codeSnippetsOptions": [
         "if (x > 0 || ++cont > 0) { } Console.Write(cont);",
         "if (x > 0) cont++; Console.Write(cont);",

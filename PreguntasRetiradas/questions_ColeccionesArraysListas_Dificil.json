@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "id": "col-dificil-19",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "var fila = new List<int> { 1 };\nvar l = new List<List<int>>();\nl.Add(fila);\nl.Add(fila);\nl[0].Add(2);\nConsole.WriteLine(l[1].Count);\n¿Qué muestra?",
+      "questionTextEn": "var fila = new List<int> { 1 };\nvar l = new List<List<int>>();\nl.Add(fila);\nl.Add(fila);\nl[0].Add(2);\nConsole.WriteLine(l[1].Count);\nWhat does it print?",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "1",
+        "0",
+        "3",
+        "4"
+      ],
+      "explanation": "Las dos posiciones guardan la misma lista, no dos copias.",
+      "explanationEn": "Both positions hold the same list, not two copies."
+    },
+    {
+      "id": "col-dificil-31",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "int[] a = { 4, 3, 2, 1 };\nfor (int i = 0; i < a.Length - 1; i++)\n    if (a[i] > a[i + 1])\n    {\n        int t = a[i]; a[i] = a[i + 1]; a[i + 1] = t;\n    }\nConsole.WriteLine(string.Join(\",\", a));\n¿Qué muestra?",
+      "questionTextEn": "int[] a = { 4, 3, 2, 1 };\nfor (int i = 0; i < a.Length - 1; i++)\n    if (a[i] > a[i + 1])\n    {\n        int t = a[i]; a[i] = a[i + 1]; a[i + 1] = t;\n    }\nConsole.WriteLine(string.Join(\",\", a));\nWhat does it print?",
+      "correctAnswer": "3,2,1,4",
+      "incorrectAnswerPool": [
+        "1,2,3,4",
+        "3,4,2,1",
+        "3,2,4,1",
+        "4,3,2,1"
+      ],
+      "explanation": "Es una sola pasada de burbuja: el 4 llega al final pero el resto no queda ordenado.",
+      "explanationEn": "It is a single bubble pass: the 4 reaches the end but the rest is not sorted."
+    },
+    {
+      "id": "col-dificil-35",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "var a = new HashSet<int> { 1, 2, 3 };\nvar b = new HashSet<int> { 3, 4 };\na.IntersectWith(b);\nConsole.WriteLine(string.Join(\",\", a));\n¿Qué muestra?",
+      "questionTextEn": "var a = new HashSet<int> { 1, 2, 3 };\nvar b = new HashSet<int> { 3, 4 };\na.IntersectWith(b);\nConsole.WriteLine(string.Join(\",\", a));\nWhat does it print?",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "1,2,3,4",
+        "3,4",
+        "1,2",
+        "4"
+      ],
+      "explanation": "IntersectWith deja en a solo lo que también está en b.",
+      "explanationEn": "IntersectWith leaves in a only what is also in b."
+    },
+    {
+      "id": "col-dificil-36",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "var a = new HashSet<int> { 1, 2, 3 };\nvar b = new HashSet<int> { 2, 3, 4 };\na.ExceptWith(b);\nConsole.WriteLine(string.Join(\",\", a));\n¿Qué muestra?",
+      "questionTextEn": "var a = new HashSet<int> { 1, 2, 3 };\nvar b = new HashSet<int> { 2, 3, 4 };\na.ExceptWith(b);\nConsole.WriteLine(string.Join(\",\", a));\nWhat does it print?",
+      "correctAnswer": "1",
+      "incorrectAnswerPool": [
+        "4",
+        "1,4",
+        "2,3",
+        "1,2,3,4"
+      ],
+      "explanation": "ExceptWith quita de a todo lo que está en b.",
+      "explanationEn": "ExceptWith removes from a everything that is in b."
+    },
+    {
+      "id": "col-dificil-47",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "int[,] m = new int[2, 3];\nint c = 0;\nfor (int i = 0; i < 2; i++)\n    for (int j = 0; j < 3; j++)\n        m[i, j] = c++;\nConsole.WriteLine(m[1, 0]);\n¿Qué muestra?",
+      "questionTextEn": "int[,] m = new int[2, 3];\nint c = 0;\nfor (int i = 0; i < 2; i++)\n    for (int j = 0; j < 3; j++)\n        m[i, j] = c++;\nConsole.WriteLine(m[1, 0]);\nWhat does it print?",
+      "correctAnswer": "3",
+      "incorrectAnswerPool": [
+        "2",
+        "1",
+        "4",
+        "0"
+      ]
+    },
+    {
+      "id": "col-dificil-53",
+      "category": "ColeccionesArraysListas",
+      "difficulty": "Dificil",
+      "type": "SeleccionMultiple",
+      "questionText": "var l = new List<int> { 1, 2, 2, 3 };\nfor (int i = 0; i < l.Count; i++)\n    if (l[i] == 2) l.RemoveAt(i);\nConsole.WriteLine(string.Join(\",\", l));\n¿Qué muestra?",
+      "questionTextEn": "var l = new List<int> { 1, 2, 2, 3 };\nfor (int i = 0; i < l.Count; i++)\n    if (l[i] == 2) l.RemoveAt(i);\nConsole.WriteLine(string.Join(\",\", l));\nWhat does it print?",
+      "correctAnswer": "1,2,3",
+      "incorrectAnswerPool": [
+        "1,3",
+        "1,2,2,3",
+        "2,2",
+        "1,2"
+      ],
+      "explanation": "Al quitar el primer 2, el segundo se corre a la posición actual y el bucle lo salta.",
+      "explanationEn": "After removing the first 2, the second one shifts into the current position and the loop skips it."
+    }
+  ]
+}

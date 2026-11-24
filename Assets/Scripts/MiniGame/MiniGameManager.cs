@@ -58,6 +58,8 @@ namespace PeliCode.MiniGame
         private bool _isRanked;
         private bool _finished;
         private bool _poolReady;
+        private bool _abandoned;
+        private float _startedAt = -1f; // cuando se vio la primera pregunta, para la duracion del historial
 
         /// <summary>La pantalla de carga sigue hasta que las preguntas estan cargadas.</summary>
         public bool IsSceneReady => _poolReady;
@@ -174,6 +176,7 @@ namespace PeliCode.MiniGame
             _activeView.Setup(question);
             _activeView.OnAnswered += OnQuestionAnswered;
 
+            if (_startedAt < 0f) _startedAt = Time.realtimeSinceStartup;
             timer.ResetTimer();
         }
 
@@ -288,7 +291,12 @@ namespace PeliCode.MiniGame
                 _scoreManager.CorrectAnswers,
                 _scoreManager.TotalAnswered);
 
-            await SaveAsync(() => CloudSaveManager.Instance.SaveProfileAsync(profile));
+            var record = BuildRecord(completed: true);
+            await SaveAsync(async () =>
+            {
+                await CloudSaveManager.Instance.SaveProfileAsync(profile);
+                await CloudSaveManager.Instance.AppendGameRecordAsync(record);
+            });
         }
 
         private async void EndRankedGame()
@@ -307,10 +315,12 @@ namespace PeliCode.MiniGame
                 resultsText.text += "\n\n" + Loc.Get("game.newRecord");
             }
 
+            var record = BuildRecord(completed: true);
             await SaveAsync(async () =>
             {
                 await CloudSaveManager.Instance.SaveProfileAsync(profile);
                 await LeaderboardManager.Instance.SubmitScoreAsync(finalScore);
+                await CloudSaveManager.Instance.AppendGameRecordAsync(record);
             });
         }
 
@@ -347,10 +357,43 @@ namespace PeliCode.MiniGame
             feedbackText.color = color;
         }
 
-        /// <summary>Volver al menu. A mitad de partida es abandonar: no se guarda nada.</summary>
+        /// <summary>
+        /// Volver al menu. A mitad de partida es abandonar: no cambia los porcentajes ni el ranking,
+        /// pero si ya respondio alguna pregunta la partida queda en el historial como no terminada.
+        /// </summary>
         public void OnExitButtonPressed()
         {
+            if (!_finished && !_abandoned && _scoreManager.TotalAnswered > 0 && AuthManager.Instance.CurrentProfile != null)
+            {
+                _abandoned = true;
+                _ = RecordAbandonedAsync(BuildRecord(completed: false));
+            }
             SceneLoader.LoadMenu();
+        }
+
+        // CloudSaveManager sigue vivo despues de cambiar de escena: el guardado termina en el menu.
+        private static async Task RecordAbandonedAsync(GameRecord record)
+        {
+            try
+            {
+                await CloudSaveManager.Instance.AppendGameRecordAsync(record);
+            }
+            catch (Exception e)
+            {
+                Debug.LogWarning($"[MiniGameManager] No se pudo guardar la partida abandonada en el historial: {e.Message}");
+            }
+        }
+
+        /// <summary>La partida tal como va, para el historial de Cloud Save.</summary>
+        private GameRecord BuildRecord(bool completed)
+        {
+            float seconds = _startedAt < 0f ? 0f : Time.realtimeSinceStartup - _startedAt;
+            return _isRanked
+                ? GameRecord.Ranked(_scoreManager.CorrectAnswers, _scoreManager.TotalAnswered, seconds,
+                    completed, CloudSaveManager.PlayerNow)
+                : GameRecord.Normal(MiniGameSessionData.Category, MiniGameSessionData.Difficulty,
+                    _scoreManager.CorrectAnswers, _scoreManager.TotalAnswered, _pool.Count, seconds,
+                    completed, CloudSaveManager.PlayerNow);
         }
 
         /// <summary>Otra partida igual (misma categoria y dificultad, o ranked).</summary>

@@ -1,0 +1,38 @@
+{
+  "questions": [
+    {
+      "id": "loop-medio-36",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene count al final?\nint count = 0;\nfor (int i = 0; i < 3; i++)\n    for (int j = 0; j < 3; j++)\n    {\n        if (j == 2) break;\n        count++;\n    }\nConsole.Write(count);",
+      "questionTextEn": "What value does count hold at the end?\nint count = 0;\nfor (int i = 0; i < 3; i++)\n    for (int j = 0; j < 3; j++)\n    {\n        if (j == 2) break;\n        count++;\n    }\nConsole.Write(count);",
+      "correctAnswer": "6",
+      "incorrectAnswerPool": [
+        "7",
+        "5",
+        "8",
+        "4",
+        "9",
+        "10"
+      ],
+      "explanation": "El break solo corta el bucle interno: cada vuelta externa cuenta 2.",
+      "explanationEn": "The break only cuts the inner loop: each outer iteration counts 2."
+    },
+    {
+      "id": "loop-medio-52",
+      "category": "BucleWhileDoWhile",
+      "difficulty": "Medio",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene idx al final?\nint[] a = { 4, 8, 15, 16, 23 };\nint idx = -1;\nfor (int i = 0; i < a.Length; i++)\n{\n    if (a[i] > 10)\n    {\n        idx = i;\n        break;\n    }\n}\nConsole.Write(idx);",
+      "questionTextEn": "What value does idx hold at the end?\nint[] a = { 4, 8, 15, 16, 23 };\nint idx = -1;\nfor (int i = 0; i < a.Length; i++)\n{\n    if (a[i] > 10)\n    {\n        idx = i;\n        break;\n    }\n}\nConsole.Write(idx);",
+      "correctAnswer": "2",
+      "incorrectAnswerPool": [
+        "-1",
+        "15",
+        "4",
+        "3"
+      ]
+    }
+  ]
+}

@@ -69,6 +69,9 @@ namespace PeliCode.Data
                     stat.easyPercentage = 0f;
                     stat.mediumPercentage = 0f;
                     stat.hardPercentage = 0f;
+                    stat.easyGames = stat.easyCorrect = stat.easyAnswered = 0;
+                    stat.mediumGames = stat.mediumCorrect = stat.mediumAnswered = 0;
+                    stat.hardGames = stat.hardCorrect = stat.hardAnswered = 0;
                     stat.weekStamp = currentWeekStamp;
                     changed = true;
                 }
@@ -77,9 +80,10 @@ namespace PeliCode.Data
         }
 
         /// <summary>
-        /// Guarda el porcentaje de aciertos de una categoria/dificultad tras una partida
-        /// normal (no ranked). Regla del documento: se guarda el porcentaje de la partida,
-        /// no un promedio acumulado. Una partida sin preguntas no cambia nada.
+        /// Suma una partida normal (no ranked) al porcentaje de su categoria/dificultad.
+        /// Regla del tercer documento: el porcentaje combina todas las partidas de la semana
+        /// (100 % y luego 0 % dan 50 %), contando aciertos sobre preguntas respondidas.
+        /// Una partida sin preguntas no cambia nada.
         /// </summary>
         public static void RegisterNormalGameResult(
             PlayerProfileData profile,
@@ -100,15 +104,31 @@ namespace PeliCode.Data
                 profile.minigameStats[key] = stat;
             }
 
-            float percentage = correctAnswers / (float)totalQuestions * 100f;
             stat.weekStamp = GetIsoWeekStamp(nowUtc);
 
             switch (difficulty)
             {
-                case Difficulty.Facil: stat.easyPercentage = percentage; break;
-                case Difficulty.Medio: stat.mediumPercentage = percentage; break;
-                case Difficulty.Dificil: stat.hardPercentage = percentage; break;
+                case Difficulty.Facil:
+                    stat.easyPercentage = Accumulate(ref stat.easyGames, ref stat.easyCorrect, ref stat.easyAnswered,
+                        correctAnswers, totalQuestions);
+                    break;
+                case Difficulty.Medio:
+                    stat.mediumPercentage = Accumulate(ref stat.mediumGames, ref stat.mediumCorrect, ref stat.mediumAnswered,
+                        correctAnswers, totalQuestions);
+                    break;
+                case Difficulty.Dificil:
+                    stat.hardPercentage = Accumulate(ref stat.hardGames, ref stat.hardCorrect, ref stat.hardAnswered,
+                        correctAnswers, totalQuestions);
+                    break;
             }
+        }
+
+        private static float Accumulate(ref int games, ref int correct, ref int answered, int gameCorrect, int gameAnswered)
+        {
+            games++;
+            correct += gameCorrect;
+            answered += gameAnswered;
+            return correct / (float)answered * 100f;
         }
 
         /// <summary>Dia en que empieza la "semana" de los porcentajes: los fines de semana se reinician.</summary>

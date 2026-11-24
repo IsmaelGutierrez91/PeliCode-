@@ -1,0 +1,184 @@
+{
+  "questions": [
+    {
+      "id": "sw-facil-34",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint dia = 3;\nswitch (dia)\n{\n    case 1: Console.Write(\"Lunes\"); break;\n    case 2: Console.Write(\"Martes\"); break;\n    case 3: Console.Write(\"Miercoles\"); break;\n}",
+      "questionTextEn": "What does it print?\nint dia = 3;\nswitch (dia)\n{\n    case 1: Console.Write(\"Lunes\"); break;\n    case 2: Console.Write(\"Martes\"); break;\n    case 3: Console.Write(\"Miercoles\"); break;\n}",
+      "correctAnswer": "Miercoles",
+      "incorrectAnswerPool": [
+        "Lunes",
+        "Martes",
+        "LunesMartesMiercoles",
+        "No muestra nada"
+      ]
+    },
+    {
+      "id": "sw-facil-35",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nint n = 9;\nswitch (n)\n{\n    case 1: Console.Write(\"Uno\"); break;\n    case 2: Console.Write(\"Dos\"); break;\n    default: Console.Write(\"Otro\"); break;\n}",
+      "questionTextEn": "What does it print?\nint n = 9;\nswitch (n)\n{\n    case 1: Console.Write(\"Uno\"); break;\n    case 2: Console.Write(\"Dos\"); break;\n    default: Console.Write(\"Otro\"); break;\n}",
+      "correctAnswer": "Otro",
+      "incorrectAnswerPool": [
+        "Uno",
+        "Dos",
+        "UnoDosOtro",
+        "No muestra nada"
+      ]
+    },
+    {
+      "id": "sw-facil-37",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstring color = \"verde\";\nswitch (color)\n{\n    case \"rojo\": Console.Write(\"Alto\"); break;\n    case \"verde\": Console.Write(\"Siga\"); break;\n    default: Console.Write(\"Cuidado\"); break;\n}",
+      "questionTextEn": "What does it print?\nstring color = \"verde\";\nswitch (color)\n{\n    case \"rojo\": Console.Write(\"Alto\"); break;\n    case \"verde\": Console.Write(\"Siga\"); break;\n    default: Console.Write(\"Cuidado\"); break;\n}",
+      "correctAnswer": "Siga",
+      "incorrectAnswerPool": [
+        "Alto",
+        "Cuidado",
+        "AltoSiga",
+        "No muestra nada"
+      ]
+    },
+    {
+      "id": "sw-facil-40",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nenum Luz { Rojo, Amarillo, Verde }\nLuz l = Luz.Amarillo;\nswitch (l)\n{\n    case Luz.Rojo: Console.Write(\"Alto\"); break;\n    case Luz.Amarillo: Console.Write(\"Precaucion\"); break;\n    case Luz.Verde: Console.Write(\"Siga\"); break;\n}",
+      "questionTextEn": "What does it print?\nenum Luz { Rojo, Amarillo, Verde }\nLuz l = Luz.Amarillo;\nswitch (l)\n{\n    case Luz.Rojo: Console.Write(\"Alto\"); break;\n    case Luz.Amarillo: Console.Write(\"Precaucion\"); break;\n    case Luz.Verde: Console.Write(\"Siga\"); break;\n}",
+      "correctAnswer": "Precaucion",
+      "incorrectAnswerPool": [
+        "Alto",
+        "Siga",
+        "Amarillo",
+        "No muestra nada"
+      ]
+    },
+    {
+      "id": "sw-facil-43",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nchar g = 'B';\nswitch (g)\n{\n    case 'A': Console.Write(\"Excelente\"); break;\n    case 'B': Console.Write(\"Bueno\"); break;\n    default: Console.Write(\"Regular\"); break;\n}",
+      "questionTextEn": "What does it print?\nchar g = 'B';\nswitch (g)\n{\n    case 'A': Console.Write(\"Excelente\"); break;\n    case 'B': Console.Write(\"Bueno\"); break;\n    default: Console.Write(\"Regular\"); break;\n}",
+      "correctAnswer": "Bueno",
+      "incorrectAnswerPool": [
+        "Excelente",
+        "Regular",
+        "B",
+        "ExcelenteBueno"
+      ]
+    },
+    {
+      "id": "sw-facil-44",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene bono al final?\nint nivel = 3;\nint bono = 0;\nswitch (nivel)\n{\n    case 1: bono = 5; break;\n    case 2: bono = 10; break;\n    case 3: bono = 15; break;\n}",
+      "questionTextEn": "What is the value of bono at the end?\nint nivel = 3;\nint bono = 0;\nswitch (nivel)\n{\n    case 1: bono = 5; break;\n    case 2: bono = 10; break;\n    case 3: bono = 15; break;\n}",
+      "correctAnswer": "15",
+      "incorrectAnswerPool": [
+        "0",
+        "3",
+        "5",
+        "30"
+      ]
+    },
+    {
+      "id": "sw-facil-45",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nstatic string Nombre(int n)\n{\n    switch (n)\n    {\n        case 1: return \"Uno\";\n        case 2: return \"Dos\";\n        default: return \"Otro\";\n    }\n}\nConsole.Write(Nombre(2));",
+      "questionTextEn": "What does it print?\nstatic string Nombre(int n)\n{\n    switch (n)\n    {\n        case 1: return \"Uno\";\n        case 2: return \"Dos\";\n        default: return \"Otro\";\n    }\n}\nConsole.Write(Nombre(2));",
+      "correctAnswer": "Dos",
+      "incorrectAnswerPool": [
+        "Uno",
+        "Otro",
+        "UnoDos",
+        "2"
+      ]
+    },
+    {
+      "id": "sw-facil-46",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nenum Dia { Lunes, Martes, Miercoles }\nDia d = Dia.Martes;\nswitch (d)\n{\n    case Dia.Lunes: Console.Write(\"Inicio\"); break;\n    case Dia.Martes: Console.Write(\"Segundo\"); break;\n    default: Console.Write(\"Otro\"); break;\n}",
+      "questionTextEn": "What does it print?\nenum Dia { Lunes, Martes, Miercoles }\nDia d = Dia.Martes;\nswitch (d)\n{\n    case Dia.Lunes: Console.Write(\"Inicio\"); break;\n    case Dia.Martes: Console.Write(\"Segundo\"); break;\n    default: Console.Write(\"Otro\"); break;\n}",
+      "correctAnswer": "Segundo",
+      "incorrectAnswerPool": [
+        "Inicio",
+        "Otro",
+        "Martes",
+        "InicioSegundo"
+      ]
+    },
+    {
+      "id": "sw-facil-49",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nenum Luz { Rojo, Amarillo, Verde }\nLuz l = Luz.Verde;\nstring r = l switch\n{\n    Luz.Rojo => \"Alto\",\n    Luz.Amarillo => \"Cuidado\",\n    _ => \"Siga\"\n};",
+      "questionTextEn": "What is the value of r at the end?\nenum Luz { Rojo, Amarillo, Verde }\nLuz l = Luz.Verde;\nstring r = l switch\n{\n    Luz.Rojo => \"Alto\",\n    Luz.Amarillo => \"Cuidado\",\n    _ => \"Siga\"\n};",
+      "correctAnswer": "Siga",
+      "incorrectAnswerPool": [
+        "Alto",
+        "Cuidado",
+        "Verde",
+        "AltoSiga"
+      ]
+    },
+    {
+      "id": "sw-facil-52",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué muestra?\nconst int Max = 10;\nint n = 10;\nswitch (n)\n{\n    case Max: Console.Write(\"Tope\"); break;\n    default: Console.Write(\"Menos\"); break;\n}",
+      "questionTextEn": "What does it print?\nconst int Max = 10;\nint n = 10;\nswitch (n)\n{\n    case Max: Console.Write(\"Tope\"); break;\n    default: Console.Write(\"Menos\"); break;\n}",
+      "correctAnswer": "Tope",
+      "incorrectAnswerPool": [
+        "Menos",
+        "Max",
+        "TopeMenos",
+        "No muestra nada"
+      ]
+    },
+    {
+      "id": "sw-facil-53",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nchar op = '+';\nint a = 6, b = 2;\nint r = 0;\nswitch (op)\n{\n    case '+': r = a + b; break;\n    case '-': r = a - b; break;\n    case '*': r = a * b; break;\n}",
+      "questionTextEn": "What is the value of r at the end?\nchar op = '+';\nint a = 6, b = 2;\nint r = 0;\nswitch (op)\n{\n    case '+': r = a + b; break;\n    case '-': r = a - b; break;\n    case '*': r = a * b; break;\n}",
+      "correctAnswer": "8",
+      "incorrectAnswerPool": [
+        "4",
+        "12",
+        "0",
+        "3"
+      ]
+    },
+    {
+      "id": "sw-facil-54",
+      "category": "SwitchEstados",
+      "difficulty": "Facil",
+      "type": "SeleccionMultiple",
+      "questionText": "¿Qué valor tiene r al final?\nchar op = '%';\nint a = 6, b = 2;\nint r = 0;\nswitch (op)\n{\n    case '+': r = a + b; break;\n    case '-': r = a - b; break;\n    default: r = -1; break;\n}",
+      "questionTextEn": "What is the value of r at the end?\nchar op = '%';\nint a = 6, b = 2;\nint r = 0;\nswitch (op)\n{\n    case '+': r = a + b; break;\n    case '-': r = a - b; break;\n    default: r = -1; break;\n}",
+      "correctAnswer": "-1",
+      "incorrectAnswerPool": [
+        "0",
+        "8",
+        "4",
+        "2"
+      ]
+    }
+  ]
+}
